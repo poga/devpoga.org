@@ -48,7 +48,7 @@ biography = """Design and develop ICT-enabled communication and collaboration fo
 
   #postURL = "https://example.com/mailout/"
 
-  enable = true
+  enable = false
   title = "Contact Me!"
   namePlaceholder = "Name"
   emailPlaceholder = "Email"
@@ -74,6 +74,12 @@ target = "_blank"
 title = "Linkedin"
 icon = "fa-linkedin"
 link = "https://www.linkedin.com/in/pogapo/"
+target = "_blank"
+
+[[params.social]]
+title = "Email"
+icon = "fa-envelope"
+link = "mailto:poga.po@gmail.com"
 target = "_blank"
 
 [params.footer]
