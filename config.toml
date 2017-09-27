@@ -1,4 +1,4 @@
-baseURL = "https://devpoga.org"
+baseURL = "http://devpoga.org"
 languageCode = "en-us"
 title = "devpoga.org"
 theme = "identity"
