@@ -1,0 +1,78 @@
+baseURL = "https://devpoga.org"
+languageCode = "en-us"
+title = "devpoga.org"
+theme = "identity"
+email = "poga.po@gmail.com"
+
+disableKinds = ["page", "section", "taxonomy", "taxonomyTerm", "RSS", "sitemap", "robotsTXT", "404"]
+
+[params]
+
+custom_css = ["custom.css"]
+
+[params.personal]
+name = "Poga Po"
+
+# Avatars can be written to images/avatars/
+avatar = "poga2.jpg"
+position = "SOFTWARE DEVELOPER"
+scope = [
+    "❤️ Open Source",
+    "🌏 Web / Distributed System / Decentralization",
+    "🌈 Product Design",
+    "🎩 Speaker"
+  ]
+biography = """Design and develop ICT-enabled communication and collaboration for a decentralized future"""
+
+[params.contact]
+  # Since this template is static, the contact form uses www.formspree.io as a
+  # proxy. The form makes a POST request to their servers to send the actual
+  # email. Visitors can send up to a 1000 emails each month for free.
+  #
+  # What you need to do for the setup?
+  #
+  # - set your email address under 'email' below
+  # - upload the generated site to your server
+  # - send a dummy email yourself to confirm your account
+  # - click the confirm link in the email from www.formspree.io
+  # - you're done. Happy mailing!
+
+  email = "poga.po@gmail.com"
+
+  # It is possible to substitute formspring with other providers
+  # as an example the mailout plugin from caddy.
+  # Provide the post URL for the form and depending on the provider
+  # add some custom JS script to finish the implementation.
+
+  #postURL = "https://example.com/mailout/"
+
+  enable = true
+  title = "Contact Me!"
+  namePlaceholder = "Name"
+  emailPlaceholder = "Email"
+  messagePlaceholder = "Message"
+  buttonText = "Send"
+  success = "Thank you for contacting me."
+  error = "Message could not be send. Please contact me at "
+
+
+[[params.social]]
+title = "Github"
+icon = "fa-github"
+link = "https://github.com/poga"
+target = "_blank"
+
+[[params.social]]
+title = "Twitter"
+icon = "fa-twitter"
+link = "https://twitter.com/devpoga"
+target = "_blank"
+
+[[params.social]]
+title = "Linkedin"
+icon = "fa-linkedin"
+link = "https://www.linkedin.com/in/pogapo/"
+target = "_blank"
+
+[params.footer]
+copyright = "devpoga.org"
