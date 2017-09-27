@@ -9,6 +9,8 @@ disableKinds = ["page", "section", "taxonomy", "taxonomyTerm", "RSS", "sitemap",
 [params]
 
 custom_css = ["custom.css"]
+favicon_ico = "favicon.ico"
+favicon_ico_sizes = "16x16 32x32 48x48"
 
 [params.personal]
 name = "Poga Po"
