@@ -24,7 +24,12 @@ scope = [
     "🌈 Product Design",
     "🎩 Speaker"
   ]
-biography = """Design and develop ICT-enabled communication and collaboration for a decentralized future"""
+biography = """ I know scalability.
+
+I've handled crazy product growth, unusual traffic pattern, and complex distributed system.
+
+I have experience in messaging, real-time collaboration, ticketing, and advertising platform.
+"""
 
 [params.contact]
   # Since this template is static, the contact form uses www.formspree.io as a
