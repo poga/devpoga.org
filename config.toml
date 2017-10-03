@@ -89,5 +89,11 @@ icon = "fa-envelope"
 link = "mailto:poga.po@gmail.com"
 target = "_blank"
 
+[[params.social]]
+title = "Medium"
+icon = "fa-medium"
+link = "https://medium.com/@poga"
+target = "_blank"
+
 [params.footer]
 copyright = "devpoga.org"
