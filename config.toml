@@ -20,12 +20,12 @@ avatar = "poga2.jpg"
 position = "SOFTWARE DEVELOPER"
 scope = [
     "❤️ Open Source",
-    "🌏 Web / Distributed System",
+    "🌏 Web&/ Distributed System",
     "👥 Decentralization: blockchain, IPFS, Dat",
     "🎩 Speaker",
-    "🌈 Product Design"
+    "🌈Interactive Design"
   ]
-biography = """Design and develop ICT-enabled communication and collaboration for a decentralized future."""
+biography = """"""
 
 [params.contact]
   # Since this template is static, the contact form uses www.formspree.io as a
