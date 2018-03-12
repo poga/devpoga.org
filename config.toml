@@ -72,12 +72,6 @@ link = "https://twitter.com/devpoga"
 target = "_blank"
 
 [[params.social]]
-title = "Facebook"
-icon = "fa-facebook"
-link = "https://www.facebook.com/poga.po"
-target = "_blank"
-
-[[params.social]]
 title = "Linkedin"
 icon = "fa-linkedin"
 link = "https://www.linkedin.com/in/pogapo/"
