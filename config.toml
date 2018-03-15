@@ -72,12 +72,6 @@ link = "https://twitter.com/devpoga"
 target = "_blank"
 
 [[params.social]]
-title = "Linkedin"
-icon = "fa-linkedin"
-link = "https://www.linkedin.com/in/pogapo/"
-target = "_blank"
-
-[[params.social]]
 title = "Email"
 icon = "fa-envelope"
 link = "mailto:poga.po@gmail.com"
@@ -88,6 +82,13 @@ title = "Medium"
 icon = "fa-medium"
 link = "https://medium.com/@poga"
 target = "_blank"
+
+[[params.social]]
+title = "Linkedin"
+icon = "fa-linkedin"
+link = "https://www.linkedin.com/in/pogapo/"
+target = "_blank"
+
 
 [params.footer]
 copyright = "devpoga.org"
