@@ -17,13 +17,13 @@ name = "Poga Po"
 
 # Avatars can be written to images/avatars/
 avatar = "poga2.jpg"
-position = "SOFTWARE DEVELOPER"
+position = "Make Fun Stuff"
 scope = [
     "❤️ Open Source",
     "🌏 Web & Distributed System",
     "👥 Decentralization",
     "🎤 Speaker",
-    "🌈 Design Fun Stuff"
+    "🌈 Have Fun"
   ]
 biography = """"""
 
