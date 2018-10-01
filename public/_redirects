@@ -1,1 +1,1 @@
-/shadow/topics url=:url          http://35.221.159.176:8080/topics?url=:url
+/shadow/*          http://35.221.159.176:8080/*   200
