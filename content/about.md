@@ -10,3 +10,4 @@ Follow me on twitter: [@devpoga](https://twitter.com/devpoga)
 
 My github: [poga](https://github.com/poga)
 
+Medium (mostly in zh-TW): [@poga](https://medium.com/@poga)
