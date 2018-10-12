@@ -77,3 +77,5 @@ local handler = require("handler")
 ### Then I stopped playing the video game
 
 It turns out that writing Rust and Lua is more fun than actually playing the video game. I'm really happy with [`actix-lua`](https://github.com/poga/actix-lua). I believe there's potential for the crate and I'm excited to explore it!
+
+If you're interested, [Here's the full example mentioned in this post](https://github.com/poga/streaming-data-parsing-with-actix-lua).
