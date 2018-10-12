@@ -8,12 +8,11 @@ title: Analyze Streaming Data with Rust and Lua
 summary: 123
 ---
 
-[`actix-lua`](https://github.com/poga/actix-lua) is a library provides a safe scripting environment for [actix](http://actix.rs) with the [Lua Programming Language](http://lua.org).
+[`actix-lua`](https://github.com/poga/actix-lua) provides a safe scripting environment for the [actix](http://actix.rs) framework with the [Lua Programming Language](http://lua.org).
 
 I want to share one of my use-case here to demostrate why you might need it. Hope you can try these ideas in your next project.
 
 ### Definitely not a world-changing project
-
 
 [Path of Exile(PoE)](https://pathofexile.com) is an online multiplayer RPG. In PoE, players get powerful, unique items by killing monsters. Then, they put their items to the market and trade with others.
 
@@ -27,7 +26,7 @@ How do I reveal their secret? I want to know what item they're trading and how d
 
 Understanding a virtual market in a video game won't make me money (other than some virtual bucks). But hey, it's fun.
 
-PoE has millions of players. The amount of items they put to the market is huge. And more importantly, **I don't know what I'm looking for.** I'm exploring the live data as it comes in, looking for interesting patterns, and learn from it.
+PoE has lots of players. The amount of items they put to the market is huge. And more importantly, **I don't know what I'm looking for.** I'm exploring the live data as it comes in, looking for interesting patterns, and learn from it.
 
 ### Asynchronous programming and Actor model
 
@@ -56,6 +55,8 @@ for i, item in pairs(data["items"]) do
     end
 end
 {{< / highlight >}}
+
+Instead of figuring out types and fighting borrow checkers, we can express our idea in a simple language.
 
 We can also change the script while the program is running! **We can explore the data WHILE PROCESSING THE DATA**, which is tremendously useful.
 

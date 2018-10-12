@@ -66,7 +66,7 @@
     <section class="post-content">
       
 
-<p><a href="https://github.com/poga/actix-lua"><code>actix-lua</code></a> is a library provides a safe scripting environment for <a href="http://actix.rs">actix</a> with the <a href="http://lua.org">Lua Programming Language</a>.</p>
+<p><a href="https://github.com/poga/actix-lua"><code>actix-lua</code></a> provides a safe scripting environment for the <a href="http://actix.rs">actix</a> framework with the <a href="http://lua.org">Lua Programming Language</a>.</p>
 
 <p>I want to share one of my use-case here to demostrate why you might need it. Hope you can try these ideas in your next project.</p>
 
@@ -84,7 +84,7 @@
 
 <p>Understanding a virtual market in a video game won&rsquo;t make me money (other than some virtual bucks). But hey, it&rsquo;s fun.</p>
 
-<p>PoE has millions of players. The amount of items they put to the market is huge. And more importantly, <strong>I don&rsquo;t know what I&rsquo;m looking for.</strong> I&rsquo;m exploring the live data as it comes in, looking for interesting patterns, and learn from it.</p>
+<p>PoE has lots of players. The amount of items they put to the market is huge. And more importantly, <strong>I don&rsquo;t know what I&rsquo;m looking for.</strong> I&rsquo;m exploring the live data as it comes in, looking for interesting patterns, and learn from it.</p>
 
 <h3 id="asynchronous-programming-and-actor-model">Asynchronous programming and Actor model</h3>
 
@@ -113,6 +113,8 @@
         print(data[<span style="color:#e6db74">&#34;accountName&#34;</span>], item[<span style="color:#e6db74">&#34;note&#34;</span>])
     <span style="color:#66d9ef">end</span>
 <span style="color:#66d9ef">end</span></code></pre></div>
+
+<p>Instead of figuring out types and fighting borrow checkers, we can express our idea in a simple language.</p>
 
 <p>We can also change the script while the program is running! <strong>We can explore the data WHILE PROCESSING THE DATA</strong>, which is tremendously useful.</p>
 
