@@ -2,10 +2,7 @@
 author: "Poga Po"
 date: 2018-10-12
 linktitle: Analyze Streaming Data with Rust, Actix, and Lua
-next: /tutorials/github-pages-blog
-prev: /tutorials/automated-deployments
 title: Analyze Streaming Data with Rust and Lua
-summary: 123
 ---
 
 [`actix-lua`](https://github.com/poga/actix-lua) provides a safe scripting environment for the [actix](http://actix.rs) framework with the [Lua Programming Language](http://lua.org).
