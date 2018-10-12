@@ -1,7 +1,7 @@
 ---
 author: "Poga Po"
 date: 2018-10-12
-linktitle: Analyze Streaming Data with Rust and Lua
+linktitle: Analyze Streaming Data with Rust, Actix, and Lua
 next: /tutorials/github-pages-blog
 prev: /tutorials/automated-deployments
 title: Analyze Streaming Data with Rust and Lua
