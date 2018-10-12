@@ -342,7 +342,6 @@ a.nav-home, a.nav-blog {
 .post {
     position: relative;
     margin: 2rem auto;
-    padding-bottom: 4rem;
     word-break: break-word;
     hyphens: auto;
 }
