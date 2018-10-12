@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Dev.Poga</title>
-    <link>http://devpoga.org/</link>
+    <link>https://devpoga.org/</link>
     <description>Recent content on Dev.Poga</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 12 Oct 2018 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="http://devpoga.org/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://devpoga.org/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>About Poga</title>
-      <link>http://devpoga.org/about/</link>
+      <link>https://devpoga.org/about/</link>
       <pubDate>Fri, 12 Oct 2018 00:00:00 +0000</pubDate>
       
-      <guid>http://devpoga.org/about/</guid>
+      <guid>https://devpoga.org/about/</guid>
       <description>Programmer.
 Follow me on twitter: @devpoga
 My github: poga</description>
@@ -24,10 +24,10 @@ My github: poga</description>
     
     <item>
       <title>Analyze Streaming Data with Rust and Lua</title>
-      <link>http://devpoga.org/post/parsing-streaming-data-actix-lua/</link>
+      <link>https://devpoga.org/post/parsing-streaming-data-actix-lua/</link>
       <pubDate>Fri, 12 Oct 2018 00:00:00 +0000</pubDate>
       
-      <guid>http://devpoga.org/post/parsing-streaming-data-actix-lua/</guid>
+      <guid>https://devpoga.org/post/parsing-streaming-data-actix-lua/</guid>
       <description>actix-lua is a library provides a safe scripting environment for actix with the Lua Programming Language.
 I want to share one of my use-case here to demostrate why you might need it. Hope you can try these ideas in your next project.
 Definitely not a world-changing project Path of Exile(PoE) is an online multiplayer RPG. In PoE, players get powerful, unique items by killing monsters. Then, they put their items to the market and trade with others.</description>
