@@ -19,7 +19,7 @@ I was an avid player of the game. I spent hundreds of hours building my characte
 
 ### Revealing secrets via data processing
 
-How do I reveal their secret? I want to know what item they're trading and how do they make profits. Fortunately, PoE provides a public API about the items on the market.
+How do I reveal their secret? I want to know what item they're trading and how do they make profits. Fortunately, PoE provides a [public API](https://pathofexile.gamepedia.com/Public_stash_tab_API) about the items on the market.
 
 Understanding a virtual market in a video game won't make me money (other than some virtual bucks). But hey, it's fun.
 
