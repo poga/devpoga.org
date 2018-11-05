@@ -48,7 +48,7 @@ body {
 h1, h2, h3, h4, h5, h6 {
   font-family: sans-serif;
 	font-weight: 300;
-	margin-bottom:5px;
+	margin-bottom:10px;
 }
 
 h1 {
@@ -84,6 +84,15 @@ p {
   font-style: normal;
   color: rgba(0,0,0, 0.8);
   line-height: 1.6;
+}
+
+ul {
+  font-family: "Noto Serif", "DejaVu Serif", serif;
+  font-size: 16px;
+}
+
+li {
+  line-height: 1.8;
 }
 
 code, tt, pre {
@@ -354,7 +363,7 @@ a.nav-home, a.nav-blog {
 }
 
 .post-header {
-	margin-bottom: 0.5rem;
+	margin-bottom: 1.5rem;
 }
 
 .post-title {
@@ -365,6 +374,7 @@ a.nav-home, a.nav-blog {
 .post-meta {
 	text-transform: uppercase;
 	font-size: .79rem;
+  margin-top: 10px;
 }
 
 .post-footer {
