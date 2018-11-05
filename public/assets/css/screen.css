@@ -29,6 +29,7 @@ html {
 }
 
 body {
+  background-color: rgb(250, 250, 250);
     -webkit-font-feature-settings: 'kern' 1;
     -moz-font-feature-settings: 'kern' 1;
     -ms-font-feature-settings: 'kern' 1;
@@ -361,6 +362,10 @@ a.nav-home, a.nav-blog {
     margin: 2rem auto;
     word-break: break-word;
     hyphens: auto;
+}
+
+.post-content {
+  margin-top: 1.5rem;
 }
 
 .post-header {
