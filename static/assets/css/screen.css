@@ -21,6 +21,7 @@ http://modularscale.com/
 */
 
 html {
+  border-top: 1px solid rgb(252, 126, 15);
     height: 100%;
     max-height: 100%;
     font-size: 112.5%;
