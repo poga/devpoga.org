@@ -52,15 +52,15 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-	font-size: 1.802rem;
-}
-
-h2 {
 	font-size: 1.602rem;
 }
 
+h2 {
+	font-size: 1.402rem;
+}
+
 h3 {
-	font-size: 1.424rem;
+	font-size: 1.324rem;
 }
 
 h4 {
@@ -77,12 +77,13 @@ h6 {
 
 p {
 	margin-top: 0;
+  font-size: 16px;
   font-family: "Noto Serif", "DejaVu Serif", serif;
   font-weight: 400;
   letter-spacing: -.01em;
-  font-size: 1.0625rem;
   font-style: normal;
   color: rgba(0,0,0, 0.8);
+  line-height: 1.6;
 }
 
 code, tt, pre {
