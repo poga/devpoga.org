@@ -378,6 +378,14 @@ a.nav-home, a.nav-blog {
   margin-top: 10px;
 }
 
+footer.post-meta {
+  margin-top: 0;
+}
+
+article.post > header.post-header {
+  margin-bottom: 0.25rem;
+}
+
 .post-footer {
 	margin-top: 2rem;
 }
