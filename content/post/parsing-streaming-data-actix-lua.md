@@ -2,7 +2,8 @@
 author: "Poga Po"
 date: 2018-10-12
 linktitle: Analyze Streaming Data with Rust, Actix, and Lua
-title: Analyze Streaming Data with Rust and Lua
+title: Analyze Streaming Data with Rust, Actix, and Lua
+slug: parsing-streaming-data-actix-lua
 tags:
   - rust
   - lua

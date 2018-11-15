@@ -25,7 +25,7 @@ Brute-force the first step Just draw the first line, write the first function.</
     </item>
     
     <item>
-      <title>Analyze Streaming Data with Rust and Lua</title>
+      <title>Analyze Streaming Data with Rust, Actix, and Lua</title>
       <link>https://devpoga.org/post/parsing-streaming-data-actix-lua/</link>
       <pubDate>Fri, 12 Oct 2018 00:00:00 +0000</pubDate>
       
