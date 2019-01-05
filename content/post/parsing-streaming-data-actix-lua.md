@@ -8,6 +8,8 @@ tags:
   - rust
   - lua
   - actix
+categories:
+  - Programming
 ---
 
 [`actix-lua`](https://github.com/poga/actix-lua) provides a safe scripting environment for the [actix](http://actix.rs) framework with the [Lua Programming Language](http://lua.org).

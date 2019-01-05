@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Self on Dev.Poga</title>
+    <link>https://devpoga.org/tags/self/</link>
+    <description>Recent content in Self on Dev.Poga</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 13 Oct 2018 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://devpoga.org/tags/self/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Brute Force the Blank Canvas</title>
+      <link>https://devpoga.org/post/brute-force-the-blank-canvas/</link>
+      <pubDate>Sat, 13 Oct 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://devpoga.org/post/brute-force-the-blank-canvas/</guid>
+      <description>The first step is always the hardest.
+The dreadful blank canvas The blank canvas is perfect.
+We afraid to change the perfect canvas. The first step, the first paint must also be perfect.
+A blank canvas does not have a single mistake on it. But it&amp;rsquo;s does not have a single useful thing on it, too.
+Brute-force the first step Just draw the first line, write the first function.</description>
+    </item>
+    
+  </channel>
+</rss>

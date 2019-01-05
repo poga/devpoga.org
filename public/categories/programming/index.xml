@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Programming on Dev.Poga</title>
+    <link>https://devpoga.org/categories/programming/</link>
+    <description>Recent content in Programming on Dev.Poga</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 12 Oct 2018 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://devpoga.org/categories/programming/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Analyze Streaming Data with Rust, Actix, and Lua</title>
+      <link>https://devpoga.org/post/parsing-streaming-data-actix-lua/</link>
+      <pubDate>Fri, 12 Oct 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://devpoga.org/post/parsing-streaming-data-actix-lua/</guid>
+      <description>actix-lua provides a safe scripting environment for the actix framework with the Lua Programming Language.
+I want to share one of my use-case here to demostrate why you might need it. Hope you can try these ideas in your next project.
+Definitely not a world-changing project Path of Exile(PoE) is an online multiplayer RPG. In PoE, players get powerful, unique items by killing monsters. Then, they put their items to the market and trade with others.</description>
+    </item>
+    
+  </channel>
+</rss>

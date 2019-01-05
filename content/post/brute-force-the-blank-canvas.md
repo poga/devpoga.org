@@ -3,6 +3,8 @@ author: "Poga Po"
 date: 2018-10-13
 linktitle: Brute Force the Blank Canvas
 title: Brute Force the Blank Canvas
+tags:
+  - self
 ---
 
 The first step is always the hardest.
