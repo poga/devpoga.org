@@ -48,8 +48,8 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: serif;
-	font-weight: 300;
+  font-family: 'Bitter', serif;
+	font-weight: 600;
 	margin-bottom:10px;
 }
 
@@ -80,7 +80,7 @@ h6 {
 p {
 	margin-top: 0;
   font-size: 16px;
-  font-family: sans-serif;
+  font-family: 'Bitter', serif;
   font-weight: 400;
   letter-spacing: -.01em;
   font-style: normal;
