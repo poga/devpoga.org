@@ -151,12 +151,12 @@ hr {
 }
 
 .post a:visited {
-    color: blue;
+    color: #974b09;
     text-decoration: none;
 }
 
 a.read-more, a.read-more:hover, a.read-more:visited {
-    color: #FC7E0F;	/* #DA1F15, #F17F33 */
+    color: #c9640c;
     text-decoration: none;
 }
 
