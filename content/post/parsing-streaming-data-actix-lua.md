@@ -14,7 +14,7 @@ categories:
 
 [`actix-lua`](https://github.com/poga/actix-lua) provides a safe scripting environment for the [actix](http://actix.rs) framework with the [Lua Programming Language](http://lua.org).
 
-I want to share one of my use-case here to demostrate why you might need it. Hope you can try these ideas in your next project.
+Here's an example about what you can achieve with it. Hope you can try these ideas in your next project.
 
 ### Definitely not a world-changing project
 

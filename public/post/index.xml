@@ -31,7 +31,7 @@ Brute-force the first step Just draw the first line, write the first function.</
       
       <guid>https://devpoga.org/post/parsing-streaming-data-actix-lua/</guid>
       <description>actix-lua provides a safe scripting environment for the actix framework with the Lua Programming Language.
-I want to share one of my use-case here to demostrate why you might need it. Hope you can try these ideas in your next project.
+Here&amp;rsquo;s an example about what you can achieve with it. Hope you can try these ideas in your next project.
 Definitely not a world-changing project Path of Exile(PoE) is an online multiplayer RPG. In PoE, players get powerful, unique items by killing monsters. Then, they put their items to the market and trade with others.</description>
     </item>
     
