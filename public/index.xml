@@ -6,10 +6,21 @@
     <description>Recent content on Dev.Poga</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 12 Oct 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 26 Feb 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://devpoga.org/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Notes on the Implementation of Lua 5.3</title>
+      <link>https://devpoga.org/post/implementation-lua53/</link>
+      <pubDate>Tue, 26 Feb 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://devpoga.org/post/implementation-lua53/</guid>
+      <description>Notes on the Implementation on Lua 5.3 is a collection of my notes on the Lua 5.3 source code. It&amp;rsquo;s a mix of both high-level ideas and interesting details in the source code.
+There can be errors. Feel free to contact me if you have any question or feedback.
+Enjoy.</description>
+    </item>
     
     <item>
       <title>About</title>
