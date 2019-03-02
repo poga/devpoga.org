@@ -14,5 +14,12 @@ categories:
 
 There can be errors. Feel free to contact me if you have any question or feedback.
 
+## Why Lua?
+
+In the world of embeddable scripting language, Lua is still the most well-known solution. It's lightweight enough to run on mobile phones, IoT devices. The implementation is simple, efficient, and portable, which makes it a valuable learning target.
+
+Since I'm still a beginner about compiler and interpreters. It strikes a perfect balance for me.
+
+
 Enjoy.
 
