@@ -6,6 +6,8 @@ title: Notes on the Implementation of Lua 5.3
 slug: implementation-lua53
 tags:
   - lua
+  - Interpreter and Compiler
+  - Programming Languages
 categories:
   - Programming
 ---
