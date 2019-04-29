@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    
+    <title>
+      
+      Go，七年後 - Dev.Poga
+      
+		</title>
+
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <link rel="stylesheet" type="text/css" href="/assets/css/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="/assets/css/icons.css" />
+    <link rel="stylesheet" type="text/css" href="/assets/css/screen.css" />
+    
+    <link href="https://fonts.googleapis.com/css?family=Bree+Serif|Lato:100,100i,300,300i,400,400i,700,700i|Source+Code+Pro:300,400,500,700" rel="stylesheet">
+    
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/jquery@1.12.4/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="/assets/bigfoot/dist/bigfoot.js"></script>
+    <link rel="stylesheet" type="text/css" href="/assets/bigfoot/dist/bigfoot-number.css" />
+    <script type="text/javascript">
+        $.bigfoot();
+    </script>
+    
+    
+</head>
+
+    <body class="post-template">
+        <header class="main-header">
+	<div class="main-header-content">
+		<h1 class="blog-title">
+			<a href="/">
+				
+           Dev.Poga
+				
+			</a>
+		</h1>
+		<h2 class="blog-description"></h2>
+	</div>
+
+	<div class="nav">
+    
+		
+      <a class="nav- " role="presentation" href="/about/">About</a>
+		
+	</div>
+</header>
+
+        
+<main class="content" role="main">
+  <article class="post">
+    <header class="post-header">
+      
+      <h2 class="post-title">Go，七年後</h2>
+      <section class="post-meta">
+        <time class="post-date">2019-04-29</time>
+        in
+        <a href="https://devpoga.org/categories/programming/">Programming</a>
+          
+        
+
+      </section>
+    </header>
+    <section class="post-content">
+      
+
+<p>從<a href="https://blog.golang.org/go-version-1-is-released">開始接觸 Go</a> 到現在也已經過了 7 年了啊&hellip; 最近又有機會拿出 Go 出來寫寫，隨手寫一下感受。</p>
+
+<h2 id="編輯器">編輯器</h2>
+
+<p><code>vim</code> 還是很好用。</p>
+
+<p>這幾年微軟提出的 <a href="https://microsoft.github.io/language-server-protocol/">Language Server Protocol</a> 相當受到社群歡迎，也算是解決了程式語言跟編輯器社群長久以來的困境，成長相當快速。vim plugin 也跟風從 <code>vim-go</code> 換成基於 Language Server Protocol 的 <a href="https://github.com/autozimu/LanguageClient-neovim">LanguageClient-neovim</a> 配上 <a href="https://github.com/saibing/bingo">bingo</a>。有點小不穩但是功能算齊全。</p>
+
+<p>tagbar 一樣是用 <code>gotags</code> 沒變</p>
+
+<h2 id="dependency-management">Dependency Management</h2>
+
+<p>當年被這問題惹毛好幾次，2019 年的今天似乎 Go 社群終於要收斂到一個比較好的作法上了&hellip; 目前 go module 用起來有些陽春，有些怪異，不過堪用。</p>
+
+<p>終於不用再處理 <code>GOPATH</code> 的鳥事了&hellip; 真是令人感動啊。</p>
+
+<h2 id="sync-map">Sync Map</h2>
+
+<p>當初堅持說不需要，最後還是提供 <a href="https://golang.org/pkg/sync/#Map">sync.Map</a> 了嘛。</p>
+
+<p>&ndash;</p>
+
+<p>好像就這樣了。</p>
+
+<p>雖然這語言還是有很多我不喜歡的地方，不過，一個語言可以經過這麼久都沒啥改變的堅持跟說服力，我也是相當欽佩。</p>
+
+    </section>
+    <footer class="post-footer">
+      <section class="tags post-meta">
+        Tagged
+        <a href="https://devpoga.org/tags/go/">go</a>
+          <a href="https://devpoga.org/tags/editor/">editor</a>
+          <a href="https://devpoga.org/tags/programming-languages/">Programming Languages</a>
+          
+      </section>
+    </footer>
+  </article>
+</main>
+
+        <footer class="site-footer">
+  <section class="rss"><a class="subscribe-button icon-feed" href="/index.xml"></a></section>
+  <section class="twitter"><a class="icon-twitter" href="https://twitter.com/devpoga"> devpoga</a></section>
+  
+  <section class="copyright">&copy; 2019 Dev.Poga</section>
+  <section class="poweredby"><a href="http://thedarkroast.com/arabica">Arabica</a> theme by Sean Lunsford. Published with <a href="https://gohugo.io">Hugo</a>.</section>
+</footer>
+
+
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-88018665-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-88018665-1');
+</script>
+
+    </body>
+</html>

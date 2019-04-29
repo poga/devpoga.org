@@ -6,17 +6,35 @@
     <description>Recent content in Tags on Dev.Poga</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 12 Oct 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 29 Apr 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://devpoga.org/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>Actix</title>
-      <link>https://devpoga.org/tags/actix/</link>
-      <pubDate>Fri, 12 Oct 2018 00:00:00 +0000</pubDate>
+      <title>Programming Languages</title>
+      <link>https://devpoga.org/tags/programming-languages/</link>
+      <pubDate>Mon, 29 Apr 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://devpoga.org/tags/actix/</guid>
+      <guid>https://devpoga.org/tags/programming-languages/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>editor</title>
+      <link>https://devpoga.org/tags/editor/</link>
+      <pubDate>Mon, 29 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://devpoga.org/tags/editor/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>go</title>
+      <link>https://devpoga.org/tags/go/</link>
+      <pubDate>Mon, 29 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://devpoga.org/tags/go/</guid>
       <description></description>
     </item>
     
@@ -30,7 +48,7 @@
     </item>
     
     <item>
-      <title>Lua</title>
+      <title>lua</title>
       <link>https://devpoga.org/tags/lua/</link>
       <pubDate>Tue, 26 Feb 2019 00:00:00 +0000</pubDate>
       
@@ -39,16 +57,16 @@
     </item>
     
     <item>
-      <title>Programming Languages</title>
-      <link>https://devpoga.org/tags/programming-languages/</link>
-      <pubDate>Tue, 26 Feb 2019 00:00:00 +0000</pubDate>
+      <title>actix</title>
+      <link>https://devpoga.org/tags/actix/</link>
+      <pubDate>Fri, 12 Oct 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://devpoga.org/tags/programming-languages/</guid>
+      <guid>https://devpoga.org/tags/actix/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Rust</title>
+      <title>rust</title>
       <link>https://devpoga.org/tags/rust/</link>
       <pubDate>Fri, 12 Oct 2018 00:00:00 +0000</pubDate>
       

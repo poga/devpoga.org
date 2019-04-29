@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Programming Languages on Dev.Poga</title>
-    <link>https://devpoga.org/tags/programming-languages/</link>
-    <description>Recent content in Programming Languages on Dev.Poga</description>
+    <title>go on Dev.Poga</title>
+    <link>https://devpoga.org/tags/go/</link>
+    <description>Recent content in go on Dev.Poga</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 29 Apr 2019 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://devpoga.org/tags/programming-languages/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://devpoga.org/tags/go/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
@@ -27,17 +27,6 @@ Sync Map 當初堅持說不需要，最後還是提供 sync.Map 了嘛。
 &amp;ndash;
 好像就這樣了。
 雖然這語言還是有很多我不喜歡的地方，不過，一個語言可以經過這麼久都沒啥改變的堅持跟說服力，我也是相當欽佩。</description>
-    </item>
-    
-    <item>
-      <title>Notes on the Implementation of Lua 5.3</title>
-      <link>https://devpoga.org/post/implementation-lua53/</link>
-      <pubDate>Tue, 26 Feb 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://devpoga.org/post/implementation-lua53/</guid>
-      <description>Notes on the Implementation on Lua 5.3 is a collection of my notes on the Lua 5.3 source code. It&amp;rsquo;s a mix of both high-level ideas and interesting details in the source code.
-There can be errors. Feel free to contact me if you have any question or feedback.
-Why Lua? In the world of embeddable scripting language, Lua is still the most well-known solution. It&amp;rsquo;s lightweight enough to run on mobile phones, IoT devices.</description>
     </item>
     
   </channel>
