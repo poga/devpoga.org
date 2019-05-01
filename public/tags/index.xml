@@ -48,7 +48,7 @@
     </item>
     
     <item>
-      <title>lua</title>
+      <title>Lua</title>
       <link>https://devpoga.org/tags/lua/</link>
       <pubDate>Tue, 26 Feb 2019 00:00:00 +0000</pubDate>
       
@@ -57,7 +57,7 @@
     </item>
     
     <item>
-      <title>actix</title>
+      <title>Actix</title>
       <link>https://devpoga.org/tags/actix/</link>
       <pubDate>Fri, 12 Oct 2018 00:00:00 +0000</pubDate>
       
@@ -66,11 +66,191 @@
     </item>
     
     <item>
-      <title>rust</title>
+      <title>Rust</title>
       <link>https://devpoga.org/tags/rust/</link>
       <pubDate>Fri, 12 Oct 2018 00:00:00 +0000</pubDate>
       
       <guid>https://devpoga.org/tags/rust/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>生產力</title>
+      <link>https://devpoga.org/tags/%E7%94%9F%E7%94%A2%E5%8A%9B/</link>
+      <pubDate>Thu, 27 Sep 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://devpoga.org/tags/%E7%94%9F%E7%94%A2%E5%8A%9B/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>科普</title>
+      <link>https://devpoga.org/tags/%E7%A7%91%E6%99%AE/</link>
+      <pubDate>Mon, 16 Jul 2018 06:19:38 +0000</pubDate>
+      
+      <guid>https://devpoga.org/tags/%E7%A7%91%E6%99%AE/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>系統架構</title>
+      <link>https://devpoga.org/tags/%E7%B3%BB%E7%B5%B1%E6%9E%B6%E6%A7%8B/</link>
+      <pubDate>Mon, 16 Jul 2018 06:19:38 +0000</pubDate>
+      
+      <guid>https://devpoga.org/tags/%E7%B3%BB%E7%B5%B1%E6%9E%B6%E6%A7%8B/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>遊戲開發</title>
+      <link>https://devpoga.org/tags/%E9%81%8A%E6%88%B2%E9%96%8B%E7%99%BC/</link>
+      <pubDate>Mon, 16 Jul 2018 06:19:38 +0000</pubDate>
+      
+      <guid>https://devpoga.org/tags/%E9%81%8A%E6%88%B2%E9%96%8B%E7%99%BC/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Luajit</title>
+      <link>https://devpoga.org/tags/luajit/</link>
+      <pubDate>Wed, 18 Apr 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://devpoga.org/tags/luajit/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>帶您讀原碼</title>
+      <link>https://devpoga.org/tags/%E5%B8%B6%E6%82%A8%E8%AE%80%E5%8E%9F%E7%A2%BC/</link>
+      <pubDate>Wed, 18 Apr 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://devpoga.org/tags/%E5%B8%B6%E6%82%A8%E8%AE%80%E5%8E%9F%E7%A2%BC/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Serverless</title>
+      <link>https://devpoga.org/tags/serverless/</link>
+      <pubDate>Tue, 06 Feb 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://devpoga.org/tags/serverless/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Kappa</title>
+      <link>https://devpoga.org/tags/kappa/</link>
+      <pubDate>Fri, 22 Dec 2017 07:32:07 +0000</pubDate>
+      
+      <guid>https://devpoga.org/tags/kappa/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Log</title>
+      <link>https://devpoga.org/tags/log/</link>
+      <pubDate>Fri, 22 Dec 2017 07:32:07 +0000</pubDate>
+      
+      <guid>https://devpoga.org/tags/log/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Burnout</title>
+      <link>https://devpoga.org/tags/burnout/</link>
+      <pubDate>Mon, 02 Oct 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://devpoga.org/tags/burnout/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Open Source</title>
+      <link>https://devpoga.org/tags/open-source/</link>
+      <pubDate>Mon, 02 Oct 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://devpoga.org/tags/open-source/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Ownership</title>
+      <link>https://devpoga.org/tags/ownership/</link>
+      <pubDate>Mon, 02 Oct 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://devpoga.org/tags/ownership/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Omnifocus</title>
+      <link>https://devpoga.org/tags/omnifocus/</link>
+      <pubDate>Thu, 16 Feb 2017 18:58:42 +0000</pubDate>
+      
+      <guid>https://devpoga.org/tags/omnifocus/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Productivity</title>
+      <link>https://devpoga.org/tags/productivity/</link>
+      <pubDate>Thu, 16 Feb 2017 18:58:42 +0000</pubDate>
+      
+      <guid>https://devpoga.org/tags/productivity/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Coscup</title>
+      <link>https://devpoga.org/tags/coscup/</link>
+      <pubDate>Sat, 27 Aug 2016 05:06:01 +0000</pubDate>
+      
+      <guid>https://devpoga.org/tags/coscup/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Design</title>
+      <link>https://devpoga.org/tags/design/</link>
+      <pubDate>Sun, 17 Jul 2016 06:02:04 +0000</pubDate>
+      
+      <guid>https://devpoga.org/tags/design/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>UX</title>
+      <link>https://devpoga.org/tags/ux/</link>
+      <pubDate>Sun, 17 Jul 2016 06:02:04 +0000</pubDate>
+      
+      <guid>https://devpoga.org/tags/ux/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Communicating</title>
+      <link>https://devpoga.org/tags/communicating/</link>
+      <pubDate>Tue, 17 May 2016 15:09:04 +0000</pubDate>
+      
+      <guid>https://devpoga.org/tags/communicating/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Story Telling</title>
+      <link>https://devpoga.org/tags/story-telling/</link>
+      <pubDate>Tue, 17 May 2016 15:09:04 +0000</pubDate>
+      
+      <guid>https://devpoga.org/tags/story-telling/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Teaching</title>
+      <link>https://devpoga.org/tags/teaching/</link>
+      <pubDate>Tue, 17 May 2016 15:09:04 +0000</pubDate>
+      
+      <guid>https://devpoga.org/tags/teaching/</guid>
       <description></description>
     </item>
     

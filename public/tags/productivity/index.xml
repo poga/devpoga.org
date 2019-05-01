@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Productivity on Dev.Poga</title>
+    <link>https://devpoga.org/tags/productivity/</link>
+    <description>Recent content in Productivity on Dev.Poga</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 16 Feb 2017 18:58:42 +0000</lastBuildDate>
+    
+	<atom:link href="https://devpoga.org/tags/productivity/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>又回來用 Omnifocus 了</title>
+      <link>https://devpoga.org/post/2017-02-16_%E5%8F%88%E5%9B%9E%E4%BE%86%E7%94%A8-omnifocus-%E4%BA%86/</link>
+      <pubDate>Thu, 16 Feb 2017 18:58:42 +0000</pubDate>
+      
+      <guid>https://devpoga.org/post/2017-02-16_%E5%8F%88%E5%9B%9E%E4%BE%86%E7%94%A8-omnifocus-%E4%BA%86/</guid>
+      <description>當初那忙到吐血的兩三年中，幾乎都是靠著 Omnifocus 在維持生活的運作。
+等到終於比較不忙，Omnifocus 的備份也不知為何爆炸了，累積多年的 task 就這樣全部消失。我也（又）重新開始尋找適合的工作管理工具。
+在 Todoist 短暫停留了一年多後，最近又重新開始用 Omnifocus。軟體沒什麼大改變，多年累積的肌肉記憶，自然的與番茄鐘並存。這次順暢依舊，只是少了當年的焦慮與衝刺。
+And it still looks fucking amazing.</description>
+    </item>
+    
+  </channel>
+</rss>

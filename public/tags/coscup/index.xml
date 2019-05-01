@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Coscup on Dev.Poga</title>
+    <link>https://devpoga.org/tags/coscup/</link>
+    <description>Recent content in Coscup on Dev.Poga</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 27 Aug 2016 05:06:01 +0000</lastBuildDate>
+    
+	<atom:link href="https://devpoga.org/tags/coscup/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>萬事萬物皆是 LOG — 參考資料</title>
+      <link>https://devpoga.org/post/2016-08-27_%E8%90%AC%E4%BA%8B%E8%90%AC%E7%89%A9%E7%9A%86%E6%98%AF-log-%E5%8F%83%E8%80%83%E8%B3%87%E6%96%99/</link>
+      <pubDate>Sat, 27 Aug 2016 05:06:01 +0000</pubDate>
+      
+      <guid>https://devpoga.org/post/2016-08-27_%E8%90%AC%E4%BA%8B%E8%90%AC%E7%89%A9%E7%9A%86%E6%98%AF-log-%E5%8F%83%E8%80%83%E8%B3%87%E6%96%99/</guid>
+      <description>之前在 COSCUP 2016 榮幸講了一場 萬事萬物皆是 Log — 系統架構也來點科普。結束後被詢問有沒有一些靈感來源、延伸讀物、參考資料等等，這裡就把我有記下來的參考資料整理在此。一些時間關係沒有帶到的主題就也一起放在這了。
+ Linkedin 工程師寫的關於 LOG 架構的長篇好文，強烈推薦閱讀。 https://engineering.linkedin.com/distributed-systems/log-what-every-software-engineer-should-know-about-real-time-datas-unifying
+ Microservice: http://blog.christianposta.com/microservices/the-hardest-part-about-microservices-data/ http://blog.christianposta.com/microservices/why-microservices-should-be-event-driven-autonomy-vs-authority/
+ 講 Apache Samza 如何用 LOG 整個拆解掉 Database。很精彩，大推薦！ http://www.confluent.io/blog/turning-the-database-inside-out-with-apache-samza/
+ Stream Processing： Spark: https://spark.apache.org/ Storm: https://storm.apache.org/ Kafka: https://kafka.apache.org/
+ Immutable Database — Datomic: http://www.datomic.com/rationale.html
+ Lamport Timestamp：所有對分散式系統有興趣的人都一定要瞭解一下。 http://www.goodmath.org/blog/2016/03/16/time-in-distributed-systems-lamport-timestamps/
+ CRDT：這也是我最近很有興趣的主題，條列一些參考資料在此。 https://swarmjs.github.io/articles/papoc/
+ A comprehensive study of Convergent and Commutative Replicated Data Types: http://hal.upmc.fr/inria-00555588/document http://underscore.io/blog/posts/2013/12/20/crdts-for-fun-and-eventual-profit.html
+ Google Spanner： https://static.googleusercontent.com/external_content/untrusted_dlcp/research.google.com/en/us/archive/spanner-osdi2012.pdf
+ Martin 大叔介紹的 Event Sourcing 架構 http://martinfowler.</description>
+    </item>
+    
+    <item>
+      <title>萬事萬物皆是 LOG — 系統架構也來點科普</title>
+      <link>https://devpoga.org/post/2016-08-20_%E8%90%AC%E4%BA%8B%E8%90%AC%E7%89%A9%E7%9A%86%E6%98%AF-log-%E7%B3%BB%E7%B5%B1%E6%9E%B6%E6%A7%8B%E4%B9%9F%E4%BE%86%E9%BB%9E%E7%A7%91%E6%99%AE/</link>
+      <pubDate>Sat, 20 Aug 2016 05:06:01 +0000</pubDate>
+      
+      <guid>https://devpoga.org/post/2016-08-20_%E8%90%AC%E4%BA%8B%E8%90%AC%E7%89%A9%E7%9A%86%E6%98%AF-log-%E7%B3%BB%E7%B5%B1%E6%9E%B6%E6%A7%8B%E4%B9%9F%E4%BE%86%E9%BB%9E%E7%A7%91%E6%99%AE/</guid>
+      <description>這是 COSCUP 2016 的講題逐字稿，投影片在此 另有延伸參考資料
+自古以來，軟體工程師都在追求好維護，容易理解的軟體架構。傳統上，我們需要參與過各種大型軟體專案，從中獲取經驗，或是透過昂貴的課程，大量的論文，才能從前人的經驗中學到一些方法。
+今天，我想試著透過 LOG 這個人人都碰過的資料結構，來解釋許多複雜系統的核心，只要你能理解 LOG，你就能設計出好理解、容易維護的系統架構。
+什麼是 LOG？每個人第一次寫程式時，輸出的 “Hello World” 是一種 LOG，工作時使用 Slack 有 LOG，你的伺服器有 Access Log。LOG 就是由兩個特性組成的資料結構：
+ 訊息按照時序出現 出現過的訊息不會改變  「出現過的訊息不會改變」這件事，也被叫做 Append Only。
+Log 這樣的性質，常常在我們 Debug 的時候被拿出來用。很多時候，Debug 便是推論事件的因果關係，Log 的特性便能讓我們透過文字來理解系統內發生的事件的因果。
+不只是 Debug，許多大型複雜架構中，都是透過 Log 來解決各種困難的問題。資料庫、分散式系統、版本控制、同步、備份、訊息傳遞、前端 UI… 都使用了 Log。
+所以聽完這場，你就理解了軟體架構的真理（誤）
+接下來，我會透過各種實際的例子，介紹在各領域中使用 Log 的範例。
+首先我們來談談資料庫。
+如果你沒聽過資料庫，這東西的用途很單純，當你需要存取大量資料，又要確保資料正確性的時候，就會用到資料庫。資料庫為了確保存入的資料的正確性，提供了相當多的工具，像是 Relation、Schema、Validation、ACID Transaction… 等等。
+同時，為了能有效讀取大量資料，資料庫也會建索引（Index），也會說 SQL。
+所以資料庫寫入的時候其實很忙，這時候就有個問題：如果寫入到一半當機了會怎樣？既然寫入時要做這麼多事，做到一半資料損毀不就糟了？
+為了解決這個問題，資料庫在真正寫入並且進行前述的複雜操作前，會先寫下一條 LOG，記載「什麼時間」「我要對資料進行什麼修改」。
+接著，才會開始真正的寫入。即使寫入到一半失敗了，也有 LOG 作為依據，檢查是否有未完成的修改，等到系統穩定後再重新寫入。
+這樣的技巧，叫做 Write-ahead log，也就是在實際寫入前先寫入一條 LOG，作為驗證的依據。
+這便是 LOG 第一個好用的性質，它格式簡單，寫入快速，可以作為複雜操作的前置動作，方便驗證。
+讓我們繼續來聊聊資料庫。
+前面提到，資料庫寫入時要做非常多的工作，所以非常的吃硬體效能。一旦單一機器無法負荷我們所需的資料量時，就需要多台硬體一起來分擔。
+這時候，就進入另一個複雜的領域了。當你只寫入一次，要怎麼確保所有機器上的資料都正確被修改了？
+前面的 Write-head Log 這時候就很好用。由於 LOG 記載了資料庫應該要做的修改動作，只要把這份 LOG 傳送給其他台機器，讓其他機器照著做，所有機器儲存的資料便會一樣。不需要把複雜的 Index、Relation、Schema 都傳過去，只要傳 LOG 就好了。這樣的技巧，叫做 Log Shipping。</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>遊戲開發 on Dev.Poga</title>
+    <link>https://devpoga.org/tags/%E9%81%8A%E6%88%B2%E9%96%8B%E7%99%BC/</link>
+    <description>Recent content in 遊戲開發 on Dev.Poga</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 16 Jul 2018 06:19:38 +0000</lastBuildDate>
+    
+	<atom:link href="https://devpoga.org/tags/%E9%81%8A%E6%88%B2%E9%96%8B%E7%99%BC/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>軟體設計模式 — Data-Oriented Design</title>
+      <link>https://devpoga.org/post/2018-07-16_%E8%BB%9F%E9%AB%94%E8%A8%AD%E8%A8%88%E6%A8%A1%E5%BC%8F-dataoriented-design/</link>
+      <pubDate>Mon, 16 Jul 2018 06:19:38 +0000</pubDate>
+      
+      <guid>https://devpoga.org/post/2018-07-16_%E8%BB%9F%E9%AB%94%E8%A8%AD%E8%A8%88%E6%A8%A1%E5%BC%8F-dataoriented-design/</guid>
+      <description>Photo by Rebecca Oliver on Unsplash
+遊戲開發對很多開發者來說是個陌生的領域。遊戲對於效能的極高要求跟規格的不確定性，產生出了許多特有的系統架構。Data-Oriented Design 便是個有趣的設計模式。
+相較於其他設計模式，Data-Oriented Design 深受硬體快取（cache）架構影響。對於現代的高度 pipeline、高速的 CPU 架構而言，資料的存取方式對效能有非常大的影響。比起 L1、L2 cache，對主記憶體的一次存取帶來的是數百倍的效能損耗。為了避免太過抽象，就用個實際的例子來解釋吧。
+假設我們的遊戲中有許多的球，每個球有顏色、位置、半徑等等資訊。對於學過物件導向的人而言，很可能直覺的設計成這樣：
+class Ball { Point position; Color color; double radius; }  這樣的作法很符合人對世界的理解：每個球是獨立的個體，有自己的屬性。
+不過，如果遊戲中有數百萬個球在移動，這樣的作法的效能就不太好了。每個球的座標都經過物件導向的層層封裝，分散在記憶體四處，spatial locality 非常差，在更新的過程中產生了大量的 cache miss。
+There’s no ball 如果採用 Data-Oriented Design 的話，作法會變成：
+class Balls { vector&amp;lt;Point&amp;gt; positions; vector&amp;lt;Color&amp;gt; color; vector&amp;lt;double&amp;gt; radius; }  於是我們的程式中不再有「獨立的球」這個設計存在，所謂的球，只是透過一個 index，含蓄的存在遊戲世界中。
+這樣的作法，對人而言並不直覺，但是對硬體而言，效能好上許多。大多數的 vector 實做，都會將其中的內容放在一段連續的記憶體空間中。因此 spatial locality 很好，對 CPU 而言，他能很輕易的猜到接下來要存取的記憶體位址，省下許多猜錯而損失的 CPU cycle。
+SoA 與 AoS 這兩種作法又分別被稱做 Array of Structs 跟 Structs of Arrays。前者是用一個陣列存放許多獨立的 struct（class），後者是用一個 struct（class）存放許多陣列。</description>
+    </item>
+    
+  </channel>
+</rss>

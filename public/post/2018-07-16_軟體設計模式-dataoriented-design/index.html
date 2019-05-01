@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    
+    <title>
+      
+      軟體設計模式 — Data-Oriented Design - Dev.Poga
+      
+		</title>
+
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <link rel="stylesheet" type="text/css" href="/assets/css/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="/assets/css/icons.css" />
+    <link rel="stylesheet" type="text/css" href="/assets/css/screen.css" />
+    
+    <link href="https://fonts.googleapis.com/css?family=Bree+Serif|Lato:100,100i,300,300i,400,400i,700,700i|Source+Code+Pro:300,400,500,700" rel="stylesheet">
+    
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/jquery@1.12.4/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="/assets/bigfoot/dist/bigfoot.js"></script>
+    <link rel="stylesheet" type="text/css" href="/assets/bigfoot/dist/bigfoot-number.css" />
+    <script type="text/javascript">
+        $.bigfoot();
+    </script>
+    
+    
+</head>
+
+    <body class="post-template">
+        <header class="main-header">
+	<div class="main-header-content">
+		<h1 class="blog-title">
+			<a href="/">
+				
+           Dev.Poga
+				
+			</a>
+		</h1>
+		<h2 class="blog-description"></h2>
+	</div>
+
+	<div class="nav">
+    
+		
+      <a class="nav- " role="presentation" href="/about/">About</a>
+		
+	</div>
+</header>
+
+        
+<main class="content" role="main">
+  <article class="post">
+    <header class="post-header">
+      <h2 class="post-title">軟體設計模式 — Data-Oriented Design</h2>
+      <section class="post-meta">
+        <time class="post-date">2018-07-16</time>
+        
+
+      </section>
+    </header>
+    <section class="post-content">
+      
+
+<p><img src="/post/2018-07-16_軟體設計模式-dataoriented-design/images/1.jpeg" alt="image" /></p>
+
+<p>Photo by <a href="https://unsplash.com/photos/BpqDaDxG48w?utm_source=unsplash&amp;amp;utm_medium=referral&amp;amp;utm_content=creditCopyText">Rebecca Oliver</a> on <a href="https://unsplash.com/search/photos/game?utm_source=unsplash&amp;amp;utm_medium=referral&amp;amp;utm_content=creditCopyText">Unsplash</a></p>
+
+<p>遊戲開發對很多開發者來說是個陌生的領域。遊戲對於效能的極高要求跟規格的不確定性，產生出了許多特有的系統架構。Data-Oriented Design 便是個有趣的設計模式。</p>
+
+<p>相較於其他設計模式，Data-Oriented Design 深受硬體快取（cache）架構影響。對於現代的高度 pipeline、高速的 CPU 架構而言，資料的存取方式對效能有非常大的影響。比起 L1、L2 cache，對主記憶體的一次存取帶來的是數百倍的效能損耗。為了避免太過抽象，就用個實際的例子來解釋吧。</p>
+
+<p>假設我們的遊戲中有許多的球，每個球有顏色、位置、半徑等等資訊。對於學過物件導向的人而言，很可能直覺的設計成這樣：</p>
+
+<pre><code>class Ball {
+ Point position;
+ Color color;
+ double radius;
+}
+</code></pre>
+
+<p>這樣的作法很符合人對世界的理解：每個球是獨立的個體，有自己的屬性。</p>
+
+<p>不過，如果遊戲中有數百萬個球在移動，這樣的作法的效能就不太好了。每個球的座標都經過物件導向的層層封裝，分散在記憶體四處，spatial locality 非常差，在更新的過程中產生了大量的 cache miss。</p>
+
+<h4 id="there-s-no-ball">There’s no ball</h4>
+
+<p>如果採用 Data-Oriented Design 的話，作法會變成：</p>
+
+<pre><code>class Balls {
+ vector&lt;Point&gt; positions;
+ vector&lt;Color&gt; color;
+ vector&lt;double&gt; radius;
+}
+</code></pre>
+
+<p>於是我們的程式中不再有「獨立的球」這個設計存在，所謂的球，只是透過一個 index，含蓄的存在遊戲世界中。</p>
+
+<p>這樣的作法，對人而言並不直覺，但是對硬體而言，效能好上許多。大多數的 vector 實做，都會將其中的內容放在一段連續的記憶體空間中。因此 spatial locality 很好，對 CPU 而言，他能很輕易的猜到接下來要存取的記憶體位址，省下許多猜錯而損失的 CPU cycle。</p>
+
+<h4 id="soa-與-aos">SoA 與 AoS</h4>
+
+<p>這兩種作法又分別被稱做 Array of Structs 跟 Structs of Arrays。前者是用一個陣列存放許多獨立的 struct（class），後者是用一個 struct（class）存放許多陣列。</p>
+
+<p>實際開發時，很難臨時在這兩種模式中轉換。對程式而言，model 遊戲世界的方式完全不同。所以常常一開始用了直覺的 AoS 開發，發現效能不好，需要換成 SoA 時卻無從下手。遊戲開發在介面設計跟系統架構上，都有很多很經典的範例啊…</p>
+
+    </section>
+    <footer class="post-footer">
+      <section class="tags post-meta">
+        Tagged
+        <a href="https://devpoga.org/tags/%E9%81%8A%E6%88%B2%E9%96%8B%E7%99%BC/">遊戲開發</a>
+          <a href="https://devpoga.org/tags/%E7%A7%91%E6%99%AE/">科普</a>
+          <a href="https://devpoga.org/tags/%E7%B3%BB%E7%B5%B1%E6%9E%B6%E6%A7%8B/">系統架構</a>
+          
+      </section>
+    </footer>
+  </article>
+</main>
+
+        <footer class="site-footer">
+  <section class="rss"><a class="subscribe-button icon-feed" href="/index.xml"></a></section>
+  <section class="twitter"><a class="icon-twitter" href="https://twitter.com/devpoga"> devpoga</a></section>
+  
+  <section class="copyright">&copy; 2019 Dev.Poga</section>
+  <section class="poweredby"><a href="http://thedarkroast.com/arabica">Arabica</a> theme by Sean Lunsford. Published with <a href="https://gohugo.io">Hugo</a>.</section>
+</footer>
+
+
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-88018665-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-88018665-1');
+</script>
+
+    </body>
+</html>

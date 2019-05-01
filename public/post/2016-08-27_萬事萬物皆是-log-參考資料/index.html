@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    
+    <title>
+      
+      萬事萬物皆是 LOG — 參考資料 - Dev.Poga
+      
+		</title>
+
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <link rel="stylesheet" type="text/css" href="/assets/css/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="/assets/css/icons.css" />
+    <link rel="stylesheet" type="text/css" href="/assets/css/screen.css" />
+    
+    <link href="https://fonts.googleapis.com/css?family=Bree+Serif|Lato:100,100i,300,300i,400,400i,700,700i|Source+Code+Pro:300,400,500,700" rel="stylesheet">
+    
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/jquery@1.12.4/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="/assets/bigfoot/dist/bigfoot.js"></script>
+    <link rel="stylesheet" type="text/css" href="/assets/bigfoot/dist/bigfoot-number.css" />
+    <script type="text/javascript">
+        $.bigfoot();
+    </script>
+    
+    
+</head>
+
+    <body class="post-template">
+        <header class="main-header">
+	<div class="main-header-content">
+		<h1 class="blog-title">
+			<a href="/">
+				
+           Dev.Poga
+				
+			</a>
+		</h1>
+		<h2 class="blog-description"></h2>
+	</div>
+
+	<div class="nav">
+    
+		
+      <a class="nav- " role="presentation" href="/about/">About</a>
+		
+	</div>
+</header>
+
+        
+<main class="content" role="main">
+  <article class="post">
+    <header class="post-header">
+      <h2 class="post-title">萬事萬物皆是 LOG — 參考資料</h2>
+      <section class="post-meta">
+        <time class="post-date">2016-08-27</time>
+        
+
+      </section>
+    </header>
+    <section class="post-content">
+      <p>之前在 COSCUP 2016 榮幸講了一場 萬事萬物皆是 Log — 系統架構也來點科普。結束後被詢問有沒有一些靈感來源、延伸讀物、參考資料等等，這裡就把我有記下來的參考資料整理在此。一些時間關係沒有帶到的主題就也一起放在這了。</p>
+
+<ul>
+<li><p>Linkedin 工程師寫的關於 LOG 架構的長篇好文，強烈推薦閱讀。
+<a href="https://engineering.linkedin.com/distributed-systems/log-what-every-software-engineer-should-know-about-real-time-datas-unifying">https://engineering.linkedin.com/distributed-systems/log-what-every-software-engineer-should-know-about-real-time-datas-unifying</a></p></li>
+
+<li><p>Microservice:
+<a href="http://blog.christianposta.com/microservices/the-hardest-part-about-microservices-data/">http://blog.christianposta.com/microservices/the-hardest-part-about-microservices-data/</a>
+<a href="http://blog.christianposta.com/microservices/why-microservices-should-be-event-driven-autonomy-vs-authority/">http://blog.christianposta.com/microservices/why-microservices-should-be-event-driven-autonomy-vs-authority/</a></p></li>
+
+<li><p>講 Apache Samza 如何用 LOG 整個拆解掉 Database。很精彩，大推薦！
+<a href="http://www.confluent.io/blog/turning-the-database-inside-out-with-apache-samza/">http://www.confluent.io/blog/turning-the-database-inside-out-with-apache-samza/</a></p></li>
+
+<li><p>Stream Processing：
+Spark: <a href="https://spark.apache.org/">https://spark.apache.org/</a>
+Storm: <a href="https://storm.apache.org/">https://storm.apache.org/</a>
+Kafka: <a href="https://kafka.apache.org/">https://kafka.apache.org/</a></p></li>
+
+<li><p>Immutable Database — Datomic: <a href="http://www.datomic.com/rationale.html">http://www.datomic.com/rationale.html</a></p></li>
+
+<li><p>Lamport Timestamp：所有對分散式系統有興趣的人都一定要瞭解一下。
+<a href="http://www.goodmath.org/blog/2016/03/16/time-in-distributed-systems-lamport-timestamps/">http://www.goodmath.org/blog/2016/03/16/time-in-distributed-systems-lamport-timestamps/</a></p></li>
+
+<li><p>CRDT：這也是我最近很有興趣的主題，條列一些參考資料在此。
+<a href="https://swarmjs.github.io/articles/papoc/">https://swarmjs.github.io/articles/papoc/</a></p></li>
+
+<li><p>A comprehensive study of Convergent and Commutative Replicated Data Types: <a href="http://hal.upmc.fr/inria-00555588/document">http://hal.upmc.fr/inria-00555588/document</a>
+<a href="http://underscore.io/blog/posts/2013/12/20/crdts-for-fun-and-eventual-profit.html">http://underscore.io/blog/posts/2013/12/20/crdts-for-fun-and-eventual-profit.html</a></p></li>
+
+<li><p>Google Spanner：
+<a href="https://static.googleusercontent.com/external_content/untrusted_dlcp/research.google.com/en/us/archive/spanner-osdi2012.pdf">https://static.googleusercontent.com/external_content/untrusted_dlcp/research.google.com/en/us/archive/spanner-osdi2012.pdf</a></p></li>
+
+<li><p>Martin 大叔介紹的 Event Sourcing 架構 <a href="http://martinfowler.com/eaaDev/EventSourcing.html">http://martinfowler.com/eaaDev/EventSourcing.html</a>
+An Introduction to Distributed System
+<a href="https://github.com/aphyr/distsys-class">https://github.com/aphyr/distsys-class</a></p></li>
+
+<li><p>Lambda/Kappa Architecture
+<a href="https://www.oreilly.com/ideas/questioning-the-lambda-architecture">https://www.oreilly.com/ideas/questioning-the-lambda-architecture</a>
+<a href="http://milinda.pathirage.org/kappa-architecture.com/">http://milinda.pathirage.org/kappa-architecture.com/</a></p></li>
+
+<li><p>Consistent Hashing/CAP/Merkle Tree 三個分散式系統常見元素的系列介紹文：
+<a href="https://loveforprogramming.quora.com/Distributed-Systems-Part-1-A-peek-into-consistent-hashing">https://loveforprogramming.quora.com/Distributed-Systems-Part-1-A-peek-into-consistent-hashing</a>
+<a href="https://loveforprogramming.quora.com/Distributed-Systems-Part-2-Consistency-versus-Availability-A-Pragmatic-Examplehttps://loveforprogramming.quora.com/Distributed-Systems-Part-3-Managing-Anti-Entropy-using-Merkle-Trees">https://loveforprogramming.quora.com/Distributed-Systems-Part-2-Consistency-versus-Availability-A-Pragmatic-Examplehttps://loveforprogramming.quora.com/Distributed-Systems-Part-3-Managing-Anti-Entropy-using-Merkle-Trees</a></p></li>
+
+<li><p>最後又一個集大成文… WHAT WE TALK ABOUT WHEN WE TALK ABOUT DISTRIBUTED SYSTEMS
+<a href="https://videlalvaro.github.io/2015/12/learning-about-distributed-systems.html">https://videlalvaro.github.io/2015/12/learning-about-distributed-systems.html</a></p></li>
+</ul>
+
+<p>對任何主題有興趣的話都歡迎來討論 XD</p>
+
+    </section>
+    <footer class="post-footer">
+      <section class="tags post-meta">
+        Tagged
+        <a href="https://devpoga.org/tags/coscup/">Coscup</a>
+          <a href="https://devpoga.org/tags/%E7%A7%91%E6%99%AE/">科普</a>
+          <a href="https://devpoga.org/tags/%E7%B3%BB%E7%B5%B1%E6%9E%B6%E6%A7%8B/">系統架構</a>
+          <a href="https://devpoga.org/tags/log/">Log</a>
+          
+      </section>
+    </footer>
+  </article>
+</main>
+
+        <footer class="site-footer">
+  <section class="rss"><a class="subscribe-button icon-feed" href="/index.xml"></a></section>
+  <section class="twitter"><a class="icon-twitter" href="https://twitter.com/devpoga"> devpoga</a></section>
+  
+  <section class="copyright">&copy; 2019 Dev.Poga</section>
+  <section class="poweredby"><a href="http://thedarkroast.com/arabica">Arabica</a> theme by Sean Lunsford. Published with <a href="https://gohugo.io">Hugo</a>.</section>
+</footer>
+
+
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-88018665-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-88018665-1');
+</script>
+
+    </body>
+</html>

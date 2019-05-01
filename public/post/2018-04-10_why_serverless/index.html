@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    
+    <title>
+      
+      Why Serverless - Dev.Poga
+      
+		</title>
+
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <link rel="stylesheet" type="text/css" href="/assets/css/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="/assets/css/icons.css" />
+    <link rel="stylesheet" type="text/css" href="/assets/css/screen.css" />
+    
+    <link href="https://fonts.googleapis.com/css?family=Bree+Serif|Lato:100,100i,300,300i,400,400i,700,700i|Source+Code+Pro:300,400,500,700" rel="stylesheet">
+    
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/jquery@1.12.4/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="/assets/bigfoot/dist/bigfoot.js"></script>
+    <link rel="stylesheet" type="text/css" href="/assets/bigfoot/dist/bigfoot-number.css" />
+    <script type="text/javascript">
+        $.bigfoot();
+    </script>
+    
+    
+</head>
+
+    <body class="post-template">
+        <header class="main-header">
+	<div class="main-header-content">
+		<h1 class="blog-title">
+			<a href="/">
+				
+           Dev.Poga
+				
+			</a>
+		</h1>
+		<h2 class="blog-description"></h2>
+	</div>
+
+	<div class="nav">
+    
+		
+      <a class="nav- " role="presentation" href="/about/">About</a>
+		
+	</div>
+</header>
+
+        
+<main class="content" role="main">
+  <article class="post">
+    <header class="post-header">
+      <h2 class="post-title">Why Serverless</h2>
+      <section class="post-meta">
+        <time class="post-date">2018-02-06</time>
+        
+
+      </section>
+    </header>
+    <section class="post-content">
+      <blockquote>
+<p>以下擷取、修訂自 2018.03.29 我在 iThome Serverless All-Star 的分享的逐字稿</p>
+</blockquote>
+
+<hr />
+
+<p>究竟為什麼要用 Serverless 呢？</p>
+
+<p>近年，無數人嘗試著製作各種產品。每個開發者剛開始都是興致勃勃，大家都想改變世界，但後來都漸漸失去了熱情。為什麼呢？我觀察到幾個現象：</p>
+
+<p>首先是「好程式」這件事，軟體開發者都想寫出容易開發、容易擴充、容易維護的程式，但是現實的環境往往沒有足夠的資源讓你慢慢開發。大多數的時間都在趕死線。</p>
+
+<p>即使跟主管談，主管都會說「我們另外安排一個時間來重構」，但是從來沒找到這段時間過。於是，程式越來越難維護，開發越來越慢，開發者心情越來越差，產品疊代速度越來越慢，最後就失敗。</p>
+
+<p>為什麼會有這種現象呢？因為軟體架構的價值實在太難量化了，每個工程師對架構都有不一樣的想法，也不一定能好好掌握架構的知識。連工程師都難以捉摸的東西，更不用希望非專業的人能理解了。於是，軟體架構永遠都是第一個被犧牲的。</p>
+
+<p>不過，在 serverless 中，軟體架構的好壞直接表現在你的營運成本上。軟體架構好，執行的速度就快，消耗的資源也少。因為 serverless 是按照 function 使用的資源來計價，這些變化就直接對應到帳單上的費用減少。原本被視為「無生產力」的重構行為，也變成人見人愛的 cost down 行為。好的開發者跟壞的開發者的差別，也能從執行上的成本一目了然。於是，開發者有更多的籌碼去談出一個優化架構的空間。不是每個人都能看懂軟體設計，但是一定看的懂帳單上的數字。</p>
+
+<hr />
+
+<p>再來是「好產品」，一個產品要符合用戶的需求，才能在市場上生存。但是，軟體的開發過程讓人難以專注在用戶需求上。規劃專案時，大多數的時間都花在「技術規格」、「時程」上，規劃會議上，大家就在一張紙上增增減減，最後妥協出一個實做清單。為什麼會這樣呢？</p>
+
+<p>我認為是因為開發時，讓你分心的東西實在太多了。一個功能不只是一條 SQL，還要考慮資安、擴充性、如何 deploy、如何維護。這些額外的考量，都讓人無法專注在用戶需求上。有人的說法是「從一條 SQL 到上線的距離有多遠？」以現在的環境而言，真的很遠。</p>
+
+<p>而 serverless 把系統架構跟技術細節幾乎都藏起來了。以前，寫一個 function 要上線前，要考慮怎麼 deploy，可以撐住多少流量，資安、監控、日誌、等等無數的細節。現在，只要寫好 function 就可以直接上線，其他的細節 serverless 平台都幫你做好了。產品開發速度更快，開發者需要擔心的事情更少。大家可以專注在同一件事：「用戶的需求上」。做出好產品的機會更高。</p>
+
+<p>把 serverless 結合 tracking 之後，更可以做出更精細的產品分析。將整個使用者的使用流程，轉化成一連串的成本，與最後預期的收益一比較，馬上可以看出：是該優化轉換率，還是優化流量，或是優化某個特別消耗資源的 function？產品方向不再是瞎子摸象，而是更明確的流程。</p>
+
+<hr />
+
+<p>最後是「開發費用」這件事。軟體開發的成本始終難以預估。時程與需求的變化，讓定價變的很困難。以外包而言，報價永遠是最難的事情。今天客戶需要一個產品，一家估了 100 萬，另一家估 10 萬，其中的差別究竟是什麼？對客戶來說幾乎沒辦法判斷。所以外包總是很容易做不出需要的東西，或是充滿了浪費。維護費更是一個人人都討厭的東西，開發者永遠覺得維護費太低，客戶永遠覺得他的維護費浪費了，怎麼算都有人不滿意。</p>
+
+<p>serverless 提供了一種新的外包計價模式，按照用量計費。因為 serverless 的成本透明，所以開發者的營運成本也很透明。這時按照用量計費，讓雙方都有共同的誘因去優化產品：最大化產品價值。產品使用量越大，開發者收益越高，用的人越多，客戶就越開心。</p>
+
+<hr />
+
+<p>說了這麼多，其實 serverless 代表的就是把計算力變成 utility 的一個過程。</p>
+
+<p>就像水電一樣，大家都需要的東西，規模化到最後，就會變成付錢就能解決的東西。使用者需要介入的越來越少，成本標準化，使用者不再需要搞懂各種規模化的技術：像是 docker, devops, capacity planning, cloud 等等。維運變的更簡單。</p>
+
+<p>如果你的環境還沒跟上這些技術，那就跳過他們直接開始用 serverless 吧。</p>
+
+    </section>
+    <footer class="post-footer">
+      <section class="tags post-meta">
+        Tagged
+        <a href="https://devpoga.org/tags/serverless/">Serverless</a>
+          
+      </section>
+    </footer>
+  </article>
+</main>
+
+        <footer class="site-footer">
+  <section class="rss"><a class="subscribe-button icon-feed" href="/index.xml"></a></section>
+  <section class="twitter"><a class="icon-twitter" href="https://twitter.com/devpoga"> devpoga</a></section>
+  
+  <section class="copyright">&copy; 2019 Dev.Poga</section>
+  <section class="poweredby"><a href="http://thedarkroast.com/arabica">Arabica</a> theme by Sean Lunsford. Published with <a href="https://gohugo.io">Hugo</a>.</section>
+</footer>
+
+
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-88018665-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-88018665-1');
+</script>
+
+    </body>
+</html>

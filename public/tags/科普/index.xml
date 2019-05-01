@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>科普 on Dev.Poga</title>
+    <link>https://devpoga.org/tags/%E7%A7%91%E6%99%AE/</link>
+    <description>Recent content in 科普 on Dev.Poga</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 16 Jul 2018 06:19:38 +0000</lastBuildDate>
+    
+	<atom:link href="https://devpoga.org/tags/%E7%A7%91%E6%99%AE/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>軟體設計模式 — Data-Oriented Design</title>
+      <link>https://devpoga.org/post/2018-07-16_%E8%BB%9F%E9%AB%94%E8%A8%AD%E8%A8%88%E6%A8%A1%E5%BC%8F-dataoriented-design/</link>
+      <pubDate>Mon, 16 Jul 2018 06:19:38 +0000</pubDate>
+      
+      <guid>https://devpoga.org/post/2018-07-16_%E8%BB%9F%E9%AB%94%E8%A8%AD%E8%A8%88%E6%A8%A1%E5%BC%8F-dataoriented-design/</guid>
+      <description>Photo by Rebecca Oliver on Unsplash
+遊戲開發對很多開發者來說是個陌生的領域。遊戲對於效能的極高要求跟規格的不確定性，產生出了許多特有的系統架構。Data-Oriented Design 便是個有趣的設計模式。
+相較於其他設計模式，Data-Oriented Design 深受硬體快取（cache）架構影響。對於現代的高度 pipeline、高速的 CPU 架構而言，資料的存取方式對效能有非常大的影響。比起 L1、L2 cache，對主記憶體的一次存取帶來的是數百倍的效能損耗。為了避免太過抽象，就用個實際的例子來解釋吧。
+假設我們的遊戲中有許多的球，每個球有顏色、位置、半徑等等資訊。對於學過物件導向的人而言，很可能直覺的設計成這樣：
+class Ball { Point position; Color color; double radius; }  這樣的作法很符合人對世界的理解：每個球是獨立的個體，有自己的屬性。
+不過，如果遊戲中有數百萬個球在移動，這樣的作法的效能就不太好了。每個球的座標都經過物件導向的層層封裝，分散在記憶體四處，spatial locality 非常差，在更新的過程中產生了大量的 cache miss。
+There’s no ball 如果採用 Data-Oriented Design 的話，作法會變成：
+class Balls { vector&amp;lt;Point&amp;gt; positions; vector&amp;lt;Color&amp;gt; color; vector&amp;lt;double&amp;gt; radius; }  於是我們的程式中不再有「獨立的球」這個設計存在，所謂的球，只是透過一個 index，含蓄的存在遊戲世界中。
+這樣的作法，對人而言並不直覺，但是對硬體而言，效能好上許多。大多數的 vector 實做，都會將其中的內容放在一段連續的記憶體空間中。因此 spatial locality 很好，對 CPU 而言，他能很輕易的猜到接下來要存取的記憶體位址，省下許多猜錯而損失的 CPU cycle。
+SoA 與 AoS 這兩種作法又分別被稱做 Array of Structs 跟 Structs of Arrays。前者是用一個陣列存放許多獨立的 struct（class），後者是用一個 struct（class）存放許多陣列。</description>
+    </item>
+    
+    <item>
+      <title>Kappa Architecture：以資料為中心的系統架構</title>
+      <link>https://devpoga.org/post/2017-12-22_kappa-architecture%E4%BB%A5%E8%B3%87%E6%96%99%E7%82%BA%E4%B8%AD%E5%BF%83%E7%9A%84%E7%B3%BB%E7%B5%B1%E6%9E%B6%E6%A7%8B/</link>
+      <pubDate>Fri, 22 Dec 2017 07:32:07 +0000</pubDate>
+      
+      <guid>https://devpoga.org/post/2017-12-22_kappa-architecture%E4%BB%A5%E8%B3%87%E6%96%99%E7%82%BA%E4%B8%AD%E5%BF%83%E7%9A%84%E7%B3%BB%E7%B5%B1%E6%9E%B6%E6%A7%8B/</guid>
+      <description>在開發軟體時，有許多眾所周知的架構模式（architecture pattern）可做為參考。例如最廣為人知的 MVC 架構。採用這些常用模式，能大幅減低溝通成本，各種 Framework 也能提高開發速度。
+現在已經是個以資料為中心的環境，各種商業決策都依賴大量的資料。因此，系統必須能提供各種資料格式與查詢方式供各種需求使用。在這樣的環境中，也慢慢發展出許多特有的模式。
+常見的狀況是，一個系統中不同的角色有著不同的需求。工程師希望能採用高效能，容易擴充的架構；業務部門希望能即時查到各種資訊；會計系統希望能收到批次處理的當月報表。這些不同的需求，都在不斷的拉扯一個系統的架構。
+如果是較為單純的系統，所有資料都會存在單一資料庫中。常常，為了應付各種互相衝突的需求，資料的格式（schema）被不斷修改、欄位越來越多。最後各部門的需求互相糾結，整個系統陷入泥沼，開發速度大減。只使用單一資料庫又無法滿足各種需求，只好導入 ElasticSearch 做全文檢索與 Hadoop/Spark 進行大量資料處理，即時資料處理也需要與批次處理完全不同的架構。於是，整個系統益加複雜，難以維護。
+遇到這種狀況，許多人都會將系統按照業務領域切開，切成一個一個的 microservices。每個 service 有著自己專用的資料儲存架構，便可解決共用資料庫的糾結狀況。
+以電商系統為例，系統將會被拆成「訂單服務」、「客戶分析服務」、「帳務服務」等獨立的服務組成。服務之間只透過 API 來溝通，避免過度耦合。
+不過，由於各個服務之間需要不斷的互相溝通與交換資料，每個服務對資料也有不同的查詢需求。隨著需求不斷變動，每個子服務所提供的 API 還是會變的越來越複雜。
+各服務為了避免 API 的麻煩，會希望自己也有一份資料副本可隨意使用。一旦資料有了副本，就要處理許多資料同步的麻煩問題。
+無論如何，這些狀況都只會讓系統再度糾結在一起，原本按領域切割好的服務實際上又合而為一。遇到這種情況時，通常代表服務的界線需要做調整。但調整服務界線從來就不是一件簡單的事。
+假設有兩個部門都會對訂單進行各種分析。理想中，應該切出一個分析服務來服務這兩個部門。然而受限於組織架構（head count 分配、預算規劃、政治等），最後多半是兩個部門有各自的分析服務。因此大幅提高系統開發成本，產生許多重複的工作。
+康威定律（Conway’s Law）便是描述這個現象：系統的架構就等於組織的架構。如果已有組織架構存在，那就很難設計出打破原先組織架構的系統架構。
+於是，系統架構被組織架構所限制。無法劃分出正確的服務分界，便無法建立真正有彈性的系統架構
+問題的本質：資料的流通性 實際上，這些問題其實只是同一問題的不同面向。也就是「資料在領域間轉換的複雜度」。
+ 不同業務領域需要的資料結構大不相同，所以單一資料庫提供的單一 schema 無法負荷。 團隊在有限資源下，難以應付不同領域的需求，導致無法設計容易維護與使用的 API。 讓資料在不同領域間流動的成本太高，所以資料出現大量、可能過時的副本。 領域間差異太大，導致部門間溝通困難，因此組織架構影響系統架構決策，與系統架構互相糾結、牽制。  而 Kappa 架構便是藉由回歸資料的本質來解決這些問題。
+資料的本質：Append-only Log 任何資料都是由一連串的改變所形成，因此，每一筆資料都可以用一個 append-only log 表示。
+假設目前有一筆用戶資料如下：
+{ &amp;quot;user_id&amp;quot;: 1234, &amp;quot;username&amp;quot;: “Jack123”, &amp;quot;balance&amp;quot;: 75 }  這筆用戶資料其實是由一連串的事件修改所形成：
+{ // 使用者註冊 &amp;quot;event&amp;quot;: &amp;quot;register&amp;quot;, &amp;quot;username&amp;quot;: &amp;quot;Jack123&amp;quot;, &amp;quot;user_id&amp;quot;: 1234, } { // 使用者儲值 &amp;quot;event&amp;quot;: &amp;quot;deposit&amp;quot;, &amp;quot;user_id&amp;quot;: 1234 &amp;quot;add_balance”: 100 } { // 使用者消費付款 &amp;quot;event&amp;quot;: &amp;quot;purchase&amp;quot;, &amp;quot;user_id&amp;quot;: 1234, &amp;quot;add_balance&amp;quot;: -25 }  因為已經發生的修改不會再變動，因此這是一份 append-only log。</description>
+    </item>
+    
+    <item>
+      <title>萬事萬物皆是 LOG — 參考資料</title>
+      <link>https://devpoga.org/post/2016-08-27_%E8%90%AC%E4%BA%8B%E8%90%AC%E7%89%A9%E7%9A%86%E6%98%AF-log-%E5%8F%83%E8%80%83%E8%B3%87%E6%96%99/</link>
+      <pubDate>Sat, 27 Aug 2016 05:06:01 +0000</pubDate>
+      
+      <guid>https://devpoga.org/post/2016-08-27_%E8%90%AC%E4%BA%8B%E8%90%AC%E7%89%A9%E7%9A%86%E6%98%AF-log-%E5%8F%83%E8%80%83%E8%B3%87%E6%96%99/</guid>
+      <description>之前在 COSCUP 2016 榮幸講了一場 萬事萬物皆是 Log — 系統架構也來點科普。結束後被詢問有沒有一些靈感來源、延伸讀物、參考資料等等，這裡就把我有記下來的參考資料整理在此。一些時間關係沒有帶到的主題就也一起放在這了。
+ Linkedin 工程師寫的關於 LOG 架構的長篇好文，強烈推薦閱讀。 https://engineering.linkedin.com/distributed-systems/log-what-every-software-engineer-should-know-about-real-time-datas-unifying
+ Microservice: http://blog.christianposta.com/microservices/the-hardest-part-about-microservices-data/ http://blog.christianposta.com/microservices/why-microservices-should-be-event-driven-autonomy-vs-authority/
+ 講 Apache Samza 如何用 LOG 整個拆解掉 Database。很精彩，大推薦！ http://www.confluent.io/blog/turning-the-database-inside-out-with-apache-samza/
+ Stream Processing： Spark: https://spark.apache.org/ Storm: https://storm.apache.org/ Kafka: https://kafka.apache.org/
+ Immutable Database — Datomic: http://www.datomic.com/rationale.html
+ Lamport Timestamp：所有對分散式系統有興趣的人都一定要瞭解一下。 http://www.goodmath.org/blog/2016/03/16/time-in-distributed-systems-lamport-timestamps/
+ CRDT：這也是我最近很有興趣的主題，條列一些參考資料在此。 https://swarmjs.github.io/articles/papoc/
+ A comprehensive study of Convergent and Commutative Replicated Data Types: http://hal.upmc.fr/inria-00555588/document http://underscore.io/blog/posts/2013/12/20/crdts-for-fun-and-eventual-profit.html
+ Google Spanner： https://static.googleusercontent.com/external_content/untrusted_dlcp/research.google.com/en/us/archive/spanner-osdi2012.pdf
+ Martin 大叔介紹的 Event Sourcing 架構 http://martinfowler.</description>
+    </item>
+    
+    <item>
+      <title>萬事萬物皆是 LOG — 系統架構也來點科普</title>
+      <link>https://devpoga.org/post/2016-08-20_%E8%90%AC%E4%BA%8B%E8%90%AC%E7%89%A9%E7%9A%86%E6%98%AF-log-%E7%B3%BB%E7%B5%B1%E6%9E%B6%E6%A7%8B%E4%B9%9F%E4%BE%86%E9%BB%9E%E7%A7%91%E6%99%AE/</link>
+      <pubDate>Sat, 20 Aug 2016 05:06:01 +0000</pubDate>
+      
+      <guid>https://devpoga.org/post/2016-08-20_%E8%90%AC%E4%BA%8B%E8%90%AC%E7%89%A9%E7%9A%86%E6%98%AF-log-%E7%B3%BB%E7%B5%B1%E6%9E%B6%E6%A7%8B%E4%B9%9F%E4%BE%86%E9%BB%9E%E7%A7%91%E6%99%AE/</guid>
+      <description>這是 COSCUP 2016 的講題逐字稿，投影片在此 另有延伸參考資料
+自古以來，軟體工程師都在追求好維護，容易理解的軟體架構。傳統上，我們需要參與過各種大型軟體專案，從中獲取經驗，或是透過昂貴的課程，大量的論文，才能從前人的經驗中學到一些方法。
+今天，我想試著透過 LOG 這個人人都碰過的資料結構，來解釋許多複雜系統的核心，只要你能理解 LOG，你就能設計出好理解、容易維護的系統架構。
+什麼是 LOG？每個人第一次寫程式時，輸出的 “Hello World” 是一種 LOG，工作時使用 Slack 有 LOG，你的伺服器有 Access Log。LOG 就是由兩個特性組成的資料結構：
+ 訊息按照時序出現 出現過的訊息不會改變  「出現過的訊息不會改變」這件事，也被叫做 Append Only。
+Log 這樣的性質，常常在我們 Debug 的時候被拿出來用。很多時候，Debug 便是推論事件的因果關係，Log 的特性便能讓我們透過文字來理解系統內發生的事件的因果。
+不只是 Debug，許多大型複雜架構中，都是透過 Log 來解決各種困難的問題。資料庫、分散式系統、版本控制、同步、備份、訊息傳遞、前端 UI… 都使用了 Log。
+所以聽完這場，你就理解了軟體架構的真理（誤）
+接下來，我會透過各種實際的例子，介紹在各領域中使用 Log 的範例。
+首先我們來談談資料庫。
+如果你沒聽過資料庫，這東西的用途很單純，當你需要存取大量資料，又要確保資料正確性的時候，就會用到資料庫。資料庫為了確保存入的資料的正確性，提供了相當多的工具，像是 Relation、Schema、Validation、ACID Transaction… 等等。
+同時，為了能有效讀取大量資料，資料庫也會建索引（Index），也會說 SQL。
+所以資料庫寫入的時候其實很忙，這時候就有個問題：如果寫入到一半當機了會怎樣？既然寫入時要做這麼多事，做到一半資料損毀不就糟了？
+為了解決這個問題，資料庫在真正寫入並且進行前述的複雜操作前，會先寫下一條 LOG，記載「什麼時間」「我要對資料進行什麼修改」。
+接著，才會開始真正的寫入。即使寫入到一半失敗了，也有 LOG 作為依據，檢查是否有未完成的修改，等到系統穩定後再重新寫入。
+這樣的技巧，叫做 Write-ahead log，也就是在實際寫入前先寫入一條 LOG，作為驗證的依據。
+這便是 LOG 第一個好用的性質，它格式簡單，寫入快速，可以作為複雜操作的前置動作，方便驗證。
+讓我們繼續來聊聊資料庫。
+前面提到，資料庫寫入時要做非常多的工作，所以非常的吃硬體效能。一旦單一機器無法負荷我們所需的資料量時，就需要多台硬體一起來分擔。
+這時候，就進入另一個複雜的領域了。當你只寫入一次，要怎麼確保所有機器上的資料都正確被修改了？
+前面的 Write-head Log 這時候就很好用。由於 LOG 記載了資料庫應該要做的修改動作，只要把這份 LOG 傳送給其他台機器，讓其他機器照著做，所有機器儲存的資料便會一樣。不需要把複雜的 Index、Relation、Schema 都傳過去，只要傳 LOG 就好了。這樣的技巧，叫做 Log Shipping。</description>
+    </item>
+    
+  </channel>
+</rss>

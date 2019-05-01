@@ -1,7 +1,7 @@
 baseURL = "https://devpoga.org/"
 languageCode = "en-us"
 title = "Dev.Poga"
-paginate = 3
+paginate = 15
 
 theme = "arabica"
 

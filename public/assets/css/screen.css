@@ -78,7 +78,7 @@ h6 {
 
 p {
 	margin-top: 0;
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 300;
   font-family: "chaparral-pro" serif;
   letter-spacing: -.02em;
@@ -99,9 +99,11 @@ li {
 code, tt, pre {
     font-family: "Source Code Pro", monospace, sans-serif;
     white-space: pre-wrap;
-    font-size: 1rem;
+    font-size: 18px;
     border: none;
-    background: none;
+    background: #eee;
+    display: inline-block;
+    padding: 0 0.2rem;
 }
 
 pre {
@@ -137,6 +139,9 @@ hr {
     height: 1px;
     border: 0;
     border-top: #9EABB3 1px solid;
+    width: 15%;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
 }
 
 /* Links */
@@ -593,3 +598,4 @@ article.post > header.post-header {
 	   font-size: 0.889rem;
 	}
 }
+
