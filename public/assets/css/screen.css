@@ -48,8 +48,8 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: sans-serif;
 	margin-bottom:10px;
+  font-family: serif;
 }
 
 h1 {
@@ -80,7 +80,7 @@ p {
 	margin-top: 0;
   font-size: 18px;
   font-weight: 300;
-  font-family: "chaparral-pro" serif;
+  font-family: sans-serif;
   letter-spacing: -.02em;
   font-style: normal;
   color: rgba(0,0,0, 0.8);
