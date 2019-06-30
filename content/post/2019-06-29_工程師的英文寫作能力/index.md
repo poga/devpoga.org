@@ -15,4 +15,12 @@ date: 2019-06-29
 * [Help! For Writers: 210 Solutions to the Problems Every Writer Faces](https://www.amazon.com/Help-Writers-Solutions-Problems-Writer/dp/0316126705)
 * [On Writing Well: The Classic Guide to Writing Nonfiction](https://www.amazon.com/Writing-Well-Classic-Guide-Nonfiction/dp/0060891548)
 
+
+其他人的一些心得
+
+* [THE ULTIMATE GUIDE TO WRITING ONLINE](https://www.perell.com/blog/the-ultimate-guide-to-writing-online)
+* [Rules for writing](https://twitter.com/david_perell/status/1127348174404890625)
+
+
 剩下需要的就是不斷的練習了。
+
