@@ -15,6 +15,24 @@
   </url>
   
   <url>
+    <loc>https://devpoga.org/tags/</loc>
+    <lastmod>2019-06-29T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://devpoga.org/tags/engineering/</loc>
+    <lastmod>2019-06-29T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://devpoga.org/tags/writing/</loc>
+    <lastmod>2019-06-29T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://devpoga.org/post/2019-06-29_%E5%B7%A5%E7%A8%8B%E5%B8%AB%E7%9A%84%E8%8B%B1%E6%96%87%E5%AF%AB%E4%BD%9C%E8%83%BD%E5%8A%9B/</loc>
     <lastmod>2019-06-29T00:00:00+00:00</lastmod>
   </url>
@@ -39,12 +57,6 @@
   <url>
     <loc>https://devpoga.org/tags/programming-languages/</loc>
     <lastmod>2019-04-29T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://devpoga.org/tags/</loc>
-    <lastmod>2019-04-30T21:56:04+08:00</lastmod>
     <priority>0</priority>
   </url>
   

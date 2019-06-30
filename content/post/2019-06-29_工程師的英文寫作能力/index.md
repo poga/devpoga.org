@@ -2,6 +2,9 @@
 title: "工程師的英文寫作能力"
 author: "poga"
 date: 2019-06-29
+tags:
+  - writing
+  - engineering
 ---
 
 寫作能力一直是工程師實力一個很重要的指標。
