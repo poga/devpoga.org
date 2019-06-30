@@ -40,7 +40,7 @@ Thread 跟 coroutine 的全域性質破壞了封裝（encapsulation）：在一�
 
 ## Implementation
 
-[libdill](http://libdill) 是個在 C 實做 Structured Concurrency 的函示庫。在 [Kotlin](https://kotlinlang.org/) 這類較先進的語言中甚至直接[內建了](https://kotlinlang.org/docs/reference/coroutines/basics.html#structured-concurrency)。
+[libdill](http://libdill) 是個在 C 實做 Structured Concurrency 的函示庫。在 [Kotlin](https://kotlinlang.org/) 這類較現代的語言中甚至直接[內建了](https://kotlinlang.org/docs/reference/coroutines/basics.html#structured-concurrency)。
 
 ---
 
