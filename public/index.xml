@@ -17,7 +17,7 @@
       <pubDate>Fri, 12 Jul 2019 00:00:00 +0000</pubDate>
       
       <guid>https://devpoga.org/post/2019-07-11_cheney_on_the_mta/</guid>
-      <description>如果問軟體工程師：「簡潔又經典的文章」，我想很多人會回答你這篇：Cheney on the M.T.A.
+      <description>如果問軟體工程師他覺得簡潔又經典的文章，我想很多人會回答你這篇：Cheney on the M.T.A.
 Scheme，史上最不 portable 的語言，有著各種千奇百怪的實做，每個實做的特點，支援的語法都有微妙的不同。
 CHICKEN 是一個 scheme 的實做，是個 scheme-to-c 的編譯器，主打的特性很類似 Lua：簡單、可攜、容易擴充、容易嵌入至其他程式中。
 像 scheme 這類 lisp 方言，很多的功能都依賴 recursion，跟高效能的尾遞回（tail-recursion）來實做。傳統上，尾遞回的實做是透過「trampoline」來達成：讓一個外層函式呼叫內部的尾遞回函式，內部的尾遞回函式回傳他要遞回的下一個 function 的位址，讓外層函式不停呼叫。這樣的作法避免了遞回把 stack 撐爆的問題，卻也因為透過了 function pointer，讓效能變差，也讓參數傳遞變複雜。

@@ -8,7 +8,7 @@ categories:
   - Programming
 ---
 
-如果問軟體工程師：「簡潔又經典的文章」，我想很多人會回答你這篇：[Cheney on the M.T.A](http://home.pipeline.com/~hbaker1/CheneyMTA.html).
+如果問軟體工程師他覺得簡潔又經典的文章，我想很多人會回答你這篇：[Cheney on the M.T.A](http://home.pipeline.com/~hbaker1/CheneyMTA.html).
 
 ---
 
