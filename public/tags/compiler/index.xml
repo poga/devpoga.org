@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Compiler on Dev.Poga</title>
+    <link>https://devpoga.org/tags/compiler/</link>
+    <description>Recent content in Compiler on Dev.Poga</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 12 Jul 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://devpoga.org/tags/compiler/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Cheney on the M.T.A</title>
+      <link>https://devpoga.org/post/2019-07-11_cheney_on_the_mta/</link>
+      <pubDate>Fri, 12 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://devpoga.org/post/2019-07-11_cheney_on_the_mta/</guid>
+      <description>如果問軟體工程師他覺得簡潔又經典的文章，我想很多人會回答你這篇：Cheney on the M.T.A.
+Scheme，史上最不 portable 的語言，有著各種千奇百怪的實作，每個實作的特點，支援的語法都有微妙的不同。
+CHICKEN 是一個 scheme 的實作，是個 scheme-to-c 的編譯器，主打的特性很類似 Lua：簡單、可攜、容易擴充、容易嵌入至其他程式中。
+像 scheme 這類 lisp 方言，很多的功能都依賴 recursion 跟高效能的尾遞回（tail-recursion）來達成。傳統上，尾遞回的實作是透過一種叫「trampoline」的架構來處理：讓一個外層函式呼叫內部的尾遞回函式，內部的尾遞回函式回傳他要遞回的下一個 function 的位址，讓外層函式不停呼叫。這樣的作法避免了遞回把 stack 撐爆的問題，卻也因為透過了 function pointer，讓效能變差，也讓參數傳遞變複雜。
+CHICKEN 的特色之一是用了 cheney on the MTA 來實作 tail-recursive，作法是把尾遞回編譯成 CSP 形式的 C，讓每個 function 結束時主動呼叫他的 continuation，把尾遞回編譯成一個永不 return 的函式。另外，所有的值也全都放在 stack 上。
+既然永遠不會 return，自然得處理 stack overflow 的問題。解法也蠻單純的，在 stack 快要爆炸的時候，直接 setjmp/longjmp 跳到下一個 continuation，清空 stack 的同時也清空了用過的值，順便成為了一種 generational garbage collector！
+用一個方法同時處理 tail-recursion 跟 GC 真是相當漂亮啊。</description>
+    </item>
+    
+    <item>
+      <title>LuaJIT 實做探索 — NaN Tagging</title>
+      <link>https://devpoga.org/post/2018-04-18_luajit-%E5%AF%A6%E5%81%9A%E6%8E%A2%E7%B4%A2-nan-tagging/</link>
+      <pubDate>Wed, 18 Apr 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://devpoga.org/post/2018-04-18_luajit-%E5%AF%A6%E5%81%9A%E6%8E%A2%E7%B4%A2-nan-tagging/</guid>
+      <description>一切都是為了效能 故事要從 boxed value 跟 unboxed value 說起。
+所謂的 boxed value 是指：不直接存取 primitive value，而是透過指標來操作數值。近代的程式語言常常都用這種方法操作資料。而 unboxed value 就是指直接操作值，不經過一層指標。
+ Boxed value &amp;amp; unboxed value
+為什麼要用 boxed value 呢？因為近代程式語言都提供物件、function 等等一定會透過指標來操作的資料。將所有資料統一包（box）在指標後，讓系統處理泛型（generic）時變得更加一致。如果你寫過 Java 應該就有體驗過這種設計，為了解決 boxed/unboxed value 之間麻煩的轉換，auto-boxing 也是常見的功能。
+當然，這多出來的一層指標並不是免費的。
+效能的損失 以浮點數做為例子。現代系統架構都提供浮點數專屬的指令集來加速計算，譬如說，在 x86 上你可以用 faddp、 fdivp 之類的指令，讓 FPU硬體幫你計算。一旦多了一層指標，每次計算前都要 deref 一次，多出許多重複的工作。
+另外，這些包裝不是只有指標，還包含了底下 value 的型別。因此使用的記憶體也會變多。
+NaN Tagging 有沒有辦法讓 primitive value 跟其他 boxed value 用同樣的結構儲存，避免效能損失，又能讓系統更簡單呢？LuaJIT 用 NaN Tagging 來解決這個問題。
+要搞懂 NaN Tagging 前，先來複習一下 IEEE 754 Floating Point 的定義。IEEE 754 的 64bit floating point (double) 的格式如下，第一個 bit 是 sign，接著 11 個 bit 的指數，最後是52 bit 的分數。</description>
+    </item>
+    
+  </channel>
+</rss>
