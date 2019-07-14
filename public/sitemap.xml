@@ -14,6 +14,12 @@
   </url>
   
   <url>
+    <loc>https://devpoga.org/categories/compiler/</loc>
+    <lastmod>2019-07-12T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://devpoga.org/</loc>
     <lastmod>2019-07-12T00:00:00+00:00</lastmod>
     <priority>0</priority>
@@ -21,12 +27,6 @@
   
   <url>
     <loc>https://devpoga.org/post/</loc>
-    <lastmod>2019-07-12T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://devpoga.org/categories/programming/</loc>
     <lastmod>2019-07-12T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
@@ -40,6 +40,12 @@
   <url>
     <loc>https://devpoga.org/tags/</loc>
     <lastmod>2019-07-12T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://devpoga.org/categories/programming/</loc>
+    <lastmod>2019-06-30T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
