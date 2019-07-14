@@ -7,4 +7,3 @@ menu = "main"
 * email: poga.po@gmail.com
 
 * Github: [poga](https://github.com/poga)
-* Medium: [@poga](https://medium.com/@poga)
