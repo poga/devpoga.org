@@ -56,5 +56,6 @@ Thread 跟 coroutine 的全域性質破壞了封裝（encapsulation）：在一�
 * [Getting rid of state machines (II)](http://250bpm.com/blog:70)
 * [Structured Concurrency](http://250bpm.com/blog:71)
 * [Two Approaches to Structured Concurrency](http://250bpm.com/blog:139)
+* [Notes on structured concurrency, or: Go statement considered harmful](https://vorpus.org/blog/notes-on-structured-concurrency-or-go-statement-considered-harmful/)
 
 

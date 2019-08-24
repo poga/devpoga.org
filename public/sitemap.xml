@@ -5,7 +5,6 @@
   <url>
     <loc>https://devpoga.org/categories/</loc>
     <lastmod>2019-07-12T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -16,43 +15,46 @@
   <url>
     <loc>https://devpoga.org/categories/compiler/</loc>
     <lastmod>2019-07-12T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>https://devpoga.org/tags/compiler/</loc>
     <lastmod>2019-07-12T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>https://devpoga.org/</loc>
     <lastmod>2019-07-12T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>https://devpoga.org/post/</loc>
     <lastmod>2019-07-12T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>https://devpoga.org/tags/programming-language/</loc>
     <lastmod>2019-07-12T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>https://devpoga.org/tags/</loc>
     <lastmod>2019-07-12T00:00:00+00:00</lastmod>
-    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://devpoga.org/tags/concurrency/</loc>
+    <lastmod>2019-06-30T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://devpoga.org/categories/programming/</loc>
     <lastmod>2019-06-30T00:00:00+00:00</lastmod>
-    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://devpoga.org/tags/programming/</loc>
+    <lastmod>2019-06-30T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -61,32 +63,28 @@
   </url>
   
   <url>
-    <loc>https://devpoga.org/tags/concurrency/</loc>
-    <lastmod>2019-06-30T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://devpoga.org/tags/programming/</loc>
-    <lastmod>2019-06-30T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://devpoga.org/tags/engineering/</loc>
     <lastmod>2019-06-29T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>https://devpoga.org/tags/writing/</loc>
     <lastmod>2019-06-29T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>https://devpoga.org/post/2019-06-29_%E5%B7%A5%E7%A8%8B%E5%B8%AB%E7%9A%84%E8%8B%B1%E6%96%87%E5%AF%AB%E4%BD%9C%E8%83%BD%E5%8A%9B/</loc>
     <lastmod>2019-06-29T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://devpoga.org/tags/editor/</loc>
+    <lastmod>2019-04-29T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://devpoga.org/tags/go/</loc>
+    <lastmod>2019-04-29T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -97,31 +95,16 @@
   <url>
     <loc>https://devpoga.org/tags/programming-languages/</loc>
     <lastmod>2019-04-29T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://devpoga.org/tags/editor/</loc>
-    <lastmod>2019-04-29T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://devpoga.org/tags/go/</loc>
-    <lastmod>2019-04-29T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>https://devpoga.org/tags/interpreter-and-compiler/</loc>
     <lastmod>2019-02-26T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>https://devpoga.org/tags/lua/</loc>
     <lastmod>2019-04-30T21:56:04+08:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -142,7 +125,6 @@
   <url>
     <loc>https://devpoga.org/tags/actix/</loc>
     <lastmod>2019-04-30T21:56:04+08:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -153,7 +135,6 @@
   <url>
     <loc>https://devpoga.org/tags/rust/</loc>
     <lastmod>2019-04-30T21:56:04+08:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -164,7 +145,6 @@
   <url>
     <loc>https://devpoga.org/tags/%E7%94%9F%E7%94%A2%E5%8A%9B/</loc>
     <lastmod>2019-04-30T21:56:01+08:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -175,13 +155,11 @@
   <url>
     <loc>https://devpoga.org/tags/%E7%A7%91%E6%99%AE/</loc>
     <lastmod>2019-04-30T21:56:04+08:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>https://devpoga.org/tags/%E7%B3%BB%E7%B5%B1%E6%9E%B6%E6%A7%8B/</loc>
     <lastmod>2019-04-30T21:56:04+08:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -192,7 +170,11 @@
   <url>
     <loc>https://devpoga.org/tags/%E9%81%8A%E6%88%B2%E9%96%8B%E7%99%BC/</loc>
     <lastmod>2019-04-30T21:56:04+08:00</lastmod>
-    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://devpoga.org/tags/luajit/</loc>
+    <lastmod>2019-04-30T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -201,21 +183,13 @@
   </url>
   
   <url>
-    <loc>https://devpoga.org/tags/luajit/</loc>
-    <lastmod>2019-04-30T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://devpoga.org/tags/%E5%B8%B6%E6%82%A8%E8%AE%80%E5%8E%9F%E7%A2%BC/</loc>
     <lastmod>2019-04-30T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>https://devpoga.org/tags/serverless/</loc>
     <lastmod>2019-04-30T21:56:01+08:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -231,7 +205,6 @@
   <url>
     <loc>https://devpoga.org/tags/kappa/</loc>
     <lastmod>2019-04-30T21:56:01+08:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -242,13 +215,11 @@
   <url>
     <loc>https://devpoga.org/tags/log/</loc>
     <lastmod>2019-04-30T21:56:01+08:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>https://devpoga.org/tags/burnout/</loc>
     <lastmod>2019-04-30T21:56:01+08:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -259,13 +230,11 @@
   <url>
     <loc>https://devpoga.org/tags/open-source/</loc>
     <lastmod>2019-04-30T21:56:01+08:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>https://devpoga.org/tags/ownership/</loc>
     <lastmod>2019-04-30T21:56:01+08:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -276,13 +245,11 @@
   <url>
     <loc>https://devpoga.org/tags/omnifocus/</loc>
     <lastmod>2019-04-30T21:55:54+08:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>https://devpoga.org/tags/productivity/</loc>
     <lastmod>2019-04-30T21:55:54+08:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -293,7 +260,6 @@
   <url>
     <loc>https://devpoga.org/tags/coscup/</loc>
     <lastmod>2019-04-30T21:55:51+08:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -309,7 +275,6 @@
   <url>
     <loc>https://devpoga.org/tags/design/</loc>
     <lastmod>2019-04-30T21:55:49+08:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -320,25 +285,21 @@
   <url>
     <loc>https://devpoga.org/tags/ux/</loc>
     <lastmod>2019-04-30T21:55:49+08:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>https://devpoga.org/tags/communicating/</loc>
     <lastmod>2019-04-30T21:55:48+08:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>https://devpoga.org/tags/story-telling/</loc>
     <lastmod>2019-04-30T21:55:48+08:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>https://devpoga.org/tags/teaching/</loc>
     <lastmod>2019-04-30T21:55:48+08:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
