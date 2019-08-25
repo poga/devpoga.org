@@ -26,6 +26,7 @@ My recommended reading list for all things related to distributed systems.
 
 > The observability and controllability of a system are mathematical duals - [Observability on wikipedia](https://en.wikipedia.org/wiki/Observability)
 
+* ["Nines don’t matter if users aren’t happy"](https://read.acloud.guru/why-you-cant-effectively-debug-your-modern-systems-with-dashboards-57fe3ecd26bf)
 * [A Brief Tour of FLP Impossibility](https://www.the-paper-trail.org/post/2008-08-13-a-brief-tour-of-flp-impossibility/)
 * [Scuba: Diving into Data at Facebook](https://research.fb.com/wp-content/uploads/2016/11/scuba-diving-into-data-at-facebook.pdf)
 * [Observability — A 3-Year Retrospective](https://thenewstack.io/observability-a-3-year-retrospective/)
