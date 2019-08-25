@@ -4,7 +4,7 @@ date: "2019-08-25"
 menu: "main"
 ---
 
-My recommended reading list for all things related to distributed system.
+My recommended reading list for all things related to distributed systems.
 
 ## Developing a distributed system
 
