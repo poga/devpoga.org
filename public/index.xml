@@ -6,10 +6,33 @@
     <description>Recent content on Dev.Poga</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 12 Jul 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 25 Aug 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://devpoga.org/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>About</title>
+      <link>https://devpoga.org/about/</link>
+      <pubDate>Sun, 25 Aug 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://devpoga.org/about/</guid>
+      <description> About Poga A programmer
+ email: poga.po@gmail.com
+ Github: poga
+ Linkedin: Poga Po
+  </description>
+    </item>
+    
+    <item>
+      <title>Distributed System</title>
+      <link>https://devpoga.org/distributed_system/</link>
+      <pubDate>Sun, 25 Aug 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://devpoga.org/distributed_system/</guid>
+      <description>My recommended reading list for all things related to distributed system.
+Developing a distributed system  Fallacies of Distributed Computing Explained The Log: What every software engineer should know about real-time data&amp;rsquo;s unifying abstraction Turning the database inside-out with Apache Samza What we talk about when we talk about distributed systems Dynamo: Amazon’s Highly Available Key-value Store  Time in a distributed system  Time, Clocks and the Ordering of Events in a Distributed System The Bloom Clock Falsehoods programmers believe about time More falsehoods programmers believe about time; “wisdom of the crowd” edition  Understanding a distributed system  The observability and controllability of a system are mathematical duals - Observability on wikipedia</description>
+    </item>
     
     <item>
       <title>Cheney on the M.T.A</title>
@@ -96,17 +119,6 @@ Why Lua? In the world of embeddable scripting language, Lua is still the most we
 &amp;mdash; Daniel Solis (@DanielSolis) December 28, 2018  大家都已經知道的理由：為了混淆遊戲貨幣跟現實貨幣的對價關係。但是其他的沒有辦法用現金換貨幣的遊戲呢？Triple Town 作者 Daniel Cook 的看法：
 這樣比較容易平衡遊戲經濟。每種貨幣可以對應到某個遊戲面向，如果那個面向經濟效益太強大，只要調整那種貨幣的產出跟消耗就能解決，而不會影響整個遊戲。
 1. Easier economy balancing. Each currency maps to a functional area of the game. If one area of the economy is imbalanced, you can tweak sources and sinks for that unique currency.</description>
-    </item>
-    
-    <item>
-      <title>About</title>
-      <link>https://devpoga.org/about/</link>
-      <pubDate>Fri, 12 Oct 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://devpoga.org/about/</guid>
-      <description> email: poga.po@gmail.com
- Github: poga
-  </description>
     </item>
     
     <item>

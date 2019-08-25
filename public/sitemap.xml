@@ -3,6 +3,21 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://devpoga.org/about/</loc>
+    <lastmod>2019-08-25T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://devpoga.org/</loc>
+    <lastmod>2019-08-25T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://devpoga.org/distributed_system/</loc>
+    <lastmod>2019-08-25T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://devpoga.org/categories/</loc>
     <lastmod>2019-07-12T00:00:00+00:00</lastmod>
   </url>
@@ -13,17 +28,12 @@
   </url>
   
   <url>
-    <loc>https://devpoga.org/categories/compiler/</loc>
-    <lastmod>2019-07-12T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://devpoga.org/tags/compiler/</loc>
     <lastmod>2019-07-12T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://devpoga.org/</loc>
+    <loc>https://devpoga.org/categories/compiler/</loc>
     <lastmod>2019-07-12T00:00:00+00:00</lastmod>
   </url>
   
@@ -115,11 +125,6 @@
   <url>
     <loc>https://devpoga.org/post/2019-01-05_%E7%82%BA%E4%BB%80%E9%BA%BC%E7%8F%BE%E4%BB%A3%E9%81%8A%E6%88%B2%E9%83%BD%E8%A6%81%E6%9C%89%E4%B8%80%E5%A0%86%E4%B8%8D%E5%90%8C%E7%9A%84%E8%B2%A8%E5%B9%A3%E5%9C%A8%E8%A3%A1%E9%A0%AD/</loc>
     <lastmod>2019-04-30T21:56:05+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://devpoga.org/about/</loc>
-    <lastmod>2018-10-12T00:00:00+00:00</lastmod>
   </url>
   
   <url>

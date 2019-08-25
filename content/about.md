@@ -1,9 +1,15 @@
 +++
 title = "About"
-date = "2018-10-12"
+date = "2019-08-25"
 menu = "main"
 +++
+
+# About Poga
+
+A programmer
 
 * email: poga.po@gmail.com
 
 * Github: [poga](https://github.com/poga)
+
+* Linkedin: [Poga Po](https://www.linkedin.com/in/pogapo/)
