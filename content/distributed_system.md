@@ -29,6 +29,7 @@ My recommended reading list for all things related to distributed system.
 * [A Brief Tour of FLP Impossibility](https://www.the-paper-trail.org/post/2008-08-13-a-brief-tour-of-flp-impossibility/)
 * [Scuba: Diving into Data at Facebook](https://research.fb.com/wp-content/uploads/2016/11/scuba-diving-into-data-at-facebook.pdf)
 * [Observability — A 3-Year Retrospective](https://thenewstack.io/observability-a-3-year-retrospective/)
+* [Site Reliability Engineering](https://landing.google.com/sre/books/)
 
 
 
