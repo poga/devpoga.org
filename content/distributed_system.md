@@ -4,7 +4,7 @@ date: "2019-08-25"
 menu: "main"
 ---
 
-My recommended reading list for all things related to distributed systems.
+My recommended reading list for anyone designing a practial distributed system.
 
 ## Developing a distributed system
 
@@ -13,6 +13,7 @@ My recommended reading list for all things related to distributed systems.
 * [Turning the database inside-out with Apache Samza](https://www.confluent.io/blog/turning-the-database-inside-out-with-apache-samza/)
 * [What we talk about when we talk about distributed systems](http://alvaro-videla.com/2015/12/learning-about-distributed-systems.html)
 * [Dynamo: Amazon’s Highly Available Key-value Store](http://bnrg.eecs.berkeley.edu/~randy/Courses/CS294.F07/Dynamo.pdf)
+
 
 ## Time in a distributed system
 
@@ -33,13 +34,11 @@ My recommended reading list for all things related to distributed systems.
 * [Site Reliability Engineering](https://landing.google.com/sre/books/)
 
 
-
 ## Scaling a distributed system
 
 * [CAP theorem](https://en.wikipedia.org/wiki/CAP_theorem)
 * [The Raft Consensus Algorithm](https://raft.github.io)
 * [Conflict-free Replicated Data Types](https://pages.lip6.fr/Marc.Shapiro/papers/RR-7687.pdf)
-
 
 
 ## People in a distributed system
