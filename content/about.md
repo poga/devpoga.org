@@ -12,4 +12,4 @@ A programmer
 
 * Github: [poga](https://github.com/poga)
 
-* Linkedin: [Poga Po](https://www.linkedin.com/in/pogapo/)
+* Twitter: [devpoga](https://twitter.com/devpoga)
