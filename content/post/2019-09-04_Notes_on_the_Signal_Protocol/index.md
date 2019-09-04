@@ -1,5 +1,5 @@
 ---
-title: "Notes on the Signal Protocol"
+title: "Notes on The Signal Protocol"
 author: "poga"
 date: 2019-09-04
 tags:
