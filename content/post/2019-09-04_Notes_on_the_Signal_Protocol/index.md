@@ -159,7 +159,7 @@ Sesame use a server to store the user-devices relation and cache user's message 
 
 In Signal Protocol, group messaging is modeled as multiple 1:1 secure messages via sending message to each member's mailbox on the sesame server. This approach is called "client-side fan-out"
 
-However, there's also a variation of Signal protocol adopted by WhatsApp called Sender Keys. It has "server-side fan-out" and enforce transcript consistency on the server. Check [their whitepaper](https://www.whatsapp.com/security/WhatsApp-Security-Whitepaper.pdf) for more information.
+There's also a variation of Signal protocol adopted by WhatsApp called Sender Keys. It has "server-side fan-out" and enforce transcript consistency on the server. Check [their whitepaper](https://www.whatsapp.com/security/WhatsApp-Security-Whitepaper.pdf) for more information.
 
 Secure group messaging is still an open problem. Other protocols, such as [Matrix's megolm]( [https://gitlab.matrix.org/matrix-org/olm/blob/master/docs/megolm.md]https://gitlab.matrix.org/matrix-org/olm/blob/master/docs/megolm.md) and [Message Layer Security(MLS)]( [https://blog.trailofbits.com/2019/08/06/better-encrypted-group-chat/]https://blog.trailofbits.com/2019/08/06/better-encrypted-group-chat/) ), all impose different trade-offs.
 
