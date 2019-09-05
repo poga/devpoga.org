@@ -21,7 +21,7 @@ Why?
 
 ### User Experience
 
-**With vanilla public-key cryptography, the private key IS your identity**. Everything is doomed if you lost your private key. Unfortunately, it's really, really hard to correctly backup and protect your private key without sacrificing security. For normal people, they might lost their phone. Their computer might be spoiled by a cup of coffee. And it's notoriously hard to maintain a working backup for any data.
+**With vanilla public-key cryptography, the private key IS your identity**. Everything is doomed if you lose your private key. Unfortunately, it's really, really hard to correctly backup and protect your private key without sacrificing security. For normal people, they might lose their phone. Their computer might be spoiled by a cup of coffee. And it's notoriously hard to maintain a working backup for any data.
 
 As you already know, we live in a mobile world. People have multiple devices at their hand. It's unacceptable if they can only use one device to represent themselves. It's common to use a phone on the road, then switch to a desktop in an office.
 
