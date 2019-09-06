@@ -376,7 +376,6 @@ a.nav-home, a.nav-blog {
 }
 
 .post-title {
-	margin-bottom: 0;
 	line-height: 1;
 }
 
@@ -388,6 +387,7 @@ a.nav-home, a.nav-blog {
 
 footer.post-meta {
   margin-top: 0;
+  margin-bottom: 4rem;
 }
 
 article.post > header.post-header {

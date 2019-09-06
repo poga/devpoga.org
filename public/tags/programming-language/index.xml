@@ -17,13 +17,7 @@
       <pubDate>Fri, 12 Jul 2019 00:00:00 +0000</pubDate>
       
       <guid>https://devpoga.org/post/2019-07-11_cheney_on_the_mta/</guid>
-      <description>如果問軟體工程師他覺得簡潔又經典的文章，我想很多人會回答你這篇：Cheney on the M.T.A.
-Scheme，史上最不 portable 的語言，有著各種千奇百怪的實作，每個實作的特點，支援的語法都有微妙的不同。
-CHICKEN 是一個 scheme 的實作，是個 scheme-to-c 的編譯器，主打的特性很類似 Lua：簡單、可攜、容易擴充、容易嵌入至其他程式中。
-像 scheme 這類 lisp 方言，很多的功能都依賴 recursion 跟高效能的尾遞回（tail-recursion）來達成。傳統上，尾遞回的實作是透過一種叫「trampoline」的架構來處理：讓一個外層函式呼叫內部的尾遞回函式，內部的尾遞回函式回傳他要遞回的下一個 function 的位址，讓外層函式不停呼叫。這樣的作法避免了遞回把 stack 撐爆的問題，卻也因為透過了 function pointer，讓效能變差，也讓參數傳遞變複雜。
-CHICKEN 的特色之一是用了 cheney on the MTA 來實作 tail-recursive，作法是把尾遞回編譯成 CSP 形式的 C，讓每個 function 結束時主動呼叫他的 continuation，把尾遞回編譯成一個永不 return 的函式。另外，所有的值也全都放在 stack 上。
-既然永遠不會 return，自然得處理 stack overflow 的問題。解法也蠻單純的，在 stack 快要爆炸的時候，直接 setjmp/longjmp 跳到下一個 continuation，清空 stack 的同時也清空了用過的值，順便成為了一種 generational garbage collector！
-用一個方法同時處理 tail-recursion 跟 GC 真是相當漂亮啊。</description>
+      <description>&lt;p&gt;如果問軟體工程師他覺得簡潔又經典的文章，我想很多人會回答你這篇：&lt;a href=&#34;http://home.pipeline.com/~hbaker1/CheneyMTA.html&#34;&gt;Cheney on the M.T.A&lt;/a&gt;.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -32,15 +26,13 @@ CHICKEN 的特色之一是用了 cheney on the MTA 來實作 tail-recursive，�
       <pubDate>Sun, 30 Jun 2019 00:00:00 +0000</pubDate>
       
       <guid>https://devpoga.org/post/2019-06-30_structured_concurrency/</guid>
-      <description>Thread 跟 Coroutine 是兩種常常用來處理 Concurrency 的工具。
-使用這兩個工具時，很麻煩的一點就是需要手動管理他們的生命週期。本質上，Thread 跟 Coroutine 都是 global scope，不管你如何建立，他們都獨立在原本的程式順序之外。
-常見的例子是，如果你在 main 建立一個新的 thread，main 並不會等 thread 結束，而需要你手動 join thread，在複雜的情況（例如 cancel、timeout）便相當容易出錯。
-而 Structured Concurrency 就是試圖將 Thread 的生命週期與大家都很熟悉的 scope 結合。
-什麼是 Structured Concurrency Structured Concurrency 透過 function scope 明確表示 thread 之間的巢狀關係。借用 libdill 的圖(http://libdill.org/structured-concurrency.html)：
-沒有 Structured Concurrency 的情況：
-有 Structured Concurrency 的情況：
-為什麼要做 Structured Concurrency Thread 跟 coroutine 的全域性質破壞了封裝（encapsulation）：在一個 function 內建立的物件竟然會 leak 到 global scope，造成了管理上的困難。
-而 Structured Concurrency 讓我們能建立出熟悉的 scope tree：</description>
+      <description>&lt;p&gt;Thread 跟 Coroutine 是兩種常常用來處理 Concurrency 的工具。&lt;/p&gt;
+
+&lt;p&gt;使用這兩個工具時，很麻煩的一點就是需要手動管理他們的生命週期。本質上，Thread 跟 Coroutine 都是 global scope，不管你如何建立，他們都獨立在原本的程式順序之外。&lt;/p&gt;
+
+&lt;p&gt;常見的例子是，如果你在 main 建立一個新的 thread，main 並不會等 thread 結束，而需要你手動 join thread，在複雜的情況（例如 cancel、timeout）便相當容易出錯。&lt;/p&gt;
+
+&lt;p&gt;而 Structured Concurrency 就是試圖將 Thread 的生命週期與大家都很熟悉的 scope 結合。&lt;/p&gt;</description>
     </item>
     
   </channel>

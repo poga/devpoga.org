@@ -5,6 +5,8 @@ paginate = 15
 
 theme = "arabica"
 
+hasCJKLanguage = true
+
 [params]
     description = ""
     dateFormatToUse = "2006-01-02"

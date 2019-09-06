@@ -17,9 +17,13 @@
       <pubDate>Wed, 04 Sep 2019 00:00:00 +0000</pubDate>
       
       <guid>https://devpoga.org/post/2019-09-04_notes_on_the_signal_protocol/</guid>
-      <description>Notes on the Signal Protocol  So, I assume you&amp;rsquo;re already familiar with Public-key cryptography and Diffie-Hellman key exchange. If not, there are lots of good materials about them. Check them out first!
- Public-key cryptography is a solid, well-studied foundation for today&amp;rsquo;s modern encryption and privacy. PGP, Diffle-Hellman, and RSA are all well-known. However, if you want to develop something with encryption, they might be not enough.
-Why?</description>
+      <description>&lt;p&gt;&lt;img src=&#34;./dh.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;So, I assume you&amp;rsquo;re already familiar with &lt;a href=&#34;https://en.wikipedia.org/wiki/Public-key_cryptography]https://en.wikipedia.org/wiki/Public-key_cryptography&#34;&gt;Public-key cryptography&lt;/a&gt; and &lt;a href=&#34;https://en.wikipedia.org/wiki/Diffie%E2%80%93Hellman_key_exchange&#34;&gt;Diffie-Hellman key exchange&lt;/a&gt;. If not, there are lots of good materials about them. Check them out first!&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Public-key cryptography is a solid, well-studied foundation for today&amp;rsquo;s modern encryption and privacy. PGP, Diffle-Hellman, and RSA are all well-known. However, if you want to develop something with encryption, they might be not enough.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -28,13 +32,7 @@ Why?</description>
       <pubDate>Fri, 12 Jul 2019 00:00:00 +0000</pubDate>
       
       <guid>https://devpoga.org/post/2019-07-11_cheney_on_the_mta/</guid>
-      <description>如果問軟體工程師他覺得簡潔又經典的文章，我想很多人會回答你這篇：Cheney on the M.T.A.
-Scheme，史上最不 portable 的語言，有著各種千奇百怪的實作，每個實作的特點，支援的語法都有微妙的不同。
-CHICKEN 是一個 scheme 的實作，是個 scheme-to-c 的編譯器，主打的特性很類似 Lua：簡單、可攜、容易擴充、容易嵌入至其他程式中。
-像 scheme 這類 lisp 方言，很多的功能都依賴 recursion 跟高效能的尾遞回（tail-recursion）來達成。傳統上，尾遞回的實作是透過一種叫「trampoline」的架構來處理：讓一個外層函式呼叫內部的尾遞回函式，內部的尾遞回函式回傳他要遞回的下一個 function 的位址，讓外層函式不停呼叫。這樣的作法避免了遞回把 stack 撐爆的問題，卻也因為透過了 function pointer，讓效能變差，也讓參數傳遞變複雜。
-CHICKEN 的特色之一是用了 cheney on the MTA 來實作 tail-recursive，作法是把尾遞回編譯成 CSP 形式的 C，讓每個 function 結束時主動呼叫他的 continuation，把尾遞回編譯成一個永不 return 的函式。另外，所有的值也全都放在 stack 上。
-既然永遠不會 return，自然得處理 stack overflow 的問題。解法也蠻單純的，在 stack 快要爆炸的時候，直接 setjmp/longjmp 跳到下一個 continuation，清空 stack 的同時也清空了用過的值，順便成為了一種 generational garbage collector！
-用一個方法同時處理 tail-recursion 跟 GC 真是相當漂亮啊。</description>
+      <description>&lt;p&gt;如果問軟體工程師他覺得簡潔又經典的文章，我想很多人會回答你這篇：&lt;a href=&#34;http://home.pipeline.com/~hbaker1/CheneyMTA.html&#34;&gt;Cheney on the M.T.A&lt;/a&gt;.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -43,15 +41,13 @@ CHICKEN 的特色之一是用了 cheney on the MTA 來實作 tail-recursive，�
       <pubDate>Sun, 30 Jun 2019 00:00:00 +0000</pubDate>
       
       <guid>https://devpoga.org/post/2019-06-30_structured_concurrency/</guid>
-      <description>Thread 跟 Coroutine 是兩種常常用來處理 Concurrency 的工具。
-使用這兩個工具時，很麻煩的一點就是需要手動管理他們的生命週期。本質上，Thread 跟 Coroutine 都是 global scope，不管你如何建立，他們都獨立在原本的程式順序之外。
-常見的例子是，如果你在 main 建立一個新的 thread，main 並不會等 thread 結束，而需要你手動 join thread，在複雜的情況（例如 cancel、timeout）便相當容易出錯。
-而 Structured Concurrency 就是試圖將 Thread 的生命週期與大家都很熟悉的 scope 結合。
-什麼是 Structured Concurrency Structured Concurrency 透過 function scope 明確表示 thread 之間的巢狀關係。借用 libdill 的圖(http://libdill.org/structured-concurrency.html)：
-沒有 Structured Concurrency 的情況：
-有 Structured Concurrency 的情況：
-為什麼要做 Structured Concurrency Thread 跟 coroutine 的全域性質破壞了封裝（encapsulation）：在一個 function 內建立的物件竟然會 leak 到 global scope，造成了管理上的困難。
-而 Structured Concurrency 讓我們能建立出熟悉的 scope tree：</description>
+      <description>&lt;p&gt;Thread 跟 Coroutine 是兩種常常用來處理 Concurrency 的工具。&lt;/p&gt;
+
+&lt;p&gt;使用這兩個工具時，很麻煩的一點就是需要手動管理他們的生命週期。本質上，Thread 跟 Coroutine 都是 global scope，不管你如何建立，他們都獨立在原本的程式順序之外。&lt;/p&gt;
+
+&lt;p&gt;常見的例子是，如果你在 main 建立一個新的 thread，main 並不會等 thread 結束，而需要你手動 join thread，在複雜的情況（例如 cancel、timeout）便相當容易出錯。&lt;/p&gt;
+
+&lt;p&gt;而 Structured Concurrency 就是試圖將 Thread 的生命週期與大家都很熟悉的 scope 結合。&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -60,11 +56,9 @@ CHICKEN 的特色之一是用了 cheney on the MTA 來實作 tail-recursive，�
       <pubDate>Sat, 29 Jun 2019 00:00:00 +0000</pubDate>
       
       <guid>https://devpoga.org/post/2019-06-29_%E5%B7%A5%E7%A8%8B%E5%B8%AB%E7%9A%84%E8%8B%B1%E6%96%87%E5%AF%AB%E4%BD%9C%E8%83%BD%E5%8A%9B/</guid>
-      <description>寫作能力一直是工程師實力一個很重要的指標。
-能清楚的透過文字表達，在寫規格、文件時都很重要。在這個非同步的遠端工作時代，文字能力也幾乎直接代表了團隊合作的能力。
-以下幾本都是常常被推薦的英文寫作指南：
- The Elements of Style The Sense of Style: The Thinking Person&amp;rsquo;s Guide to Writing in the 21st Century Help! For Writers: 210 Solutions to the Problems Every Writer Faces On Writing Well: The Classic Guide to Writing Nonfiction  其他人的一些心得
- THE ULTIMATE GUIDE TO WRITING ONLINE Rules for writing  剩下需要的就是不斷的練習了。</description>
+      <description>&lt;p&gt;寫作能力一直是工程師實力一個很重要的指標。&lt;/p&gt;
+
+&lt;p&gt;能清楚的透過文字表達，在寫規格、文件時都很重要。在這個非同步的遠端工作時代，文字能力也幾乎直接代表了團隊合作的能力。&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -73,16 +67,7 @@ CHICKEN 的特色之一是用了 cheney on the MTA 來實作 tail-recursive，�
       <pubDate>Mon, 29 Apr 2019 00:00:00 +0000</pubDate>
       
       <guid>https://devpoga.org/post/golang-7-years-later/</guid>
-      <description>從開始接觸 Go 到現在也已經過了 7 年了啊&amp;hellip; 最近又有機會拿出 Go 出來寫寫，隨手寫一下感受。
-編輯器 vim 還是很好用。
-這幾年微軟提出的 Language Server Protocol 相當受到社群歡迎，也算是解決了程式語言跟編輯器社群長久以來的困境，成長相當快速。vim plugin 也跟風從 vim-go 換成基於 Language Server Protocol 的 LanguageClient-neovim 配上 bingo。有點小不穩但是功能算齊全。
-tagbar 一樣是用 gotags 沒變
-Dependency Management 當年被這問題惹毛好幾次，2019 年的今天似乎 Go 社群終於要收斂到一個比較好的作法上了&amp;hellip; 目前 go module 用起來有些陽春，有些怪異，不過堪用。
-終於不用再處理 GOPATH 的鳥事了&amp;hellip; 真是令人感動啊。
-Sync Map 當初堅持說不需要，最後還是提供 sync.Map 了嘛。
-&amp;ndash;
-好像就這樣了。
-雖然這語言還是有很多我不喜歡的地方，不過，一個語言可以經過這麼久都沒啥改變的堅持跟說服力，我也是相當欽佩。</description>
+      <description>&lt;p&gt;從&lt;a href=&#34;https://blog.golang.org/go-version-1-is-released&#34;&gt;開始接觸 Go&lt;/a&gt; 到現在也已經過了 7 年了啊&amp;hellip; 最近又有機會拿出 Go 出來寫寫，隨手寫一下感受。&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -91,9 +76,7 @@ Sync Map 當初堅持說不需要，最後還是提供 sync.Map 了嘛。
       <pubDate>Tue, 26 Feb 2019 00:00:00 +0000</pubDate>
       
       <guid>https://devpoga.org/post/implementation-lua53/</guid>
-      <description>Notes on the Implementation on Lua 5.3 is a collection of my notes on the Lua 5.3 source code. It&amp;rsquo;s a mix of both high-level ideas and interesting details in the source code.
-There can be errors. Feel free to contact me if you have any question or feedback.
-Why Lua? In the world of embeddable scripting language, Lua is still the most well-known solution. It&amp;rsquo;s lightweight enough to run on mobile phones, IoT devices.</description>
+      <description>&lt;p&gt;&lt;a href=&#34;https://poga.github.io/lua53-notes/&#34;&gt;Notes on the Implementation on Lua 5.3&lt;/a&gt; is a collection of my notes on the Lua 5.3 source code. It&amp;rsquo;s a mix of both high-level ideas and interesting details in the source code.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -102,11 +85,7 @@ Why Lua? In the world of embeddable scripting language, Lua is still the most we
       <pubDate>Sat, 05 Jan 2019 03:52:57 +0000</pubDate>
       
       <guid>https://devpoga.org/post/2019-01-05_%E7%82%BA%E4%BB%80%E9%BA%BC%E7%8F%BE%E4%BB%A3%E9%81%8A%E6%88%B2%E9%83%BD%E8%A6%81%E6%9C%89%E4%B8%80%E5%A0%86%E4%B8%8D%E5%90%8C%E7%9A%84%E8%B2%A8%E5%B9%A3%E5%9C%A8%E8%A3%A1%E9%A0%AD/</guid>
-      <description>Photo by Keegan Houser on Unsplash
-金幣、鑽石、寶石、水晶？ Earnest questions: What&amp;#39;s up with modern video games having so many different currencies? (Gold, dust, gems, caps, etc.) Where did this start? What is the intended effect on player psychology?
-&amp;mdash; Daniel Solis (@DanielSolis) December 28, 2018  大家都已經知道的理由：為了混淆遊戲貨幣跟現實貨幣的對價關係。但是其他的沒有辦法用現金換貨幣的遊戲呢？Triple Town 作者 Daniel Cook 的看法：
-這樣比較容易平衡遊戲經濟。每種貨幣可以對應到某個遊戲面向，如果那個面向經濟效益太強大，只要調整那種貨幣的產出跟消耗就能解決，而不會影響整個遊戲。
-1. Easier economy balancing. Each currency maps to a functional area of the game. If one area of the economy is imbalanced, you can tweak sources and sinks for that unique currency.</description>
+      <description>&lt;p&gt;&lt;img src=&#34;https://devpoga.org/post/2019-01-05_為什麼現代遊戲都要有一堆不同的貨幣在裡頭/images/1.jpeg&#34; alt=&#34;image&#34; /&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -115,9 +94,9 @@ Why Lua? In the world of embeddable scripting language, Lua is still the most we
       <pubDate>Fri, 12 Oct 2018 00:00:00 +0000</pubDate>
       
       <guid>https://devpoga.org/post/parsing-streaming-data-actix-lua/</guid>
-      <description>actix-lua provides a safe scripting environment for the actix framework with the Lua Programming Language.
-Here&amp;rsquo;s an example about what you can achieve with it. Hope you can try these ideas in your next project.
-Definitely not a world-changing project Path of Exile(PoE) is an online multiplayer RPG. In PoE, players get powerful, unique items by killing monsters. Then, they put their items to the market and trade with others.</description>
+      <description>&lt;p&gt;&lt;a href=&#34;https://github.com/poga/actix-lua&#34;&gt;&lt;code&gt;actix-lua&lt;/code&gt;&lt;/a&gt; provides a safe scripting environment for the &lt;a href=&#34;http://actix.rs&#34;&gt;actix&lt;/a&gt; framework with the &lt;a href=&#34;http://lua.org&#34;&gt;Lua Programming Language&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Here&amp;rsquo;s an example about what you can achieve with it. Hope you can try these ideas in your next project.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -126,19 +105,7 @@ Definitely not a world-changing project Path of Exile(PoE) is an online multipla
       <pubDate>Thu, 27 Sep 2018 00:00:00 +0000</pubDate>
       
       <guid>https://devpoga.org/post/2018-09-28_%E6%88%91%E9%81%B8%E6%93%87%E7%94%9F%E7%94%A2%E5%8A%9B%E5%B7%A5%E5%85%B7%E7%9A%84%E5%9F%BA%E6%BA%96/</guid>
-      <description>先說結論，我用 OmniFocus 用了五年以上了，目前依然滿意。
-現在的生產力工具實在太多了。為了在焦慮的身心與環境中活下來，我試過許多工具，看到 Bruce 討論到，分享一些心得。
-快速的收納臨時出現的想法跟待辦事項。 現實中大部分的事情都是突然想到的。吃飯時突然想到一則文章的標題、工作時想到明天是老婆生日要買禮物、買咖啡時想到苦思許久的 bug 要怎麼解。
-這種時候，能快速的收納這些小事就很重要。GTD 很重要的 Inbox 觀念便是如此：清空腦中那些大量漂浮的雜事。收納的門檻越低，越能保持頭腦清楚。
-OmniFocus Mac 版的全域熱鍵跟 iOS app 都能達到這個目標。
-快速的看到需要做的事。 重點是「看到」而不是「搜尋到」。待辦事項應該在收納時，或是每週 review 時整理好。平時應該要能直接「看到」當下可以做的事情。而不是花額外的力氣去「搜尋」出要做的事。
-以 OmniFocus 而言，就是用 perspective 去彙整 Tag（以前叫做 Context）。
-準備一個叫 Low Energy 的 Perspective，在腦力不足但是又睡不著時，可以找點雜事來做。
-或是一個叫 Writing 的 Perspective，在滿肚子牢騷不想寫 code 時可以直接找個主題來寫。
-隱藏不該看到的事項。 這點我覺得是很多工具漏掉的部分。
-在現在高度 context-switch 的環境，人腦早就被訓練的極易分心。如果沒有一個獨立的輸入介面，導致輸入資料時會看到其他不相關的事項，這些都會造成額外的腦力負擔。原本只是要記下購物清單，結果剛好看到明天有個會議要開。好不容易從腦中清掉的資訊又再度回到腦中，徒增焦慮。
-而 OmniFocus 的輸入介面夠乾淨，不會看到額外的資訊。整理的功能也夠完整。輸入之後不需要另外搜尋，該看到這些事情時自然就會看到。
-不過，生產力問題本質上是個性問題，不習慣的方法也不用強求自己，那也只是徒增焦慮而已。</description>
+      <description>&lt;p&gt;先說結論，我用 OmniFocus 用了五年以上了，目前依然滿意。&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -147,13 +114,13 @@ OmniFocus Mac 版的全域熱鍵跟 iOS app 都能達到這個目標。
       <pubDate>Mon, 03 Sep 2018 23:30:04 +0000</pubDate>
       
       <guid>https://devpoga.org/post/2018-09-03_%E5%A6%82%E4%BD%95%E6%95%B4%E5%90%88-rust-%E8%88%87-lua/</guid>
-      <description>Photo by Anders Jildén on Unsplash
-在系統中遷入一個動態輕巧的 scripting language 一直是個常見的設計。像 Rust 這樣的系統語言，雖然效能好，但是上手門檻較高。這時若是能遷入一個像 Lua 一樣動態型別，簡單易懂的語言，便能大幅提高系統彈性。
-最近為了實做 actix-lua，研究了一下 Rust 跟 Lua 之間的介接，順便學了不少 Rust 跟 Lua 的設計，筆記在此。
-Lua Binding 的選擇 Rust 現在有數套 Lua binding，比較常被人提到的是 lua, hlua 與 rlua 。
-lua 基本上是直接把 Lua 的 C API 直接移植，沒有做多餘的包裝。所以需要絕對的效能的話，這可能是你的最佳選擇。不過安全性跟 UB 就要自己處理了。
-hlua 提供是比較高階的介面，不讓你直接存取 Lua Stack，可以視為 lua API 上的再一層包裝。彈性較低，可能不適合某些需求。
-rlua 是由知名遊戲工作室 chucklefish 開發。延續 Rust 對安全性的要求，設計介面時也是以安全性為最高原則。在使用 rlua 的 API 時，不會產生任何 UB（由於 lua API 跟內部的運作方式，這種 API 真的很難做到…）也許犧牲了一點效能，不過對於 Rust 的使用者來說，這樣的 tradeoff 應該是蠻值得的。</description>
+      <description>&lt;p&gt;&lt;img src=&#34;https://devpoga.org/post/2018-09-03_如何整合-rust-與-lua/images/1.jpeg&#34; alt=&#34;image&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Photo by &lt;a href=&#34;https://unsplash.com/photos/4izt8TxQmEs?utm_source=unsplash&amp;amp;amp;utm_medium=referral&amp;amp;amp;utm_content=creditCopyText&#34;&gt;Anders Jildén&lt;/a&gt; on &lt;a href=&#34;https://unsplash.com/search/photos/lua?utm_source=unsplash&amp;amp;amp;utm_medium=referral&amp;amp;amp;utm_content=creditCopyText&#34;&gt;Unsplash&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;在系統中遷入一個動態輕巧的 scripting language 一直是個常見的設計。像 &lt;a href=&#34;https://www.rust-lang.org/&#34;&gt;Rust&lt;/a&gt; 這樣的系統語言，雖然效能好，但是上手門檻較高。這時若是能遷入一個像 &lt;a href=&#34;https://www.lua.org/&#34;&gt;Lua&lt;/a&gt; 一樣動態型別，簡單易懂的語言，便能大幅提高系統彈性。&lt;/p&gt;
+
+&lt;p&gt;最近為了實做 &lt;a href=&#34;https://github.com/poga/actix-lua&#34;&gt;actix-lua&lt;/a&gt;，研究了一下 Rust 跟 Lua 之間的介接，順便學了不少 Rust 跟 Lua 的設計，筆記在此。&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -162,16 +129,13 @@ rlua 是由知名遊戲工作室 chucklefish 開發。延續 Rust 對安全性�
       <pubDate>Mon, 16 Jul 2018 06:19:38 +0000</pubDate>
       
       <guid>https://devpoga.org/post/2018-07-16_%E8%BB%9F%E9%AB%94%E8%A8%AD%E8%A8%88%E6%A8%A1%E5%BC%8F-dataoriented-design/</guid>
-      <description>Photo by Rebecca Oliver on Unsplash
-遊戲開發對很多開發者來說是個陌生的領域。遊戲對於效能的極高要求跟規格的不確定性，產生出了許多特有的系統架構。Data-Oriented Design 便是個有趣的設計模式。
-相較於其他設計模式，Data-Oriented Design 深受硬體快取（cache）架構影響。對於現代的高度 pipeline、高速的 CPU 架構而言，資料的存取方式對效能有非常大的影響。比起 L1、L2 cache，對主記憶體的一次存取帶來的是數百倍的效能損耗。為了避免太過抽象，就用個實際的例子來解釋吧。
-假設我們的遊戲中有許多的球，每個球有顏色、位置、半徑等等資訊。對於學過物件導向的人而言，很可能直覺的設計成這樣：
-class Ball { Point position; Color color; double radius; }  這樣的作法很符合人對世界的理解：每個球是獨立的個體，有自己的屬性。
-不過，如果遊戲中有數百萬個球在移動，這樣的作法的效能就不太好了。每個球的座標都經過物件導向的層層封裝，分散在記憶體四處，spatial locality 非常差，在更新的過程中產生了大量的 cache miss。
-There’s no ball 如果採用 Data-Oriented Design 的話，作法會變成：
-class Balls { vector&amp;lt;Point&amp;gt; positions; vector&amp;lt;Color&amp;gt; color; vector&amp;lt;double&amp;gt; radius; }  於是我們的程式中不再有「獨立的球」這個設計存在，所謂的球，只是透過一個 index，含蓄的存在遊戲世界中。
-這樣的作法，對人而言並不直覺，但是對硬體而言，效能好上許多。大多數的 vector 實做，都會將其中的內容放在一段連續的記憶體空間中。因此 spatial locality 很好，對 CPU 而言，他能很輕易的猜到接下來要存取的記憶體位址，省下許多猜錯而損失的 CPU cycle。
-SoA 與 AoS 這兩種作法又分別被稱做 Array of Structs 跟 Structs of Arrays。前者是用一個陣列存放許多獨立的 struct（class），後者是用一個 struct（class）存放許多陣列。</description>
+      <description>&lt;p&gt;&lt;img src=&#34;https://devpoga.org/post/2018-07-16_軟體設計模式-dataoriented-design/images/1.jpeg&#34; alt=&#34;image&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Photo by &lt;a href=&#34;https://unsplash.com/photos/BpqDaDxG48w?utm_source=unsplash&amp;amp;amp;utm_medium=referral&amp;amp;amp;utm_content=creditCopyText&#34;&gt;Rebecca Oliver&lt;/a&gt; on &lt;a href=&#34;https://unsplash.com/search/photos/game?utm_source=unsplash&amp;amp;amp;utm_medium=referral&amp;amp;amp;utm_content=creditCopyText&#34;&gt;Unsplash&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;遊戲開發對很多開發者來說是個陌生的領域。遊戲對於效能的極高要求跟規格的不確定性，產生出了許多特有的系統架構。Data-Oriented Design 便是個有趣的設計模式。&lt;/p&gt;
+
+&lt;p&gt;相較於其他設計模式，Data-Oriented Design 深受硬體快取（cache）架構影響。對於現代的高度 pipeline、高速的 CPU 架構而言，資料的存取方式對效能有非常大的影響。比起 L1、L2 cache，對主記憶體的一次存取帶來的是數百倍的效能損耗。為了避免太過抽象，就用個實際的例子來解釋吧。&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -180,15 +144,11 @@ SoA 與 AoS 這兩種作法又分別被稱做 Array of Structs 跟 Structs of Ar
       <pubDate>Wed, 18 Apr 2018 00:00:00 +0000</pubDate>
       
       <guid>https://devpoga.org/post/2018-04-18_luajit-%E5%AF%A6%E5%81%9A%E6%8E%A2%E7%B4%A2-nan-tagging/</guid>
-      <description>一切都是為了效能 故事要從 boxed value 跟 unboxed value 說起。
-所謂的 boxed value 是指：不直接存取 primitive value，而是透過指標來操作數值。近代的程式語言常常都用這種方法操作資料。而 unboxed value 就是指直接操作值，不經過一層指標。
- Boxed value &amp;amp; unboxed value
-為什麼要用 boxed value 呢？因為近代程式語言都提供物件、function 等等一定會透過指標來操作的資料。將所有資料統一包（box）在指標後，讓系統處理泛型（generic）時變得更加一致。如果你寫過 Java 應該就有體驗過這種設計，為了解決 boxed/unboxed value 之間麻煩的轉換，auto-boxing 也是常見的功能。
-當然，這多出來的一層指標並不是免費的。
-效能的損失 以浮點數做為例子。現代系統架構都提供浮點數專屬的指令集來加速計算，譬如說，在 x86 上你可以用 faddp、 fdivp 之類的指令，讓 FPU硬體幫你計算。一旦多了一層指標，每次計算前都要 deref 一次，多出許多重複的工作。
-另外，這些包裝不是只有指標，還包含了底下 value 的型別。因此使用的記憶體也會變多。
-NaN Tagging 有沒有辦法讓 primitive value 跟其他 boxed value 用同樣的結構儲存，避免效能損失，又能讓系統更簡單呢？LuaJIT 用 NaN Tagging 來解決這個問題。
-要搞懂 NaN Tagging 前，先來複習一下 IEEE 754 Floating Point 的定義。IEEE 754 的 64bit floating point (double) 的格式如下，第一個 bit 是 sign，接著 11 個 bit 的指數，最後是52 bit 的分數。</description>
+      <description>&lt;p&gt;&lt;img src=&#34;https://devpoga.org/post/2018-04-18_luajit-實做探索-nan-tagging/images/1.png&#34; alt=&#34;image&#34; /&gt;&lt;/p&gt;
+
+&lt;h4 id=&#34;一切都是為了效能&#34;&gt;一切都是為了效能&lt;/h4&gt;
+
+&lt;p&gt;故事要從 boxed value 跟 unboxed value 說起。&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -197,22 +157,13 @@ NaN Tagging 有沒有辦法讓 primitive value 跟其他 boxed value 用同樣�
       <pubDate>Tue, 06 Feb 2018 00:00:00 +0000</pubDate>
       
       <guid>https://devpoga.org/post/2018-04-10_why_serverless/</guid>
-      <description>以下擷取、修訂自 2018.03.29 我在 iThome Serverless All-Star 的分享的逐字稿
- 究竟為什麼要用 Serverless 呢？
-近年，無數人嘗試著製作各種產品。每個開發者剛開始都是興致勃勃，大家都想改變世界，但後來都漸漸失去了熱情。為什麼呢？我觀察到幾個現象：
-首先是「好程式」這件事，軟體開發者都想寫出容易開發、容易擴充、容易維護的程式，但是現實的環境往往沒有足夠的資源讓你慢慢開發。大多數的時間都在趕死線。
-即使跟主管談，主管都會說「我們另外安排一個時間來重構」，但是從來沒找到這段時間過。於是，程式越來越難維護，開發越來越慢，開發者心情越來越差，產品疊代速度越來越慢，最後就失敗。
-為什麼會有這種現象呢？因為軟體架構的價值實在太難量化了，每個工程師對架構都有不一樣的想法，也不一定能好好掌握架構的知識。連工程師都難以捉摸的東西，更不用希望非專業的人能理解了。於是，軟體架構永遠都是第一個被犧牲的。
-不過，在 serverless 中，軟體架構的好壞直接表現在你的營運成本上。軟體架構好，執行的速度就快，消耗的資源也少。因為 serverless 是按照 function 使用的資源來計價，這些變化就直接對應到帳單上的費用減少。原本被視為「無生產力」的重構行為，也變成人見人愛的 cost down 行為。好的開發者跟壞的開發者的差別，也能從執行上的成本一目了然。於是，開發者有更多的籌碼去談出一個優化架構的空間。不是每個人都能看懂軟體設計，但是一定看的懂帳單上的數字。
-再來是「好產品」，一個產品要符合用戶的需求，才能在市場上生存。但是，軟體的開發過程讓人難以專注在用戶需求上。規劃專案時，大多數的時間都花在「技術規格」、「時程」上，規劃會議上，大家就在一張紙上增增減減，最後妥協出一個實做清單。為什麼會這樣呢？
-我認為是因為開發時，讓你分心的東西實在太多了。一個功能不只是一條 SQL，還要考慮資安、擴充性、如何 deploy、如何維護。這些額外的考量，都讓人無法專注在用戶需求上。有人的說法是「從一條 SQL 到上線的距離有多遠？」以現在的環境而言，真的很遠。
-而 serverless 把系統架構跟技術細節幾乎都藏起來了。以前，寫一個 function 要上線前，要考慮怎麼 deploy，可以撐住多少流量，資安、監控、日誌、等等無數的細節。現在，只要寫好 function 就可以直接上線，其他的細節 serverless 平台都幫你做好了。產品開發速度更快，開發者需要擔心的事情更少。大家可以專注在同一件事：「用戶的需求上」。做出好產品的機會更高。
-把 serverless 結合 tracking 之後，更可以做出更精細的產品分析。將整個使用者的使用流程，轉化成一連串的成本，與最後預期的收益一比較，馬上可以看出：是該優化轉換率，還是優化流量，或是優化某個特別消耗資源的 function？產品方向不再是瞎子摸象，而是更明確的流程。
-最後是「開發費用」這件事。軟體開發的成本始終難以預估。時程與需求的變化，讓定價變的很困難。以外包而言，報價永遠是最難的事情。今天客戶需要一個產品，一家估了 100 萬，另一家估 10 萬，其中的差別究竟是什麼？對客戶來說幾乎沒辦法判斷。所以外包總是很容易做不出需要的東西，或是充滿了浪費。維護費更是一個人人都討厭的東西，開發者永遠覺得維護費太低，客戶永遠覺得他的維護費浪費了，怎麼算都有人不滿意。
-serverless 提供了一種新的外包計價模式，按照用量計費。因為 serverless 的成本透明，所以開發者的營運成本也很透明。這時按照用量計費，讓雙方都有共同的誘因去優化產品：最大化產品價值。產品使用量越大，開發者收益越高，用的人越多，客戶就越開心。
-說了這麼多，其實 serverless 代表的就是把計算力變成 utility 的一個過程。
-就像水電一樣，大家都需要的東西，規模化到最後，就會變成付錢就能解決的東西。使用者需要介入的越來越少，成本標準化，使用者不再需要搞懂各種規模化的技術：像是 docker, devops, capacity planning, cloud 等等。維運變的更簡單。
-如果你的環境還沒跟上這些技術，那就跳過他們直接開始用 serverless 吧。</description>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;本文擷取、修訂自 2018.03.29 我在 iThome Serverless All-Star 的分享的逐字稿&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;究竟為什麼要用 Serverless 呢？&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -221,13 +172,9 @@ serverless 提供了一種新的外包計價模式，按照用量計費。因為
       <pubDate>Tue, 06 Feb 2018 00:00:00 +0000</pubDate>
       
       <guid>https://devpoga.org/post/2018-02-06_%E9%81%BA%E5%BF%98%E7%9A%84%E7%94%9F%E7%94%A2%E5%8A%9B/</guid>
-      <description>人們談到生產力，似乎就免不了討論各種蒐集想法、整理心得的工具。彷彿忘了的東西都是一種損失。
-與其努力記下所有事情，不如試試盡情遺忘吧。
-用實體筆記本寫下想法，寫滿後就丟掉吧。
-瀏覽器的分頁，三天沒碰就直接關了吧。
-堆著的東西三個月沒用到，就回收掉吧。
-遇到待辦事項，快速的決斷、轉交出去、或是立刻完成。
-反正，如果是真正重要的事，人生會用各種方法提醒你的。</description>
+      <description>&lt;p&gt;人們談到生產力，似乎就免不了討論各種蒐集想法、整理心得的工具。彷彿忘了的東西都是一種損失。&lt;/p&gt;
+
+&lt;p&gt;與其努力記下所有事情，不如試試盡情遺忘吧。&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -236,24 +183,9 @@ serverless 提供了一種新的外包計價模式，按照用量計費。因為
       <pubDate>Fri, 22 Dec 2017 07:32:07 +0000</pubDate>
       
       <guid>https://devpoga.org/post/2017-12-22_kappa-architecture%E4%BB%A5%E8%B3%87%E6%96%99%E7%82%BA%E4%B8%AD%E5%BF%83%E7%9A%84%E7%B3%BB%E7%B5%B1%E6%9E%B6%E6%A7%8B/</guid>
-      <description>在開發軟體時，有許多眾所周知的架構模式（architecture pattern）可做為參考。例如最廣為人知的 MVC 架構。採用這些常用模式，能大幅減低溝通成本，各種 Framework 也能提高開發速度。
-現在已經是個以資料為中心的環境，各種商業決策都依賴大量的資料。因此，系統必須能提供各種資料格式與查詢方式供各種需求使用。在這樣的環境中，也慢慢發展出許多特有的模式。
-常見的狀況是，一個系統中不同的角色有著不同的需求。工程師希望能採用高效能，容易擴充的架構；業務部門希望能即時查到各種資訊；會計系統希望能收到批次處理的當月報表。這些不同的需求，都在不斷的拉扯一個系統的架構。
-如果是較為單純的系統，所有資料都會存在單一資料庫中。常常，為了應付各種互相衝突的需求，資料的格式（schema）被不斷修改、欄位越來越多。最後各部門的需求互相糾結，整個系統陷入泥沼，開發速度大減。只使用單一資料庫又無法滿足各種需求，只好導入 ElasticSearch 做全文檢索與 Hadoop/Spark 進行大量資料處理，即時資料處理也需要與批次處理完全不同的架構。於是，整個系統益加複雜，難以維護。
-遇到這種狀況，許多人都會將系統按照業務領域切開，切成一個一個的 microservices。每個 service 有著自己專用的資料儲存架構，便可解決共用資料庫的糾結狀況。
-以電商系統為例，系統將會被拆成「訂單服務」、「客戶分析服務」、「帳務服務」等獨立的服務組成。服務之間只透過 API 來溝通，避免過度耦合。
-不過，由於各個服務之間需要不斷的互相溝通與交換資料，每個服務對資料也有不同的查詢需求。隨著需求不斷變動，每個子服務所提供的 API 還是會變的越來越複雜。
-各服務為了避免 API 的麻煩，會希望自己也有一份資料副本可隨意使用。一旦資料有了副本，就要處理許多資料同步的麻煩問題。
-無論如何，這些狀況都只會讓系統再度糾結在一起，原本按領域切割好的服務實際上又合而為一。遇到這種情況時，通常代表服務的界線需要做調整。但調整服務界線從來就不是一件簡單的事。
-假設有兩個部門都會對訂單進行各種分析。理想中，應該切出一個分析服務來服務這兩個部門。然而受限於組織架構（head count 分配、預算規劃、政治等），最後多半是兩個部門有各自的分析服務。因此大幅提高系統開發成本，產生許多重複的工作。
-康威定律（Conway’s Law）便是描述這個現象：系統的架構就等於組織的架構。如果已有組織架構存在，那就很難設計出打破原先組織架構的系統架構。
-於是，系統架構被組織架構所限制。無法劃分出正確的服務分界，便無法建立真正有彈性的系統架構
-問題的本質：資料的流通性 實際上，這些問題其實只是同一問題的不同面向。也就是「資料在領域間轉換的複雜度」。
- 不同業務領域需要的資料結構大不相同，所以單一資料庫提供的單一 schema 無法負荷。 團隊在有限資源下，難以應付不同領域的需求，導致無法設計容易維護與使用的 API。 讓資料在不同領域間流動的成本太高，所以資料出現大量、可能過時的副本。 領域間差異太大，導致部門間溝通困難，因此組織架構影響系統架構決策，與系統架構互相糾結、牽制。  而 Kappa 架構便是藉由回歸資料的本質來解決這些問題。
-資料的本質：Append-only Log 任何資料都是由一連串的改變所形成，因此，每一筆資料都可以用一個 append-only log 表示。
-假設目前有一筆用戶資料如下：
-{ &amp;quot;user_id&amp;quot;: 1234, &amp;quot;username&amp;quot;: “Jack123”, &amp;quot;balance&amp;quot;: 75 }  這筆用戶資料其實是由一連串的事件修改所形成：
-{ // 使用者註冊 &amp;quot;event&amp;quot;: &amp;quot;register&amp;quot;, &amp;quot;username&amp;quot;: &amp;quot;Jack123&amp;quot;, &amp;quot;user_id&amp;quot;: 1234, } { // 使用者儲值 &amp;quot;event&amp;quot;: &amp;quot;deposit&amp;quot;, &amp;quot;user_id&amp;quot;: 1234 &amp;quot;add_balance”: 100 } { // 使用者消費付款 &amp;quot;event&amp;quot;: &amp;quot;purchase&amp;quot;, &amp;quot;user_id&amp;quot;: 1234, &amp;quot;add_balance&amp;quot;: -25 }  因為已經發生的修改不會再變動，因此這是一份 append-only log。</description>
+      <description>&lt;p&gt;在開發軟體時，有許多眾所周知的架構模式（architecture pattern）可做為參考。例如最廣為人知的 &lt;a href=&#34;https://www.wikiwand.com/zh-tw/MVC&#34;&gt;MVC 架構&lt;/a&gt;。採用這些常用模式，能大幅減低溝通成本，各種 Framework 也能提高開發速度。&lt;/p&gt;
+
+&lt;p&gt;現在已經是個以資料為中心的環境，各種商業決策都依賴大量的資料。因此，系統必須能提供各種資料格式與查詢方式供各種需求使用。在這樣的環境中，也慢慢發展出許多特有的模式。&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -262,21 +194,9 @@ serverless 提供了一種新的外包計價模式，按照用量計費。因為
       <pubDate>Mon, 02 Oct 2017 00:00:00 +0000</pubDate>
       
       <guid>https://devpoga.org/post/2017-10-02_minimum_viable_ownership/</guid>
-      <description>我始終不喜歡「擁有」的概念。那是種排他、缺乏多樣性的想法。
-Open Source 也是如此。
-Ownership leads to Burnout Open Source 是一件消耗身心的工作。如果用傳統專案管理的觀念去面對 Open Source，Burnout 就在不遠處。
-如果某人擁有一個專案，或是某專案被擁有，便產生了排他性。決定權、詮釋權都被集中在少部分人手中。壓力與焦慮也被集中。
-Ownership is required 目前的社會與網路基礎建設，還無法徹底放棄「擁有」的概念。
-專案權限要有人控管；網址要有人出錢，要註冊；多中心化的架構中，還是有那麼幾個中心。
-不過，除此之外，都只是心態的問題了。
-Credit, not Ownership 放棄「擁有」不代表消滅個人的標示。反而，更應該重視 Credit 這個常被忽略的觀念。
-當某人願意幫忙的當下，給他「願意幫忙」的 Credit。當某人提出個想法，給他「提出想法」的 Credit。
-每給出一點 Credit，便是將所有權打散，交給更多人。
-所有權的反面不是「沒有人有所有權」，而是「所有人都有所有權」
-C4: Collective Code Construction Contract Pieter Hintjens 曾將他在 ZeroMQ 社群的經驗整理成一份 RFC，稱做 Collective Code Construction Contract。目標是：
- 透過降低新參者的障礙，以及正向回饋的參與方式，最大化專案與社群的規模與多樣性。 將不同技能分開，讓每個領域都有足夠的參與者，減少對個人的依賴。 增加決策過程中的多樣性，來加速開發。 確保專案能安全的實驗、快速的失敗、穩定的開發。 減低專案複雜度，讓新參者能更快參與。 強化「共同所有權」（Collective Ownership），提高新參者的動機與回饋、減少專案被惡意挾持的可能性。  不斷的強調新參者，因為唯有不斷新陳代謝的貢獻者生態，才能長久發展。
-結語 以前聊天時曾提到，我覺得程式設計（或任何設計）始終是種「發現」而不是「發明」的工作。
-解法早已存在天地系統之間，只是被誰看到而已。不屬於我，也不屬於人，只是剛好借來用用而已。</description>
+      <description>&lt;p&gt;我始終不喜歡「擁有」的概念。那是種排他、缺乏多樣性的想法。&lt;/p&gt;
+
+&lt;p&gt;Open Source 也是如此。&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -285,7 +205,9 @@ C4: Collective Code Construction Contract Pieter Hintjens 曾將他在 ZeroMQ �
       <pubDate>Sun, 04 Jun 2017 08:52:19 +0000</pubDate>
       
       <guid>https://devpoga.org/post/2017-06-04_%E5%B9%B3%E8%A1%8C%E4%B8%96%E7%95%8C/</guid>
-      <description>有些事情總讓人覺得，Groundhog Day 跟平行世界是真的存在的。</description>
+      <description>&lt;p&gt;有些事情總讓人覺得，Groundhog Day 跟平行世界是真的存在的。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://devpoga.org/post/2017-06-04_平行世界/images/1.png&#34; alt=&#34;image&#34; /&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -294,10 +216,7 @@ C4: Collective Code Construction Contract Pieter Hintjens 曾將他在 ZeroMQ �
       <pubDate>Thu, 16 Feb 2017 18:58:42 +0000</pubDate>
       
       <guid>https://devpoga.org/post/2017-02-16_%E5%8F%88%E5%9B%9E%E4%BE%86%E7%94%A8-omnifocus-%E4%BA%86/</guid>
-      <description>當初那忙到吐血的兩三年中，幾乎都是靠著 Omnifocus 在維持生活的運作。
-等到終於比較不忙，Omnifocus 的備份也不知為何爆炸了，累積多年的 task 就這樣全部消失。我也（又）重新開始尋找適合的工作管理工具。
-在 Todoist 短暫停留了一年多後，最近又重新開始用 Omnifocus。軟體沒什麼大改變，多年累積的肌肉記憶，自然的與番茄鐘並存。這次順暢依舊，只是少了當年的焦慮與衝刺。
-And it still looks fucking amazing.</description>
+      <description>&lt;p&gt;當初那忙到吐血的兩三年中，幾乎都是靠著 Omnifocus 在維持生活的運作。&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -306,17 +225,7 @@ And it still looks fucking amazing.</description>
       <pubDate>Sat, 27 Aug 2016 05:06:01 +0000</pubDate>
       
       <guid>https://devpoga.org/post/2016-08-27_%E8%90%AC%E4%BA%8B%E8%90%AC%E7%89%A9%E7%9A%86%E6%98%AF-log-%E5%8F%83%E8%80%83%E8%B3%87%E6%96%99/</guid>
-      <description>之前在 COSCUP 2016 榮幸講了一場 萬事萬物皆是 Log — 系統架構也來點科普。結束後被詢問有沒有一些靈感來源、延伸讀物、參考資料等等，這裡就把我有記下來的參考資料整理在此。一些時間關係沒有帶到的主題就也一起放在這了。
- Linkedin 工程師寫的關於 LOG 架構的長篇好文，強烈推薦閱讀。 https://engineering.linkedin.com/distributed-systems/log-what-every-software-engineer-should-know-about-real-time-datas-unifying
- Microservice: http://blog.christianposta.com/microservices/the-hardest-part-about-microservices-data/ http://blog.christianposta.com/microservices/why-microservices-should-be-event-driven-autonomy-vs-authority/
- 講 Apache Samza 如何用 LOG 整個拆解掉 Database。很精彩，大推薦！ http://www.confluent.io/blog/turning-the-database-inside-out-with-apache-samza/
- Stream Processing： Spark: https://spark.apache.org/ Storm: https://storm.apache.org/ Kafka: https://kafka.apache.org/
- Immutable Database — Datomic: http://www.datomic.com/rationale.html
- Lamport Timestamp：所有對分散式系統有興趣的人都一定要瞭解一下。 http://www.goodmath.org/blog/2016/03/16/time-in-distributed-systems-lamport-timestamps/
- CRDT：這也是我最近很有興趣的主題，條列一些參考資料在此。 https://swarmjs.github.io/articles/papoc/
- A comprehensive study of Convergent and Commutative Replicated Data Types: http://hal.upmc.fr/inria-00555588/document http://underscore.io/blog/posts/2013/12/20/crdts-for-fun-and-eventual-profit.html
- Google Spanner： https://static.googleusercontent.com/external_content/untrusted_dlcp/research.google.com/en/us/archive/spanner-osdi2012.pdf
- Martin 大叔介紹的 Event Sourcing 架構 http://martinfowler.</description>
+      <description>&lt;p&gt;之前在 COSCUP 2016 榮幸講了一場 &lt;a href=&#34;https://devpoga.org/post/2016-08-20_%E8%90%AC%E4%BA%8B%E8%90%AC%E7%89%A9%E7%9A%86%E6%98%AF-log-%E7%B3%BB%E7%B5%B1%E6%9E%B6%E6%A7%8B%E4%B9%9F%E4%BE%86%E9%BB%9E%E7%A7%91%E6%99%AE/&#34;&gt;萬事萬物皆是 Log — 系統架構也來點科普&lt;/a&gt;。結束後被詢問有沒有一些靈感來源、延伸讀物、參考資料等等，這裡就把我有記下來的參考資料整理在此。一些時間關係沒有帶到的主題就也一起放在這了。&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -325,27 +234,14 @@ And it still looks fucking amazing.</description>
       <pubDate>Sat, 20 Aug 2016 05:06:01 +0000</pubDate>
       
       <guid>https://devpoga.org/post/2016-08-20_%E8%90%AC%E4%BA%8B%E8%90%AC%E7%89%A9%E7%9A%86%E6%98%AF-log-%E7%B3%BB%E7%B5%B1%E6%9E%B6%E6%A7%8B%E4%B9%9F%E4%BE%86%E9%BB%9E%E7%A7%91%E6%99%AE/</guid>
-      <description>這是 COSCUP 2016 的講題逐字稿，投影片在此 另有延伸參考資料
-自古以來，軟體工程師都在追求好維護，容易理解的軟體架構。傳統上，我們需要參與過各種大型軟體專案，從中獲取經驗，或是透過昂貴的課程，大量的論文，才能從前人的經驗中學到一些方法。
-今天，我想試著透過 LOG 這個人人都碰過的資料結構，來解釋許多複雜系統的核心，只要你能理解 LOG，你就能設計出好理解、容易維護的系統架構。
-什麼是 LOG？每個人第一次寫程式時，輸出的 “Hello World” 是一種 LOG，工作時使用 Slack 有 LOG，你的伺服器有 Access Log。LOG 就是由兩個特性組成的資料結構：
- 訊息按照時序出現 出現過的訊息不會改變  「出現過的訊息不會改變」這件事，也被叫做 Append Only。
-Log 這樣的性質，常常在我們 Debug 的時候被拿出來用。很多時候，Debug 便是推論事件的因果關係，Log 的特性便能讓我們透過文字來理解系統內發生的事件的因果。
-不只是 Debug，許多大型複雜架構中，都是透過 Log 來解決各種困難的問題。資料庫、分散式系統、版本控制、同步、備份、訊息傳遞、前端 UI… 都使用了 Log。
-所以聽完這場，你就理解了軟體架構的真理（誤）
-接下來，我會透過各種實際的例子，介紹在各領域中使用 Log 的範例。
-首先我們來談談資料庫。
-如果你沒聽過資料庫，這東西的用途很單純，當你需要存取大量資料，又要確保資料正確性的時候，就會用到資料庫。資料庫為了確保存入的資料的正確性，提供了相當多的工具，像是 Relation、Schema、Validation、ACID Transaction… 等等。
-同時，為了能有效讀取大量資料，資料庫也會建索引（Index），也會說 SQL。
-所以資料庫寫入的時候其實很忙，這時候就有個問題：如果寫入到一半當機了會怎樣？既然寫入時要做這麼多事，做到一半資料損毀不就糟了？
-為了解決這個問題，資料庫在真正寫入並且進行前述的複雜操作前，會先寫下一條 LOG，記載「什麼時間」「我要對資料進行什麼修改」。
-接著，才會開始真正的寫入。即使寫入到一半失敗了，也有 LOG 作為依據，檢查是否有未完成的修改，等到系統穩定後再重新寫入。
-這樣的技巧，叫做 Write-ahead log，也就是在實際寫入前先寫入一條 LOG，作為驗證的依據。
-這便是 LOG 第一個好用的性質，它格式簡單，寫入快速，可以作為複雜操作的前置動作，方便驗證。
-讓我們繼續來聊聊資料庫。
-前面提到，資料庫寫入時要做非常多的工作，所以非常的吃硬體效能。一旦單一機器無法負荷我們所需的資料量時，就需要多台硬體一起來分擔。
-這時候，就進入另一個複雜的領域了。當你只寫入一次，要怎麼確保所有機器上的資料都正確被修改了？
-前面的 Write-head Log 這時候就很好用。由於 LOG 記載了資料庫應該要做的修改動作，只要把這份 LOG 傳送給其他台機器，讓其他機器照著做，所有機器儲存的資料便會一樣。不需要把複雜的 Index、Relation、Schema 都傳過去，只要傳 LOG 就好了。這樣的技巧，叫做 Log Shipping。</description>
+      <description>&lt;p&gt;&lt;img src=&#34;https://devpoga.org/post/2016-08-20_萬事萬物皆是-log-系統架構也來點科普/images/1.png&#34; alt=&#34;image&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;center&gt;&lt;strong&gt;這是 COSCUP 2016 的講題逐字稿，投影片在&lt;a href=&#34;http://www.slideshare.net/poga/log-65475572&#34;&gt;此&lt;/a&gt;&lt;/strong&gt;&lt;/center&gt;
+&lt;center&gt;&lt;strong&gt;另有&lt;a href=&#34;https://medium.com/@poga/%E8%90%AC%E4%BA%8B%E8%90%AC%E7%89%A9%E7%9A%86%E6%98%AF-log-%E5%8F%83%E8%80%83%E8%B3%87%E6%96%99-340737133a94#.e3chfav6h&#34;&gt;延伸參考資料&lt;/a&gt;&lt;/strong&gt;&lt;/center&gt;&lt;/p&gt;
+
+&lt;p&gt;自古以來，軟體工程師都在追求好維護，容易理解的軟體架構。傳統上，我們需要參與過各種大型軟體專案，從中獲取經驗，或是透過昂貴的課程，大量的論文，才能從前人的經驗中學到一些方法。&lt;/p&gt;
+
+&lt;p&gt;今天，我想試著透過 LOG 這個人人都碰過的資料結構，來解釋許多複雜系統的核心，只要你能理解 LOG，你就能設計出好理解、容易維護的系統架構。&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -354,26 +250,7 @@ Log 這樣的性質，常常在我們 Debug 的時候被拿出來用。很多時
       <pubDate>Sun, 17 Jul 2016 06:02:04 +0000</pubDate>
       
       <guid>https://devpoga.org/post/2016-07-17_design-of-everyday-things/</guid>
-      <description>雜亂筆記
-打破產品的使用障礙 每個產品的使用者都要突破兩道障礙：執行的障礙，與評估現狀的障礙。
-產品的使用障礙，以抽屜為例
-設計的目的便是在幫助使用者突破這兩個障礙。兩個障礙相對的評估指標是：
- 可發現性（Discoverability）：使用者可否發現可以做的動作，以及怎麼做。 可理解性（Understandability）：使用者可否理解動作代表的意義。  人因設計（Human-centered Design）便是這種以使用者為出發點的設計方法。
-貫穿全書的概念是概念模型（Conceptual Model）：使用者在操作過程中，會試著學習並記憶，而在腦中建立理解科技用的概念模型。使用者也會依賴他腦中的概念模型來突破前述的兩個障礙。重點是：
- 概念模型並不精確。因為使用者多半不知道背後精確的意義，只能從操作中推測 概念模型不容易記住，很容易忘記。  因此，為了幫助使用者突破障礙，好的設計應該要幫助使用者建立正確的概念模型，並且幫助記憶。為了達到此目標，以下六個元素便是重點：
- 可發現性 回饋：使用者操作時應該要有完整的訊息，幫助使用者掌握新的狀態。回饋出現的速度越快越好。 預設用途（Affordance）：由於每個人能力不同，第一次看到物體時想法便不相同。要注意各種不同文化、技能、背景的人，第一次看到物體時想到的用法會是什麼。 指意（Signifier）：誘導人去發現正確的預設用途的提示。好的指意遠比好的預設用途重要。 對應性（Mapping）：用空間、分組、相對距離、文化等等的對應關係來讓人理解操作之間的關連。 使用侷限：讓不能/不該被做的事情直接做不到。  操作的步驟 每次使用者的操作都是由以下的階段構成：
-操作的階段
-引發使用者做某個動作的成因可能有兩種：
- 目標驅動：使用者想要達成某個目標而去操作。圖中的 目標 -&amp;gt; 外界 -&amp;gt; 目標 流程。 資訊驅動：使用者看到了某個訊息，而去做某個動作反應。圖中的 外界 -&amp;gt; 目標 -&amp;gt; 外界 流程。  這個流程重複進行多次後，就會變成使用者的概念模型，也就是他對產品的理解，並且被記憶住。
-因此，概念模型其實就是一個使用者可以理解並反思的故事（因果關係）。
-概念模型是否正確，會牽動使用者的情緒，進而影響使用者對產品的評價。如果使用者的概念模型一直錯誤，便會一直重複失敗的操作，收到錯誤的回饋，最後喪失信心，成為 Learned Helplessness 而放棄產品。為了避免這種現象發生，所有的錯誤訊息都應該特別注意，應該引導使用者建立正確的概念模型，而不是單純的顯示錯誤訊息。
-概念模型的記憶方式 前面提到，概念模型常常是記不住的。那要怎麼幫助使用者記憶呢？先舉個打字的例子：
- 腦中記得的按鍵位置：內在的知識 鍵盤上的字：外在的引導  每次的操作其實都使用了兩種知識：使用者腦中內在的知識，以及存在外在資訊的引導中的知識。內在的知識量少，速度快，效率高，卻有可能模糊不清。外在的知識量大，速度慢，需要花時間檢索。內在的知識就是使用者的概念模型。
-也是因為人無法記住所有的資訊，所以只會記住概念模型，並利用基本的概念模型，加上外在資訊以進行推理。
-所以設計時，便要注意使用者會用什麼樣的概念模型來記住產品的邏輯。並且善用人的記憶方式：
- 短期記憶：少量、一分心就會忘（需要轉移到外部）、越有規則越好記、一旦忘記挫折感很大、將短期記憶分散到各個感官。 長期記憶：大量、需要因果與故事才記得住、常常出錯。  並且要盡量減輕人的記憶負擔，也就是轉移到外界，變成外在引導知識（筆記、Delegation）。
-人有無數的知識要被記憶住，所以盡量不要霸佔使用者的記憶空間，盡量轉移到外界，讓使用者有餘欲記憶其他更重要的事。
-如果概念模型出錯 就會出現所謂的失誤（行動錯誤）與錯誤（目標錯誤）。設計便要理解錯誤的成因，想辦法建立更好的概念模型，避免再度發生錯誤。</description>
+      <description>&lt;p&gt;雜亂筆記&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -382,25 +259,9 @@ Log 這樣的性質，常常在我們 Debug 的時候被拿出來用。很多時
       <pubDate>Tue, 17 May 2016 15:09:04 +0000</pubDate>
       
       <guid>https://devpoga.org/post/2016-05-17_%E8%A9%B2%E6%80%8E%E6%A8%A3%E6%95%99%E4%BB%BB%E4%BD%95%E4%BA%BA%E4%BB%BB%E4%BD%95%E6%8A%80%E8%83%BD/</guid>
-      <description>看到 氣餒止步！該怎樣教文組的人寫程式？ 這篇，講一下自己的教學經驗吧。
-- Empower — 突破原本自我
-The only thing we have to fear is…fear itself — Franklin D. Roosevelt
-每個人在教學開始之前都有自己的故事。也許嘗試過很多次無效的學習、也許是遇到錯誤的環境而產生恐懼。第一步便要讓人從先前的失望感與挫折感中走出來。
-因此，先對話。找出對方最恐懼的步驟。仔細聆聽對方說話的細節：他學習的動機是什麼？為什麼需要找你來指導他？之前類似的學習經驗是什麼？
-接著，直接用最快產生效果的方式帶他走出第一步。即使此時的作法有錯、方式不正統都不是問題。
-重點是讓對方覺得可以突破自己的框架，建立信心，他的世界才能開始變的更加廣大。
-- Experience — 從體驗中建立新的世界觀
-每個新知識都能影響一個人對世界的理解。每傳授一個新知識時，都應該從對方現存的世界觀開始擴展。
-如果對方是社運團體，就從運動參與者的留存率來解釋遊戲化（Gamification）的精神。 如果對方是工程師，就從明度、彩度的定義來引導他理解色彩之間的關係。
-重點不是每一步走的是否絕對正確，而是每一步是否都有前一步來穩定重心。
-每個人最終都會建立起自己的世界觀，只要幫助對方建立起屬於他的世界觀，是否正確由他自己的思考結果來判斷就可以了。
-- Sense of Calling — 使命感，對更加強大的自己有所期望
-這是我最喜歡的方式。透過實例與故事來建立對未來的自己的想像。
-透過傳奇人物（Role Model）的親身解說，或是講述大神的故事，讓對方期望自己也能成為冒險中的主角。稀有的內幕故事，也能激起好奇心，讓人想一探究竟。
-像是精彩的資訊安全攻防實記，就讓剛開始接觸資安的高中生也能想像自己能對世界造成的影響。
-一個成功的教學，應該就是一次精彩的 Story Telling 體驗。
-很多時候，社會的訓練讓人過度的以外部的目標為重心。透過各種技巧，讓人建立起成熟的自我與理解世界的方式。我想才是真正的教學之道吧。
-原文發表於 Facebook Note</description>
+      <description>&lt;p&gt;&lt;img src=&#34;https://devpoga.org/post/2016-05-17_該怎樣教任何人任何技能/images/1.jpeg&#34; alt=&#34;image&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;看到 &lt;a href=&#34;https://medium.com/@spepechen/%E6%B0%A3%E9%A4%92%E6%AD%A2%E6%AD%A5-%E8%A9%B2%E6%80%8E%E6%A8%A3%E6%95%99%E6%96%87%E7%B5%84%E7%9A%84%E4%BA%BA%E5%AF%AB%E7%A8%8B%E5%BC%8F-c1caf020b457#.6bfonxld4&#34;&gt;氣餒止步！該怎樣教文組的人寫程式？&lt;/a&gt; 這篇，講一下自己的教學經驗吧。&lt;/p&gt;</description>
     </item>
     
   </channel>

@@ -19,8 +19,9 @@ aliases:
 
 ![image](/post/2019-01-05_為什麼現代遊戲都要有一堆不同的貨幣在裡頭/images/1.jpeg)
 
-Photo by [Keegan Houser](https://unsplash.com/photos/4mdjeo4J2Z8?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText) on [Unsplash](https://unsplash.com/search/photos/currency?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText)
+<!--more-->
 
+Photo by [Keegan Houser](https://unsplash.com/photos/4mdjeo4J2Z8?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText) on [Unsplash](https://unsplash.com/search/photos/currency?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText)
 
 
 ## 金幣、鑽石、寶石、水晶？

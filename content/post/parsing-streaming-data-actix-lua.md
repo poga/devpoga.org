@@ -16,6 +16,9 @@ categories:
 
 Here's an example about what you can achieve with it. Hope you can try these ideas in your next project.
 
+<!--more-->
+
+
 ### Definitely not a world-changing project
 
 [Path of Exile(PoE)](https://pathofexile.com) is an online multiplayer RPG. In PoE, players get powerful, unique items by killing monsters. Then, they put their items to the market and trade with others.

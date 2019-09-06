@@ -27,6 +27,9 @@ aliases:
 
 看到 [氣餒止步！該怎樣教文組的人寫程式？](https://medium.com/@spepechen/%E6%B0%A3%E9%A4%92%E6%AD%A2%E6%AD%A5-%E8%A9%B2%E6%80%8E%E6%A8%A3%E6%95%99%E6%96%87%E7%B5%84%E7%9A%84%E4%BA%BA%E5%AF%AB%E7%A8%8B%E5%BC%8F-c1caf020b457#.6bfonxld4) 這篇，講一下自己的教學經驗吧。
 
+<!--more-->
+
+
 **- Empower — 突破原本自我**
 
 _The only thing we have to fear is…fear itself — Franklin D. Roosevelt_

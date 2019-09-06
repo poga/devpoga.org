@@ -18,6 +18,9 @@ Thread 跟 Coroutine 是兩種常常用來處理 Concurrency 的工具。
 
 而 Structured Concurrency 就是試圖將 Thread 的生命週期與大家都很熟悉的 scope 結合。
 
+<!--more-->
+
+
 ## 什麼是 Structured Concurrency
 
 Structured Concurrency 透過 function scope 明確表示 thread 之間的巢狀關係。借用 [libdill](http://libdill.org) 的圖([http://libdill.org/structured-concurrency.html](http://libdill.org/structured-concurrency.html))：

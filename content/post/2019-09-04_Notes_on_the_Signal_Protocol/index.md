@@ -11,11 +11,12 @@ categories:
 
 ![](./dh.png)
 
-# Notes on the Signal Protocol
-
 > So, I assume you're already familiar with [Public-key cryptography](https://en.wikipedia.org/wiki/Public-key_cryptography]https://en.wikipedia.org/wiki/Public-key_cryptography) and [Diffie-Hellman key exchange](https://en.wikipedia.org/wiki/Diffie%E2%80%93Hellman_key_exchange). If not, there are lots of good materials about them. Check them out first!
 
 Public-key cryptography is a solid, well-studied foundation for today's modern encryption and privacy. PGP, Diffle-Hellman, and RSA are all well-known. However, if you want to develop something with encryption, they might be not enough.
+
+<!--more-->
+
 
 Why?
 

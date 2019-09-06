@@ -17,16 +17,7 @@
       <pubDate>Mon, 29 Apr 2019 00:00:00 +0000</pubDate>
       
       <guid>https://devpoga.org/post/golang-7-years-later/</guid>
-      <description>從開始接觸 Go 到現在也已經過了 7 年了啊&amp;hellip; 最近又有機會拿出 Go 出來寫寫，隨手寫一下感受。
-編輯器 vim 還是很好用。
-這幾年微軟提出的 Language Server Protocol 相當受到社群歡迎，也算是解決了程式語言跟編輯器社群長久以來的困境，成長相當快速。vim plugin 也跟風從 vim-go 換成基於 Language Server Protocol 的 LanguageClient-neovim 配上 bingo。有點小不穩但是功能算齊全。
-tagbar 一樣是用 gotags 沒變
-Dependency Management 當年被這問題惹毛好幾次，2019 年的今天似乎 Go 社群終於要收斂到一個比較好的作法上了&amp;hellip; 目前 go module 用起來有些陽春，有些怪異，不過堪用。
-終於不用再處理 GOPATH 的鳥事了&amp;hellip; 真是令人感動啊。
-Sync Map 當初堅持說不需要，最後還是提供 sync.Map 了嘛。
-&amp;ndash;
-好像就這樣了。
-雖然這語言還是有很多我不喜歡的地方，不過，一個語言可以經過這麼久都沒啥改變的堅持跟說服力，我也是相當欽佩。</description>
+      <description>&lt;p&gt;從&lt;a href=&#34;https://blog.golang.org/go-version-1-is-released&#34;&gt;開始接觸 Go&lt;/a&gt; 到現在也已經過了 7 年了啊&amp;hellip; 最近又有機會拿出 Go 出來寫寫，隨手寫一下感受。&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -35,9 +26,7 @@ Sync Map 當初堅持說不需要，最後還是提供 sync.Map 了嘛。
       <pubDate>Tue, 26 Feb 2019 00:00:00 +0000</pubDate>
       
       <guid>https://devpoga.org/post/implementation-lua53/</guid>
-      <description>Notes on the Implementation on Lua 5.3 is a collection of my notes on the Lua 5.3 source code. It&amp;rsquo;s a mix of both high-level ideas and interesting details in the source code.
-There can be errors. Feel free to contact me if you have any question or feedback.
-Why Lua? In the world of embeddable scripting language, Lua is still the most well-known solution. It&amp;rsquo;s lightweight enough to run on mobile phones, IoT devices.</description>
+      <description>&lt;p&gt;&lt;a href=&#34;https://poga.github.io/lua53-notes/&#34;&gt;Notes on the Implementation on Lua 5.3&lt;/a&gt; is a collection of my notes on the Lua 5.3 source code. It&amp;rsquo;s a mix of both high-level ideas and interesting details in the source code.&lt;/p&gt;</description>
     </item>
     
   </channel>

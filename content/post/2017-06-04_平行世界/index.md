@@ -8,9 +8,9 @@ description: ""
 
 subtitle: "有些事情總讓人覺得，Groundhog Day 跟平行世界是真的存在的。"
 
-image: "/post/2017-06-04_平行世界/images/1.png" 
+image: "/post/2017-06-04_平行世界/images/1.png"
 images:
- - "/post/2017-06-04_平行世界/images/1.png" 
+ - "/post/2017-06-04_平行世界/images/1.png"
 
 
 aliases:
@@ -20,6 +20,7 @@ aliases:
 有些事情總讓人覺得，Groundhog Day 跟平行世界是真的存在的。
 
 
-
-
 ![image](/post/2017-06-04_平行世界/images/1.png)
+
+<!--more-->
+

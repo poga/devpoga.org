@@ -17,9 +17,7 @@
       <pubDate>Tue, 26 Feb 2019 00:00:00 +0000</pubDate>
       
       <guid>https://devpoga.org/post/implementation-lua53/</guid>
-      <description>Notes on the Implementation on Lua 5.3 is a collection of my notes on the Lua 5.3 source code. It&amp;rsquo;s a mix of both high-level ideas and interesting details in the source code.
-There can be errors. Feel free to contact me if you have any question or feedback.
-Why Lua? In the world of embeddable scripting language, Lua is still the most well-known solution. It&amp;rsquo;s lightweight enough to run on mobile phones, IoT devices.</description>
+      <description>&lt;p&gt;&lt;a href=&#34;https://poga.github.io/lua53-notes/&#34;&gt;Notes on the Implementation on Lua 5.3&lt;/a&gt; is a collection of my notes on the Lua 5.3 source code. It&amp;rsquo;s a mix of both high-level ideas and interesting details in the source code.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -28,9 +26,9 @@ Why Lua? In the world of embeddable scripting language, Lua is still the most we
       <pubDate>Fri, 12 Oct 2018 00:00:00 +0000</pubDate>
       
       <guid>https://devpoga.org/post/parsing-streaming-data-actix-lua/</guid>
-      <description>actix-lua provides a safe scripting environment for the actix framework with the Lua Programming Language.
-Here&amp;rsquo;s an example about what you can achieve with it. Hope you can try these ideas in your next project.
-Definitely not a world-changing project Path of Exile(PoE) is an online multiplayer RPG. In PoE, players get powerful, unique items by killing monsters. Then, they put their items to the market and trade with others.</description>
+      <description>&lt;p&gt;&lt;a href=&#34;https://github.com/poga/actix-lua&#34;&gt;&lt;code&gt;actix-lua&lt;/code&gt;&lt;/a&gt; provides a safe scripting environment for the &lt;a href=&#34;http://actix.rs&#34;&gt;actix&lt;/a&gt; framework with the &lt;a href=&#34;http://lua.org&#34;&gt;Lua Programming Language&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Here&amp;rsquo;s an example about what you can achieve with it. Hope you can try these ideas in your next project.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -39,13 +37,13 @@ Definitely not a world-changing project Path of Exile(PoE) is an online multipla
       <pubDate>Mon, 03 Sep 2018 23:30:04 +0000</pubDate>
       
       <guid>https://devpoga.org/post/2018-09-03_%E5%A6%82%E4%BD%95%E6%95%B4%E5%90%88-rust-%E8%88%87-lua/</guid>
-      <description>Photo by Anders Jildén on Unsplash
-在系統中遷入一個動態輕巧的 scripting language 一直是個常見的設計。像 Rust 這樣的系統語言，雖然效能好，但是上手門檻較高。這時若是能遷入一個像 Lua 一樣動態型別，簡單易懂的語言，便能大幅提高系統彈性。
-最近為了實做 actix-lua，研究了一下 Rust 跟 Lua 之間的介接，順便學了不少 Rust 跟 Lua 的設計，筆記在此。
-Lua Binding 的選擇 Rust 現在有數套 Lua binding，比較常被人提到的是 lua, hlua 與 rlua 。
-lua 基本上是直接把 Lua 的 C API 直接移植，沒有做多餘的包裝。所以需要絕對的效能的話，這可能是你的最佳選擇。不過安全性跟 UB 就要自己處理了。
-hlua 提供是比較高階的介面，不讓你直接存取 Lua Stack，可以視為 lua API 上的再一層包裝。彈性較低，可能不適合某些需求。
-rlua 是由知名遊戲工作室 chucklefish 開發。延續 Rust 對安全性的要求，設計介面時也是以安全性為最高原則。在使用 rlua 的 API 時，不會產生任何 UB（由於 lua API 跟內部的運作方式，這種 API 真的很難做到…）也許犧牲了一點效能，不過對於 Rust 的使用者來說，這樣的 tradeoff 應該是蠻值得的。</description>
+      <description>&lt;p&gt;&lt;img src=&#34;https://devpoga.org/post/2018-09-03_如何整合-rust-與-lua/images/1.jpeg&#34; alt=&#34;image&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Photo by &lt;a href=&#34;https://unsplash.com/photos/4izt8TxQmEs?utm_source=unsplash&amp;amp;amp;utm_medium=referral&amp;amp;amp;utm_content=creditCopyText&#34;&gt;Anders Jildén&lt;/a&gt; on &lt;a href=&#34;https://unsplash.com/search/photos/lua?utm_source=unsplash&amp;amp;amp;utm_medium=referral&amp;amp;amp;utm_content=creditCopyText&#34;&gt;Unsplash&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;在系統中遷入一個動態輕巧的 scripting language 一直是個常見的設計。像 &lt;a href=&#34;https://www.rust-lang.org/&#34;&gt;Rust&lt;/a&gt; 這樣的系統語言，雖然效能好，但是上手門檻較高。這時若是能遷入一個像 &lt;a href=&#34;https://www.lua.org/&#34;&gt;Lua&lt;/a&gt; 一樣動態型別，簡單易懂的語言，便能大幅提高系統彈性。&lt;/p&gt;
+
+&lt;p&gt;最近為了實做 &lt;a href=&#34;https://github.com/poga/actix-lua&#34;&gt;actix-lua&lt;/a&gt;，研究了一下 Rust 跟 Lua 之間的介接，順便學了不少 Rust 跟 Lua 的設計，筆記在此。&lt;/p&gt;</description>
     </item>
     
   </channel>

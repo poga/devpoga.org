@@ -31,6 +31,9 @@ Photo by [Rebecca Oliver](https://unsplash.com/photos/BpqDaDxG48w?utm_source=uns
 
 相較於其他設計模式，Data-Oriented Design 深受硬體快取（cache）架構影響。對於現代的高度 pipeline、高速的 CPU 架構而言，資料的存取方式對效能有非常大的影響。比起 L1、L2 cache，對主記憶體的一次存取帶來的是數百倍的效能損耗。為了避免太過抽象，就用個實際的例子來解釋吧。
 
+<!--more-->
+
+
 假設我們的遊戲中有許多的球，每個球有顏色、位置、半徑等等資訊。對於學過物件導向的人而言，很可能直覺的設計成這樣：
 
 ```

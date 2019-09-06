@@ -17,6 +17,9 @@ tags:
 
 Open Source 也是如此。
 
+<!--more-->
+
+
 ---
 
 ### Ownership leads to Burnout

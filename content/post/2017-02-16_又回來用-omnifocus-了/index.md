@@ -8,12 +8,12 @@ description: ""
 
 subtitle: "當初那忙到吐血的兩三年中，幾乎都是靠著 Omnifocus 在維持生活的運作。"
 tags:
- - Omnifocus 
- - Productivity 
+ - Omnifocus
+ - Productivity
 
-image: "/post/2017-02-16_又回來用-omnifocus-了/images/1.png" 
+image: "/post/2017-02-16_又回來用-omnifocus-了/images/1.png"
 images:
- - "/post/2017-02-16_又回來用-omnifocus-了/images/1.png" 
+ - "/post/2017-02-16_又回來用-omnifocus-了/images/1.png"
 
 
 aliases:
@@ -21,6 +21,9 @@ aliases:
 ---
 
 當初那忙到吐血的兩三年中，幾乎都是靠著 Omnifocus 在維持生活的運作。
+
+<!--more-->
+
 
 等到終於比較不忙，Omnifocus 的備份也不知為何爆炸了，累積多年的 task 就這樣全部消失。我也（又）重新開始尋找適合的工作管理工具。
 

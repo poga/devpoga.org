@@ -14,6 +14,9 @@ categories:
 
 [Notes on the Implementation on Lua 5.3](https://poga.github.io/lua53-notes/) is a collection of my notes on the Lua 5.3 source code. It's a mix of both high-level ideas and interesting details in the source code.
 
+<!--more-->
+
+
 There can be errors. Feel free to contact me if you have any question or feedback.
 
 ## Why Lua?

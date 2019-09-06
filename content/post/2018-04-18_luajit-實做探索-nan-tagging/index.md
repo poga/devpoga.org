@@ -34,6 +34,9 @@ categories:
 
 故事要從 boxed value 跟 unboxed value 說起。
 
+<!--more-->
+
+
 所謂的 boxed value 是指：不直接存取 primitive value，而是透過指標來操作數值。近代的程式語言常常都用這種方法操作資料。而 unboxed value 就是指直接操作值，不經過一層指標。
 
 

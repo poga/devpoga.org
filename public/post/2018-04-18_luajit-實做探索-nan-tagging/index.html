@@ -71,9 +71,7 @@
       </section>
     </header>
     <section class="post-content">
-      
-
-<p><img src="/post/2018-04-18_luajit-實做探索-nan-tagging/images/1.png" alt="image" /></p>
+      <p><img src="/post/2018-04-18_luajit-實做探索-nan-tagging/images/1.png" alt="image" /></p>
 
 <h4 id="一切都是為了效能">一切都是為了效能</h4>
 
@@ -132,7 +130,6 @@
 <p>這樣做，讓所有的 primitive value 都能直接被存取，不需要經過指標。而其他型別也能用同樣的 64-bit 空間儲存，產生許多優化的可能性，也能更加善用 register。</p>
 
 <p>其實這並不是 LuaJIT 獨創的技巧，據說早在 80, 90 年代的許多 Lisp 實做就有用到 NaNtagging。透過結合對硬體實做的理解跟軟體的設計，讓 LuaJIT 相對於其他動態語言，能搾出更多的效能。</p>
-
     </section>
     <footer class="post-footer">
       <section class="tags post-meta">
@@ -151,7 +148,6 @@
   <section class="twitter"><a class="icon-twitter" href="https://twitter.com/devpoga"> devpoga</a></section>
   
   <section class="copyright">&copy; 2019 Dev.Poga</section>
-  <section class="poweredby"><a href="http://thedarkroast.com/arabica">Arabica</a> theme by Sean Lunsford. Published with <a href="https://gohugo.io">Hugo</a>.</section>
 </footer>
 
 

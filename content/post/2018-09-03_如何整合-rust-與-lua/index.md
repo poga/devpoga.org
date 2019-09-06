@@ -31,6 +31,9 @@ Photo by [Anders Jildén](https://unsplash.com/photos/4izt8TxQmEs?utm_source=uns
 
 最近為了實做 [actix-lua](https://github.com/poga/actix-lua)，研究了一下 Rust 跟 Lua 之間的介接，順便學了不少 Rust 跟 Lua 的設計，筆記在此。
 
+<!--more-->
+
+
 #### Lua Binding 的選擇
 
 Rust 現在有數套 Lua binding，比較常被人提到的是 [lua](https://crates.io/crates/lua), [hlua](https://github.com/tomaka/hlua) 與 [rlua](https://github.com/kyren/rlua) 。

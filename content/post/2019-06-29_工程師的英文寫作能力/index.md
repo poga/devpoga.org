@@ -11,6 +11,8 @@ tags:
 
 能清楚的透過文字表達，在寫規格、文件時都很重要。在這個非同步的遠端工作時代，文字能力也幾乎直接代表了團隊合作的能力。
 
+<!--more-->
+
 以下幾本都是常常被推薦的英文寫作指南：
 
 * [The Elements of Style](https://www.amazon.com/Elements-Style-William-Strunk-Jr/dp/194564401X)
