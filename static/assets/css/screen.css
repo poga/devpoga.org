@@ -40,16 +40,16 @@ body {
   width: 80%;
   max-width: 750px;
   margin: 0 auto;
-  font-family: "Lato", sans-serif;
-	font-weight: 300;
+  font-family: "freight-sans-pro", "Arial";
+  font-weight: 300;
   font-size: 1rem;
   line-height: 1.5;
   color: #3A4145;
 }
 
 h1, h2, h3, h4, h5, h6 {
-	margin-bottom:10px;
-  font-family: serif;
+    margin-bottom:10px;
+    font-weight: 500;
 }
 
 h1 {
@@ -77,18 +77,14 @@ h6 {
 }
 
 p {
-	margin-top: 0;
-  font-size: 18px;
+  margin-top: 0;
   font-weight: 400;
+  font-size: 17px;
   font-family: sans-serif;
   letter-spacing: -.02em;
   font-style: normal;
   color: rgba(0,0,0, 0.8);
   line-height: 1.6;
-}
-
-ul {
-  font-family: "Noto Serif", "DejaVu Serif", serif;
 }
 
 li {
