@@ -3,12 +3,17 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://devpoga.org/categories/</loc>
-    <lastmod>2019-09-04T00:00:00+00:00</lastmod>
+    <loc>https://devpoga.org/</loc>
+    <lastmod>2019-09-14T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://devpoga.org/categories/cryptography/</loc>
+    <loc>https://devpoga.org/projects/</loc>
+    <lastmod>2019-09-14T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://devpoga.org/categories/</loc>
     <lastmod>2019-09-04T00:00:00+00:00</lastmod>
   </url>
   
@@ -18,7 +23,7 @@
   </url>
   
   <url>
-    <loc>https://devpoga.org/</loc>
+    <loc>https://devpoga.org/categories/cryptography/</loc>
     <lastmod>2019-09-04T00:00:00+00:00</lastmod>
   </url>
   
