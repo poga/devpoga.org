@@ -1,5 +1,5 @@
 +++
-title = "Project"
+title = "Projects"
 date = "2019-09-14"
 menu = "main"
 +++
