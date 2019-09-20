@@ -6,10 +6,19 @@
     <description>Recent content in Categories on Dev.Poga</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 04 Sep 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 20 Sep 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://devpoga.org/categories/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Programming</title>
+      <link>https://devpoga.org/categories/programming/</link>
+      <pubDate>Fri, 20 Sep 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://devpoga.org/categories/programming/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Cryptography</title>
@@ -26,15 +35,6 @@
       <pubDate>Fri, 12 Jul 2019 00:00:00 +0000</pubDate>
       
       <guid>https://devpoga.org/categories/compiler/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Programming</title>
-      <link>https://devpoga.org/categories/programming/</link>
-      <pubDate>Sun, 30 Jun 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://devpoga.org/categories/programming/</guid>
       <description></description>
     </item>
     
