@@ -9,6 +9,8 @@ categories:
   - Programming
 ---
 
+<!--more-->
+
 Based on [the ripgrep user guide](https://github.com/BurntSushi/ripgrep/blob/master/GUIDE.md) and [Ripgrep Cheatsheet](https://www.philipdaniels.com/blog/2019/ripgrep-cheatsheet/).
 
 Syntax    | Description
