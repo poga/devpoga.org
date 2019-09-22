@@ -6,8 +6,6 @@ menu = "main"
 
 # About Poga
 
-![](/me.jpg)
-
 Software Developer and Researcher. I'm interested in decentralization, privacy, distributed system, scalability, and system performance.
 
 * email: poga.po@gmail.com
