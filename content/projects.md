@@ -8,7 +8,7 @@ menu = "main"
 
 * [pttai-next](https://github.com/ailabstw/pttai-next): Decentralized Social Network.
 
-* [hyperfeed](https://github.com/poga/hyperfeed): Share RSS feed with a P2P network.
+* [hyperfeed](https://github.com/poga/hyperfeed): Share RSS feed via a P2P network.
 
 * [redis-rating](https://github.com/poga/redis-rating): A Redis module to help you calculate the real rating from positive/negative rating feedback.
 

@@ -27,7 +27,7 @@
       
       <guid>https://devpoga.org/projects/</guid>
       <description> Projects  pttai-next: Decentralized Social Network.
- hyperfeed: Share RSS feed with a P2P network.
+ hyperfeed: Share RSS feed via a P2P network.
  redis-rating: A Redis module to help you calculate the real rating from positive/negative rating feedback.
  actix-lua: Safe Lua Scripting for the actix actor framework.
  tw-shift-schedule: A work-shift schedule parser/validator.
