@@ -17,7 +17,7 @@
       <pubDate>Tue, 22 Oct 2019 00:00:00 +0000</pubDate>
       
       <guid>https://devpoga.org/post/2019-10-22-vps_rust_compile_benchmark/</guid>
-      <description></description>
+      <description>&lt;p&gt;&lt;a href=&#34;https://devpoga.org/post/2019-10-22-vps_rust_compile_benchmark/chart.png&#34;&gt;&lt;img src=&#34;https://devpoga.org/post/2019-10-22-vps_rust_compile_benchmark/chart.png&#34; width=&#34;100%&#34;&gt;&lt;/a&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -35,7 +35,7 @@
       <pubDate>Wed, 04 Sep 2019 00:00:00 +0000</pubDate>
       
       <guid>https://devpoga.org/post/2019-09-04_notes_on_the_signal_protocol/</guid>
-      <description>&lt;p&gt;&lt;img src=&#34;./dh.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+      <description>&lt;p&gt;&lt;img src=&#34;https://devpoga.org/post/2019-09-04_notes_on_the_signal_protocol/dh.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 
 &lt;blockquote&gt;
 &lt;p&gt;So, I assume you&amp;rsquo;re already familiar with &lt;a href=&#34;https://en.wikipedia.org/wiki/Public-key_cryptography&#34;&gt;Public-key cryptography&lt;/a&gt; and &lt;a href=&#34;https://en.wikipedia.org/wiki/Diffie%E2%80%93Hellman_key_exchange&#34;&gt;Diffie-Hellman key exchange&lt;/a&gt;. If not, there are lots of good materials about them. Check them out first!&lt;/p&gt;

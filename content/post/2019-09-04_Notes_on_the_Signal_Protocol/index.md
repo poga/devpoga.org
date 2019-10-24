@@ -9,7 +9,7 @@ categories:
   - Cryptography
 ---
 
-![](./dh.png)
+![](/post/2019-09-04_notes_on_the_signal_protocol/dh.png)
 
 > So, I assume you're already familiar with [Public-key cryptography](https://en.wikipedia.org/wiki/Public-key_cryptography) and [Diffie-Hellman key exchange](https://en.wikipedia.org/wiki/Diffie%E2%80%93Hellman_key_exchange). If not, there are lots of good materials about them. Check them out first!
 

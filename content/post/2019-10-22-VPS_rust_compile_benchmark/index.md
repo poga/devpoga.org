@@ -8,4 +8,6 @@ categories:
   - Programming
 ---
 
-<a href="./chart.png"><img src="./chart.png" width="100%"></a>
+<a href="/post/2019-10-22-vps_rust_compile_benchmark/chart.png"><img src="/post/2019-10-22-vps_rust_compile_benchmark/chart.png" width="100%"></a>
+
+<!--more-->
