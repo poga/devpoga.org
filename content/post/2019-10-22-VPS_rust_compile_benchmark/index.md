@@ -1,5 +1,5 @@
 ---
-title: "Benchmarking VPS for remote rust development environment"
+title: "Benchmarking VPS for Remote Rust Development Environment"
 author: "poga"
 date: 2019-10-22
 tags:
