@@ -6,7 +6,7 @@ menu = "main"
 
 # About Poga
 
-Software Developer, Interested in decentralization, privacy, distributed system, scalability, and system performance.
+Software Developer, interested in decentralization, privacy, distributed system, scalability, and system performance.
 
 * email: poga.po@gmail.com
 
