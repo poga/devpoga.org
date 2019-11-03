@@ -6,10 +6,19 @@
     <description>Recent content in Posts on Dev.Poga</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 22 Oct 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 03 Nov 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://devpoga.org/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>The Golden Age of New Programming Languages</title>
+      <link>https://devpoga.org/post/2019-11-03-golden-age-of-programming-language/</link>
+      <pubDate>Sun, 03 Nov 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://devpoga.org/post/2019-11-03-golden-age-of-programming-language/</guid>
+      <description>&lt;p&gt;2020 is going to be the golden age of new programming languages.&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>Benchmarking VPS for Remote Rust Development Environment</title>
