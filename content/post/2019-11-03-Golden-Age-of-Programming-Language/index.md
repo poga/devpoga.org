@@ -14,7 +14,7 @@ categories:
 
 ---
 
-For the longest time, creating and promoting new programming language is impossible.
+For the longest time, creating and promoting new programming languages is impossible.
 
 The new language needs to have good performance, which requires tremendous efforts to optimize your compiler.
 
@@ -24,11 +24,11 @@ If scientific programming is the target, you need to have good interactive progr
 
 If what the goal is security, you need to create a sandboxed virtual machine.
 
-And most importantly, you need to provides benefit against existing language community, tooling, and culture.
+And most importantly, you need to provide benefit against existing language community, tooling, and culture.
 
 ---
 
-Luckily, we have better foundation than 30 years ago.
+Luckily, we have a better foundation than 30 years ago.
 
 We have [LLVM](https://llvm.org/) and [MLIR](https://github.com/tensorflow/mlir), which give us a solid compiler backend and generate code with good performance.
 
@@ -36,7 +36,7 @@ We have [Language Server Protocol](https://microsoft.github.io/language-server-p
 
 We have [The Jupyter Protocol](https://jupyter.org/). We can support millions of scientists, researchers with familiar interactive programming environment without reinventing everything.
 
-Finally, we have [Webassembly](https://webassembly.org/), which is designed to run insecure code inside everyone's browser and [edge data centers](https://webassembly.org/).
+Finally, we have [WebAssembly](https://webassembly.org/), which is designed to run insecure code inside everyone's browser and [edge data centers](https://webassembly.org/).
 
 ---
 
@@ -44,7 +44,7 @@ But still, why would people use our new language? **Because the landscape is dif
 
 We have new problems: machine learning, differentiable programming, and software-defined network.
 
-We have new hardwards: GPU, TPU, and FPGAs.
+We have new hardware: GPU, TPU, and FPGAs.
 
 We need more computing power, more developer, safer program, and friendlier culture. **The current paradigm is not enough. We have all the tools we need now.**
 
