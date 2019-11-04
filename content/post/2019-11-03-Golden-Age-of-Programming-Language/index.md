@@ -22,7 +22,7 @@ The new language needs to have good editor support: syntax highlighting, auto-co
 
 If scientific programming is the target, you need to have good interactive programming support.
 
-If what the goal is security, you need to create a sandboxed virtual machine.
+If security is the goal, you need to create a sandboxed virtual machine.
 
 And most importantly, you need to provide benefit against existing language community, tooling, and culture.
 
