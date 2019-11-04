@@ -46,7 +46,7 @@ We have new problems: machine learning, differentiable programming, and software
 
 We have new hardware: GPU, TPU, and FPGAs.
 
-We need more computing power, more developer, safer program, and friendlier culture. **The current paradigm is not enough. We have all the tools we need now.**
+We need more computing power, more developer, safer program, and friendlier culture. **The current paradigm is not enough.**
 
 
 
