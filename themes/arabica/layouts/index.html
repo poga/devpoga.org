@@ -6,6 +6,7 @@
     </div>
 		{{ range $paginator.Pages }}
       {{ .Render "summary" }}
+      <hr/>
 		{{ end }}
     {{ partial "pagination.html" . }}
 	</main>
