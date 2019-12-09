@@ -94,7 +94,7 @@
       
       <guid>https://devpoga.org/distributed_system/</guid>
       <description>My recommended reading list for anyone designing a practical distributed system.
-Developing a distributed system  Fallacies of Distributed Computing Explained The Log: What every software engineer should know about real-time data&#39;s unifying abstraction Turning the database inside-out with Apache Samza What we talk about when we talk about distributed systems Dynamo: Amazon’s Highly Available Key-value Store  Time in a distributed system  Time, Clocks and the Ordering of Events in a Distributed System The Bloom Clock Falsehoods programmers believe about time More falsehoods programmers believe about time; “wisdom of the crowd” edition  Understanding a distributed system  The observability and controllability of a system are mathematical duals - Observability on wikipedia</description>
+Developing a distributed system  10 Lessons from 10 Years of Amazon Web Services Fallacies of Distributed Computing Explained The Log: What every software engineer should know about real-time data&#39;s unifying abstraction Turning the database inside-out with Apache Samza What we talk about when we talk about distributed systems Dynamo: Amazon’s Highly Available Key-value Store  Time in a distributed system  Time, Clocks and the Ordering of Events in a Distributed System The Bloom Clock Falsehoods programmers believe about time More falsehoods programmers believe about time; “wisdom of the crowd” edition  Understanding a distributed system  The observability and controllability of a system are mathematical duals - Observability on wikipedia</description>
     </item>
     
     <item>
