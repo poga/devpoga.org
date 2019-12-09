@@ -18,8 +18,7 @@
       
       <guid>https://devpoga.org/post/parsing-streaming-data-actix-lua/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;https://github.com/poga/actix-lua&#34;&gt;&lt;code&gt;actix-lua&lt;/code&gt;&lt;/a&gt; provides a safe scripting environment for the &lt;a href=&#34;http://actix.rs&#34;&gt;actix&lt;/a&gt; framework with the &lt;a href=&#34;http://lua.org&#34;&gt;Lua Programming Language&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;Here&amp;rsquo;s an example about what you can achieve with it. Hope you can try these ideas in your next project.&lt;/p&gt;</description>
+&lt;p&gt;Here&#39;s an example about what you can achieve with it. Hope you can try these ideas in your next project.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -28,12 +27,9 @@
       <pubDate>Mon, 03 Sep 2018 23:30:04 +0000</pubDate>
       
       <guid>https://devpoga.org/post/2018-09-03_%E5%A6%82%E4%BD%95%E6%95%B4%E5%90%88-rust-%E8%88%87-lua/</guid>
-      <description>&lt;p&gt;&lt;img src=&#34;https://devpoga.org/post/2018-09-03_如何整合-rust-與-lua/images/1.jpeg&#34; alt=&#34;image&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Photo by &lt;a href=&#34;https://unsplash.com/photos/4izt8TxQmEs?utm_source=unsplash&amp;amp;amp;utm_medium=referral&amp;amp;amp;utm_content=creditCopyText&#34;&gt;Anders Jildén&lt;/a&gt; on &lt;a href=&#34;https://unsplash.com/search/photos/lua?utm_source=unsplash&amp;amp;amp;utm_medium=referral&amp;amp;amp;utm_content=creditCopyText&#34;&gt;Unsplash&lt;/a&gt;&lt;/p&gt;
-
+      <description>&lt;p&gt;&lt;img src=&#34;https://devpoga.org/post/2018-09-03_%E5%A6%82%E4%BD%95%E6%95%B4%E5%90%88-rust-%E8%88%87-lua/images/1.jpeg&#34; alt=&#34;image&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Photo by &lt;a href=&#34;https://unsplash.com/photos/4izt8TxQmEs?utm_source=unsplash&amp;amp;utm_medium=referral&amp;amp;utm_content=creditCopyText&#34;&gt;Anders Jildén&lt;/a&gt; on &lt;a href=&#34;https://unsplash.com/search/photos/lua?utm_source=unsplash&amp;amp;utm_medium=referral&amp;amp;utm_content=creditCopyText&#34;&gt;Unsplash&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;在系統中遷入一個動態輕巧的 scripting language 一直是個常見的設計。像 &lt;a href=&#34;https://www.rust-lang.org/&#34;&gt;Rust&lt;/a&gt; 這樣的系統語言，雖然效能好，但是上手門檻較高。這時若是能遷入一個像 &lt;a href=&#34;https://www.lua.org/&#34;&gt;Lua&lt;/a&gt; 一樣動態型別，簡單易懂的語言，便能大幅提高系統彈性。&lt;/p&gt;
-
 &lt;p&gt;最近為了實做 &lt;a href=&#34;https://github.com/poga/actix-lua&#34;&gt;actix-lua&lt;/a&gt;，研究了一下 Rust 跟 Lua 之間的介接，順便學了不少 Rust 跟 Lua 的設計，筆記在此。&lt;/p&gt;</description>
     </item>
     

@@ -76,29 +76,17 @@
     </header>
     <section class="post-content">
       <p>從<a href="https://blog.golang.org/go-version-1-is-released">開始接觸 Go</a> 到現在也已經過了 7 年了啊&hellip; 最近又有機會拿出 Go 出來寫寫，隨手寫一下感受。</p>
-
-<h2 id="編輯器">編輯器</h2>
-
+<h2 id="heading">編輯器</h2>
 <p><code>vim</code> 還是很好用。</p>
-
 <p>這幾年微軟提出的 <a href="https://microsoft.github.io/language-server-protocol/">Language Server Protocol</a> 相當受到社群歡迎，也算是解決了程式語言跟編輯器社群長久以來的困境，成長相當快速。vim plugin 也跟風從 <code>vim-go</code> 換成基於 Language Server Protocol 的 <a href="https://github.com/autozimu/LanguageClient-neovim">LanguageClient-neovim</a> 配上 <a href="https://github.com/saibing/bingo">bingo</a>。有點小不穩但是功能算齊全。</p>
-
 <p>tagbar 一樣是用 <code>gotags</code> 沒變</p>
-
 <h2 id="dependency-management">Dependency Management</h2>
-
 <p>當年被這問題惹毛好幾次，2019 年的今天似乎 Go 社群終於要收斂到一個比較好的作法上了&hellip; 目前 go module 用起來有些陽春，有些怪異，不過堪用。</p>
-
 <p>終於不用再處理 <code>GOPATH</code> 的鳥事了&hellip; 真是令人感動啊。</p>
-
 <h2 id="sync-map">Sync Map</h2>
-
 <p>當初堅持說不需要，最後還是提供 <a href="https://golang.org/pkg/sync/#Map">sync.Map</a> 了嘛。</p>
-
 <p>&ndash;</p>
-
 <p>好像就這樣了。</p>
-
 <p>雖然這語言還是有很多我不喜歡的地方，不過，一個語言可以經過這麼久都沒啥改變的堅持跟說服力，我也是相當欽佩。</p>
     </section>
     <footer class="post-footer">

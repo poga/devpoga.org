@@ -36,6 +36,7 @@ My recommended reading list for anyone designing a practical distributed system.
 
 ## Scaling a distributed system
 
+* [The Tail at Scale](https://cseweb.ucsd.edu/~gmporter/classes/fa17/cse124/post/schedule/p74-dean.pdf)
 * [CAP theorem](https://en.wikipedia.org/wiki/CAP_theorem)
 * [The Raft Consensus Algorithm](https://raft.github.io)
 * [Conflict-free Replicated Data Types](https://pages.lip6.fr/Marc.Shapiro/papers/RR-7687.pdf)

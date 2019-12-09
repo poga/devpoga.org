@@ -76,7 +76,6 @@
     </header>
     <section class="post-content">
       <p>Based on <a href="https://github.com/BurntSushi/ripgrep/blob/master/GUIDE.md">the ripgrep user guide</a> and <a href="https://www.philipdaniels.com/blog/2019/ripgrep-cheatsheet/">Ripgrep Cheatsheet</a>.</p>
-
 <table>
 <thead>
 <tr>
@@ -84,78 +83,63 @@
 <th>Description</th>
 </tr>
 </thead>
-
 <tbody>
 <tr>
 <td><code>rg -l clap</code></td>
 <td>List matching files only</td>
 </tr>
-
 <tr>
 <td><code>rg -c clap</code></td>
 <td>List matching files, including a count</td>
 </tr>
-
 <tr>
 <td><code>rg -i clap</code></td>
 <td>Search case-insensitively</td>
 </tr>
-
 <tr>
 <td><code>rg --no-filename clap</code></td>
 <td>Don’t print filenames</td>
 </tr>
-
 <tr>
 <td><code>rg -v clap</code></td>
 <td>Invert matching: show lines that do not match</td>
 </tr>
-
 <tr>
-<td>`rg -c –sort path</td>
-<td>modified</td>
+<td><code>rg -c –sort path|modified|accessed|created clap</code></td>
+<td>Sort the results (<code>-sortr</code> to reverse)</td>
 </tr>
-
 <tr>
 <td><code>rg -g '*.c' clap</code></td>
 <td>Only search in <code>*.c</code> files (can use multiple <code>-g</code>)</td>
 </tr>
-
 <tr>
 <td><code>rg -g '!*.c' clap</code></td>
 <td>Search in everything but <code>*.c</code> files</td>
 </tr>
-
 <tr>
 <td><code>rg -e clap1 -e clap2</code></td>
 <td>Search for multiple patterns</td>
 </tr>
-
 <tr>
 <td><code>rg -z clap</code></td>
 <td>Search in gzip, bzip2, xz, LZ4, LZMA, Brotli and Zstd compressed files</td>
 </tr>
-
 <tr>
 <td><code>rg -trust -tconfig</code></td>
 <td>Search in file types <code>rust</code> and <code>config</code></td>
 </tr>
-
 <tr>
-<td><code>rg -Tconfig</code></td>
-<td><strong>Don’t</strong> search in file type config</td>
+<td><code>rg -Tconfig</code>| <strong>Don’t</strong> search in file type config</td>
+<td></td>
 </tr>
-
 <tr>
 <td><code>rg --type-add 'web:*.html' --type-add 'web:*.css' --type-add 'web:*.js' -tweb title</code></td>
 <td>Search with custom types</td>
 </tr>
-
 <tr>
 <td><code>rg fast README.md -r FAST</code></td>
 <td>Replace</td>
 </tr>
-
 <tr>
 <td><code>rg fast README.md -or FAST</code></td>
 <td>Replace the whole matching line</td>

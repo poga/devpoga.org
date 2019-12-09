@@ -35,7 +35,7 @@
       <pubDate>Tue, 22 Oct 2019 00:00:00 +0000</pubDate>
       
       <guid>https://devpoga.org/post/2019-10-22-vps_rust_compile_benchmark/</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;https://devpoga.org/post/2019-10-22-vps_rust_compile_benchmark/chart.png&#34;&gt;&lt;img src=&#34;https://devpoga.org/post/2019-10-22-vps_rust_compile_benchmark/chart.png&#34; width=&#34;100%&#34;&gt;&lt;/a&gt;&lt;/p&gt;</description>
+      <description>&lt;p&gt;&lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -54,11 +54,8 @@
       
       <guid>https://devpoga.org/post/2019-06-30_structured_concurrency/</guid>
       <description>&lt;p&gt;Thread 跟 Coroutine 是兩種常常用來處理 Concurrency 的工具。&lt;/p&gt;
-
 &lt;p&gt;使用這兩個工具時，很麻煩的一點就是需要手動管理他們的生命週期。本質上，Thread 跟 Coroutine 都是 global scope，不管你如何建立，他們都獨立在原本的程式順序之外。&lt;/p&gt;
-
 &lt;p&gt;常見的例子是，如果你在 main 建立一個新的 thread，main 並不會等 thread 結束，而需要你手動 join thread，在複雜的情況（例如 cancel、timeout）便相當容易出錯。&lt;/p&gt;
-
 &lt;p&gt;而 Structured Concurrency 就是試圖將 Thread 的生命週期與大家都很熟悉的 scope 結合。&lt;/p&gt;</description>
     </item>
     
@@ -77,7 +74,7 @@
       <pubDate>Tue, 26 Feb 2019 00:00:00 +0000</pubDate>
       
       <guid>https://devpoga.org/post/implementation-lua53/</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;https://poga.github.io/lua53-notes/&#34;&gt;Notes on the Implementation on Lua 5.3&lt;/a&gt; is a collection of my notes on the Lua 5.3 source code. It&amp;rsquo;s a mix of both high-level ideas and interesting details in the source code.&lt;/p&gt;</description>
+      <description>&lt;p&gt;&lt;a href=&#34;https://poga.github.io/lua53-notes/&#34;&gt;Notes on the Implementation on Lua 5.3&lt;/a&gt; is a collection of my notes on the Lua 5.3 source code. It&#39;s a mix of both high-level ideas and interesting details in the source code.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -87,8 +84,7 @@
       
       <guid>https://devpoga.org/post/parsing-streaming-data-actix-lua/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;https://github.com/poga/actix-lua&#34;&gt;&lt;code&gt;actix-lua&lt;/code&gt;&lt;/a&gt; provides a safe scripting environment for the &lt;a href=&#34;http://actix.rs&#34;&gt;actix&lt;/a&gt; framework with the &lt;a href=&#34;http://lua.org&#34;&gt;Lua Programming Language&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;Here&amp;rsquo;s an example about what you can achieve with it. Hope you can try these ideas in your next project.&lt;/p&gt;</description>
+&lt;p&gt;Here&#39;s an example about what you can achieve with it. Hope you can try these ideas in your next project.&lt;/p&gt;</description>
     </item>
     
   </channel>

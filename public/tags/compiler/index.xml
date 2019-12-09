@@ -26,10 +26,8 @@
       <pubDate>Wed, 18 Apr 2018 00:00:00 +0000</pubDate>
       
       <guid>https://devpoga.org/post/2018-04-18_luajit-%E5%AF%A6%E5%81%9A%E6%8E%A2%E7%B4%A2-nan-tagging/</guid>
-      <description>&lt;p&gt;&lt;img src=&#34;https://devpoga.org/post/2018-04-18_luajit-實做探索-nan-tagging/images/1.png&#34; alt=&#34;image&#34; /&gt;&lt;/p&gt;
-
-&lt;h4 id=&#34;一切都是為了效能&#34;&gt;一切都是為了效能&lt;/h4&gt;
-
+      <description>&lt;p&gt;&lt;img src=&#34;https://devpoga.org/post/2018-04-18_luajit-%E5%AF%A6%E5%81%9A%E6%8E%A2%E7%B4%A2-nan-tagging/images/1.png&#34; alt=&#34;image&#34;&gt;&lt;/p&gt;
+&lt;h4 id=&#34;heading&#34;&gt;一切都是為了效能&lt;/h4&gt;
 &lt;p&gt;故事要從 boxed value 跟 unboxed value 說起。&lt;/p&gt;</description>
     </item>
     

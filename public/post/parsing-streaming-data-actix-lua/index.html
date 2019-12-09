@@ -76,74 +76,49 @@
     </header>
     <section class="post-content">
       <p><a href="https://github.com/poga/actix-lua"><code>actix-lua</code></a> provides a safe scripting environment for the <a href="http://actix.rs">actix</a> framework with the <a href="http://lua.org">Lua Programming Language</a>.</p>
-
-<p>Here&rsquo;s an example about what you can achieve with it. Hope you can try these ideas in your next project.</p>
-
-<h3 id="definitely-not-a-world-changing-project">Definitely not a world-changing project</h3>
-
+<p>Here's an example about what you can achieve with it. Hope you can try these ideas in your next project.</p>
+<h3 id="definitely-not-a-worldchanging-project">Definitely not a world-changing project</h3>
 <p><a href="https://pathofexile.com">Path of Exile(PoE)</a> is an online multiplayer RPG. In PoE, players get powerful, unique items by killing monsters. Then, they put their items to the market and trade with others.</p>
-
-<p><img src="/poe-logo.jpeg" alt="Path of Exile Logo" /></p>
-
-<p>I was an avid player of the game. I spent hundreds of hours building my character, learning from other players, and trying to improve my efficiency. But I&rsquo;m still nowhere near the top players. They are on a whole different level, and how they do it is mostly their trade secret.</p>
-
+<p><img src="/poe-logo.jpeg" alt="Path of Exile Logo"></p>
+<p>I was an avid player of the game. I spent hundreds of hours building my character, learning from other players, and trying to improve my efficiency. But I'm still nowhere near the top players. They are on a whole different level, and how they do it is mostly their trade secret.</p>
 <h3 id="revealing-secrets-via-data-processing">Revealing secrets via data processing</h3>
-
-<p>How do I reveal their secret? I want to know what item they&rsquo;re trading and how do they make profits. Fortunately, PoE provides a <a href="https://pathofexile.gamepedia.com/Public_stash_tab_API">public API</a> about the items on the market.</p>
-
-<p>Understanding a virtual market in a video game won&rsquo;t make me money (other than some virtual bucks). But hey, it&rsquo;s fun.</p>
-
-<p>PoE has lots of players. The amount of items they put to the market is huge. And more importantly, <strong>I don&rsquo;t know what I&rsquo;m looking for.</strong> I&rsquo;m exploring the live data as it comes in, looking for interesting patterns, and learn from it.</p>
-
+<p>How do I reveal their secret? I want to know what item they're trading and how do they make profits. Fortunately, PoE provides a <a href="https://pathofexile.gamepedia.com/Public_stash_tab_API">public API</a> about the items on the market.</p>
+<p>Understanding a virtual market in a video game won't make me money (other than some virtual bucks). But hey, it's fun.</p>
+<p>PoE has lots of players. The amount of items they put to the market is huge. And more importantly, <strong>I don't know what I'm looking for.</strong> I'm exploring the live data as it comes in, looking for interesting patterns, and learn from it.</p>
 <h3 id="asynchronous-programming-and-actor-model">Asynchronous programming and Actor model</h3>
-
-<p>The task has two parts: reading the data and analyzing it. Reading the data is mostly IO-bound. It takes about 3 seconds to get a 5MB response from the API endpoint. By using an asynchronous model, we can delegate the IO to the OS, and process the data while we&rsquo;re waiting for the next batch of data, without resorting to multi-threading!</p>
-
+<p>The task has two parts: reading the data and analyzing it. Reading the data is mostly IO-bound. It takes about 3 seconds to get a 5MB response from the API endpoint. By using an asynchronous model, we can delegate the IO to the OS, and process the data while we're waiting for the next batch of data, without resorting to multi-threading!</p>
 <p>Actix is an actor framework that simplifies asynchronous programming. Actor model helps us design the control-flow of our program, and we can focus on the data-flow.</p>
-
-<p>A control-flow is a program&rsquo;s order of execution. When writing an async program, it&rsquo;s easy to get lost in callbacks and futures. By using actors, we can separate different parts of the control-flow into different actors:</p>
-
+<p>A control-flow is a program's order of execution. When writing an async program, it's easy to get lost in callbacks and futures. By using actors, we can separate different parts of the control-flow into different actors:</p>
 <ul>
 <li>an actor to bootstrap the program, fetch the latest &ldquo;offset&rdquo; from a 3rd-party API and begin our processing.</li>
 <li>an actor to poll the API with a specified offset, send the response to the processing actor, then poll the next offset.</li>
 <li>an actor to process the data with Lua scripts.</li>
 </ul>
-
-<p>So, each actor only has its own simple control-flow. It&rsquo;s much easier to understand than multiple tangled futures.</p>
-
+<p>So, each actor only has its own simple control-flow. It's much easier to understand than multiple tangled futures.</p>
 <h3 id="exploring-the-data-with-the-power-of-dynamic-languages">Exploring the data with the power of dynamic languages</h3>
-
 <p>So, what does Lua really gives us? By using Lua, we can write scripts like this:</p>
-
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-Lua" data-lang="Lua"><span style="color:#66d9ef">for</span> i, item <span style="color:#66d9ef">in</span> pairs(data[<span style="color:#e6db74">&#34;items&#34;</span>]) <span style="color:#66d9ef">do</span>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-Lua" data-lang="Lua"><span style="color:#66d9ef">for</span> i, item <span style="color:#66d9ef">in</span> pairs(data[<span style="color:#e6db74">&#34;</span><span style="color:#e6db74">items</span><span style="color:#e6db74">&#34;</span>]) <span style="color:#66d9ef">do</span>
     <span style="color:#75715e">-- looking for an item called &#34;Belly of the Beast&#34;</span>
-    <span style="color:#66d9ef">if</span> string.find(item[<span style="color:#e6db74">&#34;name&#34;</span>], <span style="color:#e6db74">&#34;Belly of the Beast&#34;</span>) <span style="color:#66d9ef">then</span>
+    <span style="color:#66d9ef">if</span> string.find(item[<span style="color:#e6db74">&#34;</span><span style="color:#e6db74">name</span><span style="color:#e6db74">&#34;</span>], <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">Belly of the Beast</span><span style="color:#e6db74">&#34;</span>) <span style="color:#66d9ef">then</span>
         <span style="color:#75715e">-- print the seller&#39;s account and the price</span>
-        print(data[<span style="color:#e6db74">&#34;accountName&#34;</span>], item[<span style="color:#e6db74">&#34;note&#34;</span>])
+        print(data[<span style="color:#e6db74">&#34;</span><span style="color:#e6db74">accountName</span><span style="color:#e6db74">&#34;</span>], item[<span style="color:#e6db74">&#34;</span><span style="color:#e6db74">note</span><span style="color:#e6db74">&#34;</span>])
     <span style="color:#66d9ef">end</span>
 <span style="color:#66d9ef">end</span></code></pre></div>
-
 <p>Instead of figuring out types and fighting borrow checkers, we can express our idea in a simple language.</p>
-
 <p>We can also change the script while the program is running! <strong>We can explore the data WHILE PROCESSING THE DATA</strong>, which is tremendously useful.</p>
-
 <p>To achieve hot-reload, you need only four lines of codes thanks to the dynamic nature of Lua.</p>
-
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-Lua" data-lang="Lua"><span style="color:#75715e">-- assume -1 is the signal to reload lua scripts</span>
 <span style="color:#66d9ef">if</span> ctx.msg <span style="color:#f92672">==</span> <span style="color:#f92672">-</span><span style="color:#ae81ff">1</span> <span style="color:#66d9ef">then</span>
   <span style="color:#75715e">-- remove &#34;handler&#34; package from cache</span>
   <span style="color:#75715e">-- next require will load the script from disk instead of cache</span>
-  package.loaded[<span style="color:#e6db74">&#34;handler&#34;</span>] <span style="color:#f92672">=</span> <span style="color:#66d9ef">nil</span>
+  package.loaded[<span style="color:#e6db74">&#34;</span><span style="color:#e6db74">handler</span><span style="color:#e6db74">&#34;</span>] <span style="color:#f92672">=</span> <span style="color:#66d9ef">nil</span>
 <span style="color:#66d9ef">end</span>
 
 <span style="color:#75715e">-- load the package from disk or cache</span>
-<span style="color:#66d9ef">local</span> handler <span style="color:#f92672">=</span> require(<span style="color:#e6db74">&#34;handler&#34;</span>)</code></pre></div>
-
+<span style="color:#66d9ef">local</span> handler <span style="color:#f92672">=</span> require(<span style="color:#e6db74">&#34;</span><span style="color:#e6db74">handler</span><span style="color:#e6db74">&#34;</span>)</code></pre></div>
 <h3 id="then-i-stopped-playing-the-video-game">Then I stopped playing the video game</h3>
-
-<p>It turns out that writing Rust and Lua is more fun than actually playing the video game. I&rsquo;m really happy with <a href="https://github.com/poga/actix-lua"><code>actix-lua</code></a>. I believe there&rsquo;s potential for the crate and I&rsquo;m excited to explore it!</p>
-
-<p>If you&rsquo;re interested, <a href="https://github.com/poga/streaming-data-parsing-with-actix-lua">Here&rsquo;s the full example mentioned in this post</a>.</p>
+<p>It turns out that writing Rust and Lua is more fun than actually playing the video game. I'm really happy with <a href="https://github.com/poga/actix-lua"><code>actix-lua</code></a>. I believe there's potential for the crate and I'm excited to explore it!</p>
+<p>If you're interested, <a href="https://github.com/poga/streaming-data-parsing-with-actix-lua">Here's the full example mentioned in this post</a>.</p>
     </section>
     <footer class="post-footer">
       <section class="tags post-meta">
