@@ -91,7 +91,7 @@
 <li>傳進 rlua 中的任何值都必須是 <code>Send</code> （因為 lua 本身是 <code>Send</code>）跟 <code>'static</code>（因為你沒辦法知道 Lua 何時會 GC 掉這些值，難以找出精確的 lifetime。）</li>
 <li>3 的限制讓傳值給 lua 變的複雜許多。rlua 提供了 <code>scope</code> API，可以用一個暫時的 scope 將不符合條件的值傳給 lua。傳過去的資料在 scope 結束後就會被銷毀，避免複雜的 lifetime 問題。</li>
 </ol>
-<h4 id="actixlua">最後的成果：actix-lua</h4>
+<h4 id="actix-lua">最後的成果：actix-lua</h4>
 <p><a href="https://actix.rs/">actix</a> 是個 Rust 上的 actor framework，前陣子因為極高的效能而小有名氣。由於目前 Rust async/await 的支援還不算友善，actor model 算是能幫助簡化 async 程式的架構。</p>
 <p>而 <a href="https://github.com/poga/actix-lua">actix-lua</a> 便是將 actix 與 Lua 整合，讓人能用 Lua 實做系統中某些需要彈性、熱抽換、方便修改的部分。想法來自於 <a href="https://openresty.org/en/">openresty</a> 這套整合 nginx 與 Lua 的軟體。目前主要被我用來處理即時資料的分析。</p>
 <p>雖然寫的過程碰了蠻多壁，不過最後的成果我還算滿意。目前還在初步的階段，歡迎各種建議與回饋。</p>

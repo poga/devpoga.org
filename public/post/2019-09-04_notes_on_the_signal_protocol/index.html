@@ -99,7 +99,7 @@
 <p>In the following article, we will understand how it solve issues mentioned in the previous paragraph.</p>
 <p>Let's get started with Diffie-Hellman key exchange and X3DH.</p>
 <hr>
-<h2 id="diffiehellman-key-exchange-and-x3dh">Diffie-Hellman Key Exchange and X3DH</h2>
+<h2 id="diffie-hellman-key-exchange-and-x3dh">Diffie-Hellman Key Exchange and X3DH</h2>
 <p>Instead of DH key exchange, Signal Protocol used a variation of it named <a href="https://signal.org/docs/specifications/x3dh/">&ldquo;X3DH&rdquo; (Extended Triple Diffie-Hellman)</a>.</p>
 <blockquote>
 <p>Note: Since the X3DH document is well-written and is in the public domain. Some of the following text is copied from the origin document with addition of my own notes.</p>
@@ -120,8 +120,8 @@
 <p>After a successful protocol run Alice and Bob will share a 32-byte secret key <em>SK</em>. This key may be used within some post-X3DH secure communication protocol, subject to the security considerations.</p>
 <h3 id="the-x3dh-protocol">The X3DH Protocol</h3>
 <p><img src="./X3DH.png" alt=""></p>
-<p><a href="https://signal.org/docs/specifications/x3dh/"><a href="https://signal.org/docs/specifications/x3dh/">https://signal.org/docs/specifications/x3dh/</a></a></p>
-<h3 id="onetime-prekeys">One-time Prekeys</h3>
+<p><a href="https://signal.org/docs/specifications/x3dh/">https://signal.org/docs/specifications/x3dh/</a></p>
+<h3 id="one-time-prekeys">One-time Prekeys</h3>
 <p>One-time prekeys are essential for forward-secrecy.</p>
 <p>If no one-time keys are used, the key agreement just uses two keys: The identity key and the<em>signed prekey</em>. They're both long-term-ish keys. If an attacker get both long-term keys, they can calculate the shared secret.</p>
 <p>Adding a one-time prekey to the calculation makes the shared secret be based on a truly ephemeral key on both sides of the communication.</p>
@@ -134,7 +134,7 @@
 <p>The parties derive new keys for every Double Ratchet message so that earlier keys cannot be calculated from later ones. The parties also send Diffie-Hellman public values attached to their messages. The results of Diffie-Hellman calculations are mixed into the derived keys so that later keys cannot be calculated from earlier ones. These properties gives some protection to earlier or later encrypted messages in case of a compromise of a party's keys.</p>
 <h3 id="the-protocol">The Protocol</h3>
 <p><img src="./Set1_2.png" alt=""></p>
-<p><a href="https://signal.org/docs/specifications/doubleratchet/"><a href="https://signal.org/docs/specifications/doubleratchet/">https://signal.org/docs/specifications/doubleratchet/</a></a></p>
+<p><a href="https://signal.org/docs/specifications/doubleratchet/">https://signal.org/docs/specifications/doubleratchet/</a></p>
 <h3 id="kdf-chains">KDF Chains</h3>
 <p>A KDF chain has the following properties:</p>
 <ul>
@@ -150,10 +150,10 @@ As Alice and Bob exchange messages they also exchange new Diffie-Hellman public 
 <p>Introduction of Root key is a critical element in ensuring break-in recovery.</p>
 <p>Since the Root key is bootstrapped at the beginning of establishing the communication between A and B. There's no way a MITM attacker could have compromised the root key. Such attacker intent to build the corresponding chains to match up to A's sending chain and B's receiving chain to successfully establish a working MITM.</p>
 <p>Due to the introduction of root key in the DH ratchet, the attacker can't generate corresponding sending/receiving chain. The attacker's window of interception after a chance compromise of a &lsquo;message key&rsquo; is limited until the next opportunistic &lsquo;DH ratchet&rsquo; cycle.</p>
-<h3 id="outoforder-messages">Out-of-Order Messages</h3>
+<h3 id="out-of-order-messages">Out-of-Order Messages</h3>
 <p>The Double Ratchet handles lost or out-of-order messages by including in each message header the message's number in the sending chain (<em>N</em>=0,1,2,&hellip;) and the length (number of message keys) in the previous sending chain (<em>PN</em>). This enables the recipient to advance to the relevant message key while storing skipped message keys in case the skipped messages arrive later.</p>
 <hr>
-<h2 id="multidevice-support">Multi-Device Support</h2>
+<h2 id="multi-device-support">Multi-Device Support</h2>
 <p>As previously stated, we're in a world where almost everyone have multiple connected devices. It creates interesting challenges for modern cryptography.</p>
 <p>First, it's undesirable to have multiple devices being complete separated identities if they're owned by the same person. It's confusing if the people I'm chatting with think my phone and my desktop are two different people.</p>
 <p>Second, people are not perfect. They might lost their phone, break their laptop, and consequently lost their private key. We need to identify the connection between multiple devices and migrate when necessary.</p>
@@ -161,7 +161,7 @@ As Alice and Bob exchange messages they also exchange new Diffie-Hellman public 
 <p>Sesame was designed to manage Double Ratchet sessions created with X3DH key agreement. However, Sesame is a generic algorithm that works with any session-based message encryption algorithm that meets certain conditions.</p>
 <p>Sesame use a server to store the user-devices relation and cache user's message with mailboxes. It's essential for better user experience.</p>
 <hr>
-<h2 id="endtoend-encryption-for-group-messaging">End-to-End Encryption for Group Messaging</h2>
+<h2 id="end-to-end-encryption-for-group-messaging">End-to-End Encryption for Group Messaging</h2>
 <p>In Signal Protocol, group messaging is modeled as multiple 1:1 secure messages via sending message to each member's mailbox on the sesame server. This approach is called &ldquo;client-side fan-out&rdquo;</p>
 <p>There's also a variation of Signal protocol adopted by WhatsApp called Sender Keys. It has &ldquo;server-side fan-out&rdquo; and enforce transcript consistency on the server. Check <a href="https://www.whatsapp.com/security/WhatsApp-Security-Whitepaper.pdf">their whitepaper</a> for more information.</p>
 <p>Secure group messaging is still an open problem. Other protocols, such as <a href="%5Bhttps://gitlab.matrix.org/matrix-org/olm/blob/master/docs/megolm.md%5Dhttps://gitlab.matrix.org/matrix-org/olm/blob/master/docs/megolm.md">Matrix's megolm</a> and <a href="%5Bhttps://blog.trailofbits.com/2019/08/06/better-encrypted-group-chat/%5Dhttps://blog.trailofbits.com/2019/08/06/better-encrypted-group-chat/">Message Layer Security(MLS)</a> ), all impose different trade-offs.</p>
