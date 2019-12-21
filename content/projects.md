@@ -6,6 +6,8 @@ menu = "main"
 
 # Projects
 
+* [redis-percentile](https://github.com/poga/redis-percentile) Redis module for efficient percentile estimation.
+
 * [pttai-next](https://github.com/ailabstw/pttai-next): Decentralized Social Network.
 
 * [hyperfeed](https://github.com/poga/hyperfeed): Share RSS feed via a P2P network.

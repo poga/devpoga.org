@@ -53,7 +53,8 @@
       <pubDate>Sat, 14 Sep 2019 00:00:00 +0000</pubDate>
       
       <guid>https://devpoga.org/projects/</guid>
-      <description>Projects   pttai-next: Decentralized Social Network.
+      <description>Projects   redis-percentile Redis module for efficient percentile estimation.
+  pttai-next: Decentralized Social Network.
   hyperfeed: Share RSS feed via a P2P network.
   redis-rating: A Redis module to help you calculate the real rating from positive/negative rating feedback.
   actix-lua: Safe Lua Scripting for the actix actor framework.
