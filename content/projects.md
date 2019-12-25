@@ -8,6 +8,8 @@ menu = "main"
 
 * [redis-percentile](https://github.com/poga/redis-percentile) Redis module for efficient percentile estimation.
 
+* [awesome-federated-learning](https://github.com/poga/awesome-federated-learning) Resources releated to federated learning and privacy in machine learning.
+
 * [pttai-next](https://github.com/ailabstw/pttai-next): Decentralized Social Network.
 
 * [hyperfeed](https://github.com/poga/hyperfeed): Share RSS feed via a P2P network.
