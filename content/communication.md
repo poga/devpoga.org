@@ -16,3 +16,5 @@ menu = "main"
 * [Working Backward](https://www.allthingsdistributed.com/2006/11/working_backwards.html)
 
 * [What nobody tells you about documentation](https://www.divio.com/blog/documentation/)
+
+* [Basecamp](https://m.signalvnoise.com/the-basecamp-guide-to-internal-communication/)
