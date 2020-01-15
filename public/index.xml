@@ -81,7 +81,7 @@
       <pubDate>Sun, 25 Aug 2019 00:00:00 +0000</pubDate>
       
       <guid>https://devpoga.org/about/</guid>
-      <description>About Poga Software Developer, interested in decentralization, privacy, distributed system, scalability, and system performance. Publications &amp;amp; Talks 萬事萬物皆是 Log - 系統架構也來點科普 - COSCUP 2016 Running a Service in Production without Losing Your Sanity - AILabs Taiwan 2019 Notes on the Implementation on Lua 5.3 Contacts email: poga.po@gmail.com Github: poga Twitter: devpoga</description>
+      <description>About Poga Software Developer, interested in decentralization, privacy, distributed system, scalability, and system performance. Simplicity is a great virtue but it requires hard work to achieve it and education to appreciate it. And to make matters worse: complexity sells better. &amp;ndash; Edsger Dijkstra Publications &amp;amp; Talks 萬事萬物皆是 Log - 系統架構也來點科普 - COSCUP 2016 Running a Service in</description>
     </item>
     
     <item>
@@ -202,7 +202,7 @@ Developing a distributed system  10 Lessons from 10 Years of Amazon Web Services
       
       <guid>https://devpoga.org/post/2018-04-18_luajit-%E5%AF%A6%E5%81%9A%E6%8E%A2%E7%B4%A2-nan-tagging/</guid>
       <description>&lt;p&gt;&lt;img src=&#34;https://devpoga.org/post/2018-04-18_luajit-%E5%AF%A6%E5%81%9A%E6%8E%A2%E7%B4%A2-nan-tagging/images/1.png&#34; alt=&#34;image&#34;&gt;&lt;/p&gt;
-&lt;h4 id=&#34;heading&#34;&gt;一切都是為了效能&lt;/h4&gt;
+&lt;h4 id=&#34;一切都是為了效能&#34;&gt;一切都是為了效能&lt;/h4&gt;
 &lt;p&gt;故事要從 boxed value 跟 unboxed value 說起。&lt;/p&gt;</description>
     </item>
     
