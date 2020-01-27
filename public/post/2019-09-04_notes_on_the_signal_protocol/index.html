@@ -79,13 +79,13 @@
     <section class="post-content">
       <p><img src="/post/2019-09-04_notes_on_the_signal_protocol/dh.png" alt=""></p>
 <blockquote>
-<p>So, I assume you're already familiar with <a href="https://en.wikipedia.org/wiki/Public-key_cryptography">Public-key cryptography</a> and <a href="https://en.wikipedia.org/wiki/Diffie%E2%80%93Hellman_key_exchange">Diffie-Hellman key exchange</a>. If not, there are lots of good materials about them. Check them out first!</p>
+<p>So, I assume you&rsquo;re already familiar with <a href="https://en.wikipedia.org/wiki/Public-key_cryptography">Public-key cryptography</a> and <a href="https://en.wikipedia.org/wiki/Diffie%E2%80%93Hellman_key_exchange">Diffie-Hellman key exchange</a>. If not, there are lots of good materials about them. Check them out first!</p>
 </blockquote>
-<p>Public-key cryptography is a solid, well-studied foundation for today's modern encryption and privacy. PGP, Diffle-Hellman, and RSA are all well-known. However, if you want to develop something with encryption, they might be not enough.</p>
+<p>Public-key cryptography is a solid, well-studied foundation for today&rsquo;s modern encryption and privacy. PGP, Diffle-Hellman, and RSA are all well-known. However, if you want to develop something with encryption, they might be not enough.</p>
 <p>Why?</p>
 <h3 id="user-experience">User Experience</h3>
-<p><strong>With vanilla public-key cryptography, the private key IS your identity</strong>. Everything is doomed if you lose your private key. Unfortunately, it's really, really hard to correctly backup and protect your private key without sacrificing security. For normal people, they might lose their phone. Their computer might be spoiled by a cup of coffee. And it's notoriously hard to maintain a working backup for any data.</p>
-<p>As you already know, we live in a mobile world. People have multiple devices at their hand. It's unacceptable if they can only use one device to represent themselves. It's common to use a phone on the road, then switch to a desktop in an office.</p>
+<p><strong>With vanilla public-key cryptography, the private key IS your identity</strong>. Everything is doomed if you lose your private key. Unfortunately, it&rsquo;s really, really hard to correctly backup and protect your private key without sacrificing security. For normal people, they might lose their phone. Their computer might be spoiled by a cup of coffee. And it&rsquo;s notoriously hard to maintain a working backup for any data.</p>
+<p>As you already know, we live in a mobile world. People have multiple devices at their hand. It&rsquo;s unacceptable if they can only use one device to represent themselves. It&rsquo;s common to use a phone on the road, then switch to a desktop in an office.</p>
 <p>Finally, people expect good discoverability for content. Long gone the days people manually collect and share links through different channels. Good discoverability is also useful for bootstrapping a new community.</p>
 <p>The UX bar is already set. We need to catch up.</p>
 <h3 id="privacy">Privacy</h3>
@@ -99,7 +99,7 @@
 <h3 id="signal-protocol">Signal Protocol</h3>
 <p>Signal is an end-to-end encrypted messaging application. It uses its own protocol called <a href="https://signal.org/docs/">Signal Protocol</a>. The protocol is based on the solid foundation of cryptography and is also adapted by many other messaging applications. The document is also well-written and easy to understand.</p>
 <p>In the following article, we will understand how it solve issues mentioned in the previous paragraph.</p>
-<p>Let's get started with Diffie-Hellman key exchange and X3DH.</p>
+<p>Let&rsquo;s get started with Diffie-Hellman key exchange and X3DH.</p>
 <hr>
 <h2 id="diffie-hellman-key-exchange-and-x3dh">Diffie-Hellman Key Exchange and X3DH</h2>
 <p>Instead of DH key exchange, Signal Protocol used a variation of it named <a href="https://signal.org/docs/specifications/x3dh/">&ldquo;X3DH&rdquo; (Extended Triple Diffie-Hellman)</a>.</p>
@@ -110,11 +110,11 @@
 <h3 id="keys">Keys</h3>
 <p>X3DH uses the following elliptic curve public keys:</p>
 <ul>
-<li>IK_A: Alice's (long-term) identity key</li>
-<li>EK_A: Alice's ephemeral key</li>
-<li>IK_B: Bob's (long-term) identity key</li>
-<li>SPK_B: Bob's signed prekey</li>
-<li>OPK_B: Bob's one-time prekey</li>
+<li>IK_A: Alice&rsquo;s (long-term) identity key</li>
+<li>EK_A: Alice&rsquo;s ephemeral key</li>
+<li>IK_B: Bob&rsquo;s (long-term) identity key</li>
+<li>SPK_B: Bob&rsquo;s signed prekey</li>
+<li>OPK_B: Bob&rsquo;s one-time prekey</li>
 </ul>
 <p>All public keys have a corresponding private key, but to simplify description we will focus on the public keys.</p>
 <p>Bob has a signed prekey <em>SPK_B</em>, which he will change periodically, and a set of one-time prekeys <em>OPK_B</em>, which are each used in a single X3DH protocol run. (&ldquo;Prekeys&rdquo; are so named because they are essentially protocol messages which Bob publishes to the server<em>prior</em>to Alice beginning the protocol run).</p>
@@ -125,15 +125,15 @@
 <p><a href="https://signal.org/docs/specifications/x3dh/">https://signal.org/docs/specifications/x3dh/</a></p>
 <h3 id="one-time-prekeys">One-time Prekeys</h3>
 <p>One-time prekeys are essential for forward-secrecy.</p>
-<p>If no one-time keys are used, the key agreement just uses two keys: The identity key and the<em>signed prekey</em>. They're both long-term-ish keys. If an attacker get both long-term keys, they can calculate the shared secret.</p>
+<p>If no one-time keys are used, the key agreement just uses two keys: The identity key and the<em>signed prekey</em>. They&rsquo;re both long-term-ish keys. If an attacker get both long-term keys, they can calculate the shared secret.</p>
 <p>Adding a one-time prekey to the calculation makes the shared secret be based on a truly ephemeral key on both sides of the communication.</p>
 <h3 id="deniability">Deniability</h3>
 <p>Instead of non-repudiation, X3DH provides an interesting property: Deniability.</p>
-<p>X3DH doesn't give either Alice or Bob a publishable cryptographic proof of the contents of their communication or the fact that they communicated.</p>
+<p>X3DH doesn&rsquo;t give either Alice or Bob a publishable cryptographic proof of the contents of their communication or the fact that they communicated.</p>
 <hr>
 <h2 id="double-ratchet">Double Ratchet</h2>
 <p>The Double Ratchet algorithm is used by two parties to exchange encrypted messages based on a shared secret key. Typically the parties will use some key agreement protocol (such as X3DH) to agree on the shared secret key. Following this, the parties will use the Double Ratchet to send and receive encrypted messages.</p>
-<p>The parties derive new keys for every Double Ratchet message so that earlier keys cannot be calculated from later ones. The parties also send Diffie-Hellman public values attached to their messages. The results of Diffie-Hellman calculations are mixed into the derived keys so that later keys cannot be calculated from earlier ones. These properties gives some protection to earlier or later encrypted messages in case of a compromise of a party's keys.</p>
+<p>The parties derive new keys for every Double Ratchet message so that earlier keys cannot be calculated from later ones. The parties also send Diffie-Hellman public values attached to their messages. The results of Diffie-Hellman calculations are mixed into the derived keys so that later keys cannot be calculated from earlier ones. These properties gives some protection to earlier or later encrypted messages in case of a compromise of a party&rsquo;s keys.</p>
 <h3 id="the-protocol">The Protocol</h3>
 <p><img src="./Set1_2.png" alt=""></p>
 <p><a href="https://signal.org/docs/specifications/doubleratchet/">https://signal.org/docs/specifications/doubleratchet/</a></p>
@@ -144,34 +144,34 @@
 <li><strong>Forward security</strong>: Output keys from the past appear random to an adversary who learns the KDF key at some point in time.</li>
 <li><strong>Break-in recovery</strong>: Future output keys appear random to an adversary who learns the KDF key at some point in time, provided that future inputs have added sufficient entropy.</li>
 </ul>
-<p>In a <strong>Double Ratchet session</strong> between Alice and Bob each party stores a KDF key for three chains: a <strong>root chain</strong>, a <strong>sending chain</strong>, and a <strong>receiving chain</strong> (Alice's sending chain matches Bob's receiving chain, and vice versa).
+<p>In a <strong>Double Ratchet session</strong> between Alice and Bob each party stores a KDF key for three chains: a <strong>root chain</strong>, a <strong>sending chain</strong>, and a <strong>receiving chain</strong> (Alice&rsquo;s sending chain matches Bob&rsquo;s receiving chain, and vice versa).
 As Alice and Bob exchange messages they also exchange new Diffie-Hellman public keys, and the Diffie-Hellman output secrets become the inputs to the root chain.</p>
 <p>The output keys from the root chain become new KDF keys for the sending and receiving chains. This is called the <strong>Diffie-Hellman ratchet</strong>.</p>
 <p>The sending and receiving chains advance as each message is sent and received. Their output keys are used to encrypt and decrypt messages. This is called the <strong>symmetric-key ratchet</strong></p>
 <h3 id="root-key">Root Key</h3>
 <p>Introduction of Root key is a critical element in ensuring break-in recovery.</p>
-<p>Since the Root key is bootstrapped at the beginning of establishing the communication between A and B. There's no way a MITM attacker could have compromised the root key. Such attacker intent to build the corresponding chains to match up to A's sending chain and B's receiving chain to successfully establish a working MITM.</p>
-<p>Due to the introduction of root key in the DH ratchet, the attacker can't generate corresponding sending/receiving chain. The attacker's window of interception after a chance compromise of a &lsquo;message key&rsquo; is limited until the next opportunistic &lsquo;DH ratchet&rsquo; cycle.</p>
+<p>Since the Root key is bootstrapped at the beginning of establishing the communication between A and B. There&rsquo;s no way a MITM attacker could have compromised the root key. Such attacker intent to build the corresponding chains to match up to A&rsquo;s sending chain and B&rsquo;s receiving chain to successfully establish a working MITM.</p>
+<p>Due to the introduction of root key in the DH ratchet, the attacker can&rsquo;t generate corresponding sending/receiving chain. The attacker&rsquo;s window of interception after a chance compromise of a &lsquo;message key&rsquo; is limited until the next opportunistic &lsquo;DH ratchet&rsquo; cycle.</p>
 <h3 id="out-of-order-messages">Out-of-Order Messages</h3>
-<p>The Double Ratchet handles lost or out-of-order messages by including in each message header the message's number in the sending chain (<em>N</em>=0,1,2,&hellip;) and the length (number of message keys) in the previous sending chain (<em>PN</em>). This enables the recipient to advance to the relevant message key while storing skipped message keys in case the skipped messages arrive later.</p>
+<p>The Double Ratchet handles lost or out-of-order messages by including in each message header the message&rsquo;s number in the sending chain (<em>N</em>=0,1,2,&hellip;) and the length (number of message keys) in the previous sending chain (<em>PN</em>). This enables the recipient to advance to the relevant message key while storing skipped message keys in case the skipped messages arrive later.</p>
 <hr>
 <h2 id="multi-device-support">Multi-Device Support</h2>
-<p>As previously stated, we're in a world where almost everyone have multiple connected devices. It creates interesting challenges for modern cryptography.</p>
-<p>First, it's undesirable to have multiple devices being complete separated identities if they're owned by the same person. It's confusing if the people I'm chatting with think my phone and my desktop are two different people.</p>
+<p>As previously stated, we&rsquo;re in a world where almost everyone have multiple connected devices. It creates interesting challenges for modern cryptography.</p>
+<p>First, it&rsquo;s undesirable to have multiple devices being complete separated identities if they&rsquo;re owned by the same person. It&rsquo;s confusing if the people I&rsquo;m chatting with think my phone and my desktop are two different people.</p>
 <p>Second, people are not perfect. They might lost their phone, break their laptop, and consequently lost their private key. We need to identify the connection between multiple devices and migrate when necessary.</p>
 <p>To solve these issues, Signal use the <a href="%5Bhttps://signal.org/docs/specifications/sesame/%5Dhttps://signal.org/docs/specifications/sesame/">Sesame Algorithm</a> for managing message encryption sessions in an asynchronous and multi-device setting.</p>
 <p>Sesame was designed to manage Double Ratchet sessions created with X3DH key agreement. However, Sesame is a generic algorithm that works with any session-based message encryption algorithm that meets certain conditions.</p>
-<p>Sesame use a server to store the user-devices relation and cache user's message with mailboxes. It's essential for better user experience.</p>
+<p>Sesame use a server to store the user-devices relation and cache user&rsquo;s message with mailboxes. It&rsquo;s essential for better user experience.</p>
 <hr>
 <h2 id="end-to-end-encryption-for-group-messaging">End-to-End Encryption for Group Messaging</h2>
-<p>In Signal Protocol, group messaging is modeled as multiple 1:1 secure messages via sending message to each member's mailbox on the sesame server. This approach is called &ldquo;client-side fan-out&rdquo;</p>
-<p>There's also a variation of Signal protocol adopted by WhatsApp called Sender Keys. It has &ldquo;server-side fan-out&rdquo; and enforce transcript consistency on the server. Check <a href="https://www.whatsapp.com/security/WhatsApp-Security-Whitepaper.pdf">their whitepaper</a> for more information.</p>
-<p>Secure group messaging is still an open problem. Other protocols, such as <a href="%5Bhttps://gitlab.matrix.org/matrix-org/olm/blob/master/docs/megolm.md%5Dhttps://gitlab.matrix.org/matrix-org/olm/blob/master/docs/megolm.md">Matrix's megolm</a> and <a href="%5Bhttps://blog.trailofbits.com/2019/08/06/better-encrypted-group-chat/%5Dhttps://blog.trailofbits.com/2019/08/06/better-encrypted-group-chat/">Message Layer Security(MLS)</a> ), all impose different trade-offs.</p>
+<p>In Signal Protocol, group messaging is modeled as multiple 1:1 secure messages via sending message to each member&rsquo;s mailbox on the sesame server. This approach is called &ldquo;client-side fan-out&rdquo;</p>
+<p>There&rsquo;s also a variation of Signal protocol adopted by WhatsApp called Sender Keys. It has &ldquo;server-side fan-out&rdquo; and enforce transcript consistency on the server. Check <a href="https://www.whatsapp.com/security/WhatsApp-Security-Whitepaper.pdf">their whitepaper</a> for more information.</p>
+<p>Secure group messaging is still an open problem. Other protocols, such as <a href="%5Bhttps://gitlab.matrix.org/matrix-org/olm/blob/master/docs/megolm.md%5Dhttps://gitlab.matrix.org/matrix-org/olm/blob/master/docs/megolm.md">Matrix&rsquo;s megolm</a> and <a href="%5Bhttps://blog.trailofbits.com/2019/08/06/better-encrypted-group-chat/%5Dhttps://blog.trailofbits.com/2019/08/06/better-encrypted-group-chat/">Message Layer Security(MLS)</a> ), all impose different trade-offs.</p>
 <p>On the other hand, making a massive chat group with multiple admin secure might be a wrong problem to solve. These kind of groups is basically public chat. Why would an attacker try to break encryption if they can simply join the group and see everything?</p>
 <hr>
 <h2 id="final-word">Final Word</h2>
-<p>In the end, you might ask: &ldquo;Why would I need to understand this if I'm not supposed to roll my own crypto?&rdquo;</p>
-<p>&ldquo;Don't roll your own crypto&rdquo; is a common wisdom. However, I want to add: &ldquo;based on a solid foundation if you have to.&rdquo;</p>
+<p>In the end, you might ask: &ldquo;Why would I need to understand this if I&rsquo;m not supposed to roll my own crypto?&rdquo;</p>
+<p>&ldquo;Don&rsquo;t roll your own crypto&rdquo; is a common wisdom. However, I want to add: &ldquo;based on a solid foundation if you have to.&rdquo;</p>
     </section>
     <footer class="post-footer">
       <section class="tags post-meta">

@@ -18,7 +18,7 @@
       
       <guid>https://devpoga.org/post/parsing-streaming-data-actix-lua/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;https://github.com/poga/actix-lua&#34;&gt;&lt;code&gt;actix-lua&lt;/code&gt;&lt;/a&gt; provides a safe scripting environment for the &lt;a href=&#34;http://actix.rs&#34;&gt;actix&lt;/a&gt; framework with the &lt;a href=&#34;http://lua.org&#34;&gt;Lua Programming Language&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;Here&#39;s an example about what you can achieve with it. Hope you can try these ideas in your next project.&lt;/p&gt;</description>
+&lt;p&gt;Here&amp;rsquo;s an example about what you can achieve with it. Hope you can try these ideas in your next project.&lt;/p&gt;</description>
     </item>
     
     <item>
