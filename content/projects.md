@@ -6,6 +6,8 @@ menu = "main"
 
 # Projects
 
+* [jupytermodule](https://github.com/poga/jupytermodule) Import jupyter notebooks as python modules.
+
 * [redis-percentile](https://github.com/poga/redis-percentile) Redis module for efficient percentile estimation.
 
 * [awesome-federated-learning](https://github.com/poga/awesome-federated-learning) Resources releated to federated learning and privacy in machine learning.

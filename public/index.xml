@@ -53,13 +53,13 @@
       <pubDate>Sat, 14 Sep 2019 00:00:00 +0000</pubDate>
       
       <guid>https://devpoga.org/projects/</guid>
-      <description>Projects   redis-percentile Redis module for efficient percentile estimation.
+      <description>Projects   jupytermodule Import jupyter notebooks as python modules.
+  redis-percentile Redis module for efficient percentile estimation.
   awesome-federated-learning Resources releated to federated learning and privacy in machine learning.
   pttai-next: Decentralized Social Network.
   hyperfeed: Share RSS feed via a P2P network.
   redis-rating: A Redis module to help you calculate the real rating from positive/negative rating feedback.
-  actix-lua: Safe Lua Scripting for the actix actor framework.
-  tw-shift-schedule: A work-shift schedule parser/validator.</description>
+  actix-lua: Safe Lua Scripting for the actix actor framework.</description>
     </item>
     
     <item>
