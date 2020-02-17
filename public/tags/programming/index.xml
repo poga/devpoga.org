@@ -6,10 +6,19 @@
     <description>Recent content in programming on Dev.Poga</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 06 Nov 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 17 Feb 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://devpoga.org/tags/programming/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Checklist for Deploying Machine Learning Models to Production</title>
+      <link>https://devpoga.org/post/2020-02-17_checklist_deploy_machine_learning_model_production/</link>
+      <pubDate>Mon, 17 Feb 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://devpoga.org/post/2020-02-17_checklist_deploy_machine_learning_model_production/</guid>
+      <description>&lt;p&gt;Here&amp;rsquo;s a simple checklist for people who deploy machine learning models to production. Based on my personal experience.&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>Running a Service in Production without Losing Your Sanity</title>

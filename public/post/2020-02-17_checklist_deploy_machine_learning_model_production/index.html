@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    
+    <title>
+      
+      Checklist for Deploying Machine Learning Models to Production - Dev.Poga
+      
+		</title>
+
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta property="og:image" content="https://devpoga.org/og.png" />
+
+    
+    <link rel="stylesheet" type="text/css" href="/assets/css/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="/assets/css/icons.css" />
+    <link rel="stylesheet" type="text/css" href="/assets/css/screen.css" />
+    
+    <link href="https://fonts.googleapis.com/css?family=Bree+Serif|Lato:100,100i,300,300i,400,400i,700,700i|Source+Code+Pro:300,400,500,700" rel="stylesheet">
+    
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/jquery@1.12.4/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="/assets/bigfoot/dist/bigfoot.js"></script>
+    <link rel="stylesheet" type="text/css" href="/assets/bigfoot/dist/bigfoot-number.css" />
+    <script type="text/javascript">
+        $.bigfoot();
+    </script>
+    
+    
+</head>
+
+    <body class="post-template">
+        <header class="main-header">
+	<div class="main-header-content">
+    <img src="/me.jpg" class="avatar">
+		<h1 class="blog-title">
+			<a href="/">
+				
+           Dev.Poga
+				
+			</a>
+		</h1>
+		<h2 class="blog-description"></h2>
+	</div>
+
+	<div class="nav">
+    
+		
+      <a class="nav- " role="presentation" href="/about/">About</a>
+		
+      <a class="nav- " role="presentation" href="/communication/">Communication</a>
+		
+      <a class="nav- " role="presentation" href="/distributed_system/">Distributed System</a>
+		
+      <a class="nav- " role="presentation" href="/projects/">Projects</a>
+		
+	</div>
+</header>
+
+        
+<main class="content" role="main">
+  <article class="post">
+    <header class="post-header">
+      <h2 class="post-title">Checklist for Deploying Machine Learning Models to Production</h2>
+      <section class="post-meta">
+        <time class="post-date">2020-02-17</time>
+        in
+        <a href="https://devpoga.org/categories/programming/">Programming</a>
+          
+        
+
+      </section>
+    </header>
+    <section class="post-content">
+      <p>Here&rsquo;s a simple checklist for people who deploy machine learning models to production. Based on my personal experience.</p>
+<h3 id="before-deployment">Before deployment</h3>
+<ul>
+<li><strong>Identify Bias</strong>: Will the bias affect users? Discuss with the product team.</li>
+<li><strong>Performance Profile</strong>: List your hardware requirements: CPU/GPU/RAM/DISK, sustaining usage or burst?</li>
+<li><strong>Model file size</strong>: Avoid network congestion. Decide on push-based or pull-based deployment.</li>
+<li><strong>Continuous testing</strong>: Test the model on real-world data. Check for over-fitting.</li>
+</ul>
+<h3 id="deploying">Deploying</h3>
+<ul>
+<li>Prepare for rollback.</li>
+<li>Use canary deployment if possible.</li>
+</ul>
+<h3 id="after-deployment">After deployment</h3>
+<ul>
+<li><strong>Log Collection</strong>: collect log for debugging, remove personal information, sample if needed.</li>
+<li><strong>Error handling</strong>: No model is perfect. Respond to user feedback, fast.</li>
+<li><strong>Emergency response</strong>: Be prepare to fix the application with heuristic rules.</li>
+<li><strong>Observability</strong>: Detect concept drift in the real world asap.</li>
+</ul>
+    </section>
+    <footer class="post-footer">
+      <section class="tags post-meta">
+        Tagged
+        <a href="https://devpoga.org/tags/programming/">Programming</a>
+          <a href="https://devpoga.org/tags/machine-learning/">Machine Learning</a>
+          
+      </section>
+    </footer>
+  </article>
+</main>
+
+        <footer class="site-footer">
+  <section class="rss"><a class="subscribe-button icon-feed" href="/index.xml"></a></section>
+  <section class="twitter"><a class="icon-twitter" href="https://twitter.com/devpoga"> devpoga</a></section>
+  
+  <section class="copyright">&copy; 2020 Dev.Poga</section>
+</footer>
+
+
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-88018665-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-88018665-1');
+</script>
+
+    </body>
+</html>
