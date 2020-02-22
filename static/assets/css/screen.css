@@ -57,22 +57,23 @@ body {
 h1, h2, h3, h4, h5, h6 {
     margin-bottom:10px;
     font-weight: 500;
+    font-family: "Fira Sans",sans-serif;
 }
 
 h1 {
-	font-size: 1.602rem;
+	font-size: 1.35rem;
 }
 
 h2 {
-	font-size: 1.402rem;
+	font-size: 1.3rem;
 }
 
 h3 {
-	font-size: 1.324rem;
+	font-size: 1.2rem;
 }
 
 h4 {
-	font-size: 1.266rem;
+	font-size: 1.166rem;
 }
 
 h5 {
@@ -87,7 +88,7 @@ p {
   margin-top: 0;
   font-weight: 400;
   font-size: 17px;
-  font-family: sans-serif;
+  font-family: "Source Serif Pro", Georgia, Times, "Times New Roman", serif;
   letter-spacing: -.02em;
   font-style: normal;
   color: rgba(0,0,0, 0.8);
@@ -148,7 +149,7 @@ hr {
 
 /* Links */
 .post a {
-    color: #c9640c;
+    color: #3873AD;
 }
 
 .post a:hover {
@@ -156,13 +157,14 @@ hr {
 }
 
 .post a:visited {
-    color: #c9640c;
     text-decoration: none;
 }
 
 a.read-more, a.read-more:hover, a.read-more:visited {
-    color: #c9640c;
+    font-size: 16px;
+    font-family: "Source Serif Pro", Georgia, Times, "Times New Roman", serif;
     text-decoration: none;
+    font-weight: 300;
 }
 
 h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
