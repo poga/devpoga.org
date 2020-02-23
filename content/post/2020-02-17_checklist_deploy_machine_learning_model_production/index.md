@@ -1,5 +1,5 @@
 ---
-title: "Checklist before Serving Machine Learning Models in Production"
+title: "Guide to Serve Machine Learning Models in Production"
 author: "poga"
 date: 2020-02-17
 tags:
