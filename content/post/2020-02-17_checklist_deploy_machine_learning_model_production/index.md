@@ -1,5 +1,5 @@
 ---
-title: "Checklist for Deploying Machine Learning Models to Production"
+title: "Checklist before Serving Machine Learning Models in Production"
 author: "poga"
 date: 2020-02-17
 tags:
