@@ -1,16 +1,18 @@
 +++
 title = "About"
-date = "2019-08-25"
+date = "2020-03-08"
 menu = "main"
 +++
 
-# About Poga
+# Hi there, I'm Poga
 
 Software Developer, interested in decentralization, privacy, distributed system, scalability, and system performance.
 
-> Simplicity is a great virtue but it requires hard work to achieve it and education to appreciate it.
-> And to make matters worse: complexity sells better.
->        -- Edsger Dijkstra
+## Contacts
+
+* email: poga.po@gmail.com
+* Github: [poga](https://github.com/poga)
+* Twitter: [devpoga](https://twitter.com/devpoga)
 
 ## Publications & Talks
 
@@ -18,10 +20,9 @@ Software Developer, interested in decentralization, privacy, distributed system,
 * [Running a Service in Production without Losing Your Sanity - AILabs Taiwan 2019](https://www.slideshare.net/slideshow/embed_code/key/weOsOfldcNyPbB)
 * [Notes on the Implementation on Lua 5.3](https://poga.github.io/lua53-notes/)
 
-## Contacts
+## End
 
-* email: poga.po@gmail.com
+> Simplicity is a great virtue but it requires hard work to achieve it and education to appreciate it.
+> And to make matters worse: complexity sells better.
+>        -- Edsger Dijkstra
 
-* Github: [poga](https://github.com/poga)
-
-* Twitter: [devpoga](https://twitter.com/devpoga)
