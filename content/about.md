@@ -20,8 +20,6 @@ Software Developer, interested in decentralization, privacy, distributed system,
 * [Running a Service in Production without Losing Your Sanity - AILabs Taiwan 2019](https://www.slideshare.net/slideshow/embed_code/key/weOsOfldcNyPbB)
 * [Notes on the Implementation on Lua 5.3](https://poga.github.io/lua53-notes/)
 
-## End
-
 > Simplicity is a great virtue but it requires hard work to achieve it and education to appreciate it.
 > And to make matters worse: complexity sells better.
 >        -- Edsger Dijkstra
