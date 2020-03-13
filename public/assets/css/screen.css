@@ -91,12 +91,12 @@ p {
   font-family: "Source Serif Pro", Georgia, Times, "Times New Roman", serif;
   font-style: normal;
   color: rgba(0,0,0, 0.8);
-  line-height: 1.6;
+  line-height: 1.45;
 }
 
 li {
   font-family: "Source Serif Pro", Georgia, Times, "Times New Roman", serif;
-  line-height: 1.8;
+  line-height: 1.7;
 }
 
 code, tt, pre {
