@@ -3,6 +3,41 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://devpoga.org/categories/</loc>
+    <lastmod>2020-03-17T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://devpoga.org/tags/ocaml/</loc>
+    <lastmod>2020-03-17T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://devpoga.org/post/2020-03-17_ocaml_quickstart/</loc>
+    <lastmod>2020-03-17T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://devpoga.org/post/</loc>
+    <lastmod>2020-03-17T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://devpoga.org/categories/programming/</loc>
+    <lastmod>2020-03-17T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://devpoga.org/tags/programming/</loc>
+    <lastmod>2020-03-17T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://devpoga.org/tags/</loc>
+    <lastmod>2020-03-17T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://devpoga.org/about/</loc>
     <lastmod>2020-03-08T00:00:00+00:00</lastmod>
   </url>
@@ -13,37 +48,12 @@
   </url>
   
   <url>
-    <loc>https://devpoga.org/categories/</loc>
-    <lastmod>2020-02-17T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://devpoga.org/post/2020-02-17_checklist_deploy_machine_learning_model_production/</loc>
     <lastmod>2020-02-17T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://devpoga.org/tags/machine-learning/</loc>
-    <lastmod>2020-02-17T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://devpoga.org/post/</loc>
-    <lastmod>2020-02-17T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://devpoga.org/categories/programming/</loc>
-    <lastmod>2020-02-17T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://devpoga.org/tags/programming/</loc>
-    <lastmod>2020-02-17T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://devpoga.org/tags/</loc>
     <lastmod>2020-02-17T00:00:00+00:00</lastmod>
   </url>
   
