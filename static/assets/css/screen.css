@@ -167,6 +167,10 @@ a.read-more, a.read-more:hover, a.read-more:visited {
     font-weight: 300;
 }
 
+a {
+    text-decoration: none;
+}
+
 h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
 	color: #3A4145;
 	text-decoration: none;
