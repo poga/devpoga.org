@@ -92,6 +92,18 @@
 <li>Setup LSP in neovim with coc.nvim <a href="https://github.com/neoclide/coc.nvim/wiki/Language-servers">https://github.com/neoclide/coc.nvim/wiki/Language-servers</a></li>
 </ul>
 <p>You need to install all dependencies (with dune) and build it once to get a working LSP.</p>
+<h3 id="build-a-project">Build a project</h3>
+<p>Let&rsquo;s test our environment on an existing project.</p>
+<pre><code>$ git clone git@github.com:inhabitedtype/httpaf.git
+$ cd httpaf
+
+# install dependencies
+$ opam pin add -n httpaf .
+$ opam install --deps-only httpaf
+
+# run tests
+$ dune runtest
+</code></pre>
     </section>
     <footer class="post-footer">
       <section class="tags post-meta">
