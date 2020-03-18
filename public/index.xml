@@ -17,7 +17,7 @@
       <pubDate>Tue, 17 Mar 2020 00:00:00 +0000</pubDate>
       
       <guid>https://devpoga.org/post/2020-03-17_ocaml_quickstart/</guid>
-      <description>&lt;p&gt;&lt;img src=&#34;./vim.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+      <description>&lt;p&gt;&lt;img src=&#34;https://devpoga.org/post/2020-03-17_ocaml_quickstart/vim.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;https://ocaml.org/&#34;&gt;OCaml&lt;/a&gt; is a great language. However, the tooling for newbies is kinda confusing. Here&amp;rsquo;s a guide to setup a working OCaml development environment in &lt;a href=&#34;https://neovim.io/&#34;&gt;neovim&lt;/a&gt; on MacOS.&lt;/p&gt;</description>
     </item>
     

@@ -9,7 +9,7 @@ categories:
   - Programming
 ---
 
-![](./vim.png)
+![](/post/2020-03-17_ocaml_quickstart/vim.png)
 
 [OCaml](https://ocaml.org/) is a great language. However, the tooling for newbies is kinda confusing. Here's a guide to setup a working OCaml development environment in [neovim](https://neovim.io/) on MacOS.
 
