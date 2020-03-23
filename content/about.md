@@ -6,11 +6,11 @@ menu = "main"
 
 # Hi there, I'm Poga
 
-* 132+ open source project since 2008.
+* 132+ open source projects since 2008.
 
 * 6+ years working in civil tech.
 
-* 10+ public talks / tech sharing since 2010
+* 10+ public talks / tech sharings since 2010
 
 Software developer, interested in decentralization, privacy, distributed system, scalability, and system performance.
 
