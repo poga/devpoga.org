@@ -87,7 +87,7 @@ h6 {
 p {
   margin-top: 0;
   font-weight: 400;
-  font-size: 17px;
+  font-size: 16px;
   font-family: "Source Serif Pro", Georgia, Times, "Times New Roman", serif;
   font-style: normal;
   color: rgba(0,0,0, 0.8);
@@ -102,7 +102,7 @@ li {
 code, tt, pre {
     font-family: "Source Code Pro", monospace, sans-serif;
     white-space: pre-wrap;
-    font-size: 18px;
+    font-size: 16px;
     border: none;
     background: #eee;
     display: inline-block;
