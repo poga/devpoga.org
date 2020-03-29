@@ -5,6 +5,8 @@ menu = "main"
 
 # How to Communication
 
+A list about effective communication. For myself, and for you.
+
 * [THE ULTIMATE GUIDE TO WRITING ONLINE](https://www.perell.com/blog/the-ultimate-guide-to-writing-online)
 
 * [Writing Well](https://www.julian.com/guide/write/intro)

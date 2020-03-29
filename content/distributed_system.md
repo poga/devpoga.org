@@ -4,7 +4,7 @@ date: "2019-08-25"
 menu: "main"
 ---
 
-My recommended reading list for anyone designing a practical distributed system.
+Reading list for anyone designing practical distributed systems.
 
 ## Developing a distributed system
 
