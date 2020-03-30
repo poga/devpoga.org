@@ -6,6 +6,10 @@ menu = "main"
 
 # Projects
 
+[132+ open source projects since 2008](https://github.com/poga).
+
+Example:
+
 * [jupytermodule](https://github.com/poga/jupytermodule) Import jupyter notebooks as python modules.
 
 * [redis-percentile](https://github.com/poga/redis-percentile) Redis module for efficient percentile estimation.
