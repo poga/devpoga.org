@@ -299,6 +299,7 @@ dl dd {
 	margin: 0 0.5rem;
 	color: #9EABB3;
 	text-decoration: none;
+  white-space: nowrap;
 }
 
 .nav a:hover {
