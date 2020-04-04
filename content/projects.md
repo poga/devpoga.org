@@ -6,10 +6,6 @@ menu = "main"
 
 # Projects
 
-[132+ open source projects since 2008](https://github.com/poga).
-
-Example:
-
 * [jupytermodule](https://github.com/poga/jupytermodule) Import jupyter notebooks as python modules.
 
 * [redis-percentile](https://github.com/poga/redis-percentile) Redis module for efficient percentile estimation.
@@ -24,4 +20,6 @@ Example:
 
 * [actix-lua](https://github.com/poga/actix-lua): Safe Lua Scripting for the [actix](https://github.com/actix/actix) actor framework.
 
-* [tw-shift-schedule](https://github.com/g0v/tw-shift-schedule): A work-shift schedule parser/validator.
+[...and a lot more](https://github.com/poga).
+
+

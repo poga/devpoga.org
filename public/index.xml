@@ -27,7 +27,7 @@
       <pubDate>Sun, 08 Mar 2020 00:00:00 +0000</pubDate>
       
       <guid>https://devpoga.org/about/</guid>
-      <description>Hi there, I&amp;rsquo;m Poga 132+ open source projects since 2008. 6+ years working in civil tech. 10+ public talks / tech sharings since 2010 Software developer, interested in decentralization, privacy, distributed system, scalability, and system performance. Contacts email: poga.po@gmail.com Github: poga Twitter: devpoga Publications &amp;amp; Talks 萬事萬物皆是 Log - 系統架構也來點科普 - COSCUP 2016 Running a Service in</description>
+      <description>Hi there, I&amp;rsquo;m Poga Software developer, interested in decentralization, privacy, distributed system, scalability, and system performance. Contacts email: poga.po@gmail.com Github: poga Twitter: devpoga Publications &amp;amp; Talks 萬事萬物皆是 Log - 系統架構也來點科普 - COSCUP 2016 Running a Service in Production without Losing Your Sanity - AILabs Taiwan 2019 Notes on the Implementation on Lua 5.3 Simplicity is a great</description>
     </item>
     
     <item>
@@ -81,14 +81,13 @@
       <pubDate>Sat, 14 Sep 2019 00:00:00 +0000</pubDate>
       
       <guid>https://devpoga.org/projects/</guid>
-      <description>Projects 132+ open source projects since 2008.
-Example:
-  jupytermodule Import jupyter notebooks as python modules.
+      <description>Projects   jupytermodule Import jupyter notebooks as python modules.
   redis-percentile Redis module for efficient percentile estimation.
   awesome-federated-learning Resources releated to federated learning and privacy in machine learning.
   pttai-next: Decentralized Social Network.
   hyperfeed: Share RSS feed via a P2P network.
-  redis-rating: A Redis module to help you calculate the real rating from positive/negative rating feedback.</description>
+  redis-rating: A Redis module to help you calculate the real rating from positive/negative rating feedback.
+  actix-lua: Safe Lua Scripting for the actix actor framework.</description>
     </item>
     
     <item>
