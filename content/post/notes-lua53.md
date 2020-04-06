@@ -8,6 +8,7 @@ tags:
   - lua
   - Interpreter and Compiler
   - Programming Languages
+  - Note
 categories:
   - Programming
 ---
