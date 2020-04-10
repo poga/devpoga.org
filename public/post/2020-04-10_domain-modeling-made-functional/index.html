@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    
+    <title>
+      
+      Domain Modeling Made Functional - Dev.Poga
+      
+		</title>
+
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta property="og:image" content="https://devpoga.org/og.png" />
+
+    
+    <link rel="stylesheet" type="text/css" href="/assets/css/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="/assets/css/icons.css" />
+    <link rel="stylesheet" type="text/css" href="/assets/css/screen.css" />
+    
+    <link href="https://fonts.googleapis.com/css?family=Bree+Serif|Lato:100,100i,300,300i,400,400i,700,700i|Source+Code+Pro:300,400,500,700" rel="stylesheet">
+    
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/jquery@1.12.4/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="/assets/bigfoot/dist/bigfoot.js"></script>
+    <link rel="stylesheet" type="text/css" href="/assets/bigfoot/dist/bigfoot-number.css" />
+    <script type="text/javascript">
+        $.bigfoot();
+    </script>
+    
+    
+</head>
+
+    <body class="post-template">
+        <header class="main-header">
+	<div class="main-header-content">
+    <img src="/me.jpg" class="avatar">
+		<h1 class="blog-title">
+			<a href="/">
+				
+           Dev.Poga
+				
+			</a>
+		</h1>
+		<h2 class="blog-description"></h2>
+	</div>
+
+	<div class="nav">
+    
+		
+      <a class="nav- " role="presentation" href="/about/">About</a>
+		
+      <a class="nav- " role="presentation" href="/communication/">Communication</a>
+		
+      <a class="nav- " role="presentation" href="/distributed_system/">Distributed System</a>
+		
+      <a class="nav- " role="presentation" href="/projects/">Projects</a>
+		
+	</div>
+</header>
+
+        
+<main class="content" role="main">
+  <article class="post">
+    <header class="post-header">
+      <h2 class="post-title">Domain Modeling Made Functional</h2>
+      <section class="post-meta">
+        <time class="post-date">2020-04-10</time>
+        in
+        <a href="https://devpoga.org/categories/programming/">Programming</a>
+          
+        
+
+      </section>
+    </header>
+    <section class="post-content">
+      <p><img src="/post/2020-04-10_domain-modeling-made-functional/book.jpg" alt=""></p>
+<p>Notes on the book <a href="https://www.amazon.com/Domain-Modeling-Made-Functional-Domain-Driven/dp/1680502549">Domain Modeling Made Functional: Tackle Software Complexity with Domain-Driven Design and F#</a>.</p>
+<h1 id="understanding-the-domain">Understanding the domain</h1>
+<p>A developer&rsquo;s job is to solve a problem through software.</p>
+<h2 id="define-a-shared-model">define a shared model</h2>
+<ul>
+<li>focus on business events and workflows rather than data structures</li>
+<li>partition the problem domain into smaller subdomains</li>
+<li>create a model of each subdomain in the solution</li>
+<li>develop a common language (known as the &ldquo;Ubiquitous language&rdquo;) that is shared between everyone involved</li>
+</ul>
+<h2 id="business-events">Business events</h2>
+<p>The value of the business is created in the process of transforming data.</p>
+<h2 id="bounded-contexts">Bounded Contexts</h2>
+<p>We therefore need to create a distinction between a “problem space” and a “solution space,” and they must be treated as two different things. To build the solution we will create a model of the problem domain, extracting only the aspects of the domain that are relevant and then re-creating them in our solution space</p>
+<h2 id="bounded-contexts-as-autonomous-software-components">bounded contexts as autonomous software components</h2>
+<p>In general, an event used for communication between contexts will not be just a simple signal but will also contain all the data that the downstream components need to process the event.</p>
+<h3 id="trust-boundaries-and-validation">trust boundaries and validation</h3>
+<p>The perimeter of a bounded context acts as a “trust boundary.” Anything inside the bounded context will be trusted and valid, while anything outside the bounded context will be untrusted and might be invalid.</p>
+<p>The job of the output gate is different. Its job is to ensure that private information doesn’t leak out of the bounded context, both to avoid accidental coupling between contexts and for security reasons.</p>
+<h2 id="contracts-between-bounded-contexts">Contracts between bounded contexts</h2>
+<ul>
+<li>A Shared Kernel relationship is where two contexts share some common domain design, so the teams involved must collaborate.</li>
+<li>A Customer/Supplier or Consumer Driven Contract relationship is where the downstream context defines the contract that they want the upstream context to provide.</li>
+<li>A Conformist relationship is the opposite of consumer-driven. The downstream context accepts the contract provided by the upstream context and adapts its own domain model to match.</li>
+<li>Anti-Corruption Layer in DDD terminology, often abbreviated as “ACL.” In the diagram above, the “input gate” often plays the role of the ACL—it prevents the internal, pure domain model from being “corrupted” by knowledge of the outside world.</li>
+</ul>
+<p>build a context map with relationships</p>
+<h2 id="workflow-within-a-bounded-context">workflow within a bounded context</h2>
+<p>The input to a workflow is always the data associated with a command, and the output is always a set of events to communicate to other contexts.</p>
+<p>avoid domain events within a bounded context</p>
+<h2 id="code-structure-within-a-bounded-context">code structure within a bounded context</h2>
+<p>use onion architecture ~= clean architecture</p>
+<p>keep IO at the edges</p>
+<hr>
+<h1 id="understanding-types">Understanding Types</h1>
+<p>represent a domain with ADTs</p>
+<ul>
+<li>AND types = product types = records</li>
+<li>OR types = SUM types = enums</li>
+</ul>
+<h2 id="domain-modeling-with-types">Domain modeling with types</h2>
+<p>Use type systems to capture the domain model accurately and can be read and understood by domain experts.</p>
+<p>simple types + sum/product types + functions</p>
+<p>functions = workflows</p>
+<h2 id="integrity-and-consistency-in-the-domain">Integrity and Consistency in the Domain</h2>
+<p>parse, don&rsquo;t validate <a href="https://lexi-lambda.github.io/blog/2019/11/05/parse-don-t-validate/">https://lexi-lambda.github.io/blog/2019/11/05/parse-don-t-validate/</a></p>
+<p>lots of examples&hellip;</p>
+<h3 id="capturing-business-rules-in-the-type-system">Capturing Business Rules in the Type System</h3>
+<p>ex.</p>
+<pre><code>type​ CustomerEmail = ​  | Unverified ​of​ EmailAddress ​  | Verified ​of​ VerifiedEmailAddress ​// different from normal EmailAddress​
+
+type​ SendPasswordResetEmail = VerifiedEmailAddress -&gt; ...
+</code></pre><h3 id="making-illegal-states-unrepresentable-in-our-domain">Making Illegal States Unrepresentable in Our Domain</h3>
+<h3 id="consistency">Consistency</h3>
+<p>consistency = atomicity of persistence</p>
+<p>Consistency between different context is hard, use eventual consistency:</p>
+<ul>
+<li>do nothing</li>
+<li>retry</li>
+<li>compensating action</li>
+</ul>
+<p>only update one aggregation per transaction</p>
+<h3 id="modeling-workflow-as-pipelines">Modeling Workflow as Pipelines</h3>
+<p>We’ll create a &ldquo;pipeline&rdquo; to represent the business process, which in turn will be built from a series of smaller &ldquo;pipes.&rdquo; Each smaller pipe will do one transformation, and then we’ll glue the smaller pipes together to make a bigger pipeline. This style of programming is sometimes called “transformation-oriented programming.”</p>
+<p>Following functional programming principles, we’ll ensure each step in the pipeline is designed to be stateless and without side effects, which means each step can be tested and understood independently. Once we have designed the pieces of the pipeline, we’ll just need to implement and assemble them.</p>
+<ul>
+<li>Command as input</li>
+<li>Sharing Common Structures Using Generics</li>
+<li>Combining Multiple Commands in One Type</li>
+<li>Modeling an Order as a Set of States <a href="https://blog.yoshuawuyts.com/state-machines/">https://blog.yoshuawuyts.com/state-machines/</a></li>
+<li>Adding New State Types as Requirements Change</li>
+<li>Modeling Each Step in the Workflow with Types</li>
+<li>Creating the Events to Return</li>
+<li>Documenting Effects with signature</li>
+<li>Composing the workflow from the steps</li>
+</ul>
+<p>Long-running workflow: Sagas</p>
+<h2 id="implement-the-model">Implement the model</h2>
+<h3 id="understand-functions">Understand functions</h3>
+<p>basic functional programming tutorial</p>
+<h3 id="implementation-composing-a-pipelien">Implementation: Composing a Pipelien</h3>
+<ul>
+<li>Some functions have extra parameters that aren’t part of the data pipeline but are needed for the implementation—we called these &ldquo;dependencies&rdquo;</li>
+<li>We explicitly indicated “effects” such as error handling by using a wrapper type like Result in the function signatures. But that means that functions with effects in their output cannot be directly connected to functions that just have unwrapped plain data as their input.</li>
+</ul>
+<h3 id="implementation-working-with-errors">Implementation: Working with Errors</h3>
+<p>Using the result type to make errors explicit. <code>bind</code> and <code>map</code>.</p>
+<h3 id="serialization">Serialization</h3>
+<p>persistence: state that outlives the process that created it
+Serialization: the process of converting from a domain-specific representation to a representation that can be persisted easily.</p>
+<h3 id="persistence">Persistence</h3>
+<ul>
+<li>Push persistence to the edge</li>
+<li>CQRS</li>
+<li>Bounded Contexts must own their data storage</li>
+</ul>
+    </section>
+    <footer class="post-footer">
+      <section class="tags post-meta">
+        Tagged
+        <a href="https://devpoga.org/tags/programming/">Programming</a>
+          <a href="https://devpoga.org/tags/domain-modeling/">Domain Modeling</a>
+          <a href="https://devpoga.org/tags/note/">Note</a>
+          
+      </section>
+    </footer>
+  </article>
+</main>
+
+        <footer class="site-footer">
+  <section class="rss"><a class="subscribe-button icon-feed" href="/index.xml"></a></section>
+  <section class="twitter"><a class="icon-twitter" href="https://twitter.com/devpoga"> devpoga</a></section>
+  
+  <section class="copyright">&copy; 2020 Dev.Poga</section>
+</footer>
+
+
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-88018665-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-88018665-1');
+</script>
+
+    </body>
+</html>

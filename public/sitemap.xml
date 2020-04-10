@@ -4,21 +4,46 @@
   
   <url>
     <loc>https://devpoga.org/categories/</loc>
-    <lastmod>2020-04-09T00:00:00+00:00</lastmod>
+    <lastmod>2020-04-10T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://devpoga.org/tags/networking/</loc>
-    <lastmod>2020-04-09T00:00:00+00:00</lastmod>
+    <loc>https://devpoga.org/tags/domain-modeling/</loc>
+    <lastmod>2020-04-10T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://devpoga.org/post/2020-04-10_domain-modeling-made-functional/</loc>
+    <lastmod>2020-04-10T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://devpoga.org/tags/note/</loc>
+    <lastmod>2020-04-10T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://devpoga.org/post/</loc>
-    <lastmod>2020-04-09T00:00:00+00:00</lastmod>
+    <lastmod>2020-04-10T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://devpoga.org/categories/programming/</loc>
+    <lastmod>2020-04-10T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://devpoga.org/tags/programming/</loc>
+    <lastmod>2020-04-10T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://devpoga.org/tags/</loc>
+    <lastmod>2020-04-10T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://devpoga.org/tags/networking/</loc>
     <lastmod>2020-04-09T00:00:00+00:00</lastmod>
   </url>
   
@@ -29,11 +54,6 @@
   
   <url>
     <loc>https://devpoga.org/categories/security/</loc>
-    <lastmod>2020-04-09T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://devpoga.org/tags/</loc>
     <lastmod>2020-04-09T00:00:00+00:00</lastmod>
   </url>
   
@@ -49,11 +69,6 @@
   
   <url>
     <loc>https://devpoga.org/post/2020-03-17_ocaml_quickstart/</loc>
-    <lastmod>2020-03-17T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://devpoga.org/categories/programming/</loc>
     <lastmod>2020-03-17T00:00:00+00:00</lastmod>
   </url>
   
@@ -114,11 +129,6 @@
   
   <url>
     <loc>https://devpoga.org/categories/cryptography/</loc>
-    <lastmod>2019-09-04T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://devpoga.org/tags/note/</loc>
     <lastmod>2019-09-04T00:00:00+00:00</lastmod>
   </url>
   
