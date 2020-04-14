@@ -437,7 +437,7 @@ article.post > header.post-header {
 .post img {
 	display: block;
 	max-width: 100%;	/* Keep image contained in width of post */
-	margin: 0 auto 0.5rem;
+	margin: 2rem auto;
 }
 
 .footnotes-sep {
