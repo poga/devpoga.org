@@ -11,7 +11,7 @@ categories:
   - Security
 ---
 
-![](/post/2020-04-09_zero-trust-network/book.webp)
+![](/post/2020-04-09_zero-trust-network/book.jpg)
 
 Notes on the book [Zero Trust Network](https://www.amazon.com/Zero-Trust-Networks-Building-Untrusted/dp/1491962194).
 
