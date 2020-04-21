@@ -8,7 +8,7 @@ categories:
   - Communication
 ---
 
-About effective communication.
+Reading List.
 
 <!--more-->
 
