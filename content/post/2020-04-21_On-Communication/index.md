@@ -1,11 +1,14 @@
-+++
-title = "Communication"
-menu = "main"
-+++
+---
+title: "On Communication"
+author: "poga"
+date: 2020-04-21
+tags:
+  - Communication
+categories:
+  - Communication
+---
 
-# How to Communication
-
-A list about effective communication. For myself, and for you.
+About effective communication.
 
 * [THE ULTIMATE GUIDE TO WRITING ONLINE](https://www.perell.com/blog/the-ultimate-guide-to-writing-online)
 
