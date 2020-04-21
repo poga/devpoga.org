@@ -10,6 +10,8 @@ categories:
 
 About effective communication.
 
+<!--more-->
+
 * [THE ULTIMATE GUIDE TO WRITING ONLINE](https://www.perell.com/blog/the-ultimate-guide-to-writing-online)
 
 * [Writing Well](https://www.julian.com/guide/write/intro)
