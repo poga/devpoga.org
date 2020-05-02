@@ -87,14 +87,12 @@ h6 {
 p {
   margin-top: 0;
   font-weight: 400;
-  font-family: "Source Serif Pro", Georgia, Times, "Times New Roman", serif;
   font-style: normal;
   color: rgba(0,0,0, 0.8);
   line-height: 1.45;
 }
 
 li {
-  font-family: "Source Serif Pro", Georgia, Times, "Times New Roman", serif;
   line-height: 1.7;
 }
 
@@ -161,7 +159,6 @@ hr {
 
 a.read-more, a.read-more:hover, a.read-more:visited {
     font-size: 16px;
-    font-family: "Source Serif Pro", Georgia, Times, "Times New Roman", serif;
     text-decoration: none;
     font-weight: 300;
 }
