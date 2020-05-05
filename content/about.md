@@ -4,9 +4,9 @@ date = "2020-03-08"
 menu = "main"
 +++
 
-# Hi there, I'm Poga
+# Hi there
 
-Software developer, interested in decentralization, privacy, distributed system, scalability, and system performance.
+I'm Poga, a software developer. I'm interested in decentralization, privacy, distributed system, scalability, system performance, and programming languages.
 
 ## Contacts
 
