@@ -6,10 +6,19 @@
     <description>Recent content in Categories on Dev.Poga</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 21 Apr 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 07 Jun 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://devpoga.org/categories/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Programming</title>
+      <link>https://devpoga.org/categories/programming/</link>
+      <pubDate>Sun, 07 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://devpoga.org/categories/programming/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Communication</title>
@@ -17,15 +26,6 @@
       <pubDate>Tue, 21 Apr 2020 00:00:00 +0000</pubDate>
       
       <guid>https://devpoga.org/categories/communication/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Programming</title>
-      <link>https://devpoga.org/categories/programming/</link>
-      <pubDate>Tue, 21 Apr 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://devpoga.org/categories/programming/</guid>
       <description></description>
     </item>
     
