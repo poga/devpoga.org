@@ -21,6 +21,24 @@
     </item>
     
     <item>
+      <title>concurrency</title>
+      <link>https://devpoga.org/tags/concurrency/</link>
+      <pubDate>Tue, 21 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://devpoga.org/tags/concurrency/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>programming</title>
+      <link>https://devpoga.org/tags/programming/</link>
+      <pubDate>Tue, 21 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://devpoga.org/tags/programming/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Domain Modeling</title>
       <link>https://devpoga.org/tags/domain-modeling/</link>
       <pubDate>Fri, 10 Apr 2020 00:00:00 +0000</pubDate>
@@ -35,15 +53,6 @@
       <pubDate>Fri, 10 Apr 2020 00:00:00 +0000</pubDate>
       
       <guid>https://devpoga.org/tags/note/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>programming</title>
-      <link>https://devpoga.org/tags/programming/</link>
-      <pubDate>Fri, 10 Apr 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://devpoga.org/tags/programming/</guid>
       <description></description>
     </item>
     
@@ -125,15 +134,6 @@
       <pubDate>Fri, 12 Jul 2019 00:00:00 +0000</pubDate>
       
       <guid>https://devpoga.org/tags/programming-language/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>concurrency</title>
-      <link>https://devpoga.org/tags/concurrency/</link>
-      <pubDate>Sun, 30 Jun 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://devpoga.org/tags/concurrency/</guid>
       <description></description>
     </item>
     

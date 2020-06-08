@@ -12,6 +12,15 @@
     
     
     <item>
+      <title>Concurrency in Clojure, Racket, and Gerbil Scheme</title>
+      <link>https://devpoga.org/post/2020-06-07-concurrency-clojure-racket-gerbil/</link>
+      <pubDate>Tue, 21 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://devpoga.org/post/2020-06-07-concurrency-clojure-racket-gerbil/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>On Communication</title>
       <link>https://devpoga.org/post/2020-04-21_on-communication/</link>
       <pubDate>Tue, 21 Apr 2020 00:00:00 +0000</pubDate>
