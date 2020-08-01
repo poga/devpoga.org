@@ -41,8 +41,8 @@ iPad 上 Shell 用起來長這樣：
 
 ### 其他
 
-原本有想說用 kubernetes 或是 nomad 來管環境。經過一番實驗後覺得直接寫 script 最簡單也最省錢。
+原本有想說用 kubernetes 或是 nomad 來管環境。實驗後覺得直接寫 script 最簡單也最省錢。
 
-另外也是過用 terraform 開 aws spot instances 來用，最後算算價錢而言差不多，又多了一堆麻煩，就直接用單純的 VPS 了。
+另外也試過用 terraform 開 aws spot instances 來用，最後算算價錢而言差不多，又多了一堆麻煩，就直接用單純的 VPS 了。
 
 現在沒事就開台機器起來編 LLVM 相當愉快（？）

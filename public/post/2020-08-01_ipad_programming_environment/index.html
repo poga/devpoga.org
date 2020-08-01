@@ -90,8 +90,8 @@
 <p>有些工作（像是編譯 LLVM&hellip;）對於 8G RAM 的小機器來說負擔還是太重，這些工作我另外寫了 script 去開更強力的機器起來跑。</p>
 <p>經過一番調查，最後選的是 <a href="https://www.hetzner.com/cloud">Hetzner cloud</a>，德國機房的 CCX31。規格是 dedicate vCPU(AMD Epyc), 8vCPU, 32G ram，除了 ping 較高（~300ms）所以不太適合平常使用之外，拿來跑程式綽綽有餘。價錢更是每小時只要 $0.12！</p>
 <h3 id="其他">其他</h3>
-<p>原本有想說用 kubernetes 或是 nomad 來管環境。經過一番實驗後覺得直接寫 script 最簡單也最省錢。</p>
-<p>另外也是過用 terraform 開 aws spot instances 來用，最後算算價錢而言差不多，又多了一堆麻煩，就直接用單純的 VPS 了。</p>
+<p>原本有想說用 kubernetes 或是 nomad 來管環境。實驗後覺得直接寫 script 最簡單也最省錢。</p>
+<p>另外也試過用 terraform 開 aws spot instances 來用，最後算算價錢而言差不多，又多了一堆麻煩，就直接用單純的 VPS 了。</p>
 <p>現在沒事就開台機器起來編 LLVM 相當愉快（？）</p>
     </section>
     <footer class="post-footer">
