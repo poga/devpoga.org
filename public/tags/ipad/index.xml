@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>iPad on Dev.Poga</title>
+    <link>https://devpoga.org/tags/ipad/</link>
+    <description>Recent content in iPad on Dev.Poga</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 01 Aug 2020 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://devpoga.org/tags/ipad/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>在 iPad 上布置軟體開發環境</title>
+      <link>https://devpoga.org/post/2020-08-01_ipad_programming_environment/</link>
+      <pubDate>Sat, 01 Aug 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://devpoga.org/post/2020-08-01_ipad_programming_environment/</guid>
+      <description>&lt;p&gt;五月買了 &lt;a href=&#34;https://www.apple.com/tw/ipad-pro/&#34;&gt;iPad Pro&lt;/a&gt; 跟 &lt;a href=&#34;https://www.apple.com/tw/ipad-keyboards/&#34;&gt;巧控鍵盤&lt;/a&gt; 後，大部分的需求 iPad Pro 都能直接滿足，除了寫程式以外。摸索了一陣子之後總算找到順手又省錢的寫程式方式了，這篇簡單記錄一下。&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>
