@@ -40,7 +40,7 @@ body {
   width: 80%;
   max-width: 750px;
   margin: 0 auto;
-  font-family: "freight-sans-pro", "Arial";
+  font-family: "Georgia", serif;
   font-weight: 300;
   font-size: 1rem;
   line-height: 1.5;
@@ -55,9 +55,9 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-    margin-bottom:10px;
-    font-weight: 500;
-    font-family: "Fira Sans",sans-serif;
+  font-family: "Helvetica", "freight-sans-pro", "Arial";
+  margin-bottom:10px;
+  font-weight: 500;
 }
 
 h1 {
@@ -93,7 +93,7 @@ p {
 }
 
 li {
-  line-height: 1.7;
+  line-height: 1.55;
 }
 
 code, tt, pre {
