@@ -8,7 +8,7 @@ I work on many different things in the area of technology, design, privacy, secu
 
 * A safe actor scripting framework for rust, [actix-lua](https://github.com/poga/actix-lua).
 
-* A decentralized dynamic data sharing and storage, [PTT.ai-next](https://github.com/ailabstw/pttai-next).
+* A decentralized dynamic data sharing and storage system, [PTT.ai-next](https://github.com/ailabstw/pttai-next).
 
 * Privacy-aware machine learning resources, [Awesome Federated Learning](https://github.com/poga/awesome-federated-learning).
 
