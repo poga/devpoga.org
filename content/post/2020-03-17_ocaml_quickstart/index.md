@@ -5,6 +5,8 @@ date: 2020-03-17
 tags:
   - Programming
   - OCaml
+  - vim
+  - editor
 categories:
   - Programming
 ---

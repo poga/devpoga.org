@@ -3,12 +3,13 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://devpoga.org/categories/</loc>
+    <loc>https://devpoga.org/</loc>
     <lastmod>2020-08-01T00:00:00+00:00</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://devpoga.org/</loc>
+    <loc>https://devpoga.org/categories/</loc>
     <lastmod>2020-08-01T00:00:00+00:00</lastmod>
   </url>
   
@@ -53,6 +54,16 @@
   </url>
   
   <url>
+    <loc>https://devpoga.org/tags/notes/</loc>
+    <lastmod>2020-06-07T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://devpoga.org/tags/scheme/</loc>
+    <lastmod>2020-06-07T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://devpoga.org/tags/communication/</loc>
     <lastmod>2020-04-21T00:00:00+00:00</lastmod>
   </url>
@@ -83,6 +94,11 @@
   </url>
   
   <url>
+    <loc>https://devpoga.org/tags/software-engineering/</loc>
+    <lastmod>2020-04-10T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://devpoga.org/tags/networking/</loc>
     <lastmod>2020-04-09T00:00:00+00:00</lastmod>
   </url>
@@ -103,6 +119,11 @@
   </url>
   
   <url>
+    <loc>https://devpoga.org/tags/editor/</loc>
+    <lastmod>2020-03-17T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://devpoga.org/tags/ocaml/</loc>
     <lastmod>2020-03-17T00:00:00+00:00</lastmod>
   </url>
@@ -113,8 +134,8 @@
   </url>
   
   <url>
-    <loc>https://devpoga.org/about/</loc>
-    <lastmod>2020-03-08T00:00:00+00:00</lastmod>
+    <loc>https://devpoga.org/tags/vim/</loc>
+    <lastmod>2020-03-17T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -150,11 +171,6 @@
   <url>
     <loc>https://devpoga.org/post/2019-09-20_ripgrep_cheat_sheet/</loc>
     <lastmod>2019-09-20T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://devpoga.org/projects/</loc>
-    <lastmod>2019-09-14T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -220,11 +236,6 @@
   <url>
     <loc>https://devpoga.org/post/2019-06-29_%E5%B7%A5%E7%A8%8B%E5%B8%AB%E7%9A%84%E8%8B%B1%E6%96%87%E5%AF%AB%E4%BD%9C%E8%83%BD%E5%8A%9B/</loc>
     <lastmod>2019-06-29T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://devpoga.org/tags/editor/</loc>
-    <lastmod>2019-04-29T00:00:00+00:00</lastmod>
   </url>
   
   <url>

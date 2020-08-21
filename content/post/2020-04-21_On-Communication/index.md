@@ -4,6 +4,7 @@ author: "poga"
 date: 2020-04-21
 tags:
   - Communication
+  - Notes
 categories:
   - Communication
 ---

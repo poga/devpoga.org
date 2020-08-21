@@ -145,26 +145,15 @@ hr {
 }
 
 /* Links */
-.post a {
+.post a a:visited {
     color: #3873AD;
-}
-
-.post a:hover {
     text-decoration: underline;
-}
-
-.post a:visited {
-    text-decoration: none;
 }
 
 a.read-more, a.read-more:hover, a.read-more:visited {
     font-size: 16px;
     text-decoration: none;
     font-weight: 300;
-}
-
-a {
-    text-decoration: none;
 }
 
 h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {

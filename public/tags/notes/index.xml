@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Notes on Dev.Poga</title>
+    <link>https://devpoga.org/tags/notes/</link>
+    <description>Recent content in Notes on Dev.Poga</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 07 Jun 2020 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://devpoga.org/tags/notes/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Concurrency in Clojure, Racket, and Gerbil Scheme</title>
+      <link>https://devpoga.org/post/2020-06-07-concurrency-clojure-racket-gerbil/</link>
+      <pubDate>Sun, 07 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://devpoga.org/post/2020-06-07-concurrency-clojure-racket-gerbil/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;https://devpoga.org/post/2020-06-07-concurrency-clojure-racket-gerbil/index.jpeg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>On Communication</title>
+      <link>https://devpoga.org/post/2020-04-21_on-communication/</link>
+      <pubDate>Tue, 21 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://devpoga.org/post/2020-04-21_on-communication/</guid>
+      <description>&lt;p&gt;Reading List.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

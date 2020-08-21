@@ -5,6 +5,7 @@ date: 2020-04-10
 tags:
   - Programming
   - Domain Modeling
+  - Software Engineering
   - Note
 categories:
   - Programming

@@ -39,6 +39,24 @@
     </item>
     
     <item>
+      <title>Notes</title>
+      <link>https://devpoga.org/tags/notes/</link>
+      <pubDate>Sun, 07 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://devpoga.org/tags/notes/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Scheme</title>
+      <link>https://devpoga.org/tags/scheme/</link>
+      <pubDate>Sun, 07 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://devpoga.org/tags/scheme/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Communication</title>
       <link>https://devpoga.org/tags/communication/</link>
       <pubDate>Tue, 21 Apr 2020 00:00:00 +0000</pubDate>
@@ -66,6 +84,15 @@
     </item>
     
     <item>
+      <title>Software Engineering</title>
+      <link>https://devpoga.org/tags/software-engineering/</link>
+      <pubDate>Fri, 10 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://devpoga.org/tags/software-engineering/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Networking</title>
       <link>https://devpoga.org/tags/networking/</link>
       <pubDate>Thu, 09 Apr 2020 00:00:00 +0000</pubDate>
@@ -84,11 +111,29 @@
     </item>
     
     <item>
+      <title>editor</title>
+      <link>https://devpoga.org/tags/editor/</link>
+      <pubDate>Tue, 17 Mar 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://devpoga.org/tags/editor/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>OCaml</title>
       <link>https://devpoga.org/tags/ocaml/</link>
       <pubDate>Tue, 17 Mar 2020 00:00:00 +0000</pubDate>
       
       <guid>https://devpoga.org/tags/ocaml/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>vim</title>
+      <link>https://devpoga.org/tags/vim/</link>
+      <pubDate>Tue, 17 Mar 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://devpoga.org/tags/vim/</guid>
       <description></description>
     </item>
     
@@ -161,15 +206,6 @@
       <pubDate>Sat, 29 Jun 2019 00:00:00 +0000</pubDate>
       
       <guid>https://devpoga.org/tags/writing/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>editor</title>
-      <link>https://devpoga.org/tags/editor/</link>
-      <pubDate>Mon, 29 Apr 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://devpoga.org/tags/editor/</guid>
       <description></description>
     </item>
     

@@ -10,7 +10,6 @@ hasCJKLanguage = true
 [params]
     description = ""
     dateFormatToUse = "2006-01-02"
-    twitter = "devpoga"
 
 [markup.goldmark.renderer]
 unsafe= true

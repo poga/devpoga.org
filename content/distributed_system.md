@@ -1,7 +1,6 @@
 ---
 title: "Distributed System"
 date: "2019-08-25"
-menu: "main"
 ---
 
 Reading list for anyone designing practical distributed systems.

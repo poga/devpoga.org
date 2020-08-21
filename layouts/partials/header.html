@@ -18,5 +18,8 @@
 		{{ range .Site.Menus.main }}
       <a class="nav- {{ if $currentPage.IsMenuCurrent "main" . }}nav-current{{ end }}" role="presentation" href="{{ .URL | relLangURL | safeURL }}">{{ .Name }}</a>
 		{{ end }}
+    {{range ($.Site.GetPage "taxonomyTerm" "categories").Pages }}
+     <a href="{{.Permalink}}">{{.Title}}</a></li>
+    {{end}}
 	</div>
 </header>
