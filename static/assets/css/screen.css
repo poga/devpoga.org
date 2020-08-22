@@ -145,7 +145,7 @@ hr {
 }
 
 /* Links */
-.post a a:visited {
+a, a:visited {
     color: #3873AD;
     text-decoration: underline;
 }
