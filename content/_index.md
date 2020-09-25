@@ -4,6 +4,8 @@ You can contact me via [email](mailto://poga.po@gmail.com) or [twitter](https://
 
 I work on many different things in the area of technology, design, privacy, security, and art. In no particular order of preference:
 
+* Administrator of [g0v.social](https://g0v.social), a federated social network.
+
 * Extends [Redis](https://redis.io/) functionality with modules, [redis-rating](https://github.com/poga/redis-rating) and [redis-percentile](https://github.com/poga/redis-percentile).
 
 * A safe actor scripting framework for rust, [actix-lua](https://github.com/poga/actix-lua).

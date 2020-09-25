@@ -6,11 +6,7 @@
     <description>Recent content in Domain Modeling on Dev.Poga</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 10 Apr 2020 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="https://devpoga.org/tags/domain-modeling/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Fri, 10 Apr 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://devpoga.org/tags/domain-modeling/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Domain Modeling Made Functional</title>
       <link>https://devpoga.org/post/2020-04-10_domain-modeling-made-functional/</link>

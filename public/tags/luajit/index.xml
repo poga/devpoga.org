@@ -6,11 +6,7 @@
     <description>Recent content in Luajit on Dev.Poga</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 18 Apr 2018 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="https://devpoga.org/tags/luajit/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Wed, 18 Apr 2018 00:00:00 +0000</lastBuildDate><atom:link href="https://devpoga.org/tags/luajit/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>LuaJIT 實做探索 — NaN Tagging</title>
       <link>https://devpoga.org/post/2018-04-18_luajit-%E5%AF%A6%E5%81%9A%E6%8E%A2%E7%B4%A2-nan-tagging/</link>
