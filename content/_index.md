@@ -2,7 +2,7 @@
 
 You can contact me via [email](mailto://poga.po@gmail.com) or [twitter](https://twitter.com/devpoga)
 
-I work on many different things in the area of technology, design, privacy, security, and art. In no particular order of preference:
+I work on many different things in the area of technology, design, privacy, and security. In no particular order of preference:
 
 * Administrator of [g0v.social](https://g0v.social), a federated social network.
 
