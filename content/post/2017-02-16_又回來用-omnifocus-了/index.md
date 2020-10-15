@@ -18,6 +18,8 @@ images:
 
 aliases:
     - "/%E5%8F%88%E5%9B%9E%E4%BE%86%E7%94%A8-omnifocus-%E4%BA%86-95e7d8aaee31"
+categories:
+  - Essays
 ---
 
 當初那忙到吐血的兩三年中，幾乎都是靠著 Omnifocus 在維持生活的運作。

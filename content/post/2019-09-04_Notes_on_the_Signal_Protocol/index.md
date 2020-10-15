@@ -7,7 +7,7 @@ tags:
   - Privacy
   - Note
 categories:
-  - Cryptography
+  - Notes
 ---
 
 ![](/post/2019-09-04_notes_on_the_signal_protocol/dh.png)

@@ -16,6 +16,9 @@ image: "/post/2018-09-03_如何整合-rust-與-lua/images/1.jpeg"
 images:
  - "/post/2018-09-03_如何整合-rust-與-lua/images/1.jpeg"
 
+categories:
+  - Essays
+
 
 aliases:
     - "/%E5%A6%82%E4%BD%95%E6%95%B4%E5%90%88-rust-%E8%88%87-lua-3cb38238dc72"

@@ -8,7 +8,7 @@ tags:
   - Networking
   - Note
 categories:
-  - Security
+  - Notes
 ---
 
 ![](/post/2020-04-09_zero-trust-network/book.jpg)

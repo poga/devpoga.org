@@ -6,7 +6,7 @@ tags:
   - Communication
   - Notes
 categories:
-  - Communication
+  - Notes
 ---
 
 Reading List.

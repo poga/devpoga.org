@@ -7,7 +7,11 @@ lastmod: 2019-04-30T21:56:01+08:00
 description: ""
 
 tags:
- - 生產力
+ - Productivity
+
+
+categories:
+  - Essays
 
 ---
 

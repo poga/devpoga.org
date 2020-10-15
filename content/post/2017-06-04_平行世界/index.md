@@ -15,6 +15,8 @@ images:
 
 aliases:
     - "/%E5%B9%B3%E8%A1%8C%E4%B8%96%E7%95%8C-c42f005f5ee9"
+categories:
+  - Essays
 ---
 
 有些事情總讓人覺得，Groundhog Day 跟平行世界是真的存在的。

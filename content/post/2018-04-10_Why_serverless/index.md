@@ -9,6 +9,9 @@ description: ""
 tags:
  - Serverless
 
+categories:
+  - Essays
+  - Talks
 ---
 
 > 本文擷取、修訂自 2018.03.29 我在 iThome Serverless All-Star 的分享的逐字稿

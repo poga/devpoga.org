@@ -7,7 +7,7 @@ tags:
   - concurrency
   - Programming Language
 categories:
-  - Programming
+  - Essays
 ---
 
 Thread 跟 Coroutine 是兩種常常用來處理 Concurrency 的工具。

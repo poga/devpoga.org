@@ -18,6 +18,9 @@ images:
  - "/post/2017-12-22_kappa-architecture以資料為中心的系統架構/images/1.png"
  - "/post/2017-12-22_kappa-architecture以資料為中心的系統架構/images/2.png"
 
+categories:
+  - Essays
+  - Talks
 
 aliases:
     - "/kappa-architecture-%E8%B3%87%E6%96%99%E5%AF%86%E9%9B%86%E7%B3%BB%E7%B5%B1%E7%9A%84%E6%9E%B6%E6%A7%8B%E6%A8%A1%E5%BC%8F-2a8edc98d713"

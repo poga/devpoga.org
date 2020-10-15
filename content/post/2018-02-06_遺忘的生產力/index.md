@@ -7,8 +7,10 @@ lastmod: 2019-04-30T21:56:01+08:00
 description: ""
 
 tags:
- - 生產力
+ - Productivity
 
+categories:
+  - Essays
 ---
 
 人們談到生產力，似乎就免不了討論各種蒐集想法、整理心得的工具。彷彿忘了的東西都是一種損失。

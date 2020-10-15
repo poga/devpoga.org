@@ -11,6 +11,9 @@ tags:
  - 系統架構
  - Log
 
+categories:
+  - Talks
+
 ---
 
 

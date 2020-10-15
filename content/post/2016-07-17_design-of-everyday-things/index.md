@@ -21,6 +21,9 @@ images:
 
 aliases:
     - "/the-design-of-everyday-things-cfa3cacfa65a"
+
+categories:
+  - Notes
 ---
 
 雜亂筆記
