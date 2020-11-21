@@ -6,7 +6,17 @@
     <description>Recent content on Dev.Poga</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 01 Aug 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://devpoga.org/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 21 Nov 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://devpoga.org/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>A Taste of OCaml&#39;s Predictable Performance</title>
+      <link>https://devpoga.org/post/2020-11-21-a-taste-of-ocaml-predictable-performance/</link>
+      <pubDate>Sat, 21 Nov 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://devpoga.org/post/2020-11-21-a-taste-of-ocaml-predictable-performance/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;https://devpoga.org/post/2020-11-21-a-taste-of-ocaml-predictable-performance/colour-logo.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/mirage/eqaf&#34;&gt;eqaf&lt;/a&gt;, a constant-time compare function implementation in &lt;a href=&#34;https://ocaml.org/&#34;&gt;OCaml&lt;/a&gt;, is a great case to demonstrate the &lt;a href=&#34;https://signalsandthreads.com/language-design/#0008401&#34;&gt;predictable performance of OCaml&amp;rsquo;s compiler&lt;/a&gt;. Why?&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>在 iPad 上布置軟體開發環境</title>
       <link>https://devpoga.org/post/2020-08-01_ipad_programming_environment/</link>

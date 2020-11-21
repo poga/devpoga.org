@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    
+    <title>
+      
+      A Taste of OCaml&#39;s Predictable Performance - Dev.Poga
+      
+		</title>
+
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta property="og:image" content="https://devpoga.org/og.png" />
+
+    
+    <link rel="stylesheet" type="text/css" href="/assets/css/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="/assets/css/icons.css" />
+    <link rel="stylesheet" type="text/css" href="/assets/css/screen.css" />
+    
+    <link href="https://fonts.googleapis.com/css?family=Bree+Serif|Lato:100,100i,300,300i,400,400i,700,700i|Source+Code+Pro:300,400,500,700" rel="stylesheet">
+    
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/jquery@1.12.4/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="/assets/bigfoot/dist/bigfoot.js"></script>
+    <link rel="stylesheet" type="text/css" href="/assets/bigfoot/dist/bigfoot-number.css" />
+    <script type="text/javascript">
+        $.bigfoot();
+    </script>
+    
+    
+</head>
+
+    <body class="post-template">
+        <header class="main-header">
+	<div class="main-header-content">
+    <img src="/me.jpg" class="avatar">
+		<h1 class="blog-title">
+			<a href="/">
+				
+           Dev.Poga
+				
+			</a>
+		</h1>
+		<h2 class="blog-description"></h2>
+	</div>
+
+	<div class="nav">
+    
+		
+    
+     <a href="https://devpoga.org/categories/essays/">Essays</a></li>
+    
+     <a href="https://devpoga.org/categories/notes/">Notes</a></li>
+    
+     <a href="https://devpoga.org/categories/talks/">Talks</a></li>
+    
+	</div>
+</header>
+
+        
+<main class="content" role="main">
+  <article class="post">
+    <header class="post-header">
+      <h2 class="post-title">A Taste of OCaml&#39;s Predictable Performance</h2>
+      <section class="post-meta">
+        <time class="post-date">2020-11-21</time>
+        in
+        <a href="https://devpoga.org/categories/essays/">Essays</a>
+          
+        
+
+      </section>
+    </header>
+    <section class="post-content">
+      <p><img src="/post/2020-11-21-a-taste-of-ocaml-predictable-performance/colour-logo.png" alt=""></p>
+<p><a href="https://github.com/mirage/eqaf">eqaf</a>, a constant-time compare function implementation in <a href="https://ocaml.org/">OCaml</a>, is a great case to demonstrate the <a href="https://signalsandthreads.com/language-design/#0008401">predictable performance of OCaml&rsquo;s compiler</a>. Why?</p>
+<ul>
+<li>The goal of a constant-time compare function is to avoid <a href="https://en.wikipedia.org/wiki/Timing_attack">timing attacks</a>, which requires fully deterministic and predictable runtime performance.</li>
+<li>Usually, cryptography functions are written in assembly to have total control of resulting binary and avoid unneeded optimization by the compiler.</li>
+<li>However, <a href="https://github.com/mirage/eqaf">eqaf</a> showed us that you can write clean OCaml and get simple and predictable resulting assembly.</li>
+</ul>
+<hr>
+<h2 id="about-garbage-collection">About Garbage Collection</h2>
+<p>It&rsquo;s hard to have a stable runtime performance for languages that comes with a garbage collector. To have a predictable runtime performance characteristic in these languages, the following rules are usually required to be followed religiously:</p>
+<ul>
+<li>Avoid garbage collections by avoiding memory allocations.</li>
+<li>Avoid boxed values to generate assembly as low-level as possible.</li>
+</ul>
+<p>Hence, the resulting code are usually unidiomatic and hard to maintain.</p>
+<h2 id="compiler-explorer">Compiler Explorer</h2>
+<p><a href="https://godbolt.org">Compiler Explorer</a> is a handy tool for exploring compilers and its assembly output. It has built-in OCaml support and removes boilerplate automatically. I recommend you to test the following example with it.</p>
+<hr>
+<h2 id="code">Code</h2>
+<p>Here’s the implementation of <code>eqaf</code>’s <code>equal</code>.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ocaml" data-lang="ocaml"><span style="color:#66d9ef">let</span><span style="color:#f92672">[@</span>inline<span style="color:#f92672">]</span> get x i <span style="color:#f92672">=</span> String.unsafe_get x i <span style="color:#f92672">|&gt;</span> Char.code
+
+<span style="color:#66d9ef">external</span> unsafe_get_int16 <span style="color:#f92672">:</span> <span style="color:#66d9ef">string</span> <span style="color:#f92672">-&gt;</span> <span style="color:#66d9ef">int</span> <span style="color:#f92672">-&gt;</span> <span style="color:#66d9ef">int</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;%caml_string_get16u&#34;</span>
+<span style="color:#66d9ef">let</span><span style="color:#f92672">[@</span>inline<span style="color:#f92672">]</span> get16 x i <span style="color:#f92672">=</span> unsafe_get_int16 x i
+
+<span style="color:#66d9ef">let</span> equal <span style="color:#f92672">~</span>ln a b <span style="color:#f92672">=</span>
+  <span style="color:#66d9ef">let</span> l1 <span style="color:#f92672">=</span> ln <span style="color:#f92672">asr</span> 1 <span style="color:#66d9ef">in</span>
+  <span style="color:#66d9ef">let</span> r <span style="color:#f92672">=</span> ref 0 <span style="color:#66d9ef">in</span>
+  <span style="color:#66d9ef">for</span> i <span style="color:#f92672">=</span> 0 <span style="color:#66d9ef">to</span> pred l1 <span style="color:#66d9ef">do</span> r <span style="color:#f92672">:=</span> <span style="color:#f92672">!</span>r <span style="color:#f92672">lor</span> <span style="color:#f92672">(</span>get16 a <span style="color:#f92672">(</span>i <span style="color:#f92672">*</span> 2<span style="color:#f92672">)</span> <span style="color:#f92672">lxor</span> get16 b <span style="color:#f92672">(</span>i <span style="color:#f92672">*</span> 2<span style="color:#f92672">))</span> <span style="color:#66d9ef">done</span> <span style="color:#f92672">;</span>
+  <span style="color:#66d9ef">for</span> <span style="color:#f92672">_</span> <span style="color:#f92672">=</span> 1 <span style="color:#66d9ef">to</span> ln <span style="color:#f92672">land</span> 1 <span style="color:#66d9ef">do</span> r <span style="color:#f92672">:=</span> <span style="color:#f92672">!</span>r <span style="color:#f92672">lor</span> <span style="color:#f92672">(</span>get a <span style="color:#f92672">(</span>ln <span style="color:#f92672">-</span> 1<span style="color:#f92672">)</span> <span style="color:#f92672">lxor</span> get b <span style="color:#f92672">(</span>ln <span style="color:#f92672">-</span> 1<span style="color:#f92672">))</span> <span style="color:#66d9ef">done</span> <span style="color:#f92672">;</span>
+  <span style="color:#f92672">!</span>r <span style="color:#f92672">=</span> 0
+
+<span style="color:#66d9ef">let</span> equal a b <span style="color:#f92672">=</span>
+  <span style="color:#66d9ef">let</span> al <span style="color:#f92672">=</span> String.length a <span style="color:#66d9ef">in</span>
+  <span style="color:#66d9ef">let</span> bl <span style="color:#f92672">=</span> String.length b <span style="color:#66d9ef">in</span>
+  <span style="color:#66d9ef">if</span> al <span style="color:#f92672">&lt;&gt;</span> bl
+  <span style="color:#66d9ef">then</span> false
+  <span style="color:#66d9ef">else</span> equal <span style="color:#f92672">~</span>ln<span style="color:#f92672">:</span>al a b
+</code></pre></div><p>Besides basic OCaml syntaxes[1], interesting bits in the example are:</p>
+<ul>
+<li>
+<p>You can force OCaml to always inline a function via adding an attribute <code>[@inline]</code></p>
+</li>
+<li>
+<p><code>String.unsafe_get</code> works like <code>String.get</code> but without bound-checking. It&rsquo;s unsafe for most use-cases but it&rsquo;s used here to <a href="https://github.com/mirage/eqaf/blob/master/lib/eqaf.ml#L3">avoid jumping to exception</a>.</p>
+</li>
+<li>
+<p>OCaml provides a FFI <code>external</code> for <a href="https://caml.inria.fr/pub/docs/manual-ocaml/intfc.html">interfacing with C</a>. Here we use it to call a primitive function provided by OCaml&rsquo;s runtime <code>%caml_string_get16u</code>.</p>
+<ul>
+<li><code>external</code> is always unsafe and should be really take care about.</li>
+<li>Primitives are not stable. For example: <a href="https://github.com/mirage/ocaml-base64/pull/36">https://github.com/mirage/ocaml-base64/pull/36</a></li>
+</ul>
+</li>
+<li>
+<p><code>n asr m</code> shifts <code>n</code> to the right by <code>m</code> bits. This is an arithmetic shift: the sign bit of <code>n</code> is replicated. The result is unspecified if <code>m &lt; 0</code> or <code>m &gt; Sys.int_size</code>.</p>
+</li>
+<li>
+<p><code>ref</code> creates a <a href="https://dev.realworldocaml.org/imperative-programming.html">reference cell</a> and allows in-place replacement with <code>:=</code>.</p>
+</li>
+<li>
+<p><code>pred x</code> is <code>x - 1</code>.</p>
+</li>
+<li>
+<p><code>lor</code>, <code>lxor</code>, and <code>land</code> are logical bit-wise <code>or</code>, <code>xor</code>, and <code>and</code>.</p>
+</li>
+</ul>
+<p>Although the OCaml code is quite low-level (and not very functional). It&rsquo;s still cleaner than most constant-time compare functions implemented in assembly.</p>
+<h2 id="read-the-asm">Read the asm</h2>
+<p>Here&rsquo;s the resulting assembly of the previous example, copied from the <code>eqaf</code> <a href="https://github.com/mirage/eqaf/blob/master/lib/eqaf.ml">source</a>. You can get the same output via <a href="https://godbolt.org">Compiler Explorer</a>.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ocaml" data-lang="ocaml"><span style="color:#66d9ef">let</span><span style="color:#f92672">[@</span>inline<span style="color:#f92672">]</span> get x i <span style="color:#f92672">=</span> String.unsafe_get x i <span style="color:#f92672">|&gt;</span> Char.code
+<span style="color:#75715e">(* XXX(dinosaure): we use [unsafe_get] to avoid jump to exception:
+</span><span style="color:#75715e">        sarq    $1, %rbx
+</span><span style="color:#75715e">        movzbq  (%rax,%rbx), %rax
+</span><span style="color:#75715e">        leaq    1(%rax,%rax), %rax
+</span><span style="color:#75715e">        ret
+</span><span style="color:#75715e">*)</span>
+<span style="color:#66d9ef">external</span> unsafe_get_int16 <span style="color:#f92672">:</span> <span style="color:#66d9ef">string</span> <span style="color:#f92672">-&gt;</span> <span style="color:#66d9ef">int</span> <span style="color:#f92672">-&gt;</span> <span style="color:#66d9ef">int</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;%caml_string_get16u&#34;</span>
+<span style="color:#66d9ef">let</span><span style="color:#f92672">[@</span>inline<span style="color:#f92672">]</span> get16 x i <span style="color:#f92672">=</span> unsafe_get_int16 x i
+<span style="color:#75715e">(* XXX(dinosaure): same as [unsafe_get] but for [int16]:
+</span><span style="color:#75715e">        sarq    $1, %rbx
+</span><span style="color:#75715e">        movzwq  (%rax,%rbx), %rax
+</span><span style="color:#75715e">        leaq    1(%rax,%rax), %rax
+</span><span style="color:#75715e">        ret
+</span><span style="color:#75715e">*)</span>
+<span style="color:#66d9ef">let</span> equal <span style="color:#f92672">~</span>ln a b <span style="color:#f92672">=</span>
+  <span style="color:#66d9ef">let</span> l1 <span style="color:#f92672">=</span> ln <span style="color:#f92672">asr</span> 1 <span style="color:#66d9ef">in</span>
+  <span style="color:#75715e">(*
+</span><span style="color:#75715e">        sarq    $1, %rcx
+</span><span style="color:#75715e">        orq     $1, %rcx
+</span><span style="color:#75715e">  *)</span>
+  <span style="color:#66d9ef">let</span> r <span style="color:#f92672">=</span> ref 0 <span style="color:#66d9ef">in</span>
+  <span style="color:#75715e">(*
+</span><span style="color:#75715e">        movq    $1, %rdx
+</span><span style="color:#75715e">  *)</span>
+  <span style="color:#66d9ef">for</span> i <span style="color:#f92672">=</span> 0 <span style="color:#66d9ef">to</span> pred l1 <span style="color:#66d9ef">do</span> r <span style="color:#f92672">:=</span> <span style="color:#f92672">!</span>r <span style="color:#f92672">lor</span> <span style="color:#f92672">(</span>get16 a <span style="color:#f92672">(</span>i <span style="color:#f92672">*</span> 2<span style="color:#f92672">)</span> <span style="color:#f92672">lxor</span> get16 b <span style="color:#f92672">(</span>i <span style="color:#f92672">*</span> 2<span style="color:#f92672">))</span> <span style="color:#66d9ef">done</span> <span style="color:#f92672">;</span>
+  <span style="color:#75715e">(*
+</span><span style="color:#75715e">        movq    $1, %rsi
+</span><span style="color:#75715e">        addq    $-2, %rcx
+</span><span style="color:#75715e">        cmpq    %rcx, %rsi
+</span><span style="color:#75715e">        jg      .L104
+</span><span style="color:#75715e">.L105:
+</span><span style="color:#75715e">        leaq    -1(%rsi,%rsi), %r8
+</span><span style="color:#75715e">        sarq    $1, %r8
+</span><span style="color:#75715e">        movzwq  (%rdi,%r8), %r9
+</span><span style="color:#75715e">        leaq    1(%r9,%r9), %r9
+</span><span style="color:#75715e">        movzwq  (%rbx,%r8), %r8
+</span><span style="color:#75715e">        leaq    1(%r8,%r8), %r8
+</span><span style="color:#75715e">     // [unsafe_get_int16 a i] and [unsafe_get_int6 b i]
+</span><span style="color:#75715e">        xorq    %r9, %r8
+</span><span style="color:#75715e">        orq     $1, %r8
+</span><span style="color:#75715e">        orq     %r8, %rdx
+</span><span style="color:#75715e">        movq    %rsi, %r8
+</span><span style="color:#75715e">        addq    $2, %rsi
+</span><span style="color:#75715e">        cmpq    %rcx, %r8
+</span><span style="color:#75715e">        jne     .L105
+</span><span style="color:#75715e">.L104:
+</span><span style="color:#75715e">  *)</span>
+  <span style="color:#66d9ef">for</span> <span style="color:#f92672">_</span> <span style="color:#f92672">=</span> 1 <span style="color:#66d9ef">to</span> ln <span style="color:#f92672">land</span> 1 <span style="color:#66d9ef">do</span> r <span style="color:#f92672">:=</span> <span style="color:#f92672">!</span>r <span style="color:#f92672">lor</span> <span style="color:#f92672">(</span>get a <span style="color:#f92672">(</span>ln <span style="color:#f92672">-</span> 1<span style="color:#f92672">)</span> <span style="color:#f92672">lxor</span> get b <span style="color:#f92672">(</span>ln <span style="color:#f92672">-</span> 1<span style="color:#f92672">))</span> <span style="color:#66d9ef">done</span> <span style="color:#f92672">;</span>
+  <span style="color:#75715e">(*
+</span><span style="color:#75715e">        movq    $3, %rsi
+</span><span style="color:#75715e">        movq    %rax, %rcx
+</span><span style="color:#75715e">        andq    $3, %rcx
+</span><span style="color:#75715e">        cmpq    %rcx, %rsi
+</span><span style="color:#75715e">        jg      .L102
+</span><span style="color:#75715e">.L103:
+</span><span style="color:#75715e">        movq    %rax, %r8
+</span><span style="color:#75715e">        addq    $-2, %r8
+</span><span style="color:#75715e">        sarq    $1, %r8
+</span><span style="color:#75715e">        movzbq  (%rdi,%r8), %r9
+</span><span style="color:#75715e">        leaq    1(%r9,%r9), %r9
+</span><span style="color:#75715e">        movzbq  (%rbx,%r8), %r8
+</span><span style="color:#75715e">        leaq    1(%r8,%r8), %r8
+</span><span style="color:#75715e">     // [unsafe_get a i] and [unsafe_get b i]
+</span><span style="color:#75715e">        xorq    %r9, %r8
+</span><span style="color:#75715e">        orq     $1, %r8
+</span><span style="color:#75715e">        orq     %r8, %rdx
+</span><span style="color:#75715e">        movq    %rsi, %r8
+</span><span style="color:#75715e">        addq    $2, %rsi
+</span><span style="color:#75715e">        cmpq    %rcx, %r8
+</span><span style="color:#75715e">        jne     .L103
+</span><span style="color:#75715e">.L102:
+</span><span style="color:#75715e">  *)</span>
+  <span style="color:#f92672">!</span>r <span style="color:#f92672">=</span> 0
+<span style="color:#75715e">(*
+</span><span style="color:#75715e">        cmpq    $1, %rdx
+</span><span style="color:#75715e">        sete    %al
+</span><span style="color:#75715e">        movzbq  %al, %rax
+</span><span style="color:#75715e">        leaq    1(%rax,%rax), %rax
+</span><span style="color:#75715e">        ret
+</span><span style="color:#75715e">*)</span>
+</code></pre></div><p>Each OCaml code is compiled to a cleanly separated section of assembly, The resulting assembly contains no garbage collection, no types information, and no advanced features but still pretty readable.</p>
+<hr>
+<h2 id="conclusion">Conclusion</h2>
+<p><code>eqaf</code> allows us to have a basic understanding about OCaml&rsquo;s assembly output without inferences of GC, boxed values, and advanced syntaxes such as pattern matching. We will explore more in the future issues.</p>
+<h2 id="references">References</h2>
+<ol>
+<li>For understanding OCaml&rsquo;s syntax (and everything OCaml), <a href="https://dev.realworldocaml.org/">Real World OCaml</a> does way better job than I can.</li>
+</ol>
+    </section>
+    <footer class="post-footer">
+      <section class="tags post-meta">
+        Tagged
+        <a href="https://devpoga.org/tags/ocaml/">OCaml</a>
+          <a href="https://devpoga.org/tags/compiler/">Compiler</a>
+          <a href="https://devpoga.org/tags/programming/">Programming</a>
+          
+      </section>
+    </footer>
+  </article>
+</main>
+
+        <footer class="site-footer">
+  <section class="rss"><a class="subscribe-button icon-feed" href="/index.xml"></a></section>
+  
+  
+  <section class="copyright">&copy; 2020 Dev.Poga</section>
+</footer>
+
+
+
+
+    </body>
+</html>

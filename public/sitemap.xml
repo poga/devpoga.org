@@ -4,37 +4,52 @@
   
   <url>
     <loc>https://devpoga.org/</loc>
-    <lastmod>2020-08-01T00:00:00+00:00</lastmod>
+    <lastmod>2020-11-21T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
+    <loc>https://devpoga.org/post/2020-11-21-a-taste-of-ocaml-predictable-performance/</loc>
+    <lastmod>2020-11-21T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://devpoga.org/categories/</loc>
-    <lastmod>2020-08-01T00:00:00+00:00</lastmod>
+    <lastmod>2020-11-21T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://devpoga.org/tags/compiler/</loc>
+    <lastmod>2020-11-21T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://devpoga.org/categories/essays/</loc>
-    <lastmod>2020-08-01T00:00:00+00:00</lastmod>
+    <lastmod>2020-11-21T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://devpoga.org/tags/ipad/</loc>
-    <lastmod>2020-08-01T00:00:00+00:00</lastmod>
+    <loc>https://devpoga.org/tags/ocaml/</loc>
+    <lastmod>2020-11-21T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://devpoga.org/post/</loc>
-    <lastmod>2020-08-01T00:00:00+00:00</lastmod>
+    <lastmod>2020-11-21T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://devpoga.org/tags/programming/</loc>
-    <lastmod>2020-08-01T00:00:00+00:00</lastmod>
+    <lastmod>2020-11-21T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://devpoga.org/tags/</loc>
+    <lastmod>2020-11-21T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://devpoga.org/tags/ipad/</loc>
     <lastmod>2020-08-01T00:00:00+00:00</lastmod>
   </url>
   
@@ -119,11 +134,6 @@
   </url>
   
   <url>
-    <loc>https://devpoga.org/tags/ocaml/</loc>
-    <lastmod>2020-03-17T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://devpoga.org/post/2020-03-17_ocaml_quickstart/</loc>
     <lastmod>2020-03-17T00:00:00+00:00</lastmod>
   </url>
@@ -195,11 +205,6 @@
   
   <url>
     <loc>https://devpoga.org/post/2019-07-11_cheney_on_the_mta/</loc>
-    <lastmod>2019-07-12T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://devpoga.org/tags/compiler/</loc>
     <lastmod>2019-07-12T00:00:00+00:00</lastmod>
   </url>
   
