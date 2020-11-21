@@ -22,7 +22,7 @@ categories:
 
 ---
 
-This is the first issue of [Learn OCaml the Hard Way](https://learnocamlthehardway.substack.com/welcome). A publication about Learning OCaml from the ground up.
+This is the first issue of [Learn OCaml the Hard Way](https://learnocamlthehardway.substack.com/welcome). A publication about learning OCaml from the ground up.
 
 ---
 
@@ -178,7 +178,7 @@ Each OCaml code is compiled to a cleanly separated section of assembly, The resu
 
 `eqaf` allows us to have a basic understanding about OCaml's assembly output without inferences of GC, boxed values, and advanced syntaxes such as pattern matching. We will explore more in the future issues.
 
-Like this post? [Subscribe](https://learnocamlthehardway.substack.com/welcome) to Learn OCaml the Hard Way to get more!
+Like this post? [Subscribe](https://learnocamlthehardway.substack.com/welcome) to **Learn OCaml the Hard Way** to get more!
 
 ## References
 
