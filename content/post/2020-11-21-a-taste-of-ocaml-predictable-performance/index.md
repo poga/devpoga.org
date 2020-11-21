@@ -22,6 +22,10 @@ categories:
 
 ---
 
+This is the first issue of [Learn OCaml the Hard Way](https://learnocamlthehardway.substack.com/welcome). A publication about Learning OCaml from the ground up.
+
+---
+
 ## About Garbage Collection
 
 It's hard to have a stable runtime performance for languages that comes with a garbage collector. To have a predictable runtime performance characteristic in these languages, the following rules are usually required to be followed religiously:
@@ -173,6 +177,8 @@ Each OCaml code is compiled to a cleanly separated section of assembly, The resu
 ## Conclusion
 
 `eqaf` allows us to have a basic understanding about OCaml's assembly output without inferences of GC, boxed values, and advanced syntaxes such as pattern matching. We will explore more in the future issues.
+
+Like this post? [Subscribe](https://learnocamlthehardway.substack.com/welcome) to Learn OCaml the Hard Way to get more!
 
 ## References
 
