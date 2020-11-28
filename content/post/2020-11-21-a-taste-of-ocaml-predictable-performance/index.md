@@ -6,6 +6,7 @@ tags:
   - OCaml
   - Compiler
   - Programming
+  - Learn OCaml the Hard Way
 categories:
   - Essays
 ---
