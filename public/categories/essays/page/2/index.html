@@ -91,251 +91,353 @@
 	</div>
   
   <article class="post">
-	<header class="post-header">
-		<h1 class="post-title"><a href="https://devpoga.org/post/2018-09-03_%E5%A6%82%E4%BD%95%E6%95%B4%E5%90%88-rust-%E8%88%87-lua/">如何整合 Rust 與 Lua</a></h1>
-	</header>
+  <header class="post-header">
+    <h1 class="post-title">
+      <a href="https://devpoga.org/post/2018-09-03_%E5%A6%82%E4%BD%95%E6%95%B4%E5%90%88-rust-%E8%88%87-lua/">如何整合 Rust 與 Lua</a>
+    </h1>
+  </header>
 
-  	<section class="post-excerpt">
+  <section class="post-excerpt">
     <p>
       <p><img src="/post/2018-09-03_%E5%A6%82%E4%BD%95%E6%95%B4%E5%90%88-rust-%E8%88%87-lua/images/1.jpeg" alt="image"></p>
 <p>Photo by <a href="https://unsplash.com/photos/4izt8TxQmEs?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Anders Jildén</a> on <a href="https://unsplash.com/search/photos/lua?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></p>
 <p>在系統中遷入一個動態輕巧的 scripting language 一直是個常見的設計。像 <a href="https://www.rust-lang.org/">Rust</a> 這樣的系統語言，雖然效能好，但是上手門檻較高。這時若是能遷入一個像 <a href="https://www.lua.org/">Lua</a> 一樣動態型別，簡單易懂的語言，便能大幅提高系統彈性。</p>
-<p>最近為了實做 <a href="https://github.com/poga/actix-lua">actix-lua</a>，研究了一下 Rust 跟 Lua 之間的介接，順便學了不少 Rust 跟 Lua 的設計，筆記在此。</p> <a class="read-more" href="/post/2018-09-03_%E5%A6%82%E4%BD%95%E6%95%B4%E5%90%88-rust-%E8%88%87-lua/">&raquo; Read More</a>
+<p>最近為了實做 <a href="https://github.com/poga/actix-lua">actix-lua</a>，研究了一下 Rust 跟 Lua 之間的介接，順便學了不少 Rust 跟 Lua 的設計，筆記在此。</p>
+      <a class="read-more" href="/post/2018-09-03_%E5%A6%82%E4%BD%95%E6%95%B4%E5%90%88-rust-%E8%88%87-lua/">&raquo; Read More</a>
     </p>
-	</section>
+  </section>
 
-	<footer class="post-meta">
-    <time class="post-date">2018-09-03
-        in
-        <a href="https://devpoga.org/categories/essays/">Essays</a>
-          
-        
+  <footer class="post-meta">
+    <time class="post-date"
+      >2018-09-03
+      Tagged
+      <a href="https://devpoga.org/tags/rust/">Rust</a>
+      <a href="https://devpoga.org/tags/lua/">Lua</a>
+      <a href="https://devpoga.org/tags/actix/">Actix</a>
+      
+      
+
+      in
+      <a href="https://devpoga.org/categories/essays/">Essays</a>
+      
+      
     </time>
-	</footer>
-  <hr/>
+  </footer>
+  <hr />
 </article>
 
   
   <article class="post">
-	<header class="post-header">
-		<h1 class="post-title"><a href="https://devpoga.org/post/2018-07-16_%E8%BB%9F%E9%AB%94%E8%A8%AD%E8%A8%88%E6%A8%A1%E5%BC%8F-dataoriented-design/">軟體設計模式 — Data-Oriented Design</a></h1>
-	</header>
+  <header class="post-header">
+    <h1 class="post-title">
+      <a href="https://devpoga.org/post/2018-07-16_%E8%BB%9F%E9%AB%94%E8%A8%AD%E8%A8%88%E6%A8%A1%E5%BC%8F-dataoriented-design/">軟體設計模式 — Data-Oriented Design</a>
+    </h1>
+  </header>
 
-  	<section class="post-excerpt">
+  <section class="post-excerpt">
     <p>
       <p><img src="/post/2018-07-16_%E8%BB%9F%E9%AB%94%E8%A8%AD%E8%A8%88%E6%A8%A1%E5%BC%8F-dataoriented-design/images/1.jpeg" alt="image"></p>
 <p>Photo by <a href="https://unsplash.com/photos/BpqDaDxG48w?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Rebecca Oliver</a> on <a href="https://unsplash.com/search/photos/game?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></p>
 <p>遊戲開發對很多開發者來說是個陌生的領域。遊戲對於效能的極高要求跟規格的不確定性，產生出了許多特有的系統架構。Data-Oriented Design 便是個有趣的設計模式。</p>
-<p>相較於其他設計模式，Data-Oriented Design 深受硬體快取（cache）架構影響。對於現代的高度 pipeline、高速的 CPU 架構而言，資料的存取方式對效能有非常大的影響。比起 L1、L2 cache，對主記憶體的一次存取帶來的是數百倍的效能損耗。為了避免太過抽象，就用個實際的例子來解釋吧。</p> <a class="read-more" href="/post/2018-07-16_%E8%BB%9F%E9%AB%94%E8%A8%AD%E8%A8%88%E6%A8%A1%E5%BC%8F-dataoriented-design/">&raquo; Read More</a>
+<p>相較於其他設計模式，Data-Oriented Design 深受硬體快取（cache）架構影響。對於現代的高度 pipeline、高速的 CPU 架構而言，資料的存取方式對效能有非常大的影響。比起 L1、L2 cache，對主記憶體的一次存取帶來的是數百倍的效能損耗。為了避免太過抽象，就用個實際的例子來解釋吧。</p>
+      <a class="read-more" href="/post/2018-07-16_%E8%BB%9F%E9%AB%94%E8%A8%AD%E8%A8%88%E6%A8%A1%E5%BC%8F-dataoriented-design/">&raquo; Read More</a>
     </p>
-	</section>
+  </section>
 
-	<footer class="post-meta">
-    <time class="post-date">2018-07-16
-        in
-        <a href="https://devpoga.org/categories/essays/">Essays</a>
-          
-        
+  <footer class="post-meta">
+    <time class="post-date"
+      >2018-07-16
+      Tagged
+      <a href="https://devpoga.org/tags/%E9%81%8A%E6%88%B2%E9%96%8B%E7%99%BC/">遊戲開發</a>
+      <a href="https://devpoga.org/tags/%E7%A7%91%E6%99%AE/">科普</a>
+      <a href="https://devpoga.org/tags/%E7%B3%BB%E7%B5%B1%E6%9E%B6%E6%A7%8B/">系統架構</a>
+      
+      
+
+      in
+      <a href="https://devpoga.org/categories/essays/">Essays</a>
+      
+      
     </time>
-	</footer>
-  <hr/>
+  </footer>
+  <hr />
 </article>
 
   
   <article class="post">
-	<header class="post-header">
-		<h1 class="post-title"><a href="https://devpoga.org/post/2018-04-18_luajit-%E5%AF%A6%E5%81%9A%E6%8E%A2%E7%B4%A2-nan-tagging/">LuaJIT 實做探索 — NaN Tagging</a></h1>
-	</header>
+  <header class="post-header">
+    <h1 class="post-title">
+      <a href="https://devpoga.org/post/2018-04-18_luajit-%E5%AF%A6%E5%81%9A%E6%8E%A2%E7%B4%A2-nan-tagging/">LuaJIT 實做探索 — NaN Tagging</a>
+    </h1>
+  </header>
 
-  	<section class="post-excerpt">
+  <section class="post-excerpt">
     <p>
       <p><img src="/post/2018-04-18_luajit-%E5%AF%A6%E5%81%9A%E6%8E%A2%E7%B4%A2-nan-tagging/images/1.png" alt="image"></p>
 <h4 id="一切都是為了效能">一切都是為了效能</h4>
-<p>故事要從 boxed value 跟 unboxed value 說起。</p> <a class="read-more" href="/post/2018-04-18_luajit-%E5%AF%A6%E5%81%9A%E6%8E%A2%E7%B4%A2-nan-tagging/">&raquo; Read More</a>
+<p>故事要從 boxed value 跟 unboxed value 說起。</p>
+      <a class="read-more" href="/post/2018-04-18_luajit-%E5%AF%A6%E5%81%9A%E6%8E%A2%E7%B4%A2-nan-tagging/">&raquo; Read More</a>
     </p>
-	</section>
+  </section>
 
-	<footer class="post-meta">
-    <time class="post-date">2018-04-18
-        in
-        <a href="https://devpoga.org/categories/essays/">Essays</a>
-          
-        
+  <footer class="post-meta">
+    <time class="post-date"
+      >2018-04-18
+      Tagged
+      <a href="https://devpoga.org/tags/luajit/">Luajit</a>
+      <a href="https://devpoga.org/tags/%E5%B8%B6%E6%82%A8%E8%AE%80%E5%8E%9F%E7%A2%BC/">帶您讀原碼</a>
+      <a href="https://devpoga.org/tags/compiler/">Compiler</a>
+      
+      
+
+      in
+      <a href="https://devpoga.org/categories/essays/">Essays</a>
+      
+      
     </time>
-	</footer>
-  <hr/>
+  </footer>
+  <hr />
 </article>
 
   
   <article class="post">
-	<header class="post-header">
-		<h1 class="post-title"><a href="https://devpoga.org/post/2018-02-06_%E9%81%BA%E5%BF%98%E7%9A%84%E7%94%9F%E7%94%A2%E5%8A%9B/">遺忘的生產力</a></h1>
-	</header>
+  <header class="post-header">
+    <h1 class="post-title">
+      <a href="https://devpoga.org/post/2018-02-06_%E9%81%BA%E5%BF%98%E7%9A%84%E7%94%9F%E7%94%A2%E5%8A%9B/">遺忘的生產力</a>
+    </h1>
+  </header>
 
-  	<section class="post-excerpt">
+  <section class="post-excerpt">
     <p>
       <p>人們談到生產力，似乎就免不了討論各種蒐集想法、整理心得的工具。彷彿忘了的東西都是一種損失。</p>
-<p>與其努力記下所有事情，不如試試盡情遺忘吧。</p> <a class="read-more" href="/post/2018-02-06_%E9%81%BA%E5%BF%98%E7%9A%84%E7%94%9F%E7%94%A2%E5%8A%9B/">&raquo; Read More</a>
+<p>與其努力記下所有事情，不如試試盡情遺忘吧。</p>
+      <a class="read-more" href="/post/2018-02-06_%E9%81%BA%E5%BF%98%E7%9A%84%E7%94%9F%E7%94%A2%E5%8A%9B/">&raquo; Read More</a>
     </p>
-	</section>
+  </section>
 
-	<footer class="post-meta">
-    <time class="post-date">2018-02-06
-        in
-        <a href="https://devpoga.org/categories/essays/">Essays</a>
-          
-        
+  <footer class="post-meta">
+    <time class="post-date"
+      >2018-02-06
+      Tagged
+      <a href="https://devpoga.org/tags/productivity/">Productivity</a>
+      
+      
+
+      in
+      <a href="https://devpoga.org/categories/essays/">Essays</a>
+      
+      
     </time>
-	</footer>
-  <hr/>
+  </footer>
+  <hr />
 </article>
 
   
   <article class="post">
-	<header class="post-header">
-		<h1 class="post-title"><a href="https://devpoga.org/post/2018-04-10_why_serverless/">Why Serverless</a></h1>
-	</header>
+  <header class="post-header">
+    <h1 class="post-title">
+      <a href="https://devpoga.org/post/2018-04-10_why_serverless/">Why Serverless</a>
+    </h1>
+  </header>
 
-  	<section class="post-excerpt">
+  <section class="post-excerpt">
     <p>
       <blockquote>
 <p>本文擷取、修訂自 2018.03.29 我在 iThome Serverless All-Star 的分享的逐字稿</p>
 </blockquote>
 <hr>
-<p>究竟為什麼要用 Serverless 呢？</p> <a class="read-more" href="/post/2018-04-10_why_serverless/">&raquo; Read More</a>
+<p>究竟為什麼要用 Serverless 呢？</p>
+      <a class="read-more" href="/post/2018-04-10_why_serverless/">&raquo; Read More</a>
     </p>
-	</section>
+  </section>
 
-	<footer class="post-meta">
-    <time class="post-date">2018-02-06
-        in
-        <a href="https://devpoga.org/categories/essays/">Essays</a>
-          <a href="https://devpoga.org/categories/talks/">Talks</a>
-          
-        
+  <footer class="post-meta">
+    <time class="post-date"
+      >2018-02-06
+      Tagged
+      <a href="https://devpoga.org/tags/serverless/">Serverless</a>
+      
+      
+
+      in
+      <a href="https://devpoga.org/categories/essays/">Essays</a>
+      <a href="https://devpoga.org/categories/talks/">Talks</a>
+      
+      
     </time>
-	</footer>
-  <hr/>
+  </footer>
+  <hr />
 </article>
 
   
   <article class="post">
-	<header class="post-header">
-		<h1 class="post-title"><a href="https://devpoga.org/post/2017-12-22_kappa-architecture%E4%BB%A5%E8%B3%87%E6%96%99%E7%82%BA%E4%B8%AD%E5%BF%83%E7%9A%84%E7%B3%BB%E7%B5%B1%E6%9E%B6%E6%A7%8B/">Kappa Architecture：以資料為中心的系統架構</a></h1>
-	</header>
+  <header class="post-header">
+    <h1 class="post-title">
+      <a href="https://devpoga.org/post/2017-12-22_kappa-architecture%E4%BB%A5%E8%B3%87%E6%96%99%E7%82%BA%E4%B8%AD%E5%BF%83%E7%9A%84%E7%B3%BB%E7%B5%B1%E6%9E%B6%E6%A7%8B/">Kappa Architecture：以資料為中心的系統架構</a>
+    </h1>
+  </header>
 
-  	<section class="post-excerpt">
+  <section class="post-excerpt">
     <p>
       <p>在開發軟體時，有許多眾所周知的架構模式（architecture pattern）可做為參考。例如最廣為人知的 <a href="https://www.wikiwand.com/zh-tw/MVC">MVC 架構</a>。採用這些常用模式，能大幅減低溝通成本，各種 Framework 也能提高開發速度。</p>
-<p>現在已經是個以資料為中心的環境，各種商業決策都依賴大量的資料。因此，系統必須能提供各種資料格式與查詢方式供各種需求使用。在這樣的環境中，也慢慢發展出許多特有的模式。</p> <a class="read-more" href="/post/2017-12-22_kappa-architecture%E4%BB%A5%E8%B3%87%E6%96%99%E7%82%BA%E4%B8%AD%E5%BF%83%E7%9A%84%E7%B3%BB%E7%B5%B1%E6%9E%B6%E6%A7%8B/">&raquo; Read More</a>
+<p>現在已經是個以資料為中心的環境，各種商業決策都依賴大量的資料。因此，系統必須能提供各種資料格式與查詢方式供各種需求使用。在這樣的環境中，也慢慢發展出許多特有的模式。</p>
+      <a class="read-more" href="/post/2017-12-22_kappa-architecture%E4%BB%A5%E8%B3%87%E6%96%99%E7%82%BA%E4%B8%AD%E5%BF%83%E7%9A%84%E7%B3%BB%E7%B5%B1%E6%9E%B6%E6%A7%8B/">&raquo; Read More</a>
     </p>
-	</section>
+  </section>
 
-	<footer class="post-meta">
-    <time class="post-date">2017-12-22
-        in
-        <a href="https://devpoga.org/categories/essays/">Essays</a>
-          <a href="https://devpoga.org/categories/talks/">Talks</a>
-          
-        
+  <footer class="post-meta">
+    <time class="post-date"
+      >2017-12-22
+      Tagged
+      <a href="https://devpoga.org/tags/%E7%A7%91%E6%99%AE/">科普</a>
+      <a href="https://devpoga.org/tags/%E7%B3%BB%E7%B5%B1%E6%9E%B6%E6%A7%8B/">系統架構</a>
+      <a href="https://devpoga.org/tags/log/">Log</a>
+      <a href="https://devpoga.org/tags/kappa/">Kappa</a>
+      
+      
+
+      in
+      <a href="https://devpoga.org/categories/essays/">Essays</a>
+      <a href="https://devpoga.org/categories/talks/">Talks</a>
+      
+      
     </time>
-	</footer>
-  <hr/>
+  </footer>
+  <hr />
 </article>
 
   
   <article class="post">
-	<header class="post-header">
-		<h1 class="post-title"><a href="https://devpoga.org/post/2017-10-02_minimum_viable_ownership/">Minimum Viable Ownership</a></h1>
-	</header>
+  <header class="post-header">
+    <h1 class="post-title">
+      <a href="https://devpoga.org/post/2017-10-02_minimum_viable_ownership/">Minimum Viable Ownership</a>
+    </h1>
+  </header>
 
-  	<section class="post-excerpt">
+  <section class="post-excerpt">
     <p>
       <p>我始終不喜歡「擁有」的概念。那是種排他、缺乏多樣性的想法。</p>
-<p>Open Source 也是如此。</p> <a class="read-more" href="/post/2017-10-02_minimum_viable_ownership/">&raquo; Read More</a>
+<p>Open Source 也是如此。</p>
+      <a class="read-more" href="/post/2017-10-02_minimum_viable_ownership/">&raquo; Read More</a>
     </p>
-	</section>
+  </section>
 
-	<footer class="post-meta">
-    <time class="post-date">2017-10-02
-        in
-        <a href="https://devpoga.org/categories/essays/">Essays</a>
-          
-        
+  <footer class="post-meta">
+    <time class="post-date"
+      >2017-10-02
+      Tagged
+      <a href="https://devpoga.org/tags/open-source/">Open Source</a>
+      <a href="https://devpoga.org/tags/ownership/">Ownership</a>
+      <a href="https://devpoga.org/tags/burnout/">Burnout</a>
+      
+      
+
+      in
+      <a href="https://devpoga.org/categories/essays/">Essays</a>
+      
+      
     </time>
-	</footer>
-  <hr/>
+  </footer>
+  <hr />
 </article>
 
   
   <article class="post">
-	<header class="post-header">
-		<h1 class="post-title"><a href="https://devpoga.org/post/2017-06-04_%E5%B9%B3%E8%A1%8C%E4%B8%96%E7%95%8C/">平行世界</a></h1>
-	</header>
+  <header class="post-header">
+    <h1 class="post-title">
+      <a href="https://devpoga.org/post/2017-06-04_%E5%B9%B3%E8%A1%8C%E4%B8%96%E7%95%8C/">平行世界</a>
+    </h1>
+  </header>
 
-  	<section class="post-excerpt">
+  <section class="post-excerpt">
     <p>
       <p>有些事情總讓人覺得，Groundhog Day 跟平行世界是真的存在的。</p>
-<p><img src="/post/2017-06-04_%E5%B9%B3%E8%A1%8C%E4%B8%96%E7%95%8C/images/1.png" alt="image"></p> <a class="read-more" href="/post/2017-06-04_%E5%B9%B3%E8%A1%8C%E4%B8%96%E7%95%8C/">&raquo; Read More</a>
+<p><img src="/post/2017-06-04_%E5%B9%B3%E8%A1%8C%E4%B8%96%E7%95%8C/images/1.png" alt="image"></p>
+      <a class="read-more" href="/post/2017-06-04_%E5%B9%B3%E8%A1%8C%E4%B8%96%E7%95%8C/">&raquo; Read More</a>
     </p>
-	</section>
+  </section>
 
-	<footer class="post-meta">
-    <time class="post-date">2017-06-04
-        in
-        <a href="https://devpoga.org/categories/essays/">Essays</a>
-          
-        
+  <footer class="post-meta">
+    <time class="post-date"
+      >2017-06-04
+      Tagged
+      
+
+      in
+      <a href="https://devpoga.org/categories/essays/">Essays</a>
+      
+      
     </time>
-	</footer>
-  <hr/>
+  </footer>
+  <hr />
 </article>
 
   
   <article class="post">
-	<header class="post-header">
-		<h1 class="post-title"><a href="https://devpoga.org/post/2017-02-16_%E5%8F%88%E5%9B%9E%E4%BE%86%E7%94%A8-omnifocus-%E4%BA%86/">又回來用 Omnifocus 了</a></h1>
-	</header>
+  <header class="post-header">
+    <h1 class="post-title">
+      <a href="https://devpoga.org/post/2017-02-16_%E5%8F%88%E5%9B%9E%E4%BE%86%E7%94%A8-omnifocus-%E4%BA%86/">又回來用 Omnifocus 了</a>
+    </h1>
+  </header>
 
-  	<section class="post-excerpt">
+  <section class="post-excerpt">
     <p>
-      <p>當初那忙到吐血的兩三年中，幾乎都是靠著 Omnifocus 在維持生活的運作。</p> <a class="read-more" href="/post/2017-02-16_%E5%8F%88%E5%9B%9E%E4%BE%86%E7%94%A8-omnifocus-%E4%BA%86/">&raquo; Read More</a>
+      <p>當初那忙到吐血的兩三年中，幾乎都是靠著 Omnifocus 在維持生活的運作。</p>
+      <a class="read-more" href="/post/2017-02-16_%E5%8F%88%E5%9B%9E%E4%BE%86%E7%94%A8-omnifocus-%E4%BA%86/">&raquo; Read More</a>
     </p>
-	</section>
+  </section>
 
-	<footer class="post-meta">
-    <time class="post-date">2017-02-16
-        in
-        <a href="https://devpoga.org/categories/essays/">Essays</a>
-          
-        
+  <footer class="post-meta">
+    <time class="post-date"
+      >2017-02-16
+      Tagged
+      <a href="https://devpoga.org/tags/omnifocus/">Omnifocus</a>
+      <a href="https://devpoga.org/tags/productivity/">Productivity</a>
+      
+      
+
+      in
+      <a href="https://devpoga.org/categories/essays/">Essays</a>
+      
+      
     </time>
-	</footer>
-  <hr/>
+  </footer>
+  <hr />
 </article>
 
   
   <article class="post">
-	<header class="post-header">
-		<h1 class="post-title"><a href="https://devpoga.org/post/2016-05-17_%E8%A9%B2%E6%80%8E%E6%A8%A3%E6%95%99%E4%BB%BB%E4%BD%95%E4%BA%BA%E4%BB%BB%E4%BD%95%E6%8A%80%E8%83%BD/">該怎樣教任何人任何技能</a></h1>
-	</header>
+  <header class="post-header">
+    <h1 class="post-title">
+      <a href="https://devpoga.org/post/2016-05-17_%E8%A9%B2%E6%80%8E%E6%A8%A3%E6%95%99%E4%BB%BB%E4%BD%95%E4%BA%BA%E4%BB%BB%E4%BD%95%E6%8A%80%E8%83%BD/">該怎樣教任何人任何技能</a>
+    </h1>
+  </header>
 
-  	<section class="post-excerpt">
+  <section class="post-excerpt">
     <p>
       <p><img src="/post/2016-05-17_%E8%A9%B2%E6%80%8E%E6%A8%A3%E6%95%99%E4%BB%BB%E4%BD%95%E4%BA%BA%E4%BB%BB%E4%BD%95%E6%8A%80%E8%83%BD/images/1.jpeg" alt="image"></p>
-<p>看到 <a href="https://medium.com/@spepechen/%E6%B0%A3%E9%A4%92%E6%AD%A2%E6%AD%A5-%E8%A9%B2%E6%80%8E%E6%A8%A3%E6%95%99%E6%96%87%E7%B5%84%E7%9A%84%E4%BA%BA%E5%AF%AB%E7%A8%8B%E5%BC%8F-c1caf020b457#.6bfonxld4">氣餒止步！該怎樣教文組的人寫程式？</a> 這篇，講一下自己的教學經驗吧。</p> <a class="read-more" href="/post/2016-05-17_%E8%A9%B2%E6%80%8E%E6%A8%A3%E6%95%99%E4%BB%BB%E4%BD%95%E4%BA%BA%E4%BB%BB%E4%BD%95%E6%8A%80%E8%83%BD/">&raquo; Read More</a>
+<p>看到 <a href="https://medium.com/@spepechen/%E6%B0%A3%E9%A4%92%E6%AD%A2%E6%AD%A5-%E8%A9%B2%E6%80%8E%E6%A8%A3%E6%95%99%E6%96%87%E7%B5%84%E7%9A%84%E4%BA%BA%E5%AF%AB%E7%A8%8B%E5%BC%8F-c1caf020b457#.6bfonxld4">氣餒止步！該怎樣教文組的人寫程式？</a> 這篇，講一下自己的教學經驗吧。</p>
+      <a class="read-more" href="/post/2016-05-17_%E8%A9%B2%E6%80%8E%E6%A8%A3%E6%95%99%E4%BB%BB%E4%BD%95%E4%BA%BA%E4%BB%BB%E4%BD%95%E6%8A%80%E8%83%BD/">&raquo; Read More</a>
     </p>
-	</section>
+  </section>
 
-	<footer class="post-meta">
-    <time class="post-date">2016-05-17
-        in
-        <a href="https://devpoga.org/categories/essays/">Essays</a>
-          
-        
+  <footer class="post-meta">
+    <time class="post-date"
+      >2016-05-17
+      Tagged
+      <a href="https://devpoga.org/tags/story-telling/">Story Telling</a>
+      <a href="https://devpoga.org/tags/teaching/">Teaching</a>
+      <a href="https://devpoga.org/tags/communicating/">Communicating</a>
+      
+      
+
+      in
+      <a href="https://devpoga.org/categories/essays/">Essays</a>
+      
+      
     </time>
-	</footer>
-  <hr/>
+  </footer>
+  <hr />
 </article>
 
   
