@@ -4,17 +4,47 @@
   
   <url>
     <loc>https://devpoga.org/</loc>
-    <lastmod>2020-11-21T00:00:00+00:00</lastmod>
+    <lastmod>2020-11-29T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://devpoga.org/post/2020-11-21-a-taste-of-ocaml-predictable-performance/</loc>
-    <lastmod>2020-11-21T00:00:00+00:00</lastmod>
+    <loc>https://devpoga.org/categories/</loc>
+    <lastmod>2020-11-29T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://devpoga.org/categories/</loc>
+    <loc>https://devpoga.org/tags/g0v/</loc>
+    <lastmod>2020-11-29T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://devpoga.org/tags/mastodon/</loc>
+    <lastmod>2020-11-29T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://devpoga.org/post/</loc>
+    <lastmod>2020-11-29T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://devpoga.org/tags/</loc>
+    <lastmod>2020-11-29T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://devpoga.org/categories/talks/</loc>
+    <lastmod>2020-11-29T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://devpoga.org/post/2020-11-29-g0v.social-journey/</loc>
+    <lastmod>2020-11-29T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://devpoga.org/post/2020-11-21-a-taste-of-ocaml-predictable-performance/</loc>
     <lastmod>2020-11-21T00:00:00+00:00</lastmod>
   </url>
   
@@ -39,17 +69,7 @@
   </url>
   
   <url>
-    <loc>https://devpoga.org/post/</loc>
-    <lastmod>2020-11-21T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://devpoga.org/tags/programming/</loc>
-    <lastmod>2020-11-21T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://devpoga.org/tags/</loc>
     <lastmod>2020-11-21T00:00:00+00:00</lastmod>
   </url>
   
@@ -160,11 +180,6 @@
   
   <url>
     <loc>https://devpoga.org/post/2019-11-06-running-service-production/</loc>
-    <lastmod>2019-11-06T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://devpoga.org/categories/talks/</loc>
     <lastmod>2019-11-06T00:00:00+00:00</lastmod>
   </url>
   
