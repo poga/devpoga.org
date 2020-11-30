@@ -13,8 +13,6 @@ categories:
 summary: "Modern compilers usually composed by multiple stages: parsers, optimizers, linkers, and assemblers. Let's go through it one by one to have a better understanding of the OCaml compiler. "
 ---
 
-**This article is a part of [Learn OCaml the Hard Way](/tags/learn-ocaml-the-hard-way/).**
-
 Modern compilers are composed by multiple stages: parsers, optimizers, linkers, and assemblers. Let's go through it one by one to have a better understanding of the OCaml compiler. Here's the OCaml's compilation pipeline:
 
 ![](/post/2020-11-30-ocaml-compiler-pipeline/ocaml-pipeline.png)
@@ -26,6 +24,10 @@ From Real World OCaml:
 > Each source file represents a _compilation unit_ that is built separately. The compiler generates intermediate files with different filename extensions to use as it advances through the compilation stages. The linker takes a collection of compiled units and produces a standalone executable or library archive that can be reused by other applications.
 
 We can easily go through intermediate representations via poking into these files.
+
+---
+
+This is the second issue of [Learn OCaml the Hard Way](https://learnocamlthehardway.substack.com/welcome). A publication about learning OCaml from the ground up.
 
 ---
 
