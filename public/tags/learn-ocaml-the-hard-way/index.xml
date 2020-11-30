@@ -6,7 +6,17 @@
     <description>Recent content in Learn OCaml the Hard Way on Dev.Poga</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 21 Nov 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://devpoga.org/tags/learn-ocaml-the-hard-way/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 30 Nov 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://devpoga.org/tags/learn-ocaml-the-hard-way/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Going through the OCaml compiler pipeline (manually)</title>
+      <link>https://devpoga.org/post/2020-11-30-ocaml-compiler-pipeline/</link>
+      <pubDate>Mon, 30 Nov 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://devpoga.org/post/2020-11-30-ocaml-compiler-pipeline/</guid>
+      <description>&lt;p&gt;Modern compilers usually composed by multiple stages: parsers, optimizers, linkers, and assemblers. Here&amp;rsquo;s the OCaml&amp;rsquo;s compilation pipeline:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://devpoga.org/post/2020-11-30-ocaml-compiler-pipeline/ocaml-pipeline.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>A Taste of OCaml&#39;s Predictable Performance</title>
       <link>https://devpoga.org/post/2020-11-21-a-taste-of-ocaml-predictable-performance/</link>
