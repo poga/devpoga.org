@@ -13,8 +13,7 @@
       <pubDate>Mon, 30 Nov 2020 00:00:00 +0000</pubDate>
       
       <guid>https://devpoga.org/post/2020-11-30-ocaml-compiler-pipeline/</guid>
-      <description>&lt;p&gt;Modern compilers usually composed by multiple stages: parsers, optimizers, linkers, and assemblers. Here&amp;rsquo;s the OCaml&amp;rsquo;s compilation pipeline:&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://devpoga.org/post/2020-11-30-ocaml-compiler-pipeline/ocaml-pipeline.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;</description>
+      <description>Modern compilers usually composed by multiple stages: parsers, optimizers, linkers, and assemblers. Let&amp;rsquo;s go through it one by one to have a better understanding of the OCaml compiler.</description>
     </item>
     
     <item>
@@ -32,8 +31,7 @@
       <pubDate>Sat, 21 Nov 2020 00:00:00 +0000</pubDate>
       
       <guid>https://devpoga.org/post/2020-11-21-a-taste-of-ocaml-predictable-performance/</guid>
-      <description>&lt;p&gt;&lt;img src=&#34;https://devpoga.org/post/2020-11-21-a-taste-of-ocaml-predictable-performance/colour-logo.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;https://github.com/mirage/eqaf&#34;&gt;eqaf&lt;/a&gt;, a constant-time compare function implementation in &lt;a href=&#34;https://ocaml.org/&#34;&gt;OCaml&lt;/a&gt;, is a great case to demonstrate the &lt;a href=&#34;https://signalsandthreads.com/language-design/#0008401&#34;&gt;predictable performance of OCaml&amp;rsquo;s compiler&lt;/a&gt;. Why?&lt;/p&gt;</description>
+      <description>&lt;img src=&#34;https://devpoga.org/post/2020-11-21-a-taste-of-ocaml-predictable-performance/colour-logo.png&#34; alt=&#34;&#34;&gt; &lt;a href=&#34;https://github.com/mirage/eqaf&#34;&gt;eqaf&lt;/a&gt;, a constant-time compare function implementation in &lt;a href=&#34;https://ocaml.org/&#34;&gt;OCaml&lt;/a&gt;, is a great case to demonstrate the &lt;a href=&#34;https://signalsandthreads.com/language-design/#0008401&#34;&gt;predictable performance of OCaml&amp;rsquo;s compiler&lt;/a&gt;. Why?</description>
     </item>
     
     <item>

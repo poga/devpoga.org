@@ -9,13 +9,15 @@ tags:
   - Learn OCaml the Hard Way
 categories:
   - Essays
+
+summary: "Modern compilers usually composed by multiple stages: parsers, optimizers, linkers, and assemblers. Let's go through it one by one to have a better understanding of the OCaml compiler. "
 ---
 
-Modern compilers usually composed by multiple stages: parsers, optimizers, linkers, and assemblers. Here's the OCaml's compilation pipeline:
+**This article is a part of [Learn OCaml the Hard Way](/tags/learn-ocaml-the-hard-way/).**
+
+Modern compilers are composed by multiple stages: parsers, optimizers, linkers, and assemblers. Let's go through it one by one to have a better understanding of the OCaml compiler. Here's the OCaml's compilation pipeline:
 
 ![](/post/2020-11-30-ocaml-compiler-pipeline/ocaml-pipeline.png)
-
-<!--more-->
 
 source: https://dev.realworldocaml.org/compiler-frontend.html
 

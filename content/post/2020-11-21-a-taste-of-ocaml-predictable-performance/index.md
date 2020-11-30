@@ -9,13 +9,15 @@ tags:
   - Learn OCaml the Hard Way
 categories:
   - Essays
+
+summary: "![](/post/2020-11-21-a-taste-of-ocaml-predictable-performance/colour-logo.png) [eqaf](https://github.com/mirage/eqaf), a constant-time compare function implementation in [OCaml](https://ocaml.org/), is a great case to demonstrate the [predictable performance of OCaml's compiler](https://signalsandthreads.com/language-design/#0008401). Why?"
 ---
+
+**This article is a part of [Learn OCaml the Hard Way](/tags/learn-ocaml-the-hard-way/).**
 
 ![](/post/2020-11-21-a-taste-of-ocaml-predictable-performance/colour-logo.png)
 
 [eqaf](https://github.com/mirage/eqaf), a constant-time compare function implementation in [OCaml](https://ocaml.org/), is a great case to demonstrate the [predictable performance of OCaml's compiler](https://signalsandthreads.com/language-design/#0008401). Why?
-
-<!--more-->
 
 - The goal of a constant-time compare function is to avoid [timing attacks](https://en.wikipedia.org/wiki/Timing_attack), which requires fully deterministic and predictable runtime performance.
 - Usually, cryptography functions are written in assembly to have total control of resulting binary and avoid unneeded optimization by the compiler.

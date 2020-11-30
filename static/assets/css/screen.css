@@ -162,6 +162,11 @@ a:visited {
   text-decoration: underline;
 }
 
+.post-excerpt > p > a.read-more {
+  display: block;
+  margin-top: 1em;
+}
+
 a.read-more,
 a.read-more:hover,
 a.read-more:visited {
