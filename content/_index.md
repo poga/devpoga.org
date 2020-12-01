@@ -6,11 +6,9 @@ I work on many different things in the area of technology, design, privacy, and 
 
 - [g0v.social](https://g0v.social), a federated social network.
 
-- Extends [Redis](https://redis.io/) functionality with modules, [redis-rating](https://github.com/poga/redis-rating) and [redis-percentile](https://github.com/poga/redis-percentile).
+- Extends [Redis](https://redis.io/) functionality with modules, [redis-rating](https://github.com/poga/redis-rating), [redis-percentile](https://github.com/poga/redis-percentile), and [zx](https://github.com/humble-tools/zx).
 
 - A safe actor scripting framework for rust, [actix-lua](https://github.com/poga/actix-lua).
-
-- A decentralized dynamic data sharing and storage system, [PTT.ai-next](https://github.com/ailabstw/pttai-next).
 
 - Privacy-aware machine learning resources, [Awesome Federated Learning](https://github.com/poga/awesome-federated-learning).
 
