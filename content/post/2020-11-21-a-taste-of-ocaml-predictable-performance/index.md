@@ -23,7 +23,7 @@ summary: "![](/post/2020-11-21-a-taste-of-ocaml-predictable-performance/colour-l
 
 ---
 
-This is the first issue of [Learn OCaml the Hard Way](https://learnocamlthehardway.substack.com/welcome). A publication about learning OCaml from the ground up.
+**This is the first issue of [Learn OCaml the Hard Way](https://learnocamlthehardway.substack.com/welcome). Subscribe to get notified when a new article is out.**
 
 ---
 

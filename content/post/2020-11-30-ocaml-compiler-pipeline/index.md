@@ -27,7 +27,7 @@ We can easily go through intermediate representations via poking into these file
 
 ---
 
-This is the second issue of [Learn OCaml the Hard Way](https://learnocamlthehardway.substack.com/welcome). A publication about learning OCaml from the ground up.
+**This is the second issue of [Learn OCaml the Hard Way](https://learnocamlthehardway.substack.com/welcome). Subscribe to get notified when a new article is out.**
 
 ---
 
