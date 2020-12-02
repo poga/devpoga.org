@@ -101,6 +101,10 @@ li {
   line-height: 1.55;
 }
 
+pre {
+  width: 100%;
+}
+
 code,
 tt,
 pre {
