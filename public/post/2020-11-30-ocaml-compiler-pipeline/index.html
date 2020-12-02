@@ -234,8 +234,8 @@ $ js_of_ocaml t.byte
 <h2 id="native-compilation">Native Compilation</h2>
 <p>Finally, we can generate native binaries with <code>ocamlopt t.ml</code>. You can get <code>ocamlopt</code> to output the assembly with the <code>-S</code> flag.</p>
 <p>If we want the best performance (and we usually does). We should use the compiler with <a href="https://caml.inria.fr/pub/docs/manual-ocaml/flambda.html">flambda optimizers</a>. you can install a flambda-optimized OCaml with <code>opam switch</code>, such as:</p>
-<pre><code>$ opam switch create 4.11.1+flambda
-</code></pre><hr>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ opam switch create 4.11.1+flambda
+</code></pre></div><hr>
 <h2 id="extra-top-level">Extra: Top-level</h2>
 <p>The OCaml top-level supports loading both source code or bytecodes. To load a source code, use the <code>#mod_use</code> command. To load a bytecode, use <code>#load</code>.</p>
 <hr>

@@ -204,7 +204,7 @@ Finally, we can generate native binaries with `ocamlopt t.ml`. You can get `ocam
 
 If we want the best performance (and we usually does). We should use the compiler with [flambda optimizers](https://caml.inria.fr/pub/docs/manual-ocaml/flambda.html). you can install a flambda-optimized OCaml with `opam switch`, such as:
 
-```
+```bash
 $ opam switch create 4.11.1+flambda
 ```
 
