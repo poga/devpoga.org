@@ -228,4 +228,4 @@ The OCaml top-level supports loading both source code or bytecodes. To load a so
 
 ---
 
-**This is the second issue of [Learn OCaml the Hard Way](tags/learn-ocaml-the-hard-way/). Subscribe to get notified when a new article is out.**
+Like this post? [Subscribe](https://learnocamlthehardway.substack.com/welcome) to **Learn OCaml the Hard Way** to get more!
