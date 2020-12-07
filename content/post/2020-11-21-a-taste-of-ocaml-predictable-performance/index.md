@@ -13,6 +13,13 @@ categories:
 summary: "![](/post/2020-11-21-a-taste-of-ocaml-predictable-performance/colour-logo.png) [eqaf](https://github.com/mirage/eqaf), a constant-time compare function implementation in [OCaml](https://ocaml.org/), is a great case to demonstrate the [predictable performance of OCaml's compiler](https://signalsandthreads.com/language-design/#0008401). Why?"
 ---
 
+**[Learn OCaml the Hard Way](/tags/learn-ocaml-the-hard-way/) is a series about learning OCaml from the ground up:**
+
+- [A taste of OCaml's predictable performance](/post/2020-11-21-a-taste-of-ocaml-predictable-performance/) **(You're here)**
+- [Going through the OCaml compiler pipeline (manually)](/post/2020-11-30-ocaml-compiler-pipeline/)
+
+---
+
 ![](/post/2020-11-21-a-taste-of-ocaml-predictable-performance/colour-logo.png)
 
 [eqaf](https://github.com/mirage/eqaf), a constant-time compare function implementation in [OCaml](https://ocaml.org/), is a great case to demonstrate the [predictable performance of OCaml's compiler](https://signalsandthreads.com/language-design/#0008401). Why?

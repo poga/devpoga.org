@@ -13,6 +13,13 @@ categories:
 summary: "Modern compilers usually composed by multiple stages: parsers, optimizers, linkers, and assemblers. Let's go through it one by one to have a better understanding of the OCaml compiler. "
 ---
 
+**[Learn OCaml the Hard Way](/tags/learn-ocaml-the-hard-way/) is a series about learning OCaml from the ground up:**
+
+- [A taste of OCaml's predictable performance](/post/2020-11-21-a-taste-of-ocaml-predictable-performance/)
+- [Going through the OCaml compiler pipeline (manually)](/post/2020-11-30-ocaml-compiler-pipeline/) **(You're here)**
+
+---
+
 Modern compilers are composed by multiple stages: parsers, optimizers, linkers, and assemblers. Let's go through it one by one to have a better understanding of the OCaml compiler. Here's the OCaml's compilation pipeline:
 
 ![](/post/2020-11-30-ocaml-compiler-pipeline/ocaml-pipeline.png)
@@ -24,10 +31,6 @@ From Real World OCaml:
 > Each source file represents a _compilation unit_ that is built separately. The compiler generates intermediate files with different filename extensions to use as it advances through the compilation stages. The linker takes a collection of compiled units and produces a standalone executable or library archive that can be reused by other applications.
 
 We can easily go through intermediate representations via poking into these files.
-
----
-
-**This is the second issue of [Learn OCaml the Hard Way](https://learnocamlthehardway.substack.com/welcome). Subscribe to get notified when a new article is out.**
 
 ---
 
@@ -222,3 +225,7 @@ The OCaml top-level supports loading both source code or bytecodes. To load a so
 - [The Compiler Frontend: Parsing and Type Checking](https://dev.realworldocaml.org/compiler-frontend.html)
 - [The Compiler Backend: Bytecode and Native code](https://dev.realworldocaml.org/compiler-backend.html)
 - [An introduction to OCaml PPX ecosystem](https://tarides.com/blog/2019-05-09-an-introduction-to-ocaml-ppx-ecosystem)
+
+---
+
+**This is the second issue of [Learn OCaml the Hard Way](tags/learn-ocaml-the-hard-way/). Subscribe to get notified when a new article is out.**
