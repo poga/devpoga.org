@@ -40,7 +40,7 @@ body {
   width: 80%;
   max-width: 750px;
   margin: 0 auto;
-  font-family: "Georgia", serif;
+  font-family: 'Spectral', serif;
   font-weight: 300;
   font-size: 1rem;
   line-height: 1.5;
@@ -407,6 +407,8 @@ a.nav-blog {
 
 .post-title {
   line-height: 1.2;
+  margin-bottom: 40px;
+  font-weight: 600;
 }
 
 .post-meta {
