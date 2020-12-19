@@ -6,7 +6,16 @@
     <description>Recent content in Posts on Dev.Poga</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 30 Nov 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://devpoga.org/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 19 Dec 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://devpoga.org/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Predictable performance of OCaml&#39;s module system</title>
+      <link>https://devpoga.org/post/2020-12-19_ocaml_predictable_module_functor/</link>
+      <pubDate>Sat, 19 Dec 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://devpoga.org/post/2020-12-19_ocaml_predictable_module_functor/</guid>
+      <description>&lt;img src=&#34;https://devpoga.org/post/2020-12-19_ocaml_predictable_module_functor/camel.jpg&#34; alt=&#34;&#34;&gt; OCaml&amp;rsquo;s &lt;a href=&#34;https://dev.realworldocaml.org/files-modules-and-programs.html&#34;&gt;module system&lt;/a&gt; can be a powerful tool for building generic code and structing systems. Functors are functions from modules to modules and they server an important role for the power of module system. However, I want to know if functors (and the module system) can be optimized away by the OCaml compiler.</description>
+    </item>
+    
     <item>
       <title>Going through the OCaml compiler pipeline (manually)</title>
       <link>https://devpoga.org/post/2020-11-30-ocaml-compiler-pipeline/</link>

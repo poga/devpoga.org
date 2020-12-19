@@ -17,6 +17,7 @@ summary: "Modern compilers usually composed by multiple stages: parsers, optimiz
 
 - [A taste of OCaml's predictable performance](/post/2020-11-21-a-taste-of-ocaml-predictable-performance/)
 - [Going through the OCaml compiler pipeline (manually)](/post/2020-11-30-ocaml-compiler-pipeline/) **(You're here)**
+- [Predictable Performance of OCaml's module system](/post/2020-12-19_ocaml_predictable_module_functor/)
 
 ---
 

@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    
+    <title>
+      
+      Predictable performance of OCaml&#39;s module system - Dev.Poga
+      
+		</title>
+
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta property="og:image" content="https://devpoga.org/og.png" />
+
+    
+    <link rel="stylesheet" type="text/css" href="/assets/css/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="/assets/css/icons.css" />
+    <link rel="stylesheet" type="text/css" href="/assets/css/screen.css" />
+    
+    <link href="https://fonts.googleapis.com/css?family=Bree+Serif|Lato:100,100i,300,300i,400,400i,700,700i|Source+Code+Pro:300,400,500,700" rel="stylesheet">
+    
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/jquery@1.12.4/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="/assets/bigfoot/dist/bigfoot.js"></script>
+    <link rel="stylesheet" type="text/css" href="/assets/bigfoot/dist/bigfoot-number.css" />
+    <script type="text/javascript">
+        $.bigfoot();
+    </script>
+    
+    
+
+    
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-88018665-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-88018665-1');
+</script>
+
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+
+</head>
+
+    <body class="post-template">
+        <header class="main-header">
+	<div class="main-header-content">
+    <img src="/me.jpg" class="avatar">
+		<h1 class="blog-title">
+			<a href="/">
+				
+           Dev.Poga
+				
+			</a>
+		</h1>
+		<h2 class="blog-description"></h2>
+	</div>
+
+	<div class="nav">
+    
+		
+    
+     <a href="https://devpoga.org/categories/essays/">Essays</a></li>
+    
+     <a href="https://devpoga.org/categories/talks/">Talks</a></li>
+    
+     <a href="https://devpoga.org/categories/notes/">Notes</a></li>
+    
+	</div>
+</header>
+
+        
+<main class="content" role="main">
+  <article class="post">
+    <header class="post-header">
+      <h2 class="post-title">Predictable performance of OCaml&#39;s module system</h2>
+      <section class="post-meta">
+        <time
+          class="post-date"
+          >2020-12-19</time
+        >
+        in
+        <a href="https://devpoga.org/categories/essays/">Essays</a>
+        
+        
+      </section>
+    </header>
+    <section class="post-content">
+      <p><strong><a href="/tags/learn-ocaml-the-hard-way/">Learn OCaml the Hard Way</a> is a series about learning OCaml from the ground up:</strong></p>
+<ul>
+<li><a href="/post/2020-11-21-a-taste-of-ocaml-predictable-performance/">A taste of OCaml&rsquo;s predictable performance</a></li>
+<li><a href="/post/2020-11-30-ocaml-compiler-pipeline/">Going through the OCaml compiler pipeline (manually)</a></li>
+<li><a href="/post/2020-12-19_ocaml_predictable_module_functor/">Predictable Performance of OCaml&rsquo;s module system</a> <strong>(You&rsquo;re here)</strong></li>
+</ul>
+<hr>
+<p><img src="/post/2020-12-19_ocaml_predictable_module_functor/camel.jpg" alt=""></p>
+<p>OCaml&rsquo;s module system can be a powerful tool for building generic code and structing systems. Functors are functions from modules to modules and they server an important role for the power of module system.</p>
+<p>Some common usages of functors <a href="https://dev.realworldocaml.org/functors.html">are</a>:</p>
+<ul>
+<li>Dependency Injection</li>
+<li>Autoextension of Modules</li>
+<li>Instantiating modules with state</li>
+</ul>
+<p>However, I want to know if functors (and the module system) can be optimized away by the OCaml compiler.</p>
+<p>The following codes are compiled with OCaml 4.11.1 with <a href="https://caml.inria.fr/pub/docs/manual-ocaml/flambda.html">flambda</a> enabled, running on <a href="https://godbolt.org/">Compiler Explorer</a>.</p>
+<hr>
+<h2 id="modules">Modules</h2>
+<p>First, I wonder if a simple module layer can break OCaml&rsquo;s claim of predictable performance. Here&rsquo;s a trivial function to compare two strings:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ocaml" data-lang="ocaml"><span style="color:#66d9ef">let</span> eq x y <span style="color:#f92672">=</span>
+  compare x y
+<span style="color:#75715e">(* camlExample__eq_29:
+</span><span style="color:#75715e">        subq    $8, %rsp
+</span><span style="color:#75715e">        movq    %rax, %rdi
+</span><span style="color:#75715e">        movq    %rbx, %rsi
+</span><span style="color:#75715e">        movq    caml_compare@GOTPCREL(%rip), %rax
+</span><span style="color:#75715e">        call    caml_c_call@PLT
+</span><span style="color:#75715e">.L100:
+</span><span style="color:#75715e">        movq    (%r14), %r15
+</span><span style="color:#75715e">        addq    $8, %rsp
+</span><span style="color:#75715e">        ret *)</span>
+</code></pre></div><p>If we wrap the type and the <code>compare</code> function with a module <code>ID</code>, the compiler still product the same assembly:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ocaml" data-lang="ocaml"><span style="color:#66d9ef">module</span> <span style="color:#66d9ef">type</span> <span style="color:#a6e22e">ID</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">sig</span>
+    <span style="color:#66d9ef">type</span> t
+    <span style="color:#66d9ef">val</span> <span style="color:#f92672">(=):</span> t <span style="color:#f92672">-&gt;</span> t <span style="color:#f92672">-&gt;</span> <span style="color:#66d9ef">int</span>
+<span style="color:#66d9ef">end</span>
+
+<span style="color:#66d9ef">module</span> <span style="color:#a6e22e">StringID</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">struct</span>
+    <span style="color:#66d9ef">type</span> t <span style="color:#f92672">=</span> <span style="color:#66d9ef">string</span>
+    <span style="color:#66d9ef">let</span> <span style="color:#f92672">(=)</span> <span style="color:#f92672">=</span> compare
+<span style="color:#66d9ef">end</span>
+
+<span style="color:#66d9ef">module</span> <span style="color:#a6e22e">Username</span><span style="color:#f92672">:</span> <span style="color:#a6e22e">ID</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">StringID</span>
+
+<span style="color:#66d9ef">let</span> eqUser x y <span style="color:#f92672">=</span>
+    Username.<span style="color:#f92672">(=)</span> x y
+
+<span style="color:#75715e">(* camlExample__eqUser_48:
+</span><span style="color:#75715e">        subq    $8, %rsp
+</span><span style="color:#75715e">        movq    %rax, %rdi
+</span><span style="color:#75715e">        movq    %rbx, %rsi
+</span><span style="color:#75715e">        movq    caml_compare@GOTPCREL(%rip), %rax
+</span><span style="color:#75715e">        call    caml_c_call@PLT
+</span><span style="color:#75715e">.L104:
+</span><span style="color:#75715e">        movq    (%r14), %r15
+</span><span style="color:#75715e">        addq    $8, %rsp
+</span><span style="color:#75715e">        ret *)</span>
+</code></pre></div><p>In this example, we put the actual implementation of comparing two string behind a module <code>ID</code> and its implementation <code>StringID</code>.</p>
+<p>We can see that the compiler removed all module infomations and produced exact same assembly for <code>eqUser</code> and <code>eq</code>. Quite impressive!</p>
+<hr>
+<h2 id="functors">Functors</h2>
+<p>The above example is way too trivial, what if we try some functors?</p>
+<p>Here&rsquo;s a functor example copied from <a href="https://dev.realworldocaml.org/functors.html">Real world&rsquo;s OCaml</a>:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ocaml" data-lang="ocaml"><span style="color:#66d9ef">module</span> <span style="color:#66d9ef">type</span> <span style="color:#a6e22e">JustAnInt</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">sig</span>
+    <span style="color:#66d9ef">val</span> x<span style="color:#f92672">:</span> <span style="color:#66d9ef">int</span>
+<span style="color:#66d9ef">end</span>
+
+<span style="color:#75715e">(* a functor which takes a JustAnInt and return a JustAnInt *)</span>
+<span style="color:#66d9ef">module</span> <span style="color:#a6e22e">Increment</span> <span style="color:#f92672">(</span><span style="color:#a6e22e">M</span><span style="color:#f92672">:</span> <span style="color:#a6e22e">JustAnInt</span><span style="color:#f92672">)</span> <span style="color:#f92672">:</span> <span style="color:#a6e22e">JustAnInt</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">struct</span>
+    <span style="color:#66d9ef">let</span> x <span style="color:#f92672">=</span> M.x <span style="color:#f92672">+</span> 1
+<span style="color:#66d9ef">end</span>
+
+<span style="color:#66d9ef">let</span> inc x <span style="color:#f92672">=</span>
+    x <span style="color:#f92672">+</span> 1
+
+<span style="color:#75715e">(* camlExample__inc_71:
+</span><span style="color:#75715e">        addq    $2, %rax
+</span><span style="color:#75715e">        ret
+</span><span style="color:#75715e">        *)</span>
+
+<span style="color:#66d9ef">module</span> <span style="color:#a6e22e">One</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">struct</span>
+    <span style="color:#66d9ef">let</span> x <span style="color:#f92672">=</span> 1
+<span style="color:#66d9ef">end</span>
+
+<span style="color:#66d9ef">module</span> <span style="color:#a6e22e">Two</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">Increment</span><span style="color:#f92672">(</span><span style="color:#a6e22e">One</span><span style="color:#f92672">)</span>
+
+<span style="color:#66d9ef">let</span> add_two y <span style="color:#f92672">=</span>
+    Two.x <span style="color:#f92672">+</span> y
+
+<span style="color:#75715e">(* camlExample__add_two_86:
+</span><span style="color:#75715e">        addq    $4, %rax
+</span><span style="color:#75715e">        ret
+</span><span style="color:#75715e">        *)</span>
+</code></pre></div><p>Here, we can see that the <code>add_two</code> function (which operate on top of a functor <code>Increment</code>) produces the same assembly as a trivial <code>inc</code> function.</p>
+<hr>
+<p>The above examples are trivial but build up my confidence to OCaml&rsquo;s predictable performance. I guess the simplicity of OCaml&rsquo;s syntax and semantics helped the compiler a lot?</p>
+<hr>
+<h2 id="references">References</h2>
+<ul>
+<li><a href="https://dev.realworldocaml.org/files-modules-and-programs.html">Files, Modules, and Programs</a></li>
+<li><a href="https://dev.realworldocaml.org/functors.html">Functors</a></li>
+</ul>
+<p><span>Photo by <a href="https://unsplash.com/@iaminbaltal?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Inbal Malca</a> on <a href="https://unsplash.com/@iaminbaltal?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span></p>
+<hr>
+<p>Like this post? <a href="https://learnocamlthehardway.substack.com/welcome">Subscribe</a> to <strong>Learn OCaml the Hard Way</strong> to get more!</p>
+
+    </section>
+    <footer class="post-footer">
+      <section class="tags post-meta">
+        Tagged
+        <a href="https://devpoga.org/tags/ocaml/">#OCaml</a>
+        <a href="https://devpoga.org/tags/compiler/">#Compiler</a>
+        <a href="https://devpoga.org/tags/programming/">#Programming</a>
+        <a href="https://devpoga.org/tags/learn-ocaml-the-hard-way/">#Learn OCaml the Hard Way</a>
+        
+      </section>
+      
+    </footer>
+  </article>
+</main>
+
+        <footer class="site-footer">
+  <section class="rss"><a class="subscribe-button icon-feed" href="/index.xml"></a></section>
+  
+  
+  <section class="copyright">&copy; 2020 Dev.Poga</section>
+</footer>
+
+
+
+
+    </body>
+</html>

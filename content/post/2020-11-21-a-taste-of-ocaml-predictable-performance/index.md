@@ -17,6 +17,7 @@ summary: "![](/post/2020-11-21-a-taste-of-ocaml-predictable-performance/colour-l
 
 - [A taste of OCaml's predictable performance](/post/2020-11-21-a-taste-of-ocaml-predictable-performance/) **(You're here)**
 - [Going through the OCaml compiler pipeline (manually)](/post/2020-11-30-ocaml-compiler-pipeline/)
+- [Predictable Performance of OCaml's module system](/post/2020-12-19_ocaml_predictable_module_functor/)
 
 ---
 
