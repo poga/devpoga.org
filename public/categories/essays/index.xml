@@ -8,7 +8,7 @@
     <language>en-us</language>
     <lastBuildDate>Sat, 19 Dec 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://devpoga.org/categories/essays/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Predictable performance of OCaml&#39;s module system</title>
+      <title>Predictable Performance of OCaml&#39;s Module System</title>
       <link>https://devpoga.org/post/2020-12-19_ocaml_predictable_module_functor/</link>
       <pubDate>Sat, 19 Dec 2020 00:00:00 +0000</pubDate>
       

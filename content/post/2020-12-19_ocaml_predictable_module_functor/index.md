@@ -1,5 +1,5 @@
 ---
-title: "Predictable performance of OCaml's module system"
+title: "Predictable Performance of OCaml's Module System"
 author: "poga"
 date: 2020-12-19
 tags:
