@@ -10,7 +10,7 @@ tags:
 categories:
   - Essays
 
-summary: "![](/post/2020-12-19_ocaml_predictable_module_functor/camel.jpg) OCaml's [module system](https://dev.realworldocaml.org/files-modules-and-programs.html) can be a powerful tool for building generic code and structuring systems. Functors are functions from modules to modules and they server an important role for the power of module system. However, I want to know if functors (and the module system) can be optimized away by the OCaml compiler."
+summary: "![](/post/2020-12-19_ocaml_predictable_module_functor/camel.jpg) OCaml's [module system](https://dev.realworldocaml.org/files-modules-and-programs.html) can be a powerful tool for building generic code and structuring systems. Functors are functions from modules to modules and they serve an important role for the power of module system. However, I want to know if functors (and the module system) can be optimized away by the OCaml compiler."
 ---
 
 **[Learn OCaml the Hard Way](/tags/learn-ocaml-the-hard-way/) is a series about learning OCaml from the ground up:**
@@ -23,7 +23,7 @@ summary: "![](/post/2020-12-19_ocaml_predictable_module_functor/camel.jpg) OCaml
 
 ![](/post/2020-12-19_ocaml_predictable_module_functor/camel.jpg)
 
-OCaml's module system can be a powerful tool for building generic code and structuring systems. Functors are functions from modules to modules and they server an important role for the power of module system.
+OCaml's module system can be a powerful tool for building generic code and structuring systems. Functors are functions from modules to modules and they serve an important role for the power of module system.
 
 Some common usages of functors [are](https://dev.realworldocaml.org/functors.html):
 
