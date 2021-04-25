@@ -6,7 +6,16 @@
     <description>Recent content in Categories on Dev.Poga</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 19 Dec 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://devpoga.org/categories/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 25 Apr 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://devpoga.org/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Notes</title>
+      <link>https://devpoga.org/categories/notes/</link>
+      <pubDate>Sun, 25 Apr 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://devpoga.org/categories/notes/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>Essays</title>
       <link>https://devpoga.org/categories/essays/</link>
@@ -22,15 +31,6 @@
       <pubDate>Sun, 29 Nov 2020 00:00:00 +0000</pubDate>
       
       <guid>https://devpoga.org/categories/talks/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Notes</title>
-      <link>https://devpoga.org/categories/notes/</link>
-      <pubDate>Sun, 07 Jun 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://devpoga.org/categories/notes/</guid>
       <description></description>
     </item>
     

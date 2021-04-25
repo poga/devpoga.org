@@ -6,7 +6,17 @@
     <description>Recent content in Notes on Dev.Poga</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 07 Jun 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://devpoga.org/tags/notes/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 25 Apr 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://devpoga.org/tags/notes/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>The Common Lisp Condition System</title>
+      <link>https://devpoga.org/post/2021-04-25_common_lisp_condition_system/</link>
+      <pubDate>Sun, 25 Apr 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://devpoga.org/post/2021-04-25_common_lisp_condition_system/</guid>
+      <description>Foundation of the Condition System Dynamic Variables A nested stack of environment variables. Defined with defvar, declare special, or defparameter.
+ In Common Lisp, it is not necessary to instantiate or refer to any separate context object nor enclose the environment in an object, because contextual information is available by means of dynamic variables, which can be accessed and rebound as appropriate. New means of passing contextual information can be provided by defining new dynamic variables, and utilizing this new information channel does not require creating or altering any existing abstractions.</description>
+    </item>
+    
     <item>
       <title>Concurrency in Clojure, Racket, and Gerbil Scheme</title>
       <link>https://devpoga.org/post/2020-06-07-concurrency-clojure-racket-gerbil/</link>
