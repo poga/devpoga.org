@@ -98,6 +98,42 @@
   <article class="post">
   <header class="post-header">
     <h1 class="post-title">
+      <a href="https://devpoga.org/post/2021-05-01_common_lisp_quicklisp_local_project/">Common Lisp Local Project Development with Quicklisp</a>
+    </h1>
+  </header>
+
+  <section class="post-excerpt">
+    <p>
+      Probably the cleanest way to do it:
+(pushnew (truename &#34;/projects/app/&#34;) ql:*local-project-directories* ) (ql:register-local-projects) (ql:quickload :app) From Use Quicklisp to load personal projects from arbitrary locations.
+ Alternatively, you can create a symlink in ~/quicklisp/local-projects/.
+      <a class="read-more" href="/post/2021-05-01_common_lisp_quicklisp_local_project/">&raquo; Read More</a>
+    </p>
+  </section>
+
+  <footer class="post-meta">
+    <time class="post-date"
+      >2021-05-01
+      Tagged
+      <a href="https://devpoga.org/tags/lisp/">Lisp</a>
+      <a href="https://devpoga.org/tags/programming/">Programming</a>
+      <a href="https://devpoga.org/tags/notes/">Notes</a>
+      
+      
+
+      in
+      <a href="https://devpoga.org/categories/notes/">Notes</a>
+      
+      
+    </time>
+  </footer>
+  <hr />
+</article>
+
+  
+  <article class="post">
+  <header class="post-header">
+    <h1 class="post-title">
       <a href="https://devpoga.org/post/2021-04-25_common_lisp_condition_system/">The Common Lisp Condition System</a>
     </h1>
   </header>
@@ -392,42 +428,6 @@
       <a href="https://devpoga.org/tags/programming/">Programming</a>
       <a href="https://devpoga.org/tags/domain-modeling/">Domain Modeling</a>
       <a href="https://devpoga.org/tags/software-engineering/">Software Engineering</a>
-      <a href="https://devpoga.org/tags/note/">Note</a>
-      
-      
-
-      in
-      <a href="https://devpoga.org/categories/notes/">Notes</a>
-      
-      
-    </time>
-  </footer>
-  <hr />
-</article>
-
-  
-  <article class="post">
-  <header class="post-header">
-    <h1 class="post-title">
-      <a href="https://devpoga.org/post/2020-04-09_zero-trust-network/">Zero Trust Network</a>
-    </h1>
-  </header>
-
-  <section class="post-excerpt">
-    <p>
-      <p><img src="/post/2020-04-09_zero-trust-network/book.jpg" alt=""></p>
-<p>Notes on the book <a href="https://www.amazon.com/Zero-Trust-Networks-Building-Untrusted/dp/1491962194">Zero Trust Network</a>.</p>
-      <a class="read-more" href="/post/2020-04-09_zero-trust-network/">&raquo; Read More</a>
-    </p>
-  </section>
-
-  <footer class="post-meta">
-    <time class="post-date"
-      >2020-04-09
-      Tagged
-      <a href="https://devpoga.org/tags/programming/">Programming</a>
-      <a href="https://devpoga.org/tags/security/">Security</a>
-      <a href="https://devpoga.org/tags/networking/">Networking</a>
       <a href="https://devpoga.org/tags/note/">Note</a>
       
       
