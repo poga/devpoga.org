@@ -9,13 +9,11 @@
     <lastBuildDate>Tue, 11 May 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://devpoga.org/post/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Haxe and Programming for Many Machines</title>
-      <link>https://devpoga.org/post/2021-05-11_programming_for_a_machine/</link>
+      <link>https://devpoga.org/post/2021-05-11_haxe_and_programming_for_many_machines/</link>
       <pubDate>Tue, 11 May 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://devpoga.org/post/2021-05-11_programming_for_a_machine/</guid>
-      <description>The title sounds obvious. We always program for a machine! A program won&amp;rsquo;t run itself!
-The &amp;ldquo;Machine&amp;rdquo; Machine Our program runs on CPUs made out of sands. Fortunately, we don&amp;rsquo;t need to think about sands. For most programmers, the lowest level we care is something called &amp;ldquo;instruction set architecture&amp;rdquo;: x86, ARM, RISC-V&amp;hellip; etc.
-The instruction set architecture(ISA) gives us freedom to express ourself with many, many languages. And they will run on many, many type of machines.</description>
+      <guid>https://devpoga.org/post/2021-05-11_haxe_and_programming_for_many_machines/</guid>
+      <description>&lt;p&gt;The title sounds obvious. We always program for a machine! A program won&amp;rsquo;t run itself!&lt;/p&gt;</description>
     </item>
     
     <item>
