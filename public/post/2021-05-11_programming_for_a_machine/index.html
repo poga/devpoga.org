@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    
+    <title>
+      
+      Haxe and Programming for Many Machines - Dev.Poga
+      
+		</title>
+
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta property="og:image" content="https://devpoga.org/og.png" />
+
+    
+    <link rel="stylesheet" type="text/css" href="/assets/css/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="/assets/css/icons.css" />
+    <link rel="stylesheet" type="text/css" href="/assets/css/screen.css" />
+    
+    <link href="https://fonts.googleapis.com/css?family=Bree+Serif|Lato:100,100i,300,300i,400,400i,700,700i|Source+Code+Pro:300,400,500,700" rel="stylesheet">
+    
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/jquery@1.12.4/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="/assets/bigfoot/dist/bigfoot.js"></script>
+    <link rel="stylesheet" type="text/css" href="/assets/bigfoot/dist/bigfoot-number.css" />
+    <script type="text/javascript">
+        $.bigfoot();
+    </script>
+    
+    
+
+    
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-88018665-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-88018665-1');
+</script>
+
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+
+</head>
+
+    <body class="post-template">
+        <header class="main-header">
+	<div class="main-header-content">
+    <img src="/me.jpg" class="avatar">
+		<h1 class="blog-title">
+			<a href="/">
+				
+           Dev.Poga
+				
+			</a>
+		</h1>
+		<h2 class="blog-description"></h2>
+	</div>
+
+	<div class="nav">
+    
+		
+    
+     <a href="https://devpoga.org/categories/essays/">Essays</a></li>
+    
+     <a href="https://devpoga.org/categories/notes/">Notes</a></li>
+    
+     <a href="https://devpoga.org/categories/talks/">Talks</a></li>
+    
+	</div>
+</header>
+
+        
+<main class="content" role="main">
+  <article class="post">
+    <header class="post-header">
+      <h2 class="post-title">Haxe and Programming for Many Machines</h2>
+      <section class="post-meta">
+        <time
+          class="post-date"
+          >2021-05-11</time
+        >
+        in
+        <a href="https://devpoga.org/categories/essays/">Essays</a>
+        
+        
+      </section>
+    </header>
+    <section class="post-content">
+      <p>The title sounds obvious. We always program for a machine! A program won&rsquo;t run itself!</p>
+<h2 id="the-machine-machine">The &ldquo;Machine&rdquo; Machine</h2>
+<p>Our program runs on CPUs made out of sands. Fortunately, we don&rsquo;t need to think about sands. For most programmers, the lowest level we care is something called <strong>&ldquo;instruction set architecture&rdquo;</strong>: x86, ARM, RISC-V&hellip; etc.</p>
+<p>The instruction set architecture(ISA) gives us freedom to express ourself with many, many languages. And they will run on many, many type of machines.</p>
+<p>These sand machines are blazing fast, but also inflexible. If there&rsquo;s <a href="https://en.wikipedia.org/wiki/Spectre_(security_vulnerability)">issues</a> in them, we&rsquo;re in a world of trouble. If we want to try out new ideas, they cost billions to build.</p>
+<h2 id="virtual-machines">&ldquo;Virtual&rdquo; Machines</h2>
+<p>So modern languages start to bring their own machine. For flexibility, and iteration speed.</p>
+<p>Python, Go, JavaScript, Java, Erlang, Lua, .Net, and many thousands of languages all have their own virtual machines. with their own trade-offs.</p>
+<h2 id="program-for-a-machine">Program for a machine</h2>
+<p>So, which machine we prefer?</p>
+<p>We want actor-based concurrency? <a href="https://en.wikipedia.org/wiki/BEAM_(Erlang_virtual_machine)">BEAM</a> is the best.</p>
+<p>We want light-weight and embeddability? <a href="https://www.lua.org/">Lua</a> is designed for it.</p>
+<p>We want state-of-the-art garbage collection? Java is always solid, but also kind of boring.</p>
+<h2 id="program-for-many-machines">Program for many machines</h2>
+<p><a href="https://haxe.org/">Haxe</a> is a languages designed to compile to many different machines: JavaScript, .NET(C#), PHP, Lua, Java, Python, and also its own VM: <a href="https://hashlink.haxe.org/">Hashlink</a>.</p>
+<p>With Haxe, we can freely explore different machines without the limitations from the machines' native programming language.</p>
+<h2 id="so">So?</h2>
+<p>So let&rsquo;s say I want to try out new hardward ideas, or new way of packaging. What should I do? FPGA? Can it help me to design the next <a href="https://en.wikipedia.org/wiki/Apple_M1">m1</a>? or next chip for hyperscalers(a.k.a. clouds)?</p>
+<p>TBH I&rsquo;m probably never going to achieve that. But with software, I&rsquo;m free to try.</p>
+
+    </section>
+    <footer class="post-footer">
+      <section class="tags post-meta">
+        Tagged
+        <a href="https://devpoga.org/tags/programming/">#Programming</a>
+        <a href="https://devpoga.org/tags/essays/">#Essays</a>
+        
+      </section>
+      
+    </footer>
+  </article>
+</main>
+
+        <footer class="site-footer">
+  <section class="rss"><a class="subscribe-button icon-feed" href="/index.xml"></a></section>
+  
+  
+  <section class="copyright">&copy; 2021 Dev.Poga</section>
+</footer>
+
+
+
+
+    </body>
+</html>

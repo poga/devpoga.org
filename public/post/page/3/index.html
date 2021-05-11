@@ -66,9 +66,9 @@
     
 		
     
-     <a href="https://devpoga.org/categories/notes/">Notes</a></li>
-    
      <a href="https://devpoga.org/categories/essays/">Essays</a></li>
+    
+     <a href="https://devpoga.org/categories/notes/">Notes</a></li>
     
      <a href="https://devpoga.org/categories/talks/">Talks</a></li>
     
@@ -94,6 +94,43 @@
 </nav>
 
 	</div>
+  
+  <article class="post">
+  <header class="post-header">
+    <h1 class="post-title">
+      <a href="https://devpoga.org/post/2019-06-30_structured_concurrency/">Structured Concurrency</a>
+    </h1>
+  </header>
+
+  <section class="post-excerpt">
+    <p>
+      <p>Thread 跟 Coroutine 是兩種常常用來處理 Concurrency 的工具。</p>
+<p>使用這兩個工具時，很麻煩的一點就是需要手動管理他們的生命週期。本質上，Thread 跟 Coroutine 都是 global scope，不管你如何建立，他們都獨立在原本的程式順序之外。</p>
+<p>常見的例子是，如果你在 main 建立一個新的 thread，main 並不會等 thread 結束，而需要你手動 join thread，在複雜的情況（例如 cancel、timeout）便相當容易出錯。</p>
+<p>而 Structured Concurrency 就是試圖將 Thread 的生命週期與大家都很熟悉的 scope 結合。</p>
+      <a class="read-more" href="/post/2019-06-30_structured_concurrency/">&raquo; Read More</a>
+    </p>
+  </section>
+
+  <footer class="post-meta">
+    <time class="post-date"
+      >2019-06-30
+      Tagged
+      <a href="https://devpoga.org/tags/programming/">programming</a>
+      <a href="https://devpoga.org/tags/concurrency/">concurrency</a>
+      <a href="https://devpoga.org/tags/programming-language/">Programming Language</a>
+      
+      
+
+      in
+      <a href="https://devpoga.org/categories/essays/">Essays</a>
+      
+      
+    </time>
+  </footer>
+  <hr />
+</article>
+
   
   <article class="post">
   <header class="post-header">
@@ -392,39 +429,6 @@
       <a href="https://devpoga.org/tags/luajit/">Luajit</a>
       <a href="https://devpoga.org/tags/%E5%B8%B6%E6%82%A8%E8%AE%80%E5%8E%9F%E7%A2%BC/">帶您讀原碼</a>
       <a href="https://devpoga.org/tags/compiler/">Compiler</a>
-      
-      
-
-      in
-      <a href="https://devpoga.org/categories/essays/">Essays</a>
-      
-      
-    </time>
-  </footer>
-  <hr />
-</article>
-
-  
-  <article class="post">
-  <header class="post-header">
-    <h1 class="post-title">
-      <a href="https://devpoga.org/post/2018-02-06_%E9%81%BA%E5%BF%98%E7%9A%84%E7%94%9F%E7%94%A2%E5%8A%9B/">遺忘的生產力</a>
-    </h1>
-  </header>
-
-  <section class="post-excerpt">
-    <p>
-      <p>人們談到生產力，似乎就免不了討論各種蒐集想法、整理心得的工具。彷彿忘了的東西都是一種損失。</p>
-<p>與其努力記下所有事情，不如試試盡情遺忘吧。</p>
-      <a class="read-more" href="/post/2018-02-06_%E9%81%BA%E5%BF%98%E7%9A%84%E7%94%9F%E7%94%A2%E5%8A%9B/">&raquo; Read More</a>
-    </p>
-  </section>
-
-  <footer class="post-meta">
-    <time class="post-date"
-      >2018-02-06
-      Tagged
-      <a href="https://devpoga.org/tags/productivity/">Productivity</a>
       
       
 
