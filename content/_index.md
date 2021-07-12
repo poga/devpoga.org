@@ -4,7 +4,7 @@ You can contact me via [email](mailto://hi@devpoga.org) or [twitter](https://twi
 
 I work on many different things in the area of technology, design, privacy, and security. In no particular order of preference:
 
-- [g0v.social](https://g0v.social), a federated social network.
+- [g0v.social](https://g0v.social), a decentralized social network.
 
 - Extends [Redis](https://redis.io/) functionality with modules, [redis-rating](https://github.com/poga/redis-rating), [redis-percentile](https://github.com/poga/redis-percentile), and [zx](https://github.com/humble-tools/zx).
 
