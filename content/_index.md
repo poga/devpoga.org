@@ -6,11 +6,11 @@ I work on many different things in the area of technology, design, privacy, and 
 
 - [g0v.social](https://g0v.social), a decentralized social network.
 
-- Extends [Redis](https://redis.io/) functionality with modules, [redis-rating](https://github.com/poga/redis-rating), [redis-percentile](https://github.com/poga/redis-percentile), and [zx](https://github.com/humble-tools/zx).
+- Extends [Redis](https://redis.io/), an in-memory key-value storage, with modules such as [redis-rating](https://github.com/poga/redis-rating), [redis-percentile](https://github.com/poga/redis-percentile), and [zx](https://github.com/humble-tools/zx).
 
 - A safe actor scripting framework for rust, [actix-lua](https://github.com/poga/actix-lua).
 
-- Privacy-aware machine learning resources, [Awesome Federated Learning](https://github.com/poga/awesome-federated-learning).
+- Privacy-aware federated machine learning resources, [Awesome Federated Learning](https://github.com/poga/awesome-federated-learning).
 
 - Better collaboration between machine learning researchers and engineers, [juyptermodule](https://github.com/poga/jupytermodule).
 
@@ -25,4 +25,4 @@ I work on many different things in the area of technology, design, privacy, and 
 - [Running a Service in Production without Losing Your Sanity - AILabs Taiwan 2019](https://www.slideshare.net/slideshow/embed_code/key/weOsOfldcNyPbB)
 - [Notes on the Implementation on Lua 5.3](https://poga.github.io/lua53-notes/)
 
-I also have a [blog](/post/) for keeping notes about varius stuffs I've learned.
+Checkout the [blog](/post/) for notes about varius stuffs I've learned.
