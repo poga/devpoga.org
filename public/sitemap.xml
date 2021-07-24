@@ -3,11 +3,26 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://devpoga.org/</loc>
-    <lastmod>2021-05-11T00:00:00+00:00</lastmod>
+    <lastmod>2021-07-24T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url><url>
     <loc>https://devpoga.org/categories/</loc>
-    <lastmod>2021-05-11T00:00:00+00:00</lastmod>
+    <lastmod>2021-07-24T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://devpoga.org/post/2021-07-25_organization_health/</loc>
+    <lastmod>2021-07-24T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://devpoga.org/tags/notes/</loc>
+    <lastmod>2021-07-24T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://devpoga.org/categories/notes/</loc>
+    <lastmod>2021-07-24T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://devpoga.org/post/</loc>
+    <lastmod>2021-07-24T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://devpoga.org/tags/</loc>
+    <lastmod>2021-07-24T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://devpoga.org/tags/essays/</loc>
     <lastmod>2021-05-11T00:00:00+00:00</lastmod>
@@ -18,25 +33,13 @@
     <loc>https://devpoga.org/post/2021-05-11_haxe_and_programming_for_many_machines/</loc>
     <lastmod>2021-05-11T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://devpoga.org/post/</loc>
-    <lastmod>2021-05-11T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://devpoga.org/tags/programming/</loc>
-    <lastmod>2021-05-11T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://devpoga.org/tags/</loc>
     <lastmod>2021-05-11T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://devpoga.org/post/2021-05-01_common_lisp_quicklisp_local_project/</loc>
     <lastmod>2021-05-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://devpoga.org/tags/lisp/</loc>
-    <lastmod>2021-05-01T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://devpoga.org/tags/notes/</loc>
-    <lastmod>2021-05-01T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://devpoga.org/categories/notes/</loc>
     <lastmod>2021-05-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://devpoga.org/tags/condition/</loc>

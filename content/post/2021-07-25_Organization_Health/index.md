@@ -1,11 +1,11 @@
 ---
 title: "CHECKLIST FOR ORGANIZATIONAL HEALTH"
 author: "poga"
-date: 2021-07-25
+date: 2021-07-24
 tags:
-  - Essays
+  - Notes
 categories:
-  - Essays
+  - Notes
 ---
 
 CHECKLIST FOR ORGANIZATIONAL HEALTH
