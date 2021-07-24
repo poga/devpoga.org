@@ -112,7 +112,7 @@
 <hr>
 <h2 id="modules">Modules</h2>
 <p>First, I wonder if a simple module layer can break OCaml&rsquo;s claim of predictable performance. Here&rsquo;s a trivial function to compare two strings:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ocaml" data-lang="ocaml"><span style="color:#66d9ef">let</span> eq x y <span style="color:#f92672">=</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ocaml" data-lang="ocaml"><span style="color:#66d9ef">let</span> eq x y <span style="color:#f92672">=</span>
   compare x y
 <span style="color:#75715e">(* camlExample__eq_29:
 </span><span style="color:#75715e">        subq    $8, %rsp
@@ -125,7 +125,7 @@
 </span><span style="color:#75715e">        addq    $8, %rsp
 </span><span style="color:#75715e">        ret *)</span>
 </code></pre></div><p>If we wrap the type and the <code>compare</code> function with a module <code>ID</code>, the compiler still product the same assembly:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ocaml" data-lang="ocaml"><span style="color:#66d9ef">module</span> <span style="color:#66d9ef">type</span> <span style="color:#a6e22e">ID</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">sig</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ocaml" data-lang="ocaml"><span style="color:#66d9ef">module</span> <span style="color:#66d9ef">type</span> <span style="color:#a6e22e">ID</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">sig</span>
     <span style="color:#66d9ef">type</span> t
     <span style="color:#66d9ef">val</span> <span style="color:#f92672">(=):</span> t <span style="color:#f92672">-&gt;</span> t <span style="color:#f92672">-&gt;</span> <span style="color:#66d9ef">int</span>
 <span style="color:#66d9ef">end</span>
@@ -156,7 +156,7 @@
 <h2 id="functors">Functors</h2>
 <p>The above example is way too trivial, what if we try some functors?</p>
 <p>Here&rsquo;s a functor example copied from <a href="https://dev.realworldocaml.org/functors.html">Real world&rsquo;s OCaml</a>:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ocaml" data-lang="ocaml"><span style="color:#66d9ef">module</span> <span style="color:#66d9ef">type</span> <span style="color:#a6e22e">JustAnInt</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">sig</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ocaml" data-lang="ocaml"><span style="color:#66d9ef">module</span> <span style="color:#66d9ef">type</span> <span style="color:#a6e22e">JustAnInt</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">sig</span>
     <span style="color:#66d9ef">val</span> x<span style="color:#f92672">:</span> <span style="color:#66d9ef">int</span>
 <span style="color:#66d9ef">end</span>
 

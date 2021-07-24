@@ -121,7 +121,7 @@
 <hr>
 <h2 id="code">Code</h2>
 <p>Here’s the implementation of <code>eqaf</code>’s <code>equal</code>.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ocaml" data-lang="ocaml"><span style="color:#66d9ef">let</span><span style="color:#f92672">[@</span>inline<span style="color:#f92672">]</span> get x i <span style="color:#f92672">=</span> String.unsafe_get x i <span style="color:#f92672">|&gt;</span> Char.code
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ocaml" data-lang="ocaml"><span style="color:#66d9ef">let</span><span style="color:#f92672">[@</span>inline<span style="color:#f92672">]</span> get x i <span style="color:#f92672">=</span> String.unsafe_get x i <span style="color:#f92672">|&gt;</span> Char.code
 
 <span style="color:#66d9ef">external</span> unsafe_get_int16 <span style="color:#f92672">:</span> <span style="color:#66d9ef">string</span> <span style="color:#f92672">-&gt;</span> <span style="color:#66d9ef">int</span> <span style="color:#f92672">-&gt;</span> <span style="color:#66d9ef">int</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;%caml_string_get16u&#34;</span>
 <span style="color:#66d9ef">let</span><span style="color:#f92672">[@</span>inline<span style="color:#f92672">]</span> get16 x i <span style="color:#f92672">=</span> unsafe_get_int16 x i
@@ -170,7 +170,7 @@
 <p>Although the OCaml code is quite low-level (and not very functional). It&rsquo;s still cleaner than most constant-time compare functions implemented in assembly.</p>
 <h2 id="read-the-asm">Read the asm</h2>
 <p>Here&rsquo;s the resulting assembly of the previous example, copied from the <code>eqaf</code> <a href="https://github.com/mirage/eqaf/blob/master/lib/eqaf.ml">source</a>. You can get the same output via <a href="https://godbolt.org">Compiler Explorer</a>.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ocaml" data-lang="ocaml"><span style="color:#66d9ef">let</span><span style="color:#f92672">[@</span>inline<span style="color:#f92672">]</span> get x i <span style="color:#f92672">=</span> String.unsafe_get x i <span style="color:#f92672">|&gt;</span> Char.code
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ocaml" data-lang="ocaml"><span style="color:#66d9ef">let</span><span style="color:#f92672">[@</span>inline<span style="color:#f92672">]</span> get x i <span style="color:#f92672">=</span> String.unsafe_get x i <span style="color:#f92672">|&gt;</span> Char.code
 <span style="color:#75715e">(* XXX(dinosaure): we use [unsafe_get] to avoid jump to exception:
 </span><span style="color:#75715e">        sarq    $1, %rbx
 </span><span style="color:#75715e">        movzbq  (%rax,%rbx), %rax
