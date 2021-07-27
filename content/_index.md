@@ -25,4 +25,4 @@ I work on many different things in the area of technology, design, privacy, and 
 - [Running a Service in Production without Losing Your Sanity - AILabs Taiwan 2019](https://www.slideshare.net/slideshow/embed_code/key/weOsOfldcNyPbB)
 - [Notes on the Implementation on Lua 5.3](https://poga.github.io/lua53-notes/)
 
-Checkout the [blog](/post/) for notes about varius stuffs I've learned.
+Checkout the [blog](/post/) for notes about various stuffs I've learned.
