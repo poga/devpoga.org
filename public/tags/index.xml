@@ -8,11 +8,38 @@
     <language>en-us</language>
     <lastBuildDate>Sat, 24 Jul 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://devpoga.org/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Communication</title>
+      <link>https://devpoga.org/tags/communication/</link>
+      <pubDate>Sat, 24 Jul 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://devpoga.org/tags/communication/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Leadership</title>
+      <link>https://devpoga.org/tags/leadership/</link>
+      <pubDate>Sat, 24 Jul 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://devpoga.org/tags/leadership/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Notes</title>
       <link>https://devpoga.org/tags/notes/</link>
       <pubDate>Sat, 24 Jul 2021 00:00:00 +0000</pubDate>
       
       <guid>https://devpoga.org/tags/notes/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Organization</title>
+      <link>https://devpoga.org/tags/organization/</link>
+      <pubDate>Sat, 24 Jul 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://devpoga.org/tags/organization/</guid>
       <description></description>
     </item>
     
@@ -121,15 +148,6 @@
       <pubDate>Sun, 07 Jun 2020 00:00:00 +0000</pubDate>
       
       <guid>https://devpoga.org/tags/scheme/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Communication</title>
-      <link>https://devpoga.org/tags/communication/</link>
-      <pubDate>Tue, 21 Apr 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://devpoga.org/tags/communication/</guid>
       <description></description>
     </item>
     

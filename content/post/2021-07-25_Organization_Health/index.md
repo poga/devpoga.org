@@ -4,6 +4,9 @@ author: "poga"
 date: 2021-07-24
 tags:
   - Notes
+  - Leadership
+  - Organization
+  - Communication
 categories:
   - Notes
 ---
