@@ -19,8 +19,8 @@ Reading it is an enjoyable experience. The note I've writtend down is here:
 ```julia
 # import base multiply(*), bitwise-or(|), and bitwise-and(&)
 #
-# In Julia, you can load modules with `use` or `import`. The difference is that
-# * `use` will load the module **and** reexport the loaded module into the surrounding global
+# In Julia, you can load modules with `using` or `import`. The difference is that
+# * `using` will load the module **and** reexport the loaded module into the surrounding global
 #    namespace.
 # * `import` will only load the module and rexport the module name to the scope.
 import Base: *, |, &
