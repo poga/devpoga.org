@@ -45,6 +45,14 @@ We want **state-of-the-art garbage collection**? Java is always solid, but also 
 
 ---
 
+## Program within the kernel
+
+eBPF is a sandboxed virtual machine lives inside Linux Kernel. It's a revolutionary technology that can run sandboxed programs in the Linux kernel without changing kernel source code or loading kernel modules.
+
+By making the Linux kernel programmable, infrastructure software can leverage existing layers, making them more intelligent and feature-rich without continuing to add additional layers of complexity to the system or compromising execution efficiency and safety.
+
+---
+
 ## Program for many machines
 
 [Haxe](https://haxe.org/) is a languages designed to [**compile to many different machines**](https://haxe.org/documentation/introduction/compiler-targets.html): JavaScript, .NET(C#), PHP, Lua, Java, Python, ...etc and also its own VM: [Hashlink](https://hashlink.haxe.org/).
