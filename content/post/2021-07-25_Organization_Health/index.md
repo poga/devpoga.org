@@ -7,9 +7,12 @@ tags:
   - Leadership
   - Organization
   - Communication
+  - Reading
 categories:
   - Notes
 ---
+
+![](/post/2021-07-25_organization_health/book.jpg)
 
 CHECKLIST FOR ORGANIZATIONAL HEALTH
 

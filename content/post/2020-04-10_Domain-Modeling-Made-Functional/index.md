@@ -7,6 +7,7 @@ tags:
   - Domain Modeling
   - Software Engineering
   - Note
+  - Reading
 categories:
   - Notes
 ---

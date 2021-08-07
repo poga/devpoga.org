@@ -11,7 +11,12 @@ categories:
   - Notes
 ---
 
+![](/post/2021-04-25_common_lisp_condition_system/book.jpg)
+
+<!--more-->
+
 ## Foundation of the Condition System
+
 
 ### Dynamic Variables
 

@@ -414,6 +414,7 @@ a.nav-blog {
   text-transform: uppercase;
   font-size: 0.79rem;
   margin-top: 10px;
+  text-align: center;
 }
 
 footer.post-meta {

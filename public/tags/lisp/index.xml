@@ -24,8 +24,7 @@
       <pubDate>Sun, 25 Apr 2021 00:00:00 +0000</pubDate>
       
       <guid>https://devpoga.org/post/2021-04-25_common_lisp_condition_system/</guid>
-      <description>Foundation of the Condition System Dynamic Variables A nested stack of environment variables. Defined with defvar, declare special, or defparameter.
- In Common Lisp, it is not necessary to instantiate or refer to any separate context object nor enclose the environment in an object, because contextual information is available by means of dynamic variables, which can be accessed and rebound as appropriate. New means of passing contextual information can be provided by defining new dynamic variables, and utilizing this new information channel does not require creating or altering any existing abstractions.</description>
+      <description>&lt;p&gt;&lt;img src=&#34;https://devpoga.org/post/2021-04-25_common_lisp_condition_system/book.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;</description>
     </item>
     
   </channel>

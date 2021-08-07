@@ -7,6 +7,7 @@ tags:
   - Security
   - Networking
   - Note
+  - Reading
 categories:
   - Notes
 ---
