@@ -66,9 +66,9 @@
     
 		
     
-     <a href="https://devpoga.org/categories/notes/">Notes</a></li>
-    
      <a href="https://devpoga.org/categories/essays/">Essays</a></li>
+    
+     <a href="https://devpoga.org/categories/notes/">Notes</a></li>
     
      <a href="https://devpoga.org/categories/talks/">Talks</a></li>
     
@@ -97,7 +97,7 @@
 <p>遊戲開發對很多開發者來說是個陌生的領域。遊戲對於效能的極高要求跟規格的不確定性，產生出了許多特有的系統架構。Data-Oriented Design 便是個有趣的設計模式。</p>
 <p>相較於其他設計模式，Data-Oriented Design 深受硬體快取（cache）架構影響。對於現代的高度 pipeline、高速的 CPU 架構而言，資料的存取方式對效能有非常大的影響。比起 L1、L2 cache，對主記憶體的一次存取帶來的是數百倍的效能損耗。為了避免太過抽象，就用個實際的例子來解釋吧。</p>
 <p>假設我們的遊戲中有許多的球，每個球有顏色、位置、半徑等等資訊。對於學過物件導向的人而言，很可能直覺的設計成這樣：</p>
-<pre><code>class Ball {
+<pre tabindex="0"><code>class Ball {
  Point position;
  Color color;
  double radius;
@@ -106,7 +106,7 @@
 <p>不過，如果遊戲中有數百萬個球在移動，這樣的作法的效能就不太好了。每個球的座標都經過物件導向的層層封裝，分散在記憶體四處，spatial locality 非常差，在更新的過程中產生了大量的 cache miss。</p>
 <h4 id="theres-no-ball">There’s no ball</h4>
 <p>如果採用 Data-Oriented Design 的話，作法會變成：</p>
-<pre><code>class Balls {
+<pre tabindex="0"><code>class Balls {
  vector&lt;Point&gt; positions;
  vector&lt;Color&gt; color;
  vector&lt;double&gt; radius;

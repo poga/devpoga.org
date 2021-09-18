@@ -6,7 +6,25 @@
     <description>Recent content in Tags on Dev.Poga</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 04 Aug 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://devpoga.org/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 18 Sep 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://devpoga.org/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Essays</title>
+      <link>https://devpoga.org/tags/essays/</link>
+      <pubDate>Sat, 18 Sep 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://devpoga.org/tags/essays/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>programming</title>
+      <link>https://devpoga.org/tags/programming/</link>
+      <pubDate>Sat, 18 Sep 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://devpoga.org/tags/programming/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>Julia</title>
       <link>https://devpoga.org/tags/julia/</link>
@@ -22,15 +40,6 @@
       <pubDate>Wed, 04 Aug 2021 00:00:00 +0000</pubDate>
       
       <guid>https://devpoga.org/tags/notes/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>programming</title>
-      <link>https://devpoga.org/tags/programming/</link>
-      <pubDate>Wed, 04 Aug 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://devpoga.org/tags/programming/</guid>
       <description></description>
     </item>
     
@@ -67,15 +76,6 @@
       <pubDate>Sat, 24 Jul 2021 00:00:00 +0000</pubDate>
       
       <guid>https://devpoga.org/tags/reading/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Essays</title>
-      <link>https://devpoga.org/tags/essays/</link>
-      <pubDate>Tue, 11 May 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://devpoga.org/tags/essays/</guid>
       <description></description>
     </item>
     

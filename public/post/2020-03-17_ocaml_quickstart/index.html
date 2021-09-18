@@ -66,9 +66,9 @@
     
 		
     
-     <a href="https://devpoga.org/categories/notes/">Notes</a></li>
-    
      <a href="https://devpoga.org/categories/essays/">Essays</a></li>
+    
+     <a href="https://devpoga.org/categories/notes/">Notes</a></li>
     
      <a href="https://devpoga.org/categories/talks/">Talks</a></li>
     
@@ -95,12 +95,12 @@
       <p><img src="/post/2020-03-17_ocaml_quickstart/vim.png" alt=""></p>
 <p><a href="https://ocaml.org/">OCaml</a> is a great language. However, the tooling for newbies is kinda confusing. Here&rsquo;s a guide to setup a working OCaml development environment in <a href="https://neovim.io/">neovim</a> on MacOS.</p>
 <h3 id="install-opam">Install opam</h3>
-<pre><code>$ brew install opam
+<pre tabindex="0"><code>$ brew install opam
 </code></pre><h3 id="install-ocaml-4090">Install ocaml 4.09.0</h3>
-<pre><code>$ opam switch create 4.09.0 4.09.0
+<pre tabindex="0"><code>$ opam switch create 4.09.0 4.09.0
 # follow the instructions to setup bash env
 </code></pre><h3 id="install-utoprepl-and-dunebuild-system">Install utop(REPL) and dune(build system)</h3>
-<pre><code>$ opam install utop dune
+<pre tabindex="0"><code>$ opam install utop dune
 </code></pre><h3 id="setup-editor">Setup editor</h3>
 <ul>
 <li>Install <a href="https://github.com/ocaml/ocaml-lsp">ocaml-lsp</a></li>
@@ -109,7 +109,7 @@
 <p>You need to install all dependencies (with dune) and build it once to get a working LSP.</p>
 <h3 id="build-a-project">Build a project</h3>
 <p>Let&rsquo;s test our environment on an existing project.</p>
-<pre><code>$ git clone git@github.com:inhabitedtype/httpaf.git
+<pre tabindex="0"><code>$ git clone git@github.com:inhabitedtype/httpaf.git
 $ cd httpaf
 
 # install dependencies

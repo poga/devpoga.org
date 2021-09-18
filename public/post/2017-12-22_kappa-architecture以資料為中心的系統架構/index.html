@@ -66,9 +66,9 @@
     
 		
     
-     <a href="https://devpoga.org/categories/notes/">Notes</a></li>
-    
      <a href="https://devpoga.org/categories/essays/">Essays</a></li>
+    
+     <a href="https://devpoga.org/categories/notes/">Notes</a></li>
     
      <a href="https://devpoga.org/categories/talks/">Talks</a></li>
     
@@ -118,13 +118,13 @@
 <h4 id="資料的本質append-only-log">資料的本質：Append-only Log</h4>
 <p>任何資料都是由一連串的改變所形成，因此，每一筆資料都可以用一個 append-only log 表示。</p>
 <p>假設目前有一筆用戶資料如下：</p>
-<pre><code>{
+<pre tabindex="0"><code>{
  &quot;user_id&quot;: 1234,
  &quot;username&quot;: “Jack123”,
  &quot;balance&quot;: 75
 }
 </code></pre><p>這筆用戶資料其實是由一連串的事件修改所形成：</p>
-<pre><code>{ // 使用者註冊
+<pre tabindex="0"><code>{ // 使用者註冊
  &quot;event&quot;: &quot;register&quot;,
  &quot;username&quot;: &quot;Jack123&quot;,
  &quot;user_id&quot;: 1234,

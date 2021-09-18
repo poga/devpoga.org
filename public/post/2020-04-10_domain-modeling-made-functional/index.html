@@ -66,9 +66,9 @@
     
 		
     
-     <a href="https://devpoga.org/categories/notes/">Notes</a></li>
-    
      <a href="https://devpoga.org/categories/essays/">Essays</a></li>
+    
+     <a href="https://devpoga.org/categories/notes/">Notes</a></li>
     
      <a href="https://devpoga.org/categories/talks/">Talks</a></li>
     
@@ -142,7 +142,7 @@
 <p>lots of examples&hellip;</p>
 <h3 id="capturing-business-rules-in-the-type-system">Capturing Business Rules in the Type System</h3>
 <p>ex.</p>
-<pre><code>type​ CustomerEmail = ​  | Unverified ​of​ EmailAddress ​  | Verified ​of​ VerifiedEmailAddress ​// different from normal EmailAddress​
+<pre tabindex="0"><code>type​ CustomerEmail = ​  | Unverified ​of​ EmailAddress ​  | Verified ​of​ VerifiedEmailAddress ​// different from normal EmailAddress​
 
 type​ SendPasswordResetEmail = VerifiedEmailAddress -&gt; ...
 </code></pre><h3 id="making-illegal-states-unrepresentable-in-our-domain">Making Illegal States Unrepresentable in Our Domain</h3>

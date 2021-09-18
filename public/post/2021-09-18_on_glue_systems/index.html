@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    
+    <title>
+      
+      On Building Glue Systems - Dev.Poga
+      
+		</title>
+
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta property="og:image" content="https://devpoga.org/og.png" />
+
+    
+    <link rel="stylesheet" type="text/css" href="/assets/css/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="/assets/css/icons.css" />
+    <link rel="stylesheet" type="text/css" href="/assets/css/screen.css" />
+    
+    <link href="https://fonts.googleapis.com/css?family=Bree+Serif|Lato:100,100i,300,300i,400,400i,700,700i|Source+Code+Pro:300,400,500,700" rel="stylesheet">
+    
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/jquery@1.12.4/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="/assets/bigfoot/dist/bigfoot.js"></script>
+    <link rel="stylesheet" type="text/css" href="/assets/bigfoot/dist/bigfoot-number.css" />
+    <script type="text/javascript">
+        $.bigfoot();
+    </script>
+    
+    
+
+    
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-88018665-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-88018665-1');
+</script>
+
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+
+</head>
+
+    <body class="post-template">
+        <header class="main-header">
+	<div class="main-header-content">
+    <img src="/me.jpg" class="avatar">
+		<h1 class="blog-title">
+			<a href="/">
+				
+           Dev.Poga
+				
+			</a>
+		</h1>
+		<h2 class="blog-description"></h2>
+	</div>
+
+	<div class="nav">
+    
+		
+    
+     <a href="https://devpoga.org/categories/essays/">Essays</a></li>
+    
+     <a href="https://devpoga.org/categories/notes/">Notes</a></li>
+    
+     <a href="https://devpoga.org/categories/talks/">Talks</a></li>
+    
+	</div>
+</header>
+
+        
+<main class="content" role="main">
+  <article class="post">
+    <header class="post-header">
+      <h2 class="post-title">On Building Glue Systems</h2>
+      <section class="post-meta">
+        <time
+          class="post-date"
+          >2021-09-18</time
+        >
+        in
+        <a href="https://devpoga.org/categories/essays/">Essays</a>
+        
+        
+      </section>
+    </header>
+    <section class="post-content">
+      <p><img src="./glue.jpg" alt=""></p>
+<p>I spent most of my life building glue systems.</p>
+<p>Sometimes, I got to work on a deep, sparkling project. But most of the time, my work is about gluing things together.</p>
+<hr>
+<h2 id="situated-programming">Situated Programming</h2>
+<p>Researches on glue systems have a long history, although the problem usually lures hackers instead of academics.</p>
+<p><a href="https://en.wikipedia.org/wiki/Rich_Hickey">Rick Hickey</a>, the creator of the Clojure programming language, called it &ldquo;situated programming.&rdquo; It&rsquo;s about those kinds of programs that sit in the world and entangle with the world.</p>
+<blockquote>
+<p>situate - &ldquo;to put in or on a particular site or place.&rdquo;</p>
+</blockquote>
+<p><a href="https://twitter.com/mpweiher">Marcel Weiher</a> thinks that it is the <a href="https://blog.metaobject.com/2021/07/glue-code-is-success-condition.html">&ldquo;success condition&rdquo;</a> in software technology and believe our tools and linguistic mechanisms haven&rsquo;t caught up to deal with this kind of problem.</p>
+<p>I agree with them. So instead of avoiding talk about the glue system, I want to draw more attention to the problem.</p>
+<hr>
+<h2 id="glue-systems-are-distributed-systems">Glue Systems are Distributed Systems</h2>
+<p>Since a glue system is about connecting many isolated pieces into a coordinated abomination, it&rsquo;s naturally a distributed system and inherits common problems from distributed systems: <strong>availability</strong> and <strong>concurrency</strong>.</p>
+<p>The quality of peers(the things being glued) heavily impacts the availability of the glue. However, we usually expected a glue system have higher availability than most of its peers since the glue is the last thing we created after all the peers are ready. And you need to fix all the problems left, good or bad.</p>
+<p>It&rsquo;s concurrent since it connects to many peers with different latency, performance characteristics, and availability. And the glue cannot be the bottleneck of the whole system.</p>
+<hr>
+<h2 id="why-we-dislike-glues">Why we dislike glues</h2>
+<p>Most of the glues we encountered are:</p>
+<ol>
+<li><strong>messy</strong>: There&rsquo;s usually no build system, or only an extremely fragile build system exists for the glue.</li>
+<li><strong>lack of maintenance</strong>: We only look at glues when there&rsquo;s a problem; usually, shit hits the fan problem. We look at them in anger and try to forget about it as soon as possible.</li>
+</ol>
+<hr>
+<h2 id="solutions">Solutions</h2>
+<p><img src="./switches.webp" alt=""></p>
+<p>Do you know what&rsquo;s gluing the internet together? These cheap, ignored black boxes usually are called switches. I found <a href="https://www.erlang.org/">erlang</a> and <a href="https://elixir-lang.org/">elixir</a> have high potential in the domain of glue systems. They&rsquo;re naturally concurrent and provides high availability. In addition, they can be easily monitored and observed.</p>
+<p>What&rsquo;s your solution on Glue Systems?</p>
+    </section>
+    <footer class="post-footer">
+      <section class="tags post-meta">
+        Tagged
+        <a href="https://devpoga.org/tags/essays/">#Essays</a>
+        <a href="https://devpoga.org/tags/programming/">#Programming</a>
+        
+      </section>
+      
+    </footer>
+  </article>
+</main>
+
+        <footer class="site-footer">
+  <section class="rss"><a class="subscribe-button icon-feed" href="/index.xml"></a></section>
+  
+  
+  <section class="copyright">&copy; 2021 Dev.Poga</section>
+</footer>
+
+
+
+
+    </body>
+</html>
