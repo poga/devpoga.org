@@ -44,7 +44,7 @@ ____ 14. Team members challenge one another about their plans and approaches.
 ____ 15. Team members are slow to seek credit for their own contributions, but quick to point out those of others.
 ```
 
-Read the book to see how to interpret the result, and how to fix them
+---
 
 ## Absence of Trust
 
