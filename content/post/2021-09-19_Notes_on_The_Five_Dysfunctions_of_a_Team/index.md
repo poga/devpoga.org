@@ -46,3 +46,99 @@ ____ 15. Team members are slow to seek credit for their own contributions, but q
 
 Read the book to see how to interpret the result, and how to fix them
 
+## Absence of Trust
+
+* Conceal their weaknesses and mistakes from one another
+* Hesitate to ask for help or provide constructive feedback
+* Hesitate to offer help outside their own areas of responsibility
+* Jump to conclusions about the intentions and aptitudes of others without attempting to clarify them
+* Fail to recognize and tap into one another's skills and experiences
+* Waste time and energy managing their behaviors for effect Hold grudges
+* Dread meetings and find reasons to avoid spending time together
+
+### Suggestions for Overcoming
+
+* Personal Histories Exercies
+* Team Effectiveness Exercise
+* Personality and Behavioral Preference Profile
+* 360-Degree Feedback
+* Experiential Team Exercise
+
+### The Role of the leader
+
+* Demonstrate vulnerability first
+
+## Fear of Conflict
+
+* Have boring meetings
+* Create environments where back-channel politics and personal attacks thrive
+* Ignore controversial topics that are critical to team success
+* Fail to tap into all the opinions and perspectives of team members
+* Waste time and energy with posturing and interpersonal risk management
+
+### Suggestions for Overcoming
+
+* Mining
+* Real-Time Permission
+
+### The Role of the leader
+
+* demonstrate restraint when peers engage in conflict
+* personally model appropriate conflict behavior
+
+## Lack of Commitment
+
+* Creates ambiguity among the team about direction and priorities
+* Watches windows of opportunity close due to excessive analysis and unnecessary delay
+* Breeds lack of confidence and fear of failure
+* Revisits discussions and decisions again and again
+* Encourages second-guessing among team members
+
+### Suggestions for Overcoming
+
+* Cascading Messaging
+* Deadlines
+* Contingency and Worst-case Scenario Analysis
+* Low-Risk Exposure Therapy
+
+### The Role of the leader
+
+* confortably making decision that turns out to be run
+* push the group for closure around issues and adhereence to schedules
+* don't place too high a premium on certainty or consensus
+
+## Avoidance of Accountability
+
+* Creates resentment among team members who have different standards of performance
+* Encourages mediocrity
+* Misses deadlines and key deliverables
+* Places an undue burden on the team leader as the sole source of discipline
+
+### Suggestions for Overcoming
+
+* Publication of Goals and Standards
+* Simple and Regular Progress Reviews
+* Team Rewards
+
+### The Role of the leader
+
+* allow the team to serve as the first the primary accountability
+* serve as the arbiter of discipline when the team failed
+
+## Inattention to Results
+
+* Stagnates/fails to grow
+* Rarely defeats competitor
+* Loses achievement-oriented employees
+* Encourages team members to focus on their own careers and individual goals
+* Is easily distracted
+
+### Suggestions for Overcoming
+
+* Public declaration of Results
+* Result-based Rewards
+
+### The Role of the leader
+
+* selfless and objective
+* reward for those who make real contributions
