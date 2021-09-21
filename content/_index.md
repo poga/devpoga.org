@@ -4,6 +4,8 @@ You can contact me via [email](mailto://hi@devpoga.org) or [twitter](https://twi
 
 I work on many different things in the area of technology, design, privacy, and security. In no particular order of preference:
 
+- I've been thinking about [glue systems](/post/2021-09-18_on_glue_systems/) a lot.
+
 - [g0v.social](https://g0v.social), a self-sustainable decentralized social network.
 
 - Extends [Redis](https://redis.io/), an in-memory key-value storage, with modules such as [redis-rating](https://github.com/poga/redis-rating), [redis-percentile](https://github.com/poga/redis-percentile), and [zx](https://github.com/humble-tools/zx).
