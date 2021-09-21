@@ -52,11 +52,13 @@ Most of the glues we encountered are:
 
 ---
 
-## Solutions
+## Solutions?
 
 ![](./switches.webp)
 
-Do you know what's gluing the internet together? These cheap, ignored black boxes usually are called switches. I found [erlang](https://www.erlang.org/) and [elixir](https://elixir-lang.org/) have high potential in the domain of glue systems. They're naturally concurrent and provides high availability. In addition, they can be easily monitored and observed.
+Do you know what's gluing the internet together? These cheap, ignored black boxes usually are called switches. Personally I found [erlang](https://www.erlang.org/) and [elixir](https://elixir-lang.org/) have high potential in the domain of glue systems. They're naturally concurrent and provides high availability. In addition, they can be easily monitored and observed.
+
+Or can [Raku](https://www.raku.org) inherit the (notorious) fame of Perl, the omnipresent glue language?
 
 What's your solution on Glue Systems?
 
