@@ -104,11 +104,11 @@ Cleaning and Preparing the Data **Properly** is really hard. De-identification r
 
 This is how data scientists evaluation their model (naturally, focusing on the model):
 
-![[01.png]]
+![](./01.png)
 
 However, in real-world ML deployments, we should focus on correctness and operability of the whole pipeline. We should evaluate the whole learning and decision process against the business value instead of just the model.
 
-![[02.png]]
+![](./02.png)
 
 **In other words, define your project scope and KPI before starting a maching learning project.**
 
