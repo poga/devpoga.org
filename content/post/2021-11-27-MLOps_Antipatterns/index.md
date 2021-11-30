@@ -33,6 +33,8 @@ In similar vein, the paper is also trying to name a set of patterns emerged from
 
 Here are the patterns listed in the paper. Check [the origin paper](https://arxiv.org/abs/2107.00079) if you want to learn about the detail.
 
+---
+
 ## Design & Development Anti-patterns
 
 ### Data Leakage
@@ -72,6 +74,9 @@ After working on the same project for a while, the machine learning practitioner
 
 >  To avoid this antipattern, testing and evaluation data should be sampled independently, and for a robust performance analysis, should be kept hidden until model development is complete and must be used only for final valuation. In practice, it is not uncommon for model developers to have access to the final test set and by repeated testing against this known test set, modify their model accordingly to improve performance on the known test set. This practice called HARKing (Hypothesizing After Results are Known)
 
+---
+
+
 ## Deployment & Maintenance Anti-patterns
 
 ### Act Now, Reflect Never
@@ -100,6 +105,9 @@ Cleaning and Preparing the Data **Properly** is really hard. De-identification r
 
 > The development of models using data manually extracted and hygiened without recording the extraction or hygiene steps leads to a massive data preparation challenge for later attempts to validate (or even deploy) ML models. This is often the result of ‘sensitive’ data that is selectively sanitized for the modelers by some third-party data steward organization that cannot adequately determine the risk associated with direct data access. The data preparation steps are effectively swept under the carpet and must be completely reinvented later, often with surprising impact on the models because the pipeline ends up producing different data
 
+---
+
+
 # Rethinking ML Deployment
 
 This is how data scientists evaluation their model (naturally, focusing on the model):
@@ -111,6 +119,9 @@ However, in real-world ML deployments, we should focus on correctness and operab
 ![](./02.png)
 
 **In other words, define your project scope and KPI before starting a maching learning project.**
+
+---
+
 
 
 # Recommendations

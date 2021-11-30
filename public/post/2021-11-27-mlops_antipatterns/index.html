@@ -138,6 +138,7 @@
 <p>lessons learned from developing and deploying machine learning models at scale across the enterprise in a range of financial analytics applications. These lessons are presented in the form of antipatterns</p>
 </blockquote>
 <p>Here are the patterns listed in the paper. Check <a href="https://arxiv.org/abs/2107.00079">the origin paper</a> if you want to learn about the detail.</p>
+<hr>
 <h2 id="design--development-anti-patterns">Design &amp; Development Anti-patterns</h2>
 <h3 id="data-leakage">Data Leakage</h3>
 <p>make use of information that is not supposed to have in production.</p>
@@ -169,6 +170,7 @@
 <blockquote>
 <p>To avoid this antipattern, testing and evaluation data should be sampled independently, and for a robust performance analysis, should be kept hidden until model development is complete and must be used only for final valuation. In practice, it is not uncommon for model developers to have access to the final test set and by repeated testing against this known test set, modify their model accordingly to improve performance on the known test set. This practice called HARKing (Hypothesizing After Results are Known)</p>
 </blockquote>
+<hr>
 <h2 id="deployment--maintenance-anti-patterns">Deployment &amp; Maintenance Anti-patterns</h2>
 <h3 id="act-now-reflect-never">Act Now, Reflect Never</h3>
 <p>Never deploy a model straight to production without any monitoring or filtering. It&rsquo;s going to be a nightmare.</p>
@@ -191,12 +193,14 @@
 <blockquote>
 <p>The development of models using data manually extracted and hygiened without recording the extraction or hygiene steps leads to a massive data preparation challenge for later attempts to validate (or even deploy) ML models. This is often the result of ‘sensitive’ data that is selectively sanitized for the modelers by some third-party data steward organization that cannot adequately determine the risk associated with direct data access. The data preparation steps are effectively swept under the carpet and must be completely reinvented later, often with surprising impact on the models because the pipeline ends up producing different data</p>
 </blockquote>
+<hr>
 <h1 id="rethinking-ml-deployment">Rethinking ML Deployment</h1>
 <p>This is how data scientists evaluation their model (naturally, focusing on the model):</p>
 <p><img src="./01.png" alt=""></p>
 <p>However, in real-world ML deployments, we should focus on correctness and operability of the whole pipeline. We should evaluate the whole learning and decision process against the business value instead of just the model.</p>
 <p><img src="./02.png" alt=""></p>
 <p><strong>In other words, define your project scope and KPI before starting a maching learning project.</strong></p>
+<hr>
 <h1 id="recommendations">Recommendations</h1>
 <p>From the paper:</p>
 <ol>
