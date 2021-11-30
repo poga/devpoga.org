@@ -13,3 +13,9 @@ hasCJKLanguage = true
 
 [markup.goldmark.renderer]
 unsafe= true
+
+[markup]
+  [markup.tableOfContents]
+    endLevel = 4
+    ordered = false
+    startLevel = 2

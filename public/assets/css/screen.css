@@ -193,6 +193,14 @@ h6 a {
   text-decoration: none !important;
 }
 
+#TableOfContents a{
+  color: #3a4145;
+}
+
+#TableOfContents ul li ul li a{
+  color: #646f75;
+}
+
 /* Tables and dictionaries (straight up ripped out of the Casper stylesheet with minor modifications) */
 
 table {

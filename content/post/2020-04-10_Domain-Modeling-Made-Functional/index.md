@@ -18,36 +18,36 @@ Notes on the book [Domain Modeling Made Functional: Tackle Software Complexity w
 
 <!--more-->
 
-# Understanding the domain
+## Understanding the domain
 
 A developer's job is to solve a problem through software.
 
-## define a shared model
+### define a shared model
 
 * focus on business events and workflows rather than data structures
 * partition the problem domain into smaller subdomains
 * create a model of each subdomain in the solution
 * develop a common language (known as the "Ubiquitous language") that is shared between everyone involved
 
-## Business events
+### Business events
 
 The value of the business is created in the process of transforming data.
 
-## Bounded Contexts
+### Bounded Contexts
 
 We therefore need to create a distinction between a “problem space” and a “solution space,” and they must be treated as two different things. To build the solution we will create a model of the problem domain, extracting only the aspects of the domain that are relevant and then re-creating them in our solution space
 
-## bounded contexts as autonomous software components
+### bounded contexts as autonomous software components
 
 In general, an event used for communication between contexts will not be just a simple signal but will also contain all the data that the downstream components need to process the event.
 
-### trust boundaries and validation
+#### trust boundaries and validation
 
 The perimeter of a bounded context acts as a “trust boundary.” Anything inside the bounded context will be trusted and valid, while anything outside the bounded context will be untrusted and might be invalid.
 
 The job of the output gate is different. Its job is to ensure that private information doesn’t leak out of the bounded context, both to avoid accidental coupling between contexts and for security reasons.
 
-## Contracts between bounded contexts
+### Contracts between bounded contexts
 
 * A Shared Kernel relationship is where two contexts share some common domain design, so the teams involved must collaborate.
 * A Customer/Supplier or Consumer Driven Contract relationship is where the downstream context defines the contract that they want the upstream context to provide.
@@ -56,13 +56,13 @@ The job of the output gate is different. Its job is to ensure that private infor
 
 build a context map with relationships
 
-## workflow within a bounded context
+### workflow within a bounded context
 
 The input to a workflow is always the data associated with a command, and the output is always a set of events to communicate to other contexts.
 
 avoid domain events within a bounded context
 
-## code structure within a bounded context
+### code structure within a bounded context
 
 use onion architecture ~= clean architecture
 
@@ -70,14 +70,14 @@ keep IO at the edges
 
 ---
 
-# Understanding Types
+## Understanding Types
 
 represent a domain with ADTs
 
 * AND types = product types = records
 * OR types = SUM types = enums
 
-## Domain modeling with types
+### Domain modeling with types
 
 Use type systems to capture the domain model accurately and can be read and understood by domain experts.
 
@@ -85,13 +85,13 @@ simple types + sum/product types + functions
 
 functions = workflows
 
-## Integrity and Consistency in the Domain
+### Integrity and Consistency in the Domain
 
 parse, don't validate https://lexi-lambda.github.io/blog/2019/11/05/parse-don-t-validate/
 
 lots of examples...
 
-### Capturing Business Rules in the Type System
+#### Capturing Business Rules in the Type System
 
 ex.
 ```
@@ -100,9 +100,9 @@ type​ CustomerEmail = ​  | Unverified ​of​ EmailAddress ​  | Verified 
 type​ SendPasswordResetEmail = VerifiedEmailAddress -> ...
 ```
 
-### Making Illegal States Unrepresentable in Our Domain
+#### Making Illegal States Unrepresentable in Our Domain
 
-### Consistency
+#### Consistency
 
 consistency = atomicity of persistence
 
@@ -114,7 +114,7 @@ Consistency between different context is hard, use eventual consistency:
 
 only update one aggregation per transaction
 
-### Modeling Workflow as Pipelines
+#### Modeling Workflow as Pipelines
 
 We’ll create a "pipeline" to represent the business process, which in turn will be built from a series of smaller "pipes." Each smaller pipe will do one transformation, and then we’ll glue the smaller pipes together to make a bigger pipeline. This style of programming is sometimes called “transformation-oriented programming.”
 
@@ -132,27 +132,27 @@ Following functional programming principles, we’ll ensure each step in the pip
 
 Long-running workflow: Sagas
 
-## Implement the model
+### Implement the model
 
-### Understand functions
+#### Understand functions
 
 basic functional programming tutorial
 
-### Implementation: Composing a Pipelien
+#### Implementation: Composing a Pipelien
 
 * Some functions have extra parameters that aren’t part of the data pipeline but are needed for the implementation—we called these "dependencies"
 * We explicitly indicated “effects” such as error handling by using a wrapper type like Result in the function signatures. But that means that functions with effects in their output cannot be directly connected to functions that just have unwrapped plain data as their input.
 
-### Implementation: Working with Errors
+#### Implementation: Working with Errors
 
 Using the result type to make errors explicit. `bind` and `map`.
 
-### Serialization
+#### Serialization
 
 persistence: state that outlives the process that created it
 Serialization: the process of converting from a domain-specific representation to a representation that can be persisted easily.
 
-### Persistence
+#### Persistence
 
 * Push persistence to the edge
 * CQRS

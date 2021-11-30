@@ -6,7 +6,34 @@
     <description>Recent content in Tags on Dev.Poga</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 19 Sep 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://devpoga.org/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 27 Nov 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://devpoga.org/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Machine Learning</title>
+      <link>https://devpoga.org/tags/machine-learning/</link>
+      <pubDate>Sat, 27 Nov 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://devpoga.org/tags/machine-learning/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>MLOps</title>
+      <link>https://devpoga.org/tags/mlops/</link>
+      <pubDate>Sat, 27 Nov 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://devpoga.org/tags/mlops/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>patterns</title>
+      <link>https://devpoga.org/tags/patterns/</link>
+      <pubDate>Sat, 27 Nov 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://devpoga.org/tags/patterns/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>Leadership</title>
       <link>https://devpoga.org/tags/leadership/</link>
@@ -229,15 +256,6 @@
       <pubDate>Tue, 17 Mar 2020 00:00:00 +0000</pubDate>
       
       <guid>https://devpoga.org/tags/vim/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Machine Learning</title>
-      <link>https://devpoga.org/tags/machine-learning/</link>
-      <pubDate>Mon, 17 Feb 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://devpoga.org/tags/machine-learning/</guid>
       <description></description>
     </item>
     
