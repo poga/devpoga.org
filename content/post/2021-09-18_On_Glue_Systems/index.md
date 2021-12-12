@@ -9,7 +9,7 @@ categories:
   - Essays
 ---
 
-![](./glue.jpg)
+![](/post/2021-09-18_on_glue_systems/glue.jpg)
 
 I spent most of my life building glue systems.
 
