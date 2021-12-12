@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>naps on Dev.Poga</title>
+    <link>https://devpoga.org/tags/naps/</link>
+    <description>Recent content in naps on Dev.Poga</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 12 Dec 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://devpoga.org/tags/naps/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>On Naps</title>
+      <link>https://devpoga.org/post/2021-12-12_naps/</link>
+      <pubDate>Sun, 12 Dec 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://devpoga.org/post/2021-12-12_naps/</guid>
+      <description>&lt;p&gt;I&amp;rsquo;ve been taking naps multiple times a day. And surprisingly, a simple 5 minutes nap can help me avoid quite a lot of depression and anxiety.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -60,7 +60,6 @@ h4,
 h5,
 h6 {
   font-family: "Helvetica", "freight-sans-pro", "Arial";
-  margin-bottom: 10px;
   font-weight: 500;
 }
 
@@ -134,7 +133,7 @@ pre code {
 }
 
 blockquote {
-  margin: 0 2em;
+  margin: 2em 2em;
   color: #9eabb3;
 }
 
