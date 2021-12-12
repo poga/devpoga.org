@@ -144,6 +144,15 @@
 <p>於是，NaN tagging 讓我們省下了額外一層的指標。型別的定義跟判斷型別的方式也變的非常簡單：</p>
 <p>這樣做，讓所有的 primitive value 都能直接被存取，不需要經過指標。而其他型別也能用同樣的 64-bit 空間儲存，產生許多優化的可能性，也能更加善用 register。</p>
 <p>其實這並不是 LuaJIT 獨創的技巧，據說早在 80, 90 年代的許多 Lisp 實做就有用到 NaNtagging。透過結合對硬體實做的理解跟軟體的設計，讓 LuaJIT 相對於其他動態語言，能搾出更多的效能。</p>
+
+      <hr />
+      <p>
+        <em>Don’t miss the next story. Sign up for my occasional</em>
+        <a href="https://poga.substack.com/"><em>email newsletter</em></a>
+        <em>. Or check the</em>
+        <a href="https://devpoga.org/"><em>About/FAQ</em></a>
+        <em>page for more.</em>
+      </p>
     </section>
     <footer class="post-footer">
       <section class="tags post-meta">

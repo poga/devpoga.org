@@ -134,8 +134,3 @@ From the paper:
 4. Use ensembles to maintain a palette of models including remedial and compensatory pipelines in the event of errors. Track model histories through the lifecycle of an application.
 5. Ensure human-in-the-loop operational capability at multiple levels. Use our model presented for rethinking ML deployment from Section 4 as a basis to support interventions and communication opportunities.
 
----
-
-_Don’t miss the next story. Sign up for my occasional_ [_email newsletter_](https://poga.substack.com/)_. Or check the_ [_About/FAQ_](https://devpoga.org/) _page for more._
-
-

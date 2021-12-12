@@ -109,6 +109,15 @@
 <p>既然永遠不會 <code>return</code>，自然得處理 stack overflow 的問題。解法也蠻單純的，在 stack 快要爆炸的時候，直接 <code>setjmp</code>/<code>longjmp</code> 跳到下一個 continuation，清空 stack 的同時也清空了用過的值，順便成為了一種 generational garbage collector！</p>
 <hr>
 <p>用一個方法同時處理 tail-recursion 跟 GC 真是相當漂亮啊。</p>
+
+      <hr />
+      <p>
+        <em>Don’t miss the next story. Sign up for my occasional</em>
+        <a href="https://poga.substack.com/"><em>email newsletter</em></a>
+        <em>. Or check the</em>
+        <a href="https://devpoga.org/"><em>About/FAQ</em></a>
+        <em>page for more.</em>
+      </p>
     </section>
     <footer class="post-footer">
       <section class="tags post-meta">
