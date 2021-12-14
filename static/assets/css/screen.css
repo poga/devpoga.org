@@ -38,7 +38,7 @@ body {
   height: 100%;
   max-height: 100%;
   width: 80%;
-  max-width: 750px;
+  max-width: 1024px;
   margin: 0 auto;
   font-family: "freight-sans-pro", "Arial";
   font-weight: 300;
@@ -65,14 +65,17 @@ h6 {
 
 h1 {
   font-size: 1.55rem;
+  margin: 4rem 0 2rem 0;
 }
 
 h2 {
   font-size: 1.5rem;
+  margin: 3rem 0 1.5rem 0;
 }
 
 h3 {
   font-size: 1.2rem;
+  margin: 2rem 0 1rem 0;
 }
 
 h4 {
@@ -133,13 +136,15 @@ pre code {
 }
 
 blockquote {
-  margin: 2em 2em;
+  margin: 0;
+  font-family: serif;
+  padding-left: 2em;
   color: #9eabb3;
+  border-left: 5px solid grey;
 }
 
 blockquote p {
   margin: 0.8em 0;
-  font-style: italic;
 }
 
 blockquote cite {
