@@ -5,8 +5,9 @@ date: 2021-09-18
 tags:
   - Essays
   - Programming
+  - Glues
 categories:
-  - Essays
+  - Notes
 ---
 
 ![](/post/2021-09-18_on_glue_systems/glue.jpg)

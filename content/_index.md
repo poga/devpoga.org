@@ -4,7 +4,7 @@ You can contact me via [email](mailto://hi@devpoga.org) or [twitter](https://twi
 
 I work on interconnecting things in different domains such as technology, design, privacy, and security. In no particular order of preference:
 
-- I've been thinking about [glue systems](/post/2021-09-18_on_glue_systems/) a lot.
+- I've been thinking about [glue systems](/tags/glues/) a lot.
 
 - [g0v.social](https://g0v.social), a self-sustainable decentralized social network.
 

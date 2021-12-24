@@ -6,7 +6,16 @@
     <description>Recent content in MLOps on Dev.Poga</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 27 Nov 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://devpoga.org/tags/mlops/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 12 Dec 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://devpoga.org/tags/mlops/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Pipelines and Glue Systems</title>
+      <link>https://devpoga.org/post/2021-12-25_pipelines_and_glue_systems/</link>
+      <pubDate>Sun, 12 Dec 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://devpoga.org/post/2021-12-25_pipelines_and_glue_systems/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Context&lt;/strong&gt;: Machine Learning Projects are mainly just a complex interdependent pipeline. We desperately need a better abstraction for them.&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>Using AntiPatterns to avoid MLOps Mistakes</title>
       <link>https://devpoga.org/post/2021-11-27-mlops_antipatterns/</link>
