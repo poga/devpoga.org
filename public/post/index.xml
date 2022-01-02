@@ -6,7 +6,17 @@
     <description>Recent content in Posts on Dev.Poga</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 12 Dec 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://devpoga.org/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 03 Jan 2022 00:56:00 +0800</lastBuildDate><atom:link href="https://devpoga.org/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>gRPC status codes</title>
+      <link>https://devpoga.org/post/2022-01-03_grpc_status_code/</link>
+      <pubDate>Mon, 03 Jan 2022 00:56:00 +0800</pubDate>
+      
+      <guid>https://devpoga.org/post/2022-01-03_grpc_status_code/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://grpc.io&#34;&gt;gRPC&lt;/a&gt; defined &lt;a href=&#34;https://github.com/grpc/grpc/blob/0e00c430827e81d61e1e7164ef04ca21ccbfaa77/include/grpcpp/impl/codegen/status_code_enum.h&#34;&gt;18 status codes&lt;/a&gt; for returning different types of errors.&lt;/p&gt;
+&lt;p&gt;I think they&amp;rsquo;re a pretty good reference if you want to design clear error handling for API.&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>On Naps</title>
       <link>https://devpoga.org/post/2021-12-12_naps/</link>
