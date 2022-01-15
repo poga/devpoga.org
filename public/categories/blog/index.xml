@@ -6,7 +6,16 @@
     <description>Recent content in Blog on Dev.Poga</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 03 Jan 2022 00:56:00 +0800</lastBuildDate><atom:link href="https://devpoga.org/categories/blog/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 15 Jan 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://devpoga.org/categories/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>I cannot think myself out of this</title>
+      <link>https://devpoga.org/post/2022-01-15_i_cannot_think_myself_out_of_this/</link>
+      <pubDate>Sat, 15 Jan 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://devpoga.org/post/2022-01-15_i_cannot_think_myself_out_of_this/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://news.ycombinator.com/item?id=29226021&#34;&gt;From HN&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>gRPC status codes</title>
       <link>https://devpoga.org/post/2022-01-03_grpc_status_code/</link>
