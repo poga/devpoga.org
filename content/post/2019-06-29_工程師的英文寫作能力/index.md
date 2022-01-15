@@ -6,7 +6,7 @@ tags:
   - writing
   - engineering
 categories:
-  - Notes
+  - Blog
 ---
 
 寫作能力一直是工程師實力一個很重要的指標。

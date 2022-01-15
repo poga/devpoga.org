@@ -11,7 +11,7 @@ tags:
 
 
 categories:
-  - Essays
+  - Blog
 
 ---
 

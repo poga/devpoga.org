@@ -7,7 +7,7 @@ tags:
   - Programming
   - Notes
 categories:
-  - Notes
+  - Blog
 ---
 
 Probably the cleanest way to do it:

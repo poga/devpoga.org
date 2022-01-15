@@ -19,7 +19,7 @@ images:
  - "/post/2017-12-22_kappa-architecture以資料為中心的系統架構/images/2.png"
 
 categories:
-  - Essays
+  - Blog
   - Talks
 
 aliases:

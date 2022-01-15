@@ -10,7 +10,7 @@ tags:
  - Serverless
 
 categories:
-  - Essays
+  - Blog
   - Talks
 ---
 

@@ -7,7 +7,7 @@ tags:
   - Programming
   - Julia
 categories:
-  - Notes
+  - Blog
 ---
 
 [Cardsjl](https://github.com/StefanKarpinski/Cards.jl) is a simple Julia package which demonstrate many interesting bits of the [Julia Programming Language](https://julialang.org/).

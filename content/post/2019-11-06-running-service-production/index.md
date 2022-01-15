@@ -5,7 +5,7 @@ date: 2019-11-06
 tags:
   - Programming
 categories:
-  - Talks
+  - Blog
 ---
 
 <!--more-->

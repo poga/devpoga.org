@@ -8,7 +8,7 @@ tags:
   - Condition
   - Notes
 categories:
-  - Notes
+  - Blog
 ---
 
 ![](/post/2021-04-25_common_lisp_condition_system/book.jpg)

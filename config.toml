@@ -8,7 +8,7 @@ theme = "arabica"
 hasCJKLanguage = true
 
 [params]
-    description = ""
+    description = "A non-leaky bucket"
     dateFormatToUse = "2006-01-02"
 
 [markup.goldmark.renderer]

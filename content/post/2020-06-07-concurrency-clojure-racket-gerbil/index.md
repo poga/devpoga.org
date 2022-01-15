@@ -8,7 +8,7 @@ tags:
   - Scheme
   - Notes
 categories:
-  - Notes
+  - Blog
 ---
 
 ![](/post/2020-06-07-concurrency-clojure-racket-gerbil/index.jpeg)

@@ -16,7 +16,7 @@ image: "/post/2016-05-17_該怎樣教任何人任何技能/images/1.jpeg"
 images:
  - "/post/2016-05-17_該怎樣教任何人任何技能/images/1.jpeg"
 categories:
-  - Essays
+  - Blog
 
 
 aliases:

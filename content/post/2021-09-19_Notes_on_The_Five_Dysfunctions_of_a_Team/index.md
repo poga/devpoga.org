@@ -7,7 +7,7 @@ tags:
   - Organization
   - Leadership
 categories:
-  - Notes
+  - Blog
 ---
 
 * genuine teamwork in most organizations remains as elusive as it has ever been.

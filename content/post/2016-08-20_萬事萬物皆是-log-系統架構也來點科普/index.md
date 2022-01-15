@@ -20,7 +20,7 @@ images:
 
 
 categories:
-  - Talks
+  - Blog
 
 aliases:
     - "/%E8%90%AC%E4%BA%8B%E8%90%AC%E7%89%A9%E7%9A%86%E6%98%AF-log-%E7%B3%BB%E7%B5%B1%E6%9E%B6%E6%A7%8B%E4%B9%9F%E4%BE%86%E9%BB%9E%E7%A7%91%E6%99%AE-caf3029359f8"

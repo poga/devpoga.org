@@ -12,7 +12,7 @@ tags:
  - Burnout
 
 categories:
-  - Essays
+  - Blog
 ---
 
 我始終不喜歡「擁有」的概念。那是種排他、缺乏多樣性的想法。

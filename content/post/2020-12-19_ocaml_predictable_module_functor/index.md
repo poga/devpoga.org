@@ -8,7 +8,7 @@ tags:
   - Programming
   - Learn OCaml the Hard Way
 categories:
-  - Essays
+  - Blog
 
 summary: "![](/post/2020-12-19_ocaml_predictable_module_functor/camel.jpg) OCaml's [module system](https://dev.realworldocaml.org/files-modules-and-programs.html) can be a powerful tool for building generic code and structuring systems. Functors are functions from modules to modules and they serve an important role for the power of module system. However, I want to know if functors (and the module system) can be optimized away by the OCaml compiler."
 ---

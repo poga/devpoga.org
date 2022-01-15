@@ -9,7 +9,7 @@ tags:
   - Note
   - Reading
 categories:
-  - Notes
+  - Blog
 ---
 
 ![](/post/2020-04-09_zero-trust-network/book.jpg)

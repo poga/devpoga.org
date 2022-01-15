@@ -5,7 +5,7 @@ date: 2019-11-03
 tags:
   - Programming
 categories:
-  - Essays
+  - Blog
 ---
 
 2020 is going to be the golden age of new programming languages.

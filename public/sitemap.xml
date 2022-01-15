@@ -6,13 +6,13 @@
     <lastmod>2022-01-03T00:56:00+08:00</lastmod>
     <priority>0</priority>
   </url><url>
+    <loc>https://devpoga.org/categories/blog/</loc>
+    <lastmod>2022-01-03T00:56:00+08:00</lastmod>
+  </url><url>
     <loc>https://devpoga.org/categories/</loc>
     <lastmod>2022-01-03T00:56:00+08:00</lastmod>
   </url><url>
     <loc>https://devpoga.org/post/2022-01-03_grpc_status_code/</loc>
-    <lastmod>2022-01-03T00:56:00+08:00</lastmod>
-  </url><url>
-    <loc>https://devpoga.org/categories/notes/</loc>
     <lastmod>2022-01-03T00:56:00+08:00</lastmod>
   </url><url>
     <loc>https://devpoga.org/post/</loc>
@@ -23,9 +23,6 @@
   </url><url>
     <loc>https://devpoga.org/tags/</loc>
     <lastmod>2022-01-03T00:56:00+08:00</lastmod>
-  </url><url>
-    <loc>https://devpoga.org/categories/essays/</loc>
-    <lastmod>2021-12-12T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://devpoga.org/tags/glues/</loc>
     <lastmod>2021-12-12T00:00:00+00:00</lastmod>
@@ -46,9 +43,6 @@
     <lastmod>2021-12-12T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://devpoga.org/tags/machine-learning/</loc>
-    <lastmod>2021-11-27T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://devpoga.org/categories/papers/</loc>
     <lastmod>2021-11-27T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://devpoga.org/tags/patterns/</loc>
@@ -124,9 +118,6 @@
     <lastmod>2020-11-29T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://devpoga.org/tags/mastodon/</loc>
-    <lastmod>2020-11-29T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://devpoga.org/categories/talks/</loc>
     <lastmod>2020-11-29T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://devpoga.org/post/2020-11-29-g0v.social-journey/</loc>
@@ -246,6 +237,9 @@
     <loc>https://devpoga.org/tags/lua/</loc>
     <lastmod>2019-04-30T21:56:04+08:00</lastmod>
   </url><url>
+    <loc>https://devpoga.org/categories/notes/</loc>
+    <lastmod>2019-02-26T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://devpoga.org/post/implementation-lua53/</loc>
     <lastmod>2019-02-26T00:00:00+00:00</lastmod>
   </url><url>
@@ -289,6 +283,9 @@
     <lastmod>2019-04-30T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://devpoga.org/tags/serverless/</loc>
+    <lastmod>2019-04-30T21:56:01+08:00</lastmod>
+  </url><url>
+    <loc>https://devpoga.org/categories/talks/</loc>
     <lastmod>2019-04-30T21:56:01+08:00</lastmod>
   </url><url>
     <loc>https://devpoga.org/post/2018-04-10_why_serverless/</loc>

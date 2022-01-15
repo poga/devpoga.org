@@ -8,7 +8,7 @@ tags:
   - Programming
   - Learn OCaml the Hard Way
 categories:
-  - Essays
+  - Blog
 
 summary: "Modern compilers usually composed by multiple stages: parsers, optimizers, linkers, and assemblers. Let's go through it one by one to have a better understanding of the OCaml compiler. "
 ---

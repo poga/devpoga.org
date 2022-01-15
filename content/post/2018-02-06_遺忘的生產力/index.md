@@ -10,7 +10,7 @@ tags:
  - Productivity
 
 categories:
-  - Essays
+  - Blog
 ---
 
 人們談到生產力，似乎就免不了討論各種蒐集想法、整理心得的工具。彷彿忘了的東西都是一種損失。

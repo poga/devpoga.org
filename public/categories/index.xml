@@ -8,36 +8,27 @@
     <language>en-us</language>
     <lastBuildDate>Mon, 03 Jan 2022 00:56:00 +0800</lastBuildDate><atom:link href="https://devpoga.org/categories/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Blog</title>
+      <link>https://devpoga.org/categories/blog/</link>
+      <pubDate>Mon, 03 Jan 2022 00:56:00 +0800</pubDate>
+      
+      <guid>https://devpoga.org/categories/blog/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Notes</title>
       <link>https://devpoga.org/categories/notes/</link>
-      <pubDate>Mon, 03 Jan 2022 00:56:00 +0800</pubDate>
+      <pubDate>Tue, 26 Feb 2019 00:00:00 +0000</pubDate>
       
       <guid>https://devpoga.org/categories/notes/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Essays</title>
-      <link>https://devpoga.org/categories/essays/</link>
-      <pubDate>Sun, 12 Dec 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://devpoga.org/categories/essays/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Papers</title>
-      <link>https://devpoga.org/categories/papers/</link>
-      <pubDate>Sat, 27 Nov 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://devpoga.org/categories/papers/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Talks</title>
       <link>https://devpoga.org/categories/talks/</link>
-      <pubDate>Sun, 29 Nov 2020 00:00:00 +0000</pubDate>
+      <pubDate>Tue, 06 Feb 2018 00:00:00 +0000</pubDate>
       
       <guid>https://devpoga.org/categories/talks/</guid>
       <description></description>

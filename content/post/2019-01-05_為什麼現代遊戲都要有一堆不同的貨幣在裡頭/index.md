@@ -16,7 +16,7 @@ images:
 aliases:
     - "/%E7%82%BA%E4%BB%80%E9%BA%BC%E7%8F%BE%E4%BB%A3%E9%81%8A%E6%88%B2%E9%83%BD%E8%A6%81%E6%9C%89%E4%B8%80%E5%A0%86%E4%B8%8D%E5%90%8C%E7%9A%84%E8%B2%A8%E5%B9%A3%E5%9C%A8%E8%A3%A1%E9%A0%AD-abb784317211"
 categories:
-  - Essays
+  - Blog
 ---
 
 ![image](/post/2019-01-05_為什麼現代遊戲都要有一堆不同的貨幣在裡頭/images/1.jpeg)

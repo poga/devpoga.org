@@ -12,7 +12,7 @@ tags:
  - Log
 
 categories:
-  - Talks
+  - Blog
 
 ---
 

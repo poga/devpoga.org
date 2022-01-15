@@ -6,7 +6,7 @@ tags:
   - Programming
   - Essays
 categories:
-  - Essays
+  - Blog
 ---
 
 The title sounds obvious. We always program for a machine! A program won't run itself!

@@ -7,7 +7,7 @@ tags:
   - Notes
   - Reading
 categories:
-  - Notes
+  - Blog
 ---
 
 Reading List.

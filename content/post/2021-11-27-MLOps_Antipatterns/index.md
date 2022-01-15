@@ -7,7 +7,7 @@ tags:
   - MLOps
   - patterns
 categories:
-  - Papers
+  - Blog
 ---
 
 [Using AntiPatterns to avoid MLOps Mistakes](https://arxiv.org/abs/2107.00079), Nikil Muralidhar et. al.

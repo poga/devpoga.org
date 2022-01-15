@@ -23,7 +23,7 @@ aliases:
     - "/the-design-of-everyday-things-cfa3cacfa65a"
 
 categories:
-  - Notes
+  - Blog
 ---
 
 雜亂筆記

@@ -6,7 +6,7 @@ tags:
   - Mastodon
   - g0v
 categories:
-  - Talks
+  - Blog
 ---
 
 Slides for [g0v summit 2020](https://summit.g0v.tw/2020/).

@@ -9,7 +9,7 @@ tags:
   - Note
   - Reading
 categories:
-  - Notes
+  - Blog
 ---
 
 ![](/post/2020-04-10_domain-modeling-made-functional/book.jpg)

@@ -9,7 +9,7 @@ tags:
   - editor
   - Programming Languages
 categories:
-  - Essays
+  - Blog
 ---
 
 從[開始接觸 Go](https://blog.golang.org/go-version-1-is-released) 到現在也已經過了 7 年了啊... 最近又有機會拿出 Go 出來寫寫，隨手寫一下感受。

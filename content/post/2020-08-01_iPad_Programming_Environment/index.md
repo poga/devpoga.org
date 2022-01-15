@@ -6,7 +6,7 @@ tags:
   - iPad
   - Programming
 categories:
-  - Essays
+  - Blog
 ---
 
 五月買了 [iPad Pro](https://www.apple.com/tw/ipad-pro/) 跟 [巧控鍵盤](https://www.apple.com/tw/ipad-keyboards/) 後，大部分的需求 iPad Pro 都能直接滿足，除了寫程式以外。摸索了一陣子之後總算找到順手又省錢的寫程式方式了，這篇簡單記錄一下。

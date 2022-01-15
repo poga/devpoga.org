@@ -20,7 +20,7 @@ images:
 aliases:
     - "/data-oriented-design-9288178d3ea5"
 categories:
-  - Essays
+  - Blog
 ---
 
 ![image](/post/2018-07-16_軟體設計模式-dataoriented-design/images/1.jpeg)

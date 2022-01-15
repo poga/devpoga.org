@@ -7,7 +7,7 @@ tags:
   - Programming
   - Glues
 categories:
-  - Notes
+  - Blog
 ---
 
 ![](/post/2021-09-18_on_glue_systems/glue.jpg)

@@ -6,7 +6,7 @@ tags:
   - Programming
   - Productivity
 categories:
-  - Notes
+  - Blog
 ---
 
 <!--more-->

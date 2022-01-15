@@ -8,7 +8,7 @@ tags:
   - vim
   - editor
 categories:
-  - Notes
+  - Blog
 ---
 
 ![](/post/2020-03-17_ocaml_quickstart/vim.png)

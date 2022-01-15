@@ -7,7 +7,7 @@ tags:
   - MLOps
   - glues
 categories:
-  - Notes
+  - Blog
 ---
 
 **Context**: Machine Learning Projects are mainly just a complex interdependent pipeline. We desperately need a better abstraction for them.

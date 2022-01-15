@@ -5,7 +5,7 @@ date: "2022-01-03T00:56:00+08:00"
 tags:
   - Programming
 categories:
-  - Notes
+  - Blog
 ---
 
 [gRPC](https://grpc.io) defined [18 status codes](https://github.com/grpc/grpc/blob/0e00c430827e81d61e1e7164ef04ca21ccbfaa77/include/grpcpp/impl/codegen/status_code_enum.h) for returning different types of errors.

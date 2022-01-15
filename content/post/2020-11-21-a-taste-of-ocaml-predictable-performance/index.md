@@ -8,7 +8,7 @@ tags:
   - Programming
   - Learn OCaml the Hard Way
 categories:
-  - Essays
+  - Blog
 
 summary: "![](/post/2020-11-21-a-taste-of-ocaml-predictable-performance/colour-logo.png) [eqaf](https://github.com/mirage/eqaf), a constant-time compare function implementation in [OCaml](https://ocaml.org/), is a great case to demonstrate the [predictable performance of OCaml's compiler](https://signalsandthreads.com/language-design/#0008401). Why?"
 ---

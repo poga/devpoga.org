@@ -6,7 +6,7 @@ tags:
   - naps
   - health
 categories:
-  - Essays
+  - Blog
 ---
 
 I've been taking naps multiple times a day. And surprisingly, a simple 5 minutes nap can help me avoid quite a lot of depression and anxiety.

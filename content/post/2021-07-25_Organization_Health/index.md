@@ -9,7 +9,7 @@ tags:
   - Communication
   - Reading
 categories:
-  - Notes
+  - Blog
 ---
 
 ![](/post/2021-07-25_organization_health/book.jpg)

@@ -25,7 +25,7 @@ images:
 aliases:
     - "/luajit-%E5%AF%A6%E5%81%9A%E6%8E%A2%E7%B4%A2-nan-tagging-13f83f247dc6"
 categories:
-  - Essays
+  - Blog
 ---
 
 ![image](/post/2018-04-18_luajit-實做探索-nan-tagging/images/1.png)

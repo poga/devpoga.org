@@ -6,7 +6,7 @@ tags:
   - Programming
   - Machine Learning
 categories:
-  - Essays
+  - Blog
 ---
 
 Here's a simple checklist for people who deploy machine learning models to production. Based on my personal experience.

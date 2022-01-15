@@ -17,7 +17,7 @@ images:
  - "/post/2018-09-03_如何整合-rust-與-lua/images/1.jpeg"
 
 categories:
-  - Essays
+  - Blog
 
 
 aliases:
