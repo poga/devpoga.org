@@ -306,6 +306,7 @@ dl dd {
 
 .blog-description {
   margin: 0;
+  margin-top: 5px;
   font-size: 0.889rem;
   font-family: "Lato", sans-serif;
   text-transform: uppercase;
