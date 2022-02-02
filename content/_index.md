@@ -1,6 +1,6 @@
 ## Hi! I'm Poga.
 
-You can contact me via [email](mailto://hi@devpoga.org) or [twitter](https://twitter.com/devpoga)
+You can contact me via [email](mailto://hi@devpoga.org).
 
 I work on interconnecting things in different domains such as technology, design, privacy, and security. In no particular order of preference:
 
