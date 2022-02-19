@@ -3,25 +3,31 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://devpoga.org/</loc>
-    <lastmod>2022-01-15T00:00:00+00:00</lastmod>
+    <lastmod>2022-02-19T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url><url>
     <loc>https://devpoga.org/categories/blog/</loc>
-    <lastmod>2022-01-15T00:00:00+00:00</lastmod>
+    <lastmod>2022-02-19T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://devpoga.org/categories/</loc>
-    <lastmod>2022-01-15T00:00:00+00:00</lastmod>
+    <lastmod>2022-02-19T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://devpoga.org/post/</loc>
+    <lastmod>2022-02-19T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://devpoga.org/tags/reading/</loc>
+    <lastmod>2022-02-19T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://devpoga.org/tags/</loc>
+    <lastmod>2022-02-19T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://devpoga.org/post/2022-02-19_what_ive_been_reading/</loc>
+    <lastmod>2022-02-19T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://devpoga.org/tags/depression/</loc>
     <lastmod>2022-01-15T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://devpoga.org/post/2022-01-15_i_cannot_think_myself_out_of_this/</loc>
-    <lastmod>2022-01-15T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://devpoga.org/post/</loc>
-    <lastmod>2022-01-15T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://devpoga.org/tags/</loc>
     <lastmod>2022-01-15T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://devpoga.org/post/2022-01-03_grpc_status_code/</loc>
@@ -85,9 +91,6 @@
     <lastmod>2021-07-24T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://devpoga.org/tags/communication/</loc>
-    <lastmod>2021-07-24T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://devpoga.org/tags/reading/</loc>
     <lastmod>2021-07-24T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://devpoga.org/post/2021-05-11_haxe_and_programming_for_many_machines/</loc>

@@ -2,7 +2,7 @@
 
 You can contact me via [email](mailto://hi@devpoga.org).
 
-I work on interconnecting things in different domains such as technology, design, privacy, and security. In no particular order of preference:
+I work on interconnecting things in different domains such as tech, design, privacy, and security. In no particular order of preference:
 
 - I've been thinking about [glue systems](/tags/glues/) a lot.
 

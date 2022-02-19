@@ -6,7 +6,16 @@
     <description>Recent content in Tags on Dev.Poga</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 15 Jan 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://devpoga.org/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 19 Feb 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://devpoga.org/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Reading</title>
+      <link>https://devpoga.org/tags/reading/</link>
+      <pubDate>Sat, 19 Feb 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://devpoga.org/tags/reading/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>Depression</title>
       <link>https://devpoga.org/tags/depression/</link>
@@ -130,15 +139,6 @@
       <pubDate>Sat, 24 Jul 2021 00:00:00 +0000</pubDate>
       
       <guid>https://devpoga.org/tags/communication/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Reading</title>
-      <link>https://devpoga.org/tags/reading/</link>
-      <pubDate>Sat, 24 Jul 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://devpoga.org/tags/reading/</guid>
       <description></description>
     </item>
     
