@@ -4,11 +4,11 @@ You can contact me via [email](mailto://hi@devpoga.org).
 
 I work on interconnecting things in different domains such as tech, design, privacy, and security. In no particular order of preference:
 
-- I've been thinking about [glue systems](/tags/glues/) a lot.
-
 - [g0v.social](https://g0v.social), a self-sustainable decentralized social network.
 
-- Federated learning resources, [Awesome Federated Learning](https://github.com/poga/awesome-federated-learning).
+- Machine Learning: resources for Federated learning, [Awesome Federated Learning](https://github.com/poga/awesome-federated-learning).
+
+- I've been thinking about [glue systems](/tags/glues/) a lot.
 
 ...as well as many other [open-source projects](https://github.com/poga).
 
