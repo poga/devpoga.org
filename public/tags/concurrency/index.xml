@@ -9,19 +9,19 @@
     <lastBuildDate>Sun, 07 Jun 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://devpoga.org/tags/concurrency/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Concurrency in Clojure, Racket, and Gerbil Scheme</title>
-      <link>https://devpoga.org/post/2020-06-07-concurrency-clojure-racket-gerbil/</link>
+      <link>https://devpoga.org/posts/2020-06-07-concurrency-clojure-racket-gerbil/</link>
       <pubDate>Sun, 07 Jun 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://devpoga.org/post/2020-06-07-concurrency-clojure-racket-gerbil/</guid>
+      <guid>https://devpoga.org/posts/2020-06-07-concurrency-clojure-racket-gerbil/</guid>
       <description>&lt;p&gt;&lt;img src=&#34;https://devpoga.org/post/2020-06-07-concurrency-clojure-racket-gerbil/index.jpeg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Structured Concurrency</title>
-      <link>https://devpoga.org/post/2019-06-30_structured_concurrency/</link>
+      <link>https://devpoga.org/posts/2019-06-30_structured_concurrency/</link>
       <pubDate>Sun, 30 Jun 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://devpoga.org/post/2019-06-30_structured_concurrency/</guid>
+      <guid>https://devpoga.org/posts/2019-06-30_structured_concurrency/</guid>
       <description>&lt;p&gt;Thread 跟 Coroutine 是兩種常常用來處理 Concurrency 的工具。&lt;/p&gt;
 &lt;p&gt;使用這兩個工具時，很麻煩的一點就是需要手動管理他們的生命週期。本質上，Thread 跟 Coroutine 都是 global scope，不管你如何建立，他們都獨立在原本的程式順序之外。&lt;/p&gt;
 &lt;p&gt;常見的例子是，如果你在 main 建立一個新的 thread，main 並不會等 thread 結束，而需要你手動 join thread，在複雜的情況（例如 cancel、timeout）便相當容易出錯。&lt;/p&gt;

@@ -9,19 +9,19 @@
     <lastBuildDate>Sun, 12 Dec 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://devpoga.org/tags/glues/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Pipelines and Glue Systems</title>
-      <link>https://devpoga.org/post/2021-12-25_pipelines_and_glue_systems/</link>
+      <link>https://devpoga.org/posts/2021-12-25_pipelines_and_glue_systems/</link>
       <pubDate>Sun, 12 Dec 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://devpoga.org/post/2021-12-25_pipelines_and_glue_systems/</guid>
+      <guid>https://devpoga.org/posts/2021-12-25_pipelines_and_glue_systems/</guid>
       <description>&lt;p&gt;&lt;strong&gt;Context&lt;/strong&gt;: Machine Learning Projects are mainly just a complex interdependent pipeline. We desperately need a better abstraction for them.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>On Building Glue Systems</title>
-      <link>https://devpoga.org/post/2021-09-18_on_glue_systems/</link>
+      <link>https://devpoga.org/posts/2021-09-18_on_glue_systems/</link>
       <pubDate>Sat, 18 Sep 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://devpoga.org/post/2021-09-18_on_glue_systems/</guid>
+      <guid>https://devpoga.org/posts/2021-09-18_on_glue_systems/</guid>
       <description>&lt;p&gt;&lt;img src=&#34;https://devpoga.org/post/2021-09-18_on_glue_systems/glue.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 &lt;p&gt;I spent most of my life building glue systems.&lt;/p&gt;
 &lt;p&gt;Sometimes, I got to work on a deep, sparkling project. But most of the time, my work is about gluing things together.&lt;/p&gt;</description>

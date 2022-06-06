@@ -2,7 +2,7 @@ baseURL = "https://devpoga.org/"
 languageCode = "en-us"
 title = "Dev.Poga"
 
-theme = "arabica"
+theme = "hugo_theme_pickles"
 
 hasCJKLanguage = true
 

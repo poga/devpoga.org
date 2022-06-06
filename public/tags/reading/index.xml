@@ -9,53 +9,55 @@
     <lastBuildDate>Sat, 19 Feb 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://devpoga.org/tags/reading/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>What I&#39;ve been Reading: 2022 Jan and Feb</title>
-      <link>https://devpoga.org/post/2022-02-19_what_ive_been_reading/</link>
+      <link>https://devpoga.org/posts/2022-02-19_what_ive_been_reading/</link>
       <pubDate>Sat, 19 Feb 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://devpoga.org/post/2022-02-19_what_ive_been_reading/</guid>
-      <description>MLOps   The Four Innovation Phases of Netflix’s Trillions Scale Real-time Data Infrastructure
-  https://thedataexchange.media/building-machine-learning-infrastructure-at-netflix-and-beyond/
-  Real-time machine learning: challenges and solutions
-  Why are ML Compilers so Hard?
-  Compiler  UCB CS294-113: Virtual Machines and Managed Runtimes  Rendering I&amp;rsquo;ve been wanting to go back to my root of programming: games and rendering.
-  A Review of Shader Language
-  Finding Your Home in Game Graphics Programming</description>
+      <guid>https://devpoga.org/posts/2022-02-19_what_ive_been_reading/</guid>
+      <description>MLOps The Four Innovation Phases of Netflix’s Trillions Scale Real-time Data Infrastructure
+https://thedataexchange.media/building-machine-learning-infrastructure-at-netflix-and-beyond/
+Real-time machine learning: challenges and solutions
+Why are ML Compilers so Hard?
+Compiler UCB CS294-113: Virtual Machines and Managed Runtimes Rendering I&amp;rsquo;ve been wanting to go back to my root of programming: games and rendering.
+A Review of Shader Language
+Finding Your Home in Game Graphics Programming
+Nanite A Deep Dive
+Rendering the Hellscape of Doom Eternal</description>
     </item>
     
     <item>
       <title>CHECKLIST FOR ORGANIZATIONAL HEALTH</title>
-      <link>https://devpoga.org/post/2021-07-25_organization_health/</link>
+      <link>https://devpoga.org/posts/2021-07-25_organization_health/</link>
       <pubDate>Sat, 24 Jul 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://devpoga.org/post/2021-07-25_organization_health/</guid>
+      <guid>https://devpoga.org/posts/2021-07-25_organization_health/</guid>
       <description>&lt;p&gt;&lt;img src=&#34;https://devpoga.org/post/2021-07-25_organization_health/book.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>On Communication</title>
-      <link>https://devpoga.org/post/2020-04-21_on-communication/</link>
+      <link>https://devpoga.org/posts/2020-04-21_on-communication/</link>
       <pubDate>Tue, 21 Apr 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://devpoga.org/post/2020-04-21_on-communication/</guid>
+      <guid>https://devpoga.org/posts/2020-04-21_on-communication/</guid>
       <description>&lt;p&gt;Reading List.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Domain Modeling Made Functional</title>
-      <link>https://devpoga.org/post/2020-04-10_domain-modeling-made-functional/</link>
+      <link>https://devpoga.org/posts/2020-04-10_domain-modeling-made-functional/</link>
       <pubDate>Fri, 10 Apr 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://devpoga.org/post/2020-04-10_domain-modeling-made-functional/</guid>
+      <guid>https://devpoga.org/posts/2020-04-10_domain-modeling-made-functional/</guid>
       <description>&lt;p&gt;&lt;img src=&#34;https://devpoga.org/post/2020-04-10_domain-modeling-made-functional/book.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Notes on the book &lt;a href=&#34;https://www.amazon.com/Domain-Modeling-Made-Functional-Domain-Driven/dp/1680502549&#34;&gt;Domain Modeling Made Functional: Tackle Software Complexity with Domain-Driven Design and F#&lt;/a&gt;.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Zero Trust Network</title>
-      <link>https://devpoga.org/post/2020-04-09_zero-trust-network/</link>
+      <link>https://devpoga.org/posts/2020-04-09_zero-trust-network/</link>
       <pubDate>Thu, 09 Apr 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://devpoga.org/post/2020-04-09_zero-trust-network/</guid>
+      <guid>https://devpoga.org/posts/2020-04-09_zero-trust-network/</guid>
       <description>&lt;p&gt;&lt;img src=&#34;https://devpoga.org/post/2020-04-09_zero-trust-network/book.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Notes on the book &lt;a href=&#34;https://www.amazon.com/Zero-Trust-Networks-Building-Untrusted/dp/1491962194&#34;&gt;Zero Trust Network&lt;/a&gt;.&lt;/p&gt;</description>
     </item>

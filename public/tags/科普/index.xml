@@ -9,10 +9,10 @@
     <lastBuildDate>Mon, 16 Jul 2018 06:19:38 +0000</lastBuildDate><atom:link href="https://devpoga.org/tags/%E7%A7%91%E6%99%AE/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>軟體設計模式 — Data-Oriented Design</title>
-      <link>https://devpoga.org/post/2018-07-16_%E8%BB%9F%E9%AB%94%E8%A8%AD%E8%A8%88%E6%A8%A1%E5%BC%8F-dataoriented-design/</link>
+      <link>https://devpoga.org/posts/2018-07-16_%E8%BB%9F%E9%AB%94%E8%A8%AD%E8%A8%88%E6%A8%A1%E5%BC%8F-dataoriented-design/</link>
       <pubDate>Mon, 16 Jul 2018 06:19:38 +0000</pubDate>
       
-      <guid>https://devpoga.org/post/2018-07-16_%E8%BB%9F%E9%AB%94%E8%A8%AD%E8%A8%88%E6%A8%A1%E5%BC%8F-dataoriented-design/</guid>
+      <guid>https://devpoga.org/posts/2018-07-16_%E8%BB%9F%E9%AB%94%E8%A8%AD%E8%A8%88%E6%A8%A1%E5%BC%8F-dataoriented-design/</guid>
       <description>&lt;p&gt;&lt;img src=&#34;https://devpoga.org/post/2018-07-16_%E8%BB%9F%E9%AB%94%E8%A8%AD%E8%A8%88%E6%A8%A1%E5%BC%8F-dataoriented-design/images/1.jpeg&#34; alt=&#34;image&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Photo by &lt;a href=&#34;https://unsplash.com/photos/BpqDaDxG48w?utm_source=unsplash&amp;amp;utm_medium=referral&amp;amp;utm_content=creditCopyText&#34;&gt;Rebecca Oliver&lt;/a&gt; on &lt;a href=&#34;https://unsplash.com/search/photos/game?utm_source=unsplash&amp;amp;utm_medium=referral&amp;amp;utm_content=creditCopyText&#34;&gt;Unsplash&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;遊戲開發對很多開發者來說是個陌生的領域。遊戲對於效能的極高要求跟規格的不確定性，產生出了許多特有的系統架構。Data-Oriented Design 便是個有趣的設計模式。&lt;/p&gt;
@@ -21,29 +21,29 @@
     
     <item>
       <title>Kappa Architecture：以資料為中心的系統架構</title>
-      <link>https://devpoga.org/post/2017-12-22_kappa-architecture%E4%BB%A5%E8%B3%87%E6%96%99%E7%82%BA%E4%B8%AD%E5%BF%83%E7%9A%84%E7%B3%BB%E7%B5%B1%E6%9E%B6%E6%A7%8B/</link>
+      <link>https://devpoga.org/posts/2017-12-22_kappa-architecture%E4%BB%A5%E8%B3%87%E6%96%99%E7%82%BA%E4%B8%AD%E5%BF%83%E7%9A%84%E7%B3%BB%E7%B5%B1%E6%9E%B6%E6%A7%8B/</link>
       <pubDate>Fri, 22 Dec 2017 07:32:07 +0000</pubDate>
       
-      <guid>https://devpoga.org/post/2017-12-22_kappa-architecture%E4%BB%A5%E8%B3%87%E6%96%99%E7%82%BA%E4%B8%AD%E5%BF%83%E7%9A%84%E7%B3%BB%E7%B5%B1%E6%9E%B6%E6%A7%8B/</guid>
+      <guid>https://devpoga.org/posts/2017-12-22_kappa-architecture%E4%BB%A5%E8%B3%87%E6%96%99%E7%82%BA%E4%B8%AD%E5%BF%83%E7%9A%84%E7%B3%BB%E7%B5%B1%E6%9E%B6%E6%A7%8B/</guid>
       <description>&lt;p&gt;在開發軟體時，有許多眾所周知的架構模式（architecture pattern）可做為參考。例如最廣為人知的 &lt;a href=&#34;https://www.wikiwand.com/zh-tw/MVC&#34;&gt;MVC 架構&lt;/a&gt;。採用這些常用模式，能大幅減低溝通成本，各種 Framework 也能提高開發速度。&lt;/p&gt;
 &lt;p&gt;現在已經是個以資料為中心的環境，各種商業決策都依賴大量的資料。因此，系統必須能提供各種資料格式與查詢方式供各種需求使用。在這樣的環境中，也慢慢發展出許多特有的模式。&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>萬事萬物皆是 LOG — 參考資料</title>
-      <link>https://devpoga.org/post/2016-08-27_%E8%90%AC%E4%BA%8B%E8%90%AC%E7%89%A9%E7%9A%86%E6%98%AF-log-%E5%8F%83%E8%80%83%E8%B3%87%E6%96%99/</link>
+      <link>https://devpoga.org/posts/2016-08-27_%E8%90%AC%E4%BA%8B%E8%90%AC%E7%89%A9%E7%9A%86%E6%98%AF-log-%E5%8F%83%E8%80%83%E8%B3%87%E6%96%99/</link>
       <pubDate>Sat, 27 Aug 2016 05:06:01 +0000</pubDate>
       
-      <guid>https://devpoga.org/post/2016-08-27_%E8%90%AC%E4%BA%8B%E8%90%AC%E7%89%A9%E7%9A%86%E6%98%AF-log-%E5%8F%83%E8%80%83%E8%B3%87%E6%96%99/</guid>
+      <guid>https://devpoga.org/posts/2016-08-27_%E8%90%AC%E4%BA%8B%E8%90%AC%E7%89%A9%E7%9A%86%E6%98%AF-log-%E5%8F%83%E8%80%83%E8%B3%87%E6%96%99/</guid>
       <description>&lt;p&gt;之前在 COSCUP 2016 榮幸講了一場 &lt;a href=&#34;https://devpoga.org/post/2016-08-20_%E8%90%AC%E4%BA%8B%E8%90%AC%E7%89%A9%E7%9A%86%E6%98%AF-log-%E7%B3%BB%E7%B5%B1%E6%9E%B6%E6%A7%8B%E4%B9%9F%E4%BE%86%E9%BB%9E%E7%A7%91%E6%99%AE/&#34;&gt;萬事萬物皆是 Log — 系統架構也來點科普&lt;/a&gt;。結束後被詢問有沒有一些靈感來源、延伸讀物、參考資料等等，這裡就把我有記下來的參考資料整理在此。一些時間關係沒有帶到的主題就也一起放在這了。&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>萬事萬物皆是 LOG — 系統架構也來點科普</title>
-      <link>https://devpoga.org/post/2016-08-20_%E8%90%AC%E4%BA%8B%E8%90%AC%E7%89%A9%E7%9A%86%E6%98%AF-log-%E7%B3%BB%E7%B5%B1%E6%9E%B6%E6%A7%8B%E4%B9%9F%E4%BE%86%E9%BB%9E%E7%A7%91%E6%99%AE/</link>
+      <link>https://devpoga.org/posts/2016-08-20_%E8%90%AC%E4%BA%8B%E8%90%AC%E7%89%A9%E7%9A%86%E6%98%AF-log-%E7%B3%BB%E7%B5%B1%E6%9E%B6%E6%A7%8B%E4%B9%9F%E4%BE%86%E9%BB%9E%E7%A7%91%E6%99%AE/</link>
       <pubDate>Sat, 20 Aug 2016 05:06:01 +0000</pubDate>
       
-      <guid>https://devpoga.org/post/2016-08-20_%E8%90%AC%E4%BA%8B%E8%90%AC%E7%89%A9%E7%9A%86%E6%98%AF-log-%E7%B3%BB%E7%B5%B1%E6%9E%B6%E6%A7%8B%E4%B9%9F%E4%BE%86%E9%BB%9E%E7%A7%91%E6%99%AE/</guid>
+      <guid>https://devpoga.org/posts/2016-08-20_%E8%90%AC%E4%BA%8B%E8%90%AC%E7%89%A9%E7%9A%86%E6%98%AF-log-%E7%B3%BB%E7%B5%B1%E6%9E%B6%E6%A7%8B%E4%B9%9F%E4%BE%86%E9%BB%9E%E7%A7%91%E6%99%AE/</guid>
       <description>&lt;p&gt;&lt;img src=&#34;https://devpoga.org/post/2016-08-20_%E8%90%AC%E4%BA%8B%E8%90%AC%E7%89%A9%E7%9A%86%E6%98%AF-log-%E7%B3%BB%E7%B5%B1%E6%9E%B6%E6%A7%8B%E4%B9%9F%E4%BE%86%E9%BB%9E%E7%A7%91%E6%99%AE/images/1.png&#34; alt=&#34;image&#34;&gt;&lt;/p&gt;
 &lt;center&gt;**這是 COSCUP 2016 的講題逐字稿，投影片在[此](http://www.slideshare.net/poga/log-65475572)**&lt;/center&gt;
 &lt;center&gt;**另有[延伸參考資料](https://medium.com/@poga/%E8%90%AC%E4%BA%8B%E8%90%AC%E7%89%A9%E7%9A%86%E6%98%AF-log-%E5%8F%83%E8%80%83%E8%B3%87%E6%96%99-340737133a94#.e3chfav6h)**&lt;/center&gt;
