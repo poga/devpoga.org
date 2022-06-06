@@ -2,14 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://devpoga.org/</loc>
-    <lastmod>2022-02-19T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url><url>
     <loc>https://devpoga.org/categories/blog/</loc>
     <lastmod>2022-02-19T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://devpoga.org/categories/</loc>
+    <lastmod>2022-02-19T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://devpoga.org/</loc>
     <lastmod>2022-02-19T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://devpoga.org/posts/</loc>
@@ -359,5 +358,8 @@
   </url><url>
     <loc>https://devpoga.org/posts/2016-05-17_%E8%A9%B2%E6%80%8E%E6%A8%A3%E6%95%99%E4%BB%BB%E4%BD%95%E4%BA%BA%E4%BB%BB%E4%BD%95%E6%8A%80%E8%83%BD/</loc>
     <lastmod>2019-04-30T21:55:48+08:00</lastmod>
+  </url><url>
+    <loc>https://devpoga.org/about/</loc>
+    <priority>0</priority>
   </url>
 </urlset>

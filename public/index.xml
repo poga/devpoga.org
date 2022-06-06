@@ -516,5 +516,21 @@ Developing a distributed system 10 Lessons from 10 Years of Amazon Web Services 
 &lt;p&gt;看到 &lt;a href=&#34;https://medium.com/@spepechen/%E6%B0%A3%E9%A4%92%E6%AD%A2%E6%AD%A5-%E8%A9%B2%E6%80%8E%E6%A8%A3%E6%95%99%E6%96%87%E7%B5%84%E7%9A%84%E4%BA%BA%E5%AF%AB%E7%A8%8B%E5%BC%8F-c1caf020b457#.6bfonxld4&#34;&gt;氣餒止步！該怎樣教文組的人寫程式？&lt;/a&gt; 這篇，講一下自己的教學經驗吧。&lt;/p&gt;</description>
     </item>
     
+    <item>
+      <title></title>
+      <link>https://devpoga.org/about/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://devpoga.org/about/</guid>
+      <description>Hi! I&amp;rsquo;m Poga. You can contact me via email or twitter.
+I work on interconnecting things in different domains such as tech, design, privacy, and security. In no particular order of preference:
+g0v.social, a self-sustainable decentralized social network.
+Machine Learning: resources for Federated learning, Awesome Federated Learning.
+I&amp;rsquo;ve been thinking about glue systems a lot.
+&amp;hellip;as well as many other open-source projects.
+Publications and Talks g0v.social - 分散式社群媒體的四年旅程
+Notes on the Implementation on Lua 5.</description>
+    </item>
+    
   </channel>
 </rss>
