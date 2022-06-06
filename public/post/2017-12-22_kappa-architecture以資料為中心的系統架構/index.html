@@ -119,27 +119,27 @@
 <p>任何資料都是由一連串的改變所形成，因此，每一筆資料都可以用一個 append-only log 表示。</p>
 <p>假設目前有一筆用戶資料如下：</p>
 <pre tabindex="0"><code>{
- &quot;user_id&quot;: 1234,
- &quot;username&quot;: “Jack123”,
- &quot;balance&quot;: 75
+ &#34;user_id&#34;: 1234,
+ &#34;username&#34;: “Jack123”,
+ &#34;balance&#34;: 75
 }
 </code></pre><p>這筆用戶資料其實是由一連串的事件修改所形成：</p>
 <pre tabindex="0"><code>{ // 使用者註冊
- &quot;event&quot;: &quot;register&quot;,
- &quot;username&quot;: &quot;Jack123&quot;,
- &quot;user_id&quot;: 1234,
+ &#34;event&#34;: &#34;register&#34;,
+ &#34;username&#34;: &#34;Jack123&#34;,
+ &#34;user_id&#34;: 1234,
 }
 
 { // 使用者儲值
- &quot;event&quot;: &quot;deposit&quot;,
- &quot;user_id&quot;: 1234
- &quot;add_balance”: 100
+ &#34;event&#34;: &#34;deposit&#34;,
+ &#34;user_id&#34;: 1234
+ &#34;add_balance”: 100
 }
 
 { // 使用者消費付款
- &quot;event&quot;: &quot;purchase&quot;,
- &quot;user_id&quot;: 1234,
- &quot;add_balance&quot;: -25
+ &#34;event&#34;: &#34;purchase&#34;,
+ &#34;user_id&#34;: 1234,
+ &#34;add_balance&#34;: -25
 }
 </code></pre><p>因為已經發生的修改不會再變動，因此這是一份 append-only log。</p>
 <p>用 append-only log 來記錄資料有什麼好處呢？因為相較於展開後的欄位，「修改」的格式非常單純，只由「修改時間」、「欄位」、「更改的值」等欄位所構成，資料格式穩定，省下了修改 schema 的困擾。</p>

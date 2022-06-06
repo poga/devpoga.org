@@ -114,25 +114,25 @@
 <p>So, each actor only has its own simple control-flow. It&rsquo;s much easier to understand than multiple tangled futures.</p>
 <h3 id="exploring-the-data-with-the-power-of-dynamic-languages">Exploring the data with the power of dynamic languages</h3>
 <p>So, what does Lua really gives us? By using Lua, we can write scripts like this:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-Lua" data-lang="Lua"><span style="color:#66d9ef">for</span> i, item <span style="color:#66d9ef">in</span> pairs(data[<span style="color:#e6db74">&#34;items&#34;</span>]) <span style="color:#66d9ef">do</span>
-    <span style="color:#75715e">-- looking for an item called &#34;Belly of the Beast&#34;</span>
-    <span style="color:#66d9ef">if</span> string.find(item[<span style="color:#e6db74">&#34;name&#34;</span>], <span style="color:#e6db74">&#34;Belly of the Beast&#34;</span>) <span style="color:#66d9ef">then</span>
-        <span style="color:#75715e">-- print the seller&#39;s account and the price</span>
-        print(data[<span style="color:#e6db74">&#34;accountName&#34;</span>], item[<span style="color:#e6db74">&#34;note&#34;</span>])
-    <span style="color:#66d9ef">end</span>
-<span style="color:#66d9ef">end</span></code></pre></div>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-Lua" data-lang="Lua"><span style="display:flex;"><span><span style="color:#66d9ef">for</span> i, item <span style="color:#66d9ef">in</span> pairs(data[<span style="color:#e6db74">&#34;items&#34;</span>]) <span style="color:#66d9ef">do</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">-- looking for an item called &#34;Belly of the Beast&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> string.find(item[<span style="color:#e6db74">&#34;name&#34;</span>], <span style="color:#e6db74">&#34;Belly of the Beast&#34;</span>) <span style="color:#66d9ef">then</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e">-- print the seller&#39;s account and the price</span>
+</span></span><span style="display:flex;"><span>        print(data[<span style="color:#e6db74">&#34;accountName&#34;</span>], item[<span style="color:#e6db74">&#34;note&#34;</span>])
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">end</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">end</span></span></span></code></pre></div>
 <p>Instead of figuring out types and fighting borrow checkers, we can express our idea in a simple language.</p>
 <p>We can also change the script while the program is running! <strong>We can explore the data WHILE PROCESSING THE DATA</strong>, which is tremendously useful.</p>
 <p>To achieve hot-reload, you need only four lines of codes thanks to the dynamic nature of Lua.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-Lua" data-lang="Lua"><span style="color:#75715e">-- assume -1 is the signal to reload lua scripts</span>
-<span style="color:#66d9ef">if</span> ctx.msg <span style="color:#f92672">==</span> <span style="color:#f92672">-</span><span style="color:#ae81ff">1</span> <span style="color:#66d9ef">then</span>
-  <span style="color:#75715e">-- remove &#34;handler&#34; package from cache</span>
-  <span style="color:#75715e">-- next require will load the script from disk instead of cache</span>
-  package.loaded[<span style="color:#e6db74">&#34;handler&#34;</span>] <span style="color:#f92672">=</span> <span style="color:#66d9ef">nil</span>
-<span style="color:#66d9ef">end</span>
-
-<span style="color:#75715e">-- load the package from disk or cache</span>
-<span style="color:#66d9ef">local</span> handler <span style="color:#f92672">=</span> require(<span style="color:#e6db74">&#34;handler&#34;</span>)</code></pre></div>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-Lua" data-lang="Lua"><span style="display:flex;"><span><span style="color:#75715e">-- assume -1 is the signal to reload lua scripts</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">if</span> ctx.msg <span style="color:#f92672">==</span> <span style="color:#f92672">-</span><span style="color:#ae81ff">1</span> <span style="color:#66d9ef">then</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e">-- remove &#34;handler&#34; package from cache</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e">-- next require will load the script from disk instead of cache</span>
+</span></span><span style="display:flex;"><span>  package.loaded[<span style="color:#e6db74">&#34;handler&#34;</span>] <span style="color:#f92672">=</span> <span style="color:#66d9ef">nil</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">end</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">-- load the package from disk or cache</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">local</span> handler <span style="color:#f92672">=</span> require(<span style="color:#e6db74">&#34;handler&#34;</span>)</span></span></code></pre></div>
 <h3 id="then-i-stopped-playing-the-video-game">Then I stopped playing the video game</h3>
 <p>It turns out that writing Rust and Lua is more fun than actually playing the video game. I&rsquo;m really happy with <a href="https://github.com/poga/actix-lua"><code>actix-lua</code></a>. I believe there&rsquo;s potential for the crate and I&rsquo;m excited to explore it!</p>
 <p>If you&rsquo;re interested, <a href="https://github.com/poga/streaming-data-parsing-with-actix-lua">Here&rsquo;s the full example mentioned in this post</a>.</p>

@@ -107,62 +107,62 @@
 </ul>
 <h3 id="lexical-closures">Lexical closures</h3>
 <p>Let over lambda:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-lisp" data-lang="lisp">(defvar *counter*
-  (<span style="color:#66d9ef">let</span> ((x <span style="color:#ae81ff">0</span>))
-    (lambda () (incf x) x))
-  )
-</code></pre></div><h2 id="condition-vs-hooks">Condition vs Hooks</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-lisp" data-lang="lisp"><span style="display:flex;"><span>(defvar *counter*
+</span></span><span style="display:flex;"><span>  (<span style="color:#66d9ef">let</span> ((x <span style="color:#ae81ff">0</span>))
+</span></span><span style="display:flex;"><span>    (lambda () (incf x) x))
+</span></span><span style="display:flex;"><span>  )
+</span></span></code></pre></div><h2 id="condition-vs-hooks">Condition vs Hooks</h2>
 <blockquote>
 <p>There is an analogy between condition types and hook kinds which we have constructed earlier. Instead of creating hook kinds, which are symbols, we define new condition types, which denote Lisp types . Operations on Lisp types are more complex, since Lisp types are an implementation of mathematical sets; therefore, operating on those allows for more complexity, compared to matching symbols by equality.</p>
 </blockquote>
 <h3 id="example-singalling-between-handler-and-signal">Example: singalling between handler and signal</h3>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-lisp" data-lang="lisp">(defun call-people ()
-  (setf *csgo-launched-p* <span style="color:#66d9ef">nil</span>)
-  (dolist (person *phonebook*)
-    (<span style="color:#66d9ef">catch</span> <span style="color:#e6db74">:do-not-call</span>
-      (<span style="color:#a6e22e">signal</span> <span style="color:#e6db74">&#39;before-call</span> <span style="color:#e6db74">:person</span> person)
-      (call-person person)))
-)
-
-(defun skip-non-csgo-people (<span style="color:#66d9ef">condition</span>)
-  (<span style="color:#66d9ef">let</span> ((person (person <span style="color:#66d9ef">condition</span>)))
-    (unless (<span style="color:#a6e22e">member</span> <span style="color:#e6db74">:csgo</span> person)
-      (<span style="color:#a6e22e">format</span> <span style="color:#66d9ef">t</span> <span style="color:#e6db74">&#34;;; Nope, not calling ~A.~%&#34;</span> (<span style="color:#a6e22e">first</span> person))
-      (<span style="color:#66d9ef">throw</span> <span style="color:#e6db74">:do-not-call</span> <span style="color:#66d9ef">nil</span>)
-    )
-  ))
-
-(handler-bind
-  ((before-call <span style="color:#a6e22e">#&#39;</span>ensure-csgo-launched)
-   (before-call <span style="color:#a6e22e">#&#39;</span>skip-non-csgo-people))
-  (call-people))
-</code></pre></div><ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-lisp" data-lang="lisp"><span style="display:flex;"><span>(defun call-people ()
+</span></span><span style="display:flex;"><span>  (setf *csgo-launched-p* <span style="color:#66d9ef">nil</span>)
+</span></span><span style="display:flex;"><span>  (dolist (person *phonebook*)
+</span></span><span style="display:flex;"><span>    (<span style="color:#66d9ef">catch</span> <span style="color:#e6db74">:do-not-call</span>
+</span></span><span style="display:flex;"><span>      (<span style="color:#a6e22e">signal</span> <span style="color:#e6db74">&#39;before-call</span> <span style="color:#e6db74">:person</span> person)
+</span></span><span style="display:flex;"><span>      (call-person person)))
+</span></span><span style="display:flex;"><span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>(defun skip-non-csgo-people (<span style="color:#66d9ef">condition</span>)
+</span></span><span style="display:flex;"><span>  (<span style="color:#66d9ef">let</span> ((person (person <span style="color:#66d9ef">condition</span>)))
+</span></span><span style="display:flex;"><span>    (unless (<span style="color:#a6e22e">member</span> <span style="color:#e6db74">:csgo</span> person)
+</span></span><span style="display:flex;"><span>      (<span style="color:#a6e22e">format</span> <span style="color:#66d9ef">t</span> <span style="color:#e6db74">&#34;;; Nope, not calling ~A.~%&#34;</span> (<span style="color:#a6e22e">first</span> person))
+</span></span><span style="display:flex;"><span>      (<span style="color:#66d9ef">throw</span> <span style="color:#e6db74">:do-not-call</span> <span style="color:#66d9ef">nil</span>)
+</span></span><span style="display:flex;"><span>    )
+</span></span><span style="display:flex;"><span>  ))
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>(handler-bind
+</span></span><span style="display:flex;"><span>  ((before-call <span style="color:#a6e22e">#&#39;</span>ensure-csgo-launched)
+</span></span><span style="display:flex;"><span>   (before-call <span style="color:#a6e22e">#&#39;</span>skip-non-csgo-people))
+</span></span><span style="display:flex;"><span>  (call-people))
+</span></span></code></pre></div><ul>
 <li><code>error</code> = <code>signal</code> and <code>invoke-debugger</code></li>
 <li><code>unwind-protect</code> protects against transfer of control</li>
 <li>Clustering handlers together means that a handler does not “see” any handlers bound in the same handler-bind form—meaning that it cannot cause itself or its “neighbors” to become invoked.</li>
 </ul>
 <h3 id="example-restarts">Example: Restarts</h3>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-lisp" data-lang="lisp">(defvar *mark-safe-p* <span style="color:#66d9ef">nil</span>)
-(defvar *front-door-locked-p* <span style="color:#66d9ef">t</span>)
-(defvar *back-door-locked-p* <span style="color:#66d9ef">t</span>)
-
-(restart-bind
-  ((escape-through-front-door
-    (lambda ()
-      (<span style="color:#a6e22e">format</span> <span style="color:#66d9ef">t</span> <span style="color:#e6db74">&#34;;; Escaping through the front door.~%&#34;</span>)
-      (setf *mark-safe-p* <span style="color:#66d9ef">t</span>))
-    <span style="color:#e6db74">:test-function</span>
-      (lambda (<span style="color:#66d9ef">condition</span>) (<span style="color:#66d9ef">declare</span> (<span style="color:#66d9ef">ignore</span> <span style="color:#66d9ef">condition</span>)) (<span style="color:#a6e22e">not</span> *front-door-locked-p*)))
-  )
-<span style="color:#f92672">...</span>)
-</code></pre></div><ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-lisp" data-lang="lisp"><span style="display:flex;"><span>(defvar *mark-safe-p* <span style="color:#66d9ef">nil</span>)
+</span></span><span style="display:flex;"><span>(defvar *front-door-locked-p* <span style="color:#66d9ef">t</span>)
+</span></span><span style="display:flex;"><span>(defvar *back-door-locked-p* <span style="color:#66d9ef">t</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>(restart-bind
+</span></span><span style="display:flex;"><span>  ((escape-through-front-door
+</span></span><span style="display:flex;"><span>    (lambda ()
+</span></span><span style="display:flex;"><span>      (<span style="color:#a6e22e">format</span> <span style="color:#66d9ef">t</span> <span style="color:#e6db74">&#34;;; Escaping through the front door.~%&#34;</span>)
+</span></span><span style="display:flex;"><span>      (setf *mark-safe-p* <span style="color:#66d9ef">t</span>))
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">:test-function</span>
+</span></span><span style="display:flex;"><span>      (lambda (<span style="color:#66d9ef">condition</span>) (<span style="color:#66d9ef">declare</span> (<span style="color:#66d9ef">ignore</span> <span style="color:#66d9ef">condition</span>)) (<span style="color:#a6e22e">not</span> *front-door-locked-p*)))
+</span></span><span style="display:flex;"><span>  )
+</span></span><span style="display:flex;"><span><span style="color:#f92672">...</span>)
+</span></span></code></pre></div><ul>
 <li><code>compute-restarts</code> includes system-defined restarts. You can filter them with:</li>
 </ul>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-lisp" data-lang="lisp">(defvar *toplevel-restarts* <span style="color:#f92672">&#39;</span>())
-
-(defun compute-relevant-restarts (<span style="color:#66d9ef">&amp;optional</span> <span style="color:#66d9ef">condition</span>)
-  (<span style="color:#a6e22e">set-difference</span> (<span style="color:#a6e22e">compute-restarts</span> <span style="color:#66d9ef">condition</span>) *toplevel-restarts*))
-</code></pre></div><ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-lisp" data-lang="lisp"><span style="display:flex;"><span>(defvar *toplevel-restarts* <span style="color:#f92672">&#39;</span>())
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>(defun compute-relevant-restarts (<span style="color:#66d9ef">&amp;optional</span> <span style="color:#66d9ef">condition</span>)
+</span></span><span style="display:flex;"><span>  (<span style="color:#a6e22e">set-difference</span> (<span style="color:#a6e22e">compute-restarts</span> <span style="color:#66d9ef">condition</span>) *toplevel-restarts*))
+</span></span></code></pre></div><ul>
 <li>usually we use <code>handler-case</code> and <code>restart-case</code></li>
 </ul>
 <h3 id="condition-reports">Condition reports</h3>

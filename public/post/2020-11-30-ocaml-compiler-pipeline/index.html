@@ -111,75 +111,75 @@
 <h2 id="abstract-syntax-tree-ast">Abstract Syntax Tree (AST)</h2>
 <p>OCaml&rsquo;s metaprogramming ability relies on manipulating ASTs (Parsetrees). <a href="https://github.com/ocaml-ppx/ppx_tools">ppx_tools</a> is a set of tools for people who want to write programs with such ability. We can use it to obtain the AST of a source code.</p>
 <p>Assume we have the following OCaml code:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ocaml" data-lang="ocaml"><span style="color:#66d9ef">type</span> t <span style="color:#f92672">=</span> <span style="color:#f92672">|</span> <span style="color:#a6e22e">Alice</span> <span style="color:#f92672">|</span> <span style="color:#a6e22e">Bob</span> <span style="color:#f92672">|</span> <span style="color:#a6e22e">Charlie</span> <span style="color:#f92672">|</span> <span style="color:#a6e22e">David</span>
-
-<span style="color:#66d9ef">let</span> test v <span style="color:#f92672">=</span>
-  <span style="color:#66d9ef">match</span> v <span style="color:#66d9ef">with</span>
-  <span style="color:#f92672">|</span> <span style="color:#a6e22e">Alice</span>   <span style="color:#f92672">-&gt;</span> 100
-  <span style="color:#f92672">|</span> <span style="color:#a6e22e">Bob</span>     <span style="color:#f92672">-&gt;</span> 101
-  <span style="color:#f92672">|</span> <span style="color:#a6e22e">Charlie</span> <span style="color:#f92672">-&gt;</span> 102
-  <span style="color:#f92672">|</span> <span style="color:#a6e22e">David</span>   <span style="color:#f92672">-&gt;</span> 103
-</code></pre></div><p>We can get the AST of it via the following command:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ $ ocamlfind ppx_tools/dumpast t.ml
-t.ml
-<span style="color:#f92672">==</span>&gt;
-<span style="color:#f92672">[{</span>pstr_desc <span style="color:#f92672">=</span>
-   Pstr_type <span style="color:#f92672">(</span>Recursive,
-    <span style="color:#f92672">[{</span>ptype_name <span style="color:#f92672">=</span> <span style="color:#f92672">{</span>txt <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;t&#34;</span><span style="color:#f92672">}</span>; ptype_params <span style="color:#f92672">=</span> <span style="color:#f92672">[]</span>; ptype_cstrs <span style="color:#f92672">=</span> <span style="color:#f92672">[]</span>;
-      ptype_kind <span style="color:#f92672">=</span>
-       Ptype_variant
-        <span style="color:#f92672">[{</span>pcd_name <span style="color:#f92672">=</span> <span style="color:#f92672">{</span>txt <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Alice&#34;</span><span style="color:#f92672">}</span>; pcd_args <span style="color:#f92672">=</span> Pcstr_tuple <span style="color:#f92672">[]</span>;
-          pcd_res <span style="color:#f92672">=</span> None<span style="color:#f92672">}</span>;
-         <span style="color:#f92672">{</span>pcd_name <span style="color:#f92672">=</span> <span style="color:#f92672">{</span>txt <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Bob&#34;</span><span style="color:#f92672">}</span>; pcd_args <span style="color:#f92672">=</span> Pcstr_tuple <span style="color:#f92672">[]</span>;
-          pcd_res <span style="color:#f92672">=</span> None<span style="color:#f92672">}</span>;
-         <span style="color:#f92672">{</span>pcd_name <span style="color:#f92672">=</span> <span style="color:#f92672">{</span>txt <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Charlie&#34;</span><span style="color:#f92672">}</span>; pcd_args <span style="color:#f92672">=</span> Pcstr_tuple <span style="color:#f92672">[]</span>;
-          pcd_res <span style="color:#f92672">=</span> None<span style="color:#f92672">}</span>;
-         <span style="color:#f92672">{</span>pcd_name <span style="color:#f92672">=</span> <span style="color:#f92672">{</span>txt <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;David&#34;</span><span style="color:#f92672">}</span>; pcd_args <span style="color:#f92672">=</span> Pcstr_tuple <span style="color:#f92672">[]</span>;
-          pcd_res <span style="color:#f92672">=</span> None<span style="color:#f92672">}]</span>;
-      ptype_private <span style="color:#f92672">=</span> Public; ptype_manifest <span style="color:#f92672">=</span> None<span style="color:#f92672">}])}</span>;
- <span style="color:#f92672">{</span>pstr_desc <span style="color:#f92672">=</span>
-   Pstr_value <span style="color:#f92672">(</span>Nonrecursive,
-    <span style="color:#f92672">[{</span>pvb_pat <span style="color:#f92672">=</span> <span style="color:#f92672">{</span>ppat_desc <span style="color:#f92672">=</span> Ppat_var <span style="color:#f92672">{</span>txt <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;test&#34;</span><span style="color:#f92672">}</span>; ppat_loc_stack <span style="color:#f92672">=</span> <span style="color:#f92672">[]}</span>;
-      pvb_expr <span style="color:#f92672">=</span>
-       <span style="color:#f92672">{</span>pexp_desc <span style="color:#f92672">=</span>
-         Pexp_fun <span style="color:#f92672">(</span>Nolabel, None,
-          <span style="color:#f92672">{</span>ppat_desc <span style="color:#f92672">=</span> Ppat_var <span style="color:#f92672">{</span>txt <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;v&#34;</span><span style="color:#f92672">}</span>; ppat_loc_stack <span style="color:#f92672">=</span> <span style="color:#f92672">[]}</span>,
-          <span style="color:#f92672">{</span>pexp_desc <span style="color:#f92672">=</span>
-            Pexp_match
-             <span style="color:#f92672">({</span>pexp_desc <span style="color:#f92672">=</span> Pexp_ident <span style="color:#f92672">{</span>txt <span style="color:#f92672">=</span> Lident <span style="color:#e6db74">&#34;v&#34;</span><span style="color:#f92672">}</span>;
-               pexp_loc_stack <span style="color:#f92672">=</span> <span style="color:#f92672">[]}</span>,
-             <span style="color:#f92672">[{</span>pc_lhs <span style="color:#f92672">=</span>
-                <span style="color:#f92672">{</span>ppat_desc <span style="color:#f92672">=</span> Ppat_construct <span style="color:#f92672">({</span>txt <span style="color:#f92672">=</span> Lident <span style="color:#e6db74">&#34;Alice&#34;</span><span style="color:#f92672">}</span>, None<span style="color:#f92672">)</span>;
-                 ppat_loc_stack <span style="color:#f92672">=</span> <span style="color:#f92672">[]}</span>;
-               pc_guard <span style="color:#f92672">=</span> None;
-               pc_rhs <span style="color:#f92672">=</span>
-                <span style="color:#f92672">{</span>pexp_desc <span style="color:#f92672">=</span> Pexp_constant <span style="color:#f92672">(</span>Pconst_integer <span style="color:#f92672">(</span><span style="color:#e6db74">&#34;100&#34;</span>, None<span style="color:#f92672">))</span>;
-                 pexp_loc_stack <span style="color:#f92672">=</span> <span style="color:#f92672">[]}}</span>;
-              <span style="color:#f92672">{</span>pc_lhs <span style="color:#f92672">=</span>
-                <span style="color:#f92672">{</span>ppat_desc <span style="color:#f92672">=</span> Ppat_construct <span style="color:#f92672">({</span>txt <span style="color:#f92672">=</span> Lident <span style="color:#e6db74">&#34;Bob&#34;</span><span style="color:#f92672">}</span>, None<span style="color:#f92672">)</span>;
-                 ppat_loc_stack <span style="color:#f92672">=</span> <span style="color:#f92672">[]}</span>;
-               pc_guard <span style="color:#f92672">=</span> None;
-               pc_rhs <span style="color:#f92672">=</span>
-                <span style="color:#f92672">{</span>pexp_desc <span style="color:#f92672">=</span> Pexp_constant <span style="color:#f92672">(</span>Pconst_integer <span style="color:#f92672">(</span><span style="color:#e6db74">&#34;101&#34;</span>, None<span style="color:#f92672">))</span>;
-                 pexp_loc_stack <span style="color:#f92672">=</span> <span style="color:#f92672">[]}}</span>;
-              <span style="color:#f92672">{</span>pc_lhs <span style="color:#f92672">=</span>
-                <span style="color:#f92672">{</span>ppat_desc <span style="color:#f92672">=</span> Ppat_construct <span style="color:#f92672">({</span>txt <span style="color:#f92672">=</span> Lident <span style="color:#e6db74">&#34;Charlie&#34;</span><span style="color:#f92672">}</span>, None<span style="color:#f92672">)</span>;
-                 ppat_loc_stack <span style="color:#f92672">=</span> <span style="color:#f92672">[]}</span>;
-               pc_guard <span style="color:#f92672">=</span> None;
-               pc_rhs <span style="color:#f92672">=</span>
-                <span style="color:#f92672">{</span>pexp_desc <span style="color:#f92672">=</span> Pexp_constant <span style="color:#f92672">(</span>Pconst_integer <span style="color:#f92672">(</span><span style="color:#e6db74">&#34;102&#34;</span>, None<span style="color:#f92672">))</span>;
-                 pexp_loc_stack <span style="color:#f92672">=</span> <span style="color:#f92672">[]}}</span>;
-              <span style="color:#f92672">{</span>pc_lhs <span style="color:#f92672">=</span>
-                <span style="color:#f92672">{</span>ppat_desc <span style="color:#f92672">=</span> Ppat_construct <span style="color:#f92672">({</span>txt <span style="color:#f92672">=</span> Lident <span style="color:#e6db74">&#34;David&#34;</span><span style="color:#f92672">}</span>, None<span style="color:#f92672">)</span>;
-                 ppat_loc_stack <span style="color:#f92672">=</span> <span style="color:#f92672">[]}</span>;
-               pc_guard <span style="color:#f92672">=</span> None;
-               pc_rhs <span style="color:#f92672">=</span>
-                <span style="color:#f92672">{</span>pexp_desc <span style="color:#f92672">=</span> Pexp_constant <span style="color:#f92672">(</span>Pconst_integer <span style="color:#f92672">(</span><span style="color:#e6db74">&#34;103&#34;</span>, None<span style="color:#f92672">))</span>;
-                 pexp_loc_stack <span style="color:#f92672">=</span> <span style="color:#f92672">[]}}])</span>;
-           pexp_loc_stack <span style="color:#f92672">=</span> <span style="color:#f92672">[]})</span>;
-        pexp_loc_stack <span style="color:#f92672">=</span> <span style="color:#f92672">[]}}])}]</span>
-<span style="color:#f92672">=========</span>
-</code></pre></div><p>The output is pretty straight forward. The <a href="https://caml.inria.fr/pub/docs/manual-ocaml/compilerlibref/Parsetree.html">Parsetree documentation</a> is a good reference to understand it.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-ocaml" data-lang="ocaml"><span style="display:flex;"><span><span style="color:#66d9ef">type</span> t <span style="color:#f92672">=</span> <span style="color:#f92672">|</span> <span style="color:#a6e22e">Alice</span> <span style="color:#f92672">|</span> <span style="color:#a6e22e">Bob</span> <span style="color:#f92672">|</span> <span style="color:#a6e22e">Charlie</span> <span style="color:#f92672">|</span> <span style="color:#a6e22e">David</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">let</span> test v <span style="color:#f92672">=</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">match</span> v <span style="color:#66d9ef">with</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">|</span> <span style="color:#a6e22e">Alice</span>   <span style="color:#f92672">-&gt;</span> 100
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">|</span> <span style="color:#a6e22e">Bob</span>     <span style="color:#f92672">-&gt;</span> 101
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">|</span> <span style="color:#a6e22e">Charlie</span> <span style="color:#f92672">-&gt;</span> 102
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">|</span> <span style="color:#a6e22e">David</span>   <span style="color:#f92672">-&gt;</span> 103
+</span></span></code></pre></div><p>We can get the AST of it via the following command:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>$ $ ocamlfind ppx_tools/dumpast t.ml
+</span></span><span style="display:flex;"><span>t.ml
+</span></span><span style="display:flex;"><span><span style="color:#f92672">==</span>&gt;
+</span></span><span style="display:flex;"><span><span style="color:#f92672">[{</span>pstr_desc <span style="color:#f92672">=</span>
+</span></span><span style="display:flex;"><span>   Pstr_type <span style="color:#f92672">(</span>Recursive,
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">[{</span>ptype_name <span style="color:#f92672">=</span> <span style="color:#f92672">{</span>txt <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;t&#34;</span><span style="color:#f92672">}</span>; ptype_params <span style="color:#f92672">=</span> <span style="color:#f92672">[]</span>; ptype_cstrs <span style="color:#f92672">=</span> <span style="color:#f92672">[]</span>;
+</span></span><span style="display:flex;"><span>      ptype_kind <span style="color:#f92672">=</span>
+</span></span><span style="display:flex;"><span>       Ptype_variant
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">[{</span>pcd_name <span style="color:#f92672">=</span> <span style="color:#f92672">{</span>txt <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Alice&#34;</span><span style="color:#f92672">}</span>; pcd_args <span style="color:#f92672">=</span> Pcstr_tuple <span style="color:#f92672">[]</span>;
+</span></span><span style="display:flex;"><span>          pcd_res <span style="color:#f92672">=</span> None<span style="color:#f92672">}</span>;
+</span></span><span style="display:flex;"><span>         <span style="color:#f92672">{</span>pcd_name <span style="color:#f92672">=</span> <span style="color:#f92672">{</span>txt <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Bob&#34;</span><span style="color:#f92672">}</span>; pcd_args <span style="color:#f92672">=</span> Pcstr_tuple <span style="color:#f92672">[]</span>;
+</span></span><span style="display:flex;"><span>          pcd_res <span style="color:#f92672">=</span> None<span style="color:#f92672">}</span>;
+</span></span><span style="display:flex;"><span>         <span style="color:#f92672">{</span>pcd_name <span style="color:#f92672">=</span> <span style="color:#f92672">{</span>txt <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Charlie&#34;</span><span style="color:#f92672">}</span>; pcd_args <span style="color:#f92672">=</span> Pcstr_tuple <span style="color:#f92672">[]</span>;
+</span></span><span style="display:flex;"><span>          pcd_res <span style="color:#f92672">=</span> None<span style="color:#f92672">}</span>;
+</span></span><span style="display:flex;"><span>         <span style="color:#f92672">{</span>pcd_name <span style="color:#f92672">=</span> <span style="color:#f92672">{</span>txt <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;David&#34;</span><span style="color:#f92672">}</span>; pcd_args <span style="color:#f92672">=</span> Pcstr_tuple <span style="color:#f92672">[]</span>;
+</span></span><span style="display:flex;"><span>          pcd_res <span style="color:#f92672">=</span> None<span style="color:#f92672">}]</span>;
+</span></span><span style="display:flex;"><span>      ptype_private <span style="color:#f92672">=</span> Public; ptype_manifest <span style="color:#f92672">=</span> None<span style="color:#f92672">}])}</span>;
+</span></span><span style="display:flex;"><span> <span style="color:#f92672">{</span>pstr_desc <span style="color:#f92672">=</span>
+</span></span><span style="display:flex;"><span>   Pstr_value <span style="color:#f92672">(</span>Nonrecursive,
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">[{</span>pvb_pat <span style="color:#f92672">=</span> <span style="color:#f92672">{</span>ppat_desc <span style="color:#f92672">=</span> Ppat_var <span style="color:#f92672">{</span>txt <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;test&#34;</span><span style="color:#f92672">}</span>; ppat_loc_stack <span style="color:#f92672">=</span> <span style="color:#f92672">[]}</span>;
+</span></span><span style="display:flex;"><span>      pvb_expr <span style="color:#f92672">=</span>
+</span></span><span style="display:flex;"><span>       <span style="color:#f92672">{</span>pexp_desc <span style="color:#f92672">=</span>
+</span></span><span style="display:flex;"><span>         Pexp_fun <span style="color:#f92672">(</span>Nolabel, None,
+</span></span><span style="display:flex;"><span>          <span style="color:#f92672">{</span>ppat_desc <span style="color:#f92672">=</span> Ppat_var <span style="color:#f92672">{</span>txt <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;v&#34;</span><span style="color:#f92672">}</span>; ppat_loc_stack <span style="color:#f92672">=</span> <span style="color:#f92672">[]}</span>,
+</span></span><span style="display:flex;"><span>          <span style="color:#f92672">{</span>pexp_desc <span style="color:#f92672">=</span>
+</span></span><span style="display:flex;"><span>            Pexp_match
+</span></span><span style="display:flex;"><span>             <span style="color:#f92672">({</span>pexp_desc <span style="color:#f92672">=</span> Pexp_ident <span style="color:#f92672">{</span>txt <span style="color:#f92672">=</span> Lident <span style="color:#e6db74">&#34;v&#34;</span><span style="color:#f92672">}</span>;
+</span></span><span style="display:flex;"><span>               pexp_loc_stack <span style="color:#f92672">=</span> <span style="color:#f92672">[]}</span>,
+</span></span><span style="display:flex;"><span>             <span style="color:#f92672">[{</span>pc_lhs <span style="color:#f92672">=</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#f92672">{</span>ppat_desc <span style="color:#f92672">=</span> Ppat_construct <span style="color:#f92672">({</span>txt <span style="color:#f92672">=</span> Lident <span style="color:#e6db74">&#34;Alice&#34;</span><span style="color:#f92672">}</span>, None<span style="color:#f92672">)</span>;
+</span></span><span style="display:flex;"><span>                 ppat_loc_stack <span style="color:#f92672">=</span> <span style="color:#f92672">[]}</span>;
+</span></span><span style="display:flex;"><span>               pc_guard <span style="color:#f92672">=</span> None;
+</span></span><span style="display:flex;"><span>               pc_rhs <span style="color:#f92672">=</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#f92672">{</span>pexp_desc <span style="color:#f92672">=</span> Pexp_constant <span style="color:#f92672">(</span>Pconst_integer <span style="color:#f92672">(</span><span style="color:#e6db74">&#34;100&#34;</span>, None<span style="color:#f92672">))</span>;
+</span></span><span style="display:flex;"><span>                 pexp_loc_stack <span style="color:#f92672">=</span> <span style="color:#f92672">[]}}</span>;
+</span></span><span style="display:flex;"><span>              <span style="color:#f92672">{</span>pc_lhs <span style="color:#f92672">=</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#f92672">{</span>ppat_desc <span style="color:#f92672">=</span> Ppat_construct <span style="color:#f92672">({</span>txt <span style="color:#f92672">=</span> Lident <span style="color:#e6db74">&#34;Bob&#34;</span><span style="color:#f92672">}</span>, None<span style="color:#f92672">)</span>;
+</span></span><span style="display:flex;"><span>                 ppat_loc_stack <span style="color:#f92672">=</span> <span style="color:#f92672">[]}</span>;
+</span></span><span style="display:flex;"><span>               pc_guard <span style="color:#f92672">=</span> None;
+</span></span><span style="display:flex;"><span>               pc_rhs <span style="color:#f92672">=</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#f92672">{</span>pexp_desc <span style="color:#f92672">=</span> Pexp_constant <span style="color:#f92672">(</span>Pconst_integer <span style="color:#f92672">(</span><span style="color:#e6db74">&#34;101&#34;</span>, None<span style="color:#f92672">))</span>;
+</span></span><span style="display:flex;"><span>                 pexp_loc_stack <span style="color:#f92672">=</span> <span style="color:#f92672">[]}}</span>;
+</span></span><span style="display:flex;"><span>              <span style="color:#f92672">{</span>pc_lhs <span style="color:#f92672">=</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#f92672">{</span>ppat_desc <span style="color:#f92672">=</span> Ppat_construct <span style="color:#f92672">({</span>txt <span style="color:#f92672">=</span> Lident <span style="color:#e6db74">&#34;Charlie&#34;</span><span style="color:#f92672">}</span>, None<span style="color:#f92672">)</span>;
+</span></span><span style="display:flex;"><span>                 ppat_loc_stack <span style="color:#f92672">=</span> <span style="color:#f92672">[]}</span>;
+</span></span><span style="display:flex;"><span>               pc_guard <span style="color:#f92672">=</span> None;
+</span></span><span style="display:flex;"><span>               pc_rhs <span style="color:#f92672">=</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#f92672">{</span>pexp_desc <span style="color:#f92672">=</span> Pexp_constant <span style="color:#f92672">(</span>Pconst_integer <span style="color:#f92672">(</span><span style="color:#e6db74">&#34;102&#34;</span>, None<span style="color:#f92672">))</span>;
+</span></span><span style="display:flex;"><span>                 pexp_loc_stack <span style="color:#f92672">=</span> <span style="color:#f92672">[]}}</span>;
+</span></span><span style="display:flex;"><span>              <span style="color:#f92672">{</span>pc_lhs <span style="color:#f92672">=</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#f92672">{</span>ppat_desc <span style="color:#f92672">=</span> Ppat_construct <span style="color:#f92672">({</span>txt <span style="color:#f92672">=</span> Lident <span style="color:#e6db74">&#34;David&#34;</span><span style="color:#f92672">}</span>, None<span style="color:#f92672">)</span>;
+</span></span><span style="display:flex;"><span>                 ppat_loc_stack <span style="color:#f92672">=</span> <span style="color:#f92672">[]}</span>;
+</span></span><span style="display:flex;"><span>               pc_guard <span style="color:#f92672">=</span> None;
+</span></span><span style="display:flex;"><span>               pc_rhs <span style="color:#f92672">=</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#f92672">{</span>pexp_desc <span style="color:#f92672">=</span> Pexp_constant <span style="color:#f92672">(</span>Pconst_integer <span style="color:#f92672">(</span><span style="color:#e6db74">&#34;103&#34;</span>, None<span style="color:#f92672">))</span>;
+</span></span><span style="display:flex;"><span>                 pexp_loc_stack <span style="color:#f92672">=</span> <span style="color:#f92672">[]}}])</span>;
+</span></span><span style="display:flex;"><span>           pexp_loc_stack <span style="color:#f92672">=</span> <span style="color:#f92672">[]})</span>;
+</span></span><span style="display:flex;"><span>        pexp_loc_stack <span style="color:#f92672">=</span> <span style="color:#f92672">[]}}])}]</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">=========</span>
+</span></span></code></pre></div><p>The output is pretty straight forward. The <a href="https://caml.inria.fr/pub/docs/manual-ocaml/compilerlibref/Parsetree.html">Parsetree documentation</a> is a good reference to understand it.</p>
 <hr>
 <h2 id="typedtree">Typedtree</h2>
 <p>For the simplicity of the article, we will skip the detail of type inferencing and checking here. They will (hopefully) be explained in the future.</p>
@@ -192,42 +192,42 @@ t.ml
 <li>Block and values are mapped to <a href="https://dev.realworldocaml.org/runtime-memory-layout.html#memory-representation-of-values">the runtime memory model</a>.</li>
 </ul>
 <p>We can obtain the lambda form via the following command:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ ocamlc -dlambda -c t.ml
-<span style="color:#f92672">(</span>setglobal T!
-  <span style="color:#f92672">(</span>let
-    <span style="color:#f92672">(</span>test/85 <span style="color:#f92672">=</span>
-       <span style="color:#f92672">(</span><span style="color:#66d9ef">function</span> v/87 : int
-         <span style="color:#f92672">(</span>switch* v/87
-          <span style="color:#66d9ef">case</span> int 0: <span style="color:#ae81ff">100</span>
-          <span style="color:#66d9ef">case</span> int 1: <span style="color:#ae81ff">101</span>
-          <span style="color:#66d9ef">case</span> int 2: <span style="color:#ae81ff">102</span>
-          <span style="color:#66d9ef">case</span> int 3: 103<span style="color:#f92672">)))</span>
-    <span style="color:#f92672">(</span>makeblock <span style="color:#ae81ff">0</span> test/85<span style="color:#f92672">)))</span>
-</code></pre></div><p>Lambda Form is <strong>explicitly undocumented</strong> and can change across compiler revisions.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>$ ocamlc -dlambda -c t.ml
+</span></span><span style="display:flex;"><span><span style="color:#f92672">(</span>setglobal T!
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">(</span>let
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">(</span>test/85 <span style="color:#f92672">=</span>
+</span></span><span style="display:flex;"><span>       <span style="color:#f92672">(</span><span style="color:#66d9ef">function</span> v/87 : int
+</span></span><span style="display:flex;"><span>         <span style="color:#f92672">(</span>switch* v/87
+</span></span><span style="display:flex;"><span>          <span style="color:#66d9ef">case</span> int 0: <span style="color:#ae81ff">100</span>
+</span></span><span style="display:flex;"><span>          <span style="color:#66d9ef">case</span> int 1: <span style="color:#ae81ff">101</span>
+</span></span><span style="display:flex;"><span>          <span style="color:#66d9ef">case</span> int 2: <span style="color:#ae81ff">102</span>
+</span></span><span style="display:flex;"><span>          <span style="color:#66d9ef">case</span> int 3: 103<span style="color:#f92672">)))</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">(</span>makeblock <span style="color:#ae81ff">0</span> test/85<span style="color:#f92672">)))</span>
+</span></span></code></pre></div><p>Lambda Form is <strong>explicitly undocumented</strong> and can change across compiler revisions.</p>
 <p>For more detail, see <a href="https://dev.realworldocaml.org/compiler-backend.html">The Compiler Backend: Bytecode and Native code - Real World OCaml</a>.</p>
 <p>We can generate both <strong>bytecodes</strong> and <strong>native binaries</strong> from the Lambda Form.</p>
 <hr>
 <h2 id="bytecode-and-js_of_ocaml">Bytecode and <code>js_of_ocaml</code></h2>
 <p>We can obtain the bytecode with the following command:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ ocamlc -dinstr t.ml
-	branch L2
-L1:	acc <span style="color:#ae81ff">0</span>
-	switch <span style="color:#ae81ff">6</span> <span style="color:#ae81ff">5</span> <span style="color:#ae81ff">4</span> 3/
-L6:	const <span style="color:#ae81ff">100</span>
-	<span style="color:#66d9ef">return</span> <span style="color:#ae81ff">1</span>
-L5:	const <span style="color:#ae81ff">101</span>
-	<span style="color:#66d9ef">return</span> <span style="color:#ae81ff">1</span>
-L4:	const <span style="color:#ae81ff">102</span>
-	<span style="color:#66d9ef">return</span> <span style="color:#ae81ff">1</span>
-L3:	const <span style="color:#ae81ff">103</span>
-	<span style="color:#66d9ef">return</span> <span style="color:#ae81ff">1</span>
-L2:	closure L1, <span style="color:#ae81ff">0</span>
-	push
-	acc <span style="color:#ae81ff">0</span>
-	makeblock 1, <span style="color:#ae81ff">0</span>
-	pop <span style="color:#ae81ff">1</span>
-	setglobal T!
-</code></pre></div><p>The bytecode can be executed with <code>ocamlrun</code>, a portable interpreter for OCaml&rsquo;s bytecode.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>$ ocamlc -dinstr t.ml
+</span></span><span style="display:flex;"><span>	branch L2
+</span></span><span style="display:flex;"><span>L1:	acc <span style="color:#ae81ff">0</span>
+</span></span><span style="display:flex;"><span>	switch <span style="color:#ae81ff">6</span> <span style="color:#ae81ff">5</span> <span style="color:#ae81ff">4</span> 3/
+</span></span><span style="display:flex;"><span>L6:	const <span style="color:#ae81ff">100</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">return</span> <span style="color:#ae81ff">1</span>
+</span></span><span style="display:flex;"><span>L5:	const <span style="color:#ae81ff">101</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">return</span> <span style="color:#ae81ff">1</span>
+</span></span><span style="display:flex;"><span>L4:	const <span style="color:#ae81ff">102</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">return</span> <span style="color:#ae81ff">1</span>
+</span></span><span style="display:flex;"><span>L3:	const <span style="color:#ae81ff">103</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">return</span> <span style="color:#ae81ff">1</span>
+</span></span><span style="display:flex;"><span>L2:	closure L1, <span style="color:#ae81ff">0</span>
+</span></span><span style="display:flex;"><span>	push
+</span></span><span style="display:flex;"><span>	acc <span style="color:#ae81ff">0</span>
+</span></span><span style="display:flex;"><span>	makeblock 1, <span style="color:#ae81ff">0</span>
+</span></span><span style="display:flex;"><span>	pop <span style="color:#ae81ff">1</span>
+</span></span><span style="display:flex;"><span>	setglobal T!
+</span></span></code></pre></div><p>The bytecode can be executed with <code>ocamlrun</code>, a portable interpreter for OCaml&rsquo;s bytecode.</p>
 <p>The OCaml bytecode is based on a stack-based VM. The instruction set of the Caml Virtual Machine is documented <a href="http://cadmium.x9c.fr/distrib/caml-instructions.pdf">here</a>.</p>
 <p>Since the OCaml bytecode is quite stable. We can generate a target-specified code (such as Javascript for the web) from it without recompiling any library.</p>
 <ul>
@@ -235,15 +235,15 @@ L2:	closure L1, <span style="color:#ae81ff">0</span>
 <li><a href="https://github.com/AbstractMachinesLab/caramel">Caramel</a> is an <a href="https://www.erlang.org/">Erlang</a> backend to the OCaml compiler.</li>
 </ul>
 <p>Here&rsquo;s a simple example of using <code>js_of_ocaml</code>:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ ocamlfind ocamlc -package js_of_ocaml -package js_of_ocaml-ppx <span style="color:#ae81ff">\
-</span><span style="color:#ae81ff"></span>          -linkpkg -o t.byte t.ml
-$ js_of_ocaml t.byte
-</code></pre></div><hr>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>$ ocamlfind ocamlc -package js_of_ocaml -package js_of_ocaml-ppx <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>          -linkpkg -o t.byte t.ml
+</span></span><span style="display:flex;"><span>$ js_of_ocaml t.byte
+</span></span></code></pre></div><hr>
 <h2 id="native-compilation">Native Compilation</h2>
 <p>Finally, we can generate native binaries with <code>ocamlopt t.ml</code>. You can get <code>ocamlopt</code> to output the assembly with the <code>-S</code> flag.</p>
 <p>If we want the best performance (and we usually does). We should use the compiler with <a href="https://caml.inria.fr/pub/docs/manual-ocaml/flambda.html">flambda optimizers</a>. you can install a flambda-optimized OCaml with <code>opam switch</code>, such as:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ opam switch create 4.11.1+flambda
-</code></pre></div><hr>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>$ opam switch create 4.11.1+flambda
+</span></span></code></pre></div><hr>
 <h2 id="extra-top-level">Extra: Top-level</h2>
 <p>The OCaml top-level supports loading both source code or bytecodes. To load a source code, use the <code>#mod_use</code> command. To load a bytecode, use <code>#load</code>.</p>
 <hr>

@@ -1,13 +1,13 @@
 baseURL = "https://devpoga.org/"
 languageCode = "en-us"
 title = "Dev.Poga"
-paginate = 15
 
 theme = "arabica"
 
 hasCJKLanguage = true
 
 [params]
+    paginate = 15
     description = ""
     dateFormatToUse = "2006-01-02"
 
