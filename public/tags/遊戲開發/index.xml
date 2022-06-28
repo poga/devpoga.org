@@ -9,10 +9,10 @@
     <lastBuildDate>Mon, 16 Jul 2018 06:19:38 +0000</lastBuildDate><atom:link href="https://devpoga.org/tags/%E9%81%8A%E6%88%B2%E9%96%8B%E7%99%BC/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>軟體設計模式 — Data-Oriented Design</title>
-      <link>https://devpoga.org/posts/2018-07-16_%E8%BB%9F%E9%AB%94%E8%A8%AD%E8%A8%88%E6%A8%A1%E5%BC%8F-dataoriented-design/</link>
+      <link>https://devpoga.org/blog/2018-07-16_%E8%BB%9F%E9%AB%94%E8%A8%AD%E8%A8%88%E6%A8%A1%E5%BC%8F-dataoriented-design/</link>
       <pubDate>Mon, 16 Jul 2018 06:19:38 +0000</pubDate>
       
-      <guid>https://devpoga.org/posts/2018-07-16_%E8%BB%9F%E9%AB%94%E8%A8%AD%E8%A8%88%E6%A8%A1%E5%BC%8F-dataoriented-design/</guid>
+      <guid>https://devpoga.org/blog/2018-07-16_%E8%BB%9F%E9%AB%94%E8%A8%AD%E8%A8%88%E6%A8%A1%E5%BC%8F-dataoriented-design/</guid>
       <description>&lt;p&gt;&lt;img src=&#34;https://devpoga.org/post/2018-07-16_%E8%BB%9F%E9%AB%94%E8%A8%AD%E8%A8%88%E6%A8%A1%E5%BC%8F-dataoriented-design/images/1.jpeg&#34; alt=&#34;image&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Photo by &lt;a href=&#34;https://unsplash.com/photos/BpqDaDxG48w?utm_source=unsplash&amp;amp;utm_medium=referral&amp;amp;utm_content=creditCopyText&#34;&gt;Rebecca Oliver&lt;/a&gt; on &lt;a href=&#34;https://unsplash.com/search/photos/game?utm_source=unsplash&amp;amp;utm_medium=referral&amp;amp;utm_content=creditCopyText&#34;&gt;Unsplash&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;遊戲開發對很多開發者來說是個陌生的領域。遊戲對於效能的極高要求跟規格的不確定性，產生出了許多特有的系統架構。Data-Oriented Design 便是個有趣的設計模式。&lt;/p&gt;

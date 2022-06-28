@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <meta http-equiv="X-Clacks-Overhead" content="GNU Terry Pratchett" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Haxe and Programming for Many Machines | Dev.Poga</title>
+<meta name="title" content="Haxe and Programming for Many Machines" />
+<meta name="description" content="The title sounds obvious. We always program for a machine! A program won&rsquo;t run itself!" />
+<meta name="keywords" content="Programming,Essays," />
+
+
+<meta property="og:title" content="Haxe and Programming for Many Machines" />
+<meta property="og:description" content="The title sounds obvious. We always program for a machine! A program won&rsquo;t run itself!" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://devpoga.org/blog/2021-05-11_haxe_and_programming_for_many_machines/" /><meta property="article:section" content="blog" />
+<meta property="article:published_time" content="2021-05-11T00:00:00+00:00" />
+<meta property="article:modified_time" content="2021-05-11T00:00:00+00:00" />
+
+
+
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Haxe and Programming for Many Machines"/>
+<meta name="twitter:description" content="The title sounds obvious. We always program for a machine! A program won&rsquo;t run itself!"/>
+
+
+
+<meta itemprop="name" content="Haxe and Programming for Many Machines">
+<meta itemprop="description" content="The title sounds obvious. We always program for a machine! A program won&rsquo;t run itself!"><meta itemprop="datePublished" content="2021-05-11T00:00:00+00:00" />
+<meta itemprop="dateModified" content="2021-05-11T00:00:00+00:00" />
+<meta itemprop="wordCount" content="372">
+<meta itemprop="keywords" content="Programming,Essays," />
+<meta name="referrer" content="no-referrer-when-downgrade" />
+
+  <style>
+  body {
+    font-family: Verdana, sans-serif;
+    margin: auto;
+    padding: 20px;
+    max-width: 720px;
+    text-align: left;
+    background-color: #fff;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    line-height: 1.5;
+    color: #444;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  strong,
+  b {
+    color: #222;
+  }
+
+  a {
+    color: #3273dc;
+     
+  }
+
+  .title {
+    text-decoration: none;
+    border: 0;
+  }
+
+  .title span {
+    font-weight: 400;
+  }
+
+  nav a {
+    margin-right: 10px;
+  }
+
+  textarea {
+    width: 100%;
+    font-size: 16px;
+  }
+
+  input {
+    font-size: 16px;
+  }
+
+  content {
+    line-height: 1.6;
+  }
+
+  table {
+    width: 100%;
+  }
+
+  img {
+    max-width: 100%;
+  }
+
+  code {
+    padding: 2px 5px;
+    background-color: #f2f2f2;
+  }
+
+  pre code {
+    color: #222;
+    display: block;
+    padding: 20px;
+    white-space: pre-wrap;
+    font-size: 14px;
+  }
+
+  div.highlight pre {
+    background-color: initial;
+    color: initial;
+  }
+
+  div.highlight code {
+    background-color: unset;
+    color: unset;
+  }
+
+  blockquote {
+    border-left: 1px solid #999;
+    color: #222;
+    padding-left: 20px;
+    font-style: italic;
+  }
+
+  footer {
+    padding: 25px;
+    text-align: center;
+  }
+
+  .helptext {
+    color: #777;
+    font-size: small;
+  }
+
+  .errorlist {
+    color: #eba613;
+    font-size: small;
+  }
+
+   
+  ul.blog-posts {
+    list-style-type: none;
+    padding: unset;
+  }
+
+  ul.blog-posts li {
+    display: flex;
+  }
+
+  ul.blog-posts li span {
+    flex: 0 0 130px;
+  }
+
+  ul.blog-posts li a:visited {
+    color: #8b6fcb;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    body {
+      background-color: #333;
+      color: #ddd;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    strong,
+    b {
+      color: #eee;
+    }
+
+    a {
+      color: #8cc2dd;
+    }
+
+    code {
+      background-color: #777;
+    }
+
+    pre code {
+      color: #ddd;
+    }
+
+    blockquote {
+      color: #ccc;
+    }
+
+    textarea,
+    input {
+      background-color: #252525;
+      color: #ddd;
+    }
+
+    .helptext {
+      color: #aaa;
+    }
+  }
+
+</style>
+<link rel="stylesheet" href="/custom.css">
+</head>
+
+<body>
+  <header><a href="/" class="title">
+  <h2>Dev.Poga</h2>
+</a>
+<nav><a href="/">Home</a>
+
+
+<a href="/blog">Blog</a>
+
+</nav>
+</header>
+  <main>
+
+<h1>Haxe and Programming for Many Machines</h1>
+<p>
+  <i>
+    <time datetime='2021-05-11' pubdate>
+      11 May, 2021
+    </time>
+  </i>
+</p>
+
+<content>
+  <p>The title sounds obvious. We always program for a machine! A program won&rsquo;t run itself!</p>
+<hr>
+<h2 id="the-machine-machine">The &ldquo;Machine&rdquo; Machine</h2>
+<p>Our program runs on CPUs made out of sands. Fortunately, we don&rsquo;t need to think about sands. For most programmers, the lowest level we care is something called <strong>&ldquo;instruction set architecture&rdquo;</strong>: x86, ARM, RISC-V&hellip; etc.</p>
+<p>The instruction set architecture(ISA) gives us freedom to express ourself with many, many languages. And they will run on many, many type of machines.</p>
+<p>These sand machines are blazing fast, but also inflexible. If there&rsquo;s <a href="https://en.wikipedia.org/wiki/Spectre_(security_vulnerability)">issues</a> in them, we&rsquo;re in a world of trouble. If we want to try out new ideas, they cost billions to build.</p>
+<hr>
+<h2 id="the-virtual-machine">The &ldquo;Virtual&rdquo; Machine</h2>
+<p>So modern languages start to <strong>bring their own machine</strong>. For flexibility, and iteration speed.</p>
+<p>Python, Go, JavaScript, Java, Erlang, Lua, .Net, and many thousands of languages all have their own virtual machines. with their own trade-offs.</p>
+<hr>
+<h2 id="program-for-a-machine">Program for a machine</h2>
+<p>So, which machine we prefer?</p>
+<p>We want <strong>actor-based concurrency</strong>? <a href="https://en.wikipedia.org/wiki/BEAM_(Erlang_virtual_machine)">BEAM</a> is the best.</p>
+<p>We want <strong>light-weight and embeddability</strong>? <a href="https://www.lua.org/">Lua</a> is designed for it.</p>
+<p>We want <strong>state-of-the-art garbage collection</strong>? Java is always solid, but also kind of boring.</p>
+<hr>
+<h2 id="program-within-the-kernel">Program within the kernel</h2>
+<p>eBPF is a sandboxed virtual machine lives inside Linux Kernel. It&rsquo;s a revolutionary technology that can run sandboxed programs in the Linux kernel without changing kernel source code or loading kernel modules.</p>
+<p>By making the Linux kernel programmable, infrastructure software can leverage existing layers, making them more intelligent and feature-rich without continuing to add additional layers of complexity to the system or compromising execution efficiency and safety.</p>
+<hr>
+<h2 id="program-for-many-machines">Program for many machines</h2>
+<p><a href="https://haxe.org/">Haxe</a> is a languages designed to <a href="https://haxe.org/documentation/introduction/compiler-targets.html"><strong>compile to many different machines</strong></a>: JavaScript, .NET(C#), PHP, Lua, Java, Python, &hellip;etc and also its own VM: <a href="https://hashlink.haxe.org/">Hashlink</a>.</p>
+<p>With Haxe, we can freely explore different machines without the limitations from the machines&rsquo; native programming language.</p>
+<p>It&rsquo;s fun. You should try it.</p>
+<hr>
+<h2 id="so">So?</h2>
+<p>So let&rsquo;s say I want to try out new hardward ideas, or new way of packaging.</p>
+<p>What should I do?</p>
+<p>Should I get a FPGA?</p>
+<p>Can it help me to design the next <a href="https://en.wikipedia.org/wiki/Apple_M1">m1</a>? or next chip for hyperscalers(a.k.a. clouds)?</p>
+<p>TBH I&rsquo;m probably never going to achieve that. But with software, I have the freedom to play with ideas.</p>
+</content>
+<p>
+  
+  <a href="https://devpoga.org/tags/programming/">#programming</a>
+  
+  <a href="https://devpoga.org/tags/essays/">#Essays</a>
+  
+</p>
+
+  </main>
+  <footer>Made with <a href="https://github.com/janraasch/hugo-bearblog/">Hugo ʕ•ᴥ•ʔ Bear</a>
+</footer>
+
+    
+</body>
+
+</html>

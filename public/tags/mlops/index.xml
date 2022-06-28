@@ -9,19 +9,19 @@
     <lastBuildDate>Sun, 12 Dec 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://devpoga.org/tags/mlops/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Pipelines and Glue Systems</title>
-      <link>https://devpoga.org/posts/2021-12-25_pipelines_and_glue_systems/</link>
+      <link>https://devpoga.org/blog/2021-12-25_pipelines_and_glue_systems/</link>
       <pubDate>Sun, 12 Dec 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://devpoga.org/posts/2021-12-25_pipelines_and_glue_systems/</guid>
+      <guid>https://devpoga.org/blog/2021-12-25_pipelines_and_glue_systems/</guid>
       <description>&lt;p&gt;&lt;strong&gt;Context&lt;/strong&gt;: Machine Learning Projects are mainly just a complex interdependent pipeline. We desperately need a better abstraction for them.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Using AntiPatterns to avoid MLOps Mistakes</title>
-      <link>https://devpoga.org/posts/2021-11-27-mlops_antipatterns/</link>
+      <link>https://devpoga.org/blog/2021-11-27-mlops_antipatterns/</link>
       <pubDate>Sat, 27 Nov 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://devpoga.org/posts/2021-11-27-mlops_antipatterns/</guid>
+      <guid>https://devpoga.org/blog/2021-11-27-mlops_antipatterns/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;https://arxiv.org/abs/2107.00079&#34;&gt;Using AntiPatterns to avoid MLOps Mistakes&lt;/a&gt;, Nikil Muralidhar et. al.&lt;/p&gt;
 &lt;p&gt;I learned about this survey paper from &lt;a href=&#34;https://thedataexchange.media/mlops-anti-patterns/&#34;&gt;The Data Exchange&lt;/a&gt; podcast. It&amp;rsquo;s a good introduction for people who just started deploying their machine learning project to production.&lt;/p&gt;
 &lt;p&gt;The paper focused on &lt;em&gt;supervised learning&lt;/em&gt;, and &lt;em&gt;forcasting applications&lt;/em&gt;. But the observation and recommendations should be general enough to be applied to other common machine learning deployments.&lt;/p&gt;</description>

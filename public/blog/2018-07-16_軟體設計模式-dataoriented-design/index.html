@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <meta http-equiv="X-Clacks-Overhead" content="GNU Terry Pratchett" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>軟體設計模式 — Data-Oriented Design | Dev.Poga</title>
+<meta name="title" content="軟體設計模式 — Data-Oriented Design" />
+<meta name="description" content="
+Photo by Rebecca Oliver on Unsplash
+遊戲開發對很多開發者來說是個陌生的領域。遊戲對於效能的極高要求跟規格的不確定性，產生出了許多特有的系統架構。Data-Oriented Design 便是個有趣的設計模式。
+相較於其他設計模式，Data-Oriented Design 深受硬體快取（cache）架構影響。對於現代的高度 pipeline、高速的 CPU 架構而言，資料的存取方式對效能有非常大的影響。比起 L1、L2 cache，對主記憶體的一次存取帶來的是數百倍的效能損耗。為了避免太過抽象，就用個實際的例子來解釋吧。" />
+<meta name="keywords" content="遊戲開發,科普,系統架構," />
+
+
+<meta property="og:title" content="軟體設計模式 — Data-Oriented Design" />
+<meta property="og:description" content="
+Photo by Rebecca Oliver on Unsplash
+遊戲開發對很多開發者來說是個陌生的領域。遊戲對於效能的極高要求跟規格的不確定性，產生出了許多特有的系統架構。Data-Oriented Design 便是個有趣的設計模式。
+相較於其他設計模式，Data-Oriented Design 深受硬體快取（cache）架構影響。對於現代的高度 pipeline、高速的 CPU 架構而言，資料的存取方式對效能有非常大的影響。比起 L1、L2 cache，對主記憶體的一次存取帶來的是數百倍的效能損耗。為了避免太過抽象，就用個實際的例子來解釋吧。" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://devpoga.org/blog/2018-07-16_%E8%BB%9F%E9%AB%94%E8%A8%AD%E8%A8%88%E6%A8%A1%E5%BC%8F-dataoriented-design/" /><meta property="og:image" content="https://devpoga.org/post/2018-07-16_%E8%BB%9F%E9%AB%94%E8%A8%AD%E8%A8%88%E6%A8%A1%E5%BC%8F-dataoriented-design/images/1.jpeg" /><meta property="article:section" content="blog" />
+<meta property="article:published_time" content="2018-07-16T06:19:38+00:00" />
+<meta property="article:modified_time" content="2019-04-30T21:56:04+08:00" />
+
+
+
+
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://devpoga.org/post/2018-07-16_%E8%BB%9F%E9%AB%94%E8%A8%AD%E8%A8%88%E6%A8%A1%E5%BC%8F-dataoriented-design/images/1.jpeg"/>
+
+<meta name="twitter:title" content="軟體設計模式 — Data-Oriented Design"/>
+<meta name="twitter:description" content="
+Photo by Rebecca Oliver on Unsplash
+遊戲開發對很多開發者來說是個陌生的領域。遊戲對於效能的極高要求跟規格的不確定性，產生出了許多特有的系統架構。Data-Oriented Design 便是個有趣的設計模式。
+相較於其他設計模式，Data-Oriented Design 深受硬體快取（cache）架構影響。對於現代的高度 pipeline、高速的 CPU 架構而言，資料的存取方式對效能有非常大的影響。比起 L1、L2 cache，對主記憶體的一次存取帶來的是數百倍的效能損耗。為了避免太過抽象，就用個實際的例子來解釋吧。"/>
+
+
+
+<meta itemprop="name" content="軟體設計模式 — Data-Oriented Design">
+<meta itemprop="description" content="
+Photo by Rebecca Oliver on Unsplash
+遊戲開發對很多開發者來說是個陌生的領域。遊戲對於效能的極高要求跟規格的不確定性，產生出了許多特有的系統架構。Data-Oriented Design 便是個有趣的設計模式。
+相較於其他設計模式，Data-Oriented Design 深受硬體快取（cache）架構影響。對於現代的高度 pipeline、高速的 CPU 架構而言，資料的存取方式對效能有非常大的影響。比起 L1、L2 cache，對主記憶體的一次存取帶來的是數百倍的效能損耗。為了避免太過抽象，就用個實際的例子來解釋吧。"><meta itemprop="datePublished" content="2018-07-16T06:19:38+00:00" />
+<meta itemprop="dateModified" content="2019-04-30T21:56:04+08:00" />
+<meta itemprop="wordCount" content="802"><meta itemprop="image" content="https://devpoga.org/post/2018-07-16_%E8%BB%9F%E9%AB%94%E8%A8%AD%E8%A8%88%E6%A8%A1%E5%BC%8F-dataoriented-design/images/1.jpeg">
+<meta itemprop="keywords" content="遊戲開發,科普,系統架構," />
+<meta name="referrer" content="no-referrer-when-downgrade" />
+
+  <style>
+  body {
+    font-family: Verdana, sans-serif;
+    margin: auto;
+    padding: 20px;
+    max-width: 720px;
+    text-align: left;
+    background-color: #fff;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    line-height: 1.5;
+    color: #444;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  strong,
+  b {
+    color: #222;
+  }
+
+  a {
+    color: #3273dc;
+     
+  }
+
+  .title {
+    text-decoration: none;
+    border: 0;
+  }
+
+  .title span {
+    font-weight: 400;
+  }
+
+  nav a {
+    margin-right: 10px;
+  }
+
+  textarea {
+    width: 100%;
+    font-size: 16px;
+  }
+
+  input {
+    font-size: 16px;
+  }
+
+  content {
+    line-height: 1.6;
+  }
+
+  table {
+    width: 100%;
+  }
+
+  img {
+    max-width: 100%;
+  }
+
+  code {
+    padding: 2px 5px;
+    background-color: #f2f2f2;
+  }
+
+  pre code {
+    color: #222;
+    display: block;
+    padding: 20px;
+    white-space: pre-wrap;
+    font-size: 14px;
+  }
+
+  div.highlight pre {
+    background-color: initial;
+    color: initial;
+  }
+
+  div.highlight code {
+    background-color: unset;
+    color: unset;
+  }
+
+  blockquote {
+    border-left: 1px solid #999;
+    color: #222;
+    padding-left: 20px;
+    font-style: italic;
+  }
+
+  footer {
+    padding: 25px;
+    text-align: center;
+  }
+
+  .helptext {
+    color: #777;
+    font-size: small;
+  }
+
+  .errorlist {
+    color: #eba613;
+    font-size: small;
+  }
+
+   
+  ul.blog-posts {
+    list-style-type: none;
+    padding: unset;
+  }
+
+  ul.blog-posts li {
+    display: flex;
+  }
+
+  ul.blog-posts li span {
+    flex: 0 0 130px;
+  }
+
+  ul.blog-posts li a:visited {
+    color: #8b6fcb;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    body {
+      background-color: #333;
+      color: #ddd;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    strong,
+    b {
+      color: #eee;
+    }
+
+    a {
+      color: #8cc2dd;
+    }
+
+    code {
+      background-color: #777;
+    }
+
+    pre code {
+      color: #ddd;
+    }
+
+    blockquote {
+      color: #ccc;
+    }
+
+    textarea,
+    input {
+      background-color: #252525;
+      color: #ddd;
+    }
+
+    .helptext {
+      color: #aaa;
+    }
+  }
+
+</style>
+<link rel="stylesheet" href="/custom.css">
+</head>
+
+<body>
+  <header><a href="/" class="title">
+  <h2>Dev.Poga</h2>
+</a>
+<nav><a href="/">Home</a>
+
+
+<a href="/blog">Blog</a>
+
+</nav>
+</header>
+  <main>
+
+<h1>軟體設計模式 — Data-Oriented Design</h1>
+<p>
+  <i>
+    <time datetime='2018-07-16' pubdate>
+      16 Jul, 2018
+    </time>
+  </i>
+</p>
+
+<content>
+  <p><img src="/post/2018-07-16_%E8%BB%9F%E9%AB%94%E8%A8%AD%E8%A8%88%E6%A8%A1%E5%BC%8F-dataoriented-design/images/1.jpeg" alt="image"></p>
+<p>Photo by <a href="https://unsplash.com/photos/BpqDaDxG48w?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Rebecca Oliver</a> on <a href="https://unsplash.com/search/photos/game?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></p>
+<p>遊戲開發對很多開發者來說是個陌生的領域。遊戲對於效能的極高要求跟規格的不確定性，產生出了許多特有的系統架構。Data-Oriented Design 便是個有趣的設計模式。</p>
+<p>相較於其他設計模式，Data-Oriented Design 深受硬體快取（cache）架構影響。對於現代的高度 pipeline、高速的 CPU 架構而言，資料的存取方式對效能有非常大的影響。比起 L1、L2 cache，對主記憶體的一次存取帶來的是數百倍的效能損耗。為了避免太過抽象，就用個實際的例子來解釋吧。</p>
+<p>假設我們的遊戲中有許多的球，每個球有顏色、位置、半徑等等資訊。對於學過物件導向的人而言，很可能直覺的設計成這樣：</p>
+<pre tabindex="0"><code>class Ball {
+ Point position;
+ Color color;
+ double radius;
+}
+</code></pre><p>這樣的作法很符合人對世界的理解：每個球是獨立的個體，有自己的屬性。</p>
+<p>不過，如果遊戲中有數百萬個球在移動，這樣的作法的效能就不太好了。每個球的座標都經過物件導向的層層封裝，分散在記憶體四處，spatial locality 非常差，在更新的過程中產生了大量的 cache miss。</p>
+<h4 id="theres-no-ball">There’s no ball</h4>
+<p>如果採用 Data-Oriented Design 的話，作法會變成：</p>
+<pre tabindex="0"><code>class Balls {
+ vector&lt;Point&gt; positions;
+ vector&lt;Color&gt; color;
+ vector&lt;double&gt; radius;
+}
+</code></pre><p>於是我們的程式中不再有「獨立的球」這個設計存在，所謂的球，只是透過一個 index，含蓄的存在遊戲世界中。</p>
+<p>這樣的作法，對人而言並不直覺，但是對硬體而言，效能好上許多。大多數的 vector 實做，都會將其中的內容放在一段連續的記憶體空間中。因此 spatial locality 很好，對 CPU 而言，他能很輕易的猜到接下來要存取的記憶體位址，省下許多猜錯而損失的 CPU cycle。</p>
+<h4 id="soa-與-aos">SoA 與 AoS</h4>
+<p>這兩種作法又分別被稱做 Array of Structs 跟 Structs of Arrays。前者是用一個陣列存放許多獨立的 struct（class），後者是用一個 struct（class）存放許多陣列。</p>
+<p>實際開發時，很難臨時在這兩種模式中轉換。對程式而言，model 遊戲世界的方式完全不同。所以常常一開始用了直覺的 AoS 開發，發現效能不好，需要換成 SoA 時卻無從下手。遊戲開發在介面設計跟系統架構上，都有很多很經典的範例啊…</p>
+</content>
+<p>
+  
+  <a href="https://devpoga.org/tags/%E9%81%8A%E6%88%B2%E9%96%8B%E7%99%BC/">#遊戲開發</a>
+  
+  <a href="https://devpoga.org/tags/%E7%A7%91%E6%99%AE/">#科普</a>
+  
+  <a href="https://devpoga.org/tags/%E7%B3%BB%E7%B5%B1%E6%9E%B6%E6%A7%8B/">#系統架構</a>
+  
+</p>
+
+  </main>
+  <footer>Made with <a href="https://github.com/janraasch/hugo-bearblog/">Hugo ʕ•ᴥ•ʔ Bear</a>
+</footer>
+
+    
+</body>
+
+</html>

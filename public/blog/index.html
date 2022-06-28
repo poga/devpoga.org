@@ -1,0 +1,915 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <meta http-equiv="X-Clacks-Overhead" content="GNU Terry Pratchett" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Blogs | Dev.Poga</title>
+<meta name="title" content="Blogs" />
+<meta name="description" content="" />
+<meta name="keywords" content="blog,talks,actix,burnout,communicating,communication,compiler,concurrency,condition,coscup,cryptography,depression,design,domain-modeling,editor,engineering,essays,g0v,glues,go,health,interpreter-and-compiler,ipad,julia,kappa,leadership,learn-ocaml-the-hard-way,lisp,log,lua,luajit,machine-learning,mastodon,mlops,naps,networking,note,notes,ocaml,omnifocus,open-source,organization,ownership,patterns,privacy,productivity,programming,programming-language,programming-languages,reading,rust,scheme,security,serverless,software-engineering,story-telling,teaching,ux,vim,writing,帶您讀原碼,科普,系統架構,遊戲開發," />
+
+
+<meta property="og:title" content="Blogs" />
+<meta property="og:description" content="" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://devpoga.org/blog/" />
+
+
+
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Blogs"/>
+<meta name="twitter:description" content=""/>
+
+
+
+<meta itemprop="name" content="Blogs">
+<meta itemprop="description" content="">
+<meta name="referrer" content="no-referrer-when-downgrade" />
+
+  <link rel="alternate" type="application/rss+xml" href="https://devpoga.org/blog/index.xml" title="Dev.Poga" />
+  <style>
+  body {
+    font-family: Verdana, sans-serif;
+    margin: auto;
+    padding: 20px;
+    max-width: 720px;
+    text-align: left;
+    background-color: #fff;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    line-height: 1.5;
+    color: #444;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  strong,
+  b {
+    color: #222;
+  }
+
+  a {
+    color: #3273dc;
+     
+  }
+
+  .title {
+    text-decoration: none;
+    border: 0;
+  }
+
+  .title span {
+    font-weight: 400;
+  }
+
+  nav a {
+    margin-right: 10px;
+  }
+
+  textarea {
+    width: 100%;
+    font-size: 16px;
+  }
+
+  input {
+    font-size: 16px;
+  }
+
+  content {
+    line-height: 1.6;
+  }
+
+  table {
+    width: 100%;
+  }
+
+  img {
+    max-width: 100%;
+  }
+
+  code {
+    padding: 2px 5px;
+    background-color: #f2f2f2;
+  }
+
+  pre code {
+    color: #222;
+    display: block;
+    padding: 20px;
+    white-space: pre-wrap;
+    font-size: 14px;
+  }
+
+  div.highlight pre {
+    background-color: initial;
+    color: initial;
+  }
+
+  div.highlight code {
+    background-color: unset;
+    color: unset;
+  }
+
+  blockquote {
+    border-left: 1px solid #999;
+    color: #222;
+    padding-left: 20px;
+    font-style: italic;
+  }
+
+  footer {
+    padding: 25px;
+    text-align: center;
+  }
+
+  .helptext {
+    color: #777;
+    font-size: small;
+  }
+
+  .errorlist {
+    color: #eba613;
+    font-size: small;
+  }
+
+   
+  ul.blog-posts {
+    list-style-type: none;
+    padding: unset;
+  }
+
+  ul.blog-posts li {
+    display: flex;
+  }
+
+  ul.blog-posts li span {
+    flex: 0 0 130px;
+  }
+
+  ul.blog-posts li a:visited {
+    color: #8b6fcb;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    body {
+      background-color: #333;
+      color: #ddd;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    strong,
+    b {
+      color: #eee;
+    }
+
+    a {
+      color: #8cc2dd;
+    }
+
+    code {
+      background-color: #777;
+    }
+
+    pre code {
+      color: #ddd;
+    }
+
+    blockquote {
+      color: #ccc;
+    }
+
+    textarea,
+    input {
+      background-color: #252525;
+      color: #ddd;
+    }
+
+    .helptext {
+      color: #aaa;
+    }
+  }
+
+</style>
+<link rel="stylesheet" href="/custom.css">
+</head>
+
+<body>
+  <header><a href="/" class="title">
+  <h2>Dev.Poga</h2>
+</a>
+<nav><a href="/">Home</a>
+
+
+<a href="/blog">Blog</a>
+
+</nav>
+</header>
+  <main>
+<content>
+  
+  <ul class="blog-posts">
+    
+    <li>
+      <span>
+        <i>
+          <time datetime='2022-02-19' pubdate>
+            19 Feb, 2022
+          </time>
+        </i>
+      </span>
+      <a href="https://devpoga.org/blog/2022-02-19_what_ive_been_reading/">What I&#39;ve been Reading: 2022 Jan and Feb</a>
+    </li>
+    
+    <li>
+      <span>
+        <i>
+          <time datetime='2022-01-15' pubdate>
+            15 Jan, 2022
+          </time>
+        </i>
+      </span>
+      <a href="https://devpoga.org/blog/2022-01-15_i_cannot_think_myself_out_of_this/">I cannot think myself out of this</a>
+    </li>
+    
+    <li>
+      <span>
+        <i>
+          <time datetime='2022-01-03' pubdate>
+            03 Jan, 2022
+          </time>
+        </i>
+      </span>
+      <a href="https://devpoga.org/blog/2022-01-03_grpc_status_code/">gRPC status codes</a>
+    </li>
+    
+    <li>
+      <span>
+        <i>
+          <time datetime='2021-12-12' pubdate>
+            12 Dec, 2021
+          </time>
+        </i>
+      </span>
+      <a href="https://devpoga.org/blog/2021-12-12_naps/">On Naps</a>
+    </li>
+    
+    <li>
+      <span>
+        <i>
+          <time datetime='2021-12-12' pubdate>
+            12 Dec, 2021
+          </time>
+        </i>
+      </span>
+      <a href="https://devpoga.org/blog/2021-12-25_pipelines_and_glue_systems/">Pipelines and Glue Systems</a>
+    </li>
+    
+    <li>
+      <span>
+        <i>
+          <time datetime='2021-11-27' pubdate>
+            27 Nov, 2021
+          </time>
+        </i>
+      </span>
+      <a href="https://devpoga.org/blog/2021-11-27-mlops_antipatterns/">Using AntiPatterns to avoid MLOps Mistakes</a>
+    </li>
+    
+    <li>
+      <span>
+        <i>
+          <time datetime='2021-09-19' pubdate>
+            19 Sep, 2021
+          </time>
+        </i>
+      </span>
+      <a href="https://devpoga.org/blog/2021-09-19_notes_on_the_five_dysfunctions_of_a_team/">Notes on The Five Dysfunctions of a Team</a>
+    </li>
+    
+    <li>
+      <span>
+        <i>
+          <time datetime='2021-09-18' pubdate>
+            18 Sep, 2021
+          </time>
+        </i>
+      </span>
+      <a href="https://devpoga.org/blog/2021-09-18_on_glue_systems/">On Building Glue Systems</a>
+    </li>
+    
+    <li>
+      <span>
+        <i>
+          <time datetime='2021-08-04' pubdate>
+            04 Aug, 2021
+          </time>
+        </i>
+      </span>
+      <a href="https://devpoga.org/blog/2021-08-04_learning_julia_line_by_line/">Learning Julia, Line by Line</a>
+    </li>
+    
+    <li>
+      <span>
+        <i>
+          <time datetime='2021-07-24' pubdate>
+            24 Jul, 2021
+          </time>
+        </i>
+      </span>
+      <a href="https://devpoga.org/blog/2021-07-25_organization_health/">CHECKLIST FOR ORGANIZATIONAL HEALTH</a>
+    </li>
+    
+    <li>
+      <span>
+        <i>
+          <time datetime='2021-05-11' pubdate>
+            11 May, 2021
+          </time>
+        </i>
+      </span>
+      <a href="https://devpoga.org/blog/2021-05-11_haxe_and_programming_for_many_machines/">Haxe and Programming for Many Machines</a>
+    </li>
+    
+    <li>
+      <span>
+        <i>
+          <time datetime='2021-05-01' pubdate>
+            01 May, 2021
+          </time>
+        </i>
+      </span>
+      <a href="https://devpoga.org/blog/2021-05-01_common_lisp_quicklisp_local_project/">Common Lisp Local Project Development with Quicklisp</a>
+    </li>
+    
+    <li>
+      <span>
+        <i>
+          <time datetime='2021-04-25' pubdate>
+            25 Apr, 2021
+          </time>
+        </i>
+      </span>
+      <a href="https://devpoga.org/blog/2021-04-25_common_lisp_condition_system/">The Common Lisp Condition System</a>
+    </li>
+    
+    <li>
+      <span>
+        <i>
+          <time datetime='2020-12-19' pubdate>
+            19 Dec, 2020
+          </time>
+        </i>
+      </span>
+      <a href="https://devpoga.org/blog/2020-12-19_ocaml_predictable_module_functor/">Predictable Performance of OCaml&#39;s Module System</a>
+    </li>
+    
+    <li>
+      <span>
+        <i>
+          <time datetime='2020-11-30' pubdate>
+            30 Nov, 2020
+          </time>
+        </i>
+      </span>
+      <a href="https://devpoga.org/blog/2020-11-30-ocaml-compiler-pipeline/">Going through the OCaml compiler pipeline (manually)</a>
+    </li>
+    
+    <li>
+      <span>
+        <i>
+          <time datetime='2020-11-29' pubdate>
+            29 Nov, 2020
+          </time>
+        </i>
+      </span>
+      <a href="https://devpoga.org/blog/2020-11-29-g0v.social-journey/">The journey of g0v.social</a>
+    </li>
+    
+    <li>
+      <span>
+        <i>
+          <time datetime='2020-11-21' pubdate>
+            21 Nov, 2020
+          </time>
+        </i>
+      </span>
+      <a href="https://devpoga.org/blog/2020-11-21-a-taste-of-ocaml-predictable-performance/">A Taste of OCaml&#39;s Predictable Performance</a>
+    </li>
+    
+    <li>
+      <span>
+        <i>
+          <time datetime='2020-08-01' pubdate>
+            01 Aug, 2020
+          </time>
+        </i>
+      </span>
+      <a href="https://devpoga.org/blog/2020-08-01_ipad_programming_environment/">在 iPad 上布置軟體開發環境</a>
+    </li>
+    
+    <li>
+      <span>
+        <i>
+          <time datetime='2020-06-07' pubdate>
+            07 Jun, 2020
+          </time>
+        </i>
+      </span>
+      <a href="https://devpoga.org/blog/2020-06-07-concurrency-clojure-racket-gerbil/">Concurrency in Clojure, Racket, and Gerbil Scheme</a>
+    </li>
+    
+    <li>
+      <span>
+        <i>
+          <time datetime='2020-04-21' pubdate>
+            21 Apr, 2020
+          </time>
+        </i>
+      </span>
+      <a href="https://devpoga.org/blog/2020-04-21_on-communication/">On Communication</a>
+    </li>
+    
+    <li>
+      <span>
+        <i>
+          <time datetime='2020-04-10' pubdate>
+            10 Apr, 2020
+          </time>
+        </i>
+      </span>
+      <a href="https://devpoga.org/blog/2020-04-10_domain-modeling-made-functional/">Domain Modeling Made Functional</a>
+    </li>
+    
+    <li>
+      <span>
+        <i>
+          <time datetime='2020-04-09' pubdate>
+            09 Apr, 2020
+          </time>
+        </i>
+      </span>
+      <a href="https://devpoga.org/blog/2020-04-09_zero-trust-network/">Zero Trust Network</a>
+    </li>
+    
+    <li>
+      <span>
+        <i>
+          <time datetime='2020-03-17' pubdate>
+            17 Mar, 2020
+          </time>
+        </i>
+      </span>
+      <a href="https://devpoga.org/blog/2020-03-17_ocaml_quickstart/">OCaml Quickstart</a>
+    </li>
+    
+    <li>
+      <span>
+        <i>
+          <time datetime='2020-02-17' pubdate>
+            17 Feb, 2020
+          </time>
+        </i>
+      </span>
+      <a href="https://devpoga.org/blog/2020-02-17_checklist_deploy_machine_learning_model_production/">Guide to Serve Machine Learning Models in Production</a>
+    </li>
+    
+    <li>
+      <span>
+        <i>
+          <time datetime='2019-11-06' pubdate>
+            06 Nov, 2019
+          </time>
+        </i>
+      </span>
+      <a href="https://devpoga.org/blog/2019-11-06-running-service-production/">Running a Service in Production without Losing Your Sanity</a>
+    </li>
+    
+    <li>
+      <span>
+        <i>
+          <time datetime='2019-11-03' pubdate>
+            03 Nov, 2019
+          </time>
+        </i>
+      </span>
+      <a href="https://devpoga.org/blog/2019-11-03-golden-age-of-programming-language/">The Golden Age of New Programming Languages</a>
+    </li>
+    
+    <li>
+      <span>
+        <i>
+          <time datetime='2019-10-22' pubdate>
+            22 Oct, 2019
+          </time>
+        </i>
+      </span>
+      <a href="https://devpoga.org/blog/2019-10-22-vps_rust_compile_benchmark/">Benchmarking VPS for Remote Rust Development Environment</a>
+    </li>
+    
+    <li>
+      <span>
+        <i>
+          <time datetime='2019-09-20' pubdate>
+            20 Sep, 2019
+          </time>
+        </i>
+      </span>
+      <a href="https://devpoga.org/blog/2019-09-20_ripgrep_cheat_sheet/">Ripgrep Cheat Sheet</a>
+    </li>
+    
+    <li>
+      <span>
+        <i>
+          <time datetime='2019-09-04' pubdate>
+            04 Sep, 2019
+          </time>
+        </i>
+      </span>
+      <a href="https://devpoga.org/blog/2019-09-04_notes_on_the_signal_protocol/">Notes on The Signal Protocol</a>
+    </li>
+    
+    <li>
+      <span>
+        <i>
+          <time datetime='2019-07-12' pubdate>
+            12 Jul, 2019
+          </time>
+        </i>
+      </span>
+      <a href="https://devpoga.org/blog/2019-07-11_cheney_on_the_mta/">Cheney on the M.T.A</a>
+    </li>
+    
+    <li>
+      <span>
+        <i>
+          <time datetime='2019-06-30' pubdate>
+            30 Jun, 2019
+          </time>
+        </i>
+      </span>
+      <a href="https://devpoga.org/blog/2019-06-30_structured_concurrency/">Structured Concurrency</a>
+    </li>
+    
+    <li>
+      <span>
+        <i>
+          <time datetime='2019-06-29' pubdate>
+            29 Jun, 2019
+          </time>
+        </i>
+      </span>
+      <a href="https://devpoga.org/blog/2019-06-29_%E5%B7%A5%E7%A8%8B%E5%B8%AB%E7%9A%84%E8%8B%B1%E6%96%87%E5%AF%AB%E4%BD%9C%E8%83%BD%E5%8A%9B/">工程師的英文寫作能力</a>
+    </li>
+    
+    <li>
+      <span>
+        <i>
+          <time datetime='2019-04-29' pubdate>
+            29 Apr, 2019
+          </time>
+        </i>
+      </span>
+      <a href="https://devpoga.org/blog/golang-7-years-later/">Go，七年後</a>
+    </li>
+    
+    <li>
+      <span>
+        <i>
+          <time datetime='2019-02-26' pubdate>
+            26 Feb, 2019
+          </time>
+        </i>
+      </span>
+      <a href="https://devpoga.org/blog/implementation-lua53/">Notes on the Implementation of Lua 5.3</a>
+    </li>
+    
+    <li>
+      <span>
+        <i>
+          <time datetime='2019-01-05' pubdate>
+            05 Jan, 2019
+          </time>
+        </i>
+      </span>
+      <a href="https://devpoga.org/blog/2019-01-05_%E7%82%BA%E4%BB%80%E9%BA%BC%E7%8F%BE%E4%BB%A3%E9%81%8A%E6%88%B2%E9%83%BD%E8%A6%81%E6%9C%89%E4%B8%80%E5%A0%86%E4%B8%8D%E5%90%8C%E7%9A%84%E8%B2%A8%E5%B9%A3%E5%9C%A8%E8%A3%A1%E9%A0%AD/">為什麼現代遊戲都要有一堆不同的貨幣在裡頭？</a>
+    </li>
+    
+    <li>
+      <span>
+        <i>
+          <time datetime='2018-10-12' pubdate>
+            12 Oct, 2018
+          </time>
+        </i>
+      </span>
+      <a href="https://devpoga.org/blog/parsing-streaming-data-actix-lua/">Analyze Streaming Data with Rust, Actix, and Lua</a>
+    </li>
+    
+    <li>
+      <span>
+        <i>
+          <time datetime='2018-09-27' pubdate>
+            27 Sep, 2018
+          </time>
+        </i>
+      </span>
+      <a href="https://devpoga.org/blog/2018-09-28_%E6%88%91%E9%81%B8%E6%93%87%E7%94%9F%E7%94%A2%E5%8A%9B%E5%B7%A5%E5%85%B7%E7%9A%84%E5%9F%BA%E6%BA%96/">我選擇生產力工具的基準</a>
+    </li>
+    
+    <li>
+      <span>
+        <i>
+          <time datetime='2018-09-03' pubdate>
+            03 Sep, 2018
+          </time>
+        </i>
+      </span>
+      <a href="https://devpoga.org/blog/2018-09-03_%E5%A6%82%E4%BD%95%E6%95%B4%E5%90%88-rust-%E8%88%87-lua/">如何整合 Rust 與 Lua</a>
+    </li>
+    
+    <li>
+      <span>
+        <i>
+          <time datetime='2018-07-16' pubdate>
+            16 Jul, 2018
+          </time>
+        </i>
+      </span>
+      <a href="https://devpoga.org/blog/2018-07-16_%E8%BB%9F%E9%AB%94%E8%A8%AD%E8%A8%88%E6%A8%A1%E5%BC%8F-dataoriented-design/">軟體設計模式 — Data-Oriented Design</a>
+    </li>
+    
+    <li>
+      <span>
+        <i>
+          <time datetime='2018-04-18' pubdate>
+            18 Apr, 2018
+          </time>
+        </i>
+      </span>
+      <a href="https://devpoga.org/blog/2018-04-18_luajit-%E5%AF%A6%E5%81%9A%E6%8E%A2%E7%B4%A2-nan-tagging/">LuaJIT 實做探索 — NaN Tagging</a>
+    </li>
+    
+    <li>
+      <span>
+        <i>
+          <time datetime='2018-02-06' pubdate>
+            06 Feb, 2018
+          </time>
+        </i>
+      </span>
+      <a href="https://devpoga.org/blog/2018-04-10_why_serverless/">Why Serverless</a>
+    </li>
+    
+    <li>
+      <span>
+        <i>
+          <time datetime='2018-02-06' pubdate>
+            06 Feb, 2018
+          </time>
+        </i>
+      </span>
+      <a href="https://devpoga.org/blog/2018-02-06_%E9%81%BA%E5%BF%98%E7%9A%84%E7%94%9F%E7%94%A2%E5%8A%9B/">遺忘的生產力</a>
+    </li>
+    
+    <li>
+      <span>
+        <i>
+          <time datetime='2017-12-22' pubdate>
+            22 Dec, 2017
+          </time>
+        </i>
+      </span>
+      <a href="https://devpoga.org/blog/2017-12-22_kappa-architecture%E4%BB%A5%E8%B3%87%E6%96%99%E7%82%BA%E4%B8%AD%E5%BF%83%E7%9A%84%E7%B3%BB%E7%B5%B1%E6%9E%B6%E6%A7%8B/">Kappa Architecture：以資料為中心的系統架構</a>
+    </li>
+    
+    <li>
+      <span>
+        <i>
+          <time datetime='2017-10-02' pubdate>
+            02 Oct, 2017
+          </time>
+        </i>
+      </span>
+      <a href="https://devpoga.org/blog/2017-10-02_minimum_viable_ownership/">Minimum Viable Ownership</a>
+    </li>
+    
+    <li>
+      <span>
+        <i>
+          <time datetime='2017-06-04' pubdate>
+            04 Jun, 2017
+          </time>
+        </i>
+      </span>
+      <a href="https://devpoga.org/blog/2017-06-04_%E5%B9%B3%E8%A1%8C%E4%B8%96%E7%95%8C/">平行世界</a>
+    </li>
+    
+    <li>
+      <span>
+        <i>
+          <time datetime='2017-02-16' pubdate>
+            16 Feb, 2017
+          </time>
+        </i>
+      </span>
+      <a href="https://devpoga.org/blog/2017-02-16_%E5%8F%88%E5%9B%9E%E4%BE%86%E7%94%A8-omnifocus-%E4%BA%86/">又回來用 Omnifocus 了</a>
+    </li>
+    
+    <li>
+      <span>
+        <i>
+          <time datetime='2016-08-27' pubdate>
+            27 Aug, 2016
+          </time>
+        </i>
+      </span>
+      <a href="https://devpoga.org/blog/2016-08-27_%E8%90%AC%E4%BA%8B%E8%90%AC%E7%89%A9%E7%9A%86%E6%98%AF-log-%E5%8F%83%E8%80%83%E8%B3%87%E6%96%99/">萬事萬物皆是 LOG — 參考資料</a>
+    </li>
+    
+    <li>
+      <span>
+        <i>
+          <time datetime='2016-08-20' pubdate>
+            20 Aug, 2016
+          </time>
+        </i>
+      </span>
+      <a href="https://devpoga.org/blog/2016-08-20_%E8%90%AC%E4%BA%8B%E8%90%AC%E7%89%A9%E7%9A%86%E6%98%AF-log-%E7%B3%BB%E7%B5%B1%E6%9E%B6%E6%A7%8B%E4%B9%9F%E4%BE%86%E9%BB%9E%E7%A7%91%E6%99%AE/">萬事萬物皆是 LOG — 系統架構也來點科普</a>
+    </li>
+    
+    <li>
+      <span>
+        <i>
+          <time datetime='2016-07-17' pubdate>
+            17 Jul, 2016
+          </time>
+        </i>
+      </span>
+      <a href="https://devpoga.org/blog/2016-07-17_design-of-everyday-things/">The Design of Everyday Things</a>
+    </li>
+    
+    <li>
+      <span>
+        <i>
+          <time datetime='2016-05-17' pubdate>
+            17 May, 2016
+          </time>
+        </i>
+      </span>
+      <a href="https://devpoga.org/blog/2016-05-17_%E8%A9%B2%E6%80%8E%E6%A8%A3%E6%95%99%E4%BB%BB%E4%BD%95%E4%BA%BA%E4%BB%BB%E4%BD%95%E6%8A%80%E8%83%BD/">該怎樣教任何人任何技能</a>
+    </li>
+    
+  </ul>
+  
+    <small>
+      <div>
+        
+        <a href="https://devpoga.org/tags/actix/">#Actix</a>&nbsp;
+        
+        <a href="https://devpoga.org/tags/burnout/">#Burnout</a>&nbsp;
+        
+        <a href="https://devpoga.org/tags/communicating/">#Communicating</a>&nbsp;
+        
+        <a href="https://devpoga.org/tags/communication/">#Communication</a>&nbsp;
+        
+        <a href="https://devpoga.org/tags/compiler/">#Compiler</a>&nbsp;
+        
+        <a href="https://devpoga.org/tags/concurrency/">#concurrency</a>&nbsp;
+        
+        <a href="https://devpoga.org/tags/condition/">#Condition</a>&nbsp;
+        
+        <a href="https://devpoga.org/tags/coscup/">#Coscup</a>&nbsp;
+        
+        <a href="https://devpoga.org/tags/cryptography/">#Cryptography</a>&nbsp;
+        
+        <a href="https://devpoga.org/tags/depression/">#Depression</a>&nbsp;
+        
+        <a href="https://devpoga.org/tags/design/">#Design</a>&nbsp;
+        
+        <a href="https://devpoga.org/tags/domain-modeling/">#Domain Modeling</a>&nbsp;
+        
+        <a href="https://devpoga.org/tags/editor/">#editor</a>&nbsp;
+        
+        <a href="https://devpoga.org/tags/engineering/">#engineering</a>&nbsp;
+        
+        <a href="https://devpoga.org/tags/essays/">#Essays</a>&nbsp;
+        
+        <a href="https://devpoga.org/tags/g0v/">#g0v</a>&nbsp;
+        
+        <a href="https://devpoga.org/tags/glues/">#Glues</a>&nbsp;
+        
+        <a href="https://devpoga.org/tags/go/">#go</a>&nbsp;
+        
+        <a href="https://devpoga.org/tags/health/">#health</a>&nbsp;
+        
+        <a href="https://devpoga.org/tags/interpreter-and-compiler/">#Interpreter and Compiler</a>&nbsp;
+        
+        <a href="https://devpoga.org/tags/ipad/">#iPad</a>&nbsp;
+        
+        <a href="https://devpoga.org/tags/julia/">#Julia</a>&nbsp;
+        
+        <a href="https://devpoga.org/tags/kappa/">#Kappa</a>&nbsp;
+        
+        <a href="https://devpoga.org/tags/leadership/">#Leadership</a>&nbsp;
+        
+        <a href="https://devpoga.org/tags/learn-ocaml-the-hard-way/">#Learn OCaml the Hard Way</a>&nbsp;
+        
+        <a href="https://devpoga.org/tags/lisp/">#Lisp</a>&nbsp;
+        
+        <a href="https://devpoga.org/tags/log/">#Log</a>&nbsp;
+        
+        <a href="https://devpoga.org/tags/lua/">#Lua</a>&nbsp;
+        
+        <a href="https://devpoga.org/tags/luajit/">#Luajit</a>&nbsp;
+        
+        <a href="https://devpoga.org/tags/machine-learning/">#Machine Learning</a>&nbsp;
+        
+        <a href="https://devpoga.org/tags/mastodon/">#Mastodon</a>&nbsp;
+        
+        <a href="https://devpoga.org/tags/mlops/">#MLOps</a>&nbsp;
+        
+        <a href="https://devpoga.org/tags/naps/">#naps</a>&nbsp;
+        
+        <a href="https://devpoga.org/tags/networking/">#Networking</a>&nbsp;
+        
+        <a href="https://devpoga.org/tags/note/">#Note</a>&nbsp;
+        
+        <a href="https://devpoga.org/tags/notes/">#Notes</a>&nbsp;
+        
+        <a href="https://devpoga.org/tags/ocaml/">#OCaml</a>&nbsp;
+        
+        <a href="https://devpoga.org/tags/omnifocus/">#Omnifocus</a>&nbsp;
+        
+        <a href="https://devpoga.org/tags/open-source/">#Open Source</a>&nbsp;
+        
+        <a href="https://devpoga.org/tags/organization/">#Organization</a>&nbsp;
+        
+        <a href="https://devpoga.org/tags/ownership/">#Ownership</a>&nbsp;
+        
+        <a href="https://devpoga.org/tags/patterns/">#patterns</a>&nbsp;
+        
+        <a href="https://devpoga.org/tags/privacy/">#Privacy</a>&nbsp;
+        
+        <a href="https://devpoga.org/tags/productivity/">#Productivity</a>&nbsp;
+        
+        <a href="https://devpoga.org/tags/programming/">#programming</a>&nbsp;
+        
+        <a href="https://devpoga.org/tags/programming-language/">#Programming Language</a>&nbsp;
+        
+        <a href="https://devpoga.org/tags/programming-languages/">#Programming Languages</a>&nbsp;
+        
+        <a href="https://devpoga.org/tags/reading/">#Reading</a>&nbsp;
+        
+        <a href="https://devpoga.org/tags/rust/">#Rust</a>&nbsp;
+        
+        <a href="https://devpoga.org/tags/scheme/">#Scheme</a>&nbsp;
+        
+        <a href="https://devpoga.org/tags/security/">#Security</a>&nbsp;
+        
+        <a href="https://devpoga.org/tags/serverless/">#Serverless</a>&nbsp;
+        
+        <a href="https://devpoga.org/tags/software-engineering/">#Software Engineering</a>&nbsp;
+        
+        <a href="https://devpoga.org/tags/story-telling/">#Story Telling</a>&nbsp;
+        
+        <a href="https://devpoga.org/tags/teaching/">#Teaching</a>&nbsp;
+        
+        <a href="https://devpoga.org/tags/ux/">#UX</a>&nbsp;
+        
+        <a href="https://devpoga.org/tags/vim/">#vim</a>&nbsp;
+        
+        <a href="https://devpoga.org/tags/writing/">#writing</a>&nbsp;
+        
+        <a href="https://devpoga.org/tags/%E5%B8%B6%E6%82%A8%E8%AE%80%E5%8E%9F%E7%A2%BC/">#帶您讀原碼</a>&nbsp;
+        
+        <a href="https://devpoga.org/tags/%E7%A7%91%E6%99%AE/">#科普</a>&nbsp;
+        
+        <a href="https://devpoga.org/tags/%E7%B3%BB%E7%B5%B1%E6%9E%B6%E6%A7%8B/">#系統架構</a>&nbsp;
+        
+        <a href="https://devpoga.org/tags/%E9%81%8A%E6%88%B2%E9%96%8B%E7%99%BC/">#遊戲開發</a>&nbsp;
+        
+      </div>
+    </small>
+    
+</content>
+
+  </main>
+  <footer>Made with <a href="https://github.com/janraasch/hugo-bearblog/">Hugo ʕ•ᴥ•ʔ Bear</a>
+</footer>
+
+    
+</body>
+
+</html>

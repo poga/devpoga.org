@@ -9,30 +9,30 @@
     <lastBuildDate>Fri, 10 Apr 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://devpoga.org/tags/note/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Domain Modeling Made Functional</title>
-      <link>https://devpoga.org/posts/2020-04-10_domain-modeling-made-functional/</link>
+      <link>https://devpoga.org/blog/2020-04-10_domain-modeling-made-functional/</link>
       <pubDate>Fri, 10 Apr 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://devpoga.org/posts/2020-04-10_domain-modeling-made-functional/</guid>
+      <guid>https://devpoga.org/blog/2020-04-10_domain-modeling-made-functional/</guid>
       <description>&lt;p&gt;&lt;img src=&#34;https://devpoga.org/post/2020-04-10_domain-modeling-made-functional/book.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Notes on the book &lt;a href=&#34;https://www.amazon.com/Domain-Modeling-Made-Functional-Domain-Driven/dp/1680502549&#34;&gt;Domain Modeling Made Functional: Tackle Software Complexity with Domain-Driven Design and F#&lt;/a&gt;.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Zero Trust Network</title>
-      <link>https://devpoga.org/posts/2020-04-09_zero-trust-network/</link>
+      <link>https://devpoga.org/blog/2020-04-09_zero-trust-network/</link>
       <pubDate>Thu, 09 Apr 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://devpoga.org/posts/2020-04-09_zero-trust-network/</guid>
+      <guid>https://devpoga.org/blog/2020-04-09_zero-trust-network/</guid>
       <description>&lt;p&gt;&lt;img src=&#34;https://devpoga.org/post/2020-04-09_zero-trust-network/book.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Notes on the book &lt;a href=&#34;https://www.amazon.com/Zero-Trust-Networks-Building-Untrusted/dp/1491962194&#34;&gt;Zero Trust Network&lt;/a&gt;.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Notes on The Signal Protocol</title>
-      <link>https://devpoga.org/posts/2019-09-04_notes_on_the_signal_protocol/</link>
+      <link>https://devpoga.org/blog/2019-09-04_notes_on_the_signal_protocol/</link>
       <pubDate>Wed, 04 Sep 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://devpoga.org/posts/2019-09-04_notes_on_the_signal_protocol/</guid>
+      <guid>https://devpoga.org/blog/2019-09-04_notes_on_the_signal_protocol/</guid>
       <description>&lt;p&gt;&lt;img src=&#34;https://devpoga.org/post/2019-09-04_notes_on_the_signal_protocol/dh.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;So, I assume you&amp;rsquo;re already familiar with &lt;a href=&#34;https://en.wikipedia.org/wiki/Public-key_cryptography&#34;&gt;Public-key cryptography&lt;/a&gt; and &lt;a href=&#34;https://en.wikipedia.org/wiki/Diffie%E2%80%93Hellman_key_exchange&#34;&gt;Diffie-Hellman key exchange&lt;/a&gt;. If not, there are lots of good materials about them. Check them out first!&lt;/p&gt;
@@ -42,10 +42,10 @@
     
     <item>
       <title>Notes on the Implementation of Lua 5.3</title>
-      <link>https://devpoga.org/posts/implementation-lua53/</link>
+      <link>https://devpoga.org/blog/implementation-lua53/</link>
       <pubDate>Tue, 26 Feb 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://devpoga.org/posts/implementation-lua53/</guid>
+      <guid>https://devpoga.org/blog/implementation-lua53/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;https://poga.github.io/lua53-notes/&#34;&gt;Notes on the Implementation on Lua 5.3&lt;/a&gt; is a collection of my notes on the Lua 5.3 source code. It&amp;rsquo;s a mix of both high-level ideas and interesting details in the source code.&lt;/p&gt;</description>
     </item>
     

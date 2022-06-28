@@ -9,10 +9,10 @@
     <lastBuildDate>Sat, 01 May 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://devpoga.org/tags/lisp/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Common Lisp Local Project Development with Quicklisp</title>
-      <link>https://devpoga.org/posts/2021-05-01_common_lisp_quicklisp_local_project/</link>
+      <link>https://devpoga.org/blog/2021-05-01_common_lisp_quicklisp_local_project/</link>
       <pubDate>Sat, 01 May 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://devpoga.org/posts/2021-05-01_common_lisp_quicklisp_local_project/</guid>
+      <guid>https://devpoga.org/blog/2021-05-01_common_lisp_quicklisp_local_project/</guid>
       <description>Probably the cleanest way to do it:
 (pushnew (truename &amp;#34;/projects/app/&amp;#34;) ql:*local-project-directories* ) (ql:register-local-projects) (ql:quickload :app) From Use Quicklisp to load personal projects from arbitrary locations.
 Alternatively, you can create a symlink in ~/quicklisp/local-projects/.</description>
@@ -20,10 +20,10 @@ Alternatively, you can create a symlink in ~/quicklisp/local-projects/.</descrip
     
     <item>
       <title>The Common Lisp Condition System</title>
-      <link>https://devpoga.org/posts/2021-04-25_common_lisp_condition_system/</link>
+      <link>https://devpoga.org/blog/2021-04-25_common_lisp_condition_system/</link>
       <pubDate>Sun, 25 Apr 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://devpoga.org/posts/2021-04-25_common_lisp_condition_system/</guid>
+      <guid>https://devpoga.org/blog/2021-04-25_common_lisp_condition_system/</guid>
       <description>&lt;p&gt;&lt;img src=&#34;https://devpoga.org/post/2021-04-25_common_lisp_condition_system/book.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;</description>
     </item>
     

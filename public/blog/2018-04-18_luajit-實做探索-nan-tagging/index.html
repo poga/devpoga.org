@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <meta http-equiv="X-Clacks-Overhead" content="GNU Terry Pratchett" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>LuaJIT 實做探索 — NaN Tagging | Dev.Poga</title>
+<meta name="title" content="LuaJIT 實做探索 — NaN Tagging" />
+<meta name="description" content="
+一切都是為了效能
+故事要從 boxed value 跟 unboxed value 說起。" />
+<meta name="keywords" content="Luajit,帶您讀原碼,Compiler," />
+
+
+<meta property="og:title" content="LuaJIT 實做探索 — NaN Tagging" />
+<meta property="og:description" content="
+一切都是為了效能
+故事要從 boxed value 跟 unboxed value 說起。" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://devpoga.org/blog/2018-04-18_luajit-%E5%AF%A6%E5%81%9A%E6%8E%A2%E7%B4%A2-nan-tagging/" /><meta property="og:image" content="https://devpoga.org/post/2018-04-18_luajit-%E5%AF%A6%E5%81%9A%E6%8E%A2%E7%B4%A2-nan-tagging/images/1.png" /><meta property="og:image" content="https://devpoga.org/post/2018-04-18_luajit-%E5%AF%A6%E5%81%9A%E6%8E%A2%E7%B4%A2-nan-tagging/images/2.png" /><meta property="og:image" content="https://devpoga.org/post/2018-04-18_luajit-%E5%AF%A6%E5%81%9A%E6%8E%A2%E7%B4%A2-nan-tagging/images/3.png" /><meta property="og:image" content="https://devpoga.org/post/2018-04-18_luajit-%E5%AF%A6%E5%81%9A%E6%8E%A2%E7%B4%A2-nan-tagging/images/4.png" /><meta property="og:image" content="https://devpoga.org/post/2018-04-18_luajit-%E5%AF%A6%E5%81%9A%E6%8E%A2%E7%B4%A2-nan-tagging/images/5.png" /><meta property="og:image" content="https://devpoga.org/post/2018-04-18_luajit-%E5%AF%A6%E5%81%9A%E6%8E%A2%E7%B4%A2-nan-tagging/images/6.png" /><meta property="article:section" content="blog" />
+<meta property="article:published_time" content="2018-04-18T00:00:00+00:00" />
+<meta property="article:modified_time" content="2019-04-30T00:00:00+00:00" />
+
+
+
+
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://devpoga.org/post/2018-04-18_luajit-%E5%AF%A6%E5%81%9A%E6%8E%A2%E7%B4%A2-nan-tagging/images/1.png"/>
+
+<meta name="twitter:title" content="LuaJIT 實做探索 — NaN Tagging"/>
+<meta name="twitter:description" content="
+一切都是為了效能
+故事要從 boxed value 跟 unboxed value 說起。"/>
+
+
+
+<meta itemprop="name" content="LuaJIT 實做探索 — NaN Tagging">
+<meta itemprop="description" content="
+一切都是為了效能
+故事要從 boxed value 跟 unboxed value 說起。"><meta itemprop="datePublished" content="2018-04-18T00:00:00+00:00" />
+<meta itemprop="dateModified" content="2019-04-30T00:00:00+00:00" />
+<meta itemprop="wordCount" content="988"><meta itemprop="image" content="https://devpoga.org/post/2018-04-18_luajit-%E5%AF%A6%E5%81%9A%E6%8E%A2%E7%B4%A2-nan-tagging/images/1.png"><meta itemprop="image" content="https://devpoga.org/post/2018-04-18_luajit-%E5%AF%A6%E5%81%9A%E6%8E%A2%E7%B4%A2-nan-tagging/images/2.png"><meta itemprop="image" content="https://devpoga.org/post/2018-04-18_luajit-%E5%AF%A6%E5%81%9A%E6%8E%A2%E7%B4%A2-nan-tagging/images/3.png"><meta itemprop="image" content="https://devpoga.org/post/2018-04-18_luajit-%E5%AF%A6%E5%81%9A%E6%8E%A2%E7%B4%A2-nan-tagging/images/4.png"><meta itemprop="image" content="https://devpoga.org/post/2018-04-18_luajit-%E5%AF%A6%E5%81%9A%E6%8E%A2%E7%B4%A2-nan-tagging/images/5.png"><meta itemprop="image" content="https://devpoga.org/post/2018-04-18_luajit-%E5%AF%A6%E5%81%9A%E6%8E%A2%E7%B4%A2-nan-tagging/images/6.png">
+<meta itemprop="keywords" content="Luajit,帶您讀原碼,Compiler," />
+<meta name="referrer" content="no-referrer-when-downgrade" />
+
+  <style>
+  body {
+    font-family: Verdana, sans-serif;
+    margin: auto;
+    padding: 20px;
+    max-width: 720px;
+    text-align: left;
+    background-color: #fff;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    line-height: 1.5;
+    color: #444;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  strong,
+  b {
+    color: #222;
+  }
+
+  a {
+    color: #3273dc;
+     
+  }
+
+  .title {
+    text-decoration: none;
+    border: 0;
+  }
+
+  .title span {
+    font-weight: 400;
+  }
+
+  nav a {
+    margin-right: 10px;
+  }
+
+  textarea {
+    width: 100%;
+    font-size: 16px;
+  }
+
+  input {
+    font-size: 16px;
+  }
+
+  content {
+    line-height: 1.6;
+  }
+
+  table {
+    width: 100%;
+  }
+
+  img {
+    max-width: 100%;
+  }
+
+  code {
+    padding: 2px 5px;
+    background-color: #f2f2f2;
+  }
+
+  pre code {
+    color: #222;
+    display: block;
+    padding: 20px;
+    white-space: pre-wrap;
+    font-size: 14px;
+  }
+
+  div.highlight pre {
+    background-color: initial;
+    color: initial;
+  }
+
+  div.highlight code {
+    background-color: unset;
+    color: unset;
+  }
+
+  blockquote {
+    border-left: 1px solid #999;
+    color: #222;
+    padding-left: 20px;
+    font-style: italic;
+  }
+
+  footer {
+    padding: 25px;
+    text-align: center;
+  }
+
+  .helptext {
+    color: #777;
+    font-size: small;
+  }
+
+  .errorlist {
+    color: #eba613;
+    font-size: small;
+  }
+
+   
+  ul.blog-posts {
+    list-style-type: none;
+    padding: unset;
+  }
+
+  ul.blog-posts li {
+    display: flex;
+  }
+
+  ul.blog-posts li span {
+    flex: 0 0 130px;
+  }
+
+  ul.blog-posts li a:visited {
+    color: #8b6fcb;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    body {
+      background-color: #333;
+      color: #ddd;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    strong,
+    b {
+      color: #eee;
+    }
+
+    a {
+      color: #8cc2dd;
+    }
+
+    code {
+      background-color: #777;
+    }
+
+    pre code {
+      color: #ddd;
+    }
+
+    blockquote {
+      color: #ccc;
+    }
+
+    textarea,
+    input {
+      background-color: #252525;
+      color: #ddd;
+    }
+
+    .helptext {
+      color: #aaa;
+    }
+  }
+
+</style>
+<link rel="stylesheet" href="/custom.css">
+</head>
+
+<body>
+  <header><a href="/" class="title">
+  <h2>Dev.Poga</h2>
+</a>
+<nav><a href="/">Home</a>
+
+
+<a href="/blog">Blog</a>
+
+</nav>
+</header>
+  <main>
+
+<h1>LuaJIT 實做探索 — NaN Tagging</h1>
+<p>
+  <i>
+    <time datetime='2018-04-18' pubdate>
+      18 Apr, 2018
+    </time>
+  </i>
+</p>
+
+<content>
+  <p><img src="/post/2018-04-18_luajit-%E5%AF%A6%E5%81%9A%E6%8E%A2%E7%B4%A2-nan-tagging/images/1.png" alt="image"></p>
+<h4 id="一切都是為了效能">一切都是為了效能</h4>
+<p>故事要從 boxed value 跟 unboxed value 說起。</p>
+<p>所謂的 boxed value 是指：不直接存取 primitive value，而是透過指標來操作數值。近代的程式語言常常都用這種方法操作資料。而 unboxed value 就是指直接操作值，不經過一層指標。</p>
+<p><img src="/post/2018-04-18_luajit-%E5%AF%A6%E5%81%9A%E6%8E%A2%E7%B4%A2-nan-tagging/images/2.png" alt="image"></p>
+<center> **Boxed value &amp; unboxed value**</center>
+<p>為什麼要用 boxed value 呢？因為近代程式語言都提供物件、function 等等一定會透過指標來操作的資料。將所有資料統一包（box）在指標後，讓系統處理泛型（generic）時變得更加一致。如果你寫過 Java 應該就有體驗過這種設計，為了解決 boxed/unboxed value 之間麻煩的轉換，auto-boxing 也是常見的功能。</p>
+<p>當然，這多出來的一層指標並不是免費的。</p>
+<h4 id="效能的損失">效能的損失</h4>
+<p>以浮點數做為例子。現代系統架構都提供浮點數專屬的指令集來加速計算，譬如說，在 x86 上你可以用 <code>faddp</code>、 <code>fdivp</code> 之類的指令，讓 FPU硬體幫你計算。一旦多了一層指標，每次計算前都要 deref 一次，多出許多重複的工作。</p>
+<p>另外，這些包裝不是只有指標，還包含了底下 value 的型別。因此使用的記憶體也會變多。</p>
+<h4 id="nan-tagging">NaN Tagging</h4>
+<p>有沒有辦法讓 primitive value 跟其他 boxed value 用同樣的結構儲存，避免效能損失，又能讓系統更簡單呢？LuaJIT 用 NaN Tagging 來解決這個問題。</p>
+<p>要搞懂 NaN Tagging 前，先來複習一下 IEEE 754 Floating Point 的定義。IEEE 754 的 64bit floating point (double) 的格式如下，第一個 bit 是 sign，接著 11 個 bit 的指數，最後是52 bit 的分數。</p>
+<p><img src="/post/2018-04-18_luajit-%E5%AF%A6%E5%81%9A%E6%8E%A2%E7%B4%A2-nan-tagging/images/3.png" alt="image"></p>
+<center>**double 就是這麼長**</center>
+<p>IEEE 754 可以表示特別的數值，像是 NaN 或是無限大。而 NaN 的格式是：指數全為 1，尾數小數不全為 0。</p>
+<p><img src="/post/2018-04-18_luajit-%E5%AF%A6%E5%81%9A%E6%8E%A2%E7%B4%A2-nan-tagging/images/4.png" alt="image"></p>
+<center>**NaN 的一種表示方式，空白的 bit 可以是任何數值**</center>
+<p>這時你可能會注意到，有很多種數值都代表 NaN，畢竟後面 52-bit 只要不全是 0 就可以。</p>
+<p><strong>而硬體的 FPU 在產生 NaN 時，只會產生</strong> <code>0xfff8_0000_0000_0000</code> <strong>這種 NaN，剩下都沒用到！</strong></p>
+<p><img src="/post/2018-04-18_luajit-%E5%AF%A6%E5%81%9A%E6%8E%A2%E7%B4%A2-nan-tagging/images/5.png" alt="image"></p>
+<center>**0xfff8_0000_0000_0000_0000**</center>
+<p>於是，NaN Tagging 誕生了。</p>
+<p>因為所有 most-significant word（高位 4 byte）比 <code>0xfff8_0000</code> 大的浮點數都可以自由使用。LuaJIT 將這些浮點數用來儲存他的資料。只用 64bit 就能儲存所有 primitive value 跟 boxed value。像是 <code>Nil</code>、<code>True</code>、<code>False</code> 就表示成：</p>
+<p><img src="/post/2018-04-18_luajit-%E5%AF%A6%E5%81%9A%E6%8E%A2%E7%B4%A2-nan-tagging/images/6.png" alt="image"></p>
+<p>如果需要儲存指標，後面 ~48 bit 對於 64bit 系統的指標而言綽綽有餘。</p>
+<p>於是，NaN tagging 讓我們省下了額外一層的指標。型別的定義跟判斷型別的方式也變的非常簡單：</p>
+<p>這樣做，讓所有的 primitive value 都能直接被存取，不需要經過指標。而其他型別也能用同樣的 64-bit 空間儲存，產生許多優化的可能性，也能更加善用 register。</p>
+<p>其實這並不是 LuaJIT 獨創的技巧，據說早在 80, 90 年代的許多 Lisp 實做就有用到 NaNtagging。透過結合對硬體實做的理解跟軟體的設計，讓 LuaJIT 相對於其他動態語言，能搾出更多的效能。</p>
+</content>
+<p>
+  
+  <a href="https://devpoga.org/tags/luajit/">#Luajit</a>
+  
+  <a href="https://devpoga.org/tags/%E5%B8%B6%E6%82%A8%E8%AE%80%E5%8E%9F%E7%A2%BC/">#帶您讀原碼</a>
+  
+  <a href="https://devpoga.org/tags/compiler/">#Compiler</a>
+  
+</p>
+
+  </main>
+  <footer>Made with <a href="https://github.com/janraasch/hugo-bearblog/">Hugo ʕ•ᴥ•ʔ Bear</a>
+</footer>
+
+    
+</body>
+
+</html>

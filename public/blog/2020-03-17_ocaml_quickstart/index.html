@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <meta http-equiv="X-Clacks-Overhead" content="GNU Terry Pratchett" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>OCaml Quickstart | Dev.Poga</title>
+<meta name="title" content="OCaml Quickstart" />
+<meta name="description" content="
+OCaml is a great language. However, the tooling for newbies is kinda confusing. Here&rsquo;s a guide to setup a working OCaml development environment in neovim on MacOS." />
+<meta name="keywords" content="Programming,OCaml,vim,editor," />
+
+
+<meta property="og:title" content="OCaml Quickstart" />
+<meta property="og:description" content="
+OCaml is a great language. However, the tooling for newbies is kinda confusing. Here&rsquo;s a guide to setup a working OCaml development environment in neovim on MacOS." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://devpoga.org/blog/2020-03-17_ocaml_quickstart/" /><meta property="article:section" content="blog" />
+<meta property="article:published_time" content="2020-03-17T00:00:00+00:00" />
+<meta property="article:modified_time" content="2020-03-17T00:00:00+00:00" />
+
+
+
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="OCaml Quickstart"/>
+<meta name="twitter:description" content="
+OCaml is a great language. However, the tooling for newbies is kinda confusing. Here&rsquo;s a guide to setup a working OCaml development environment in neovim on MacOS."/>
+
+
+
+<meta itemprop="name" content="OCaml Quickstart">
+<meta itemprop="description" content="
+OCaml is a great language. However, the tooling for newbies is kinda confusing. Here&rsquo;s a guide to setup a working OCaml development environment in neovim on MacOS."><meta itemprop="datePublished" content="2020-03-17T00:00:00+00:00" />
+<meta itemprop="dateModified" content="2020-03-17T00:00:00+00:00" />
+<meta itemprop="wordCount" content="127">
+<meta itemprop="keywords" content="Programming,OCaml,vim,editor," />
+<meta name="referrer" content="no-referrer-when-downgrade" />
+
+  <style>
+  body {
+    font-family: Verdana, sans-serif;
+    margin: auto;
+    padding: 20px;
+    max-width: 720px;
+    text-align: left;
+    background-color: #fff;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    line-height: 1.5;
+    color: #444;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  strong,
+  b {
+    color: #222;
+  }
+
+  a {
+    color: #3273dc;
+     
+  }
+
+  .title {
+    text-decoration: none;
+    border: 0;
+  }
+
+  .title span {
+    font-weight: 400;
+  }
+
+  nav a {
+    margin-right: 10px;
+  }
+
+  textarea {
+    width: 100%;
+    font-size: 16px;
+  }
+
+  input {
+    font-size: 16px;
+  }
+
+  content {
+    line-height: 1.6;
+  }
+
+  table {
+    width: 100%;
+  }
+
+  img {
+    max-width: 100%;
+  }
+
+  code {
+    padding: 2px 5px;
+    background-color: #f2f2f2;
+  }
+
+  pre code {
+    color: #222;
+    display: block;
+    padding: 20px;
+    white-space: pre-wrap;
+    font-size: 14px;
+  }
+
+  div.highlight pre {
+    background-color: initial;
+    color: initial;
+  }
+
+  div.highlight code {
+    background-color: unset;
+    color: unset;
+  }
+
+  blockquote {
+    border-left: 1px solid #999;
+    color: #222;
+    padding-left: 20px;
+    font-style: italic;
+  }
+
+  footer {
+    padding: 25px;
+    text-align: center;
+  }
+
+  .helptext {
+    color: #777;
+    font-size: small;
+  }
+
+  .errorlist {
+    color: #eba613;
+    font-size: small;
+  }
+
+   
+  ul.blog-posts {
+    list-style-type: none;
+    padding: unset;
+  }
+
+  ul.blog-posts li {
+    display: flex;
+  }
+
+  ul.blog-posts li span {
+    flex: 0 0 130px;
+  }
+
+  ul.blog-posts li a:visited {
+    color: #8b6fcb;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    body {
+      background-color: #333;
+      color: #ddd;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    strong,
+    b {
+      color: #eee;
+    }
+
+    a {
+      color: #8cc2dd;
+    }
+
+    code {
+      background-color: #777;
+    }
+
+    pre code {
+      color: #ddd;
+    }
+
+    blockquote {
+      color: #ccc;
+    }
+
+    textarea,
+    input {
+      background-color: #252525;
+      color: #ddd;
+    }
+
+    .helptext {
+      color: #aaa;
+    }
+  }
+
+</style>
+<link rel="stylesheet" href="/custom.css">
+</head>
+
+<body>
+  <header><a href="/" class="title">
+  <h2>Dev.Poga</h2>
+</a>
+<nav><a href="/">Home</a>
+
+
+<a href="/blog">Blog</a>
+
+</nav>
+</header>
+  <main>
+
+<h1>OCaml Quickstart</h1>
+<p>
+  <i>
+    <time datetime='2020-03-17' pubdate>
+      17 Mar, 2020
+    </time>
+  </i>
+</p>
+
+<content>
+  <p><img src="/post/2020-03-17_ocaml_quickstart/vim.png" alt=""></p>
+<p><a href="https://ocaml.org/">OCaml</a> is a great language. However, the tooling for newbies is kinda confusing. Here&rsquo;s a guide to setup a working OCaml development environment in <a href="https://neovim.io/">neovim</a> on MacOS.</p>
+<h3 id="install-opam">Install opam</h3>
+<pre tabindex="0"><code>$ brew install opam
+</code></pre><h3 id="install-ocaml-4090">Install ocaml 4.09.0</h3>
+<pre tabindex="0"><code>$ opam switch create 4.09.0 4.09.0
+# follow the instructions to setup bash env
+</code></pre><h3 id="install-utoprepl-and-dunebuild-system">Install utop(REPL) and dune(build system)</h3>
+<pre tabindex="0"><code>$ opam install utop dune
+</code></pre><h3 id="setup-editor">Setup editor</h3>
+<ul>
+<li>Install <a href="https://github.com/ocaml/ocaml-lsp">ocaml-lsp</a></li>
+<li>Setup LSP in neovim with coc.nvim <a href="https://github.com/neoclide/coc.nvim/wiki/Language-servers">https://github.com/neoclide/coc.nvim/wiki/Language-servers</a></li>
+</ul>
+<p>You need to install all dependencies (with dune) and build it once to get a working LSP.</p>
+<h3 id="build-a-project">Build a project</h3>
+<p>Let&rsquo;s test our environment on an existing project.</p>
+<pre tabindex="0"><code>$ git clone git@github.com:inhabitedtype/httpaf.git
+$ cd httpaf
+
+# install dependencies
+$ opam pin add -n httpaf .
+$ opam install --deps-only httpaf
+
+# run tests
+$ dune runtest
+</code></pre>
+</content>
+<p>
+  
+  <a href="https://devpoga.org/tags/programming/">#programming</a>
+  
+  <a href="https://devpoga.org/tags/ocaml/">#OCaml</a>
+  
+  <a href="https://devpoga.org/tags/vim/">#vim</a>
+  
+  <a href="https://devpoga.org/tags/editor/">#editor</a>
+  
+</p>
+
+  </main>
+  <footer>Made with <a href="https://github.com/janraasch/hugo-bearblog/">Hugo ʕ•ᴥ•ʔ Bear</a>
+</footer>
+
+    
+</body>
+
+</html>
