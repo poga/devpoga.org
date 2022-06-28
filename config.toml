@@ -2,7 +2,7 @@ baseURL = "https://devpoga.org/"
 languageCode = "en-us"
 title = "Dev.Poga"
 
-theme = "hugo_theme_pickles"
+theme = "hugo-bearblog"
 
 hasCJKLanguage = true
 
@@ -13,14 +13,4 @@ hasCJKLanguage = true
 
 [markup.goldmark.renderer]
 unsafe= true
-
-[[menu.main]]
-    name = "Blog"
-    url = "/"
-    weight = 1
-
-[[menu.main]]
-    name = "About"
-    url = "/about"
-    weight = 2
 
