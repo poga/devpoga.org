@@ -6,6 +6,8 @@ theme = "hugo-bearblog"
 
 hasCJKLanguage = true
 
+timeZone = "Asia/Taipei"
+
 [params]
     paginate = 15
     description = ""

@@ -19,8 +19,8 @@
 故事要從 boxed value 跟 unboxed value 說起。" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://devpoga.org/blog/2018-04-18_luajit-%E5%AF%A6%E5%81%9A%E6%8E%A2%E7%B4%A2-nan-tagging/" /><meta property="og:image" content="https://devpoga.org/post/2018-04-18_luajit-%E5%AF%A6%E5%81%9A%E6%8E%A2%E7%B4%A2-nan-tagging/images/1.png" /><meta property="og:image" content="https://devpoga.org/post/2018-04-18_luajit-%E5%AF%A6%E5%81%9A%E6%8E%A2%E7%B4%A2-nan-tagging/images/2.png" /><meta property="og:image" content="https://devpoga.org/post/2018-04-18_luajit-%E5%AF%A6%E5%81%9A%E6%8E%A2%E7%B4%A2-nan-tagging/images/3.png" /><meta property="og:image" content="https://devpoga.org/post/2018-04-18_luajit-%E5%AF%A6%E5%81%9A%E6%8E%A2%E7%B4%A2-nan-tagging/images/4.png" /><meta property="og:image" content="https://devpoga.org/post/2018-04-18_luajit-%E5%AF%A6%E5%81%9A%E6%8E%A2%E7%B4%A2-nan-tagging/images/5.png" /><meta property="og:image" content="https://devpoga.org/post/2018-04-18_luajit-%E5%AF%A6%E5%81%9A%E6%8E%A2%E7%B4%A2-nan-tagging/images/6.png" /><meta property="article:section" content="blog" />
-<meta property="article:published_time" content="2018-04-18T00:00:00+00:00" />
-<meta property="article:modified_time" content="2019-04-30T00:00:00+00:00" />
+<meta property="article:published_time" content="2018-04-18T00:00:00+08:00" />
+<meta property="article:modified_time" content="2019-04-30T00:00:00+08:00" />
 
 
 
@@ -38,8 +38,8 @@
 <meta itemprop="name" content="LuaJIT 實做探索 — NaN Tagging">
 <meta itemprop="description" content="
 一切都是為了效能
-故事要從 boxed value 跟 unboxed value 說起。"><meta itemprop="datePublished" content="2018-04-18T00:00:00+00:00" />
-<meta itemprop="dateModified" content="2019-04-30T00:00:00+00:00" />
+故事要從 boxed value 跟 unboxed value 說起。"><meta itemprop="datePublished" content="2018-04-18T00:00:00+08:00" />
+<meta itemprop="dateModified" content="2019-04-30T00:00:00+08:00" />
 <meta itemprop="wordCount" content="988"><meta itemprop="image" content="https://devpoga.org/post/2018-04-18_luajit-%E5%AF%A6%E5%81%9A%E6%8E%A2%E7%B4%A2-nan-tagging/images/1.png"><meta itemprop="image" content="https://devpoga.org/post/2018-04-18_luajit-%E5%AF%A6%E5%81%9A%E6%8E%A2%E7%B4%A2-nan-tagging/images/2.png"><meta itemprop="image" content="https://devpoga.org/post/2018-04-18_luajit-%E5%AF%A6%E5%81%9A%E6%8E%A2%E7%B4%A2-nan-tagging/images/3.png"><meta itemprop="image" content="https://devpoga.org/post/2018-04-18_luajit-%E5%AF%A6%E5%81%9A%E6%8E%A2%E7%B4%A2-nan-tagging/images/4.png"><meta itemprop="image" content="https://devpoga.org/post/2018-04-18_luajit-%E5%AF%A6%E5%81%9A%E6%8E%A2%E7%B4%A2-nan-tagging/images/5.png"><meta itemprop="image" content="https://devpoga.org/post/2018-04-18_luajit-%E5%AF%A6%E5%81%9A%E6%8E%A2%E7%B4%A2-nan-tagging/images/6.png">
 <meta itemprop="keywords" content="Luajit,帶您讀原碼,Compiler," />
 <meta name="referrer" content="no-referrer-when-downgrade" />

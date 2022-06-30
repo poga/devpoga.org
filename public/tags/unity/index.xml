@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Unity on Dev.Poga</title>
+    <link>https://devpoga.org/tags/unity/</link>
+    <description>Recent content in Unity on Dev.Poga</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 01 Jul 2022 00:00:00 +0800</lastBuildDate><atom:link href="https://devpoga.org/tags/unity/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Unity, Godot, and Right to Repair</title>
+      <link>https://devpoga.org/blog/2022-07-01_unity_godot_right_to_repair/</link>
+      <pubDate>Fri, 01 Jul 2022 00:00:00 +0800</pubDate>
+      
+      <guid>https://devpoga.org/blog/2022-07-01_unity_godot_right_to_repair/</guid>
+      <description>Some years ago, Unity dominated the game engine market. Everyone would recommend Unity to fellow game developers without needing to think.
+However, Unity (as a game engine) is not in a great shape right now:
+Deprecating features while the replacement isn’t ready, Creating multiple new implementations of features from scratch instead of improving what’s there. Abandoning their own features in favour of acquiring community made versions, and then abandoning them, Splitting the whole render system into two incompatible, contrary versions, deprecating the previous render system.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -6,11 +6,22 @@
     <description>Recent content in Blog on Dev.Poga</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 19 Feb 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://devpoga.org/categories/blog/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 01 Jul 2022 00:00:00 +0800</lastBuildDate><atom:link href="https://devpoga.org/categories/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Unity, Godot, and Right to Repair</title>
+      <link>https://devpoga.org/blog/2022-07-01_unity_godot_right_to_repair/</link>
+      <pubDate>Fri, 01 Jul 2022 00:00:00 +0800</pubDate>
+      
+      <guid>https://devpoga.org/blog/2022-07-01_unity_godot_right_to_repair/</guid>
+      <description>Some years ago, Unity dominated the game engine market. Everyone would recommend Unity to fellow game developers without needing to think.
+However, Unity (as a game engine) is not in a great shape right now:
+Deprecating features while the replacement isn’t ready, Creating multiple new implementations of features from scratch instead of improving what’s there. Abandoning their own features in favour of acquiring community made versions, and then abandoning them, Splitting the whole render system into two incompatible, contrary versions, deprecating the previous render system.</description>
+    </item>
+    
     <item>
       <title>What I&#39;ve been Reading: 2022 Jan and Feb</title>
       <link>https://devpoga.org/blog/2022-02-19_what_ive_been_reading/</link>
-      <pubDate>Sat, 19 Feb 2022 00:00:00 +0000</pubDate>
+      <pubDate>Sat, 19 Feb 2022 00:00:00 +0800</pubDate>
       
       <guid>https://devpoga.org/blog/2022-02-19_what_ive_been_reading/</guid>
       <description>MLOps The Four Innovation Phases of Netflix’s Trillions Scale Real-time Data Infrastructure
@@ -27,7 +38,7 @@ Rendering the Hellscape of Doom Eternal</description>
     <item>
       <title>I cannot think myself out of this</title>
       <link>https://devpoga.org/blog/2022-01-15_i_cannot_think_myself_out_of_this/</link>
-      <pubDate>Sat, 15 Jan 2022 00:00:00 +0000</pubDate>
+      <pubDate>Sat, 15 Jan 2022 00:00:00 +0800</pubDate>
       
       <guid>https://devpoga.org/blog/2022-01-15_i_cannot_think_myself_out_of_this/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;https://news.ycombinator.com/item?id=29226021&#34;&gt;From HN&lt;/a&gt;&lt;/p&gt;</description>
@@ -46,7 +57,7 @@ Rendering the Hellscape of Doom Eternal</description>
     <item>
       <title>On Naps</title>
       <link>https://devpoga.org/blog/2021-12-12_naps/</link>
-      <pubDate>Sun, 12 Dec 2021 00:00:00 +0000</pubDate>
+      <pubDate>Sun, 12 Dec 2021 00:00:00 +0800</pubDate>
       
       <guid>https://devpoga.org/blog/2021-12-12_naps/</guid>
       <description>&lt;p&gt;I&amp;rsquo;ve been taking naps multiple times a day. And surprisingly, a simple 5 minutes nap can help me avoid quite a lot of depression and anxiety.&lt;/p&gt;</description>
@@ -55,7 +66,7 @@ Rendering the Hellscape of Doom Eternal</description>
     <item>
       <title>Pipelines and Glue Systems</title>
       <link>https://devpoga.org/blog/2021-12-25_pipelines_and_glue_systems/</link>
-      <pubDate>Sun, 12 Dec 2021 00:00:00 +0000</pubDate>
+      <pubDate>Sun, 12 Dec 2021 00:00:00 +0800</pubDate>
       
       <guid>https://devpoga.org/blog/2021-12-25_pipelines_and_glue_systems/</guid>
       <description>&lt;p&gt;&lt;strong&gt;Context&lt;/strong&gt;: Machine Learning Projects are mainly just a complex interdependent pipeline. We desperately need a better abstraction for them.&lt;/p&gt;</description>
@@ -64,7 +75,7 @@ Rendering the Hellscape of Doom Eternal</description>
     <item>
       <title>Using AntiPatterns to avoid MLOps Mistakes</title>
       <link>https://devpoga.org/blog/2021-11-27-mlops_antipatterns/</link>
-      <pubDate>Sat, 27 Nov 2021 00:00:00 +0000</pubDate>
+      <pubDate>Sat, 27 Nov 2021 00:00:00 +0800</pubDate>
       
       <guid>https://devpoga.org/blog/2021-11-27-mlops_antipatterns/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;https://arxiv.org/abs/2107.00079&#34;&gt;Using AntiPatterns to avoid MLOps Mistakes&lt;/a&gt;, Nikil Muralidhar et. al.&lt;/p&gt;
@@ -75,7 +86,7 @@ Rendering the Hellscape of Doom Eternal</description>
     <item>
       <title>Notes on The Five Dysfunctions of a Team</title>
       <link>https://devpoga.org/blog/2021-09-19_notes_on_the_five_dysfunctions_of_a_team/</link>
-      <pubDate>Sun, 19 Sep 2021 00:00:00 +0000</pubDate>
+      <pubDate>Sun, 19 Sep 2021 00:00:00 +0800</pubDate>
       
       <guid>https://devpoga.org/blog/2021-09-19_notes_on_the_five_dysfunctions_of_a_team/</guid>
       <description>genuine teamwork in most organizations remains as elusive as it has ever been. organizations fail to achieve teamwork because they unknowingly fall prey to five natural but dangerous pitfalls The Natural pitfalls absence of trust: unwillingness to be vulnerable within the group. fear of conflict: incapable of engaging in unfiltered and passionate debate of ideas. They resort to veiled discussions and guarded comments lack of commitment: team members rarely, if ever, buy in and commit to decisions, though they may feign aggrement during meetings.</description>
@@ -84,7 +95,7 @@ Rendering the Hellscape of Doom Eternal</description>
     <item>
       <title>On Building Glue Systems</title>
       <link>https://devpoga.org/blog/2021-09-18_on_glue_systems/</link>
-      <pubDate>Sat, 18 Sep 2021 00:00:00 +0000</pubDate>
+      <pubDate>Sat, 18 Sep 2021 00:00:00 +0800</pubDate>
       
       <guid>https://devpoga.org/blog/2021-09-18_on_glue_systems/</guid>
       <description>&lt;p&gt;&lt;img src=&#34;https://devpoga.org/post/2021-09-18_on_glue_systems/glue.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
@@ -95,7 +106,7 @@ Rendering the Hellscape of Doom Eternal</description>
     <item>
       <title>Learning Julia, Line by Line</title>
       <link>https://devpoga.org/blog/2021-08-04_learning_julia_line_by_line/</link>
-      <pubDate>Wed, 04 Aug 2021 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 04 Aug 2021 00:00:00 +0800</pubDate>
       
       <guid>https://devpoga.org/blog/2021-08-04_learning_julia_line_by_line/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;https://github.com/StefanKarpinski/Cards.jl&#34;&gt;Cardsjl&lt;/a&gt; is a simple Julia package which demonstrate many interesting bits of the &lt;a href=&#34;https://julialang.org/&#34;&gt;Julia Programming Language&lt;/a&gt;.&lt;/p&gt;
@@ -105,7 +116,7 @@ Rendering the Hellscape of Doom Eternal</description>
     <item>
       <title>CHECKLIST FOR ORGANIZATIONAL HEALTH</title>
       <link>https://devpoga.org/blog/2021-07-25_organization_health/</link>
-      <pubDate>Sat, 24 Jul 2021 00:00:00 +0000</pubDate>
+      <pubDate>Sat, 24 Jul 2021 00:00:00 +0800</pubDate>
       
       <guid>https://devpoga.org/blog/2021-07-25_organization_health/</guid>
       <description>&lt;p&gt;&lt;img src=&#34;https://devpoga.org/post/2021-07-25_organization_health/book.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;</description>
@@ -114,7 +125,7 @@ Rendering the Hellscape of Doom Eternal</description>
     <item>
       <title>Haxe and Programming for Many Machines</title>
       <link>https://devpoga.org/blog/2021-05-11_haxe_and_programming_for_many_machines/</link>
-      <pubDate>Tue, 11 May 2021 00:00:00 +0000</pubDate>
+      <pubDate>Tue, 11 May 2021 00:00:00 +0800</pubDate>
       
       <guid>https://devpoga.org/blog/2021-05-11_haxe_and_programming_for_many_machines/</guid>
       <description>&lt;p&gt;The title sounds obvious. We always program for a machine! A program won&amp;rsquo;t run itself!&lt;/p&gt;</description>
@@ -123,7 +134,7 @@ Rendering the Hellscape of Doom Eternal</description>
     <item>
       <title>Common Lisp Local Project Development with Quicklisp</title>
       <link>https://devpoga.org/blog/2021-05-01_common_lisp_quicklisp_local_project/</link>
-      <pubDate>Sat, 01 May 2021 00:00:00 +0000</pubDate>
+      <pubDate>Sat, 01 May 2021 00:00:00 +0800</pubDate>
       
       <guid>https://devpoga.org/blog/2021-05-01_common_lisp_quicklisp_local_project/</guid>
       <description>Probably the cleanest way to do it:
@@ -134,7 +145,7 @@ Alternatively, you can create a symlink in ~/quicklisp/local-projects/.</descrip
     <item>
       <title>The Common Lisp Condition System</title>
       <link>https://devpoga.org/blog/2021-04-25_common_lisp_condition_system/</link>
-      <pubDate>Sun, 25 Apr 2021 00:00:00 +0000</pubDate>
+      <pubDate>Sun, 25 Apr 2021 00:00:00 +0800</pubDate>
       
       <guid>https://devpoga.org/blog/2021-04-25_common_lisp_condition_system/</guid>
       <description>&lt;p&gt;&lt;img src=&#34;https://devpoga.org/post/2021-04-25_common_lisp_condition_system/book.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;</description>
@@ -143,7 +154,7 @@ Alternatively, you can create a symlink in ~/quicklisp/local-projects/.</descrip
     <item>
       <title>Predictable Performance of OCaml&#39;s Module System</title>
       <link>https://devpoga.org/blog/2020-12-19_ocaml_predictable_module_functor/</link>
-      <pubDate>Sat, 19 Dec 2020 00:00:00 +0000</pubDate>
+      <pubDate>Sat, 19 Dec 2020 00:00:00 +0800</pubDate>
       
       <guid>https://devpoga.org/blog/2020-12-19_ocaml_predictable_module_functor/</guid>
       <description>&lt;img src=&#34;https://devpoga.org/post/2020-12-19_ocaml_predictable_module_functor/camel.jpg&#34; alt=&#34;&#34;&gt; OCaml&amp;rsquo;s &lt;a href=&#34;https://dev.realworldocaml.org/files-modules-and-programs.html&#34;&gt;module system&lt;/a&gt; can be a powerful tool for building generic code and structuring systems. Functors are functions from modules to modules and they serve an important role for the power of module system. However, I want to know if functors (and the module system) can be optimized away by the OCaml compiler.</description>
@@ -152,7 +163,7 @@ Alternatively, you can create a symlink in ~/quicklisp/local-projects/.</descrip
     <item>
       <title>Going through the OCaml compiler pipeline (manually)</title>
       <link>https://devpoga.org/blog/2020-11-30-ocaml-compiler-pipeline/</link>
-      <pubDate>Mon, 30 Nov 2020 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 30 Nov 2020 00:00:00 +0800</pubDate>
       
       <guid>https://devpoga.org/blog/2020-11-30-ocaml-compiler-pipeline/</guid>
       <description>Modern compilers usually composed by multiple stages: parsers, optimizers, linkers, and assemblers. Let&amp;rsquo;s go through it one by one to have a better understanding of the OCaml compiler.</description>
@@ -161,7 +172,7 @@ Alternatively, you can create a symlink in ~/quicklisp/local-projects/.</descrip
     <item>
       <title>The journey of g0v.social</title>
       <link>https://devpoga.org/blog/2020-11-29-g0v.social-journey/</link>
-      <pubDate>Sun, 29 Nov 2020 00:00:00 +0000</pubDate>
+      <pubDate>Sun, 29 Nov 2020 00:00:00 +0800</pubDate>
       
       <guid>https://devpoga.org/blog/2020-11-29-g0v.social-journey/</guid>
       <description>&lt;p&gt;Slides for &lt;a href=&#34;https://summit.g0v.tw/2020/&#34;&gt;g0v summit 2020&lt;/a&gt;.&lt;/p&gt;</description>
@@ -170,7 +181,7 @@ Alternatively, you can create a symlink in ~/quicklisp/local-projects/.</descrip
     <item>
       <title>A Taste of OCaml&#39;s Predictable Performance</title>
       <link>https://devpoga.org/blog/2020-11-21-a-taste-of-ocaml-predictable-performance/</link>
-      <pubDate>Sat, 21 Nov 2020 00:00:00 +0000</pubDate>
+      <pubDate>Sat, 21 Nov 2020 00:00:00 +0800</pubDate>
       
       <guid>https://devpoga.org/blog/2020-11-21-a-taste-of-ocaml-predictable-performance/</guid>
       <description>&lt;img src=&#34;https://devpoga.org/post/2020-11-21-a-taste-of-ocaml-predictable-performance/colour-logo.png&#34; alt=&#34;&#34;&gt; &lt;a href=&#34;https://github.com/mirage/eqaf&#34;&gt;eqaf&lt;/a&gt;, a constant-time compare function implementation in &lt;a href=&#34;https://ocaml.org/&#34;&gt;OCaml&lt;/a&gt;, is a great case to demonstrate the &lt;a href=&#34;https://signalsandthreads.com/language-design/#0008401&#34;&gt;predictable performance of OCaml&amp;rsquo;s compiler&lt;/a&gt;. Why?</description>
@@ -179,7 +190,7 @@ Alternatively, you can create a symlink in ~/quicklisp/local-projects/.</descrip
     <item>
       <title>在 iPad 上布置軟體開發環境</title>
       <link>https://devpoga.org/blog/2020-08-01_ipad_programming_environment/</link>
-      <pubDate>Sat, 01 Aug 2020 00:00:00 +0000</pubDate>
+      <pubDate>Sat, 01 Aug 2020 00:00:00 +0800</pubDate>
       
       <guid>https://devpoga.org/blog/2020-08-01_ipad_programming_environment/</guid>
       <description>&lt;p&gt;五月買了 &lt;a href=&#34;https://www.apple.com/tw/ipad-pro/&#34;&gt;iPad Pro&lt;/a&gt; 跟 &lt;a href=&#34;https://www.apple.com/tw/ipad-keyboards/&#34;&gt;巧控鍵盤&lt;/a&gt; 後，大部分的需求 iPad Pro 都能直接滿足，除了寫程式以外。摸索了一陣子之後總算找到順手又省錢的寫程式方式了，這篇簡單記錄一下。&lt;/p&gt;</description>
@@ -188,7 +199,7 @@ Alternatively, you can create a symlink in ~/quicklisp/local-projects/.</descrip
     <item>
       <title>Concurrency in Clojure, Racket, and Gerbil Scheme</title>
       <link>https://devpoga.org/blog/2020-06-07-concurrency-clojure-racket-gerbil/</link>
-      <pubDate>Sun, 07 Jun 2020 00:00:00 +0000</pubDate>
+      <pubDate>Sun, 07 Jun 2020 00:00:00 +0800</pubDate>
       
       <guid>https://devpoga.org/blog/2020-06-07-concurrency-clojure-racket-gerbil/</guid>
       <description>&lt;p&gt;&lt;img src=&#34;https://devpoga.org/post/2020-06-07-concurrency-clojure-racket-gerbil/index.jpeg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;</description>
@@ -197,7 +208,7 @@ Alternatively, you can create a symlink in ~/quicklisp/local-projects/.</descrip
     <item>
       <title>On Communication</title>
       <link>https://devpoga.org/blog/2020-04-21_on-communication/</link>
-      <pubDate>Tue, 21 Apr 2020 00:00:00 +0000</pubDate>
+      <pubDate>Tue, 21 Apr 2020 00:00:00 +0800</pubDate>
       
       <guid>https://devpoga.org/blog/2020-04-21_on-communication/</guid>
       <description>&lt;p&gt;Reading List.&lt;/p&gt;</description>
@@ -206,7 +217,7 @@ Alternatively, you can create a symlink in ~/quicklisp/local-projects/.</descrip
     <item>
       <title>Domain Modeling Made Functional</title>
       <link>https://devpoga.org/blog/2020-04-10_domain-modeling-made-functional/</link>
-      <pubDate>Fri, 10 Apr 2020 00:00:00 +0000</pubDate>
+      <pubDate>Fri, 10 Apr 2020 00:00:00 +0800</pubDate>
       
       <guid>https://devpoga.org/blog/2020-04-10_domain-modeling-made-functional/</guid>
       <description>&lt;p&gt;&lt;img src=&#34;https://devpoga.org/post/2020-04-10_domain-modeling-made-functional/book.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
@@ -216,7 +227,7 @@ Alternatively, you can create a symlink in ~/quicklisp/local-projects/.</descrip
     <item>
       <title>Zero Trust Network</title>
       <link>https://devpoga.org/blog/2020-04-09_zero-trust-network/</link>
-      <pubDate>Thu, 09 Apr 2020 00:00:00 +0000</pubDate>
+      <pubDate>Thu, 09 Apr 2020 00:00:00 +0800</pubDate>
       
       <guid>https://devpoga.org/blog/2020-04-09_zero-trust-network/</guid>
       <description>&lt;p&gt;&lt;img src=&#34;https://devpoga.org/post/2020-04-09_zero-trust-network/book.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
@@ -226,7 +237,7 @@ Alternatively, you can create a symlink in ~/quicklisp/local-projects/.</descrip
     <item>
       <title>OCaml Quickstart</title>
       <link>https://devpoga.org/blog/2020-03-17_ocaml_quickstart/</link>
-      <pubDate>Tue, 17 Mar 2020 00:00:00 +0000</pubDate>
+      <pubDate>Tue, 17 Mar 2020 00:00:00 +0800</pubDate>
       
       <guid>https://devpoga.org/blog/2020-03-17_ocaml_quickstart/</guid>
       <description>&lt;p&gt;&lt;img src=&#34;https://devpoga.org/post/2020-03-17_ocaml_quickstart/vim.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
@@ -236,7 +247,7 @@ Alternatively, you can create a symlink in ~/quicklisp/local-projects/.</descrip
     <item>
       <title>Guide to Serve Machine Learning Models in Production</title>
       <link>https://devpoga.org/blog/2020-02-17_checklist_deploy_machine_learning_model_production/</link>
-      <pubDate>Mon, 17 Feb 2020 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 17 Feb 2020 00:00:00 +0800</pubDate>
       
       <guid>https://devpoga.org/blog/2020-02-17_checklist_deploy_machine_learning_model_production/</guid>
       <description>&lt;p&gt;Here&amp;rsquo;s a simple checklist for people who deploy machine learning models to production. Based on my personal experience.&lt;/p&gt;</description>
@@ -245,7 +256,7 @@ Alternatively, you can create a symlink in ~/quicklisp/local-projects/.</descrip
     <item>
       <title>Running a Service in Production without Losing Your Sanity</title>
       <link>https://devpoga.org/blog/2019-11-06-running-service-production/</link>
-      <pubDate>Wed, 06 Nov 2019 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 06 Nov 2019 00:00:00 +0800</pubDate>
       
       <guid>https://devpoga.org/blog/2019-11-06-running-service-production/</guid>
       <description></description>
@@ -254,7 +265,7 @@ Alternatively, you can create a symlink in ~/quicklisp/local-projects/.</descrip
     <item>
       <title>The Golden Age of New Programming Languages</title>
       <link>https://devpoga.org/blog/2019-11-03-golden-age-of-programming-language/</link>
-      <pubDate>Sun, 03 Nov 2019 00:00:00 +0000</pubDate>
+      <pubDate>Sun, 03 Nov 2019 00:00:00 +0800</pubDate>
       
       <guid>https://devpoga.org/blog/2019-11-03-golden-age-of-programming-language/</guid>
       <description>&lt;p&gt;2020 is going to be the golden age of new programming languages.&lt;/p&gt;</description>
@@ -263,7 +274,7 @@ Alternatively, you can create a symlink in ~/quicklisp/local-projects/.</descrip
     <item>
       <title>Benchmarking VPS for Remote Rust Development Environment</title>
       <link>https://devpoga.org/blog/2019-10-22-vps_rust_compile_benchmark/</link>
-      <pubDate>Tue, 22 Oct 2019 00:00:00 +0000</pubDate>
+      <pubDate>Tue, 22 Oct 2019 00:00:00 +0800</pubDate>
       
       <guid>https://devpoga.org/blog/2019-10-22-vps_rust_compile_benchmark/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;https://devpoga.org/post/2019-10-22-vps_rust_compile_benchmark/chart.png&#34;&gt;&lt;img src=&#34;https://devpoga.org/post/2019-10-22-vps_rust_compile_benchmark/chart.png&#34; width=&#34;100%&#34;&gt;&lt;/a&gt;&lt;/p&gt;</description>
@@ -272,7 +283,7 @@ Alternatively, you can create a symlink in ~/quicklisp/local-projects/.</descrip
     <item>
       <title>Ripgrep Cheat Sheet</title>
       <link>https://devpoga.org/blog/2019-09-20_ripgrep_cheat_sheet/</link>
-      <pubDate>Fri, 20 Sep 2019 00:00:00 +0000</pubDate>
+      <pubDate>Fri, 20 Sep 2019 00:00:00 +0800</pubDate>
       
       <guid>https://devpoga.org/blog/2019-09-20_ripgrep_cheat_sheet/</guid>
       <description></description>
@@ -281,7 +292,7 @@ Alternatively, you can create a symlink in ~/quicklisp/local-projects/.</descrip
     <item>
       <title>Notes on The Signal Protocol</title>
       <link>https://devpoga.org/blog/2019-09-04_notes_on_the_signal_protocol/</link>
-      <pubDate>Wed, 04 Sep 2019 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 04 Sep 2019 00:00:00 +0800</pubDate>
       
       <guid>https://devpoga.org/blog/2019-09-04_notes_on_the_signal_protocol/</guid>
       <description>&lt;p&gt;&lt;img src=&#34;https://devpoga.org/post/2019-09-04_notes_on_the_signal_protocol/dh.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
@@ -294,7 +305,7 @@ Alternatively, you can create a symlink in ~/quicklisp/local-projects/.</descrip
     <item>
       <title>Cheney on the M.T.A</title>
       <link>https://devpoga.org/blog/2019-07-11_cheney_on_the_mta/</link>
-      <pubDate>Fri, 12 Jul 2019 00:00:00 +0000</pubDate>
+      <pubDate>Fri, 12 Jul 2019 00:00:00 +0800</pubDate>
       
       <guid>https://devpoga.org/blog/2019-07-11_cheney_on_the_mta/</guid>
       <description>&lt;p&gt;如果問軟體工程師他覺得簡潔又經典的文章，我想很多人會回答你這篇：&lt;a href=&#34;http://home.pipeline.com/~hbaker1/CheneyMTA.html&#34;&gt;Cheney on the M.T.A&lt;/a&gt;.&lt;/p&gt;</description>
@@ -303,7 +314,7 @@ Alternatively, you can create a symlink in ~/quicklisp/local-projects/.</descrip
     <item>
       <title>Structured Concurrency</title>
       <link>https://devpoga.org/blog/2019-06-30_structured_concurrency/</link>
-      <pubDate>Sun, 30 Jun 2019 00:00:00 +0000</pubDate>
+      <pubDate>Sun, 30 Jun 2019 00:00:00 +0800</pubDate>
       
       <guid>https://devpoga.org/blog/2019-06-30_structured_concurrency/</guid>
       <description>&lt;p&gt;Thread 跟 Coroutine 是兩種常常用來處理 Concurrency 的工具。&lt;/p&gt;
@@ -315,7 +326,7 @@ Alternatively, you can create a symlink in ~/quicklisp/local-projects/.</descrip
     <item>
       <title>工程師的英文寫作能力</title>
       <link>https://devpoga.org/blog/2019-06-29_%E5%B7%A5%E7%A8%8B%E5%B8%AB%E7%9A%84%E8%8B%B1%E6%96%87%E5%AF%AB%E4%BD%9C%E8%83%BD%E5%8A%9B/</link>
-      <pubDate>Sat, 29 Jun 2019 00:00:00 +0000</pubDate>
+      <pubDate>Sat, 29 Jun 2019 00:00:00 +0800</pubDate>
       
       <guid>https://devpoga.org/blog/2019-06-29_%E5%B7%A5%E7%A8%8B%E5%B8%AB%E7%9A%84%E8%8B%B1%E6%96%87%E5%AF%AB%E4%BD%9C%E8%83%BD%E5%8A%9B/</guid>
       <description>&lt;p&gt;寫作能力一直是工程師實力一個很重要的指標。&lt;/p&gt;
@@ -325,7 +336,7 @@ Alternatively, you can create a symlink in ~/quicklisp/local-projects/.</descrip
     <item>
       <title>Go，七年後</title>
       <link>https://devpoga.org/blog/golang-7-years-later/</link>
-      <pubDate>Mon, 29 Apr 2019 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 29 Apr 2019 00:00:00 +0800</pubDate>
       
       <guid>https://devpoga.org/blog/golang-7-years-later/</guid>
       <description>&lt;p&gt;從&lt;a href=&#34;https://blog.golang.org/go-version-1-is-released&#34;&gt;開始接觸 Go&lt;/a&gt; 到現在也已經過了 7 年了啊&amp;hellip; 最近又有機會拿出 Go 出來寫寫，隨手寫一下感受。&lt;/p&gt;</description>
@@ -334,7 +345,7 @@ Alternatively, you can create a symlink in ~/quicklisp/local-projects/.</descrip
     <item>
       <title>Notes on the Implementation of Lua 5.3</title>
       <link>https://devpoga.org/blog/implementation-lua53/</link>
-      <pubDate>Tue, 26 Feb 2019 00:00:00 +0000</pubDate>
+      <pubDate>Tue, 26 Feb 2019 00:00:00 +0800</pubDate>
       
       <guid>https://devpoga.org/blog/implementation-lua53/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;https://poga.github.io/lua53-notes/&#34;&gt;Notes on the Implementation on Lua 5.3&lt;/a&gt; is a collection of my notes on the Lua 5.3 source code. It&amp;rsquo;s a mix of both high-level ideas and interesting details in the source code.&lt;/p&gt;</description>
@@ -352,7 +363,7 @@ Alternatively, you can create a symlink in ~/quicklisp/local-projects/.</descrip
     <item>
       <title>Analyze Streaming Data with Rust, Actix, and Lua</title>
       <link>https://devpoga.org/blog/parsing-streaming-data-actix-lua/</link>
-      <pubDate>Fri, 12 Oct 2018 00:00:00 +0000</pubDate>
+      <pubDate>Fri, 12 Oct 2018 00:00:00 +0800</pubDate>
       
       <guid>https://devpoga.org/blog/parsing-streaming-data-actix-lua/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;https://github.com/poga/actix-lua&#34;&gt;&lt;code&gt;actix-lua&lt;/code&gt;&lt;/a&gt; provides a safe scripting environment for the &lt;a href=&#34;http://actix.rs&#34;&gt;actix&lt;/a&gt; framework with the &lt;a href=&#34;http://lua.org&#34;&gt;Lua Programming Language&lt;/a&gt;.&lt;/p&gt;
@@ -362,7 +373,7 @@ Alternatively, you can create a symlink in ~/quicklisp/local-projects/.</descrip
     <item>
       <title>我選擇生產力工具的基準</title>
       <link>https://devpoga.org/blog/2018-09-28_%E6%88%91%E9%81%B8%E6%93%87%E7%94%9F%E7%94%A2%E5%8A%9B%E5%B7%A5%E5%85%B7%E7%9A%84%E5%9F%BA%E6%BA%96/</link>
-      <pubDate>Thu, 27 Sep 2018 00:00:00 +0000</pubDate>
+      <pubDate>Thu, 27 Sep 2018 00:00:00 +0800</pubDate>
       
       <guid>https://devpoga.org/blog/2018-09-28_%E6%88%91%E9%81%B8%E6%93%87%E7%94%9F%E7%94%A2%E5%8A%9B%E5%B7%A5%E5%85%B7%E7%9A%84%E5%9F%BA%E6%BA%96/</guid>
       <description>&lt;p&gt;先說結論，我用 OmniFocus 用了五年以上了，目前依然滿意。&lt;/p&gt;</description>
@@ -395,7 +406,7 @@ Alternatively, you can create a symlink in ~/quicklisp/local-projects/.</descrip
     <item>
       <title>LuaJIT 實做探索 — NaN Tagging</title>
       <link>https://devpoga.org/blog/2018-04-18_luajit-%E5%AF%A6%E5%81%9A%E6%8E%A2%E7%B4%A2-nan-tagging/</link>
-      <pubDate>Wed, 18 Apr 2018 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 18 Apr 2018 00:00:00 +0800</pubDate>
       
       <guid>https://devpoga.org/blog/2018-04-18_luajit-%E5%AF%A6%E5%81%9A%E6%8E%A2%E7%B4%A2-nan-tagging/</guid>
       <description>&lt;p&gt;&lt;img src=&#34;https://devpoga.org/post/2018-04-18_luajit-%E5%AF%A6%E5%81%9A%E6%8E%A2%E7%B4%A2-nan-tagging/images/1.png&#34; alt=&#34;image&#34;&gt;&lt;/p&gt;
@@ -406,7 +417,7 @@ Alternatively, you can create a symlink in ~/quicklisp/local-projects/.</descrip
     <item>
       <title>Why Serverless</title>
       <link>https://devpoga.org/blog/2018-04-10_why_serverless/</link>
-      <pubDate>Tue, 06 Feb 2018 00:00:00 +0000</pubDate>
+      <pubDate>Tue, 06 Feb 2018 00:00:00 +0800</pubDate>
       
       <guid>https://devpoga.org/blog/2018-04-10_why_serverless/</guid>
       <description>&lt;blockquote&gt;
@@ -419,7 +430,7 @@ Alternatively, you can create a symlink in ~/quicklisp/local-projects/.</descrip
     <item>
       <title>遺忘的生產力</title>
       <link>https://devpoga.org/blog/2018-02-06_%E9%81%BA%E5%BF%98%E7%9A%84%E7%94%9F%E7%94%A2%E5%8A%9B/</link>
-      <pubDate>Tue, 06 Feb 2018 00:00:00 +0000</pubDate>
+      <pubDate>Tue, 06 Feb 2018 00:00:00 +0800</pubDate>
       
       <guid>https://devpoga.org/blog/2018-02-06_%E9%81%BA%E5%BF%98%E7%9A%84%E7%94%9F%E7%94%A2%E5%8A%9B/</guid>
       <description>&lt;p&gt;人們談到生產力，似乎就免不了討論各種蒐集想法、整理心得的工具。彷彿忘了的東西都是一種損失。&lt;/p&gt;
@@ -439,7 +450,7 @@ Alternatively, you can create a symlink in ~/quicklisp/local-projects/.</descrip
     <item>
       <title>Minimum Viable Ownership</title>
       <link>https://devpoga.org/blog/2017-10-02_minimum_viable_ownership/</link>
-      <pubDate>Mon, 02 Oct 2017 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 02 Oct 2017 00:00:00 +0800</pubDate>
       
       <guid>https://devpoga.org/blog/2017-10-02_minimum_viable_ownership/</guid>
       <description>&lt;p&gt;我始終不喜歡「擁有」的概念。那是種排他、缺乏多樣性的想法。&lt;/p&gt;

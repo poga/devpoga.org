@@ -6,11 +6,11 @@
     <description>Recent content in Compiler on Dev.Poga</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 19 Dec 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://devpoga.org/tags/compiler/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 19 Dec 2020 00:00:00 +0800</lastBuildDate><atom:link href="https://devpoga.org/tags/compiler/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Predictable Performance of OCaml&#39;s Module System</title>
       <link>https://devpoga.org/blog/2020-12-19_ocaml_predictable_module_functor/</link>
-      <pubDate>Sat, 19 Dec 2020 00:00:00 +0000</pubDate>
+      <pubDate>Sat, 19 Dec 2020 00:00:00 +0800</pubDate>
       
       <guid>https://devpoga.org/blog/2020-12-19_ocaml_predictable_module_functor/</guid>
       <description>&lt;img src=&#34;https://devpoga.org/post/2020-12-19_ocaml_predictable_module_functor/camel.jpg&#34; alt=&#34;&#34;&gt; OCaml&amp;rsquo;s &lt;a href=&#34;https://dev.realworldocaml.org/files-modules-and-programs.html&#34;&gt;module system&lt;/a&gt; can be a powerful tool for building generic code and structuring systems. Functors are functions from modules to modules and they serve an important role for the power of module system. However, I want to know if functors (and the module system) can be optimized away by the OCaml compiler.</description>
@@ -19,7 +19,7 @@
     <item>
       <title>Going through the OCaml compiler pipeline (manually)</title>
       <link>https://devpoga.org/blog/2020-11-30-ocaml-compiler-pipeline/</link>
-      <pubDate>Mon, 30 Nov 2020 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 30 Nov 2020 00:00:00 +0800</pubDate>
       
       <guid>https://devpoga.org/blog/2020-11-30-ocaml-compiler-pipeline/</guid>
       <description>Modern compilers usually composed by multiple stages: parsers, optimizers, linkers, and assemblers. Let&amp;rsquo;s go through it one by one to have a better understanding of the OCaml compiler.</description>
@@ -28,7 +28,7 @@
     <item>
       <title>A Taste of OCaml&#39;s Predictable Performance</title>
       <link>https://devpoga.org/blog/2020-11-21-a-taste-of-ocaml-predictable-performance/</link>
-      <pubDate>Sat, 21 Nov 2020 00:00:00 +0000</pubDate>
+      <pubDate>Sat, 21 Nov 2020 00:00:00 +0800</pubDate>
       
       <guid>https://devpoga.org/blog/2020-11-21-a-taste-of-ocaml-predictable-performance/</guid>
       <description>&lt;img src=&#34;https://devpoga.org/post/2020-11-21-a-taste-of-ocaml-predictable-performance/colour-logo.png&#34; alt=&#34;&#34;&gt; &lt;a href=&#34;https://github.com/mirage/eqaf&#34;&gt;eqaf&lt;/a&gt;, a constant-time compare function implementation in &lt;a href=&#34;https://ocaml.org/&#34;&gt;OCaml&lt;/a&gt;, is a great case to demonstrate the &lt;a href=&#34;https://signalsandthreads.com/language-design/#0008401&#34;&gt;predictable performance of OCaml&amp;rsquo;s compiler&lt;/a&gt;. Why?</description>
@@ -37,7 +37,7 @@
     <item>
       <title>Cheney on the M.T.A</title>
       <link>https://devpoga.org/blog/2019-07-11_cheney_on_the_mta/</link>
-      <pubDate>Fri, 12 Jul 2019 00:00:00 +0000</pubDate>
+      <pubDate>Fri, 12 Jul 2019 00:00:00 +0800</pubDate>
       
       <guid>https://devpoga.org/blog/2019-07-11_cheney_on_the_mta/</guid>
       <description>&lt;p&gt;如果問軟體工程師他覺得簡潔又經典的文章，我想很多人會回答你這篇：&lt;a href=&#34;http://home.pipeline.com/~hbaker1/CheneyMTA.html&#34;&gt;Cheney on the M.T.A&lt;/a&gt;.&lt;/p&gt;</description>
@@ -46,7 +46,7 @@
     <item>
       <title>LuaJIT 實做探索 — NaN Tagging</title>
       <link>https://devpoga.org/blog/2018-04-18_luajit-%E5%AF%A6%E5%81%9A%E6%8E%A2%E7%B4%A2-nan-tagging/</link>
-      <pubDate>Wed, 18 Apr 2018 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 18 Apr 2018 00:00:00 +0800</pubDate>
       
       <guid>https://devpoga.org/blog/2018-04-18_luajit-%E5%AF%A6%E5%81%9A%E6%8E%A2%E7%B4%A2-nan-tagging/</guid>
       <description>&lt;p&gt;&lt;img src=&#34;https://devpoga.org/post/2018-04-18_luajit-%E5%AF%A6%E5%81%9A%E6%8E%A2%E7%B4%A2-nan-tagging/images/1.png&#34; alt=&#34;image&#34;&gt;&lt;/p&gt;

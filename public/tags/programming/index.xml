@@ -20,7 +20,7 @@
     <item>
       <title>Pipelines and Glue Systems</title>
       <link>https://devpoga.org/blog/2021-12-25_pipelines_and_glue_systems/</link>
-      <pubDate>Sun, 12 Dec 2021 00:00:00 +0000</pubDate>
+      <pubDate>Sun, 12 Dec 2021 00:00:00 +0800</pubDate>
       
       <guid>https://devpoga.org/blog/2021-12-25_pipelines_and_glue_systems/</guid>
       <description>&lt;p&gt;&lt;strong&gt;Context&lt;/strong&gt;: Machine Learning Projects are mainly just a complex interdependent pipeline. We desperately need a better abstraction for them.&lt;/p&gt;</description>
@@ -29,7 +29,7 @@
     <item>
       <title>On Building Glue Systems</title>
       <link>https://devpoga.org/blog/2021-09-18_on_glue_systems/</link>
-      <pubDate>Sat, 18 Sep 2021 00:00:00 +0000</pubDate>
+      <pubDate>Sat, 18 Sep 2021 00:00:00 +0800</pubDate>
       
       <guid>https://devpoga.org/blog/2021-09-18_on_glue_systems/</guid>
       <description>&lt;p&gt;&lt;img src=&#34;https://devpoga.org/post/2021-09-18_on_glue_systems/glue.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
@@ -40,7 +40,7 @@
     <item>
       <title>Learning Julia, Line by Line</title>
       <link>https://devpoga.org/blog/2021-08-04_learning_julia_line_by_line/</link>
-      <pubDate>Wed, 04 Aug 2021 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 04 Aug 2021 00:00:00 +0800</pubDate>
       
       <guid>https://devpoga.org/blog/2021-08-04_learning_julia_line_by_line/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;https://github.com/StefanKarpinski/Cards.jl&#34;&gt;Cardsjl&lt;/a&gt; is a simple Julia package which demonstrate many interesting bits of the &lt;a href=&#34;https://julialang.org/&#34;&gt;Julia Programming Language&lt;/a&gt;.&lt;/p&gt;
@@ -50,7 +50,7 @@
     <item>
       <title>Haxe and Programming for Many Machines</title>
       <link>https://devpoga.org/blog/2021-05-11_haxe_and_programming_for_many_machines/</link>
-      <pubDate>Tue, 11 May 2021 00:00:00 +0000</pubDate>
+      <pubDate>Tue, 11 May 2021 00:00:00 +0800</pubDate>
       
       <guid>https://devpoga.org/blog/2021-05-11_haxe_and_programming_for_many_machines/</guid>
       <description>&lt;p&gt;The title sounds obvious. We always program for a machine! A program won&amp;rsquo;t run itself!&lt;/p&gt;</description>
@@ -59,7 +59,7 @@
     <item>
       <title>Common Lisp Local Project Development with Quicklisp</title>
       <link>https://devpoga.org/blog/2021-05-01_common_lisp_quicklisp_local_project/</link>
-      <pubDate>Sat, 01 May 2021 00:00:00 +0000</pubDate>
+      <pubDate>Sat, 01 May 2021 00:00:00 +0800</pubDate>
       
       <guid>https://devpoga.org/blog/2021-05-01_common_lisp_quicklisp_local_project/</guid>
       <description>Probably the cleanest way to do it:
@@ -70,7 +70,7 @@ Alternatively, you can create a symlink in ~/quicklisp/local-projects/.</descrip
     <item>
       <title>The Common Lisp Condition System</title>
       <link>https://devpoga.org/blog/2021-04-25_common_lisp_condition_system/</link>
-      <pubDate>Sun, 25 Apr 2021 00:00:00 +0000</pubDate>
+      <pubDate>Sun, 25 Apr 2021 00:00:00 +0800</pubDate>
       
       <guid>https://devpoga.org/blog/2021-04-25_common_lisp_condition_system/</guid>
       <description>&lt;p&gt;&lt;img src=&#34;https://devpoga.org/post/2021-04-25_common_lisp_condition_system/book.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;</description>
@@ -79,7 +79,7 @@ Alternatively, you can create a symlink in ~/quicklisp/local-projects/.</descrip
     <item>
       <title>Predictable Performance of OCaml&#39;s Module System</title>
       <link>https://devpoga.org/blog/2020-12-19_ocaml_predictable_module_functor/</link>
-      <pubDate>Sat, 19 Dec 2020 00:00:00 +0000</pubDate>
+      <pubDate>Sat, 19 Dec 2020 00:00:00 +0800</pubDate>
       
       <guid>https://devpoga.org/blog/2020-12-19_ocaml_predictable_module_functor/</guid>
       <description>&lt;img src=&#34;https://devpoga.org/post/2020-12-19_ocaml_predictable_module_functor/camel.jpg&#34; alt=&#34;&#34;&gt; OCaml&amp;rsquo;s &lt;a href=&#34;https://dev.realworldocaml.org/files-modules-and-programs.html&#34;&gt;module system&lt;/a&gt; can be a powerful tool for building generic code and structuring systems. Functors are functions from modules to modules and they serve an important role for the power of module system. However, I want to know if functors (and the module system) can be optimized away by the OCaml compiler.</description>
@@ -88,7 +88,7 @@ Alternatively, you can create a symlink in ~/quicklisp/local-projects/.</descrip
     <item>
       <title>Going through the OCaml compiler pipeline (manually)</title>
       <link>https://devpoga.org/blog/2020-11-30-ocaml-compiler-pipeline/</link>
-      <pubDate>Mon, 30 Nov 2020 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 30 Nov 2020 00:00:00 +0800</pubDate>
       
       <guid>https://devpoga.org/blog/2020-11-30-ocaml-compiler-pipeline/</guid>
       <description>Modern compilers usually composed by multiple stages: parsers, optimizers, linkers, and assemblers. Let&amp;rsquo;s go through it one by one to have a better understanding of the OCaml compiler.</description>
@@ -97,7 +97,7 @@ Alternatively, you can create a symlink in ~/quicklisp/local-projects/.</descrip
     <item>
       <title>A Taste of OCaml&#39;s Predictable Performance</title>
       <link>https://devpoga.org/blog/2020-11-21-a-taste-of-ocaml-predictable-performance/</link>
-      <pubDate>Sat, 21 Nov 2020 00:00:00 +0000</pubDate>
+      <pubDate>Sat, 21 Nov 2020 00:00:00 +0800</pubDate>
       
       <guid>https://devpoga.org/blog/2020-11-21-a-taste-of-ocaml-predictable-performance/</guid>
       <description>&lt;img src=&#34;https://devpoga.org/post/2020-11-21-a-taste-of-ocaml-predictable-performance/colour-logo.png&#34; alt=&#34;&#34;&gt; &lt;a href=&#34;https://github.com/mirage/eqaf&#34;&gt;eqaf&lt;/a&gt;, a constant-time compare function implementation in &lt;a href=&#34;https://ocaml.org/&#34;&gt;OCaml&lt;/a&gt;, is a great case to demonstrate the &lt;a href=&#34;https://signalsandthreads.com/language-design/#0008401&#34;&gt;predictable performance of OCaml&amp;rsquo;s compiler&lt;/a&gt;. Why?</description>
@@ -106,7 +106,7 @@ Alternatively, you can create a symlink in ~/quicklisp/local-projects/.</descrip
     <item>
       <title>在 iPad 上布置軟體開發環境</title>
       <link>https://devpoga.org/blog/2020-08-01_ipad_programming_environment/</link>
-      <pubDate>Sat, 01 Aug 2020 00:00:00 +0000</pubDate>
+      <pubDate>Sat, 01 Aug 2020 00:00:00 +0800</pubDate>
       
       <guid>https://devpoga.org/blog/2020-08-01_ipad_programming_environment/</guid>
       <description>&lt;p&gt;五月買了 &lt;a href=&#34;https://www.apple.com/tw/ipad-pro/&#34;&gt;iPad Pro&lt;/a&gt; 跟 &lt;a href=&#34;https://www.apple.com/tw/ipad-keyboards/&#34;&gt;巧控鍵盤&lt;/a&gt; 後，大部分的需求 iPad Pro 都能直接滿足，除了寫程式以外。摸索了一陣子之後總算找到順手又省錢的寫程式方式了，這篇簡單記錄一下。&lt;/p&gt;</description>
@@ -115,7 +115,7 @@ Alternatively, you can create a symlink in ~/quicklisp/local-projects/.</descrip
     <item>
       <title>Concurrency in Clojure, Racket, and Gerbil Scheme</title>
       <link>https://devpoga.org/blog/2020-06-07-concurrency-clojure-racket-gerbil/</link>
-      <pubDate>Sun, 07 Jun 2020 00:00:00 +0000</pubDate>
+      <pubDate>Sun, 07 Jun 2020 00:00:00 +0800</pubDate>
       
       <guid>https://devpoga.org/blog/2020-06-07-concurrency-clojure-racket-gerbil/</guid>
       <description>&lt;p&gt;&lt;img src=&#34;https://devpoga.org/post/2020-06-07-concurrency-clojure-racket-gerbil/index.jpeg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;</description>
@@ -124,7 +124,7 @@ Alternatively, you can create a symlink in ~/quicklisp/local-projects/.</descrip
     <item>
       <title>Domain Modeling Made Functional</title>
       <link>https://devpoga.org/blog/2020-04-10_domain-modeling-made-functional/</link>
-      <pubDate>Fri, 10 Apr 2020 00:00:00 +0000</pubDate>
+      <pubDate>Fri, 10 Apr 2020 00:00:00 +0800</pubDate>
       
       <guid>https://devpoga.org/blog/2020-04-10_domain-modeling-made-functional/</guid>
       <description>&lt;p&gt;&lt;img src=&#34;https://devpoga.org/post/2020-04-10_domain-modeling-made-functional/book.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
@@ -134,7 +134,7 @@ Alternatively, you can create a symlink in ~/quicklisp/local-projects/.</descrip
     <item>
       <title>Zero Trust Network</title>
       <link>https://devpoga.org/blog/2020-04-09_zero-trust-network/</link>
-      <pubDate>Thu, 09 Apr 2020 00:00:00 +0000</pubDate>
+      <pubDate>Thu, 09 Apr 2020 00:00:00 +0800</pubDate>
       
       <guid>https://devpoga.org/blog/2020-04-09_zero-trust-network/</guid>
       <description>&lt;p&gt;&lt;img src=&#34;https://devpoga.org/post/2020-04-09_zero-trust-network/book.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
@@ -144,7 +144,7 @@ Alternatively, you can create a symlink in ~/quicklisp/local-projects/.</descrip
     <item>
       <title>OCaml Quickstart</title>
       <link>https://devpoga.org/blog/2020-03-17_ocaml_quickstart/</link>
-      <pubDate>Tue, 17 Mar 2020 00:00:00 +0000</pubDate>
+      <pubDate>Tue, 17 Mar 2020 00:00:00 +0800</pubDate>
       
       <guid>https://devpoga.org/blog/2020-03-17_ocaml_quickstart/</guid>
       <description>&lt;p&gt;&lt;img src=&#34;https://devpoga.org/post/2020-03-17_ocaml_quickstart/vim.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
@@ -154,7 +154,7 @@ Alternatively, you can create a symlink in ~/quicklisp/local-projects/.</descrip
     <item>
       <title>Guide to Serve Machine Learning Models in Production</title>
       <link>https://devpoga.org/blog/2020-02-17_checklist_deploy_machine_learning_model_production/</link>
-      <pubDate>Mon, 17 Feb 2020 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 17 Feb 2020 00:00:00 +0800</pubDate>
       
       <guid>https://devpoga.org/blog/2020-02-17_checklist_deploy_machine_learning_model_production/</guid>
       <description>&lt;p&gt;Here&amp;rsquo;s a simple checklist for people who deploy machine learning models to production. Based on my personal experience.&lt;/p&gt;</description>
@@ -163,7 +163,7 @@ Alternatively, you can create a symlink in ~/quicklisp/local-projects/.</descrip
     <item>
       <title>Running a Service in Production without Losing Your Sanity</title>
       <link>https://devpoga.org/blog/2019-11-06-running-service-production/</link>
-      <pubDate>Wed, 06 Nov 2019 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 06 Nov 2019 00:00:00 +0800</pubDate>
       
       <guid>https://devpoga.org/blog/2019-11-06-running-service-production/</guid>
       <description></description>
@@ -172,7 +172,7 @@ Alternatively, you can create a symlink in ~/quicklisp/local-projects/.</descrip
     <item>
       <title>The Golden Age of New Programming Languages</title>
       <link>https://devpoga.org/blog/2019-11-03-golden-age-of-programming-language/</link>
-      <pubDate>Sun, 03 Nov 2019 00:00:00 +0000</pubDate>
+      <pubDate>Sun, 03 Nov 2019 00:00:00 +0800</pubDate>
       
       <guid>https://devpoga.org/blog/2019-11-03-golden-age-of-programming-language/</guid>
       <description>&lt;p&gt;2020 is going to be the golden age of new programming languages.&lt;/p&gt;</description>
@@ -181,7 +181,7 @@ Alternatively, you can create a symlink in ~/quicklisp/local-projects/.</descrip
     <item>
       <title>Benchmarking VPS for Remote Rust Development Environment</title>
       <link>https://devpoga.org/blog/2019-10-22-vps_rust_compile_benchmark/</link>
-      <pubDate>Tue, 22 Oct 2019 00:00:00 +0000</pubDate>
+      <pubDate>Tue, 22 Oct 2019 00:00:00 +0800</pubDate>
       
       <guid>https://devpoga.org/blog/2019-10-22-vps_rust_compile_benchmark/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;https://devpoga.org/post/2019-10-22-vps_rust_compile_benchmark/chart.png&#34;&gt;&lt;img src=&#34;https://devpoga.org/post/2019-10-22-vps_rust_compile_benchmark/chart.png&#34; width=&#34;100%&#34;&gt;&lt;/a&gt;&lt;/p&gt;</description>
@@ -190,7 +190,7 @@ Alternatively, you can create a symlink in ~/quicklisp/local-projects/.</descrip
     <item>
       <title>Ripgrep Cheat Sheet</title>
       <link>https://devpoga.org/blog/2019-09-20_ripgrep_cheat_sheet/</link>
-      <pubDate>Fri, 20 Sep 2019 00:00:00 +0000</pubDate>
+      <pubDate>Fri, 20 Sep 2019 00:00:00 +0800</pubDate>
       
       <guid>https://devpoga.org/blog/2019-09-20_ripgrep_cheat_sheet/</guid>
       <description></description>
@@ -199,7 +199,7 @@ Alternatively, you can create a symlink in ~/quicklisp/local-projects/.</descrip
     <item>
       <title>Structured Concurrency</title>
       <link>https://devpoga.org/blog/2019-06-30_structured_concurrency/</link>
-      <pubDate>Sun, 30 Jun 2019 00:00:00 +0000</pubDate>
+      <pubDate>Sun, 30 Jun 2019 00:00:00 +0800</pubDate>
       
       <guid>https://devpoga.org/blog/2019-06-30_structured_concurrency/</guid>
       <description>&lt;p&gt;Thread 跟 Coroutine 是兩種常常用來處理 Concurrency 的工具。&lt;/p&gt;

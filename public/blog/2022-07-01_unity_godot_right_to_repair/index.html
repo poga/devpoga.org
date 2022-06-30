@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <meta http-equiv="X-Clacks-Overhead" content="GNU Terry Pratchett" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Unity, Godot, and Right to Repair | Dev.Poga</title>
+<meta name="title" content="Unity, Godot, and Right to Repair" />
+<meta name="description" content="Some years ago, Unity dominated the game engine market. Everyone would recommend Unity to fellow game developers without needing to think.
+However, Unity (as a game engine) is not in a great shape right now:
+Deprecating features while the replacement isn’t ready, Creating multiple new implementations of features from scratch instead of improving what’s there. Abandoning their own features in favour of acquiring community made versions, and then abandoning them, Splitting the whole render system into two incompatible, contrary versions, deprecating the previous render system." />
+<meta name="keywords" content="Unity,Godot,Opensource," />
+
+
+<meta property="og:title" content="Unity, Godot, and Right to Repair" />
+<meta property="og:description" content="Some years ago, Unity dominated the game engine market. Everyone would recommend Unity to fellow game developers without needing to think.
+However, Unity (as a game engine) is not in a great shape right now:
+Deprecating features while the replacement isn’t ready, Creating multiple new implementations of features from scratch instead of improving what’s there. Abandoning their own features in favour of acquiring community made versions, and then abandoning them, Splitting the whole render system into two incompatible, contrary versions, deprecating the previous render system." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://devpoga.org/blog/2022-07-01_unity_godot_right_to_repair/" /><meta property="article:section" content="blog" />
+<meta property="article:published_time" content="2022-07-01T00:00:00+08:00" />
+<meta property="article:modified_time" content="2022-07-01T00:00:00+08:00" />
+
+
+
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Unity, Godot, and Right to Repair"/>
+<meta name="twitter:description" content="Some years ago, Unity dominated the game engine market. Everyone would recommend Unity to fellow game developers without needing to think.
+However, Unity (as a game engine) is not in a great shape right now:
+Deprecating features while the replacement isn’t ready, Creating multiple new implementations of features from scratch instead of improving what’s there. Abandoning their own features in favour of acquiring community made versions, and then abandoning them, Splitting the whole render system into two incompatible, contrary versions, deprecating the previous render system."/>
+
+
+
+<meta itemprop="name" content="Unity, Godot, and Right to Repair">
+<meta itemprop="description" content="Some years ago, Unity dominated the game engine market. Everyone would recommend Unity to fellow game developers without needing to think.
+However, Unity (as a game engine) is not in a great shape right now:
+Deprecating features while the replacement isn’t ready, Creating multiple new implementations of features from scratch instead of improving what’s there. Abandoning their own features in favour of acquiring community made versions, and then abandoning them, Splitting the whole render system into two incompatible, contrary versions, deprecating the previous render system."><meta itemprop="datePublished" content="2022-07-01T00:00:00+08:00" />
+<meta itemprop="dateModified" content="2022-07-01T00:00:00+08:00" />
+<meta itemprop="wordCount" content="396">
+<meta itemprop="keywords" content="Unity,Godot,Opensource," />
+<meta name="referrer" content="no-referrer-when-downgrade" />
+
+  <style>
+  body {
+    font-family: Verdana, sans-serif;
+    margin: auto;
+    padding: 20px;
+    max-width: 720px;
+    text-align: left;
+    background-color: #fff;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    line-height: 1.5;
+    color: #444;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  strong,
+  b {
+    color: #222;
+  }
+
+  a {
+    color: #3273dc;
+     
+  }
+
+  .title {
+    text-decoration: none;
+    border: 0;
+  }
+
+  .title span {
+    font-weight: 400;
+  }
+
+  nav a {
+    margin-right: 10px;
+  }
+
+  textarea {
+    width: 100%;
+    font-size: 16px;
+  }
+
+  input {
+    font-size: 16px;
+  }
+
+  content {
+    line-height: 1.6;
+  }
+
+  table {
+    width: 100%;
+  }
+
+  img {
+    max-width: 100%;
+  }
+
+  code {
+    padding: 2px 5px;
+    background-color: #f2f2f2;
+  }
+
+  pre code {
+    color: #222;
+    display: block;
+    padding: 20px;
+    white-space: pre-wrap;
+    font-size: 14px;
+  }
+
+  div.highlight pre {
+    background-color: initial;
+    color: initial;
+  }
+
+  div.highlight code {
+    background-color: unset;
+    color: unset;
+  }
+
+  blockquote {
+    border-left: 1px solid #999;
+    color: #222;
+    padding-left: 20px;
+    font-style: italic;
+  }
+
+  footer {
+    padding: 25px;
+    text-align: center;
+  }
+
+  .helptext {
+    color: #777;
+    font-size: small;
+  }
+
+  .errorlist {
+    color: #eba613;
+    font-size: small;
+  }
+
+   
+  ul.blog-posts {
+    list-style-type: none;
+    padding: unset;
+  }
+
+  ul.blog-posts li {
+    display: flex;
+  }
+
+  ul.blog-posts li span {
+    flex: 0 0 130px;
+  }
+
+  ul.blog-posts li a:visited {
+    color: #8b6fcb;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    body {
+      background-color: #333;
+      color: #ddd;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    strong,
+    b {
+      color: #eee;
+    }
+
+    a {
+      color: #8cc2dd;
+    }
+
+    code {
+      background-color: #777;
+    }
+
+    pre code {
+      color: #ddd;
+    }
+
+    blockquote {
+      color: #ccc;
+    }
+
+    textarea,
+    input {
+      background-color: #252525;
+      color: #ddd;
+    }
+
+    .helptext {
+      color: #aaa;
+    }
+  }
+
+</style>
+<link rel="stylesheet" href="/custom.css">
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-FEFM53H9Y9"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-FEFM53H9Y9');
+</script>
+</head>
+
+<body>
+  <header><a href="/" class="title">
+  <h2>Dev.Poga</h2>
+</a>
+<nav><a href="/">Home</a>
+
+
+<a href="/blog">Blog</a>
+
+</nav>
+</header>
+  <main>
+
+<h1>Unity, Godot, and Right to Repair</h1>
+<p>
+  <i>
+    <time datetime='2022-07-01' pubdate>
+      01 Jul, 2022
+    </time>
+  </i>
+</p>
+
+<content>
+  <p>Some years ago, <a href="https://unity.com/">Unity</a> dominated the game engine market. Everyone would recommend Unity to fellow game developers <a href="https://alextardif.com/LearningGraphics.html">without needing to think</a>.</p>
+<p>However, Unity (as a game engine) is <a href="https://garry.blog/unity-2022/"><strong>not in a great shape</strong></a> right now:</p>
+<ul>
+<li>Deprecating features while the replacement isn’t ready,</li>
+<li>Creating multiple new implementations of features from scratch instead of improving what’s there.</li>
+<li>Abandoning their own features in favour of acquiring community made versions, and then abandoning them,</li>
+<li>Splitting the whole render system into two incompatible, contrary versions, deprecating the previous render system.</li>
+<li>Splitting the UI system into two/three and trying to use them all at the same time,</li>
+<li>&hellip;and the worst: shutting down Unity Answers and redirecting it to the Unity Forums.</li>
+</ul>
+<p>It&rsquo;s pretty obvious that Unity (as a company) are <strong>oblivious about their product and their customer</strong>. The stock price and shareholders&rsquo; value becomes more important than game developers.</p>
+<h2 id="is-godot-an-alternative">Is Godot an alternative?</h2>
+<p><a href="https://godotengine.org/">Godot</a> is an open-sourced game engine with a permissive license (MIT). No strings attached, no royalties, nothing. Your game is yours, down to the last line of engine code.</p>
+<p>Right now, Godot might not be able to compete with the convenience of <a href="https://assetstore.unity.com/">Unity Asset Store</a>. It&rsquo;s already a solid foundation for hobbists, 2d games, or <a href="https://medium.com/swlh/what-makes-godot-engine-great-for-advance-gui-applications-b1cfb941df3b">advanced GUI applications</a>.</p>
+<h2 id="right-to-repair">Right to Repair</h2>
+<p>But the biggest benefit of using Godot (or any open-sourced game engine) is about th <a href="https://en.wikipedia.org/wiki/Right_to_repair">Right to Repair</a>. Without engine source code, you are not in control of your own game. One apple policy change can <a href="https://9to5mac.com/2022/04/24/apple-now-removing-outdated-apps-from-the-app-store-developers-complain/">put you in a rough spot</a> and remove your creation from the storefront.</p>
+<p><strong>Open source game engines allows you to actually &ldquo;finish&rdquo; your game.</strong> Unlike most software projects, games are something that can be &ldquo;finished&rdquo;. You might think the game is good enough as it is, and can be called &ldquo;done&rdquo;.  But if you don&rsquo;t control the engine. One day you won&rsquo;t be able to reproduce the game again.</p>
+<p><a href="https://twitter.com/adamwathan/status/1535989815778463746">If you start seeing open-source as &ldquo;right-to-repair&rdquo;, any frustration or entitlement you feel will be replaced with gratitude</a>. It&rsquo;s better for  both the maintainer and for you.</p>
+<p>I&rsquo;m using Godot for my creative works and so far it&rsquo;s an enjoyable experience. I&rsquo;m a software developer who&rsquo;s taking a break from startups and products to work on something I love. Knowing that I can put my hand on the whole stack of rendering pipeline and tweak the engine if I need to  is liberating.</p>
+
+</content>
+<p>
+  
+  <a href="https://devpoga.org/tags/unity/">#Unity</a>
+  
+  <a href="https://devpoga.org/tags/godot/">#Godot</a>
+  
+  <a href="https://devpoga.org/tags/opensource/">#Opensource</a>
+  
+</p>
+
+  </main>
+  <footer>Made with <a href="https://github.com/janraasch/hugo-bearblog/">Hugo ʕ•ᴥ•ʔ Bear</a>
+</footer>
+
+    
+</body>
+
+</html>

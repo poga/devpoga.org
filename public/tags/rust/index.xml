@@ -6,11 +6,11 @@
     <description>Recent content in Rust on Dev.Poga</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 12 Oct 2018 00:00:00 +0000</lastBuildDate><atom:link href="https://devpoga.org/tags/rust/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 12 Oct 2018 00:00:00 +0800</lastBuildDate><atom:link href="https://devpoga.org/tags/rust/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Analyze Streaming Data with Rust, Actix, and Lua</title>
       <link>https://devpoga.org/blog/parsing-streaming-data-actix-lua/</link>
-      <pubDate>Fri, 12 Oct 2018 00:00:00 +0000</pubDate>
+      <pubDate>Fri, 12 Oct 2018 00:00:00 +0800</pubDate>
       
       <guid>https://devpoga.org/blog/parsing-streaming-data-actix-lua/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;https://github.com/poga/actix-lua&#34;&gt;&lt;code&gt;actix-lua&lt;/code&gt;&lt;/a&gt; provides a safe scripting environment for the &lt;a href=&#34;http://actix.rs&#34;&gt;actix&lt;/a&gt; framework with the &lt;a href=&#34;http://lua.org&#34;&gt;Lua Programming Language&lt;/a&gt;.&lt;/p&gt;

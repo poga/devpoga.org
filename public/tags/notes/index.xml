@@ -6,11 +6,11 @@
     <description>Recent content in Notes on Dev.Poga</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 19 Sep 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://devpoga.org/tags/notes/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 19 Sep 2021 00:00:00 +0800</lastBuildDate><atom:link href="https://devpoga.org/tags/notes/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Notes on The Five Dysfunctions of a Team</title>
       <link>https://devpoga.org/blog/2021-09-19_notes_on_the_five_dysfunctions_of_a_team/</link>
-      <pubDate>Sun, 19 Sep 2021 00:00:00 +0000</pubDate>
+      <pubDate>Sun, 19 Sep 2021 00:00:00 +0800</pubDate>
       
       <guid>https://devpoga.org/blog/2021-09-19_notes_on_the_five_dysfunctions_of_a_team/</guid>
       <description>genuine teamwork in most organizations remains as elusive as it has ever been. organizations fail to achieve teamwork because they unknowingly fall prey to five natural but dangerous pitfalls The Natural pitfalls absence of trust: unwillingness to be vulnerable within the group. fear of conflict: incapable of engaging in unfiltered and passionate debate of ideas. They resort to veiled discussions and guarded comments lack of commitment: team members rarely, if ever, buy in and commit to decisions, though they may feign aggrement during meetings.</description>
@@ -19,7 +19,7 @@
     <item>
       <title>Learning Julia, Line by Line</title>
       <link>https://devpoga.org/blog/2021-08-04_learning_julia_line_by_line/</link>
-      <pubDate>Wed, 04 Aug 2021 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 04 Aug 2021 00:00:00 +0800</pubDate>
       
       <guid>https://devpoga.org/blog/2021-08-04_learning_julia_line_by_line/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;https://github.com/StefanKarpinski/Cards.jl&#34;&gt;Cardsjl&lt;/a&gt; is a simple Julia package which demonstrate many interesting bits of the &lt;a href=&#34;https://julialang.org/&#34;&gt;Julia Programming Language&lt;/a&gt;.&lt;/p&gt;
@@ -29,7 +29,7 @@
     <item>
       <title>CHECKLIST FOR ORGANIZATIONAL HEALTH</title>
       <link>https://devpoga.org/blog/2021-07-25_organization_health/</link>
-      <pubDate>Sat, 24 Jul 2021 00:00:00 +0000</pubDate>
+      <pubDate>Sat, 24 Jul 2021 00:00:00 +0800</pubDate>
       
       <guid>https://devpoga.org/blog/2021-07-25_organization_health/</guid>
       <description>&lt;p&gt;&lt;img src=&#34;https://devpoga.org/post/2021-07-25_organization_health/book.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;</description>
@@ -38,7 +38,7 @@
     <item>
       <title>Common Lisp Local Project Development with Quicklisp</title>
       <link>https://devpoga.org/blog/2021-05-01_common_lisp_quicklisp_local_project/</link>
-      <pubDate>Sat, 01 May 2021 00:00:00 +0000</pubDate>
+      <pubDate>Sat, 01 May 2021 00:00:00 +0800</pubDate>
       
       <guid>https://devpoga.org/blog/2021-05-01_common_lisp_quicklisp_local_project/</guid>
       <description>Probably the cleanest way to do it:
@@ -49,7 +49,7 @@ Alternatively, you can create a symlink in ~/quicklisp/local-projects/.</descrip
     <item>
       <title>The Common Lisp Condition System</title>
       <link>https://devpoga.org/blog/2021-04-25_common_lisp_condition_system/</link>
-      <pubDate>Sun, 25 Apr 2021 00:00:00 +0000</pubDate>
+      <pubDate>Sun, 25 Apr 2021 00:00:00 +0800</pubDate>
       
       <guid>https://devpoga.org/blog/2021-04-25_common_lisp_condition_system/</guid>
       <description>&lt;p&gt;&lt;img src=&#34;https://devpoga.org/post/2021-04-25_common_lisp_condition_system/book.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;</description>
@@ -58,7 +58,7 @@ Alternatively, you can create a symlink in ~/quicklisp/local-projects/.</descrip
     <item>
       <title>Concurrency in Clojure, Racket, and Gerbil Scheme</title>
       <link>https://devpoga.org/blog/2020-06-07-concurrency-clojure-racket-gerbil/</link>
-      <pubDate>Sun, 07 Jun 2020 00:00:00 +0000</pubDate>
+      <pubDate>Sun, 07 Jun 2020 00:00:00 +0800</pubDate>
       
       <guid>https://devpoga.org/blog/2020-06-07-concurrency-clojure-racket-gerbil/</guid>
       <description>&lt;p&gt;&lt;img src=&#34;https://devpoga.org/post/2020-06-07-concurrency-clojure-racket-gerbil/index.jpeg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;</description>
@@ -67,7 +67,7 @@ Alternatively, you can create a symlink in ~/quicklisp/local-projects/.</descrip
     <item>
       <title>On Communication</title>
       <link>https://devpoga.org/blog/2020-04-21_on-communication/</link>
-      <pubDate>Tue, 21 Apr 2020 00:00:00 +0000</pubDate>
+      <pubDate>Tue, 21 Apr 2020 00:00:00 +0800</pubDate>
       
       <guid>https://devpoga.org/blog/2020-04-21_on-communication/</guid>
       <description>&lt;p&gt;Reading List.&lt;/p&gt;</description>
