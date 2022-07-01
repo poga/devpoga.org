@@ -2,7 +2,7 @@
 
 You can contact me via [email](mailto://hi@devpoga.org) or [twitter](https://twitter.com/devpoga).
 
-I work on interconnecting things in different domains such as tech, design, privacy, and security. In no particular order of preference:
+I work on interconnecting things in different domains such as tech, game, design, privacy, and security. In no particular order of preference:
 
 - [g0v.social](https://g0v.social), a self-sustainable decentralized social network.
 
