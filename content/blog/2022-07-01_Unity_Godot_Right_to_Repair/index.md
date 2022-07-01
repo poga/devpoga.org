@@ -37,4 +37,4 @@ But the biggest benefit of using Godot (or any open-sourced game engine) is abou
 
 [If you start seeing open-source as "right-to-repair", any frustration or entitlement you feel will be replaced with gratitude](https://twitter.com/adamwathan/status/1535989815778463746). It's better for  both the maintainer and for you.
 
-I'm using Godot for my creative works and so far it's an enjoyable experience. I'm a software developer who's taking a break from startups and products to work on something I love. Knowing that I can put my hand on the whole stack of rendering pipeline and tweak the engine if I need to  is liberating.
+I'm using Godot for my creative works and so far it's an enjoyable experience. I'm a software developer who's taking a break from startups and products to work on something I love. Knowing that I can put my hand on the whole stack of rendering pipeline and tweak the engine if I need to  is liberating. [If you like this post, you can follow me on twitter](https://twitter.com/devpoga).
