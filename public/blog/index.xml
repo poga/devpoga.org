@@ -13,9 +13,9 @@
       <pubDate>Fri, 01 Jul 2022 00:00:00 +0800</pubDate>
       
       <guid>https://devpoga.org/blog/2022-07-01_unity_godot_right_to_repair/</guid>
-      <description>Some years ago, Unity dominated the game engine market. Everyone would recommend Unity to fellow game developers without needing to think.
+      <description>Some years ago, Unity dominated the game engine market. Everyone would recommend Unity to fellow game developers without thinking.
 However, Unity (as a game engine) is not in a great shape right now:
-Deprecating features while the replacement isn’t ready, Creating multiple new implementations of features from scratch instead of improving what’s there. Abandoning their own features in favour of acquiring community made versions, and then abandoning them, Splitting the whole render system into two incompatible, contrary versions, deprecating the previous render system.</description>
+Deprecating features while the replacement isn’t ready, Creating multiple new implementations of features from scratch instead of improving what’s there. Abandoning their own features in favour of acquiring community-made versions, and then abandoning them, Splitting the whole render system into two incompatible, contrary versions, deprecating the previous render system.</description>
     </item>
     
     <item>
