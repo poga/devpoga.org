@@ -41,4 +41,4 @@ I'm using Godot for my creative works and so far it's an enjoyable experience. I
 
 ---
 
-If you like this post, you can follow me on [twitter](https://twitter.com/devpoga).
+Follow me on [twitter](https://twitter.com/devpoga) for more of my adventure on game development.
