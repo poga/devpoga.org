@@ -19,7 +19,7 @@ However, Unity (as a game engine) is [**not in a great shape**](https://garry.bl
 - Abandoning their own features in favour of acquiring community made versions, and then abandoning them,
 - Splitting the whole render system into two incompatible, contrary versions, deprecating the previous render system.
 - Splitting the UI system into two/three and trying to use them all at the same time,
-- ...and the worst: shutting down Unity Answers and redirecting it to the Unity Forums.
+- ...and the worst: shutting down Unity Answers and redirecting it to the Unity Forums. (Although [they walked back the decision](https://forum.unity.com/threads/unity-answers-shutdown-canceled.1293360/))
 
 It's pretty obvious that Unity (as a company) are **oblivious about their product and their customer**. The stock price and shareholders' value becomes more important than game developers.
 
@@ -31,7 +31,7 @@ Right now, Godot might not be able to compete with the convenience of [Unity Ass
 
 ## Right to Repair
 
-But the biggest benefit of using Godot (or any open-sourced game engine) is about th [Right to Repair](https://en.wikipedia.org/wiki/Right_to_repair). Without engine source code, you are not in control of your own game. One apple policy change can [put you in a rough spot](https://9to5mac.com/2022/04/24/apple-now-removing-outdated-apps-from-the-app-store-developers-complain/) and remove your creation from the storefront.
+But the biggest benefit of using Godot (or any open-sourced game engine) is about the [Right to Repair](https://en.wikipedia.org/wiki/Right_to_repair). Without engine source code, you are not in control of your own game. One apple policy change can [put you in a rough spot](https://9to5mac.com/2022/04/24/apple-now-removing-outdated-apps-from-the-app-store-developers-complain/) and remove your creation from the storefront.
 
 **Open source game engines allows you to actually "finish" your game.** Unlike most software projects, games are something that can be "finished". You might think the game is good enough as it is, and can be called "done".  But if you don't control the engine. One day you won't be able to reproduce the game again.
 
