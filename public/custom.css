@@ -3,3 +3,7 @@
     background-color: #01242e;
   }
 }
+
+a {
+  text-decoration: none !important;
+}
