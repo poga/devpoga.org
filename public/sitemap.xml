@@ -3,25 +3,31 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://devpoga.org/</loc>
-    <lastmod>2022-07-01T00:00:00+08:00</lastmod>
+    <lastmod>2022-07-23T00:00:00+08:00</lastmod>
     <priority>0</priority>
   </url><url>
     <loc>https://devpoga.org/categories/blog/</loc>
-    <lastmod>2022-07-01T00:00:00+08:00</lastmod>
+    <lastmod>2022-07-23T00:00:00+08:00</lastmod>
   </url><url>
     <loc>https://devpoga.org/blog/</loc>
-    <lastmod>2022-07-01T00:00:00+08:00</lastmod>
+    <lastmod>2022-07-23T00:00:00+08:00</lastmod>
   </url><url>
     <loc>https://devpoga.org/categories/</loc>
-    <lastmod>2022-07-01T00:00:00+08:00</lastmod>
+    <lastmod>2022-07-23T00:00:00+08:00</lastmod>
+  </url><url>
+    <loc>https://devpoga.org/blog/2022-07-23_neovim_godot/</loc>
+    <lastmod>2022-07-23T00:00:00+08:00</lastmod>
   </url><url>
     <loc>https://devpoga.org/tags/godot/</loc>
-    <lastmod>2022-07-01T00:00:00+08:00</lastmod>
+    <lastmod>2022-07-23T00:00:00+08:00</lastmod>
   </url><url>
-    <loc>https://devpoga.org/tags/opensource/</loc>
-    <lastmod>2022-07-01T00:00:00+08:00</lastmod>
+    <loc>https://devpoga.org/tags/neovim/</loc>
+    <lastmod>2022-07-23T00:00:00+08:00</lastmod>
   </url><url>
     <loc>https://devpoga.org/tags/</loc>
+    <lastmod>2022-07-23T00:00:00+08:00</lastmod>
+  </url><url>
+    <loc>https://devpoga.org/tags/opensource/</loc>
     <lastmod>2022-07-01T00:00:00+08:00</lastmod>
   </url><url>
     <loc>https://devpoga.org/tags/unity/</loc>

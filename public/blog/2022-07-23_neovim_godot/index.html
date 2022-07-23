@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <meta http-equiv="X-Clacks-Overhead" content="GNU Terry Pratchett" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Developing Godot Projects with Neovim | Dev.Poga</title>
+<meta name="title" content="Developing Godot Projects with Neovim" />
+<meta name="description" content="When I started using Godot Engine, what surprised me the most is the built-in Language Server Protocol support. Thank to it, I can easily develop GDScript with all my customized vim configs.
+Setup Install vim-godot.
+Plug &#39;habamax/vim-godot&#39; Install neovim-remote.
+pip3 install neovim-remote Setup Neovim as the external editor for Godot
+Open menu Editor/Editor Settings/ then navigate to General/External/: Tick Use external editor Set nvr to Exec Path, use which nvr to get the absolute path." />
+<meta name="keywords" content="Godot,Neovim," />
+
+
+<meta property="og:title" content="Developing Godot Projects with Neovim" />
+<meta property="og:description" content="When I started using Godot Engine, what surprised me the most is the built-in Language Server Protocol support. Thank to it, I can easily develop GDScript with all my customized vim configs.
+Setup Install vim-godot.
+Plug &#39;habamax/vim-godot&#39; Install neovim-remote.
+pip3 install neovim-remote Setup Neovim as the external editor for Godot
+Open menu Editor/Editor Settings/ then navigate to General/External/: Tick Use external editor Set nvr to Exec Path, use which nvr to get the absolute path." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://devpoga.org/blog/2022-07-23_neovim_godot/" /><meta property="article:section" content="blog" />
+<meta property="article:published_time" content="2022-07-23T00:00:00+08:00" />
+<meta property="article:modified_time" content="2022-07-23T00:00:00+08:00" />
+
+
+
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Developing Godot Projects with Neovim"/>
+<meta name="twitter:description" content="When I started using Godot Engine, what surprised me the most is the built-in Language Server Protocol support. Thank to it, I can easily develop GDScript with all my customized vim configs.
+Setup Install vim-godot.
+Plug &#39;habamax/vim-godot&#39; Install neovim-remote.
+pip3 install neovim-remote Setup Neovim as the external editor for Godot
+Open menu Editor/Editor Settings/ then navigate to General/External/: Tick Use external editor Set nvr to Exec Path, use which nvr to get the absolute path."/>
+
+
+
+<meta itemprop="name" content="Developing Godot Projects with Neovim">
+<meta itemprop="description" content="When I started using Godot Engine, what surprised me the most is the built-in Language Server Protocol support. Thank to it, I can easily develop GDScript with all my customized vim configs.
+Setup Install vim-godot.
+Plug &#39;habamax/vim-godot&#39; Install neovim-remote.
+pip3 install neovim-remote Setup Neovim as the external editor for Godot
+Open menu Editor/Editor Settings/ then navigate to General/External/: Tick Use external editor Set nvr to Exec Path, use which nvr to get the absolute path."><meta itemprop="datePublished" content="2022-07-23T00:00:00+08:00" />
+<meta itemprop="dateModified" content="2022-07-23T00:00:00+08:00" />
+<meta itemprop="wordCount" content="118">
+<meta itemprop="keywords" content="Godot,Neovim," />
+<meta name="referrer" content="no-referrer-when-downgrade" />
+
+  <style>
+  body {
+    font-family: Verdana, sans-serif;
+    margin: auto;
+    padding: 20px;
+    max-width: 720px;
+    text-align: left;
+    background-color: #fff;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    line-height: 1.5;
+    color: #444;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  strong,
+  b {
+    color: #222;
+  }
+
+  a {
+    color: #3273dc;
+     
+  }
+
+  .title {
+    text-decoration: none;
+    border: 0;
+  }
+
+  .title span {
+    font-weight: 400;
+  }
+
+  nav a {
+    margin-right: 10px;
+  }
+
+  textarea {
+    width: 100%;
+    font-size: 16px;
+  }
+
+  input {
+    font-size: 16px;
+  }
+
+  content {
+    line-height: 1.6;
+  }
+
+  table {
+    width: 100%;
+  }
+
+  img {
+    max-width: 100%;
+  }
+
+  code {
+    padding: 2px 5px;
+    background-color: #f2f2f2;
+  }
+
+  pre code {
+    color: #222;
+    display: block;
+    padding: 20px;
+    white-space: pre-wrap;
+    font-size: 14px;
+  }
+
+  div.highlight pre {
+    background-color: initial;
+    color: initial;
+  }
+
+  div.highlight code {
+    background-color: unset;
+    color: unset;
+  }
+
+  blockquote {
+    border-left: 1px solid #999;
+    color: #222;
+    padding-left: 20px;
+    font-style: italic;
+  }
+
+  footer {
+    padding: 25px;
+    text-align: center;
+  }
+
+  .helptext {
+    color: #777;
+    font-size: small;
+  }
+
+  .errorlist {
+    color: #eba613;
+    font-size: small;
+  }
+
+   
+  ul.blog-posts {
+    list-style-type: none;
+    padding: unset;
+  }
+
+  ul.blog-posts li {
+    display: flex;
+  }
+
+  ul.blog-posts li span {
+    flex: 0 0 130px;
+  }
+
+  ul.blog-posts li a:visited {
+    color: #8b6fcb;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    body {
+      background-color: #333;
+      color: #ddd;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    strong,
+    b {
+      color: #eee;
+    }
+
+    a {
+      color: #8cc2dd;
+    }
+
+    code {
+      background-color: #777;
+    }
+
+    pre code {
+      color: #ddd;
+    }
+
+    blockquote {
+      color: #ccc;
+    }
+
+    textarea,
+    input {
+      background-color: #252525;
+      color: #ddd;
+    }
+
+    .helptext {
+      color: #aaa;
+    }
+  }
+
+</style>
+<link rel="stylesheet" href="/custom.css">
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-FEFM53H9Y9"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-FEFM53H9Y9');
+</script>
+</head>
+
+<body>
+  <header><a href="/" class="title">
+  <h2>Dev.Poga</h2>
+</a>
+<nav><a href="/">Home</a>
+
+
+<a href="/blog">Blog</a>
+
+</nav>
+</header>
+  <main>
+
+<h1>Developing Godot Projects with Neovim</h1>
+<p>
+  <i>
+    <time datetime='2022-07-23' pubdate>
+      23 Jul, 2022
+    </time>
+  </i>
+</p>
+
+<content>
+  <p>When I started using <a href="https://godotengine.org/">Godot Engine</a>, what surprised me the most is the built-in <a href="https://microsoft.github.io/language-server-protocol/">Language Server Protocol</a> support. Thank to it, I can easily develop <a href="https://docs.godotengine.org/en/stable/tutorials/scripting/gdscript/gdscript_basics.html">GDScript</a> with all my customized vim configs.</p>
+<h2 id="setup">Setup</h2>
+<p>Install <a href="https://github.com/habamax/vim-godot"><code>vim-godot</code></a>.</p>
+<pre tabindex="0"><code>Plug &#39;habamax/vim-godot&#39;
+</code></pre><p>Install <a href="https://github.com/mhinz/neovim-remote"><code>neovim-remote</code></a>.</p>
+<pre tabindex="0"><code>pip3 install neovim-remote
+</code></pre><p>Setup Neovim as the external editor for Godot</p>
+<ol>
+<li>Open menu Editor/Editor Settings/ then navigate to General/External/:</li>
+<li>Tick <code>Use external editor</code></li>
+<li>Set nvr to Exec Path, use <code>which nvr</code> to get the absolute path.</li>
+<li>Add <code>--servername godothost --remote-send &quot;&lt;C-\&gt;&lt;C-N&gt;:n {file}&lt;CR&gt;:call cursor({line},{col})&lt;CR&gt;&quot;</code> to Exec Flags</li>
+</ol>
+<p>Start Neovim and listening to remote commands:</p>
+<pre tabindex="0"><code>nvim --listen godothost .
+</code></pre><p>now when you click on a script in godot it will open it in a new buffer in Neovim.</p>
+<h2 id="thats-all">That&rsquo;s all</h2>
+<p>💜</p>
+
+</content>
+<p>
+  
+  <a href="https://devpoga.org/tags/godot/">#Godot</a>
+  
+  <a href="https://devpoga.org/tags/neovim/">#Neovim</a>
+  
+</p>
+
+  </main>
+  <footer>Made with <a href="https://github.com/janraasch/hugo-bearblog/">Hugo ʕ•ᴥ•ʔ Bear</a>
+</footer>
+
+    
+</body>
+
+</html>

@@ -6,7 +6,20 @@
     <description>Recent content in Blog on Dev.Poga</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 01 Jul 2022 00:00:00 +0800</lastBuildDate><atom:link href="https://devpoga.org/categories/blog/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 23 Jul 2022 00:00:00 +0800</lastBuildDate><atom:link href="https://devpoga.org/categories/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Developing Godot Projects with Neovim</title>
+      <link>https://devpoga.org/blog/2022-07-23_neovim_godot/</link>
+      <pubDate>Sat, 23 Jul 2022 00:00:00 +0800</pubDate>
+      
+      <guid>https://devpoga.org/blog/2022-07-23_neovim_godot/</guid>
+      <description>When I started using Godot Engine, what surprised me the most is the built-in Language Server Protocol support. Thank to it, I can easily develop GDScript with all my customized vim configs.
+Setup Install vim-godot.
+Plug &amp;#39;habamax/vim-godot&amp;#39; Install neovim-remote.
+pip3 install neovim-remote Setup Neovim as the external editor for Godot
+Open menu Editor/Editor Settings/ then navigate to General/External/: Tick Use external editor Set nvr to Exec Path, use which nvr to get the absolute path.</description>
+    </item>
+    
     <item>
       <title>Unity, Godot, and Right to Repair</title>
       <link>https://devpoga.org/blog/2022-07-01_unity_godot_right_to_repair/</link>
