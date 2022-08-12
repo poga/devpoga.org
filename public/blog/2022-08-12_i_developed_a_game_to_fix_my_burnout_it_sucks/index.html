@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <meta http-equiv="X-Clacks-Overhead" content="GNU Terry Pratchett" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>I developed a game to fix my burnout. It sucks. | Dev.Poga</title>
+<meta name="title" content="I developed a game to fix my burnout. It sucks." />
+<meta name="description" content="I&rsquo;m a burnt-out programmer, never an artist. Okay?
+I&rsquo;m a typical burnt-out programmer due to typical reasons. And this time, it&rsquo;s particularly bad.
+I literally want to throw up multiple times when I&rsquo;m coding this damn game and also struggling to finish the game.
+But I still made it across the finish line. The game sucks so much that I don&rsquo;t know if it can be called a game. But I made it." />
+<meta name="keywords" content="Godot,Game," />
+
+
+<meta property="og:title" content="I developed a game to fix my burnout. It sucks." />
+<meta property="og:description" content="I&rsquo;m a burnt-out programmer, never an artist. Okay?
+I&rsquo;m a typical burnt-out programmer due to typical reasons. And this time, it&rsquo;s particularly bad.
+I literally want to throw up multiple times when I&rsquo;m coding this damn game and also struggling to finish the game.
+But I still made it across the finish line. The game sucks so much that I don&rsquo;t know if it can be called a game. But I made it." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://devpoga.org/blog/2022-08-12_i_developed_a_game_to_fix_my_burnout_it_sucks/" /><meta property="article:section" content="blog" />
+<meta property="article:published_time" content="2022-08-12T00:00:00+08:00" />
+<meta property="article:modified_time" content="2022-08-12T00:00:00+08:00" />
+
+
+
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="I developed a game to fix my burnout. It sucks."/>
+<meta name="twitter:description" content="I&rsquo;m a burnt-out programmer, never an artist. Okay?
+I&rsquo;m a typical burnt-out programmer due to typical reasons. And this time, it&rsquo;s particularly bad.
+I literally want to throw up multiple times when I&rsquo;m coding this damn game and also struggling to finish the game.
+But I still made it across the finish line. The game sucks so much that I don&rsquo;t know if it can be called a game. But I made it."/>
+
+
+
+<meta itemprop="name" content="I developed a game to fix my burnout. It sucks.">
+<meta itemprop="description" content="I&rsquo;m a burnt-out programmer, never an artist. Okay?
+I&rsquo;m a typical burnt-out programmer due to typical reasons. And this time, it&rsquo;s particularly bad.
+I literally want to throw up multiple times when I&rsquo;m coding this damn game and also struggling to finish the game.
+But I still made it across the finish line. The game sucks so much that I don&rsquo;t know if it can be called a game. But I made it."><meta itemprop="datePublished" content="2022-08-12T00:00:00+08:00" />
+<meta itemprop="dateModified" content="2022-08-12T00:00:00+08:00" />
+<meta itemprop="wordCount" content="604">
+<meta itemprop="keywords" content="Godot,Game," />
+<meta name="referrer" content="no-referrer-when-downgrade" />
+
+  <style>
+  body {
+    font-family: Verdana, sans-serif;
+    margin: auto;
+    padding: 20px;
+    max-width: 720px;
+    text-align: left;
+    background-color: #fff;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    line-height: 1.5;
+    color: #444;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  strong,
+  b {
+    color: #222;
+  }
+
+  a {
+    color: #3273dc;
+     
+  }
+
+  .title {
+    text-decoration: none;
+    border: 0;
+  }
+
+  .title span {
+    font-weight: 400;
+  }
+
+  nav a {
+    margin-right: 10px;
+  }
+
+  textarea {
+    width: 100%;
+    font-size: 16px;
+  }
+
+  input {
+    font-size: 16px;
+  }
+
+  content {
+    line-height: 1.6;
+  }
+
+  table {
+    width: 100%;
+  }
+
+  img {
+    max-width: 100%;
+  }
+
+  code {
+    padding: 2px 5px;
+    background-color: #f2f2f2;
+  }
+
+  pre code {
+    color: #222;
+    display: block;
+    padding: 20px;
+    white-space: pre-wrap;
+    font-size: 14px;
+  }
+
+  div.highlight pre {
+    background-color: initial;
+    color: initial;
+  }
+
+  div.highlight code {
+    background-color: unset;
+    color: unset;
+  }
+
+  blockquote {
+    border-left: 1px solid #999;
+    color: #222;
+    padding-left: 20px;
+    font-style: italic;
+  }
+
+  footer {
+    padding: 25px;
+    text-align: center;
+  }
+
+  .helptext {
+    color: #777;
+    font-size: small;
+  }
+
+  .errorlist {
+    color: #eba613;
+    font-size: small;
+  }
+
+   
+  ul.blog-posts {
+    list-style-type: none;
+    padding: unset;
+  }
+
+  ul.blog-posts li {
+    display: flex;
+  }
+
+  ul.blog-posts li span {
+    flex: 0 0 130px;
+  }
+
+  ul.blog-posts li a:visited {
+    color: #8b6fcb;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    body {
+      background-color: #333;
+      color: #ddd;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    strong,
+    b {
+      color: #eee;
+    }
+
+    a {
+      color: #8cc2dd;
+    }
+
+    code {
+      background-color: #777;
+    }
+
+    pre code {
+      color: #ddd;
+    }
+
+    blockquote {
+      color: #ccc;
+    }
+
+    textarea,
+    input {
+      background-color: #252525;
+      color: #ddd;
+    }
+
+    .helptext {
+      color: #aaa;
+    }
+  }
+
+</style>
+<link rel="stylesheet" href="/custom.css">
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-FEFM53H9Y9"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-FEFM53H9Y9');
+</script>
+</head>
+
+<body>
+  <header><a href="/" class="title">
+  <h2>Dev.Poga</h2>
+</a>
+<nav><a href="/">Home</a>
+
+
+<a href="/blog">Blog</a>
+
+</nav>
+</header>
+  <main>
+
+<h1>I developed a game to fix my burnout. It sucks.</h1>
+<p>
+  <i>
+    <time datetime='2022-08-12' pubdate>
+      12 Aug, 2022
+    </time>
+  </i>
+</p>
+
+<content>
+  <p><img src="./chicken.gif" alt="">
+<em>I&rsquo;m a burnt-out programmer, never an artist. Okay?</em></p>
+<hr>
+<p>I&rsquo;m a typical burnt-out programmer due to typical reasons. And this time, it&rsquo;s particularly bad.</p>
+<p>I literally want to throw up multiple times when I&rsquo;m coding this damn game and also struggling to <a href="https://makegames.tumblr.com/post/1136623767/finishing-a-game">finish the game</a>.</p>
+<p>But I still made it across the finish line. The game sucks so much that I don&rsquo;t know if it can be called a game. But I made it.</p>
+<p>And now, I can share this cute vibing chicken with you.</p>
+<h2 id="iterating-game-idea-is-hard">Iterating Game Idea is Hard</h2>
+<p>The game started as a <a href="https://store.steampowered.com/app/1794680/Vampire_Survivors/">Vampire-Survivor</a>-like action game, then it becomes a farming simulator, morphed into a <a href="https://en.wikipedia.org/wiki/Roguelike">rogue-like</a> strategy game with meta-progression, and finally to a bare-bone music player that beeps when you mouse-over an egg.</p>
+<p>What I learned is: The game engine barely matters.</p>
+<p>The first step of <a href="https://makegames.tumblr.com/post/1136623767/finishing-a-game">finishing a game</a> is finding a core loop that&rsquo;s fun: collecting stuff, shooting at things, running across obstacles. Any game engine can support almost any kind of core loops.</p>
+<p>The hardest part is about iterating as fast as possible to find a fun core loop before you decide to give up. And I struggled so much on this front due to my inexperience in game development and tooling.</p>
+<h2 id="the-3-tiers-architecture-for-games">The 3-tiers Architecture for Games</h2>
+<p>~2010 is the last time I made a game. The only thing I still remember is the 3-tier architecture for games (and sorry, I can&rsquo;t find anything online):</p>
+<p><img src="./arch.png" alt=""></p>
+<p>The idea is: Your engine should be solid and correct, but games are inherently messy and full of edge cases. So push those workarounds into your data (like duplicated entry, weird value for special boss battle&hellip; etc) as much as possible.</p>
+<p>I took the advice wholeheartedly, but it really requires experience to apply the pattern to modern game engines such as <a href="https://unity.com/">Unity</a>, <a href="https://www.unrealengine.com/en-US">Unreal</a>, or <a href="https://godotengine.org/">Godot</a>.</p>
+<p>My game is a bunch of spaghetti <a href="https://docs.godotengine.org/en/stable/tutorials/scripting/gdscript/gdscript_basics.html">GDScript</a> that slowed down my prototyping quite a lot. And it&rsquo;s mostly my fault.</p>
+<h2 id="the-speed-of-iterating">The Speed of Iterating</h2>
+<p>&ldquo;Live Reloading&rdquo; may be optional for system programming or web development, but IMO it&rsquo;s the essence of game development. You don&rsquo;t want to restart the game, play it to a certain state (it might takes 5 minutes), then finally see that your minor design tweak doesn&rsquo;t work.</p>
+<p>The 3-tier architecture is designed for live-reloading; each tier can be reloaded dynamically. so the best case is you should never leave your game and have an extremely short feedback loop.</p>
+<p>I tried to force myself to avoid complex architecture and taste the tool (in this case, GDScript) the engine wants me to use. It worked. If I&rsquo;m not forcing myself to do so, I don&rsquo;t think I can finish the game. Instead, I will be drowning in the sea of refactoring and technologies.</p>
+<p>And it makes me want more.</p>
+<h2 id="then-i-remembered">Then I remembered</h2>
+<p>Then I remembered that I&rsquo;m a pretty good hacker. As long as I have the code, I can make it do whatever I want in the worst possible way.</p>
+<p>What if I integrate it with some Lisp-like languages, since Lisp is the holy grail of mixing data and code?</p>
+<p>What if I focus on making a better data-driven design tool that runs on a spreadsheet engine?</p>
+<p>Since it&rsquo;s my own game, What if I use whatever exotic language I like: <a href="https://ocaml.org/">Ocaml</a>, <a href="https://haxe.org/">Haxe</a> , or <a href="https://janet-lang.org/">janet</a> without caring about &ldquo;teammates&rdquo;?</p>
+<p>But most importantly, I remembered that I started programming because I like games. And now I want to make more games before my life ends. There&rsquo;s so many things I cannot control. So I need to make games now.</p>
+<p>And at least I drew this egg.</p>
+<p><img src="./egg.png" alt=""></p>
+
+</content>
+<p>
+  
+  <a href="https://devpoga.org/tags/godot/">#Godot</a>
+  
+  <a href="https://devpoga.org/tags/game/">#Game</a>
+  
+</p>
+
+  </main>
+  <footer><hr />
+<h2>Hi, I'm Poga</h2>
+<p>
+Follow me on <a href="https://twitter.com/devpoga">Twitter</a> or checkout my other <a href="/blog">blog posts</a>
+</p>
+Made with <a href="https://github.com/janraasch/hugo-bearblog/">Hugo ʕ•ᴥ•ʔ Bear</a>
+</footer>
+
+    
+</body>
+
+</html>
