@@ -11,3 +11,29 @@
 a {
   text-decoration: none !important;
 }
+body {
+  max-width: 880px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  letter-spacing: 0.05rem;
+  font-weight: bold;
+  line-height: 1.5em;
+  position: relative;
+}
+
+h2:before {
+  position: absolute;
+  top: 0px;
+  left: -1.5rem;
+  color: grey;
+  content: "#";
+}
+
+hr {
+  border: 0.5px dashed #8c8c8c;
+  opacity: .5;
+  margin: 0;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}

@@ -12,6 +12,7 @@ timeZone = "Asia/Taipei"
     paginate = 15
     description = ""
     dateFormatToUse = "2006-01-02"
+    hideMadeWithLine = true
 
 [markup.goldmark.renderer]
 unsafe= true
