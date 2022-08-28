@@ -3,17 +3,32 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://devpoga.org/</loc>
-    <lastmod>2022-08-12T00:00:00+08:00</lastmod>
+    <lastmod>2022-08-28T00:00:00+08:00</lastmod>
     <priority>0</priority>
   </url><url>
     <loc>https://devpoga.org/categories/blog/</loc>
-    <lastmod>2022-08-12T00:00:00+08:00</lastmod>
+    <lastmod>2022-08-28T00:00:00+08:00</lastmod>
   </url><url>
     <loc>https://devpoga.org/blog/</loc>
-    <lastmod>2022-08-12T00:00:00+08:00</lastmod>
+    <lastmod>2022-08-28T00:00:00+08:00</lastmod>
   </url><url>
     <loc>https://devpoga.org/categories/</loc>
-    <lastmod>2022-08-12T00:00:00+08:00</lastmod>
+    <lastmod>2022-08-28T00:00:00+08:00</lastmod>
+  </url><url>
+    <loc>https://devpoga.org/blog/2022-08-28_cheap_complexity_cybersecurity/</loc>
+    <lastmod>2022-08-28T00:00:00+08:00</lastmod>
+  </url><url>
+    <loc>https://devpoga.org/tags/complexity/</loc>
+    <lastmod>2022-08-28T00:00:00+08:00</lastmod>
+  </url><url>
+    <loc>https://devpoga.org/tags/programming/</loc>
+    <lastmod>2022-08-28T00:00:00+08:00</lastmod>
+  </url><url>
+    <loc>https://devpoga.org/tags/security/</loc>
+    <lastmod>2022-08-28T00:00:00+08:00</lastmod>
+  </url><url>
+    <loc>https://devpoga.org/tags/</loc>
+    <lastmod>2022-08-28T00:00:00+08:00</lastmod>
   </url><url>
     <loc>https://devpoga.org/tags/game/</loc>
     <lastmod>2022-08-12T00:00:00+08:00</lastmod>
@@ -22,9 +37,6 @@
     <lastmod>2022-08-12T00:00:00+08:00</lastmod>
   </url><url>
     <loc>https://devpoga.org/blog/2022-08-12_i_developed_a_game_to_fix_my_burnout_it_sucks/</loc>
-    <lastmod>2022-08-12T00:00:00+08:00</lastmod>
-  </url><url>
-    <loc>https://devpoga.org/tags/</loc>
     <lastmod>2022-08-12T00:00:00+08:00</lastmod>
   </url><url>
     <loc>https://devpoga.org/blog/2022-07-23_neovim_godot/</loc>
@@ -55,9 +67,6 @@
     <lastmod>2022-01-15T00:00:00+08:00</lastmod>
   </url><url>
     <loc>https://devpoga.org/blog/2022-01-03_grpc_status_code/</loc>
-    <lastmod>2022-01-03T00:56:00+08:00</lastmod>
-  </url><url>
-    <loc>https://devpoga.org/tags/programming/</loc>
     <lastmod>2022-01-03T00:56:00+08:00</lastmod>
   </url><url>
     <loc>https://devpoga.org/tags/glues/</loc>
@@ -190,9 +199,6 @@
     <lastmod>2020-04-10T00:00:00+08:00</lastmod>
   </url><url>
     <loc>https://devpoga.org/tags/networking/</loc>
-    <lastmod>2020-04-09T00:00:00+08:00</lastmod>
-  </url><url>
-    <loc>https://devpoga.org/tags/security/</loc>
     <lastmod>2020-04-09T00:00:00+08:00</lastmod>
   </url><url>
     <loc>https://devpoga.org/blog/2020-04-09_zero-trust-network/</loc>

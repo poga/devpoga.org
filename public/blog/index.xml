@@ -6,7 +6,18 @@
     <description>Recent content in Blogs on Dev.Poga</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 12 Aug 2022 00:00:00 +0800</lastBuildDate><atom:link href="https://devpoga.org/blog/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 28 Aug 2022 00:00:00 +0800</lastBuildDate><atom:link href="https://devpoga.org/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Cheap Complexity and Cybersecurity</title>
+      <link>https://devpoga.org/blog/2022-08-28_cheap_complexity_cybersecurity/</link>
+      <pubDate>Sun, 28 Aug 2022 00:00:00 +0800</pubDate>
+      
+      <guid>https://devpoga.org/blog/2022-08-28_cheap_complexity_cybersecurity/</guid>
+      <description>A recurrent theme of modern security is the importance of complexity and the difficulty of containing it. With GPUs, NICs, basebands, and specialized hardware such as TPUs, things are objectively getting more complicated at a superlinear rate.
+In a world where complexity continues to grow, it is hard to provide security guarantees. The problem of escalating complexity becomes an escalated security problem.
+What&amp;rsquo;s driving the complexity? &amp;ldquo;How does one design an electric motor?</description>
+    </item>
+    
     <item>
       <title>I developed a game to fix my burnout. It sucks.</title>
       <link>https://devpoga.org/blog/2022-08-12_i_developed_a_game_to_fix_my_burnout_it_sucks/</link>
