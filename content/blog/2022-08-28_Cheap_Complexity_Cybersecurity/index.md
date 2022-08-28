@@ -91,4 +91,4 @@ This is a historic opportunity to influence the design of computing for the next
 
 ## Reference
 
-Most of the idea is based on [Halver Flake's](https://twitter.com/halvarflake) amazing [talk at CYCON](https://www.err.ee/836236/video-google-0-projekti-tarkvarainseneri-ettekanne-cyconil).
+This post is pretty much a digest of [Halver Flake's](https://twitter.com/halvarflake) amazing [talk at CYCON](https://www.err.ee/836236/video-google-0-projekti-tarkvarainseneri-ettekanne-cyconil) mixed with my thoughts. I encourage you to watch the origin talk.
