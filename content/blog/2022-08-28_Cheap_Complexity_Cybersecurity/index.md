@@ -73,7 +73,7 @@ Security and inspectability require a lot of re-engineering. No one wants to re-
 
 Luckily, **single-core scaling is dead**. And we're designing new architectures and programming models for the first time since the 1980s, for good economic reasons.
 
-We already have a good example of the approach: [Rust](https://www.rust-lang.org/). Most companies adopt Rust due to its economic benefits: **fearless concurrency and faster software**. But it also introduced a huge benefit to security: **using the right type of system to kill entire fields of exploits (use-after-frees)**.
+We already have a good example of the approach: [Rust](https://www.rust-lang.org/). Most companies adopt Rust due to its economic benefits: **fearless concurrency and faster software**. But it also introduced a huge benefit to security: **using the type system to kill entire fields of exploits (use-after-frees)**.
 
 ## Conclusion
 
