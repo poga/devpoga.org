@@ -6,7 +6,19 @@
     <description>Recent content in Blogs on Dev.Poga</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 28 Aug 2022 00:00:00 +0800</lastBuildDate><atom:link href="https://devpoga.org/blog/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 02 Jan 2023 00:00:00 +0800</lastBuildDate><atom:link href="https://devpoga.org/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Start with the Least Malleable</title>
+      <link>https://devpoga.org/blog/2023-01-02_start_with_the_least_malleable/</link>
+      <pubDate>Mon, 02 Jan 2023 00:00:00 +0800</pubDate>
+      
+      <guid>https://devpoga.org/blog/2023-01-02_start_with_the_least_malleable/</guid>
+      <description>Resources you&amp;rsquo;re going to encounter in your career, from least malleable to most malleable:
+People Process Code Always start with the people. People are shaped by their life. It&amp;rsquo;s impossible to rapidly change a person without some crazy stuff happen.
+Run if people make you feel uncomfortable. Since It&amp;rsquo;s not worthy to spend your life to change some other people just to have an okay career.
+Processes can be changed. But processes are tied to incentives.</description>
+    </item>
+    
     <item>
       <title>Cheap Complexity and Cybersecurity</title>
       <link>https://devpoga.org/blog/2022-08-28_cheap_complexity_cybersecurity/</link>

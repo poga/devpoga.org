@@ -6,11 +6,11 @@
     <description>Recent content in Tags on Dev.Poga</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 28 Aug 2022 00:00:00 +0800</lastBuildDate><atom:link href="https://devpoga.org/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 02 Jan 2023 00:00:00 +0800</lastBuildDate><atom:link href="https://devpoga.org/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Complexity</title>
       <link>https://devpoga.org/tags/complexity/</link>
-      <pubDate>Sun, 28 Aug 2022 00:00:00 +0800</pubDate>
+      <pubDate>Mon, 02 Jan 2023 00:00:00 +0800</pubDate>
       
       <guid>https://devpoga.org/tags/complexity/</guid>
       <description></description>
@@ -19,9 +19,18 @@
     <item>
       <title>programming</title>
       <link>https://devpoga.org/tags/programming/</link>
-      <pubDate>Sun, 28 Aug 2022 00:00:00 +0800</pubDate>
+      <pubDate>Mon, 02 Jan 2023 00:00:00 +0800</pubDate>
       
       <guid>https://devpoga.org/tags/programming/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>System Design</title>
+      <link>https://devpoga.org/tags/system-design/</link>
+      <pubDate>Mon, 02 Jan 2023 00:00:00 +0800</pubDate>
+      
+      <guid>https://devpoga.org/tags/system-design/</guid>
       <description></description>
     </item>
     

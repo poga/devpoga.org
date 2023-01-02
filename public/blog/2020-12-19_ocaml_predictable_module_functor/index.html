@@ -20,7 +20,6 @@
 
 
 
-
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Predictable Performance of OCaml&#39;s Module System"/>
 <meta name="twitter:description" content=" OCaml&rsquo;s module system can be a powerful tool for building generic code and structuring systems. Functors are functions from modules to modules and they serve an important role for the power of module system. However, I want to know if functors (and the module system) can be optimized away by the OCaml compiler."/>
@@ -311,11 +310,11 @@
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#75715e">(* a functor which takes a JustAnInt and return a JustAnInt *)</span>
 </span></span><span style="display:flex;"><span><span style="color:#66d9ef">module</span> <span style="color:#a6e22e">Increment</span> <span style="color:#f92672">(</span><span style="color:#a6e22e">M</span><span style="color:#f92672">:</span> <span style="color:#a6e22e">JustAnInt</span><span style="color:#f92672">)</span> <span style="color:#f92672">:</span> <span style="color:#a6e22e">JustAnInt</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">struct</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">let</span> x <span style="color:#f92672">=</span> M.x <span style="color:#f92672">+</span> 1
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">let</span> x <span style="color:#f92672">=</span> M.x <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span>
 </span></span><span style="display:flex;"><span><span style="color:#66d9ef">end</span>
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#66d9ef">let</span> inc x <span style="color:#f92672">=</span>
-</span></span><span style="display:flex;"><span>    x <span style="color:#f92672">+</span> 1
+</span></span><span style="display:flex;"><span>    x <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span>
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#75715e">(* camlExample__inc_71:
 </span></span></span><span style="display:flex;"><span><span style="color:#75715e">        addq    $2, %rax
@@ -323,7 +322,7 @@
 </span></span></span><span style="display:flex;"><span><span style="color:#75715e">        *)</span>
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#66d9ef">module</span> <span style="color:#a6e22e">One</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">struct</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">let</span> x <span style="color:#f92672">=</span> 1
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">let</span> x <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>
 </span></span><span style="display:flex;"><span><span style="color:#66d9ef">end</span>
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#66d9ef">module</span> <span style="color:#a6e22e">Two</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">Increment</span><span style="color:#f92672">(</span><span style="color:#a6e22e">One</span><span style="color:#f92672">)</span>

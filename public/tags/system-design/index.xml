@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>System Design on Dev.Poga</title>
+    <link>https://devpoga.org/tags/system-design/</link>
+    <description>Recent content in System Design on Dev.Poga</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 02 Jan 2023 00:00:00 +0800</lastBuildDate><atom:link href="https://devpoga.org/tags/system-design/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Start with the Least Malleable</title>
+      <link>https://devpoga.org/blog/2023-01-02_start_with_the_least_malleable/</link>
+      <pubDate>Mon, 02 Jan 2023 00:00:00 +0800</pubDate>
+      
+      <guid>https://devpoga.org/blog/2023-01-02_start_with_the_least_malleable/</guid>
+      <description>Resources you&amp;rsquo;re going to encounter in your career, from least malleable to most malleable:
+People Process Code Always start with the people. People are shaped by their life. It&amp;rsquo;s impossible to rapidly change a person without some crazy stuff happen.
+Run if people make you feel uncomfortable. Since It&amp;rsquo;s not worthy to spend your life to change some other people just to have an okay career.
+Processes can be changed. But processes are tied to incentives.</description>
+    </item>
+    
+  </channel>
+</rss>

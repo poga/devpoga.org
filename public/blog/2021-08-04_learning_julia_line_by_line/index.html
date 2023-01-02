@@ -22,7 +22,6 @@ Reading it is an enjoyable experience. The note I&rsquo;ve writtend down is here
 
 
 
-
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Learning Julia, Line by Line"/>
 <meta name="twitter:description" content="Cardsjl is a simple Julia package which demonstrate many interesting bits of the Julia Programming Language.
@@ -427,7 +426,7 @@ Reading it is an enjoyable experience. The note I&rsquo;ve writtend down is here
 </span></span><span style="display:flex;"><span><span style="color:#75715e"># Finally, we wrap our not-so-safe fuction with a bounded-checked `getindex` function</span>
 </span></span><span style="display:flex;"><span><span style="color:#66d9ef">function</span> Base<span style="color:#f92672">.</span>getindex(h<span style="color:#f92672">::</span><span style="color:#66d9ef">Hand</span>, i<span style="color:#f92672">::</span><span style="color:#66d9ef">Integer</span>)
 </span></span><span style="display:flex;"><span>  <span style="color:#75715e"># The `@boundscheck` macro allows the bound check to be ignored with `@inbound` macro</span>
-</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">@boundscheck</span> <span style="color:#ae81ff">1</span> <span style="color:#f92672">≤</span> i <span style="color:#f92672">≤</span> length(h) <span style="color:#f92672">||</span> throw(<span style="color:#66d9ef">BoundsError</span>(h,i))
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">@boundscheck</span> <span style="color:#ae81ff">1</span> <span style="color:#f92672">≤</span><span style="color:#960050;background-color:#1e0010"> </span>i <span style="color:#f92672">≤</span> length(h) <span style="color:#f92672">||</span> throw(<span style="color:#66d9ef">BoundsError</span>(h,i))
 </span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">return</span> Base<span style="color:#f92672">.</span>unsafe_getindex(h, i)
 </span></span><span style="display:flex;"><span><span style="color:#66d9ef">end</span>
 </span></span><span style="display:flex;"><span>
