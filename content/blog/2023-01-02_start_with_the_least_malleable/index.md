@@ -10,6 +10,10 @@ categories:
   - Blog
 ---
 
+Always start with the least malleable whenever you're onboarding to a new job, switching careers, or just joining a new project.
+
+---
+
 Resources you're going to encounter in your career, from least malleable to most malleable:
 
 1. People
