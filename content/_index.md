@@ -2,7 +2,7 @@
 
 Hi, I'm Poga. You can contact me via [email](mailto://hi@devpoga.org) or [mastodon](https://g0v.social/@poga).
 
-I work on connecting things in different domains such as tech, design, language, security, and privacy. In no particular order of preference:
+I work on connecting things in different domains such as product, system, tech, security, and privacy.
 
 - My thoughts on Modern Cybersecurity: [Cheap Complexity and Cybersecurity](https://devpoga.org/blog/2022-08-28_cheap_complexity_cybersecurity/)
 - [g0v.social](https://g0v.social): a self-sustainable, federated social network.
