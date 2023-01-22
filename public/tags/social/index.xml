@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Mastodon on Dev.Poga</title>
-    <link>https://devpoga.org/tags/mastodon/</link>
-    <description>Recent content in Mastodon on Dev.Poga</description>
+    <title>social on Dev.Poga</title>
+    <link>https://devpoga.org/tags/social/</link>
+    <description>Recent content in social on Dev.Poga</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 22 Jan 2023 00:00:00 +0800</lastBuildDate><atom:link href="https://devpoga.org/tags/mastodon/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 22 Jan 2023 00:00:00 +0800</lastBuildDate><atom:link href="https://devpoga.org/tags/social/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>The g0v.social Mantra</title>
       <link>https://devpoga.org/blog/2023-01-22_mantra_g0v_social/</link>
@@ -17,15 +17,6 @@
 Traditionally, social networks seek to radicalize people; the more toxic you become, the more traffic the platform will receive, and thus the greater the profit.
 We used to use the internet to escape from reality. But now we return to reality to escape the toxicity of the internet.
 The platform has taught us to post radical content, misinformation, hatred, and dunks in order to receive more feedback (likes, reposts) from the platform.</description>
-    </item>
-    
-    <item>
-      <title>The journey of g0v.social</title>
-      <link>https://devpoga.org/blog/2020-11-29-g0v.social-journey/</link>
-      <pubDate>Sun, 29 Nov 2020 00:00:00 +0800</pubDate>
-      
-      <guid>https://devpoga.org/blog/2020-11-29-g0v.social-journey/</guid>
-      <description>&lt;p&gt;Slides for &lt;a href=&#34;https://summit.g0v.tw/2020/&#34;&gt;g0v summit 2020&lt;/a&gt;.&lt;/p&gt;</description>
     </item>
     
   </channel>
