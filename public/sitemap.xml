@@ -3,17 +3,29 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://devpoga.org/</loc>
-    <lastmod>2023-01-22T00:00:00+08:00</lastmod>
+    <lastmod>2023-02-19T00:00:00+08:00</lastmod>
     <priority>0</priority>
   </url><url>
     <loc>https://devpoga.org/categories/blog/</loc>
-    <lastmod>2023-01-22T00:00:00+08:00</lastmod>
+    <lastmod>2023-02-19T00:00:00+08:00</lastmod>
   </url><url>
     <loc>https://devpoga.org/blog/</loc>
-    <lastmod>2023-01-22T00:00:00+08:00</lastmod>
+    <lastmod>2023-02-19T00:00:00+08:00</lastmod>
   </url><url>
     <loc>https://devpoga.org/categories/</loc>
-    <lastmod>2023-01-22T00:00:00+08:00</lastmod>
+    <lastmod>2023-02-19T00:00:00+08:00</lastmod>
+  </url><url>
+    <loc>https://devpoga.org/tags/hacking/</loc>
+    <lastmod>2023-02-19T00:00:00+08:00</lastmod>
+  </url><url>
+    <loc>https://devpoga.org/blog/2023-02-19_hacking_lost_art/</loc>
+    <lastmod>2023-02-19T00:00:00+08:00</lastmod>
+  </url><url>
+    <loc>https://devpoga.org/tags/programming/</loc>
+    <lastmod>2023-02-19T00:00:00+08:00</lastmod>
+  </url><url>
+    <loc>https://devpoga.org/tags/</loc>
+    <lastmod>2023-02-19T00:00:00+08:00</lastmod>
   </url><url>
     <loc>https://devpoga.org/tags/mastodon/</loc>
     <lastmod>2023-01-22T00:00:00+08:00</lastmod>
@@ -21,16 +33,10 @@
     <loc>https://devpoga.org/tags/social/</loc>
     <lastmod>2023-01-22T00:00:00+08:00</lastmod>
   </url><url>
-    <loc>https://devpoga.org/tags/</loc>
-    <lastmod>2023-01-22T00:00:00+08:00</lastmod>
-  </url><url>
     <loc>https://devpoga.org/blog/2023-01-22_mantra_g0v_social/</loc>
     <lastmod>2023-01-22T00:00:00+08:00</lastmod>
   </url><url>
     <loc>https://devpoga.org/tags/complexity/</loc>
-    <lastmod>2023-01-02T00:00:00+08:00</lastmod>
-  </url><url>
-    <loc>https://devpoga.org/tags/programming/</loc>
     <lastmod>2023-01-02T00:00:00+08:00</lastmod>
   </url><url>
     <loc>https://devpoga.org/blog/2023-01-02_start_with_the_least_malleable/</loc>
