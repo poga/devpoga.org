@@ -11,7 +11,18 @@ params:
   assets:
     disableFingerprinting: true
   env: production
+  homeInfoParams:
+      Title: 👋 Hi there
+  ShowBreadCrumbs: true
 
+
+  socialIcons: # optional
+      - name: rss
+        url: /index.xml
+      - name: github
+        url: https://github.com/poga
+      - name: mastodon
+        url: https://g0v.socia/@poga
 menu:
   main:
     - identifier: archives
