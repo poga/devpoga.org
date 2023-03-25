@@ -4,10 +4,8 @@ Hi, I'm Poga. You can contact me via [email](mailto://hi@devpoga.org) or <a rel=
 
 I work on connecting things in different domains such as product, system, tech, security, and privacy.
 
-- My thoughts on Modern Cybersecurity: [Cheap Complexity and Cybersecurity](https://devpoga.org/blog/2022-08-28_cheap_complexity_cybersecurity/)
 - [g0v.social](https://g0v.social): a self-sustainable, federated social network.
 - [Awesome Federated Learning](https://github.com/poga/awesome-federated-learning): Machine Learning: resources for Federated learning.
-- [Actix-Lua](https://github.com/poga/actix-lua): a safe [lua](https://www.Lua.org/) scripting environment for [ Rust ](https://www.rust-lang.org/)
 - [Vis-Chip-8](https://github.com/poga/vis-chip-8): a visual [Chip-8](https://en.wikipedia.org/wiki/CHIP-8) Emulator, made with [Haxe](https://haxe.org/)
 
 ...and many other [open-source projects](https://github.com/poga).
