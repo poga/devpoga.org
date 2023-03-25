@@ -1,0 +1,20 @@
+baseURL: 'https://devpoga.org/'
+languageCode: en-us
+title: Dev.Poga
+theme: PaperMod
+hasCJKLanguage: true
+timeZone: Asia/Taipei
+params:
+  paginate: 15
+  description: ''
+  dateFormatToUse: '2006-01-02'
+  assets:
+    disableFingerprinting: true
+  env: production
+
+menu:
+  main:
+    - identifier: archives
+      name: Posts
+      url: /posts/
+      weight: 30
