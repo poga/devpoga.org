@@ -22,7 +22,7 @@ params:
       - name: github
         url: https://github.com/poga
       - name: mastodon
-        url: https://g0v.socia/@poga
+        url: https://g0v.social/@poga
 menu:
   main:
     - identifier: archives
