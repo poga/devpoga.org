@@ -26,6 +26,6 @@ params:
 menu:
   main:
     - identifier: archives
-      name: Posts
-      url: /posts/
+      name: Archives
+      url: /archives/
       weight: 30
