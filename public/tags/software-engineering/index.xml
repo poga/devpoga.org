@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Software Engineering on Dev.Poga</title>
     <link>https://devpoga.org/tags/software-engineering/</link>
@@ -13,7 +13,8 @@
       <pubDate>Fri, 10 Apr 2020 00:00:00 +0800</pubDate>
       
       <guid>https://devpoga.org/blog/2020-04-10_domain-modeling-made-functional/</guid>
-      <description>&lt;p&gt;&lt;img src=&#34;https://devpoga.org/post/2020-04-10_domain-modeling-made-functional/book.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+      <description>&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://devpoga.org/post/2020-04-10_domain-modeling-made-functional/book.jpg&#34; alt=&#34;&#34;  /&gt;
+&lt;/p&gt;
 &lt;p&gt;Notes on the book &lt;a href=&#34;https://www.amazon.com/Domain-Modeling-Made-Functional-Domain-Driven/dp/1680502549&#34;&gt;Domain Modeling Made Functional: Tackle Software Complexity with Domain-Driven Design and F#&lt;/a&gt;.&lt;/p&gt;</description>
     </item>
     

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Note on Dev.Poga</title>
     <link>https://devpoga.org/tags/note/</link>
@@ -13,7 +13,8 @@
       <pubDate>Fri, 10 Apr 2020 00:00:00 +0800</pubDate>
       
       <guid>https://devpoga.org/blog/2020-04-10_domain-modeling-made-functional/</guid>
-      <description>&lt;p&gt;&lt;img src=&#34;https://devpoga.org/post/2020-04-10_domain-modeling-made-functional/book.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+      <description>&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://devpoga.org/post/2020-04-10_domain-modeling-made-functional/book.jpg&#34; alt=&#34;&#34;  /&gt;
+&lt;/p&gt;
 &lt;p&gt;Notes on the book &lt;a href=&#34;https://www.amazon.com/Domain-Modeling-Made-Functional-Domain-Driven/dp/1680502549&#34;&gt;Domain Modeling Made Functional: Tackle Software Complexity with Domain-Driven Design and F#&lt;/a&gt;.&lt;/p&gt;</description>
     </item>
     
@@ -23,7 +24,8 @@
       <pubDate>Thu, 09 Apr 2020 00:00:00 +0800</pubDate>
       
       <guid>https://devpoga.org/blog/2020-04-09_zero-trust-network/</guid>
-      <description>&lt;p&gt;&lt;img src=&#34;https://devpoga.org/post/2020-04-09_zero-trust-network/book.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+      <description>&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://devpoga.org/post/2020-04-09_zero-trust-network/book.jpg&#34; alt=&#34;&#34;  /&gt;
+&lt;/p&gt;
 &lt;p&gt;Notes on the book &lt;a href=&#34;https://www.amazon.com/Zero-Trust-Networks-Building-Untrusted/dp/1491962194&#34;&gt;Zero Trust Network&lt;/a&gt;.&lt;/p&gt;</description>
     </item>
     
@@ -33,7 +35,8 @@
       <pubDate>Wed, 04 Sep 2019 00:00:00 +0800</pubDate>
       
       <guid>https://devpoga.org/blog/2019-09-04_notes_on_the_signal_protocol/</guid>
-      <description>&lt;p&gt;&lt;img src=&#34;https://devpoga.org/post/2019-09-04_notes_on_the_signal_protocol/dh.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+      <description>&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://devpoga.org/post/2019-09-04_notes_on_the_signal_protocol/dh.png&#34; alt=&#34;&#34;  /&gt;
+&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;So, I assume you&amp;rsquo;re already familiar with &lt;a href=&#34;https://en.wikipedia.org/wiki/Public-key_cryptography&#34;&gt;Public-key cryptography&lt;/a&gt; and &lt;a href=&#34;https://en.wikipedia.org/wiki/Diffie%E2%80%93Hellman_key_exchange&#34;&gt;Diffie-Hellman key exchange&lt;/a&gt;. If not, there are lots of good materials about them. Check them out first!&lt;/p&gt;
 &lt;/blockquote&gt;

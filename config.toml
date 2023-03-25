@@ -2,7 +2,9 @@ baseURL = "https://devpoga.org/"
 languageCode = "en-us"
 title = "Dev.Poga"
 
-theme = "hugo-bearblog"
+#theme = "hugo-bearblog"
+theme = "PaperMod"
+
 
 hasCJKLanguage = true
 

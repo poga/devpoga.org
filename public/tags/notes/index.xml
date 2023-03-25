@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Notes on Dev.Poga</title>
     <link>https://devpoga.org/tags/notes/</link>
@@ -32,7 +32,8 @@
       <pubDate>Sat, 24 Jul 2021 00:00:00 +0800</pubDate>
       
       <guid>https://devpoga.org/blog/2021-07-25_organization_health/</guid>
-      <description>&lt;p&gt;&lt;img src=&#34;https://devpoga.org/post/2021-07-25_organization_health/book.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;</description>
+      <description>&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://devpoga.org/post/2021-07-25_organization_health/book.jpg&#34; alt=&#34;&#34;  /&gt;
+&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -52,7 +53,8 @@ Alternatively, you can create a symlink in ~/quicklisp/local-projects/.</descrip
       <pubDate>Sun, 25 Apr 2021 00:00:00 +0800</pubDate>
       
       <guid>https://devpoga.org/blog/2021-04-25_common_lisp_condition_system/</guid>
-      <description>&lt;p&gt;&lt;img src=&#34;https://devpoga.org/post/2021-04-25_common_lisp_condition_system/book.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;</description>
+      <description>&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://devpoga.org/post/2021-04-25_common_lisp_condition_system/book.jpg&#34; alt=&#34;&#34;  /&gt;
+&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -61,7 +63,8 @@ Alternatively, you can create a symlink in ~/quicklisp/local-projects/.</descrip
       <pubDate>Sun, 07 Jun 2020 00:00:00 +0800</pubDate>
       
       <guid>https://devpoga.org/blog/2020-06-07-concurrency-clojure-racket-gerbil/</guid>
-      <description>&lt;p&gt;&lt;img src=&#34;https://devpoga.org/post/2020-06-07-concurrency-clojure-racket-gerbil/index.jpeg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;</description>
+      <description>&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://devpoga.org/post/2020-06-07-concurrency-clojure-racket-gerbil/index.jpeg&#34; alt=&#34;&#34;  /&gt;
+&lt;/p&gt;</description>
     </item>
     
     <item>

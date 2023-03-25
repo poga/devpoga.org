@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>programming on Dev.Poga</title>
     <link>https://devpoga.org/tags/programming/</link>
@@ -68,7 +68,8 @@ What&amp;rsquo;s driving the complexity? &amp;ldquo;How does one design an elect
       <pubDate>Sat, 18 Sep 2021 00:00:00 +0800</pubDate>
       
       <guid>https://devpoga.org/blog/2021-09-18_on_glue_systems/</guid>
-      <description>&lt;p&gt;&lt;img src=&#34;https://devpoga.org/post/2021-09-18_on_glue_systems/glue.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+      <description>&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://devpoga.org/post/2021-09-18_on_glue_systems/glue.jpg&#34; alt=&#34;&#34;  /&gt;
+&lt;/p&gt;
 &lt;p&gt;I spent most of my life building glue systems.&lt;/p&gt;
 &lt;p&gt;Sometimes, I got to work on a deep, sparkling project. But most of the time, my work is about gluing things together.&lt;/p&gt;</description>
     </item>
@@ -109,7 +110,8 @@ Alternatively, you can create a symlink in ~/quicklisp/local-projects/.</descrip
       <pubDate>Sun, 25 Apr 2021 00:00:00 +0800</pubDate>
       
       <guid>https://devpoga.org/blog/2021-04-25_common_lisp_condition_system/</guid>
-      <description>&lt;p&gt;&lt;img src=&#34;https://devpoga.org/post/2021-04-25_common_lisp_condition_system/book.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;</description>
+      <description>&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://devpoga.org/post/2021-04-25_common_lisp_condition_system/book.jpg&#34; alt=&#34;&#34;  /&gt;
+&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -118,7 +120,8 @@ Alternatively, you can create a symlink in ~/quicklisp/local-projects/.</descrip
       <pubDate>Sat, 19 Dec 2020 00:00:00 +0800</pubDate>
       
       <guid>https://devpoga.org/blog/2020-12-19_ocaml_predictable_module_functor/</guid>
-      <description>&lt;img src=&#34;https://devpoga.org/post/2020-12-19_ocaml_predictable_module_functor/camel.jpg&#34; alt=&#34;&#34;&gt; OCaml&amp;rsquo;s &lt;a href=&#34;https://dev.realworldocaml.org/files-modules-and-programs.html&#34;&gt;module system&lt;/a&gt; can be a powerful tool for building generic code and structuring systems. Functors are functions from modules to modules and they serve an important role for the power of module system. However, I want to know if functors (and the module system) can be optimized away by the OCaml compiler.</description>
+      <description>&lt;img loading=&#34;lazy&#34; src=&#34;https://devpoga.org/post/2020-12-19_ocaml_predictable_module_functor/camel.jpg&#34; alt=&#34;&#34;  /&gt;
+ OCaml&amp;rsquo;s &lt;a href=&#34;https://dev.realworldocaml.org/files-modules-and-programs.html&#34;&gt;module system&lt;/a&gt; can be a powerful tool for building generic code and structuring systems. Functors are functions from modules to modules and they serve an important role for the power of module system. However, I want to know if functors (and the module system) can be optimized away by the OCaml compiler.</description>
     </item>
     
     <item>
@@ -136,7 +139,8 @@ Alternatively, you can create a symlink in ~/quicklisp/local-projects/.</descrip
       <pubDate>Sat, 21 Nov 2020 00:00:00 +0800</pubDate>
       
       <guid>https://devpoga.org/blog/2020-11-21-a-taste-of-ocaml-predictable-performance/</guid>
-      <description>&lt;img src=&#34;https://devpoga.org/post/2020-11-21-a-taste-of-ocaml-predictable-performance/colour-logo.png&#34; alt=&#34;&#34;&gt; &lt;a href=&#34;https://github.com/mirage/eqaf&#34;&gt;eqaf&lt;/a&gt;, a constant-time compare function implementation in &lt;a href=&#34;https://ocaml.org/&#34;&gt;OCaml&lt;/a&gt;, is a great case to demonstrate the &lt;a href=&#34;https://signalsandthreads.com/language-design/#0008401&#34;&gt;predictable performance of OCaml&amp;rsquo;s compiler&lt;/a&gt;. Why?</description>
+      <description>&lt;img loading=&#34;lazy&#34; src=&#34;https://devpoga.org/post/2020-11-21-a-taste-of-ocaml-predictable-performance/colour-logo.png&#34; alt=&#34;&#34;  /&gt;
+ &lt;a href=&#34;https://github.com/mirage/eqaf&#34;&gt;eqaf&lt;/a&gt;, a constant-time compare function implementation in &lt;a href=&#34;https://ocaml.org/&#34;&gt;OCaml&lt;/a&gt;, is a great case to demonstrate the &lt;a href=&#34;https://signalsandthreads.com/language-design/#0008401&#34;&gt;predictable performance of OCaml&amp;rsquo;s compiler&lt;/a&gt;. Why?</description>
     </item>
     
     <item>
@@ -154,7 +158,8 @@ Alternatively, you can create a symlink in ~/quicklisp/local-projects/.</descrip
       <pubDate>Sun, 07 Jun 2020 00:00:00 +0800</pubDate>
       
       <guid>https://devpoga.org/blog/2020-06-07-concurrency-clojure-racket-gerbil/</guid>
-      <description>&lt;p&gt;&lt;img src=&#34;https://devpoga.org/post/2020-06-07-concurrency-clojure-racket-gerbil/index.jpeg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;</description>
+      <description>&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://devpoga.org/post/2020-06-07-concurrency-clojure-racket-gerbil/index.jpeg&#34; alt=&#34;&#34;  /&gt;
+&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -163,7 +168,8 @@ Alternatively, you can create a symlink in ~/quicklisp/local-projects/.</descrip
       <pubDate>Fri, 10 Apr 2020 00:00:00 +0800</pubDate>
       
       <guid>https://devpoga.org/blog/2020-04-10_domain-modeling-made-functional/</guid>
-      <description>&lt;p&gt;&lt;img src=&#34;https://devpoga.org/post/2020-04-10_domain-modeling-made-functional/book.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+      <description>&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://devpoga.org/post/2020-04-10_domain-modeling-made-functional/book.jpg&#34; alt=&#34;&#34;  /&gt;
+&lt;/p&gt;
 &lt;p&gt;Notes on the book &lt;a href=&#34;https://www.amazon.com/Domain-Modeling-Made-Functional-Domain-Driven/dp/1680502549&#34;&gt;Domain Modeling Made Functional: Tackle Software Complexity with Domain-Driven Design and F#&lt;/a&gt;.&lt;/p&gt;</description>
     </item>
     
@@ -173,7 +179,8 @@ Alternatively, you can create a symlink in ~/quicklisp/local-projects/.</descrip
       <pubDate>Thu, 09 Apr 2020 00:00:00 +0800</pubDate>
       
       <guid>https://devpoga.org/blog/2020-04-09_zero-trust-network/</guid>
-      <description>&lt;p&gt;&lt;img src=&#34;https://devpoga.org/post/2020-04-09_zero-trust-network/book.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+      <description>&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://devpoga.org/post/2020-04-09_zero-trust-network/book.jpg&#34; alt=&#34;&#34;  /&gt;
+&lt;/p&gt;
 &lt;p&gt;Notes on the book &lt;a href=&#34;https://www.amazon.com/Zero-Trust-Networks-Building-Untrusted/dp/1491962194&#34;&gt;Zero Trust Network&lt;/a&gt;.&lt;/p&gt;</description>
     </item>
     
@@ -183,7 +190,8 @@ Alternatively, you can create a symlink in ~/quicklisp/local-projects/.</descrip
       <pubDate>Tue, 17 Mar 2020 00:00:00 +0800</pubDate>
       
       <guid>https://devpoga.org/blog/2020-03-17_ocaml_quickstart/</guid>
-      <description>&lt;p&gt;&lt;img src=&#34;https://devpoga.org/post/2020-03-17_ocaml_quickstart/vim.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+      <description>&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://devpoga.org/post/2020-03-17_ocaml_quickstart/vim.png&#34; alt=&#34;&#34;  /&gt;
+&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;https://ocaml.org/&#34;&gt;OCaml&lt;/a&gt; is a great language. However, the tooling for newbies is kinda confusing. Here&amp;rsquo;s a guide to setup a working OCaml development environment in &lt;a href=&#34;https://neovim.io/&#34;&gt;neovim&lt;/a&gt; on MacOS.&lt;/p&gt;</description>
     </item>
     

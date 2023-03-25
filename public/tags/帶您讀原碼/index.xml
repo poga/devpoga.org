@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>帶您讀原碼 on Dev.Poga</title>
     <link>https://devpoga.org/tags/%E5%B8%B6%E6%82%A8%E8%AE%80%E5%8E%9F%E7%A2%BC/</link>
@@ -13,7 +13,8 @@
       <pubDate>Wed, 18 Apr 2018 00:00:00 +0800</pubDate>
       
       <guid>https://devpoga.org/blog/2018-04-18_luajit-%E5%AF%A6%E5%81%9A%E6%8E%A2%E7%B4%A2-nan-tagging/</guid>
-      <description>&lt;p&gt;&lt;img src=&#34;https://devpoga.org/post/2018-04-18_luajit-%E5%AF%A6%E5%81%9A%E6%8E%A2%E7%B4%A2-nan-tagging/images/1.png&#34; alt=&#34;image&#34;&gt;&lt;/p&gt;
+      <description>&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://devpoga.org/post/2018-04-18_luajit-%e5%af%a6%e5%81%9a%e6%8e%a2%e7%b4%a2-nan-tagging/images/1.png&#34; alt=&#34;image&#34;  /&gt;
+&lt;/p&gt;
 &lt;h4 id=&#34;一切都是為了效能&#34;&gt;一切都是為了效能&lt;/h4&gt;
 &lt;p&gt;故事要從 boxed value 跟 unboxed value 說起。&lt;/p&gt;</description>
     </item>

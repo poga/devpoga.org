@@ -1,21 +1,66 @@
 <!DOCTYPE html>
-<html lang="en-us">
+<html lang="en" dir="auto">
 
-<head>
-  <meta http-equiv="X-Clacks-Overhead" content="GNU Terry Pratchett" />
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
 <title>Why Serverless | Dev.Poga</title>
-<meta name="title" content="Why Serverless" />
+<meta name="keywords" content="Serverless">
 <meta name="description" content="
 本文擷取、修訂自 2018.03.29 我在 iThome Serverless All-Star 的分享的逐字稿
 
 
-究竟為什麼要用 Serverless 呢？" />
-<meta name="keywords" content="Serverless," />
+究竟為什麼要用 Serverless 呢？">
+<meta name="author" content="poga">
+<link rel="canonical" href="https://devpoga.org/blog/2018-04-10_why_serverless/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.6a98292fb8fa8cf0f3ba4042d4b75515c04267550f3ad49ff6271b5af9562443.css" integrity="sha256-apgpL7j6jPDzukBC1LdVFcBCZ1UPOtSf9icbWvlWJEM=" rel="preload stylesheet" as="style">
+<script defer crossorigin="anonymous" src="/assets/js/highlight.f413e19d0714851f6474e7ee9632408e58ac146fbdbe62747134bea2fa3415e0.js" integrity="sha256-9BPhnQcUhR9kdOfuljJAjlisFG&#43;9vmJ0cTS&#43;ovo0FeA="
+    onload="hljs.initHighlightingOnLoad();"></script>
+<link rel="icon" href="https://devpoga.org/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://devpoga.org/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://devpoga.org/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://devpoga.org/apple-touch-icon.png">
+<link rel="mask-icon" href="https://devpoga.org/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
 
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --hljs-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
 
-<meta property="og:title" content="Why Serverless" />
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript><meta property="og:title" content="Why Serverless" />
 <meta property="og:description" content="
 本文擷取、修訂自 2018.03.29 我在 iThome Serverless All-Star 的分享的逐字稿
 
@@ -26,8 +71,6 @@
 <meta property="article:published_time" content="2018-02-06T00:00:00+08:00" />
 <meta property="article:modified_time" content="2019-04-30T21:56:01+08:00" />
 
-
-
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Why Serverless"/>
 <meta name="twitter:description" content="
@@ -37,227 +80,117 @@
 究竟為什麼要用 Serverless 呢？"/>
 
 
-
-<meta itemprop="name" content="Why Serverless">
-<meta itemprop="description" content="
-本文擷取、修訂自 2018.03.29 我在 iThome Serverless All-Star 的分享的逐字稿
-
-
-究竟為什麼要用 Serverless 呢？"><meta itemprop="datePublished" content="2018-02-06T00:00:00+08:00" />
-<meta itemprop="dateModified" content="2019-04-30T21:56:01+08:00" />
-<meta itemprop="wordCount" content="1524">
-<meta itemprop="keywords" content="Serverless," />
-<meta name="referrer" content="no-referrer-when-downgrade" />
-
-  <style>
-  body {
-    font-family: Verdana, sans-serif;
-    margin: auto;
-    padding: 20px;
-    max-width: 720px;
-    text-align: left;
-    background-color: #fff;
-    word-wrap: break-word;
-    overflow-wrap: break-word;
-    line-height: 1.5;
-    color: #444;
-  }
-
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6,
-  strong,
-  b {
-    color: #222;
-  }
-
-  a {
-    color: #3273dc;
-     
-  }
-
-  .title {
-    text-decoration: none;
-    border: 0;
-  }
-
-  .title span {
-    font-weight: 400;
-  }
-
-  nav a {
-    margin-right: 10px;
-  }
-
-  textarea {
-    width: 100%;
-    font-size: 16px;
-  }
-
-  input {
-    font-size: 16px;
-  }
-
-  content {
-    line-height: 1.6;
-  }
-
-  table {
-    width: 100%;
-  }
-
-  img {
-    max-width: 100%;
-  }
-
-  code {
-    padding: 2px 5px;
-    background-color: #f2f2f2;
-  }
-
-  pre code {
-    color: #222;
-    display: block;
-    padding: 20px;
-    white-space: pre-wrap;
-    font-size: 14px;
-  }
-
-  div.highlight pre {
-    background-color: initial;
-    color: initial;
-  }
-
-  div.highlight code {
-    background-color: unset;
-    color: unset;
-  }
-
-  blockquote {
-    border-left: 1px solid #999;
-    color: #222;
-    padding-left: 20px;
-    font-style: italic;
-  }
-
-  footer {
-    padding: 25px;
-    text-align: center;
-  }
-
-  .helptext {
-    color: #777;
-    font-size: small;
-  }
-
-  .errorlist {
-    color: #eba613;
-    font-size: small;
-  }
-
-   
-  ul.blog-posts {
-    list-style-type: none;
-    padding: unset;
-  }
-
-  ul.blog-posts li {
-    display: flex;
-  }
-
-  ul.blog-posts li span {
-    flex: 0 0 130px;
-  }
-
-  ul.blog-posts li a:visited {
-    color: #8b6fcb;
-  }
-
-  @media (prefers-color-scheme: dark) {
-    body {
-      background-color: #333;
-      color: #ddd;
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Blogs",
+      "item": "https://devpoga.org/blog/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "Why Serverless",
+      "item": "https://devpoga.org/blog/2018-04-10_why_serverless/"
     }
-
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6,
-    strong,
-    b {
-      color: #eee;
-    }
-
-    a {
-      color: #8cc2dd;
-    }
-
-    code {
-      background-color: #777;
-    }
-
-    pre code {
-      color: #ddd;
-    }
-
-    blockquote {
-      color: #ccc;
-    }
-
-    textarea,
-    input {
-      background-color: #252525;
-      color: #ddd;
-    }
-
-    .helptext {
-      color: #aaa;
-    }
-  }
-
-</style>
-<link rel="stylesheet" href="/custom.css">
-
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-FEFM53H9Y9"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-FEFM53H9Y9');
+  ]
+}
 </script>
-
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Why Serverless",
+  "name": "Why Serverless",
+  "description": " 本文擷取、修訂自 2018.03.29 我在 iThome Serverless All-Star 的分享的逐字稿\n究竟為什麼要用 Serverless 呢？\n",
+  "keywords": [
+    "Serverless"
+  ],
+  "articleBody": " 本文擷取、修訂自 2018.03.29 我在 iThome Serverless All-Star 的分享的逐字稿\n究竟為什麼要用 Serverless 呢？\n近年，無數人嘗試著製作各種產品。每個開發者剛開始都是興致勃勃，大家都想改變世界，但後來都漸漸失去了熱情。為什麼呢？我觀察到幾個現象：\n首先是「好程式」這件事，軟體開發者都想寫出容易開發、容易擴充、容易維護的程式，但是現實的環境往往沒有足夠的資源讓你慢慢開發。大多數的時間都在趕死線。\n即使跟主管談，主管都會說「我們另外安排一個時間來重構」，但是從來沒找到這段時間過。於是，程式越來越難維護，開發越來越慢，開發者心情越來越差，產品疊代速度越來越慢，最後就失敗。\n為什麼會有這種現象呢？因為軟體架構的價值實在太難量化了，每個工程師對架構都有不一樣的想法，也不一定能好好掌握架構的知識。連工程師都難以捉摸的東西，更不用希望非專業的人能理解了。於是，軟體架構永遠都是第一個被犧牲的。\n不過，在 serverless 中，軟體架構的好壞直接表現在你的營運成本上。軟體架構好，執行的速度就快，消耗的資源也少。因為 serverless 是按照 function 使用的資源來計價，這些變化就直接對應到帳單上的費用減少。原本被視為「無生產力」的重構行為，也變成人見人愛的 cost down 行為。好的開發者跟壞的開發者的差別，也能從執行上的成本一目了然。於是，開發者有更多的籌碼去談出一個優化架構的空間。不是每個人都能看懂軟體設計，但是一定看的懂帳單上的數字。\n再來是「好產品」，一個產品要符合用戶的需求，才能在市場上生存。但是，軟體的開發過程讓人難以專注在用戶需求上。規劃專案時，大多數的時間都花在「技術規格」、「時程」上，規劃會議上，大家就在一張紙上增增減減，最後妥協出一個實做清單。為什麼會這樣呢？\n我認為是因為開發時，讓你分心的東西實在太多了。一個功能不只是一條 SQL，還要考慮資安、擴充性、如何 deploy、如何維護。這些額外的考量，都讓人無法專注在用戶需求上。有人的說法是「從一條 SQL 到上線的距離有多遠？」以現在的環境而言，真的很遠。\n而 serverless 把系統架構跟技術細節幾乎都藏起來了。以前，寫一個 function 要上線前，要考慮怎麼 deploy，可以撐住多少流量，資安、監控、日誌、等等無數的細節。現在，只要寫好 function 就可以直接上線，其他的細節 serverless 平台都幫你做好了。產品開發速度更快，開發者需要擔心的事情更少。大家可以專注在同一件事：「用戶的需求上」。做出好產品的機會更高。\n把 serverless 結合 tracking 之後，更可以做出更精細的產品分析。將整個使用者的使用流程，轉化成一連串的成本，與最後預期的收益一比較，馬上可以看出：是該優化轉換率，還是優化流量，或是優化某個特別消耗資源的 function？產品方向不再是瞎子摸象，而是更明確的流程。\n最後是「開發費用」這件事。軟體開發的成本始終難以預估。時程與需求的變化，讓定價變的很困難。以外包而言，報價永遠是最難的事情。今天客戶需要一個產品，一家估了 100 萬，另一家估 10 萬，其中的差別究竟是什麼？對客戶來說幾乎沒辦法判斷。所以外包總是很容易做不出需要的東西，或是充滿了浪費。維護費更是一個人人都討厭的東西，開發者永遠覺得維護費太低，客戶永遠覺得他的維護費浪費了，怎麼算都有人不滿意。\nserverless 提供了一種新的外包計價模式，按照用量計費。因為 serverless 的成本透明，所以開發者的營運成本也很透明。這時按照用量計費，讓雙方都有共同的誘因去優化產品：最大化產品價值。產品使用量越大，開發者收益越高，用的人越多，客戶就越開心。\n說了這麼多，其實 serverless 代表的就是把計算力變成 utility 的一個過程。\n就像水電一樣，大家都需要的東西，規模化到最後，就會變成付錢就能解決的東西。使用者需要介入的越來越少，成本標準化，使用者不再需要搞懂各種規模化的技術：像是 docker, devops, capacity planning, cloud 等等。維運變的更簡單。\n如果你的環境還沒跟上這些技術，那就跳過他們直接開始用 serverless 吧。\n",
+  "wordCount" : "1524",
+  "inLanguage": "en",
+  "datePublished": "2018-02-06T00:00:00+08:00",
+  "dateModified": "2019-04-30T21:56:01+08:00",
+  "author":{
+    "@type": "Person",
+    "name": "poga"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://devpoga.org/blog/2018-04-10_why_serverless/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Dev.Poga",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://devpoga.org/favicon.ico"
+    }
+  }
+}
+</script>
 </head>
 
-<body>
-  <header><a href="/" class="title">
-  <h1>Dev.Poga</h2>
-</a>
-<nav><a href="/">Home</a>
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
 
+</script>
 
-<a href="/blog">Blog</a>
-
-</nav>
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="https://devpoga.org/" accesskey="h" title="Dev.Poga (Alt + H)">Dev.Poga</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+        </ul>
+    </nav>
 </header>
-  <main>
+<main class="main">
 
-<h1>Why Serverless</h1>
-<p>
-  <i>
-    <time datetime='2018-02-06' pubdate>
-      06 Feb, 2018
-    </time>
-  </i>
-</p>
+<article class="post-single">
+  <header class="post-header">
+    
+    <h1 class="post-title">
+      Why Serverless
+    </h1>
+    <div class="post-meta"><span title='2018-02-06 00:00:00 +0800 CST'>February 6, 2018</span>&nbsp;·&nbsp;poga
 
-<content>
-  <blockquote>
+</div>
+  </header> 
+  <div class="post-content"><blockquote>
 <p>本文擷取、修訂自 2018.03.29 我在 iThome Serverless All-Star 的分享的逐字稿</p>
 </blockquote>
 <hr>
@@ -279,23 +212,85 @@
 <p>說了這麼多，其實 serverless 代表的就是把計算力變成 utility 的一個過程。</p>
 <p>就像水電一樣，大家都需要的東西，規模化到最後，就會變成付錢就能解決的東西。使用者需要介入的越來越少，成本標準化，使用者不再需要搞懂各種規模化的技術：像是 docker, devops, capacity planning, cloud 等等。維運變的更簡單。</p>
 <p>如果你的環境還沒跟上這些技術，那就跳過他們直接開始用 serverless 吧。</p>
-</content>
-<p>
-  
-  <a href="https://devpoga.org/tags/serverless/">#Serverless</a>
-  
-</p>
 
-  </main>
-  <footer><hr />
-<h4>Hi, I'm Poga</h4>
-<p>
-Follow me on <a rel="me" href="https://g0v.social/@poga">Mastodon</a> or checkout my other <a href="/blog">posts</a>
-</p>
+  </div>
 
-</footer>
-
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="https://devpoga.org/tags/serverless/">Serverless</a></li>
+    </ul>
+  </footer>
+</article>
+    </main>
     
+<footer class="footer">
+    <span>&copy; 2023 <a href="https://devpoga.org/">Dev.Poga</a></span>
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
 </body>
 
 </html>

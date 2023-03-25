@@ -1,871 +1,346 @@
 <!DOCTYPE html>
-<html lang="en-us">
+<html lang="en" dir="auto">
 
-<head>
-  <meta http-equiv="X-Clacks-Overhead" content="GNU Terry Pratchett" />
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
 <title>Blog | Dev.Poga</title>
-<meta name="title" content="Blog" />
-<meta name="description" content="" />
-<meta name="keywords" content="blog,talks,actix,burnout,communicating,communication,compiler,complexity,concurrency,condition,coscup,cryptography,depression,design,domain-modeling,editor,engineering,essays,g0v,glues,go,godot,hacking,health,interpreter-and-compiler,ipad,julia,kappa,leadership,learn-ocaml-the-hard-way,lisp,log,lua,luajit,machine-learning,mastodon,mlops,naps,neovim,networking,note,notes,ocaml,omnifocus,open-source,opensource,organization,ownership,patterns,privacy,productivity,programming,programming-language,programming-languages,reading,rust,scheme,security,serverless,social,software-engineering,story-telling,system-design,teaching,unity,ux,vim,writing,帶您讀原碼,科普,系統架構,遊戲開發," />
+<meta name="keywords" content="">
+<meta name="description" content="">
+<meta name="author" content="">
+<link rel="canonical" href="https://devpoga.org/categories/blog/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.6a98292fb8fa8cf0f3ba4042d4b75515c04267550f3ad49ff6271b5af9562443.css" integrity="sha256-apgpL7j6jPDzukBC1LdVFcBCZ1UPOtSf9icbWvlWJEM=" rel="preload stylesheet" as="style">
+<link rel="icon" href="https://devpoga.org/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://devpoga.org/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://devpoga.org/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://devpoga.org/apple-touch-icon.png">
+<link rel="mask-icon" href="https://devpoga.org/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" type="application/rss+xml" href="https://devpoga.org/categories/blog/index.xml">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
 
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --hljs-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
 
-<meta property="og:title" content="Blog" />
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript><meta property="og:title" content="Blog" />
 <meta property="og:description" content="" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://devpoga.org/categories/blog/" />
-
-
 
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Blog"/>
 <meta name="twitter:description" content=""/>
 
-
-
-<meta itemprop="name" content="Blog">
-<meta itemprop="description" content="">
-<meta name="referrer" content="no-referrer-when-downgrade" />
-
-  <link rel="alternate" type="application/rss+xml" href="https://devpoga.org/categories/blog/index.xml" title="Dev.Poga" />
-  <style>
-  body {
-    font-family: Verdana, sans-serif;
-    margin: auto;
-    padding: 20px;
-    max-width: 720px;
-    text-align: left;
-    background-color: #fff;
-    word-wrap: break-word;
-    overflow-wrap: break-word;
-    line-height: 1.5;
-    color: #444;
-  }
-
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6,
-  strong,
-  b {
-    color: #222;
-  }
-
-  a {
-    color: #3273dc;
-     
-  }
-
-  .title {
-    text-decoration: none;
-    border: 0;
-  }
-
-  .title span {
-    font-weight: 400;
-  }
-
-  nav a {
-    margin-right: 10px;
-  }
-
-  textarea {
-    width: 100%;
-    font-size: 16px;
-  }
-
-  input {
-    font-size: 16px;
-  }
-
-  content {
-    line-height: 1.6;
-  }
-
-  table {
-    width: 100%;
-  }
-
-  img {
-    max-width: 100%;
-  }
-
-  code {
-    padding: 2px 5px;
-    background-color: #f2f2f2;
-  }
-
-  pre code {
-    color: #222;
-    display: block;
-    padding: 20px;
-    white-space: pre-wrap;
-    font-size: 14px;
-  }
-
-  div.highlight pre {
-    background-color: initial;
-    color: initial;
-  }
-
-  div.highlight code {
-    background-color: unset;
-    color: unset;
-  }
-
-  blockquote {
-    border-left: 1px solid #999;
-    color: #222;
-    padding-left: 20px;
-    font-style: italic;
-  }
-
-  footer {
-    padding: 25px;
-    text-align: center;
-  }
-
-  .helptext {
-    color: #777;
-    font-size: small;
-  }
-
-  .errorlist {
-    color: #eba613;
-    font-size: small;
-  }
-
-   
-  ul.blog-posts {
-    list-style-type: none;
-    padding: unset;
-  }
-
-  ul.blog-posts li {
-    display: flex;
-  }
-
-  ul.blog-posts li span {
-    flex: 0 0 130px;
-  }
-
-  ul.blog-posts li a:visited {
-    color: #8b6fcb;
-  }
-
-  @media (prefers-color-scheme: dark) {
-    body {
-      background-color: #333;
-      color: #ddd;
-    }
-
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6,
-    strong,
-    b {
-      color: #eee;
-    }
-
-    a {
-      color: #8cc2dd;
-    }
-
-    code {
-      background-color: #777;
-    }
-
-    pre code {
-      color: #ddd;
-    }
-
-    blockquote {
-      color: #ccc;
-    }
-
-    textarea,
-    input {
-      background-color: #252525;
-      color: #ddd;
-    }
-
-    .helptext {
-      color: #aaa;
-    }
-  }
-
-</style>
-<link rel="stylesheet" href="/custom.css">
-
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-FEFM53H9Y9"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-FEFM53H9Y9');
-</script>
-
 </head>
 
-<body>
-  <header><a href="/" class="title">
-  <h1>Dev.Poga</h2>
-</a>
-<nav><a href="/">Home</a>
+<body class="list" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
 
+</script>
 
-<a href="/blog">Blog</a>
-
-</nav>
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="https://devpoga.org/" accesskey="h" title="Dev.Poga (Alt + H)">Dev.Poga</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+        </ul>
+    </nav>
 </header>
-  <main>
-<content>
-  
-  <h3 style="margin-bottom:0">Filtering for "Blog"</h3>
-  <small>
-    <a href="/blog">Remove filter</a>
-  </small>
-  
-  <ul class="blog-posts">
-    
-    <li>
-      <span>
-        <i>
-          <time datetime='2023-02-19' pubdate>
-            2023-02-19
-          </time>
-        </i>
-      </span>
-      <a href="https://devpoga.org/blog/2023-02-19_hacking_lost_art/">Hacking is a lost art</a>
-    </li>
-    
-    <li>
-      <span>
-        <i>
-          <time datetime='2023-01-22' pubdate>
-            2023-01-22
-          </time>
-        </i>
-      </span>
-      <a href="https://devpoga.org/blog/2023-01-22_mantra_g0v_social/">The g0v.social Mantra</a>
-    </li>
-    
-    <li>
-      <span>
-        <i>
-          <time datetime='2023-01-02' pubdate>
-            2023-01-02
-          </time>
-        </i>
-      </span>
-      <a href="https://devpoga.org/blog/2023-01-02_start_with_the_least_malleable/">Start with the Least Malleable</a>
-    </li>
-    
-    <li>
-      <span>
-        <i>
-          <time datetime='2022-08-28' pubdate>
-            2022-08-28
-          </time>
-        </i>
-      </span>
-      <a href="https://devpoga.org/blog/2022-08-28_cheap_complexity_cybersecurity/">Cheap Complexity and Cybersecurity</a>
-    </li>
-    
-    <li>
-      <span>
-        <i>
-          <time datetime='2022-07-23' pubdate>
-            2022-07-23
-          </time>
-        </i>
-      </span>
-      <a href="https://devpoga.org/blog/2022-07-23_neovim_godot/">Developing Godot Projects with Neovim</a>
-    </li>
-    
-    <li>
-      <span>
-        <i>
-          <time datetime='2022-07-01' pubdate>
-            2022-07-01
-          </time>
-        </i>
-      </span>
-      <a href="https://devpoga.org/blog/2022-07-01_unity_godot_right_to_repair/">Unity, Godot, and Right to Repair</a>
-    </li>
-    
-    <li>
-      <span>
-        <i>
-          <time datetime='2022-02-19' pubdate>
-            2022-02-19
-          </time>
-        </i>
-      </span>
-      <a href="https://devpoga.org/blog/2022-02-19_what_ive_been_reading/">What I&#39;ve been Reading: 2022 Jan and Feb</a>
-    </li>
-    
-    <li>
-      <span>
-        <i>
-          <time datetime='2022-01-15' pubdate>
-            2022-01-15
-          </time>
-        </i>
-      </span>
-      <a href="https://devpoga.org/blog/2022-01-15_i_cannot_think_myself_out_of_this/">I cannot think myself out of this</a>
-    </li>
-    
-    <li>
-      <span>
-        <i>
-          <time datetime='2022-01-03' pubdate>
-            2022-01-03
-          </time>
-        </i>
-      </span>
-      <a href="https://devpoga.org/blog/2022-01-03_grpc_status_code/">gRPC status codes</a>
-    </li>
-    
-    <li>
-      <span>
-        <i>
-          <time datetime='2021-12-12' pubdate>
-            2021-12-12
-          </time>
-        </i>
-      </span>
-      <a href="https://devpoga.org/blog/2021-12-12_naps/">On Naps</a>
-    </li>
-    
-    <li>
-      <span>
-        <i>
-          <time datetime='2021-12-12' pubdate>
-            2021-12-12
-          </time>
-        </i>
-      </span>
-      <a href="https://devpoga.org/blog/2021-12-25_pipelines_and_glue_systems/">Pipelines and Glue Systems</a>
-    </li>
-    
-    <li>
-      <span>
-        <i>
-          <time datetime='2021-11-27' pubdate>
-            2021-11-27
-          </time>
-        </i>
-      </span>
-      <a href="https://devpoga.org/blog/2021-11-27-mlops_antipatterns/">Using AntiPatterns to avoid MLOps Mistakes</a>
-    </li>
-    
-    <li>
-      <span>
-        <i>
-          <time datetime='2021-09-19' pubdate>
-            2021-09-19
-          </time>
-        </i>
-      </span>
-      <a href="https://devpoga.org/blog/2021-09-19_notes_on_the_five_dysfunctions_of_a_team/">Notes on The Five Dysfunctions of a Team</a>
-    </li>
-    
-    <li>
-      <span>
-        <i>
-          <time datetime='2021-09-18' pubdate>
-            2021-09-18
-          </time>
-        </i>
-      </span>
-      <a href="https://devpoga.org/blog/2021-09-18_on_glue_systems/">On Building Glue Systems</a>
-    </li>
-    
-    <li>
-      <span>
-        <i>
-          <time datetime='2021-08-04' pubdate>
-            2021-08-04
-          </time>
-        </i>
-      </span>
-      <a href="https://devpoga.org/blog/2021-08-04_learning_julia_line_by_line/">Learning Julia, Line by Line</a>
-    </li>
-    
-    <li>
-      <span>
-        <i>
-          <time datetime='2021-07-24' pubdate>
-            2021-07-24
-          </time>
-        </i>
-      </span>
-      <a href="https://devpoga.org/blog/2021-07-25_organization_health/">CHECKLIST FOR ORGANIZATIONAL HEALTH</a>
-    </li>
-    
-    <li>
-      <span>
-        <i>
-          <time datetime='2021-05-11' pubdate>
-            2021-05-11
-          </time>
-        </i>
-      </span>
-      <a href="https://devpoga.org/blog/2021-05-11_haxe_and_programming_for_many_machines/">Haxe and Programming for Many Machines</a>
-    </li>
-    
-    <li>
-      <span>
-        <i>
-          <time datetime='2021-05-01' pubdate>
-            2021-05-01
-          </time>
-        </i>
-      </span>
-      <a href="https://devpoga.org/blog/2021-05-01_common_lisp_quicklisp_local_project/">Common Lisp Local Project Development with Quicklisp</a>
-    </li>
-    
-    <li>
-      <span>
-        <i>
-          <time datetime='2021-04-25' pubdate>
-            2021-04-25
-          </time>
-        </i>
-      </span>
-      <a href="https://devpoga.org/blog/2021-04-25_common_lisp_condition_system/">The Common Lisp Condition System</a>
-    </li>
-    
-    <li>
-      <span>
-        <i>
-          <time datetime='2020-12-19' pubdate>
-            2020-12-19
-          </time>
-        </i>
-      </span>
-      <a href="https://devpoga.org/blog/2020-12-19_ocaml_predictable_module_functor/">Predictable Performance of OCaml&#39;s Module System</a>
-    </li>
-    
-    <li>
-      <span>
-        <i>
-          <time datetime='2020-11-30' pubdate>
-            2020-11-30
-          </time>
-        </i>
-      </span>
-      <a href="https://devpoga.org/blog/2020-11-30-ocaml-compiler-pipeline/">Going through the OCaml compiler pipeline (manually)</a>
-    </li>
-    
-    <li>
-      <span>
-        <i>
-          <time datetime='2020-11-29' pubdate>
-            2020-11-29
-          </time>
-        </i>
-      </span>
-      <a href="https://devpoga.org/blog/2020-11-29-g0v.social-journey/">The journey of g0v.social</a>
-    </li>
-    
-    <li>
-      <span>
-        <i>
-          <time datetime='2020-11-21' pubdate>
-            2020-11-21
-          </time>
-        </i>
-      </span>
-      <a href="https://devpoga.org/blog/2020-11-21-a-taste-of-ocaml-predictable-performance/">A Taste of OCaml&#39;s Predictable Performance</a>
-    </li>
-    
-    <li>
-      <span>
-        <i>
-          <time datetime='2020-08-01' pubdate>
-            2020-08-01
-          </time>
-        </i>
-      </span>
-      <a href="https://devpoga.org/blog/2020-08-01_ipad_programming_environment/">在 iPad 上布置軟體開發環境</a>
-    </li>
-    
-    <li>
-      <span>
-        <i>
-          <time datetime='2020-06-07' pubdate>
-            2020-06-07
-          </time>
-        </i>
-      </span>
-      <a href="https://devpoga.org/blog/2020-06-07-concurrency-clojure-racket-gerbil/">Concurrency in Clojure, Racket, and Gerbil Scheme</a>
-    </li>
-    
-    <li>
-      <span>
-        <i>
-          <time datetime='2020-04-21' pubdate>
-            2020-04-21
-          </time>
-        </i>
-      </span>
-      <a href="https://devpoga.org/blog/2020-04-21_on-communication/">On Communication</a>
-    </li>
-    
-    <li>
-      <span>
-        <i>
-          <time datetime='2020-04-10' pubdate>
-            2020-04-10
-          </time>
-        </i>
-      </span>
-      <a href="https://devpoga.org/blog/2020-04-10_domain-modeling-made-functional/">Domain Modeling Made Functional</a>
-    </li>
-    
-    <li>
-      <span>
-        <i>
-          <time datetime='2020-04-09' pubdate>
-            2020-04-09
-          </time>
-        </i>
-      </span>
-      <a href="https://devpoga.org/blog/2020-04-09_zero-trust-network/">Zero Trust Network</a>
-    </li>
-    
-    <li>
-      <span>
-        <i>
-          <time datetime='2020-03-17' pubdate>
-            2020-03-17
-          </time>
-        </i>
-      </span>
-      <a href="https://devpoga.org/blog/2020-03-17_ocaml_quickstart/">OCaml Quickstart</a>
-    </li>
-    
-    <li>
-      <span>
-        <i>
-          <time datetime='2020-02-17' pubdate>
-            2020-02-17
-          </time>
-        </i>
-      </span>
-      <a href="https://devpoga.org/blog/2020-02-17_checklist_deploy_machine_learning_model_production/">Guide to Serve Machine Learning Models in Production</a>
-    </li>
-    
-    <li>
-      <span>
-        <i>
-          <time datetime='2019-11-06' pubdate>
-            2019-11-06
-          </time>
-        </i>
-      </span>
-      <a href="https://devpoga.org/blog/2019-11-06-running-service-production/">Running a Service in Production without Losing Your Sanity</a>
-    </li>
-    
-    <li>
-      <span>
-        <i>
-          <time datetime='2019-11-03' pubdate>
-            2019-11-03
-          </time>
-        </i>
-      </span>
-      <a href="https://devpoga.org/blog/2019-11-03-golden-age-of-programming-language/">The Golden Age of New Programming Languages</a>
-    </li>
-    
-    <li>
-      <span>
-        <i>
-          <time datetime='2019-10-22' pubdate>
-            2019-10-22
-          </time>
-        </i>
-      </span>
-      <a href="https://devpoga.org/blog/2019-10-22-vps_rust_compile_benchmark/">Benchmarking VPS for Remote Rust Development Environment</a>
-    </li>
-    
-    <li>
-      <span>
-        <i>
-          <time datetime='2019-09-20' pubdate>
-            2019-09-20
-          </time>
-        </i>
-      </span>
-      <a href="https://devpoga.org/blog/2019-09-20_ripgrep_cheat_sheet/">Ripgrep Cheat Sheet</a>
-    </li>
-    
-    <li>
-      <span>
-        <i>
-          <time datetime='2019-09-04' pubdate>
-            2019-09-04
-          </time>
-        </i>
-      </span>
-      <a href="https://devpoga.org/blog/2019-09-04_notes_on_the_signal_protocol/">Notes on The Signal Protocol</a>
-    </li>
-    
-    <li>
-      <span>
-        <i>
-          <time datetime='2019-07-12' pubdate>
-            2019-07-12
-          </time>
-        </i>
-      </span>
-      <a href="https://devpoga.org/blog/2019-07-11_cheney_on_the_mta/">Cheney on the M.T.A</a>
-    </li>
-    
-    <li>
-      <span>
-        <i>
-          <time datetime='2019-06-30' pubdate>
-            2019-06-30
-          </time>
-        </i>
-      </span>
-      <a href="https://devpoga.org/blog/2019-06-30_structured_concurrency/">Structured Concurrency</a>
-    </li>
-    
-    <li>
-      <span>
-        <i>
-          <time datetime='2019-06-29' pubdate>
-            2019-06-29
-          </time>
-        </i>
-      </span>
-      <a href="https://devpoga.org/blog/2019-06-29_%E5%B7%A5%E7%A8%8B%E5%B8%AB%E7%9A%84%E8%8B%B1%E6%96%87%E5%AF%AB%E4%BD%9C%E8%83%BD%E5%8A%9B/">工程師的英文寫作能力</a>
-    </li>
-    
-    <li>
-      <span>
-        <i>
-          <time datetime='2019-04-29' pubdate>
-            2019-04-29
-          </time>
-        </i>
-      </span>
-      <a href="https://devpoga.org/blog/golang-7-years-later/">Go，七年後</a>
-    </li>
-    
-    <li>
-      <span>
-        <i>
-          <time datetime='2019-02-26' pubdate>
-            2019-02-26
-          </time>
-        </i>
-      </span>
-      <a href="https://devpoga.org/blog/implementation-lua53/">Notes on the Implementation of Lua 5.3</a>
-    </li>
-    
-    <li>
-      <span>
-        <i>
-          <time datetime='2019-01-05' pubdate>
-            2019-01-05
-          </time>
-        </i>
-      </span>
-      <a href="https://devpoga.org/blog/2019-01-05_%E7%82%BA%E4%BB%80%E9%BA%BC%E7%8F%BE%E4%BB%A3%E9%81%8A%E6%88%B2%E9%83%BD%E8%A6%81%E6%9C%89%E4%B8%80%E5%A0%86%E4%B8%8D%E5%90%8C%E7%9A%84%E8%B2%A8%E5%B9%A3%E5%9C%A8%E8%A3%A1%E9%A0%AD/">為什麼現代遊戲都要有一堆不同的貨幣在裡頭？</a>
-    </li>
-    
-    <li>
-      <span>
-        <i>
-          <time datetime='2018-10-12' pubdate>
-            2018-10-12
-          </time>
-        </i>
-      </span>
-      <a href="https://devpoga.org/blog/parsing-streaming-data-actix-lua/">Analyze Streaming Data with Rust, Actix, and Lua</a>
-    </li>
-    
-    <li>
-      <span>
-        <i>
-          <time datetime='2018-09-27' pubdate>
-            2018-09-27
-          </time>
-        </i>
-      </span>
-      <a href="https://devpoga.org/blog/2018-09-28_%E6%88%91%E9%81%B8%E6%93%87%E7%94%9F%E7%94%A2%E5%8A%9B%E5%B7%A5%E5%85%B7%E7%9A%84%E5%9F%BA%E6%BA%96/">我選擇生產力工具的基準</a>
-    </li>
-    
-    <li>
-      <span>
-        <i>
-          <time datetime='2018-09-03' pubdate>
-            2018-09-03
-          </time>
-        </i>
-      </span>
-      <a href="https://devpoga.org/blog/2018-09-03_%E5%A6%82%E4%BD%95%E6%95%B4%E5%90%88-rust-%E8%88%87-lua/">如何整合 Rust 與 Lua</a>
-    </li>
-    
-    <li>
-      <span>
-        <i>
-          <time datetime='2018-07-16' pubdate>
-            2018-07-16
-          </time>
-        </i>
-      </span>
-      <a href="https://devpoga.org/blog/2018-07-16_%E8%BB%9F%E9%AB%94%E8%A8%AD%E8%A8%88%E6%A8%A1%E5%BC%8F-dataoriented-design/">軟體設計模式 — Data-Oriented Design</a>
-    </li>
-    
-    <li>
-      <span>
-        <i>
-          <time datetime='2018-04-18' pubdate>
-            2018-04-18
-          </time>
-        </i>
-      </span>
-      <a href="https://devpoga.org/blog/2018-04-18_luajit-%E5%AF%A6%E5%81%9A%E6%8E%A2%E7%B4%A2-nan-tagging/">LuaJIT 實做探索 — NaN Tagging</a>
-    </li>
-    
-    <li>
-      <span>
-        <i>
-          <time datetime='2018-02-06' pubdate>
-            2018-02-06
-          </time>
-        </i>
-      </span>
-      <a href="https://devpoga.org/blog/2018-04-10_why_serverless/">Why Serverless</a>
-    </li>
-    
-    <li>
-      <span>
-        <i>
-          <time datetime='2018-02-06' pubdate>
-            2018-02-06
-          </time>
-        </i>
-      </span>
-      <a href="https://devpoga.org/blog/2018-02-06_%E9%81%BA%E5%BF%98%E7%9A%84%E7%94%9F%E7%94%A2%E5%8A%9B/">遺忘的生產力</a>
-    </li>
-    
-    <li>
-      <span>
-        <i>
-          <time datetime='2017-12-22' pubdate>
-            2017-12-22
-          </time>
-        </i>
-      </span>
-      <a href="https://devpoga.org/blog/2017-12-22_kappa-architecture%E4%BB%A5%E8%B3%87%E6%96%99%E7%82%BA%E4%B8%AD%E5%BF%83%E7%9A%84%E7%B3%BB%E7%B5%B1%E6%9E%B6%E6%A7%8B/">Kappa Architecture：以資料為中心的系統架構</a>
-    </li>
-    
-    <li>
-      <span>
-        <i>
-          <time datetime='2017-10-02' pubdate>
-            2017-10-02
-          </time>
-        </i>
-      </span>
-      <a href="https://devpoga.org/blog/2017-10-02_minimum_viable_ownership/">Minimum Viable Ownership</a>
-    </li>
-    
-    <li>
-      <span>
-        <i>
-          <time datetime='2017-06-04' pubdate>
-            2017-06-04
-          </time>
-        </i>
-      </span>
-      <a href="https://devpoga.org/blog/2017-06-04_%E5%B9%B3%E8%A1%8C%E4%B8%96%E7%95%8C/">平行世界</a>
-    </li>
-    
-    <li>
-      <span>
-        <i>
-          <time datetime='2017-02-16' pubdate>
-            2017-02-16
-          </time>
-        </i>
-      </span>
-      <a href="https://devpoga.org/blog/2017-02-16_%E5%8F%88%E5%9B%9E%E4%BE%86%E7%94%A8-omnifocus-%E4%BA%86/">又回來用 Omnifocus 了</a>
-    </li>
-    
-    <li>
-      <span>
-        <i>
-          <time datetime='2016-08-27' pubdate>
-            2016-08-27
-          </time>
-        </i>
-      </span>
-      <a href="https://devpoga.org/blog/2016-08-27_%E8%90%AC%E4%BA%8B%E8%90%AC%E7%89%A9%E7%9A%86%E6%98%AF-log-%E5%8F%83%E8%80%83%E8%B3%87%E6%96%99/">萬事萬物皆是 LOG — 參考資料</a>
-    </li>
-    
-    <li>
-      <span>
-        <i>
-          <time datetime='2016-08-20' pubdate>
-            2016-08-20
-          </time>
-        </i>
-      </span>
-      <a href="https://devpoga.org/blog/2016-08-20_%E8%90%AC%E4%BA%8B%E8%90%AC%E7%89%A9%E7%9A%86%E6%98%AF-log-%E7%B3%BB%E7%B5%B1%E6%9E%B6%E6%A7%8B%E4%B9%9F%E4%BE%86%E9%BB%9E%E7%A7%91%E6%99%AE/">萬事萬物皆是 LOG — 系統架構也來點科普</a>
-    </li>
-    
-    <li>
-      <span>
-        <i>
-          <time datetime='2016-07-17' pubdate>
-            2016-07-17
-          </time>
-        </i>
-      </span>
-      <a href="https://devpoga.org/blog/2016-07-17_design-of-everyday-things/">The Design of Everyday Things</a>
-    </li>
-    
-    <li>
-      <span>
-        <i>
-          <time datetime='2016-05-17' pubdate>
-            2016-05-17
-          </time>
-        </i>
-      </span>
-      <a href="https://devpoga.org/blog/2016-05-17_%E8%A9%B2%E6%80%8E%E6%A8%A3%E6%95%99%E4%BB%BB%E4%BD%95%E4%BA%BA%E4%BB%BB%E4%BD%95%E6%8A%80%E8%83%BD/">該怎樣教任何人任何技能</a>
-    </li>
-    
-  </ul>
-  
-  
-</content>
+<main class="main"> 
+<header class="page-header">
+  <h1>
+    Blog
+  </h1>
+</header>
 
-  </main>
-  <footer><hr />
-<h4>Hi, I'm Poga</h4>
-<p>
-Follow me on <a rel="me" href="https://g0v.social/@poga">Mastodon</a> or checkout my other <a href="/blog">posts</a>
-</p>
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2>Hacking is a lost art
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>What’s hacking?
+It is the practice of aggressively refining the problem statement in order to identify find the problem that is actually worth solving.
+It is the art of focusing on solving a problem in the most impactful and economical way possible while minimizing accidental complexity.
+It is the art of not getting attached to a solution and iterating quickly.
+It’s the art of having fun while doing it.</p>
+  </div>
+  <footer class="entry-footer"><span title='2023-02-19 00:00:00 +0800 CST'>February 19, 2023</span>&nbsp;·&nbsp;poga</footer>
+  <a class="entry-link" aria-label="post link to Hacking is a lost art" href="https://devpoga.org/blog/2023-02-19_hacking_lost_art/"></a>
+</article>
 
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2>The g0v.social Mantra
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Under the surveillance capitalism standard, g0v.social is a strange little social network.
+Traditionally, social networks seek to radicalize people; the more toxic you become, the more traffic the platform will receive, and thus the greater the profit.
+We used to use the internet to escape from reality. But now we return to reality to escape the toxicity of the internet.
+The platform has taught us to post radical content, misinformation, hatred, and dunks in order to receive more feedback (likes, reposts) from the platform....</p>
+  </div>
+  <footer class="entry-footer"><span title='2023-01-22 00:00:00 +0800 CST'>January 22, 2023</span>&nbsp;·&nbsp;poga</footer>
+  <a class="entry-link" aria-label="post link to The g0v.social Mantra" href="https://devpoga.org/blog/2023-01-22_mantra_g0v_social/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2>Start with the Least Malleable
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Always start with the least malleable whenever you’re onboarding to a new job, switching careers, or just joining a new project.
+Resources you’re going to encounter in your career, from least malleable to most malleable:
+People Process Code Always start with the people. People are shaped by their life. It’s impossible to rapidly change a person without some crazy stuff happen.
+Run if people make you feel uncomfortable. Since It’s not worthy to spend your life to change some other people just to have an okay career....</p>
+  </div>
+  <footer class="entry-footer"><span title='2023-01-02 00:00:00 +0800 CST'>January 2, 2023</span>&nbsp;·&nbsp;poga</footer>
+  <a class="entry-link" aria-label="post link to Start with the Least Malleable" href="https://devpoga.org/blog/2023-01-02_start_with_the_least_malleable/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2>Cheap Complexity and Cybersecurity
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>A recurrent theme of modern security is the importance of complexity and the difficulty of containing it. With GPUs, NICs, basebands, and specialized hardware such as TPUs, things are objectively getting more complicated at a superlinear rate.
+In a world where complexity continues to grow, it is hard to provide security guarantees. The problem of escalating complexity becomes an escalated security problem.
+What’s driving the complexity? “How does one design an electric motor?...</p>
+  </div>
+  <footer class="entry-footer"><span title='2022-08-28 00:00:00 +0800 CST'>August 28, 2022</span>&nbsp;·&nbsp;poga</footer>
+  <a class="entry-link" aria-label="post link to Cheap Complexity and Cybersecurity" href="https://devpoga.org/blog/2022-08-28_cheap_complexity_cybersecurity/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2>Developing Godot Projects with Neovim
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>When I started using Godot Engine, what surprised me the most is the built-in Language Server Protocol support. Thank to it, I can easily develop GDScript with all my customized vim configs.
+Setup Install vim-godot.
+Plug &#39;habamax/vim-godot&#39; Install neovim-remote.
+pip3 install neovim-remote Setup Neovim as the external editor for Godot
+Open menu Editor/Editor Settings/ then navigate to General/External/: Tick Use external editor Set nvr to Exec Path, use which nvr to get the absolute path....</p>
+  </div>
+  <footer class="entry-footer"><span title='2022-07-23 00:00:00 +0800 CST'>July 23, 2022</span>&nbsp;·&nbsp;poga</footer>
+  <a class="entry-link" aria-label="post link to Developing Godot Projects with Neovim" href="https://devpoga.org/blog/2022-07-23_neovim_godot/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2>Unity, Godot, and Right to Repair
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Some years ago, Unity dominated the game engine market. Everyone would recommend Unity to fellow game developers without thinking.
+However, Unity (as a game engine) is not in a great shape right now:
+Deprecating features while the replacement isn’t ready, Creating multiple new implementations of features from scratch instead of improving what’s there. Abandoning their own features in favour of acquiring community-made versions, and then abandoning them, Splitting the whole render system into two incompatible, contrary versions, deprecating the previous render system....</p>
+  </div>
+  <footer class="entry-footer"><span title='2022-07-01 00:00:00 +0800 CST'>July 1, 2022</span>&nbsp;·&nbsp;poga</footer>
+  <a class="entry-link" aria-label="post link to Unity, Godot, and Right to Repair" href="https://devpoga.org/blog/2022-07-01_unity_godot_right_to_repair/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2>What I&#39;ve been Reading: 2022 Jan and Feb
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>MLOps The Four Innovation Phases of Netflix’s Trillions Scale Real-time Data Infrastructure
+https://thedataexchange.media/building-machine-learning-infrastructure-at-netflix-and-beyond/
+Real-time machine learning: challenges and solutions
+Why are ML Compilers so Hard?
+Compiler UCB CS294-113: Virtual Machines and Managed Runtimes Rendering I’ve been wanting to go back to my root of programming: games and rendering.
+A Review of Shader Language
+Finding Your Home in Game Graphics Programming
+Nanite A Deep Dive
+Rendering the Hellscape of Doom Eternal...</p>
+  </div>
+  <footer class="entry-footer"><span title='2022-02-19 00:00:00 +0800 CST'>February 19, 2022</span>&nbsp;·&nbsp;poga</footer>
+  <a class="entry-link" aria-label="post link to What I&#39;ve been Reading: 2022 Jan and Feb" href="https://devpoga.org/blog/2022-02-19_what_ive_been_reading/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2>I cannot think myself out of this
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>From HN
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2022-01-15 00:00:00 +0800 CST'>January 15, 2022</span>&nbsp;·&nbsp;poga</footer>
+  <a class="entry-link" aria-label="post link to I cannot think myself out of this" href="https://devpoga.org/blog/2022-01-15_i_cannot_think_myself_out_of_this/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2>gRPC status codes
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>gRPC defined 18 status codes for returning different types of errors.
+I think they’re a pretty good reference if you want to design clear error handling for API.
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2022-01-03 00:56:00 +0800 CST'>January 3, 2022</span>&nbsp;·&nbsp;poga</footer>
+  <a class="entry-link" aria-label="post link to gRPC status codes" href="https://devpoga.org/blog/2022-01-03_grpc_status_code/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2>On Naps
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>I’ve been taking naps multiple times a day. And surprisingly, a simple 5 minutes nap can help me avoid quite a lot of depression and anxiety.
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2021-12-12 00:00:00 +0800 CST'>December 12, 2021</span>&nbsp;·&nbsp;poga</footer>
+  <a class="entry-link" aria-label="post link to On Naps" href="https://devpoga.org/blog/2021-12-12_naps/"></a>
+</article>
+<footer class="page-footer">
+  <nav class="pagination">
+    <a class="next" href="https://devpoga.org/categories/blog/page/2/">Next&nbsp;&nbsp;»
+    </a>
+  </nav>
 </footer>
-
+    </main>
     
+<footer class="footer">
+    <span>&copy; 2023 <a href="https://devpoga.org/">Dev.Poga</a></span>
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
 </body>
 
 </html>

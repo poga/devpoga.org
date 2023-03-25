@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Teaching on Dev.Poga</title>
     <link>https://devpoga.org/tags/teaching/</link>
@@ -13,7 +13,8 @@
       <pubDate>Tue, 17 May 2016 15:09:04 +0000</pubDate>
       
       <guid>https://devpoga.org/blog/2016-05-17_%E8%A9%B2%E6%80%8E%E6%A8%A3%E6%95%99%E4%BB%BB%E4%BD%95%E4%BA%BA%E4%BB%BB%E4%BD%95%E6%8A%80%E8%83%BD/</guid>
-      <description>&lt;p&gt;&lt;img src=&#34;https://devpoga.org/post/2016-05-17_%E8%A9%B2%E6%80%8E%E6%A8%A3%E6%95%99%E4%BB%BB%E4%BD%95%E4%BA%BA%E4%BB%BB%E4%BD%95%E6%8A%80%E8%83%BD/images/1.jpeg&#34; alt=&#34;image&#34;&gt;&lt;/p&gt;
+      <description>&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://devpoga.org/post/2016-05-17_%e8%a9%b2%e6%80%8e%e6%a8%a3%e6%95%99%e4%bb%bb%e4%bd%95%e4%ba%ba%e4%bb%bb%e4%bd%95%e6%8a%80%e8%83%bd/images/1.jpeg&#34; alt=&#34;image&#34;  /&gt;
+&lt;/p&gt;
 &lt;p&gt;看到 &lt;a href=&#34;https://medium.com/@spepechen/%E6%B0%A3%E9%A4%92%E6%AD%A2%E6%AD%A5-%E8%A9%B2%E6%80%8E%E6%A8%A3%E6%95%99%E6%96%87%E7%B5%84%E7%9A%84%E4%BA%BA%E5%AF%AB%E7%A8%8B%E5%BC%8F-c1caf020b457#.6bfonxld4&#34;&gt;氣餒止步！該怎樣教文組的人寫程式？&lt;/a&gt; 這篇，講一下自己的教學經驗吧。&lt;/p&gt;</description>
     </item>
     

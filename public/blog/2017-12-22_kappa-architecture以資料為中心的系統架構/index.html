@@ -1,26 +1,69 @@
 <!DOCTYPE html>
-<html lang="en-us">
+<html lang="en" dir="auto">
 
-<head>
-  <meta http-equiv="X-Clacks-Overhead" content="GNU Terry Pratchett" />
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
 <title>Kappa Architecture：以資料為中心的系統架構 | Dev.Poga</title>
-<meta name="title" content="Kappa Architecture：以資料為中心的系統架構" />
+<meta name="keywords" content="科普, 系統架構, Log, Kappa">
 <meta name="description" content="在開發軟體時，有許多眾所周知的架構模式（architecture pattern）可做為參考。例如最廣為人知的 MVC 架構。採用這些常用模式，能大幅減低溝通成本，各種 Framework 也能提高開發速度。
-現在已經是個以資料為中心的環境，各種商業決策都依賴大量的資料。因此，系統必須能提供各種資料格式與查詢方式供各種需求使用。在這樣的環境中，也慢慢發展出許多特有的模式。" />
-<meta name="keywords" content="科普,系統架構,Log,Kappa," />
+現在已經是個以資料為中心的環境，各種商業決策都依賴大量的資料。因此，系統必須能提供各種資料格式與查詢方式供各種需求使用。在這樣的環境中，也慢慢發展出許多特有的模式。">
+<meta name="author" content="poga">
+<link rel="canonical" href="https://devpoga.org/blog/2017-12-22_kappa-architecture%E4%BB%A5%E8%B3%87%E6%96%99%E7%82%BA%E4%B8%AD%E5%BF%83%E7%9A%84%E7%B3%BB%E7%B5%B1%E6%9E%B6%E6%A7%8B/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.6a98292fb8fa8cf0f3ba4042d4b75515c04267550f3ad49ff6271b5af9562443.css" integrity="sha256-apgpL7j6jPDzukBC1LdVFcBCZ1UPOtSf9icbWvlWJEM=" rel="preload stylesheet" as="style">
+<script defer crossorigin="anonymous" src="/assets/js/highlight.f413e19d0714851f6474e7ee9632408e58ac146fbdbe62747134bea2fa3415e0.js" integrity="sha256-9BPhnQcUhR9kdOfuljJAjlisFG&#43;9vmJ0cTS&#43;ovo0FeA="
+    onload="hljs.initHighlightingOnLoad();"></script>
+<link rel="icon" href="https://devpoga.org/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://devpoga.org/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://devpoga.org/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://devpoga.org/apple-touch-icon.png">
+<link rel="mask-icon" href="https://devpoga.org/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
 
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --hljs-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
 
-<meta property="og:title" content="Kappa Architecture：以資料為中心的系統架構" />
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript><meta property="og:title" content="Kappa Architecture：以資料為中心的系統架構" />
 <meta property="og:description" content="在開發軟體時，有許多眾所周知的架構模式（architecture pattern）可做為參考。例如最廣為人知的 MVC 架構。採用這些常用模式，能大幅減低溝通成本，各種 Framework 也能提高開發速度。
 現在已經是個以資料為中心的環境，各種商業決策都依賴大量的資料。因此，系統必須能提供各種資料格式與查詢方式供各種需求使用。在這樣的環境中，也慢慢發展出許多特有的模式。" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://devpoga.org/blog/2017-12-22_kappa-architecture%E4%BB%A5%E8%B3%87%E6%96%99%E7%82%BA%E4%B8%AD%E5%BF%83%E7%9A%84%E7%B3%BB%E7%B5%B1%E6%9E%B6%E6%A7%8B/" /><meta property="og:image" content="https://devpoga.org/post/2017-12-22_kappa-architecture%E4%BB%A5%E8%B3%87%E6%96%99%E7%82%BA%E4%B8%AD%E5%BF%83%E7%9A%84%E7%B3%BB%E7%B5%B1%E6%9E%B6%E6%A7%8B/images/1.png" /><meta property="og:image" content="https://devpoga.org/post/2017-12-22_kappa-architecture%E4%BB%A5%E8%B3%87%E6%96%99%E7%82%BA%E4%B8%AD%E5%BF%83%E7%9A%84%E7%B3%BB%E7%B5%B1%E6%9E%B6%E6%A7%8B/images/2.png" /><meta property="article:section" content="blog" />
 <meta property="article:published_time" content="2017-12-22T07:32:07+00:00" />
 <meta property="article:modified_time" content="2019-04-30T21:56:01+08:00" />
-
-
 
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://devpoga.org/post/2017-12-22_kappa-architecture%E4%BB%A5%E8%B3%87%E6%96%99%E7%82%BA%E4%B8%AD%E5%BF%83%E7%9A%84%E7%B3%BB%E7%B5%B1%E6%9E%B6%E6%A7%8B/images/1.png"/>
@@ -30,227 +73,121 @@
 現在已經是個以資料為中心的環境，各種商業決策都依賴大量的資料。因此，系統必須能提供各種資料格式與查詢方式供各種需求使用。在這樣的環境中，也慢慢發展出許多特有的模式。"/>
 
 
-
-<meta itemprop="name" content="Kappa Architecture：以資料為中心的系統架構">
-<meta itemprop="description" content="在開發軟體時，有許多眾所周知的架構模式（architecture pattern）可做為參考。例如最廣為人知的 MVC 架構。採用這些常用模式，能大幅減低溝通成本，各種 Framework 也能提高開發速度。
-現在已經是個以資料為中心的環境，各種商業決策都依賴大量的資料。因此，系統必須能提供各種資料格式與查詢方式供各種需求使用。在這樣的環境中，也慢慢發展出許多特有的模式。"><meta itemprop="datePublished" content="2017-12-22T07:32:07+00:00" />
-<meta itemprop="dateModified" content="2019-04-30T21:56:01+08:00" />
-<meta itemprop="wordCount" content="2285"><meta itemprop="image" content="https://devpoga.org/post/2017-12-22_kappa-architecture%E4%BB%A5%E8%B3%87%E6%96%99%E7%82%BA%E4%B8%AD%E5%BF%83%E7%9A%84%E7%B3%BB%E7%B5%B1%E6%9E%B6%E6%A7%8B/images/1.png"><meta itemprop="image" content="https://devpoga.org/post/2017-12-22_kappa-architecture%E4%BB%A5%E8%B3%87%E6%96%99%E7%82%BA%E4%B8%AD%E5%BF%83%E7%9A%84%E7%B3%BB%E7%B5%B1%E6%9E%B6%E6%A7%8B/images/2.png">
-<meta itemprop="keywords" content="科普,系統架構,Log,Kappa," />
-<meta name="referrer" content="no-referrer-when-downgrade" />
-
-  <style>
-  body {
-    font-family: Verdana, sans-serif;
-    margin: auto;
-    padding: 20px;
-    max-width: 720px;
-    text-align: left;
-    background-color: #fff;
-    word-wrap: break-word;
-    overflow-wrap: break-word;
-    line-height: 1.5;
-    color: #444;
-  }
-
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6,
-  strong,
-  b {
-    color: #222;
-  }
-
-  a {
-    color: #3273dc;
-     
-  }
-
-  .title {
-    text-decoration: none;
-    border: 0;
-  }
-
-  .title span {
-    font-weight: 400;
-  }
-
-  nav a {
-    margin-right: 10px;
-  }
-
-  textarea {
-    width: 100%;
-    font-size: 16px;
-  }
-
-  input {
-    font-size: 16px;
-  }
-
-  content {
-    line-height: 1.6;
-  }
-
-  table {
-    width: 100%;
-  }
-
-  img {
-    max-width: 100%;
-  }
-
-  code {
-    padding: 2px 5px;
-    background-color: #f2f2f2;
-  }
-
-  pre code {
-    color: #222;
-    display: block;
-    padding: 20px;
-    white-space: pre-wrap;
-    font-size: 14px;
-  }
-
-  div.highlight pre {
-    background-color: initial;
-    color: initial;
-  }
-
-  div.highlight code {
-    background-color: unset;
-    color: unset;
-  }
-
-  blockquote {
-    border-left: 1px solid #999;
-    color: #222;
-    padding-left: 20px;
-    font-style: italic;
-  }
-
-  footer {
-    padding: 25px;
-    text-align: center;
-  }
-
-  .helptext {
-    color: #777;
-    font-size: small;
-  }
-
-  .errorlist {
-    color: #eba613;
-    font-size: small;
-  }
-
-   
-  ul.blog-posts {
-    list-style-type: none;
-    padding: unset;
-  }
-
-  ul.blog-posts li {
-    display: flex;
-  }
-
-  ul.blog-posts li span {
-    flex: 0 0 130px;
-  }
-
-  ul.blog-posts li a:visited {
-    color: #8b6fcb;
-  }
-
-  @media (prefers-color-scheme: dark) {
-    body {
-      background-color: #333;
-      color: #ddd;
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Blogs",
+      "item": "https://devpoga.org/blog/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "Kappa Architecture：以資料為中心的系統架構",
+      "item": "https://devpoga.org/blog/2017-12-22_kappa-architecture%E4%BB%A5%E8%B3%87%E6%96%99%E7%82%BA%E4%B8%AD%E5%BF%83%E7%9A%84%E7%B3%BB%E7%B5%B1%E6%9E%B6%E6%A7%8B/"
     }
-
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6,
-    strong,
-    b {
-      color: #eee;
-    }
-
-    a {
-      color: #8cc2dd;
-    }
-
-    code {
-      background-color: #777;
-    }
-
-    pre code {
-      color: #ddd;
-    }
-
-    blockquote {
-      color: #ccc;
-    }
-
-    textarea,
-    input {
-      background-color: #252525;
-      color: #ddd;
-    }
-
-    .helptext {
-      color: #aaa;
-    }
-  }
-
-</style>
-<link rel="stylesheet" href="/custom.css">
-
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-FEFM53H9Y9"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-FEFM53H9Y9');
+  ]
+}
 </script>
-
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Kappa Architecture：以資料為中心的系統架構",
+  "name": "Kappa Architecture：以資料為中心的系統架構",
+  "description": "在開發軟體時，有許多眾所周知的架構模式（architecture pattern）可做為參考。例如最廣為人知的 MVC 架構。採用這些常用模式，能大幅減低溝通成本，各種 Framework 也能提高開發速度。\n現在已經是個以資料為中心的環境，各種商業決策都依賴大量的資料。因此，系統必須能提供各種資料格式與查詢方式供各種需求使用。在這樣的環境中，也慢慢發展出許多特有的模式。\n",
+  "keywords": [
+    "科普", "系統架構", "Log", "Kappa"
+  ],
+  "articleBody": "在開發軟體時，有許多眾所周知的架構模式（architecture pattern）可做為參考。例如最廣為人知的 MVC 架構。採用這些常用模式，能大幅減低溝通成本，各種 Framework 也能提高開發速度。\n現在已經是個以資料為中心的環境，各種商業決策都依賴大量的資料。因此，系統必須能提供各種資料格式與查詢方式供各種需求使用。在這樣的環境中，也慢慢發展出許多特有的模式。\n常見的狀況是，一個系統中不同的角色有著不同的需求。工程師希望能採用高效能，容易擴充的架構；業務部門希望能即時查到各種資訊；會計系統希望能收到批次處理的當月報表。這些不同的需求，都在不斷的拉扯一個系統的架構。\n如果是較為單純的系統，所有資料都會存在單一資料庫中。常常，為了應付各種互相衝突的需求，資料的格式（schema）被不斷修改、欄位越來越多。最後各部門的需求互相糾結，整個系統陷入泥沼，開發速度大減。只使用單一資料庫又無法滿足各種需求，只好導入 ElasticSearch 做全文檢索與 Hadoop/Spark 進行大量資料處理，即時資料處理也需要與批次處理完全不同的架構。於是，整個系統益加複雜，難以維護。\n遇到這種狀況，許多人都會將系統按照業務領域切開，切成一個一個的 microservices。每個 service 有著自己專用的資料儲存架構，便可解決共用資料庫的糾結狀況。\n以電商系統為例，系統將會被拆成「訂單服務」、「客戶分析服務」、「帳務服務」等獨立的服務組成。服務之間只透過 API 來溝通，避免過度耦合。\n不過，由於各個服務之間需要不斷的互相溝通與交換資料，每個服務對資料也有不同的查詢需求。隨著需求不斷變動，每個子服務所提供的 API 還是會變的越來越複雜。\n各服務為了避免 API 的麻煩，會希望自己也有一份資料副本可隨意使用。一旦資料有了副本，就要處理許多資料同步的麻煩問題。\n無論如何，這些狀況都只會讓系統再度糾結在一起，原本按領域切割好的服務實際上又合而為一。遇到這種情況時，通常代表服務的界線需要做調整。但調整服務界線從來就不是一件簡單的事。\n假設有兩個部門都會對訂單進行各種分析。理想中，應該切出一個分析服務來服務這兩個部門。然而受限於組織架構（head count 分配、預算規劃、政治等），最後多半是兩個部門有各自的分析服務。因此大幅提高系統開發成本，產生許多重複的工作。\n康威定律（Conway’s Law）便是描述這個現象：系統的架構就等於組織的架構。如果已有組織架構存在，那就很難設計出打破原先組織架構的系統架構。\n於是，系統架構被組織架構所限制。無法劃分出正確的服務分界，便無法建立真正有彈性的系統架構\n問題的本質：資料的流通性 實際上，這些問題其實只是同一問題的不同面向。也就是「資料在領域間轉換的複雜度」。\n不同業務領域需要的資料結構大不相同，所以單一資料庫提供的單一 schema 無法負荷。 團隊在有限資源下，難以應付不同領域的需求，導致無法設計容易維護與使用的 API。 讓資料在不同領域間流動的成本太高，所以資料出現大量、可能過時的副本。 領域間差異太大，導致部門間溝通困難，因此組織架構影響系統架構決策，與系統架構互相糾結、牽制。 而 Kappa 架構便是藉由回歸資料的本質來解決這些問題。\n資料的本質：Append-only Log 任何資料都是由一連串的改變所形成，因此，每一筆資料都可以用一個 append-only log 表示。\n假設目前有一筆用戶資料如下：\n{ \"user_id\": 1234, \"username\": “Jack123”, \"balance\": 75 } 這筆用戶資料其實是由一連串的事件修改所形成：\n{ // 使用者註冊 \"event\": \"register\", \"username\": \"Jack123\", \"user_id\": 1234, } { // 使用者儲值 \"event\": \"deposit\", \"user_id\": 1234 \"add_balance”: 100 } { // 使用者消費付款 \"event\": \"purchase\", \"user_id\": 1234, \"add_balance\": -25 } 因為已經發生的修改不會再變動，因此這是一份 append-only log。\n用 append-only log 來記錄資料有什麼好處呢？因為相較於展開後的欄位，「修改」的格式非常單純，只由「修改時間」、「欄位」、「更改的值」等欄位所構成，資料格式穩定，省下了修改 schema 的困擾。\n然而，這樣的資料結構並不容易使用。缺乏關連，難以查詢，也少了很多驗證正確性的工具。該怎麼辦呢？\nKappa 架構 既然任何資料都可以用一連串的改變來表示，那這一連串的改變也自然可以轉換成任何一種資料格式。\nKappa 架構的核心概念便在此：用記錄改變的 append-only log 來當作系統的資料核心，各 microservices 根據 log 的新增，將資料存成自己所需要的格式。需要資料關連性跟方便的 SQL？那就把資料寫進 RDBMS。需要全文檢索？那就把資料放進 elasticsearch。\n這樣的作法很類似許多資料庫提供的「Materialized View」的功能：將資料放進一個結構方便使用的暫時空間中。\n只要每個服務不去刻意修改 view 中的資料，那就隨時都可以從 log 重建這份 view，也就避免了副本不同步的問題。如果 view 的資料格式需要修改，只要直接整個服務砍掉，從 log 重建一份即可。\n於是，每個服務都能自行取用最原始的 log，轉成最適合的格式。服務可以專心提供他專有的價值，而不需要負責資料的流動。\n因為這些性質，系統變的更容易維護，服務隨時可以重啟，不用擔心資料損失。架構上也更加單純，不論業務需要的是即時串流分析，或是批次處理，都能自由選擇適用的儲存方式，而不用擔心資料同步問題，也不需分開維護兩套系統。\n重播 Kappa 架構還有另一個好處：資料的所有變動都被紀錄了下來，因此不再受到「當下」這個時間所限制。\n如果突然需要追蹤去年三月到四月的整體資料變化，因為所有紀錄都被紀錄在集中的 append-only log 中，只要 log 還有被保存著，就能針對需要的時間區間的 log 啟動需要的服務，讓服務重播（replay）這些資料，便可得到當時的系統狀態。\nMicroservices 不再侷限於「現在」，而是只要給他一段能重播的 log，他就能重現當時的狀態。整個系統變的更有彈性、更容易擴充。\n以後遇到資料密集的系統時，Kappa 這樣的架構也許能幫你省下不少心力。\n",
+  "wordCount" : "2285",
+  "inLanguage": "en",
+  "datePublished": "2017-12-22T07:32:07.829Z",
+  "dateModified": "2019-04-30T21:56:01+08:00",
+  "author":{
+    "@type": "Person",
+    "name": "poga"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://devpoga.org/blog/2017-12-22_kappa-architecture%E4%BB%A5%E8%B3%87%E6%96%99%E7%82%BA%E4%B8%AD%E5%BF%83%E7%9A%84%E7%B3%BB%E7%B5%B1%E6%9E%B6%E6%A7%8B/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Dev.Poga",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://devpoga.org/favicon.ico"
+    }
+  }
+}
+</script>
 </head>
 
-<body>
-  <header><a href="/" class="title">
-  <h1>Dev.Poga</h2>
-</a>
-<nav><a href="/">Home</a>
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
 
+</script>
 
-<a href="/blog">Blog</a>
-
-</nav>
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="https://devpoga.org/" accesskey="h" title="Dev.Poga (Alt + H)">Dev.Poga</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+        </ul>
+    </nav>
 </header>
-  <main>
+<main class="main">
 
-<h1>Kappa Architecture：以資料為中心的系統架構</h1>
-<p>
-  <i>
-    <time datetime='2017-12-22' pubdate>
-      22 Dec, 2017
-    </time>
-  </i>
-</p>
+<article class="post-single">
+  <header class="post-header">
+    
+    <h1 class="post-title">
+      Kappa Architecture：以資料為中心的系統架構
+    </h1>
+    <div class="post-meta"><span title='2017-12-22 07:32:07.829 +0000 UTC'>December 22, 2017</span>&nbsp;·&nbsp;poga
 
-<content>
-  <p>在開發軟體時，有許多眾所周知的架構模式（architecture pattern）可做為參考。例如最廣為人知的 <a href="https://www.wikiwand.com/zh-tw/MVC">MVC 架構</a>。採用這些常用模式，能大幅減低溝通成本，各種 Framework 也能提高開發速度。</p>
+</div>
+  </header> 
+  <div class="post-content"><p>在開發軟體時，有許多眾所周知的架構模式（architecture pattern）可做為參考。例如最廣為人知的 <a href="https://www.wikiwand.com/zh-tw/MVC">MVC 架構</a>。採用這些常用模式，能大幅減低溝通成本，各種 Framework 也能提高開發速度。</p>
 <p>現在已經是個以資料為中心的環境，各種商業決策都依賴大量的資料。因此，系統必須能提供各種資料格式與查詢方式供各種需求使用。在這樣的環境中，也慢慢發展出許多特有的模式。</p>
 <p>常見的狀況是，一個系統中不同的角色有著不同的需求。工程師希望能採用高效能，容易擴充的架構；業務部門希望能即時查到各種資訊；會計系統希望能收到批次處理的當月報表。這些不同的需求，都在不斷的拉扯一個系統的架構。</p>
-<p><img src="/post/2017-12-22_kappa-architecture%E4%BB%A5%E8%B3%87%E6%96%99%E7%82%BA%E4%B8%AD%E5%BF%83%E7%9A%84%E7%B3%BB%E7%B5%B1%E6%9E%B6%E6%A7%8B/images/1.png" alt="image"></p>
+<p><img loading="lazy" src="/post/2017-12-22_kappa-architecture%e4%bb%a5%e8%b3%87%e6%96%99%e7%82%ba%e4%b8%ad%e5%bf%83%e7%9a%84%e7%b3%bb%e7%b5%b1%e6%9e%b6%e6%a7%8b/images/1.png" alt="image"  />
+</p>
 <p>如果是較為單純的系統，所有資料都會存在單一資料庫中。常常，為了應付各種互相衝突的需求，資料的格式（schema）被不斷修改、欄位越來越多。最後各部門的需求互相糾結，整個系統陷入泥沼，開發速度大減。只使用單一資料庫又無法滿足各種需求，只好導入 ElasticSearch 做全文檢索與 Hadoop/Spark 進行大量資料處理，即時資料處理也需要與批次處理完全不同的架構。於是，整個系統益加複雜，難以維護。</p>
 <p>遇到這種狀況，許多人都會將系統按照業務領域切開，切成一個一個的 microservices。每個 service 有著自己專用的資料儲存架構，便可解決共用資料庫的糾結狀況。</p>
 <p>以電商系統為例，系統將會被拆成「訂單服務」、「客戶分析服務」、「帳務服務」等獨立的服務組成。服務之間只透過 API 來溝通，避免過度耦合。</p>
@@ -260,7 +197,7 @@
 <p>假設有兩個部門都會對訂單進行各種分析。理想中，應該切出一個分析服務來服務這兩個部門。然而受限於組織架構（head count 分配、預算規劃、政治等），最後多半是兩個部門有各自的分析服務。因此大幅提高系統開發成本，產生許多重複的工作。</p>
 <p><a href="https://www.wikiwand.com/en/Conway%27s_law">康威定律（Conway’s Law）</a>便是描述這個現象：系統的架構就等於組織的架構。如果已有組織架構存在，那就很難設計出打破原先組織架構的系統架構。</p>
 <p>於是，系統架構被組織架構所限制。無法劃分出正確的服務分界，便無法建立真正有彈性的系統架構</p>
-<h4 id="問題的本質資料的流通性">問題的本質：資料的流通性</h4>
+<h4 id="問題的本質資料的流通性">問題的本質：資料的流通性<a hidden class="anchor" aria-hidden="true" href="#問題的本質資料的流通性">#</a></h4>
 <p>實際上，這些問題其實只是同一問題的不同面向。也就是「資料在領域間轉換的複雜度」。</p>
 <ul>
 <li>不同業務領域需要的資料結構大不相同，所以單一資料庫提供的單一 schema 無法負荷。</li>
@@ -269,7 +206,7 @@
 <li>領域間差異太大，導致部門間溝通困難，因此組織架構影響系統架構決策，與系統架構互相糾結、牽制。</li>
 </ul>
 <p>而 <a href="http://kappa-architecture.com">Kappa 架構</a>便是藉由回歸資料的本質來解決這些問題。</p>
-<h4 id="資料的本質append-only-log">資料的本質：Append-only Log</h4>
+<h4 id="資料的本質append-only-log">資料的本質：Append-only Log<a hidden class="anchor" aria-hidden="true" href="#資料的本質append-only-log">#</a></h4>
 <p>任何資料都是由一連串的改變所形成，因此，每一筆資料都可以用一個 append-only log 表示。</p>
 <p>假設目前有一筆用戶資料如下：</p>
 <pre tabindex="0"><code>{
@@ -298,42 +235,102 @@
 </code></pre><p>因為已經發生的修改不會再變動，因此這是一份 append-only log。</p>
 <p>用 append-only log 來記錄資料有什麼好處呢？因為相較於展開後的欄位，「修改」的格式非常單純，只由「修改時間」、「欄位」、「更改的值」等欄位所構成，資料格式穩定，省下了修改 schema 的困擾。</p>
 <p>然而，這樣的資料結構並不容易使用。缺乏關連，難以查詢，也少了很多驗證正確性的工具。該怎麼辦呢？</p>
-<h4 id="kappa-架構">Kappa 架構</h4>
+<h4 id="kappa-架構">Kappa 架構<a hidden class="anchor" aria-hidden="true" href="#kappa-架構">#</a></h4>
 <p>既然任何資料都可以用一連串的改變來表示，那這一連串的改變也自然可以轉換成任何一種資料格式。</p>
-<p><img src="/post/2017-12-22_kappa-architecture%E4%BB%A5%E8%B3%87%E6%96%99%E7%82%BA%E4%B8%AD%E5%BF%83%E7%9A%84%E7%B3%BB%E7%B5%B1%E6%9E%B6%E6%A7%8B/images/2.png" alt="image"></p>
+<p><img loading="lazy" src="/post/2017-12-22_kappa-architecture%e4%bb%a5%e8%b3%87%e6%96%99%e7%82%ba%e4%b8%ad%e5%bf%83%e7%9a%84%e7%b3%bb%e7%b5%b1%e6%9e%b6%e6%a7%8b/images/2.png" alt="image"  />
+</p>
 <p>Kappa 架構的核心概念便在此：用記錄改變的 append-only log 來當作系統的資料核心，各 microservices 根據 log 的新增，將資料存成自己所需要的格式。需要資料關連性跟方便的 SQL？那就把資料寫進 RDBMS。需要全文檢索？那就把資料放進 elasticsearch。</p>
 <p>這樣的作法很類似許多資料庫提供的「Materialized View」的功能：將資料放進一個結構方便使用的暫時空間中。</p>
 <p>只要每個服務不去刻意修改 view 中的資料，那就隨時都可以從 log 重建這份 view，也就避免了副本不同步的問題。如果 view 的資料格式需要修改，只要直接整個服務砍掉，從 log 重建一份即可。</p>
 <p>於是，每個服務都能自行取用最原始的 log，轉成最適合的格式。服務可以專心提供他專有的價值，而不需要負責資料的流動。</p>
 <p>因為這些性質，系統變的更容易維護，服務隨時可以重啟，不用擔心資料損失。架構上也更加單純，不論業務需要的是即時串流分析，或是批次處理，都能自由選擇適用的儲存方式，而不用擔心資料同步問題，也不需分開維護兩套系統。</p>
-<h4 id="重播">重播</h4>
+<h4 id="重播">重播<a hidden class="anchor" aria-hidden="true" href="#重播">#</a></h4>
 <p>Kappa 架構還有另一個好處：資料的所有變動都被紀錄了下來，因此不再受到「當下」這個時間所限制。</p>
 <p>如果突然需要追蹤去年三月到四月的整體資料變化，因為所有紀錄都被紀錄在集中的 append-only log 中，只要 log 還有被保存著，就能針對需要的時間區間的 log 啟動需要的服務，讓服務重播（replay）這些資料，便可得到當時的系統狀態。</p>
 <p>Microservices 不再侷限於「現在」，而是只要給他一段能重播的 log，他就能重現當時的狀態。整個系統變的更有彈性、更容易擴充。</p>
 <p>以後遇到資料密集的系統時，Kappa 這樣的架構也許能幫你省下不少心力。</p>
-</content>
-<p>
-  
-  <a href="https://devpoga.org/tags/%E7%A7%91%E6%99%AE/">#科普</a>
-  
-  <a href="https://devpoga.org/tags/%E7%B3%BB%E7%B5%B1%E6%9E%B6%E6%A7%8B/">#系統架構</a>
-  
-  <a href="https://devpoga.org/tags/log/">#Log</a>
-  
-  <a href="https://devpoga.org/tags/kappa/">#Kappa</a>
-  
-</p>
 
-  </main>
-  <footer><hr />
-<h4>Hi, I'm Poga</h4>
-<p>
-Follow me on <a rel="me" href="https://g0v.social/@poga">Mastodon</a> or checkout my other <a href="/blog">posts</a>
-</p>
+  </div>
 
-</footer>
-
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="https://devpoga.org/tags/%E7%A7%91%E6%99%AE/">科普</a></li>
+      <li><a href="https://devpoga.org/tags/%E7%B3%BB%E7%B5%B1%E6%9E%B6%E6%A7%8B/">系統架構</a></li>
+      <li><a href="https://devpoga.org/tags/log/">Log</a></li>
+      <li><a href="https://devpoga.org/tags/kappa/">Kappa</a></li>
+    </ul>
+  </footer>
+</article>
+    </main>
     
+<footer class="footer">
+    <span>&copy; 2023 <a href="https://devpoga.org/">Dev.Poga</a></span>
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
 </body>
 
 </html>

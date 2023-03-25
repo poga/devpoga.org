@@ -1,18 +1,63 @@
 <!DOCTYPE html>
-<html lang="en-us">
+<html lang="en" dir="auto">
 
-<head>
-  <meta http-equiv="X-Clacks-Overhead" content="GNU Terry Pratchett" />
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
 <title>Learning Julia, Line by Line | Dev.Poga</title>
-<meta name="title" content="Learning Julia, Line by Line" />
+<meta name="keywords" content="Notes, Programming, Julia">
 <meta name="description" content="Cardsjl is a simple Julia package which demonstrate many interesting bits of the Julia Programming Language.
-Reading it is an enjoyable experience. The note I&rsquo;ve writtend down is here:" />
-<meta name="keywords" content="Notes,Programming,Julia," />
+Reading it is an enjoyable experience. The note I&rsquo;ve writtend down is here:">
+<meta name="author" content="poga">
+<link rel="canonical" href="https://devpoga.org/blog/2021-08-04_learning_julia_line_by_line/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.6a98292fb8fa8cf0f3ba4042d4b75515c04267550f3ad49ff6271b5af9562443.css" integrity="sha256-apgpL7j6jPDzukBC1LdVFcBCZ1UPOtSf9icbWvlWJEM=" rel="preload stylesheet" as="style">
+<script defer crossorigin="anonymous" src="/assets/js/highlight.f413e19d0714851f6474e7ee9632408e58ac146fbdbe62747134bea2fa3415e0.js" integrity="sha256-9BPhnQcUhR9kdOfuljJAjlisFG&#43;9vmJ0cTS&#43;ovo0FeA="
+    onload="hljs.initHighlightingOnLoad();"></script>
+<link rel="icon" href="https://devpoga.org/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://devpoga.org/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://devpoga.org/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://devpoga.org/apple-touch-icon.png">
+<link rel="mask-icon" href="https://devpoga.org/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
 
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --hljs-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
 
-<meta property="og:title" content="Learning Julia, Line by Line" />
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript><meta property="og:title" content="Learning Julia, Line by Line" />
 <meta property="og:description" content="Cardsjl is a simple Julia package which demonstrate many interesting bits of the Julia Programming Language.
 Reading it is an enjoyable experience. The note I&rsquo;ve writtend down is here:" />
 <meta property="og:type" content="article" />
@@ -20,232 +65,123 @@ Reading it is an enjoyable experience. The note I&rsquo;ve writtend down is here
 <meta property="article:published_time" content="2021-08-04T00:00:00+08:00" />
 <meta property="article:modified_time" content="2021-08-04T00:00:00+08:00" />
 
-
-
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Learning Julia, Line by Line"/>
 <meta name="twitter:description" content="Cardsjl is a simple Julia package which demonstrate many interesting bits of the Julia Programming Language.
 Reading it is an enjoyable experience. The note I&rsquo;ve writtend down is here:"/>
 
 
-
-<meta itemprop="name" content="Learning Julia, Line by Line">
-<meta itemprop="description" content="Cardsjl is a simple Julia package which demonstrate many interesting bits of the Julia Programming Language.
-Reading it is an enjoyable experience. The note I&rsquo;ve writtend down is here:"><meta itemprop="datePublished" content="2021-08-04T00:00:00+08:00" />
-<meta itemprop="dateModified" content="2021-08-04T00:00:00+08:00" />
-<meta itemprop="wordCount" content="1538">
-<meta itemprop="keywords" content="Notes,Programming,Julia," />
-<meta name="referrer" content="no-referrer-when-downgrade" />
-
-  <style>
-  body {
-    font-family: Verdana, sans-serif;
-    margin: auto;
-    padding: 20px;
-    max-width: 720px;
-    text-align: left;
-    background-color: #fff;
-    word-wrap: break-word;
-    overflow-wrap: break-word;
-    line-height: 1.5;
-    color: #444;
-  }
-
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6,
-  strong,
-  b {
-    color: #222;
-  }
-
-  a {
-    color: #3273dc;
-     
-  }
-
-  .title {
-    text-decoration: none;
-    border: 0;
-  }
-
-  .title span {
-    font-weight: 400;
-  }
-
-  nav a {
-    margin-right: 10px;
-  }
-
-  textarea {
-    width: 100%;
-    font-size: 16px;
-  }
-
-  input {
-    font-size: 16px;
-  }
-
-  content {
-    line-height: 1.6;
-  }
-
-  table {
-    width: 100%;
-  }
-
-  img {
-    max-width: 100%;
-  }
-
-  code {
-    padding: 2px 5px;
-    background-color: #f2f2f2;
-  }
-
-  pre code {
-    color: #222;
-    display: block;
-    padding: 20px;
-    white-space: pre-wrap;
-    font-size: 14px;
-  }
-
-  div.highlight pre {
-    background-color: initial;
-    color: initial;
-  }
-
-  div.highlight code {
-    background-color: unset;
-    color: unset;
-  }
-
-  blockquote {
-    border-left: 1px solid #999;
-    color: #222;
-    padding-left: 20px;
-    font-style: italic;
-  }
-
-  footer {
-    padding: 25px;
-    text-align: center;
-  }
-
-  .helptext {
-    color: #777;
-    font-size: small;
-  }
-
-  .errorlist {
-    color: #eba613;
-    font-size: small;
-  }
-
-   
-  ul.blog-posts {
-    list-style-type: none;
-    padding: unset;
-  }
-
-  ul.blog-posts li {
-    display: flex;
-  }
-
-  ul.blog-posts li span {
-    flex: 0 0 130px;
-  }
-
-  ul.blog-posts li a:visited {
-    color: #8b6fcb;
-  }
-
-  @media (prefers-color-scheme: dark) {
-    body {
-      background-color: #333;
-      color: #ddd;
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Blogs",
+      "item": "https://devpoga.org/blog/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "Learning Julia, Line by Line",
+      "item": "https://devpoga.org/blog/2021-08-04_learning_julia_line_by_line/"
     }
-
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6,
-    strong,
-    b {
-      color: #eee;
-    }
-
-    a {
-      color: #8cc2dd;
-    }
-
-    code {
-      background-color: #777;
-    }
-
-    pre code {
-      color: #ddd;
-    }
-
-    blockquote {
-      color: #ccc;
-    }
-
-    textarea,
-    input {
-      background-color: #252525;
-      color: #ddd;
-    }
-
-    .helptext {
-      color: #aaa;
-    }
-  }
-
-</style>
-<link rel="stylesheet" href="/custom.css">
-
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-FEFM53H9Y9"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-FEFM53H9Y9');
+  ]
+}
 </script>
-
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Learning Julia, Line by Line",
+  "name": "Learning Julia, Line by Line",
+  "description": "Cardsjl is a simple Julia package which demonstrate many interesting bits of the Julia Programming Language.\nReading it is an enjoyable experience. The note I\u0026rsquo;ve writtend down is here:\n",
+  "keywords": [
+    "Notes", "Programming", "Julia"
+  ],
+  "articleBody": "Cardsjl is a simple Julia package which demonstrate many interesting bits of the Julia Programming Language.\nReading it is an enjoyable experience. The note I’ve writtend down is here:\n# import base multiply(*), bitwise-or(|), and bitwise-and(\u0026) # # In Julia, you can load modules with `using` or `import`. The difference is that # * `using` will load the module **and** reexport the loaded module into the surrounding global # namespace. # * `import` will only load the module and rexport the module name to the scope. import Base: *, |, \u0026 \"\"\" Encode a suit as a 2-bit value (low bits of a `UInt8`): - 0 = ♣ (clubs) - 1 = ♢ (diamonds) - 2 = ♡ (hearts) - 3 = ♠ (spades) The suits have global constant bindings: `♣`, `♢`, `♡`, `♠`. \"\"\" # Here we define a struct `Suit`. A `Suit` contains a `i` variable with type`UInt8` # # In Julia, type objects are constructor functions. We can create new instance of the struct # via calling the function `suit = Suit(0)` struct Suit i::UInt8 # Here, we define an \"Inner Constructor Method\" to define constraints for the constructor # # This is also a neat example of Julia's unicode support. Yes, we can use ≤ as `\u003c=`. Suit(s::Integer) = 0 ≤ s ≤ 3 ? new(s) : throw(ArgumentError(\"invalid suit number: $s\")) end # Julia's abstraction is mostly powered by multiple dispatch. # Here we define a \"new dispatch\" for `char()` function to convert normal characters to a Suit. # Therefore, whenever the `char()` function is applied with a `Suit`, this dispatch will be used. char(s::Suit) = Char(0x2663-s.i) # ... and some other helpers. They're surprisingly self-explanatory Base.string(s::Suit) = string(char(s)) Base.show(io::IO, s::Suit) = print(io, char(s)) # In a normal poker deck, there's only 4 possible suits # We can write readable codes with the power of unicode symbols in Julia const ♣ = Suit(0) const ♢ = Suit(1) const ♡ = Suit(2) const ♠ = Suit(3) const suits = [♣, ♢, ♡, ♠] \"\"\" Encode a playing card as a 6-bit integer (low bits of a `UInt8`): - low bits represent rank from 0 to 15 - high bits represent suit (♣, ♢, ♡ or ♠) Ranks are assigned as follows: - numbered cards (2 to 10) have rank equal to their number - jacks, queens and kings have ranks 11, 12 and 13 - there are low and high aces with ranks 1 and 14 - there are low and high jokers with ranks 0 and 15 This allows any of the standard orderings of cards ranks to be achieved simply by choosing which aces or which jokers to use. There are a total of 64 possible card values with this scheme, represented by `UInt8` values `0x00` through `0x3f`. \"\"\" # A Card is a struct which encode the suit and the rank into a single UInt8 # # In most high-level languages, this would be kinda tedious to define. # However, Julia demonstrated its expressiveness straight to the lowest level here. struct Card value::UInt8 end # We create a new dispatch for `Card`'s constructor. # It will encode the rank and the suit into the UInt8 function Card(r::Integer, s::Integer) 0 ≤ r ≤ 15 || throw(ArgumentError(\"invalid card rank: $r\")) return Card(((s \u003c\u003c 4) % UInt8) | (r % UInt8)) end # Another dispath when a suit is given instead of an integer for suit Card(r::Integer, s::Suit) = Card(r, s.i) # These are getters for getting the rank or suit from a card suit(c::Card) = Suit((0x30 \u0026 c.value) \u003e\u003e\u003e 4) rank(c::Card) = (c.value \u0026 0x0f) % Int8 # Lets define a new dispatch for Base.show to make it looks good when printed. function Base.show(io::IO, c::Card) r = rank(c) if 1 ≤ r ≤ 14 r == 10 \u0026\u0026 print(io, '1') print(io, \"1234567890JQKA\"[r]) else print(io, '\\U1f0cf') end print(io, suit(c)) end # In Julia, `2 * x` can be written as `2x`. # # By creating a new dispatch for the multiply operator `*`, we can write `2♣` # and it will automatically converted to `Card(2, ♣)`. WOW fancy. *(r::Integer, s::Suit) = Card(r, s) # However, \"J♣\" will not be treated as a multipication. # # Here we use `@eval` macro to create these variables as consts. # such lispy. I like it. for s in \"♣♢♡♠\", (r,f) in zip(11:14, \"JQKA\") ss, sc = Symbol(s), Symbol(\"$f$s\") @eval (export $sc; const $sc = Card($r,$ss)) end \"\"\" Represent a hand (set) of cards using a `UInt64` bit set. \"\"\" # we use an `UInt64` bit set to store what cards are presented in a hand # since there's only 52 cards in a deck. # # We use `\u003c:` to indicate that a `Hand` is a subtype of a `AbstractSet{Card}`. # Therefore, `Hand` can be used with all functions with compatiable dispatch to an `AbstractSet`. struct Hand \u003c: AbstractSet{Card} cards::UInt64 Hand(cards::UInt64) = new(cards) end # convert card value to bit\tset position bit(c::Card) = one(UInt64) \u003c\u003c c.value # convert suit to bit set range bits(s::Suit) = UInt64(0xffff) \u003c\u003c 16(s.i) # a simple constructor to convert a set of cards to a bit set function Hand(cards) hand = Hand(zero(UInt64)) for card in cards card isa Card || throw(ArgumentError(\"not a card: $repr(card)\")) i = bit(card) hand.cards \u0026 i == 0 || throw(ArgumentError(\"duplicate cards are not supported\")) hand = Hand(hand.cards | i) end return hand end # Some more dispatches for our Hand type Base.in(c::Card, h::Hand) = (bit(c) \u0026 h.cards) != 0 Base.length(h::Hand) = count_ones(h.cards) Base.isempty(h::Hand) = h.cards == 0 Base.lastindex(h::Hand) = length(h) # Define an iterator for our Hand. # # We can define a parameter with default value with the syntax introduced here function Base.iterate(h::Hand, s::UInt8 = trailing_zeros(h.cards) % UInt8) (h.cards \u003e\u003e\u003e s) == 0 \u0026\u0026 return nothing c = Card(s); s += true c, s + trailing_zeros(h.cards \u003e\u003e\u003e s) % UInt8 end # a non-bound-checked function to get a Card from a Hand function Base.unsafe_getindex(h::Hand, i::UInt8) card, s = 0x0, 0x5 while true mask = 0xffff_ffff_ffff_ffff \u003e\u003e (0x40 - (0x1\u003c\u003cs) - card) card += UInt8(i \u003e count_ones(h.cards \u0026 mask) % UInt8) \u003c\u003c s s \u003e 0 || break s -= 0x1 end return Card(card) end # To avoid having to convert from UInt8 to Integer constantly, # we create a new dispatch for our unsafe_getindex for all Integeres Base.unsafe_getindex(h::Hand, i::Integer) = Base.unsafe_getindex(h, i % UInt8) # Finally, we wrap our not-so-safe fuction with a bounded-checked `getindex` function function Base.getindex(h::Hand, i::Integer) # The `@boundscheck` macro allows the bound check to be ignored with `@inbound` macro @boundscheck 1 ≤ i ≤ length(h) || throw(BoundsError(h,i)) return Base.unsafe_getindex(h, i) end # Make a `Hand` looks nice when printed function Base.show(io::IO, hand::Hand) if isempty(hand) || !get(io, :compact, false) print(io, \"Hand([\") for card in hand print(io, card) (bit(card) \u003c\u003c 1) ≤ hand.cards \u0026\u0026 print(io, \", \") end print(io, \"])\") else for suit in suits s = hand \u0026 suit isempty(s) \u0026\u0026 continue show(io, suit) for card in s r = rank(card) if r == 10 print(io, '\\u2491') elseif 1 ≤ r ≤ 14 print(io, \"1234567890JQKA\"[r]) else print(io, '\\U1f0cf') end end end end end # More dispatch to allow us to combine two hands with `|`, add a card to a hand with `|` a::Hand | b::Hand = Hand(a.cards | b.cards) a::Hand | c::Card = Hand(a.cards | bit(c)) c::Card | h::Hand = h | c # interset two hands with `\u0026` a::Hand \u0026 b::Hand = Hand(a.cards \u0026 b.cards) # fetch cards within a suit range with `\u0026` h::Hand \u0026 s::Suit = Hand(h.cards \u0026 bits(s)) s::Suit \u0026 h::Hand = h \u0026 s # more new dispatches Base.intersect(s::Suit, h::Hand) = h \u0026 s Base.intersect(h::Hand, s::Suit) = intersect(s::Suit, h::Hand) # range operators for our suit and cards *(rr::OrdinalRange{\u003c:Integer}, s::Suit) = Hand(Card(r,s) for r in rr) ..(r::Integer, c::Card) = (r:rank(c))*suit(c) ..(a::Card, b::Card) = suit(a) == suit(b) ? rank(a)..b : throw(ArgumentError(\"card ranges need matching suits: $a vs $b\")) # FINALLY, we create a deck, which contains 52 unique cards const deck = Hand(Card(r,s) for s in suits for r = 2:14) # An empty hand can be represented as 0 Base.empty(::Type{Hand}) = Hand(zero(UInt64)) # Use `rand` to get a random subset of the deck # we use @eval to interpolate all cards into this expression then evaluate it @eval Base.rand(::Type{Hand}) = Hand($(deck.cards) \u0026 rand(UInt64)) # In Julia, a function ends with `!` indicates that it's an in-place update function # # Here we define a `deal!` function to fill hands based on specified `counts` layout function deal!(counts::Vector{\u003c:Integer}, hands::AbstractArray{Hand}, offset::Int=0) for rank = 2:14, suit = 0:3 while true hand = rand(1:4) if counts[hand] \u003e 0 counts[hand] -= 1 hands[offset + hand] |= Card(rank, suit) break end end end return hands end # Now let's define our `deal` function. It will deal cards to 4 people with the given count # # Default dispatch when no argument provided deal() = deal!(fill(13, 4), fill(empty(Hand), 4)) # a dispatch for `deal` when an `n` Int is provided function deal(n::Int) counts = fill(0x0, 4) hands = fill(empty(Hand), 4, n) for i = 1:n deal!(fill!(counts, 13), hands, 4(i-1)) end return permutedims(hands) end # calculate the points of a given hand function points(hand::Hand) p = 0 for rank = 11:14, suit = 0:3 card = Card(rank, suit) p += (rank-10)*(card in hand) end return p end ",
+  "wordCount" : "1538",
+  "inLanguage": "en",
+  "datePublished": "2021-08-04T00:00:00+08:00",
+  "dateModified": "2021-08-04T00:00:00+08:00",
+  "author":{
+    "@type": "Person",
+    "name": "poga"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://devpoga.org/blog/2021-08-04_learning_julia_line_by_line/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Dev.Poga",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://devpoga.org/favicon.ico"
+    }
+  }
+}
+</script>
 </head>
 
-<body>
-  <header><a href="/" class="title">
-  <h1>Dev.Poga</h2>
-</a>
-<nav><a href="/">Home</a>
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
 
+</script>
 
-<a href="/blog">Blog</a>
-
-</nav>
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="https://devpoga.org/" accesskey="h" title="Dev.Poga (Alt + H)">Dev.Poga</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+        </ul>
+    </nav>
 </header>
-  <main>
+<main class="main">
 
-<h1>Learning Julia, Line by Line</h1>
-<p>
-  <i>
-    <time datetime='2021-08-04' pubdate>
-      04 Aug, 2021
-    </time>
-  </i>
-</p>
+<article class="post-single">
+  <header class="post-header">
+    
+    <h1 class="post-title">
+      Learning Julia, Line by Line
+    </h1>
+    <div class="post-meta"><span title='2021-08-04 00:00:00 +0800 CST'>August 4, 2021</span>&nbsp;·&nbsp;poga
 
-<content>
-  <p><a href="https://github.com/StefanKarpinski/Cards.jl">Cardsjl</a> is a simple Julia package which demonstrate many interesting bits of the <a href="https://julialang.org/">Julia Programming Language</a>.</p>
+</div>
+  </header> 
+  <div class="post-content"><p><a href="https://github.com/StefanKarpinski/Cards.jl">Cardsjl</a> is a simple Julia package which demonstrate many interesting bits of the <a href="https://julialang.org/">Julia Programming Language</a>.</p>
 <p>Reading it is an enjoyable experience. The note I&rsquo;ve writtend down is here:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-julia" data-lang="julia"><span style="display:flex;"><span><span style="color:#75715e"># import base multiply(*), bitwise-or(|), and bitwise-and(&amp;)</span>
 </span></span><span style="display:flex;"><span><span style="color:#75715e">#</span>
@@ -532,27 +468,87 @@ Reading it is an enjoyable experience. The note I&rsquo;ve writtend down is here
 </span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">return</span> p
 </span></span><span style="display:flex;"><span><span style="color:#66d9ef">end</span>
 </span></span></code></pre></div>
-</content>
-<p>
-  
-  <a href="https://devpoga.org/tags/notes/">#Notes</a>
-  
-  <a href="https://devpoga.org/tags/programming/">#programming</a>
-  
-  <a href="https://devpoga.org/tags/julia/">#Julia</a>
-  
-</p>
 
-  </main>
-  <footer><hr />
-<h4>Hi, I'm Poga</h4>
-<p>
-Follow me on <a rel="me" href="https://g0v.social/@poga">Mastodon</a> or checkout my other <a href="/blog">posts</a>
-</p>
+  </div>
 
-</footer>
-
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="https://devpoga.org/tags/notes/">Notes</a></li>
+      <li><a href="https://devpoga.org/tags/programming/">programming</a></li>
+      <li><a href="https://devpoga.org/tags/julia/">Julia</a></li>
+    </ul>
+  </footer>
+</article>
+    </main>
     
+<footer class="footer">
+    <span>&copy; 2023 <a href="https://devpoga.org/">Dev.Poga</a></span>
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
 </body>
 
 </html>

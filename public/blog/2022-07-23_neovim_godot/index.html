@@ -1,21 +1,66 @@
 <!DOCTYPE html>
-<html lang="en-us">
+<html lang="en" dir="auto">
 
-<head>
-  <meta http-equiv="X-Clacks-Overhead" content="GNU Terry Pratchett" />
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
 <title>Developing Godot Projects with Neovim | Dev.Poga</title>
-<meta name="title" content="Developing Godot Projects with Neovim" />
+<meta name="keywords" content="Godot, Neovim">
 <meta name="description" content="When I started using Godot Engine, what surprised me the most is the built-in Language Server Protocol support. Thank to it, I can easily develop GDScript with all my customized vim configs.
 Setup Install vim-godot.
 Plug &#39;habamax/vim-godot&#39; Install neovim-remote.
 pip3 install neovim-remote Setup Neovim as the external editor for Godot
-Open menu Editor/Editor Settings/ then navigate to General/External/: Tick Use external editor Set nvr to Exec Path, use which nvr to get the absolute path." />
-<meta name="keywords" content="Godot,Neovim," />
+Open menu Editor/Editor Settings/ then navigate to General/External/: Tick Use external editor Set nvr to Exec Path, use which nvr to get the absolute path.">
+<meta name="author" content="poga">
+<link rel="canonical" href="https://devpoga.org/blog/2022-07-23_neovim_godot/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.6a98292fb8fa8cf0f3ba4042d4b75515c04267550f3ad49ff6271b5af9562443.css" integrity="sha256-apgpL7j6jPDzukBC1LdVFcBCZ1UPOtSf9icbWvlWJEM=" rel="preload stylesheet" as="style">
+<script defer crossorigin="anonymous" src="/assets/js/highlight.f413e19d0714851f6474e7ee9632408e58ac146fbdbe62747134bea2fa3415e0.js" integrity="sha256-9BPhnQcUhR9kdOfuljJAjlisFG&#43;9vmJ0cTS&#43;ovo0FeA="
+    onload="hljs.initHighlightingOnLoad();"></script>
+<link rel="icon" href="https://devpoga.org/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://devpoga.org/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://devpoga.org/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://devpoga.org/apple-touch-icon.png">
+<link rel="mask-icon" href="https://devpoga.org/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
 
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --hljs-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
 
-<meta property="og:title" content="Developing Godot Projects with Neovim" />
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript><meta property="og:title" content="Developing Godot Projects with Neovim" />
 <meta property="og:description" content="When I started using Godot Engine, what surprised me the most is the built-in Language Server Protocol support. Thank to it, I can easily develop GDScript with all my customized vim configs.
 Setup Install vim-godot.
 Plug &#39;habamax/vim-godot&#39; Install neovim-remote.
@@ -26,8 +71,6 @@ Open menu Editor/Editor Settings/ then navigate to General/External/: Tick Use e
 <meta property="article:published_time" content="2022-07-23T00:00:00+08:00" />
 <meta property="article:modified_time" content="2022-07-23T00:00:00+08:00" />
 
-
-
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Developing Godot Projects with Neovim"/>
 <meta name="twitter:description" content="When I started using Godot Engine, what surprised me the most is the built-in Language Server Protocol support. Thank to it, I can easily develop GDScript with all my customized vim configs.
@@ -37,228 +80,118 @@ pip3 install neovim-remote Setup Neovim as the external editor for Godot
 Open menu Editor/Editor Settings/ then navigate to General/External/: Tick Use external editor Set nvr to Exec Path, use which nvr to get the absolute path."/>
 
 
-
-<meta itemprop="name" content="Developing Godot Projects with Neovim">
-<meta itemprop="description" content="When I started using Godot Engine, what surprised me the most is the built-in Language Server Protocol support. Thank to it, I can easily develop GDScript with all my customized vim configs.
-Setup Install vim-godot.
-Plug &#39;habamax/vim-godot&#39; Install neovim-remote.
-pip3 install neovim-remote Setup Neovim as the external editor for Godot
-Open menu Editor/Editor Settings/ then navigate to General/External/: Tick Use external editor Set nvr to Exec Path, use which nvr to get the absolute path."><meta itemprop="datePublished" content="2022-07-23T00:00:00+08:00" />
-<meta itemprop="dateModified" content="2022-07-23T00:00:00+08:00" />
-<meta itemprop="wordCount" content="118">
-<meta itemprop="keywords" content="Godot,Neovim," />
-<meta name="referrer" content="no-referrer-when-downgrade" />
-
-  <style>
-  body {
-    font-family: Verdana, sans-serif;
-    margin: auto;
-    padding: 20px;
-    max-width: 720px;
-    text-align: left;
-    background-color: #fff;
-    word-wrap: break-word;
-    overflow-wrap: break-word;
-    line-height: 1.5;
-    color: #444;
-  }
-
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6,
-  strong,
-  b {
-    color: #222;
-  }
-
-  a {
-    color: #3273dc;
-     
-  }
-
-  .title {
-    text-decoration: none;
-    border: 0;
-  }
-
-  .title span {
-    font-weight: 400;
-  }
-
-  nav a {
-    margin-right: 10px;
-  }
-
-  textarea {
-    width: 100%;
-    font-size: 16px;
-  }
-
-  input {
-    font-size: 16px;
-  }
-
-  content {
-    line-height: 1.6;
-  }
-
-  table {
-    width: 100%;
-  }
-
-  img {
-    max-width: 100%;
-  }
-
-  code {
-    padding: 2px 5px;
-    background-color: #f2f2f2;
-  }
-
-  pre code {
-    color: #222;
-    display: block;
-    padding: 20px;
-    white-space: pre-wrap;
-    font-size: 14px;
-  }
-
-  div.highlight pre {
-    background-color: initial;
-    color: initial;
-  }
-
-  div.highlight code {
-    background-color: unset;
-    color: unset;
-  }
-
-  blockquote {
-    border-left: 1px solid #999;
-    color: #222;
-    padding-left: 20px;
-    font-style: italic;
-  }
-
-  footer {
-    padding: 25px;
-    text-align: center;
-  }
-
-  .helptext {
-    color: #777;
-    font-size: small;
-  }
-
-  .errorlist {
-    color: #eba613;
-    font-size: small;
-  }
-
-   
-  ul.blog-posts {
-    list-style-type: none;
-    padding: unset;
-  }
-
-  ul.blog-posts li {
-    display: flex;
-  }
-
-  ul.blog-posts li span {
-    flex: 0 0 130px;
-  }
-
-  ul.blog-posts li a:visited {
-    color: #8b6fcb;
-  }
-
-  @media (prefers-color-scheme: dark) {
-    body {
-      background-color: #333;
-      color: #ddd;
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Blogs",
+      "item": "https://devpoga.org/blog/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "Developing Godot Projects with Neovim",
+      "item": "https://devpoga.org/blog/2022-07-23_neovim_godot/"
     }
-
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6,
-    strong,
-    b {
-      color: #eee;
-    }
-
-    a {
-      color: #8cc2dd;
-    }
-
-    code {
-      background-color: #777;
-    }
-
-    pre code {
-      color: #ddd;
-    }
-
-    blockquote {
-      color: #ccc;
-    }
-
-    textarea,
-    input {
-      background-color: #252525;
-      color: #ddd;
-    }
-
-    .helptext {
-      color: #aaa;
-    }
-  }
-
-</style>
-<link rel="stylesheet" href="/custom.css">
-
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-FEFM53H9Y9"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-FEFM53H9Y9');
+  ]
+}
 </script>
-
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Developing Godot Projects with Neovim",
+  "name": "Developing Godot Projects with Neovim",
+  "description": "When I started using Godot Engine, what surprised me the most is the built-in Language Server Protocol support. Thank to it, I can easily develop GDScript with all my customized vim configs.\nSetup Install vim-godot.\nPlug \u0026#39;habamax/vim-godot\u0026#39; Install neovim-remote.\npip3 install neovim-remote Setup Neovim as the external editor for Godot\nOpen menu Editor/Editor Settings/ then navigate to General/External/: Tick Use external editor Set nvr to Exec Path, use which nvr to get the absolute path.",
+  "keywords": [
+    "Godot", "Neovim"
+  ],
+  "articleBody": "When I started using Godot Engine, what surprised me the most is the built-in Language Server Protocol support. Thank to it, I can easily develop GDScript with all my customized vim configs.\nSetup Install vim-godot.\nPlug 'habamax/vim-godot' Install neovim-remote.\npip3 install neovim-remote Setup Neovim as the external editor for Godot\nOpen menu Editor/Editor Settings/ then navigate to General/External/: Tick Use external editor Set nvr to Exec Path, use which nvr to get the absolute path. Add --servername godothost --remote-send \":n {file}:call cursor({line},{col})\" to Exec Flags Start Neovim and listening to remote commands:\nnvim --listen godothost . now when you click on a script in godot it will open it in a new buffer in Neovim.\nThat’s all 💜\n",
+  "wordCount" : "118",
+  "inLanguage": "en",
+  "datePublished": "2022-07-23T00:00:00+08:00",
+  "dateModified": "2022-07-23T00:00:00+08:00",
+  "author":{
+    "@type": "Person",
+    "name": "poga"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://devpoga.org/blog/2022-07-23_neovim_godot/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Dev.Poga",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://devpoga.org/favicon.ico"
+    }
+  }
+}
+</script>
 </head>
 
-<body>
-  <header><a href="/" class="title">
-  <h1>Dev.Poga</h2>
-</a>
-<nav><a href="/">Home</a>
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
 
+</script>
 
-<a href="/blog">Blog</a>
-
-</nav>
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="https://devpoga.org/" accesskey="h" title="Dev.Poga (Alt + H)">Dev.Poga</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+        </ul>
+    </nav>
 </header>
-  <main>
+<main class="main">
 
-<h1>Developing Godot Projects with Neovim</h1>
-<p>
-  <i>
-    <time datetime='2022-07-23' pubdate>
-      23 Jul, 2022
-    </time>
-  </i>
-</p>
+<article class="post-single">
+  <header class="post-header">
+    
+    <h1 class="post-title">
+      Developing Godot Projects with Neovim
+    </h1>
+    <div class="post-meta"><span title='2022-07-23 00:00:00 +0800 CST'>July 23, 2022</span>&nbsp;·&nbsp;poga
 
-<content>
-  <p>When I started using <a href="https://godotengine.org/">Godot Engine</a>, what surprised me the most is the built-in <a href="https://microsoft.github.io/language-server-protocol/">Language Server Protocol</a> support. Thank to it, I can easily develop <a href="https://docs.godotengine.org/en/stable/tutorials/scripting/gdscript/gdscript_basics.html">GDScript</a> with all my customized vim configs.</p>
-<h2 id="setup">Setup</h2>
+</div>
+  </header> 
+  <div class="post-content"><p>When I started using <a href="https://godotengine.org/">Godot Engine</a>, what surprised me the most is the built-in <a href="https://microsoft.github.io/language-server-protocol/">Language Server Protocol</a> support. Thank to it, I can easily develop <a href="https://docs.godotengine.org/en/stable/tutorials/scripting/gdscript/gdscript_basics.html">GDScript</a> with all my customized vim configs.</p>
+<h2 id="setup">Setup<a hidden class="anchor" aria-hidden="true" href="#setup">#</a></h2>
 <p>Install <a href="https://github.com/habamax/vim-godot"><code>vim-godot</code></a>.</p>
 <pre tabindex="0"><code>Plug &#39;habamax/vim-godot&#39;
 </code></pre><p>Install <a href="https://github.com/mhinz/neovim-remote"><code>neovim-remote</code></a>.</p>
@@ -273,28 +206,89 @@ Open menu Editor/Editor Settings/ then navigate to General/External/: Tick Use e
 <p>Start Neovim and listening to remote commands:</p>
 <pre tabindex="0"><code>nvim --listen godothost .
 </code></pre><p>now when you click on a script in godot it will open it in a new buffer in Neovim.</p>
-<h2 id="thats-all">That&rsquo;s all</h2>
+<h2 id="thats-all">That&rsquo;s all<a hidden class="anchor" aria-hidden="true" href="#thats-all">#</a></h2>
 <p>💜</p>
 
-</content>
-<p>
-  
-  <a href="https://devpoga.org/tags/godot/">#Godot</a>
-  
-  <a href="https://devpoga.org/tags/neovim/">#Neovim</a>
-  
-</p>
 
-  </main>
-  <footer><hr />
-<h4>Hi, I'm Poga</h4>
-<p>
-Follow me on <a rel="me" href="https://g0v.social/@poga">Mastodon</a> or checkout my other <a href="/blog">posts</a>
-</p>
+  </div>
 
-</footer>
-
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="https://devpoga.org/tags/godot/">Godot</a></li>
+      <li><a href="https://devpoga.org/tags/neovim/">Neovim</a></li>
+    </ul>
+  </footer>
+</article>
+    </main>
     
+<footer class="footer">
+    <span>&copy; 2023 <a href="https://devpoga.org/">Dev.Poga</a></span>
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
 </body>
 
 </html>
