@@ -1,6 +1,6 @@
 ## About
 
-Hi, I'm Poga. You can contact me via [email](mailto://hi@devpoga.org) or [mastodon](https://g0v.social/@poga).
+Hi, I'm Poga. You can contact me via [email](mailto://hi@devpoga.org) or <a rel="me" href="https://g0v.social/@poga">Mastodon</a>.
 
 I work on connecting things in different domains such as product, system, tech, security, and privacy.
 
