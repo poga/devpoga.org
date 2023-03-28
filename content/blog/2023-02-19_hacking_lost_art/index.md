@@ -1,5 +1,5 @@
 ---
-title: "Hacking is a lost art"
+title: "Hacking is a Lost Art"
 author: "poga"
 date: 2023-02-19
 tags:
