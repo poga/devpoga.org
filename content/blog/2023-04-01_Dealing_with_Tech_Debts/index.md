@@ -21,13 +21,13 @@ Tech debts has been a sin of software engineers since the dawn of the computer. 
 
 So the method is simple: **You want to constantly dealing with tech debts during your development process**, not just after finished a task, not arranging a special sprint for debts.
 
-First, while planning for a new task, try to plan for the unknown unknowns. Leave some buffer in your schedule and prepared for the worst. But don't over-planning.
+First, while planning for a new task, try to plan for the unknown unknowns. Leave some buffer in your schedule and prepared for the worst. But don't over-plan.
 
 Second, you should try to avoid accidental complexities as much as possible. Accidental Complexity is the mismatch of a requirement(problem) and a solution. It's also the source of tech debts.
 
 We can never completely avoid accidental complexity since we need to deal with legacy codes, performance issues, time to markets, or costs. But every line of code we wrote thats not for the requirement is a line of code that's not being active used by our customer and hence badly maintained.
 
-My favorite method of avoiding accidental complexity is simple: For each requirement, re-write your solution 7 times. Each time you re-write, you understand the requirement more, you will write a simpler solution that's much more maintainable. **Understanding the problem is the only defence against accidental complexity**.
+My favorite method of avoiding accidental complexity is simple: For each requirement, [re-write your solution 7 times](https://github.com/lukego/blog/issues/32). Each time you re-write, you understand the requirement a bit more, you will write a simpler solution that's much more maintainable. **Understanding the problem is the only defence against accidental complexity**.
 
 --
 
