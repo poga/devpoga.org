@@ -6,7 +6,18 @@
     <description>Recent content in Blogs on Dev.Poga</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 19 Feb 2023 00:00:00 +0800</lastBuildDate><atom:link href="https://devpoga.org/blog/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 01 Apr 2023 00:00:00 +0800</lastBuildDate><atom:link href="https://devpoga.org/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Dealing with Tech Debts</title>
+      <link>https://devpoga.org/blog/2023-04-01_dealing_with_tech_debts/</link>
+      <pubDate>Sat, 01 Apr 2023 00:00:00 +0800</pubDate>
+      
+      <guid>https://devpoga.org/blog/2023-04-01_dealing_with_tech_debts/</guid>
+      <description>Here&amp;rsquo;s the rough transcript of a talk I&amp;rsquo;ve given at my $DayJob.
+On Dealing with Tech Debts Tech debts has been a sin of software engineers since the dawn of the computer. Today I will talk about concrete methods I&amp;rsquo;ve been using for many years. I will not talk about high-level ideas since we already have way too many on the internet.
+So the method is simple: You want to constantly dealing with tech debts during your development process, not just after finished a task, not arranging a special sprint for debts.</description>
+    </item>
+    
     <item>
       <title>Hacking is a Lost Art</title>
       <link>https://devpoga.org/blog/2023-02-19_hacking_lost_art/</link>
