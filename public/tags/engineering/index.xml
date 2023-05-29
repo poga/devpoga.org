@@ -6,7 +6,18 @@
     <description>Recent content in engineering on Dev.Poga</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 29 Jun 2019 00:00:00 +0800</lastBuildDate><atom:link href="https://devpoga.org/tags/engineering/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 29 May 2023 00:00:00 +0800</lastBuildDate><atom:link href="https://devpoga.org/tags/engineering/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Revisiting Modern Data Stack</title>
+      <link>https://devpoga.org/blog/2023-05-29_revisting_modern_data_stack/</link>
+      <pubDate>Mon, 29 May 2023 00:00:00 +0800</pubDate>
+      
+      <guid>https://devpoga.org/blog/2023-05-29_revisting_modern_data_stack/</guid>
+      <description>TL;DR &amp;ldquo;It’s hard to make predictions in the ever evolving data landscape, but I am not sure if we need a better Airflow. Building a better Airflow feels like trying to optimize writing code that shouldn’t have been written in the first place.&amp;rdquo; - https://dagster.io/blog/rebundling-the-data-platform
+Growing Pain The Future of Data https://databased.pedramnavid.com/p/the-future-of-data
+Data mesh is, in some ways, the admission of defeat in the face of complexity. The demands of teams are so complex that we must break apart the whole thing into smaller, more manageable chunks.</description>
+    </item>
+    
     <item>
       <title>工程師的英文寫作能力</title>
       <link>https://devpoga.org/blog/2019-06-29_%E5%B7%A5%E7%A8%8B%E5%B8%AB%E7%9A%84%E8%8B%B1%E6%96%87%E5%AF%AB%E4%BD%9C%E8%83%BD%E5%8A%9B/</link>

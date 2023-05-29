@@ -3,27 +3,33 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://devpoga.org/categories/blog/</loc>
-    <lastmod>2023-04-01T00:00:00+08:00</lastmod>
+    <lastmod>2023-05-29T00:00:00+08:00</lastmod>
   </url><url>
     <loc>https://devpoga.org/blog/</loc>
-    <lastmod>2023-04-01T00:00:00+08:00</lastmod>
+    <lastmod>2023-05-29T00:00:00+08:00</lastmod>
   </url><url>
     <loc>https://devpoga.org/categories/</loc>
-    <lastmod>2023-04-01T00:00:00+08:00</lastmod>
-  </url><url>
-    <loc>https://devpoga.org/blog/2023-04-01_dealing_with_tech_debts/</loc>
-    <lastmod>2023-04-01T00:00:00+08:00</lastmod>
+    <lastmod>2023-05-29T00:00:00+08:00</lastmod>
   </url><url>
     <loc>https://devpoga.org/</loc>
+    <lastmod>2023-05-29T00:00:00+08:00</lastmod>
+  </url><url>
+    <loc>https://devpoga.org/tags/engineering/</loc>
+    <lastmod>2023-05-29T00:00:00+08:00</lastmod>
+  </url><url>
+    <loc>https://devpoga.org/blog/2023-05-29_revisting_modern_data_stack/</loc>
+    <lastmod>2023-05-29T00:00:00+08:00</lastmod>
+  </url><url>
+    <loc>https://devpoga.org/tags/</loc>
+    <lastmod>2023-05-29T00:00:00+08:00</lastmod>
+  </url><url>
+    <loc>https://devpoga.org/blog/2023-04-01_dealing_with_tech_debts/</loc>
     <lastmod>2023-04-01T00:00:00+08:00</lastmod>
   </url><url>
     <loc>https://devpoga.org/tags/hacking/</loc>
     <lastmod>2023-04-01T00:00:00+08:00</lastmod>
   </url><url>
     <loc>https://devpoga.org/tags/programming/</loc>
-    <lastmod>2023-04-01T00:00:00+08:00</lastmod>
-  </url><url>
-    <loc>https://devpoga.org/tags/</loc>
     <lastmod>2023-04-01T00:00:00+08:00</lastmod>
   </url><url>
     <loc>https://devpoga.org/blog/2023-02-19_hacking_lost_art/</loc>
@@ -265,9 +271,6 @@
   </url><url>
     <loc>https://devpoga.org/blog/2019-06-30_structured_concurrency/</loc>
     <lastmod>2019-06-30T00:00:00+08:00</lastmod>
-  </url><url>
-    <loc>https://devpoga.org/tags/engineering/</loc>
-    <lastmod>2019-06-29T00:00:00+08:00</lastmod>
   </url><url>
     <loc>https://devpoga.org/tags/writing/</loc>
     <lastmod>2019-06-29T00:00:00+08:00</lastmod>
