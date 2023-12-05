@@ -6,7 +6,18 @@
     <description>Recent content on Dev.Poga</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 29 May 2023 00:00:00 +0800</lastBuildDate><atom:link href="https://devpoga.org/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 05 Dec 2023 00:00:00 +0800</lastBuildDate><atom:link href="https://devpoga.org/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Write good code</title>
+      <link>https://devpoga.org/blog/2023-12-05_write_good_code/</link>
+      <pubDate>Tue, 05 Dec 2023 00:00:00 +0800</pubDate>
+      
+      <guid>https://devpoga.org/blog/2023-12-05_write_good_code/</guid>
+      <description>The first step to write good code is to define a clear boundary between systems. A boundary that allows you to freely explore the problem without breaking existing functionalities.
+The second step to write good code is to explore the problem thoroughly via iteration. Your first 2~3 solutions will be bad because you don&amp;rsquo;t understand the problem yet.
+Kick-off a feedback-loop as early as possible. Good code, just like good design, need iteration and learning.</description>
+    </item>
+    
     <item>
       <title>Revisiting Modern Data Stack</title>
       <link>https://devpoga.org/blog/2023-05-29_revisting_modern_data_stack/</link>

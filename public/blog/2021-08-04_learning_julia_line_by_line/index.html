@@ -193,7 +193,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <h1 class="post-title">
       Learning Julia, Line by Line
     </h1>
-    <div class="post-meta"><span title='2021-08-04 00:00:00 +0800 CST'>August 4, 2021</span>&nbsp;·&nbsp;poga
+    <div class="post-meta">&lt;span title=&#39;2021-08-04 00:00:00 &#43;0800 CST&#39;&gt;August 4, 2021&lt;/span&gt;&amp;nbsp;·&amp;nbsp;poga
 
 </div>
   </header> 
@@ -379,7 +379,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 </span></span><span style="display:flex;"><span><span style="color:#75715e"># Finally, we wrap our not-so-safe fuction with a bounded-checked `getindex` function</span>
 </span></span><span style="display:flex;"><span><span style="color:#66d9ef">function</span> Base<span style="color:#f92672">.</span>getindex(h<span style="color:#f92672">::</span><span style="color:#66d9ef">Hand</span>, i<span style="color:#f92672">::</span><span style="color:#66d9ef">Integer</span>)
 </span></span><span style="display:flex;"><span>  <span style="color:#75715e"># The `@boundscheck` macro allows the bound check to be ignored with `@inbound` macro</span>
-</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">@boundscheck</span> <span style="color:#ae81ff">1</span> <span style="color:#f92672">≤</span><span style="color:#960050;background-color:#1e0010"> </span>i <span style="color:#f92672">≤</span> length(h) <span style="color:#f92672">||</span> throw(<span style="color:#66d9ef">BoundsError</span>(h,i))
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">@boundscheck</span> <span style="color:#ae81ff">1</span> <span style="color:#f92672">≤</span> i <span style="color:#f92672">≤</span> length(h) <span style="color:#f92672">||</span> throw(<span style="color:#66d9ef">BoundsError</span>(h,i))
 </span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">return</span> Base<span style="color:#f92672">.</span>unsafe_getindex(h, i)
 </span></span><span style="display:flex;"><span><span style="color:#66d9ef">end</span>
 </span></span><span style="display:flex;"><span>

@@ -190,7 +190,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <h1 class="post-title">
       Going through the OCaml compiler pipeline (manually)
     </h1>
-    <div class="post-meta"><span title='2020-11-30 00:00:00 +0800 CST'>November 30, 2020</span>&nbsp;·&nbsp;poga
+    <div class="post-meta">&lt;span title=&#39;2020-11-30 00:00:00 &#43;0800 CST&#39;&gt;November 30, 2020&lt;/span&gt;&amp;nbsp;·&amp;nbsp;poga
 
 </div>
   </header> 
@@ -218,10 +218,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#66d9ef">let</span> test v <span style="color:#f92672">=</span>
 </span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">match</span> v <span style="color:#66d9ef">with</span>
-</span></span><span style="display:flex;"><span>  <span style="color:#f92672">|</span> <span style="color:#a6e22e">Alice</span>   <span style="color:#f92672">-&gt;</span> <span style="color:#ae81ff">100</span>
-</span></span><span style="display:flex;"><span>  <span style="color:#f92672">|</span> <span style="color:#a6e22e">Bob</span>     <span style="color:#f92672">-&gt;</span> <span style="color:#ae81ff">101</span>
-</span></span><span style="display:flex;"><span>  <span style="color:#f92672">|</span> <span style="color:#a6e22e">Charlie</span> <span style="color:#f92672">-&gt;</span> <span style="color:#ae81ff">102</span>
-</span></span><span style="display:flex;"><span>  <span style="color:#f92672">|</span> <span style="color:#a6e22e">David</span>   <span style="color:#f92672">-&gt;</span> <span style="color:#ae81ff">103</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">|</span> <span style="color:#a6e22e">Alice</span>   <span style="color:#f92672">-&gt;</span> 100
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">|</span> <span style="color:#a6e22e">Bob</span>     <span style="color:#f92672">-&gt;</span> 101
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">|</span> <span style="color:#a6e22e">Charlie</span> <span style="color:#f92672">-&gt;</span> 102
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">|</span> <span style="color:#a6e22e">David</span>   <span style="color:#f92672">-&gt;</span> 103
 </span></span></code></pre></div><p>We can get the AST of it via the following command:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>$ $ ocamlfind ppx_tools/dumpast t.ml
 </span></span><span style="display:flex;"><span>t.ml
