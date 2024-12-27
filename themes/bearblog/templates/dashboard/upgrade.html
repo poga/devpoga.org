@@ -1,0 +1,74 @@
+{% extends 'base.html' %}
+
+{% block title %}Upgrade | Bear Blog{% endblock %}
+
+{% block custom_styles %}
+    {% include 'styles/blog/default.css' %}
+    {% include 'styles/dashboard.css' %}
+    {{ request.user.settings.dashboard_styles | safe }}
+{% endblock %}
+
+{% block content %}
+<button onclick="window.history.back()">← Back</button>
+{% comment %} <h1>Upgrade</h1> {% endcomment %}
+
+{% if not request.user.settings.upgraded %}
+<h2>Upgrade and keep the tiny internet awesome!  <span class="bear">\ʕ•ᴥ•ʔ/</span></h2>
+<p>
+    With Bear, you're not just blogging - you're nurturing a space that's truly yours.
+    <br>
+    <br>
+    We don't make money by selling data, tracking readers, or displaying ads.
+    We do it by creating <b>something great</b> and charging a fee for it.
+    <br>
+    <br>
+    That's a straightforward business model that's also <b>sustainable</b>.
+    <br>
+    <br>
+    Here's what you get if you upgrade:
+    <ul>
+        <li>Custom domains</li>
+        <li>Publish up to 10 sites</li>
+        <li>Media and file uploading</li>
+        <li>In-depth analytics</li>
+        <li>Email subscriber capture</li>
+        <li>Add javascript to page content</li>
+        <li>Add code to head and footer elements</li>
+        <li>Remove Bear branding (but only if you want to)</li>
+    </ul>
+</p>
+<p>
+    <b>
+        Upgrade for $5 per month <small style="font-size: 10px; color: grey;">(or $49 per year)</small>
+    </b>
+</p>
+
+{% if discount %}
+<p style="background-color: rgb(0,0,0,0.1); text-align: center; font-size: small">
+    Hey, it looks like you're from {{ country_name }} {{ country_emoji }}<br>
+    We support <b>Purchasing Power Parity</b> to make Bear more affordable to everyone.<br>
+    Use the promo code <b>{{ promo_code }}</b> to get a <b>{{ discount }}% discount</b> when you upgrade.
+</p>
+{% endif %}
+
+<p>
+    <button onclick="window.open('https://bear.lemonsqueezy.com/checkout/buy/2f0a4d87-10d9-4a74-b241-ba2c4d6b821b?checkout[custom][user_id]={{user.id}}')">Upgrade</button>
+</p>
+
+
+
+<small>
+    With Bear, you're not just getting a blogging tool - you're gaining back control in an ever enshittifying Internet. 
+    But most importantly, you'll be supporting the small, fast internet, and a blogging platform <a href="https://herman.bearblog.dev/building-software-to-last-forever" target="_blank">built to last forever</a>.
+</small>
+
+<p>
+    <small>
+    <a href="https://herman.bearblog.dev/praise-for-bear/" target="_balnk">Still need convincing?</a>
+    </small>
+</p>
+{% else %}
+<h3>You've already upgraded your Bear account! <span class="bear">\ʕ•ᴥ•ʔ/</span></h3>
+{% endif %}
+
+{% endblock %}

@@ -1,0 +1,110 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Staff Dashboard
+{% endblock %}
+
+
+{% block seo %}
+<meta name="robots" content="noindex">
+{% endblock %}
+
+{% block heading %}
+Staff Dashboard  ʕง•ᴥ•ʔง
+{% endblock %}
+
+{% block nav %}
+{% endblock %}
+
+{% block content %}
+<a href="{% url 'review_opt_in' %}">Review {{ opt_in_blogs_count }} opt-in blogs</a>
+| <a href="{% url 'review_dodgy' %}">Review {{ dodgy_blogs_count }} dodgy blogs</a>
+| <a href="{% url 'review_new' %}">Review {{ new_blogs_count }} new blogs</a>
+<main>
+    <p>
+        <h2>All time</h2>
+        <ul>
+            <li>Signups: {{ total_signups }}</li>
+            <li>Upgrades: {{ total_upgrades }}</li>
+            <li>Conversion rate: {{ total_conversion_rate }}</li>
+        </ul>
+    </p>
+    <p>
+        <h2>Past {{ days_filter }} days</h2>
+        <span>
+            <button onclick="window.location = '?days=7'">Last week</button>
+            <button onclick="window.location = '?days=30'">Last month</button>
+            <button onclick="window.location = '?days=60'">Last 3 months</button>
+            <button onclick="window.location = '?days=180'">Last 6 months</button>
+            <button onclick="window.location = '?days=365'">Last year</button>
+        </span>
+        <ul>
+            <li>Signups: {{ signups }}</li>
+            <li>Upgrades: {{ upgrades }}</li>
+            <li>Conversion rate: {{ conversion_rate }}</li>
+        </ul>
+    </p>
+    <h2>Signups</h2>
+    <embed type="image/svg+xml" src= {{ signup_chart|safe }} />
+    <span class="helptext" style="display: flex; justify-content:space-between;">
+        <span>{{ start_date|date:"j F Y" }}</span>
+        <span>{{ end_date|date:"j F Y" }}</span> 
+    </span>
+
+    <h2>Upgrades</h2>
+    <embed type="image/svg+xml" src= {{ upgrade_chart|safe }} />
+    <span class="helptext" style="display: flex; justify-content:space-between;">
+        <span>{{ start_date|date:"j F Y" }}</span>
+        <span>{{ end_date|date:"j F Y" }}</span> 
+    </span>
+
+    <h2>Check spam blog</h2>
+    <form method="post" action="{% url 'check_spam' %}" target="_blank" class="full-width">
+        {% csrf_token %}
+        <input type="text" name="query" placeholder="Blog subdomain or email address...">
+        <label>
+            <input type="checkbox" name="unblock"> Unblock
+        </label>
+        <br>
+        <button>Check</button>
+    </form>
+
+    <h2>Migrate blog</h2>
+
+    <form method="post" action="{% url 'migrate_blog' %}" target="_blank" class="full-width">
+        {% csrf_token %}
+        <input type="text" name="subdomain" placeholder="Blog subdomain..." required>
+        <input type="email" name="email" placeholder="Recipient account email address..." required>
+        <button>Migrate</button>
+    </form>
+
+    <h2>Empty blogs</h2>
+    <pre>
+        - Over one year since last modified
+        - Content under 60 characters
+        - No posts
+        - Not upgraded
+    </pre>
+    <ul>
+        {% for blog in empty_blogs %}
+        <li style="margin-bottom: 1rem; border-bottom: 1px solid #ccc; padding-bottom: 1rem;">
+            <b>{{ blog.title }} </b>
+            <br>
+            <a href="{{ blog.useful_domain }}" target="_blank">{{ blog.useful_domain }}</a>
+            <br>
+            <small>Created date: {{ blog.created_date }}</small>
+            <br>
+            <small>Last modified: <b>{{ blog.last_modified }}</b></small>
+            <br>
+            {{ blog.content }}
+            <br>
+        </li>
+        {% endfor %}
+    </ul>
+    <button onclick="if (confirm('Are you sure?')) {window.location = '{% url 'delete_empty' %}'}">Delete empty</button>
+</main>
+{% endblock %}
+
+{% block footer %}
+Powered by <a href="https://bearblog.dev">Bear ʕ•ᴥ•ʔ</a>
+{% endblock %}

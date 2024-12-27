@@ -27,6 +27,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <link rel="mask-icon" href="https://devpoga.org/safari-pinned-tab.svg">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="https://devpoga.org/blog/2019-09-20_ripgrep_cheat_sheet/">
 <noscript>
     <style>
         #theme-toggle,
@@ -171,6 +172,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                         <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
                     </svg>
                 </button>
+                <ul class="lang-switch"><li>|</li>
+                </ul>
             </div>
         </div>
         <ul id="menu">
@@ -196,81 +199,81 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   </header> 
   <div class="post-content"><p>Based on <a href="https://github.com/BurntSushi/ripgrep/blob/master/GUIDE.md">the ripgrep user guide</a> and <a href="https://www.philipdaniels.com/blog/2019/ripgrep-cheatsheet/">Ripgrep Cheatsheet</a>.</p>
 <table>
-<thead>
-<tr>
-<th>Syntax</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>rg -l clap</code></td>
-<td>List matching files only</td>
-</tr>
-<tr>
-<td><code>rg -c clap</code></td>
-<td>List matching files, including a count</td>
-</tr>
-<tr>
-<td><code>rg -i clap</code></td>
-<td>Search case-insensitively</td>
-</tr>
-<tr>
-<td><code>rg --no-filename clap</code></td>
-<td>Don’t print filenames</td>
-</tr>
-<tr>
-<td><code>rg -v clap</code></td>
-<td>Invert matching: show lines that do not match</td>
-</tr>
-<tr>
-<td>`rg -c –sort path</td>
-<td>modified</td>
-</tr>
-<tr>
-<td><code>rg -g '*.c' clap</code></td>
-<td>Only search in <code>*.c</code> files (can use multiple <code>-g</code>)</td>
-</tr>
-<tr>
-<td><code>rg -g '!*.c' clap</code></td>
-<td>Search in everything but <code>*.c</code> files</td>
-</tr>
-<tr>
-<td><code>rg -e clap1 -e clap2</code></td>
-<td>Search for multiple patterns</td>
-</tr>
-<tr>
-<td><code>rg -z clap</code></td>
-<td>Search in gzip, bzip2, xz, LZ4, LZMA, Brotli and Zstd compressed files</td>
-</tr>
-<tr>
-<td><code>rg -trust -tconfig</code></td>
-<td>Search in file types <code>rust</code> and <code>config</code></td>
-</tr>
-<tr>
-<td><code>rg -Tconfig</code></td>
-<td><strong>Don’t</strong> search in file type config</td>
-</tr>
-<tr>
-<td><code>rg --type-add 'web:*.html' --type-add 'web:*.css' --type-add 'web:*.js' -tweb title</code></td>
-<td>Search with custom types</td>
-</tr>
-<tr>
-<td><code>rg fast README.md -r FAST</code></td>
-<td>Replace</td>
-</tr>
-<tr>
-<td><code>rg fast README.md -or FAST</code></td>
-<td>Replace the whole matching line</td>
-</tr>
-</tbody>
+  <thead>
+      <tr>
+          <th>Syntax</th>
+          <th>Description</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><code>rg -l clap</code></td>
+          <td>List matching files only</td>
+      </tr>
+      <tr>
+          <td><code>rg -c clap</code></td>
+          <td>List matching files, including a count</td>
+      </tr>
+      <tr>
+          <td><code>rg -i clap</code></td>
+          <td>Search case-insensitively</td>
+      </tr>
+      <tr>
+          <td><code>rg --no-filename clap</code></td>
+          <td>Don’t print filenames</td>
+      </tr>
+      <tr>
+          <td><code>rg -v clap</code></td>
+          <td>Invert matching: show lines that do not match</td>
+      </tr>
+      <tr>
+          <td>`rg -c –sort path</td>
+          <td>modified</td>
+      </tr>
+      <tr>
+          <td><code>rg -g '*.c' clap</code></td>
+          <td>Only search in <code>*.c</code> files (can use multiple <code>-g</code>)</td>
+      </tr>
+      <tr>
+          <td><code>rg -g '!*.c' clap</code></td>
+          <td>Search in everything but <code>*.c</code> files</td>
+      </tr>
+      <tr>
+          <td><code>rg -e clap1 -e clap2</code></td>
+          <td>Search for multiple patterns</td>
+      </tr>
+      <tr>
+          <td><code>rg -z clap</code></td>
+          <td>Search in gzip, bzip2, xz, LZ4, LZMA, Brotli and Zstd compressed files</td>
+      </tr>
+      <tr>
+          <td><code>rg -trust -tconfig</code></td>
+          <td>Search in file types <code>rust</code> and <code>config</code></td>
+      </tr>
+      <tr>
+          <td><code>rg -Tconfig</code></td>
+          <td><strong>Don’t</strong> search in file type config</td>
+      </tr>
+      <tr>
+          <td><code>rg --type-add 'web:*.html' --type-add 'web:*.css' --type-add 'web:*.js' -tweb title</code></td>
+          <td>Search with custom types</td>
+      </tr>
+      <tr>
+          <td><code>rg fast README.md -r FAST</code></td>
+          <td>Replace</td>
+      </tr>
+      <tr>
+          <td><code>rg fast README.md -or FAST</code></td>
+          <td>Replace the whole matching line</td>
+      </tr>
+  </tbody>
 </table>
 
   </div>
 
   <footer class="post-footer">
     <ul class="post-tags">
-      <li><a href="https://devpoga.org/tags/programming/">programming</a></li>
+      <li><a href="https://devpoga.org/tags/programming/">Programming</a></li>
       <li><a href="https://devpoga.org/tags/productivity/">Productivity</a></li>
     </ul>
   </footer>
@@ -278,7 +281,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </main>
     
 <footer class="footer">
-    <span>&copy; 2023 <a href="https://devpoga.org/">Dev.Poga</a></span>
+    <span>&copy; 2024 <a href="https://devpoga.org/">Dev.Poga</a></span>
     <span>
         Powered by
         <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &

@@ -1,24 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Serverless on Dev.Poga</title>
     <link>https://devpoga.org/tags/serverless/</link>
     <description>Recent content in Serverless on Dev.Poga</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 06 Feb 2018 00:00:00 +0800</lastBuildDate><atom:link href="https://devpoga.org/tags/serverless/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 30 Apr 2019 21:56:01 +0800</lastBuildDate>
+    <atom:link href="https://devpoga.org/tags/serverless/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Why Serverless</title>
       <link>https://devpoga.org/blog/2018-04-10_why_serverless/</link>
       <pubDate>Tue, 06 Feb 2018 00:00:00 +0800</pubDate>
-      
       <guid>https://devpoga.org/blog/2018-04-10_why_serverless/</guid>
-      <description>&lt;blockquote&gt;
-&lt;p&gt;本文擷取、修訂自 2018.03.29 我在 iThome Serverless All-Star 的分享的逐字稿&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;hr&gt;
-&lt;p&gt;究竟為什麼要用 Serverless 呢？&lt;/p&gt;</description>
+      <description>&lt;blockquote&gt;&#xA;&lt;p&gt;本文擷取、修訂自 2018.03.29 我在 iThome Serverless All-Star 的分享的逐字稿&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;hr&gt;&#xA;&lt;p&gt;究竟為什麼要用 Serverless 呢？&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>

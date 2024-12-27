@@ -1,7 +1,7 @@
 baseURL: 'https://devpoga.org/'
 languageCode: en-us
 title: Dev.Poga
-theme: PaperMod
+theme: bearblog
 hasCJKLanguage: true
 timeZone: Asia/Taipei
 params:

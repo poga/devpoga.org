@@ -1,631 +1,418 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Blogs on Dev.Poga</title>
     <link>https://devpoga.org/blog/</link>
     <description>Recent content in Blogs on Dev.Poga</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 05 Dec 2023 00:00:00 +0800</lastBuildDate><atom:link href="https://devpoga.org/blog/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 05 Dec 2023 00:00:00 +0800</lastBuildDate>
+    <atom:link href="https://devpoga.org/blog/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Write good code</title>
       <link>https://devpoga.org/blog/2023-12-05_write_good_code/</link>
       <pubDate>Tue, 05 Dec 2023 00:00:00 +0800</pubDate>
-      
       <guid>https://devpoga.org/blog/2023-12-05_write_good_code/</guid>
-      <description>The first step to write good code is to define a clear boundary between systems. A boundary that allows you to freely explore the problem without breaking existing functionalities.
-The second step to write good code is to explore the problem thoroughly via iteration. Your first 2~3 solutions will be bad because you don&amp;rsquo;t understand the problem yet.
-Kick-off a feedback-loop as early as possible. Good code, just like good design, need iteration and learning.</description>
+      <description>&lt;p&gt;The first step to write good code is to define a clear boundary between systems. A boundary that allows you to freely explore the problem without breaking existing functionalities.&lt;/p&gt;&#xA;&lt;p&gt;The second step to write good code is to explore the problem thoroughly via iteration. Your first 2~3 solutions will be bad because you don&amp;rsquo;t understand the problem yet.&lt;/p&gt;&#xA;&lt;p&gt;Kick-off a feedback-loop as early as possible. Good code, just like good design, need iteration and learning.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Revisiting Modern Data Stack</title>
       <link>https://devpoga.org/blog/2023-05-29_revisting_modern_data_stack/</link>
       <pubDate>Mon, 29 May 2023 00:00:00 +0800</pubDate>
-      
       <guid>https://devpoga.org/blog/2023-05-29_revisting_modern_data_stack/</guid>
-      <description>TL;DR &amp;ldquo;It’s hard to make predictions in the ever evolving data landscape, but I am not sure if we need a better Airflow. Building a better Airflow feels like trying to optimize writing code that shouldn’t have been written in the first place.&amp;rdquo; - https://dagster.io/blog/rebundling-the-data-platform
-Growing Pain The Future of Data https://databased.pedramnavid.com/p/the-future-of-data
-Data mesh is, in some ways, the admission of defeat in the face of complexity. The demands of teams are so complex that we must break apart the whole thing into smaller, more manageable chunks.</description>
+      <description>&lt;h2 id=&#34;tldr&#34;&gt;TL;DR&lt;/h2&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;&lt;em&gt;&amp;ldquo;It’s hard to make predictions in the ever evolving data landscape, but I am not sure if we need a better Airflow. Building a better Airflow feels like trying to optimize writing code that shouldn’t have been written in the first place.&amp;rdquo; -&lt;/em&gt; &lt;a href=&#34;https://dagster.io/blog/rebundling-the-data-platform&#34;&gt;https://dagster.io/blog/rebundling-the-data-platform&lt;/a&gt;&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;growing-pain&#34;&gt;Growing Pain&lt;/h2&gt;&#xA;&lt;h3 id=&#34;the-future-of-data&#34;&gt;The Future of Data&lt;/h3&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://databased.pedramnavid.com/p/the-future-of-data&#34;&gt;https://databased.pedramnavid.com/p/the-future-of-data&lt;/a&gt;&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;Data mesh is, in some ways, the admission of defeat in the face of complexity. The demands of teams are so complex that we must break apart the whole thing into smaller, more manageable chunks. Sales get their metric, and Marketing gets theirs. When someone asks why the numbers don’t match, we tell them that they don’t match because they are different.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Dealing with Tech Debts</title>
       <link>https://devpoga.org/blog/2023-04-01_dealing_with_tech_debts/</link>
       <pubDate>Sat, 01 Apr 2023 00:00:00 +0800</pubDate>
-      
       <guid>https://devpoga.org/blog/2023-04-01_dealing_with_tech_debts/</guid>
-      <description>Here&amp;rsquo;s the rough transcript of a talk I&amp;rsquo;ve given at my $DayJob.
-On Dealing with Tech Debts Tech debts has been a sin of software engineers since the dawn of the computer. Today I will talk about concrete methods I&amp;rsquo;ve been using for many years. I will not talk about high-level ideas since we already have way too many on the internet.
-So the method is simple: You want to constantly dealing with tech debts during your development process, not just after finished a task, not arranging a special sprint for debts.</description>
+      <description>&lt;p&gt;Here&amp;rsquo;s the rough transcript of a talk I&amp;rsquo;ve given at my &lt;em&gt;$DayJob&lt;/em&gt;.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;on-dealing-with-tech-debts&#34;&gt;On Dealing with Tech Debts&lt;/h2&gt;&#xA;&lt;p&gt;Tech debts has been a sin of software engineers since the dawn of the computer. Today I will talk about concrete methods I&amp;rsquo;ve been using for many years. I will not talk about high-level ideas since we already have way too many on the internet.&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;./01.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;So the method is simple: &lt;strong&gt;You want to constantly dealing with tech debts during your development process&lt;/strong&gt;, not just after finished a task, not arranging a special sprint for debts.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Hacking is a Lost Art</title>
       <link>https://devpoga.org/blog/2023-02-19_hacking_lost_art/</link>
       <pubDate>Sun, 19 Feb 2023 00:00:00 +0800</pubDate>
-      
       <guid>https://devpoga.org/blog/2023-02-19_hacking_lost_art/</guid>
-      <description>What&amp;rsquo;s hacking?
-It is the practice of aggressively refining the problem statement in order to identify find the problem that is actually worth solving.
-It is the art of focusing on solving a problem in the most impactful and economical way possible while minimizing accidental complexity.
-It is the art of not getting attached to a solution and iterating quickly.
-It&amp;rsquo;s the art of having fun while doing it.</description>
+      <description>&lt;p&gt;What&amp;rsquo;s hacking?&lt;/p&gt;&#xA;&lt;p&gt;It is the practice of aggressively refining the problem statement in order to identify find the problem that is actually worth solving.&lt;/p&gt;&#xA;&lt;p&gt;It is the art of focusing on solving a problem in the most impactful and economical way possible while minimizing accidental complexity.&lt;/p&gt;&#xA;&lt;p&gt;It is the art of not getting attached to a solution and iterating quickly.&lt;/p&gt;&#xA;&lt;p&gt;It&amp;rsquo;s the art of having fun while doing it.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>The g0v.social Mantra</title>
       <link>https://devpoga.org/blog/2023-01-22_mantra_g0v_social/</link>
       <pubDate>Sun, 22 Jan 2023 00:00:00 +0800</pubDate>
-      
       <guid>https://devpoga.org/blog/2023-01-22_mantra_g0v_social/</guid>
-      <description>Under the surveillance capitalism standard, g0v.social is a strange little social network.
-Traditionally, social networks seek to radicalize people; the more toxic you become, the more traffic the platform will receive, and thus the greater the profit.
-We used to use the internet to escape from reality. But now we return to reality to escape the toxicity of the internet.
-The platform has taught us to post radical content, misinformation, hatred, and dunks in order to receive more feedback (likes, reposts) from the platform.</description>
+      <description>&lt;p&gt;Under the surveillance capitalism standard, &lt;a href=&#34;https://g0v.social&#34;&gt;g0v.social&lt;/a&gt; is a strange little social network.&lt;/p&gt;&#xA;&lt;p&gt;Traditionally, social networks seek to radicalize people; the more toxic you become, the more traffic the platform will receive, and thus the greater the profit.&lt;/p&gt;&#xA;&lt;p&gt;We used to use the internet to escape from reality. But now we return to reality to escape the toxicity of the internet.&lt;/p&gt;&#xA;&lt;p&gt;The platform has &lt;a href=&#34;https://phys.org/news/2023-01-reveals-key-fake-news-social.html&#34;&gt;taught us to post radical content, misinformation, hatred, and dunks in order to receive more feedback (likes, reposts) from the platform&lt;/a&gt;.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Start with the Least Malleable</title>
       <link>https://devpoga.org/blog/2023-01-02_start_with_the_least_malleable/</link>
       <pubDate>Mon, 02 Jan 2023 00:00:00 +0800</pubDate>
-      
       <guid>https://devpoga.org/blog/2023-01-02_start_with_the_least_malleable/</guid>
-      <description>Always start with the least malleable whenever you&amp;rsquo;re onboarding to a new job, switching careers, or just joining a new project.
-Resources you&amp;rsquo;re going to encounter in your career, from least malleable to most malleable:
-People Process Code Always start with the people. People are shaped by their life. It&amp;rsquo;s impossible to rapidly change a person without some crazy stuff happen.
-Run if people make you feel uncomfortable. Since It&amp;rsquo;s not worthy to spend your life to change some other people just to have an okay career.</description>
+      <description>&lt;p&gt;Always start with the least malleable whenever you&amp;rsquo;re onboarding to a new job, switching careers, or just joining a new project.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;p&gt;Resources you&amp;rsquo;re going to encounter in your career, from least malleable to most malleable:&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;People&lt;/li&gt;&#xA;&lt;li&gt;Process&lt;/li&gt;&#xA;&lt;li&gt;Code&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;p&gt;Always start with the people. People are shaped by their life. It&amp;rsquo;s impossible to rapidly change a person without some crazy stuff happen.&lt;/p&gt;&#xA;&lt;p&gt;Run if people make you feel uncomfortable. Since It&amp;rsquo;s not worthy to spend your life to change some other people just to have an okay career.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Cheap Complexity and Cybersecurity</title>
       <link>https://devpoga.org/blog/2022-08-28_cheap_complexity_cybersecurity/</link>
       <pubDate>Sun, 28 Aug 2022 00:00:00 +0800</pubDate>
-      
       <guid>https://devpoga.org/blog/2022-08-28_cheap_complexity_cybersecurity/</guid>
-      <description>A recurrent theme of modern security is the importance of complexity and the difficulty of containing it. With GPUs, NICs, basebands, and specialized hardware such as TPUs, things are objectively getting more complicated at a superlinear rate.
-In a world where complexity continues to grow, it is hard to provide security guarantees. The problem of escalating complexity becomes an escalated security problem.
-What&amp;rsquo;s driving the complexity? &amp;ldquo;How does one design an electric motor?</description>
+      <description>&lt;p&gt;A recurrent theme of modern security is the importance of complexity and the difficulty of containing it. With GPUs, NICs, basebands, and specialized hardware such as TPUs, things are objectively getting more complicated at a superlinear rate.&lt;/p&gt;&#xA;&lt;p&gt;In a world where complexity continues to grow, it is hard to provide security guarantees. The problem of escalating complexity becomes an escalated security problem.&lt;/p&gt;&#xA;&lt;h2 id=&#34;whats-driving-the-complexity&#34;&gt;What&amp;rsquo;s driving the complexity?&lt;/h2&gt;&#xA;&lt;p&gt;&lt;img src=&#34;./drive.jpeg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;&amp;ldquo;How does one design an electric motor? Would you attach a bathtub to it simply because one was available? Would a bouquet of flowers help? A heap of rocks? No, you would use just those elements necessary to its purpose and make it no larger than needed-and you would incorporate safety factors. Function controls design. So it is with revolution.&amp;rdquo;&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Developing Godot Projects with Neovim</title>
       <link>https://devpoga.org/blog/2022-07-23_neovim_godot/</link>
       <pubDate>Sat, 23 Jul 2022 00:00:00 +0800</pubDate>
-      
       <guid>https://devpoga.org/blog/2022-07-23_neovim_godot/</guid>
-      <description>When I started using Godot Engine, what surprised me the most is the built-in Language Server Protocol support. Thank to it, I can easily develop GDScript with all my customized vim configs.
-Setup Install vim-godot.
-Plug &amp;#39;habamax/vim-godot&amp;#39; Install neovim-remote.
-pip3 install neovim-remote Setup Neovim as the external editor for Godot
-Open menu Editor/Editor Settings/ then navigate to General/External/: Tick Use external editor Set nvr to Exec Path, use which nvr to get the absolute path.</description>
+      <description>&lt;p&gt;When I started using &lt;a href=&#34;https://godotengine.org/&#34;&gt;Godot Engine&lt;/a&gt;, what surprised me the most is the built-in &lt;a href=&#34;https://microsoft.github.io/language-server-protocol/&#34;&gt;Language Server Protocol&lt;/a&gt; support. Thank to it, I can easily develop &lt;a href=&#34;https://docs.godotengine.org/en/stable/tutorials/scripting/gdscript/gdscript_basics.html&#34;&gt;GDScript&lt;/a&gt; with all my customized vim configs.&lt;/p&gt;&#xA;&lt;h2 id=&#34;setup&#34;&gt;Setup&lt;/h2&gt;&#xA;&lt;p&gt;Install &lt;a href=&#34;https://github.com/habamax/vim-godot&#34;&gt;&lt;code&gt;vim-godot&lt;/code&gt;&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;Plug &amp;#39;habamax/vim-godot&amp;#39;&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Install &lt;a href=&#34;https://github.com/mhinz/neovim-remote&#34;&gt;&lt;code&gt;neovim-remote&lt;/code&gt;&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;pip3 install neovim-remote&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Setup Neovim as the external editor for Godot&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Open menu Editor/Editor Settings/ then navigate to General/External/:&lt;/li&gt;&#xA;&lt;li&gt;Tick &lt;code&gt;Use external editor&lt;/code&gt;&lt;/li&gt;&#xA;&lt;li&gt;Set nvr to Exec Path, use &lt;code&gt;which nvr&lt;/code&gt; to get the absolute path.&lt;/li&gt;&#xA;&lt;li&gt;Add &lt;code&gt;--servername godothost --remote-send &amp;quot;&amp;lt;C-\&amp;gt;&amp;lt;C-N&amp;gt;:n {file}&amp;lt;CR&amp;gt;:call cursor({line},{col})&amp;lt;CR&amp;gt;&amp;quot;&lt;/code&gt; to Exec Flags&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;p&gt;Start Neovim and listening to remote commands:&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Unity, Godot, and Right to Repair</title>
       <link>https://devpoga.org/blog/2022-07-01_unity_godot_right_to_repair/</link>
       <pubDate>Fri, 01 Jul 2022 00:00:00 +0800</pubDate>
-      
       <guid>https://devpoga.org/blog/2022-07-01_unity_godot_right_to_repair/</guid>
-      <description>Some years ago, Unity dominated the game engine market. Everyone would recommend Unity to fellow game developers without thinking.
-However, Unity (as a game engine) is not in a great shape right now:
-Deprecating features while the replacement isn’t ready, Creating multiple new implementations of features from scratch instead of improving what’s there. Abandoning their own features in favour of acquiring community-made versions, and then abandoning them, Splitting the whole render system into two incompatible, contrary versions, deprecating the previous render system.</description>
+      <description>&lt;p&gt;Some years ago, &lt;a href=&#34;https://unity.com/&#34;&gt;Unity&lt;/a&gt; dominated the game engine market. Everyone would recommend Unity to fellow game developers &lt;a href=&#34;https://alextardif.com/LearningGraphics.html&#34;&gt;without thinking&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;p&gt;However, Unity (as a game engine) is &lt;a href=&#34;https://garry.blog/unity-2022/&#34;&gt;&lt;strong&gt;not in a great shape&lt;/strong&gt;&lt;/a&gt; right now:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Deprecating features while the replacement isn’t ready,&lt;/li&gt;&#xA;&lt;li&gt;Creating multiple new implementations of features from scratch instead of improving what’s there.&lt;/li&gt;&#xA;&lt;li&gt;Abandoning their own features in favour of acquiring community-made versions, and then abandoning them,&lt;/li&gt;&#xA;&lt;li&gt;Splitting the whole render system into two incompatible, contrary versions, deprecating the previous render system.&lt;/li&gt;&#xA;&lt;li&gt;Splitting the UI system into two/three and trying to use them all at the same time,&lt;/li&gt;&#xA;&lt;li&gt;&amp;hellip;and the worst: shutting down Unity Answers and redirecting it to the Unity Forums. (Although &lt;a href=&#34;https://forum.unity.com/threads/unity-answers-shutdown-canceled.1293360/&#34;&gt;they walked back the decision&lt;/a&gt;)&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;It&amp;rsquo;s pretty obvious that Unity (as a company) are &lt;strong&gt;oblivious about their product and their customer&lt;/strong&gt;. The stock price and shareholders&amp;rsquo; value becomes more important than game developers.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>What I&#39;ve been Reading: 2022 Jan and Feb</title>
       <link>https://devpoga.org/blog/2022-02-19_what_ive_been_reading/</link>
       <pubDate>Sat, 19 Feb 2022 00:00:00 +0800</pubDate>
-      
       <guid>https://devpoga.org/blog/2022-02-19_what_ive_been_reading/</guid>
-      <description>MLOps The Four Innovation Phases of Netflix’s Trillions Scale Real-time Data Infrastructure
-https://thedataexchange.media/building-machine-learning-infrastructure-at-netflix-and-beyond/
-Real-time machine learning: challenges and solutions
-Why are ML Compilers so Hard?
-Compiler UCB CS294-113: Virtual Machines and Managed Runtimes Rendering I&amp;rsquo;ve been wanting to go back to my root of programming: games and rendering.
-A Review of Shader Language
-Finding Your Home in Game Graphics Programming
-Nanite A Deep Dive
-Rendering the Hellscape of Doom Eternal</description>
+      <description>&lt;h3 id=&#34;mlops&#34;&gt;MLOps&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://medium.com/@ZhenzhongXu/the-four-innovation-phases-of-netflixs-trillions-scale-real-time-data-infrastructure-2370938d7f01&#34;&gt;The Four Innovation Phases of Netflix’s Trillions Scale Real-time Data Infrastructure&lt;/a&gt;&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://thedataexchange.media/building-machine-learning-infrastructure-at-netflix-and-beyond/&#34;&gt;https://thedataexchange.media/building-machine-learning-infrastructure-at-netflix-and-beyond/&lt;/a&gt;&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://huyenchip.com/2022/01/02/real-time-machine-learning-challenges-and-solutions.html&#34;&gt;Real-time machine learning: challenges and solutions&lt;/a&gt;&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://petewarden.com/2021/12/24/why-are-ml-compilers-so-hard/&#34;&gt;Why are ML Compilers so Hard?&lt;/a&gt;&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;compiler&#34;&gt;Compiler&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;http://www.wolczko.com/CS294/&#34;&gt;UCB CS294-113: Virtual Machines and Managed Runtimes&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;rendering&#34;&gt;Rendering&lt;/h3&gt;&#xA;&lt;p&gt;I&amp;rsquo;ve been wanting to go back to my root of programming: games and rendering.&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://alain.xyz/blog/a-review-of-shader-languages&#34;&gt;A Review of Shader Language&lt;/a&gt;&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://alextardif.com/LearningGraphics.html&#34;&gt;Finding Your Home in Game Graphics Programming&lt;/a&gt;&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://advances.realtimerendering.com/s2021/Karis_Nanite_SIGGRAPH_Advances_2021_final.pdf&#34;&gt;Nanite A Deep Dive&lt;/a&gt;&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://advances.realtimerendering.com/s2020/RenderingDoomEternal.pdf&#34;&gt;Rendering the Hellscape of Doom Eternal&lt;/a&gt;&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>I cannot think myself out of this</title>
       <link>https://devpoga.org/blog/2022-01-15_i_cannot_think_myself_out_of_this/</link>
       <pubDate>Sat, 15 Jan 2022 00:00:00 +0800</pubDate>
-      
       <guid>https://devpoga.org/blog/2022-01-15_i_cannot_think_myself_out_of_this/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;https://news.ycombinator.com/item?id=29226021&#34;&gt;From HN&lt;/a&gt;&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>gRPC status codes</title>
       <link>https://devpoga.org/blog/2022-01-03_grpc_status_code/</link>
       <pubDate>Mon, 03 Jan 2022 00:56:00 +0800</pubDate>
-      
       <guid>https://devpoga.org/blog/2022-01-03_grpc_status_code/</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;https://grpc.io&#34;&gt;gRPC&lt;/a&gt; defined &lt;a href=&#34;https://github.com/grpc/grpc/blob/0e00c430827e81d61e1e7164ef04ca21ccbfaa77/include/grpcpp/impl/codegen/status_code_enum.h&#34;&gt;18 status codes&lt;/a&gt; for returning different types of errors.&lt;/p&gt;
-&lt;p&gt;I think they&amp;rsquo;re a pretty good reference if you want to design clear error handling for API.&lt;/p&gt;</description>
+      <description>&lt;p&gt;&lt;a href=&#34;https://grpc.io&#34;&gt;gRPC&lt;/a&gt; defined &lt;a href=&#34;https://github.com/grpc/grpc/blob/0e00c430827e81d61e1e7164ef04ca21ccbfaa77/include/grpcpp/impl/codegen/status_code_enum.h&#34;&gt;18 status codes&lt;/a&gt; for returning different types of errors.&lt;/p&gt;&#xA;&lt;p&gt;I think they&amp;rsquo;re a pretty good reference if you want to design clear error handling for API.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>On Naps</title>
       <link>https://devpoga.org/blog/2021-12-12_naps/</link>
       <pubDate>Sun, 12 Dec 2021 00:00:00 +0800</pubDate>
-      
       <guid>https://devpoga.org/blog/2021-12-12_naps/</guid>
       <description>&lt;p&gt;I&amp;rsquo;ve been taking naps multiple times a day. And surprisingly, a simple 5 minutes nap can help me avoid quite a lot of depression and anxiety.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Pipelines and Glue Systems</title>
       <link>https://devpoga.org/blog/2021-12-25_pipelines_and_glue_systems/</link>
       <pubDate>Sun, 12 Dec 2021 00:00:00 +0800</pubDate>
-      
       <guid>https://devpoga.org/blog/2021-12-25_pipelines_and_glue_systems/</guid>
       <description>&lt;p&gt;&lt;strong&gt;Context&lt;/strong&gt;: Machine Learning Projects are mainly just a complex interdependent pipeline. We desperately need a better abstraction for them.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Using AntiPatterns to avoid MLOps Mistakes</title>
       <link>https://devpoga.org/blog/2021-11-27-mlops_antipatterns/</link>
       <pubDate>Sat, 27 Nov 2021 00:00:00 +0800</pubDate>
-      
       <guid>https://devpoga.org/blog/2021-11-27-mlops_antipatterns/</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;https://arxiv.org/abs/2107.00079&#34;&gt;Using AntiPatterns to avoid MLOps Mistakes&lt;/a&gt;, Nikil Muralidhar et. al.&lt;/p&gt;
-&lt;p&gt;I learned about this survey paper from &lt;a href=&#34;https://thedataexchange.media/mlops-anti-patterns/&#34;&gt;The Data Exchange&lt;/a&gt; podcast. It&amp;rsquo;s a good introduction for people who just started deploying their machine learning project to production.&lt;/p&gt;
-&lt;p&gt;The paper focused on &lt;em&gt;supervised learning&lt;/em&gt;, and &lt;em&gt;forcasting applications&lt;/em&gt;. But the observation and recommendations should be general enough to be applied to other common machine learning deployments.&lt;/p&gt;</description>
+      <description>&lt;p&gt;&lt;a href=&#34;https://arxiv.org/abs/2107.00079&#34;&gt;Using AntiPatterns to avoid MLOps Mistakes&lt;/a&gt;, Nikil Muralidhar et. al.&lt;/p&gt;&#xA;&lt;p&gt;I learned about this survey paper from &lt;a href=&#34;https://thedataexchange.media/mlops-anti-patterns/&#34;&gt;The Data Exchange&lt;/a&gt; podcast. It&amp;rsquo;s a good introduction for people who just started deploying their machine learning project to production.&lt;/p&gt;&#xA;&lt;p&gt;The paper focused on &lt;em&gt;supervised learning&lt;/em&gt;, and &lt;em&gt;forcasting applications&lt;/em&gt;. But the observation and recommendations should be general enough to be applied to other common machine learning deployments.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Notes on The Five Dysfunctions of a Team</title>
       <link>https://devpoga.org/blog/2021-09-19_notes_on_the_five_dysfunctions_of_a_team/</link>
       <pubDate>Sun, 19 Sep 2021 00:00:00 +0800</pubDate>
-      
       <guid>https://devpoga.org/blog/2021-09-19_notes_on_the_five_dysfunctions_of_a_team/</guid>
-      <description>genuine teamwork in most organizations remains as elusive as it has ever been. organizations fail to achieve teamwork because they unknowingly fall prey to five natural but dangerous pitfalls The Natural pitfalls absence of trust: unwillingness to be vulnerable within the group. fear of conflict: incapable of engaging in unfiltered and passionate debate of ideas. They resort to veiled discussions and guarded comments lack of commitment: team members rarely, if ever, buy in and commit to decisions, though they may feign aggrement during meetings.</description>
+      <description>&lt;ul&gt;&#xA;&lt;li&gt;genuine teamwork in most organizations remains as elusive as it has ever been.&lt;/li&gt;&#xA;&lt;li&gt;organizations fail to achieve teamwork because they unknowingly fall prey to five natural but dangerous pitfalls&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;&lt;img src=&#34;https://devpoga.org/post/2021-09-19_notes_on_the_five_dysfunctions_of_a_team/0.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;&#xA;&lt;h2 id=&#34;the-natural-pitfalls&#34;&gt;The Natural pitfalls&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&lt;strong&gt;absence of trust&lt;/strong&gt;: unwillingness to be vulnerable within the group.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;fear of conflict&lt;/strong&gt;: incapable of engaging in unfiltered and passionate debate of ideas. They resort to veiled discussions and guarded comments&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;lack of commitment&lt;/strong&gt;: team members rarely, if ever, buy in and commit to decisions, though they may feign aggrement during meetings.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;avoidance of accountability&lt;/strong&gt;: hesitate to call their peers on actions and behaviors that seem counterproductive to the good of the team.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Inattention to results&lt;/strong&gt;: team members put their needs above the collective goals of the team.&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h2 id=&#34;a-questionnaire&#34;&gt;A questionnaire&lt;/h2&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;____ 1. Team members are passionate and unguarded in their discussion of issues.&#xA;____ 2. Team members call out one another&amp;#39;s deficiencies or unproductive behaviors.&#xA;____ 3. Team members know what their peers are working on and how they contribute to the collective good of the team.&#xA;____ 4. Team members quickly and genuinely apologize to one another when they say or do something inappropriate or possibly damaging to the team.&#xA;____ 5. Team members willingly make sacrifices (such as budget, turf, head count) in their departments or areas of expertise for the good of the team.&#xA;____ 6. Team members openly admit their weaknesses and mistakes.&#xA;____ 7. Team meetings are compelling, and not boring.&#xA;____ 8. Team members leave meetings confident that their peers are completely committed to the decisions that were agreed on, even if there was initial disagreement.&#xA;____ 9. Morale is significantly affected by the failure to achieve team goals.&#xA;____ 10. During team meetings, the most important—and difficult—issues are put on the table to be resolved.&#xA;____ 11. Team members are deeply concerned about the prospect of letting down their peers.&#xA;____ 12. Team members know about one another&amp;#39;s personal lives and are comfortable discussing them.&#xA;____ 13. Team members end discussions with clear and specific resolutions and calls to action.&#xA;____ 14. Team members challenge one another about their plans and approaches.&#xA;____ 15. Team members are slow to seek credit for their own contributions, but quick to point out those of others.&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;hr&gt;&#xA;&lt;h2 id=&#34;absence-of-trust&#34;&gt;Absence of Trust&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Conceal their weaknesses and mistakes from one another&lt;/li&gt;&#xA;&lt;li&gt;Hesitate to ask for help or provide constructive feedback&lt;/li&gt;&#xA;&lt;li&gt;Hesitate to offer help outside their own areas of responsibility&lt;/li&gt;&#xA;&lt;li&gt;Jump to conclusions about the intentions and aptitudes of others without attempting to clarify them&lt;/li&gt;&#xA;&lt;li&gt;Fail to recognize and tap into one another&amp;rsquo;s skills and experiences&lt;/li&gt;&#xA;&lt;li&gt;Waste time and energy managing their behaviors for effect Hold grudges&lt;/li&gt;&#xA;&lt;li&gt;Dread meetings and find reasons to avoid spending time together&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;suggestions-for-overcoming&#34;&gt;Suggestions for Overcoming&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Personal Histories Exercies&lt;/li&gt;&#xA;&lt;li&gt;Team Effectiveness Exercise&lt;/li&gt;&#xA;&lt;li&gt;Personality and Behavioral Preference Profile&lt;/li&gt;&#xA;&lt;li&gt;360-Degree Feedback&lt;/li&gt;&#xA;&lt;li&gt;Experiential Team Exercise&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;the-role-of-the-leader&#34;&gt;The Role of the leader&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Demonstrate vulnerability first&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;fear-of-conflict&#34;&gt;Fear of Conflict&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Have boring meetings&lt;/li&gt;&#xA;&lt;li&gt;Create environments where back-channel politics and personal attacks thrive&lt;/li&gt;&#xA;&lt;li&gt;Ignore controversial topics that are critical to team success&lt;/li&gt;&#xA;&lt;li&gt;Fail to tap into all the opinions and perspectives of team members&lt;/li&gt;&#xA;&lt;li&gt;Waste time and energy with posturing and interpersonal risk management&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;suggestions-for-overcoming-1&#34;&gt;Suggestions for Overcoming&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Mining&lt;/li&gt;&#xA;&lt;li&gt;Real-Time Permission&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;the-role-of-the-leader-1&#34;&gt;The Role of the leader&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;demonstrate restraint when peers engage in conflict&lt;/li&gt;&#xA;&lt;li&gt;personally model appropriate conflict behavior&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;lack-of-commitment&#34;&gt;Lack of Commitment&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Creates ambiguity among the team about direction and priorities&lt;/li&gt;&#xA;&lt;li&gt;Watches windows of opportunity close due to excessive analysis and unnecessary delay&lt;/li&gt;&#xA;&lt;li&gt;Breeds lack of confidence and fear of failure&lt;/li&gt;&#xA;&lt;li&gt;Revisits discussions and decisions again and again&lt;/li&gt;&#xA;&lt;li&gt;Encourages second-guessing among team members&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;suggestions-for-overcoming-2&#34;&gt;Suggestions for Overcoming&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Cascading Messaging&lt;/li&gt;&#xA;&lt;li&gt;Deadlines&lt;/li&gt;&#xA;&lt;li&gt;Contingency and Worst-case Scenario Analysis&lt;/li&gt;&#xA;&lt;li&gt;Low-Risk Exposure Therapy&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;the-role-of-the-leader-2&#34;&gt;The Role of the leader&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;confortably making decision that turns out to be run&lt;/li&gt;&#xA;&lt;li&gt;push the group for closure around issues and adhereence to schedules&lt;/li&gt;&#xA;&lt;li&gt;don&amp;rsquo;t place too high a premium on certainty or consensus&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;avoidance-of-accountability&#34;&gt;Avoidance of Accountability&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Creates resentment among team members who have different standards of performance&lt;/li&gt;&#xA;&lt;li&gt;Encourages mediocrity&lt;/li&gt;&#xA;&lt;li&gt;Misses deadlines and key deliverables&lt;/li&gt;&#xA;&lt;li&gt;Places an undue burden on the team leader as the sole source of discipline&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;suggestions-for-overcoming-3&#34;&gt;Suggestions for Overcoming&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Publication of Goals and Standards&lt;/li&gt;&#xA;&lt;li&gt;Simple and Regular Progress Reviews&lt;/li&gt;&#xA;&lt;li&gt;Team Rewards&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;the-role-of-the-leader-3&#34;&gt;The Role of the leader&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;allow the team to serve as the first the primary accountability&lt;/li&gt;&#xA;&lt;li&gt;serve as the arbiter of discipline when the team failed&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;inattention-to-results&#34;&gt;Inattention to Results&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Stagnates/fails to grow&lt;/li&gt;&#xA;&lt;li&gt;Rarely defeats competitor&lt;/li&gt;&#xA;&lt;li&gt;Loses achievement-oriented employees&lt;/li&gt;&#xA;&lt;li&gt;Encourages team members to focus on their own careers and individual goals&lt;/li&gt;&#xA;&lt;li&gt;Is easily distracted&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;suggestions-for-overcoming-4&#34;&gt;Suggestions for Overcoming&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Public declaration of Results&lt;/li&gt;&#xA;&lt;li&gt;Result-based Rewards&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;the-role-of-the-leader-4&#34;&gt;The Role of the leader&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;selfless and objective&lt;/li&gt;&#xA;&lt;li&gt;reward for those who make real contributions&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
     </item>
-    
     <item>
       <title>On Building Glue Systems</title>
       <link>https://devpoga.org/blog/2021-09-18_on_glue_systems/</link>
       <pubDate>Sat, 18 Sep 2021 00:00:00 +0800</pubDate>
-      
       <guid>https://devpoga.org/blog/2021-09-18_on_glue_systems/</guid>
-      <description>&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://devpoga.org/post/2021-09-18_on_glue_systems/glue.jpg&#34; alt=&#34;&#34;  /&gt;
-&lt;/p&gt;
-&lt;p&gt;I spent most of my life building glue systems.&lt;/p&gt;
-&lt;p&gt;Sometimes, I got to work on a deep, sparkling project. But most of the time, my work is about gluing things together.&lt;/p&gt;</description>
+      <description>&lt;p&gt;&lt;img src=&#34;https://devpoga.org/post/2021-09-18_on_glue_systems/glue.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;I spent most of my life building glue systems.&lt;/p&gt;&#xA;&lt;p&gt;Sometimes, I got to work on a deep, sparkling project. But most of the time, my work is about gluing things together.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Learning Julia, Line by Line</title>
       <link>https://devpoga.org/blog/2021-08-04_learning_julia_line_by_line/</link>
       <pubDate>Wed, 04 Aug 2021 00:00:00 +0800</pubDate>
-      
       <guid>https://devpoga.org/blog/2021-08-04_learning_julia_line_by_line/</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;https://github.com/StefanKarpinski/Cards.jl&#34;&gt;Cardsjl&lt;/a&gt; is a simple Julia package which demonstrate many interesting bits of the &lt;a href=&#34;https://julialang.org/&#34;&gt;Julia Programming Language&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;Reading it is an enjoyable experience. The note I&amp;rsquo;ve writtend down is here:&lt;/p&gt;</description>
+      <description>&lt;p&gt;&lt;a href=&#34;https://github.com/StefanKarpinski/Cards.jl&#34;&gt;Cardsjl&lt;/a&gt; is a simple Julia package which demonstrate many interesting bits of the &lt;a href=&#34;https://julialang.org/&#34;&gt;Julia Programming Language&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;p&gt;Reading it is an enjoyable experience. The note I&amp;rsquo;ve writtend down is here:&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>CHECKLIST FOR ORGANIZATIONAL HEALTH</title>
       <link>https://devpoga.org/blog/2021-07-25_organization_health/</link>
       <pubDate>Sat, 24 Jul 2021 00:00:00 +0800</pubDate>
-      
       <guid>https://devpoga.org/blog/2021-07-25_organization_health/</guid>
-      <description>&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://devpoga.org/post/2021-07-25_organization_health/book.jpg&#34; alt=&#34;&#34;  /&gt;
-&lt;/p&gt;</description>
+      <description>&lt;p&gt;&lt;img src=&#34;https://devpoga.org/post/2021-07-25_organization_health/book.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Haxe and Programming for Many Machines</title>
       <link>https://devpoga.org/blog/2021-05-11_haxe_and_programming_for_many_machines/</link>
       <pubDate>Tue, 11 May 2021 00:00:00 +0800</pubDate>
-      
       <guid>https://devpoga.org/blog/2021-05-11_haxe_and_programming_for_many_machines/</guid>
       <description>&lt;p&gt;The title sounds obvious. We always program for a machine! A program won&amp;rsquo;t run itself!&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Common Lisp Local Project Development with Quicklisp</title>
       <link>https://devpoga.org/blog/2021-05-01_common_lisp_quicklisp_local_project/</link>
       <pubDate>Sat, 01 May 2021 00:00:00 +0800</pubDate>
-      
       <guid>https://devpoga.org/blog/2021-05-01_common_lisp_quicklisp_local_project/</guid>
-      <description>Probably the cleanest way to do it:
-(pushnew (truename &amp;#34;/projects/app/&amp;#34;) ql:*local-project-directories* ) (ql:register-local-projects) (ql:quickload :app) From Use Quicklisp to load personal projects from arbitrary locations.
-Alternatively, you can create a symlink in ~/quicklisp/local-projects/.</description>
+      <description>&lt;p&gt;Probably the cleanest way to do it:&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-lisp&#34; data-lang=&#34;lisp&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;(pushnew (&lt;span style=&#34;color:#a6e22e&#34;&gt;truename&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;/projects/app/&amp;#34;&lt;/span&gt;) ql:*local-project-directories* )&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;(ql:register-local-projects)&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;(ql:quickload &lt;span style=&#34;color:#e6db74&#34;&gt;:app&lt;/span&gt;)&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;From &lt;a href=&#34;https://www.darkchestnut.com/2016/quicklisp-load-personal-projects-from-arbitrary-locations/&#34;&gt;Use Quicklisp to load personal projects from arbitrary locations.&lt;/a&gt;&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;p&gt;Alternatively, you can create a symlink in &lt;code&gt;~/quicklisp/local-projects/&lt;/code&gt;.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>The Common Lisp Condition System</title>
       <link>https://devpoga.org/blog/2021-04-25_common_lisp_condition_system/</link>
       <pubDate>Sun, 25 Apr 2021 00:00:00 +0800</pubDate>
-      
       <guid>https://devpoga.org/blog/2021-04-25_common_lisp_condition_system/</guid>
-      <description>&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://devpoga.org/post/2021-04-25_common_lisp_condition_system/book.jpg&#34; alt=&#34;&#34;  /&gt;
-&lt;/p&gt;</description>
+      <description>&lt;p&gt;&lt;img src=&#34;https://devpoga.org/post/2021-04-25_common_lisp_condition_system/book.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Predictable Performance of OCaml&#39;s Module System</title>
       <link>https://devpoga.org/blog/2020-12-19_ocaml_predictable_module_functor/</link>
       <pubDate>Sat, 19 Dec 2020 00:00:00 +0800</pubDate>
-      
       <guid>https://devpoga.org/blog/2020-12-19_ocaml_predictable_module_functor/</guid>
-      <description>&lt;img loading=&#34;lazy&#34; src=&#34;https://devpoga.org/post/2020-12-19_ocaml_predictable_module_functor/camel.jpg&#34; alt=&#34;&#34;  /&gt;
- OCaml&amp;rsquo;s &lt;a href=&#34;https://dev.realworldocaml.org/files-modules-and-programs.html&#34;&gt;module system&lt;/a&gt; can be a powerful tool for building generic code and structuring systems. Functors are functions from modules to modules and they serve an important role for the power of module system. However, I want to know if functors (and the module system) can be optimized away by the OCaml compiler.</description>
+      <description>&lt;img src=&#34;https://devpoga.org/post/2020-12-19_ocaml_predictable_module_functor/camel.jpg&#34; alt=&#34;&#34;&gt; OCaml&amp;rsquo;s &lt;a href=&#34;https://dev.realworldocaml.org/files-modules-and-programs.html&#34;&gt;module system&lt;/a&gt; can be a powerful tool for building generic code and structuring systems. Functors are functions from modules to modules and they serve an important role for the power of module system. However, I want to know if functors (and the module system) can be optimized away by the OCaml compiler.</description>
     </item>
-    
     <item>
       <title>Going through the OCaml compiler pipeline (manually)</title>
       <link>https://devpoga.org/blog/2020-11-30-ocaml-compiler-pipeline/</link>
       <pubDate>Mon, 30 Nov 2020 00:00:00 +0800</pubDate>
-      
       <guid>https://devpoga.org/blog/2020-11-30-ocaml-compiler-pipeline/</guid>
       <description>Modern compilers usually composed by multiple stages: parsers, optimizers, linkers, and assemblers. Let&amp;rsquo;s go through it one by one to have a better understanding of the OCaml compiler.</description>
     </item>
-    
     <item>
       <title>The journey of g0v.social</title>
       <link>https://devpoga.org/blog/2020-11-29-g0v.social-journey/</link>
       <pubDate>Sun, 29 Nov 2020 00:00:00 +0800</pubDate>
-      
       <guid>https://devpoga.org/blog/2020-11-29-g0v.social-journey/</guid>
       <description>&lt;p&gt;Slides for &lt;a href=&#34;https://summit.g0v.tw/2020/&#34;&gt;g0v summit 2020&lt;/a&gt;.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>A Taste of OCaml&#39;s Predictable Performance</title>
       <link>https://devpoga.org/blog/2020-11-21-a-taste-of-ocaml-predictable-performance/</link>
       <pubDate>Sat, 21 Nov 2020 00:00:00 +0800</pubDate>
-      
       <guid>https://devpoga.org/blog/2020-11-21-a-taste-of-ocaml-predictable-performance/</guid>
-      <description>&lt;img loading=&#34;lazy&#34; src=&#34;https://devpoga.org/post/2020-11-21-a-taste-of-ocaml-predictable-performance/colour-logo.png&#34; alt=&#34;&#34;  /&gt;
- &lt;a href=&#34;https://github.com/mirage/eqaf&#34;&gt;eqaf&lt;/a&gt;, a constant-time compare function implementation in &lt;a href=&#34;https://ocaml.org/&#34;&gt;OCaml&lt;/a&gt;, is a great case to demonstrate the &lt;a href=&#34;https://signalsandthreads.com/language-design/#0008401&#34;&gt;predictable performance of OCaml&amp;rsquo;s compiler&lt;/a&gt;. Why?</description>
+      <description>&lt;img src=&#34;https://devpoga.org/post/2020-11-21-a-taste-of-ocaml-predictable-performance/colour-logo.png&#34; alt=&#34;&#34;&gt; &lt;a href=&#34;https://github.com/mirage/eqaf&#34;&gt;eqaf&lt;/a&gt;, a constant-time compare function implementation in &lt;a href=&#34;https://ocaml.org/&#34;&gt;OCaml&lt;/a&gt;, is a great case to demonstrate the &lt;a href=&#34;https://signalsandthreads.com/language-design/#0008401&#34;&gt;predictable performance of OCaml&amp;rsquo;s compiler&lt;/a&gt;. Why?</description>
     </item>
-    
     <item>
       <title>在 iPad 上布置軟體開發環境</title>
       <link>https://devpoga.org/blog/2020-08-01_ipad_programming_environment/</link>
       <pubDate>Sat, 01 Aug 2020 00:00:00 +0800</pubDate>
-      
       <guid>https://devpoga.org/blog/2020-08-01_ipad_programming_environment/</guid>
       <description>&lt;p&gt;五月買了 &lt;a href=&#34;https://www.apple.com/tw/ipad-pro/&#34;&gt;iPad Pro&lt;/a&gt; 跟 &lt;a href=&#34;https://www.apple.com/tw/ipad-keyboards/&#34;&gt;巧控鍵盤&lt;/a&gt; 後，大部分的需求 iPad Pro 都能直接滿足，除了寫程式以外。摸索了一陣子之後總算找到順手又省錢的寫程式方式了，這篇簡單記錄一下。&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Concurrency in Clojure, Racket, and Gerbil Scheme</title>
       <link>https://devpoga.org/blog/2020-06-07-concurrency-clojure-racket-gerbil/</link>
       <pubDate>Sun, 07 Jun 2020 00:00:00 +0800</pubDate>
-      
       <guid>https://devpoga.org/blog/2020-06-07-concurrency-clojure-racket-gerbil/</guid>
-      <description>&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://devpoga.org/post/2020-06-07-concurrency-clojure-racket-gerbil/index.jpeg&#34; alt=&#34;&#34;  /&gt;
-&lt;/p&gt;</description>
+      <description>&lt;p&gt;&lt;img src=&#34;https://devpoga.org/post/2020-06-07-concurrency-clojure-racket-gerbil/index.jpeg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>On Communication</title>
       <link>https://devpoga.org/blog/2020-04-21_on-communication/</link>
       <pubDate>Tue, 21 Apr 2020 00:00:00 +0800</pubDate>
-      
       <guid>https://devpoga.org/blog/2020-04-21_on-communication/</guid>
       <description>&lt;p&gt;Reading List.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Domain Modeling Made Functional</title>
       <link>https://devpoga.org/blog/2020-04-10_domain-modeling-made-functional/</link>
       <pubDate>Fri, 10 Apr 2020 00:00:00 +0800</pubDate>
-      
       <guid>https://devpoga.org/blog/2020-04-10_domain-modeling-made-functional/</guid>
-      <description>&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://devpoga.org/post/2020-04-10_domain-modeling-made-functional/book.jpg&#34; alt=&#34;&#34;  /&gt;
-&lt;/p&gt;
-&lt;p&gt;Notes on the book &lt;a href=&#34;https://www.amazon.com/Domain-Modeling-Made-Functional-Domain-Driven/dp/1680502549&#34;&gt;Domain Modeling Made Functional: Tackle Software Complexity with Domain-Driven Design and F#&lt;/a&gt;.&lt;/p&gt;</description>
+      <description>&lt;p&gt;&lt;img src=&#34;https://devpoga.org/post/2020-04-10_domain-modeling-made-functional/book.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;Notes on the book &lt;a href=&#34;https://www.amazon.com/Domain-Modeling-Made-Functional-Domain-Driven/dp/1680502549&#34;&gt;Domain Modeling Made Functional: Tackle Software Complexity with Domain-Driven Design and F#&lt;/a&gt;.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Zero Trust Network</title>
       <link>https://devpoga.org/blog/2020-04-09_zero-trust-network/</link>
       <pubDate>Thu, 09 Apr 2020 00:00:00 +0800</pubDate>
-      
       <guid>https://devpoga.org/blog/2020-04-09_zero-trust-network/</guid>
-      <description>&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://devpoga.org/post/2020-04-09_zero-trust-network/book.jpg&#34; alt=&#34;&#34;  /&gt;
-&lt;/p&gt;
-&lt;p&gt;Notes on the book &lt;a href=&#34;https://www.amazon.com/Zero-Trust-Networks-Building-Untrusted/dp/1491962194&#34;&gt;Zero Trust Network&lt;/a&gt;.&lt;/p&gt;</description>
+      <description>&lt;p&gt;&lt;img src=&#34;https://devpoga.org/post/2020-04-09_zero-trust-network/book.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;Notes on the book &lt;a href=&#34;https://www.amazon.com/Zero-Trust-Networks-Building-Untrusted/dp/1491962194&#34;&gt;Zero Trust Network&lt;/a&gt;.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>OCaml Quickstart</title>
       <link>https://devpoga.org/blog/2020-03-17_ocaml_quickstart/</link>
       <pubDate>Tue, 17 Mar 2020 00:00:00 +0800</pubDate>
-      
       <guid>https://devpoga.org/blog/2020-03-17_ocaml_quickstart/</guid>
-      <description>&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://devpoga.org/post/2020-03-17_ocaml_quickstart/vim.png&#34; alt=&#34;&#34;  /&gt;
-&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;https://ocaml.org/&#34;&gt;OCaml&lt;/a&gt; is a great language. However, the tooling for newbies is kinda confusing. Here&amp;rsquo;s a guide to setup a working OCaml development environment in &lt;a href=&#34;https://neovim.io/&#34;&gt;neovim&lt;/a&gt; on MacOS.&lt;/p&gt;</description>
+      <description>&lt;p&gt;&lt;img src=&#34;https://devpoga.org/post/2020-03-17_ocaml_quickstart/vim.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://ocaml.org/&#34;&gt;OCaml&lt;/a&gt; is a great language. However, the tooling for newbies is kinda confusing. Here&amp;rsquo;s a guide to setup a working OCaml development environment in &lt;a href=&#34;https://neovim.io/&#34;&gt;neovim&lt;/a&gt; on MacOS.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Guide to Serve Machine Learning Models in Production</title>
       <link>https://devpoga.org/blog/2020-02-17_checklist_deploy_machine_learning_model_production/</link>
       <pubDate>Mon, 17 Feb 2020 00:00:00 +0800</pubDate>
-      
       <guid>https://devpoga.org/blog/2020-02-17_checklist_deploy_machine_learning_model_production/</guid>
       <description>&lt;p&gt;Here&amp;rsquo;s a simple checklist for people who deploy machine learning models to production. Based on my personal experience.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Running a Service in Production without Losing Your Sanity</title>
       <link>https://devpoga.org/blog/2019-11-06-running-service-production/</link>
       <pubDate>Wed, 06 Nov 2019 00:00:00 +0800</pubDate>
-      
       <guid>https://devpoga.org/blog/2019-11-06-running-service-production/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>The Golden Age of New Programming Languages</title>
       <link>https://devpoga.org/blog/2019-11-03-golden-age-of-programming-language/</link>
       <pubDate>Sun, 03 Nov 2019 00:00:00 +0800</pubDate>
-      
       <guid>https://devpoga.org/blog/2019-11-03-golden-age-of-programming-language/</guid>
       <description>&lt;p&gt;2020 is going to be the golden age of new programming languages.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Benchmarking VPS for Remote Rust Development Environment</title>
       <link>https://devpoga.org/blog/2019-10-22-vps_rust_compile_benchmark/</link>
       <pubDate>Tue, 22 Oct 2019 00:00:00 +0800</pubDate>
-      
       <guid>https://devpoga.org/blog/2019-10-22-vps_rust_compile_benchmark/</guid>
       <description>&lt;p&gt;&lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt;&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Ripgrep Cheat Sheet</title>
       <link>https://devpoga.org/blog/2019-09-20_ripgrep_cheat_sheet/</link>
       <pubDate>Fri, 20 Sep 2019 00:00:00 +0800</pubDate>
-      
       <guid>https://devpoga.org/blog/2019-09-20_ripgrep_cheat_sheet/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Notes on The Signal Protocol</title>
       <link>https://devpoga.org/blog/2019-09-04_notes_on_the_signal_protocol/</link>
       <pubDate>Wed, 04 Sep 2019 00:00:00 +0800</pubDate>
-      
       <guid>https://devpoga.org/blog/2019-09-04_notes_on_the_signal_protocol/</guid>
-      <description>&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://devpoga.org/post/2019-09-04_notes_on_the_signal_protocol/dh.png&#34; alt=&#34;&#34;  /&gt;
-&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;So, I assume you&amp;rsquo;re already familiar with &lt;a href=&#34;https://en.wikipedia.org/wiki/Public-key_cryptography&#34;&gt;Public-key cryptography&lt;/a&gt; and &lt;a href=&#34;https://en.wikipedia.org/wiki/Diffie%E2%80%93Hellman_key_exchange&#34;&gt;Diffie-Hellman key exchange&lt;/a&gt;. If not, there are lots of good materials about them. Check them out first!&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;Public-key cryptography is a solid, well-studied foundation for today&amp;rsquo;s modern encryption and privacy. PGP, Diffle-Hellman, and RSA are all well-known. However, if you want to develop something with encryption, they might be not enough.&lt;/p&gt;</description>
+      <description>&lt;p&gt;&lt;img src=&#34;https://devpoga.org/post/2019-09-04_notes_on_the_signal_protocol/dh.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;So, I assume you&amp;rsquo;re already familiar with &lt;a href=&#34;https://en.wikipedia.org/wiki/Public-key_cryptography&#34;&gt;Public-key cryptography&lt;/a&gt; and &lt;a href=&#34;https://en.wikipedia.org/wiki/Diffie%E2%80%93Hellman_key_exchange&#34;&gt;Diffie-Hellman key exchange&lt;/a&gt;. If not, there are lots of good materials about them. Check them out first!&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;p&gt;Public-key cryptography is a solid, well-studied foundation for today&amp;rsquo;s modern encryption and privacy. PGP, Diffle-Hellman, and RSA are all well-known. However, if you want to develop something with encryption, they might be not enough.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Cheney on the M.T.A</title>
       <link>https://devpoga.org/blog/2019-07-11_cheney_on_the_mta/</link>
       <pubDate>Fri, 12 Jul 2019 00:00:00 +0800</pubDate>
-      
       <guid>https://devpoga.org/blog/2019-07-11_cheney_on_the_mta/</guid>
       <description>&lt;p&gt;如果問軟體工程師他覺得簡潔又經典的文章，我想很多人會回答你這篇：&lt;a href=&#34;http://home.pipeline.com/~hbaker1/CheneyMTA.html&#34;&gt;Cheney on the M.T.A&lt;/a&gt;.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Structured Concurrency</title>
       <link>https://devpoga.org/blog/2019-06-30_structured_concurrency/</link>
       <pubDate>Sun, 30 Jun 2019 00:00:00 +0800</pubDate>
-      
       <guid>https://devpoga.org/blog/2019-06-30_structured_concurrency/</guid>
-      <description>&lt;p&gt;Thread 跟 Coroutine 是兩種常常用來處理 Concurrency 的工具。&lt;/p&gt;
-&lt;p&gt;使用這兩個工具時，很麻煩的一點就是需要手動管理他們的生命週期。本質上，Thread 跟 Coroutine 都是 global scope，不管你如何建立，他們都獨立在原本的程式順序之外。&lt;/p&gt;
-&lt;p&gt;常見的例子是，如果你在 main 建立一個新的 thread，main 並不會等 thread 結束，而需要你手動 join thread，在複雜的情況（例如 cancel、timeout）便相當容易出錯。&lt;/p&gt;
-&lt;p&gt;而 Structured Concurrency 就是試圖將 Thread 的生命週期與大家都很熟悉的 scope 結合。&lt;/p&gt;</description>
+      <description>&lt;p&gt;Thread 跟 Coroutine 是兩種常常用來處理 Concurrency 的工具。&lt;/p&gt;&#xA;&lt;p&gt;使用這兩個工具時，很麻煩的一點就是需要手動管理他們的生命週期。本質上，Thread 跟 Coroutine 都是 global scope，不管你如何建立，他們都獨立在原本的程式順序之外。&lt;/p&gt;&#xA;&lt;p&gt;常見的例子是，如果你在 main 建立一個新的 thread，main 並不會等 thread 結束，而需要你手動 join thread，在複雜的情況（例如 cancel、timeout）便相當容易出錯。&lt;/p&gt;&#xA;&lt;p&gt;而 Structured Concurrency 就是試圖將 Thread 的生命週期與大家都很熟悉的 scope 結合。&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>工程師的英文寫作能力</title>
       <link>https://devpoga.org/blog/2019-06-29_%E5%B7%A5%E7%A8%8B%E5%B8%AB%E7%9A%84%E8%8B%B1%E6%96%87%E5%AF%AB%E4%BD%9C%E8%83%BD%E5%8A%9B/</link>
       <pubDate>Sat, 29 Jun 2019 00:00:00 +0800</pubDate>
-      
       <guid>https://devpoga.org/blog/2019-06-29_%E5%B7%A5%E7%A8%8B%E5%B8%AB%E7%9A%84%E8%8B%B1%E6%96%87%E5%AF%AB%E4%BD%9C%E8%83%BD%E5%8A%9B/</guid>
-      <description>&lt;p&gt;寫作能力一直是工程師實力一個很重要的指標。&lt;/p&gt;
-&lt;p&gt;能清楚的透過文字表達，在寫規格、文件時都很重要。在這個非同步的遠端工作時代，文字能力也幾乎直接代表了團隊合作的能力。&lt;/p&gt;</description>
+      <description>&lt;p&gt;寫作能力一直是工程師實力一個很重要的指標。&lt;/p&gt;&#xA;&lt;p&gt;能清楚的透過文字表達，在寫規格、文件時都很重要。在這個非同步的遠端工作時代，文字能力也幾乎直接代表了團隊合作的能力。&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Go，七年後</title>
       <link>https://devpoga.org/blog/golang-7-years-later/</link>
       <pubDate>Mon, 29 Apr 2019 00:00:00 +0800</pubDate>
-      
       <guid>https://devpoga.org/blog/golang-7-years-later/</guid>
       <description>&lt;p&gt;從&lt;a href=&#34;https://blog.golang.org/go-version-1-is-released&#34;&gt;開始接觸 Go&lt;/a&gt; 到現在也已經過了 7 年了啊&amp;hellip; 最近又有機會拿出 Go 出來寫寫，隨手寫一下感受。&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Notes on the Implementation of Lua 5.3</title>
       <link>https://devpoga.org/blog/implementation-lua53/</link>
       <pubDate>Tue, 26 Feb 2019 00:00:00 +0800</pubDate>
-      
       <guid>https://devpoga.org/blog/implementation-lua53/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;https://poga.github.io/lua53-notes/&#34;&gt;Notes on the Implementation on Lua 5.3&lt;/a&gt; is a collection of my notes on the Lua 5.3 source code. It&amp;rsquo;s a mix of both high-level ideas and interesting details in the source code.&lt;/p&gt;</description>
     </item>
-    
-    <item>
-      <title>為什麼現代遊戲都要有一堆不同的貨幣在裡頭？</title>
-      <link>https://devpoga.org/blog/2019-01-05_%E7%82%BA%E4%BB%80%E9%BA%BC%E7%8F%BE%E4%BB%A3%E9%81%8A%E6%88%B2%E9%83%BD%E8%A6%81%E6%9C%89%E4%B8%80%E5%A0%86%E4%B8%8D%E5%90%8C%E7%9A%84%E8%B2%A8%E5%B9%A3%E5%9C%A8%E8%A3%A1%E9%A0%AD/</link>
-      <pubDate>Sat, 05 Jan 2019 03:52:57 +0000</pubDate>
-      
-      <guid>https://devpoga.org/blog/2019-01-05_%E7%82%BA%E4%BB%80%E9%BA%BC%E7%8F%BE%E4%BB%A3%E9%81%8A%E6%88%B2%E9%83%BD%E8%A6%81%E6%9C%89%E4%B8%80%E5%A0%86%E4%B8%8D%E5%90%8C%E7%9A%84%E8%B2%A8%E5%B9%A3%E5%9C%A8%E8%A3%A1%E9%A0%AD/</guid>
-      <description>&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://devpoga.org/post/2019-01-05_%e7%82%ba%e4%bb%80%e9%ba%bc%e7%8f%be%e4%bb%a3%e9%81%8a%e6%88%b2%e9%83%bd%e8%a6%81%e6%9c%89%e4%b8%80%e5%a0%86%e4%b8%8d%e5%90%8c%e7%9a%84%e8%b2%a8%e5%b9%a3%e5%9c%a8%e8%a3%a1%e9%a0%ad/images/1.jpeg&#34; alt=&#34;image&#34;  /&gt;
-&lt;/p&gt;</description>
-    </item>
-    
     <item>
       <title>Analyze Streaming Data with Rust, Actix, and Lua</title>
       <link>https://devpoga.org/blog/parsing-streaming-data-actix-lua/</link>
       <pubDate>Fri, 12 Oct 2018 00:00:00 +0800</pubDate>
-      
       <guid>https://devpoga.org/blog/parsing-streaming-data-actix-lua/</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;https://github.com/poga/actix-lua&#34;&gt;&lt;code&gt;actix-lua&lt;/code&gt;&lt;/a&gt; provides a safe scripting environment for the &lt;a href=&#34;http://actix.rs&#34;&gt;actix&lt;/a&gt; framework with the &lt;a href=&#34;http://lua.org&#34;&gt;Lua Programming Language&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;Here&amp;rsquo;s an example about what you can achieve with it. Hope you can try these ideas in your next project.&lt;/p&gt;</description>
+      <description>&lt;p&gt;&lt;a href=&#34;https://github.com/poga/actix-lua&#34;&gt;&lt;code&gt;actix-lua&lt;/code&gt;&lt;/a&gt; provides a safe scripting environment for the &lt;a href=&#34;http://actix.rs&#34;&gt;actix&lt;/a&gt; framework with the &lt;a href=&#34;http://lua.org&#34;&gt;Lua Programming Language&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;p&gt;Here&amp;rsquo;s an example about what you can achieve with it. Hope you can try these ideas in your next project.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>我選擇生產力工具的基準</title>
       <link>https://devpoga.org/blog/2018-09-28_%E6%88%91%E9%81%B8%E6%93%87%E7%94%9F%E7%94%A2%E5%8A%9B%E5%B7%A5%E5%85%B7%E7%9A%84%E5%9F%BA%E6%BA%96/</link>
       <pubDate>Thu, 27 Sep 2018 00:00:00 +0800</pubDate>
-      
       <guid>https://devpoga.org/blog/2018-09-28_%E6%88%91%E9%81%B8%E6%93%87%E7%94%9F%E7%94%A2%E5%8A%9B%E5%B7%A5%E5%85%B7%E7%9A%84%E5%9F%BA%E6%BA%96/</guid>
       <description>&lt;p&gt;先說結論，我用 OmniFocus 用了五年以上了，目前依然滿意。&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>如何整合 Rust 與 Lua</title>
       <link>https://devpoga.org/blog/2018-09-03_%E5%A6%82%E4%BD%95%E6%95%B4%E5%90%88-rust-%E8%88%87-lua/</link>
       <pubDate>Mon, 03 Sep 2018 23:30:04 +0000</pubDate>
-      
       <guid>https://devpoga.org/blog/2018-09-03_%E5%A6%82%E4%BD%95%E6%95%B4%E5%90%88-rust-%E8%88%87-lua/</guid>
-      <description>&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://devpoga.org/post/2018-09-03_%e5%a6%82%e4%bd%95%e6%95%b4%e5%90%88-rust-%e8%88%87-lua/images/1.jpeg&#34; alt=&#34;image&#34;  /&gt;
-&lt;/p&gt;
-&lt;p&gt;Photo by &lt;a href=&#34;https://unsplash.com/photos/4izt8TxQmEs?utm_source=unsplash&amp;amp;utm_medium=referral&amp;amp;utm_content=creditCopyText&#34;&gt;Anders Jildén&lt;/a&gt; on &lt;a href=&#34;https://unsplash.com/search/photos/lua?utm_source=unsplash&amp;amp;utm_medium=referral&amp;amp;utm_content=creditCopyText&#34;&gt;Unsplash&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;在系統中遷入一個動態輕巧的 scripting language 一直是個常見的設計。像 &lt;a href=&#34;https://www.rust-lang.org/&#34;&gt;Rust&lt;/a&gt; 這樣的系統語言，雖然效能好，但是上手門檻較高。這時若是能遷入一個像 &lt;a href=&#34;https://www.lua.org/&#34;&gt;Lua&lt;/a&gt; 一樣動態型別，簡單易懂的語言，便能大幅提高系統彈性。&lt;/p&gt;
-&lt;p&gt;最近為了實做 &lt;a href=&#34;https://github.com/poga/actix-lua&#34;&gt;actix-lua&lt;/a&gt;，研究了一下 Rust 跟 Lua 之間的介接，順便學了不少 Rust 跟 Lua 的設計，筆記在此。&lt;/p&gt;</description>
+      <description>&lt;p&gt;&lt;img src=&#34;https://devpoga.org/post/2018-09-03_%E5%A6%82%E4%BD%95%E6%95%B4%E5%90%88-rust-%E8%88%87-lua/images/1.jpeg&#34; alt=&#34;image&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;Photo by &lt;a href=&#34;https://unsplash.com/photos/4izt8TxQmEs?utm_source=unsplash&amp;amp;utm_medium=referral&amp;amp;utm_content=creditCopyText&#34;&gt;Anders Jildén&lt;/a&gt; on &lt;a href=&#34;https://unsplash.com/search/photos/lua?utm_source=unsplash&amp;amp;utm_medium=referral&amp;amp;utm_content=creditCopyText&#34;&gt;Unsplash&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;在系統中遷入一個動態輕巧的 scripting language 一直是個常見的設計。像 &lt;a href=&#34;https://www.rust-lang.org/&#34;&gt;Rust&lt;/a&gt; 這樣的系統語言，雖然效能好，但是上手門檻較高。這時若是能遷入一個像 &lt;a href=&#34;https://www.lua.org/&#34;&gt;Lua&lt;/a&gt; 一樣動態型別，簡單易懂的語言，便能大幅提高系統彈性。&lt;/p&gt;&#xA;&lt;p&gt;最近為了實做 &lt;a href=&#34;https://github.com/poga/actix-lua&#34;&gt;actix-lua&lt;/a&gt;，研究了一下 Rust 跟 Lua 之間的介接，順便學了不少 Rust 跟 Lua 的設計，筆記在此。&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>軟體設計模式 — Data-Oriented Design</title>
       <link>https://devpoga.org/blog/2018-07-16_%E8%BB%9F%E9%AB%94%E8%A8%AD%E8%A8%88%E6%A8%A1%E5%BC%8F-dataoriented-design/</link>
       <pubDate>Mon, 16 Jul 2018 06:19:38 +0000</pubDate>
-      
       <guid>https://devpoga.org/blog/2018-07-16_%E8%BB%9F%E9%AB%94%E8%A8%AD%E8%A8%88%E6%A8%A1%E5%BC%8F-dataoriented-design/</guid>
-      <description>&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://devpoga.org/post/2018-07-16_%e8%bb%9f%e9%ab%94%e8%a8%ad%e8%a8%88%e6%a8%a1%e5%bc%8f-dataoriented-design/images/1.jpeg&#34; alt=&#34;image&#34;  /&gt;
-&lt;/p&gt;
-&lt;p&gt;Photo by &lt;a href=&#34;https://unsplash.com/photos/BpqDaDxG48w?utm_source=unsplash&amp;amp;utm_medium=referral&amp;amp;utm_content=creditCopyText&#34;&gt;Rebecca Oliver&lt;/a&gt; on &lt;a href=&#34;https://unsplash.com/search/photos/game?utm_source=unsplash&amp;amp;utm_medium=referral&amp;amp;utm_content=creditCopyText&#34;&gt;Unsplash&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;遊戲開發對很多開發者來說是個陌生的領域。遊戲對於效能的極高要求跟規格的不確定性，產生出了許多特有的系統架構。Data-Oriented Design 便是個有趣的設計模式。&lt;/p&gt;
-&lt;p&gt;相較於其他設計模式，Data-Oriented Design 深受硬體快取（cache）架構影響。對於現代的高度 pipeline、高速的 CPU 架構而言，資料的存取方式對效能有非常大的影響。比起 L1、L2 cache，對主記憶體的一次存取帶來的是數百倍的效能損耗。為了避免太過抽象，就用個實際的例子來解釋吧。&lt;/p&gt;</description>
+      <description>&lt;p&gt;&lt;img src=&#34;https://devpoga.org/post/2018-07-16_%E8%BB%9F%E9%AB%94%E8%A8%AD%E8%A8%88%E6%A8%A1%E5%BC%8F-dataoriented-design/images/1.jpeg&#34; alt=&#34;image&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;Photo by &lt;a href=&#34;https://unsplash.com/photos/BpqDaDxG48w?utm_source=unsplash&amp;amp;utm_medium=referral&amp;amp;utm_content=creditCopyText&#34;&gt;Rebecca Oliver&lt;/a&gt; on &lt;a href=&#34;https://unsplash.com/search/photos/game?utm_source=unsplash&amp;amp;utm_medium=referral&amp;amp;utm_content=creditCopyText&#34;&gt;Unsplash&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;遊戲開發對很多開發者來說是個陌生的領域。遊戲對於效能的極高要求跟規格的不確定性，產生出了許多特有的系統架構。Data-Oriented Design 便是個有趣的設計模式。&lt;/p&gt;&#xA;&lt;p&gt;相較於其他設計模式，Data-Oriented Design 深受硬體快取（cache）架構影響。對於現代的高度 pipeline、高速的 CPU 架構而言，資料的存取方式對效能有非常大的影響。比起 L1、L2 cache，對主記憶體的一次存取帶來的是數百倍的效能損耗。為了避免太過抽象，就用個實際的例子來解釋吧。&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>LuaJIT 實做探索 — NaN Tagging</title>
       <link>https://devpoga.org/blog/2018-04-18_luajit-%E5%AF%A6%E5%81%9A%E6%8E%A2%E7%B4%A2-nan-tagging/</link>
       <pubDate>Wed, 18 Apr 2018 00:00:00 +0800</pubDate>
-      
       <guid>https://devpoga.org/blog/2018-04-18_luajit-%E5%AF%A6%E5%81%9A%E6%8E%A2%E7%B4%A2-nan-tagging/</guid>
-      <description>&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://devpoga.org/post/2018-04-18_luajit-%e5%af%a6%e5%81%9a%e6%8e%a2%e7%b4%a2-nan-tagging/images/1.png&#34; alt=&#34;image&#34;  /&gt;
-&lt;/p&gt;
-&lt;h4 id=&#34;一切都是為了效能&#34;&gt;一切都是為了效能&lt;/h4&gt;
-&lt;p&gt;故事要從 boxed value 跟 unboxed value 說起。&lt;/p&gt;</description>
+      <description>&lt;p&gt;&lt;img src=&#34;https://devpoga.org/post/2018-04-18_luajit-%E5%AF%A6%E5%81%9A%E6%8E%A2%E7%B4%A2-nan-tagging/images/1.png&#34; alt=&#34;image&#34;&gt;&lt;/p&gt;&#xA;&lt;h4 id=&#34;一切都是為了效能&#34;&gt;一切都是為了效能&lt;/h4&gt;&#xA;&lt;p&gt;故事要從 boxed value 跟 unboxed value 說起。&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Why Serverless</title>
       <link>https://devpoga.org/blog/2018-04-10_why_serverless/</link>
       <pubDate>Tue, 06 Feb 2018 00:00:00 +0800</pubDate>
-      
       <guid>https://devpoga.org/blog/2018-04-10_why_serverless/</guid>
-      <description>&lt;blockquote&gt;
-&lt;p&gt;本文擷取、修訂自 2018.03.29 我在 iThome Serverless All-Star 的分享的逐字稿&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;hr&gt;
-&lt;p&gt;究竟為什麼要用 Serverless 呢？&lt;/p&gt;</description>
+      <description>&lt;blockquote&gt;&#xA;&lt;p&gt;本文擷取、修訂自 2018.03.29 我在 iThome Serverless All-Star 的分享的逐字稿&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;hr&gt;&#xA;&lt;p&gt;究竟為什麼要用 Serverless 呢？&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>遺忘的生產力</title>
       <link>https://devpoga.org/blog/2018-02-06_%E9%81%BA%E5%BF%98%E7%9A%84%E7%94%9F%E7%94%A2%E5%8A%9B/</link>
       <pubDate>Tue, 06 Feb 2018 00:00:00 +0800</pubDate>
-      
       <guid>https://devpoga.org/blog/2018-02-06_%E9%81%BA%E5%BF%98%E7%9A%84%E7%94%9F%E7%94%A2%E5%8A%9B/</guid>
-      <description>&lt;p&gt;人們談到生產力，似乎就免不了討論各種蒐集想法、整理心得的工具。彷彿忘了的東西都是一種損失。&lt;/p&gt;
-&lt;p&gt;與其努力記下所有事情，不如試試盡情遺忘吧。&lt;/p&gt;</description>
+      <description>&lt;p&gt;人們談到生產力，似乎就免不了討論各種蒐集想法、整理心得的工具。彷彿忘了的東西都是一種損失。&lt;/p&gt;&#xA;&lt;p&gt;與其努力記下所有事情，不如試試盡情遺忘吧。&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Kappa Architecture：以資料為中心的系統架構</title>
       <link>https://devpoga.org/blog/2017-12-22_kappa-architecture%E4%BB%A5%E8%B3%87%E6%96%99%E7%82%BA%E4%B8%AD%E5%BF%83%E7%9A%84%E7%B3%BB%E7%B5%B1%E6%9E%B6%E6%A7%8B/</link>
       <pubDate>Fri, 22 Dec 2017 07:32:07 +0000</pubDate>
-      
       <guid>https://devpoga.org/blog/2017-12-22_kappa-architecture%E4%BB%A5%E8%B3%87%E6%96%99%E7%82%BA%E4%B8%AD%E5%BF%83%E7%9A%84%E7%B3%BB%E7%B5%B1%E6%9E%B6%E6%A7%8B/</guid>
-      <description>&lt;p&gt;在開發軟體時，有許多眾所周知的架構模式（architecture pattern）可做為參考。例如最廣為人知的 &lt;a href=&#34;https://www.wikiwand.com/zh-tw/MVC&#34;&gt;MVC 架構&lt;/a&gt;。採用這些常用模式，能大幅減低溝通成本，各種 Framework 也能提高開發速度。&lt;/p&gt;
-&lt;p&gt;現在已經是個以資料為中心的環境，各種商業決策都依賴大量的資料。因此，系統必須能提供各種資料格式與查詢方式供各種需求使用。在這樣的環境中，也慢慢發展出許多特有的模式。&lt;/p&gt;</description>
+      <description>&lt;p&gt;在開發軟體時，有許多眾所周知的架構模式（architecture pattern）可做為參考。例如最廣為人知的 &lt;a href=&#34;https://www.wikiwand.com/zh-tw/MVC&#34;&gt;MVC 架構&lt;/a&gt;。採用這些常用模式，能大幅減低溝通成本，各種 Framework 也能提高開發速度。&lt;/p&gt;&#xA;&lt;p&gt;現在已經是個以資料為中心的環境，各種商業決策都依賴大量的資料。因此，系統必須能提供各種資料格式與查詢方式供各種需求使用。在這樣的環境中，也慢慢發展出許多特有的模式。&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Minimum Viable Ownership</title>
       <link>https://devpoga.org/blog/2017-10-02_minimum_viable_ownership/</link>
       <pubDate>Mon, 02 Oct 2017 00:00:00 +0800</pubDate>
-      
       <guid>https://devpoga.org/blog/2017-10-02_minimum_viable_ownership/</guid>
-      <description>&lt;p&gt;我始終不喜歡「擁有」的概念。那是種排他、缺乏多樣性的想法。&lt;/p&gt;
-&lt;p&gt;Open Source 也是如此。&lt;/p&gt;</description>
+      <description>&lt;p&gt;我始終不喜歡「擁有」的概念。那是種排他、缺乏多樣性的想法。&lt;/p&gt;&#xA;&lt;p&gt;Open Source 也是如此。&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>平行世界</title>
       <link>https://devpoga.org/blog/2017-06-04_%E5%B9%B3%E8%A1%8C%E4%B8%96%E7%95%8C/</link>
       <pubDate>Sun, 04 Jun 2017 08:52:19 +0000</pubDate>
-      
       <guid>https://devpoga.org/blog/2017-06-04_%E5%B9%B3%E8%A1%8C%E4%B8%96%E7%95%8C/</guid>
-      <description>&lt;p&gt;有些事情總讓人覺得，Groundhog Day 跟平行世界是真的存在的。&lt;/p&gt;
-&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://devpoga.org/post/2017-06-04_%e5%b9%b3%e8%a1%8c%e4%b8%96%e7%95%8c/images/1.png&#34; alt=&#34;image&#34;  /&gt;
-&lt;/p&gt;</description>
+      <description>&lt;p&gt;有些事情總讓人覺得，Groundhog Day 跟平行世界是真的存在的。&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;https://devpoga.org/post/2017-06-04_%E5%B9%B3%E8%A1%8C%E4%B8%96%E7%95%8C/images/1.png&#34; alt=&#34;image&#34;&gt;&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>又回來用 Omnifocus 了</title>
       <link>https://devpoga.org/blog/2017-02-16_%E5%8F%88%E5%9B%9E%E4%BE%86%E7%94%A8-omnifocus-%E4%BA%86/</link>
       <pubDate>Thu, 16 Feb 2017 18:58:42 +0000</pubDate>
-      
       <guid>https://devpoga.org/blog/2017-02-16_%E5%8F%88%E5%9B%9E%E4%BE%86%E7%94%A8-omnifocus-%E4%BA%86/</guid>
       <description>&lt;p&gt;當初那忙到吐血的兩三年中，幾乎都是靠著 Omnifocus 在維持生活的運作。&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>萬事萬物皆是 LOG — 參考資料</title>
       <link>https://devpoga.org/blog/2016-08-27_%E8%90%AC%E4%BA%8B%E8%90%AC%E7%89%A9%E7%9A%86%E6%98%AF-log-%E5%8F%83%E8%80%83%E8%B3%87%E6%96%99/</link>
       <pubDate>Sat, 27 Aug 2016 05:06:01 +0000</pubDate>
-      
       <guid>https://devpoga.org/blog/2016-08-27_%E8%90%AC%E4%BA%8B%E8%90%AC%E7%89%A9%E7%9A%86%E6%98%AF-log-%E5%8F%83%E8%80%83%E8%B3%87%E6%96%99/</guid>
       <description>&lt;p&gt;之前在 COSCUP 2016 榮幸講了一場 &lt;a href=&#34;https://devpoga.org/post/2016-08-20_%E8%90%AC%E4%BA%8B%E8%90%AC%E7%89%A9%E7%9A%86%E6%98%AF-log-%E7%B3%BB%E7%B5%B1%E6%9E%B6%E6%A7%8B%E4%B9%9F%E4%BE%86%E9%BB%9E%E7%A7%91%E6%99%AE/&#34;&gt;萬事萬物皆是 Log — 系統架構也來點科普&lt;/a&gt;。結束後被詢問有沒有一些靈感來源、延伸讀物、參考資料等等，這裡就把我有記下來的參考資料整理在此。一些時間關係沒有帶到的主題就也一起放在這了。&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>萬事萬物皆是 LOG — 系統架構也來點科普</title>
       <link>https://devpoga.org/blog/2016-08-20_%E8%90%AC%E4%BA%8B%E8%90%AC%E7%89%A9%E7%9A%86%E6%98%AF-log-%E7%B3%BB%E7%B5%B1%E6%9E%B6%E6%A7%8B%E4%B9%9F%E4%BE%86%E9%BB%9E%E7%A7%91%E6%99%AE/</link>
       <pubDate>Sat, 20 Aug 2016 05:06:01 +0000</pubDate>
-      
       <guid>https://devpoga.org/blog/2016-08-20_%E8%90%AC%E4%BA%8B%E8%90%AC%E7%89%A9%E7%9A%86%E6%98%AF-log-%E7%B3%BB%E7%B5%B1%E6%9E%B6%E6%A7%8B%E4%B9%9F%E4%BE%86%E9%BB%9E%E7%A7%91%E6%99%AE/</guid>
-      <description>&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://devpoga.org/post/2016-08-20_%e8%90%ac%e4%ba%8b%e8%90%ac%e7%89%a9%e7%9a%86%e6%98%af-log-%e7%b3%bb%e7%b5%b1%e6%9e%b6%e6%a7%8b%e4%b9%9f%e4%be%86%e9%bb%9e%e7%a7%91%e6%99%ae/images/1.png&#34; alt=&#34;image&#34;  /&gt;
-&lt;/p&gt;
-&lt;!-- raw HTML omitted --&gt;
-&lt;p&gt;自古以來，軟體工程師都在追求好維護，容易理解的軟體架構。傳統上，我們需要參與過各種大型軟體專案，從中獲取經驗，或是透過昂貴的課程，大量的論文，才能從前人的經驗中學到一些方法。&lt;/p&gt;
-&lt;p&gt;今天，我想試著透過 LOG 這個人人都碰過的資料結構，來解釋許多複雜系統的核心，只要你能理解 LOG，你就能設計出好理解、容易維護的系統架構。&lt;/p&gt;</description>
+      <description>&lt;p&gt;&lt;img src=&#34;https://devpoga.org/post/2016-08-20_%E8%90%AC%E4%BA%8B%E8%90%AC%E7%89%A9%E7%9A%86%E6%98%AF-log-%E7%B3%BB%E7%B5%B1%E6%9E%B6%E6%A7%8B%E4%B9%9F%E4%BE%86%E9%BB%9E%E7%A7%91%E6%99%AE/images/1.png&#34; alt=&#34;image&#34;&gt;&lt;/p&gt;&#xA;&lt;!-- raw HTML omitted --&gt;&#xA;&lt;p&gt;自古以來，軟體工程師都在追求好維護，容易理解的軟體架構。傳統上，我們需要參與過各種大型軟體專案，從中獲取經驗，或是透過昂貴的課程，大量的論文，才能從前人的經驗中學到一些方法。&lt;/p&gt;&#xA;&lt;p&gt;今天，我想試著透過 LOG 這個人人都碰過的資料結構，來解釋許多複雜系統的核心，只要你能理解 LOG，你就能設計出好理解、容易維護的系統架構。&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>The Design of Everyday Things</title>
       <link>https://devpoga.org/blog/2016-07-17_design-of-everyday-things/</link>
       <pubDate>Sun, 17 Jul 2016 06:02:04 +0000</pubDate>
-      
       <guid>https://devpoga.org/blog/2016-07-17_design-of-everyday-things/</guid>
       <description>&lt;p&gt;雜亂筆記&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>該怎樣教任何人任何技能</title>
       <link>https://devpoga.org/blog/2016-05-17_%E8%A9%B2%E6%80%8E%E6%A8%A3%E6%95%99%E4%BB%BB%E4%BD%95%E4%BA%BA%E4%BB%BB%E4%BD%95%E6%8A%80%E8%83%BD/</link>
       <pubDate>Tue, 17 May 2016 15:09:04 +0000</pubDate>
-      
       <guid>https://devpoga.org/blog/2016-05-17_%E8%A9%B2%E6%80%8E%E6%A8%A3%E6%95%99%E4%BB%BB%E4%BD%95%E4%BA%BA%E4%BB%BB%E4%BD%95%E6%8A%80%E8%83%BD/</guid>
-      <description>&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://devpoga.org/post/2016-05-17_%e8%a9%b2%e6%80%8e%e6%a8%a3%e6%95%99%e4%bb%bb%e4%bd%95%e4%ba%ba%e4%bb%bb%e4%bd%95%e6%8a%80%e8%83%bd/images/1.jpeg&#34; alt=&#34;image&#34;  /&gt;
-&lt;/p&gt;
-&lt;p&gt;看到 &lt;a href=&#34;https://medium.com/@spepechen/%E6%B0%A3%E9%A4%92%E6%AD%A2%E6%AD%A5-%E8%A9%B2%E6%80%8E%E6%A8%A3%E6%95%99%E6%96%87%E7%B5%84%E7%9A%84%E4%BA%BA%E5%AF%AB%E7%A8%8B%E5%BC%8F-c1caf020b457#.6bfonxld4&#34;&gt;氣餒止步！該怎樣教文組的人寫程式？&lt;/a&gt; 這篇，講一下自己的教學經驗吧。&lt;/p&gt;</description>
+      <description>&lt;p&gt;&lt;img src=&#34;https://devpoga.org/post/2016-05-17_%E8%A9%B2%E6%80%8E%E6%A8%A3%E6%95%99%E4%BB%BB%E4%BD%95%E4%BA%BA%E4%BB%BB%E4%BD%95%E6%8A%80%E8%83%BD/images/1.jpeg&#34; alt=&#34;image&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;看到 &lt;a href=&#34;https://medium.com/@spepechen/%E6%B0%A3%E9%A4%92%E6%AD%A2%E6%AD%A5-%E8%A9%B2%E6%80%8E%E6%A8%A3%E6%95%99%E6%96%87%E7%B5%84%E7%9A%84%E4%BA%BA%E5%AF%AB%E7%A8%8B%E5%BC%8F-c1caf020b457#.6bfonxld4&#34;&gt;氣餒止步！該怎樣教文組的人寫程式？&lt;/a&gt; 這篇，講一下自己的教學經驗吧。&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>

@@ -1,23 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>System Design on Dev.Poga</title>
     <link>https://devpoga.org/tags/system-design/</link>
     <description>Recent content in System Design on Dev.Poga</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 02 Jan 2023 00:00:00 +0800</lastBuildDate><atom:link href="https://devpoga.org/tags/system-design/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 02 Jan 2023 00:00:00 +0800</lastBuildDate>
+    <atom:link href="https://devpoga.org/tags/system-design/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Start with the Least Malleable</title>
       <link>https://devpoga.org/blog/2023-01-02_start_with_the_least_malleable/</link>
       <pubDate>Mon, 02 Jan 2023 00:00:00 +0800</pubDate>
-      
       <guid>https://devpoga.org/blog/2023-01-02_start_with_the_least_malleable/</guid>
-      <description>Always start with the least malleable whenever you&amp;rsquo;re onboarding to a new job, switching careers, or just joining a new project.
-Resources you&amp;rsquo;re going to encounter in your career, from least malleable to most malleable:
-People Process Code Always start with the people. People are shaped by their life. It&amp;rsquo;s impossible to rapidly change a person without some crazy stuff happen.
-Run if people make you feel uncomfortable. Since It&amp;rsquo;s not worthy to spend your life to change some other people just to have an okay career.</description>
+      <description>&lt;p&gt;Always start with the least malleable whenever you&amp;rsquo;re onboarding to a new job, switching careers, or just joining a new project.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;p&gt;Resources you&amp;rsquo;re going to encounter in your career, from least malleable to most malleable:&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;People&lt;/li&gt;&#xA;&lt;li&gt;Process&lt;/li&gt;&#xA;&lt;li&gt;Code&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;p&gt;Always start with the people. People are shaped by their life. It&amp;rsquo;s impossible to rapidly change a person without some crazy stuff happen.&lt;/p&gt;&#xA;&lt;p&gt;Run if people make you feel uncomfortable. Since It&amp;rsquo;s not worthy to spend your life to change some other people just to have an okay career.&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>

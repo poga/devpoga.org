@@ -27,6 +27,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
 <link rel="alternate" type="application/rss+xml" href="https://devpoga.org/tags/godot/index.xml">
+<link rel="alternate" hreflang="en" href="https://devpoga.org/tags/godot/">
 <noscript>
     <style>
         #theme-toggle,
@@ -115,6 +116,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                         <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
                     </svg>
                 </button>
+                <ul class="lang-switch"><li>|</li>
+                </ul>
             </div>
         </div>
         <ul id="menu">
@@ -143,7 +146,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 Setup Install vim-godot.
 Plug &#39;habamax/vim-godot&#39; Install neovim-remote.
 pip3 install neovim-remote Setup Neovim as the external editor for Godot
-Open menu Editor/Editor Settings/ then navigate to General/External/: Tick Use external editor Set nvr to Exec Path, use which nvr to get the absolute path....</p>
+Open menu Editor/Editor Settings/ then navigate to General/External/: Tick Use external editor Set nvr to Exec Path, use which nvr to get the absolute path. Add --servername godothost --remote-send &#34;&lt;C-\&gt;&lt;C-N&gt;:n {file}&lt;CR&gt;:call cursor({line},{col})&lt;CR&gt;&#34; to Exec Flags Start Neovim and listening to remote commands:
+...</p>
   </div>
   <footer class="entry-footer">&lt;span title=&#39;2022-07-23 00:00:00 &#43;0800 CST&#39;&gt;July 23, 2022&lt;/span&gt;&amp;nbsp;·&amp;nbsp;poga</footer>
   <a class="entry-link" aria-label="post link to Developing Godot Projects with Neovim" href="https://devpoga.org/blog/2022-07-23_neovim_godot/"></a>
@@ -157,7 +161,8 @@ Open menu Editor/Editor Settings/ then navigate to General/External/: Tick Use e
   <div class="entry-content">
     <p>Some years ago, Unity dominated the game engine market. Everyone would recommend Unity to fellow game developers without thinking.
 However, Unity (as a game engine) is not in a great shape right now:
-Deprecating features while the replacement isn’t ready, Creating multiple new implementations of features from scratch instead of improving what’s there. Abandoning their own features in favour of acquiring community-made versions, and then abandoning them, Splitting the whole render system into two incompatible, contrary versions, deprecating the previous render system....</p>
+Deprecating features while the replacement isn’t ready, Creating multiple new implementations of features from scratch instead of improving what’s there. Abandoning their own features in favour of acquiring community-made versions, and then abandoning them, Splitting the whole render system into two incompatible, contrary versions, deprecating the previous render system. Splitting the UI system into two/three and trying to use them all at the same time, …and the worst: shutting down Unity Answers and redirecting it to the Unity Forums. (Although they walked back the decision) It’s pretty obvious that Unity (as a company) are oblivious about their product and their customer. The stock price and shareholders’ value becomes more important than game developers.
+...</p>
   </div>
   <footer class="entry-footer">&lt;span title=&#39;2022-07-01 00:00:00 &#43;0800 CST&#39;&gt;July 1, 2022&lt;/span&gt;&amp;nbsp;·&amp;nbsp;poga</footer>
   <a class="entry-link" aria-label="post link to Unity, Godot, and Right to Repair" href="https://devpoga.org/blog/2022-07-01_unity_godot_right_to_repair/"></a>
@@ -165,7 +170,7 @@ Deprecating features while the replacement isn’t ready, Creating multiple new 
     </main>
     
 <footer class="footer">
-    <span>&copy; 2023 <a href="https://devpoga.org/">Dev.Poga</a></span>
+    <span>&copy; 2024 <a href="https://devpoga.org/">Dev.Poga</a></span>
     <span>
         Powered by
         <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &

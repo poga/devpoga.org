@@ -1,33 +1,26 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Security on Dev.Poga</title>
     <link>https://devpoga.org/tags/security/</link>
     <description>Recent content in Security on Dev.Poga</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 28 Aug 2022 00:00:00 +0800</lastBuildDate><atom:link href="https://devpoga.org/tags/security/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 28 Aug 2022 00:00:00 +0800</lastBuildDate>
+    <atom:link href="https://devpoga.org/tags/security/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Cheap Complexity and Cybersecurity</title>
       <link>https://devpoga.org/blog/2022-08-28_cheap_complexity_cybersecurity/</link>
       <pubDate>Sun, 28 Aug 2022 00:00:00 +0800</pubDate>
-      
       <guid>https://devpoga.org/blog/2022-08-28_cheap_complexity_cybersecurity/</guid>
-      <description>A recurrent theme of modern security is the importance of complexity and the difficulty of containing it. With GPUs, NICs, basebands, and specialized hardware such as TPUs, things are objectively getting more complicated at a superlinear rate.
-In a world where complexity continues to grow, it is hard to provide security guarantees. The problem of escalating complexity becomes an escalated security problem.
-What&amp;rsquo;s driving the complexity? &amp;ldquo;How does one design an electric motor?</description>
+      <description>&lt;p&gt;A recurrent theme of modern security is the importance of complexity and the difficulty of containing it. With GPUs, NICs, basebands, and specialized hardware such as TPUs, things are objectively getting more complicated at a superlinear rate.&lt;/p&gt;&#xA;&lt;p&gt;In a world where complexity continues to grow, it is hard to provide security guarantees. The problem of escalating complexity becomes an escalated security problem.&lt;/p&gt;&#xA;&lt;h2 id=&#34;whats-driving-the-complexity&#34;&gt;What&amp;rsquo;s driving the complexity?&lt;/h2&gt;&#xA;&lt;p&gt;&lt;img src=&#34;./drive.jpeg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;&amp;ldquo;How does one design an electric motor? Would you attach a bathtub to it simply because one was available? Would a bouquet of flowers help? A heap of rocks? No, you would use just those elements necessary to its purpose and make it no larger than needed-and you would incorporate safety factors. Function controls design. So it is with revolution.&amp;rdquo;&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Zero Trust Network</title>
       <link>https://devpoga.org/blog/2020-04-09_zero-trust-network/</link>
       <pubDate>Thu, 09 Apr 2020 00:00:00 +0800</pubDate>
-      
       <guid>https://devpoga.org/blog/2020-04-09_zero-trust-network/</guid>
-      <description>&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://devpoga.org/post/2020-04-09_zero-trust-network/book.jpg&#34; alt=&#34;&#34;  /&gt;
-&lt;/p&gt;
-&lt;p&gt;Notes on the book &lt;a href=&#34;https://www.amazon.com/Zero-Trust-Networks-Building-Untrusted/dp/1491962194&#34;&gt;Zero Trust Network&lt;/a&gt;.&lt;/p&gt;</description>
+      <description>&lt;p&gt;&lt;img src=&#34;https://devpoga.org/post/2020-04-09_zero-trust-network/book.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;Notes on the book &lt;a href=&#34;https://www.amazon.com/Zero-Trust-Networks-Building-Untrusted/dp/1491962194&#34;&gt;Zero Trust Network&lt;/a&gt;.&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>

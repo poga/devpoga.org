@@ -1,0 +1,54 @@
+{% extends 'base.html' %}
+{% load custom_tags %}
+
+{% block title %}{% if pages %}Pages{% else %}Posts{% endif %} | Bear Blog{% endblock %}
+
+{% block custom_styles %}
+    {% include 'styles/blog/default.css' %}
+    {% include 'styles/dashboard.css' %}
+    {{ request.user.settings.dashboard_styles | safe }}
+{% endblock %}
+
+{% block nav %}{% include '../snippets/dashboard_nav.html' %}{% endblock %}
+
+{% block content %}
+
+<h1>{% if pages %}Pages{% else %}Posts{% endif %}</h1>
+{% if pages %}
+<a href="{% url 'post_new' id=blog.subdomain %}?is_page=True">
+    <button>
+    New page
+    </button>
+</a>
+{% else %}
+<a href="{% url 'post_new' id=blog.subdomain %}">
+    <button>
+    New post
+    </button>
+</a>
+<a style="float:right;" href="{% url 'post_template' id=blog.subdomain %}">
+    <button>Edit template</button>
+</a>
+{% endif %}
+<ul class="post-list">
+    {% for post in posts %}
+    <li>
+        <span>
+            <time datetime="{{ post.published_date|date:'Y-m-d\TH:i\Z' }}">
+                {% format_date post.published_date blog.date_format blog.lang tz %}
+            </time>
+        </span>
+        <a href="{% url 'post_edit' id=blog.subdomain  uid=post.uid %}">
+            {{ post.title }}
+        </a>
+        {% if not post.publish %}
+            <small>(not published)</small>
+        {% endif %}
+    </li>
+    {% empty %}
+    <li>
+        No posts yet
+    </li>
+    {% endfor %}
+</ul>
+{% endblock %}

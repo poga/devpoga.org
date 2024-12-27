@@ -1,20 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Depression on Dev.Poga</title>
     <link>https://devpoga.org/tags/depression/</link>
     <description>Recent content in Depression on Dev.Poga</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 15 Jan 2022 00:00:00 +0800</lastBuildDate><atom:link href="https://devpoga.org/tags/depression/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 15 Jan 2022 00:00:00 +0800</lastBuildDate>
+    <atom:link href="https://devpoga.org/tags/depression/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>I cannot think myself out of this</title>
       <link>https://devpoga.org/blog/2022-01-15_i_cannot_think_myself_out_of_this/</link>
       <pubDate>Sat, 15 Jan 2022 00:00:00 +0800</pubDate>
-      
       <guid>https://devpoga.org/blog/2022-01-15_i_cannot_think_myself_out_of_this/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;https://news.ycombinator.com/item?id=29226021&#34;&gt;From HN&lt;/a&gt;&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>

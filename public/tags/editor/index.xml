@@ -1,31 +1,26 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>editor on Dev.Poga</title>
+    <title>Editor on Dev.Poga</title>
     <link>https://devpoga.org/tags/editor/</link>
-    <description>Recent content in editor on Dev.Poga</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <description>Recent content in Editor on Dev.Poga</description>
+    <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 17 Mar 2020 00:00:00 +0800</lastBuildDate><atom:link href="https://devpoga.org/tags/editor/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 17 Mar 2020 00:00:00 +0800</lastBuildDate>
+    <atom:link href="https://devpoga.org/tags/editor/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>OCaml Quickstart</title>
       <link>https://devpoga.org/blog/2020-03-17_ocaml_quickstart/</link>
       <pubDate>Tue, 17 Mar 2020 00:00:00 +0800</pubDate>
-      
       <guid>https://devpoga.org/blog/2020-03-17_ocaml_quickstart/</guid>
-      <description>&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://devpoga.org/post/2020-03-17_ocaml_quickstart/vim.png&#34; alt=&#34;&#34;  /&gt;
-&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;https://ocaml.org/&#34;&gt;OCaml&lt;/a&gt; is a great language. However, the tooling for newbies is kinda confusing. Here&amp;rsquo;s a guide to setup a working OCaml development environment in &lt;a href=&#34;https://neovim.io/&#34;&gt;neovim&lt;/a&gt; on MacOS.&lt;/p&gt;</description>
+      <description>&lt;p&gt;&lt;img src=&#34;https://devpoga.org/post/2020-03-17_ocaml_quickstart/vim.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://ocaml.org/&#34;&gt;OCaml&lt;/a&gt; is a great language. However, the tooling for newbies is kinda confusing. Here&amp;rsquo;s a guide to setup a working OCaml development environment in &lt;a href=&#34;https://neovim.io/&#34;&gt;neovim&lt;/a&gt; on MacOS.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Go，七年後</title>
       <link>https://devpoga.org/blog/golang-7-years-later/</link>
       <pubDate>Mon, 29 Apr 2019 00:00:00 +0800</pubDate>
-      
       <guid>https://devpoga.org/blog/golang-7-years-later/</guid>
       <description>&lt;p&gt;從&lt;a href=&#34;https://blog.golang.org/go-version-1-is-released&#34;&gt;開始接觸 Go&lt;/a&gt; 到現在也已經過了 7 年了啊&amp;hellip; 最近又有機會拿出 Go 出來寫寫，隨手寫一下感受。&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>

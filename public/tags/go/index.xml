@@ -1,20 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>go on Dev.Poga</title>
+    <title>Go on Dev.Poga</title>
     <link>https://devpoga.org/tags/go/</link>
-    <description>Recent content in go on Dev.Poga</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <description>Recent content in Go on Dev.Poga</description>
+    <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 29 Apr 2019 00:00:00 +0800</lastBuildDate><atom:link href="https://devpoga.org/tags/go/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 29 Apr 2019 00:00:00 +0800</lastBuildDate>
+    <atom:link href="https://devpoga.org/tags/go/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Go，七年後</title>
       <link>https://devpoga.org/blog/golang-7-years-later/</link>
       <pubDate>Mon, 29 Apr 2019 00:00:00 +0800</pubDate>
-      
       <guid>https://devpoga.org/blog/golang-7-years-later/</guid>
       <description>&lt;p&gt;從&lt;a href=&#34;https://blog.golang.org/go-version-1-is-released&#34;&gt;開始接觸 Go&lt;/a&gt; 到現在也已經過了 7 年了啊&amp;hellip; 最近又有機會拿出 Go 出來寫寫，隨手寫一下感受。&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>

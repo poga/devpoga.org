@@ -1,33 +1,26 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Coscup on Dev.Poga</title>
     <link>https://devpoga.org/tags/coscup/</link>
     <description>Recent content in Coscup on Dev.Poga</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 27 Aug 2016 05:06:01 +0000</lastBuildDate><atom:link href="https://devpoga.org/tags/coscup/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 30 Apr 2019 21:55:51 +0800</lastBuildDate>
+    <atom:link href="https://devpoga.org/tags/coscup/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>萬事萬物皆是 LOG — 參考資料</title>
       <link>https://devpoga.org/blog/2016-08-27_%E8%90%AC%E4%BA%8B%E8%90%AC%E7%89%A9%E7%9A%86%E6%98%AF-log-%E5%8F%83%E8%80%83%E8%B3%87%E6%96%99/</link>
       <pubDate>Sat, 27 Aug 2016 05:06:01 +0000</pubDate>
-      
       <guid>https://devpoga.org/blog/2016-08-27_%E8%90%AC%E4%BA%8B%E8%90%AC%E7%89%A9%E7%9A%86%E6%98%AF-log-%E5%8F%83%E8%80%83%E8%B3%87%E6%96%99/</guid>
       <description>&lt;p&gt;之前在 COSCUP 2016 榮幸講了一場 &lt;a href=&#34;https://devpoga.org/post/2016-08-20_%E8%90%AC%E4%BA%8B%E8%90%AC%E7%89%A9%E7%9A%86%E6%98%AF-log-%E7%B3%BB%E7%B5%B1%E6%9E%B6%E6%A7%8B%E4%B9%9F%E4%BE%86%E9%BB%9E%E7%A7%91%E6%99%AE/&#34;&gt;萬事萬物皆是 Log — 系統架構也來點科普&lt;/a&gt;。結束後被詢問有沒有一些靈感來源、延伸讀物、參考資料等等，這裡就把我有記下來的參考資料整理在此。一些時間關係沒有帶到的主題就也一起放在這了。&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>萬事萬物皆是 LOG — 系統架構也來點科普</title>
       <link>https://devpoga.org/blog/2016-08-20_%E8%90%AC%E4%BA%8B%E8%90%AC%E7%89%A9%E7%9A%86%E6%98%AF-log-%E7%B3%BB%E7%B5%B1%E6%9E%B6%E6%A7%8B%E4%B9%9F%E4%BE%86%E9%BB%9E%E7%A7%91%E6%99%AE/</link>
       <pubDate>Sat, 20 Aug 2016 05:06:01 +0000</pubDate>
-      
       <guid>https://devpoga.org/blog/2016-08-20_%E8%90%AC%E4%BA%8B%E8%90%AC%E7%89%A9%E7%9A%86%E6%98%AF-log-%E7%B3%BB%E7%B5%B1%E6%9E%B6%E6%A7%8B%E4%B9%9F%E4%BE%86%E9%BB%9E%E7%A7%91%E6%99%AE/</guid>
-      <description>&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://devpoga.org/post/2016-08-20_%e8%90%ac%e4%ba%8b%e8%90%ac%e7%89%a9%e7%9a%86%e6%98%af-log-%e7%b3%bb%e7%b5%b1%e6%9e%b6%e6%a7%8b%e4%b9%9f%e4%be%86%e9%bb%9e%e7%a7%91%e6%99%ae/images/1.png&#34; alt=&#34;image&#34;  /&gt;
-&lt;/p&gt;
-&lt;!-- raw HTML omitted --&gt;
-&lt;p&gt;自古以來，軟體工程師都在追求好維護，容易理解的軟體架構。傳統上，我們需要參與過各種大型軟體專案，從中獲取經驗，或是透過昂貴的課程，大量的論文，才能從前人的經驗中學到一些方法。&lt;/p&gt;
-&lt;p&gt;今天，我想試著透過 LOG 這個人人都碰過的資料結構，來解釋許多複雜系統的核心，只要你能理解 LOG，你就能設計出好理解、容易維護的系統架構。&lt;/p&gt;</description>
+      <description>&lt;p&gt;&lt;img src=&#34;https://devpoga.org/post/2016-08-20_%E8%90%AC%E4%BA%8B%E8%90%AC%E7%89%A9%E7%9A%86%E6%98%AF-log-%E7%B3%BB%E7%B5%B1%E6%9E%B6%E6%A7%8B%E4%B9%9F%E4%BE%86%E9%BB%9E%E7%A7%91%E6%99%AE/images/1.png&#34; alt=&#34;image&#34;&gt;&lt;/p&gt;&#xA;&lt;!-- raw HTML omitted --&gt;&#xA;&lt;p&gt;自古以來，軟體工程師都在追求好維護，容易理解的軟體架構。傳統上，我們需要參與過各種大型軟體專案，從中獲取經驗，或是透過昂貴的課程，大量的論文，才能從前人的經驗中學到一些方法。&lt;/p&gt;&#xA;&lt;p&gt;今天，我想試著透過 LOG 這個人人都碰過的資料結構，來解釋許多複雜系統的核心，只要你能理解 LOG，你就能設計出好理解、容易維護的系統架構。&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>

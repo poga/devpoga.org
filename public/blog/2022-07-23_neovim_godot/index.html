@@ -16,10 +16,19 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <title>Developing Godot Projects with Neovim | Dev.Poga</title>
 <meta name="keywords" content="Godot, Neovim">
 <meta name="description" content="When I started using Godot Engine, what surprised me the most is the built-in Language Server Protocol support. Thank to it, I can easily develop GDScript with all my customized vim configs.
-Setup Install vim-godot.
-Plug &#39;habamax/vim-godot&#39; Install neovim-remote.
-pip3 install neovim-remote Setup Neovim as the external editor for Godot
-Open menu Editor/Editor Settings/ then navigate to General/External/: Tick Use external editor Set nvr to Exec Path, use which nvr to get the absolute path.">
+Setup
+Install vim-godot.
+Plug &#39;habamax/vim-godot&#39;
+Install neovim-remote.
+pip3 install neovim-remote
+Setup Neovim as the external editor for Godot
+
+Open menu Editor/Editor Settings/ then navigate to General/External/:
+Tick Use external editor
+Set nvr to Exec Path, use which nvr to get the absolute path.
+Add --servername godothost --remote-send &quot;&lt;C-\&gt;&lt;C-N&gt;:n {file}&lt;CR&gt;:call cursor({line},{col})&lt;CR&gt;&quot; to Exec Flags
+
+Start Neovim and listening to remote commands:">
 <meta name="author" content="poga">
 <link rel="canonical" href="https://devpoga.org/blog/2022-07-23_neovim_godot/">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.css" rel="preload stylesheet" as="style">
@@ -31,6 +40,7 @@ Open menu Editor/Editor Settings/ then navigate to General/External/: Tick Use e
 <link rel="mask-icon" href="https://devpoga.org/safari-pinned-tab.svg">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="https://devpoga.org/blog/2022-07-23_neovim_godot/">
 <noscript>
     <style>
         #theme-toggle,
@@ -69,10 +79,19 @@ Open menu Editor/Editor Settings/ then navigate to General/External/: Tick Use e
     </style>
 </noscript><meta property="og:title" content="Developing Godot Projects with Neovim" />
 <meta property="og:description" content="When I started using Godot Engine, what surprised me the most is the built-in Language Server Protocol support. Thank to it, I can easily develop GDScript with all my customized vim configs.
-Setup Install vim-godot.
-Plug &#39;habamax/vim-godot&#39; Install neovim-remote.
-pip3 install neovim-remote Setup Neovim as the external editor for Godot
-Open menu Editor/Editor Settings/ then navigate to General/External/: Tick Use external editor Set nvr to Exec Path, use which nvr to get the absolute path." />
+Setup
+Install vim-godot.
+Plug &#39;habamax/vim-godot&#39;
+Install neovim-remote.
+pip3 install neovim-remote
+Setup Neovim as the external editor for Godot
+
+Open menu Editor/Editor Settings/ then navigate to General/External/:
+Tick Use external editor
+Set nvr to Exec Path, use which nvr to get the absolute path.
+Add --servername godothost --remote-send &quot;&lt;C-\&gt;&lt;C-N&gt;:n {file}&lt;CR&gt;:call cursor({line},{col})&lt;CR&gt;&quot; to Exec Flags
+
+Start Neovim and listening to remote commands:" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://devpoga.org/blog/2022-07-23_neovim_godot/" /><meta property="article:section" content="blog" />
 <meta property="article:published_time" content="2022-07-23T00:00:00+08:00" />
@@ -81,10 +100,19 @@ Open menu Editor/Editor Settings/ then navigate to General/External/: Tick Use e
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Developing Godot Projects with Neovim"/>
 <meta name="twitter:description" content="When I started using Godot Engine, what surprised me the most is the built-in Language Server Protocol support. Thank to it, I can easily develop GDScript with all my customized vim configs.
-Setup Install vim-godot.
-Plug &#39;habamax/vim-godot&#39; Install neovim-remote.
-pip3 install neovim-remote Setup Neovim as the external editor for Godot
-Open menu Editor/Editor Settings/ then navigate to General/External/: Tick Use external editor Set nvr to Exec Path, use which nvr to get the absolute path."/>
+Setup
+Install vim-godot.
+Plug &#39;habamax/vim-godot&#39;
+Install neovim-remote.
+pip3 install neovim-remote
+Setup Neovim as the external editor for Godot
+
+Open menu Editor/Editor Settings/ then navigate to General/External/:
+Tick Use external editor
+Set nvr to Exec Path, use which nvr to get the absolute path.
+Add --servername godothost --remote-send &quot;&lt;C-\&gt;&lt;C-N&gt;:n {file}&lt;CR&gt;:call cursor({line},{col})&lt;CR&gt;&quot; to Exec Flags
+
+Start Neovim and listening to remote commands:"/>
 
 
 <script type="application/ld+json">
@@ -113,7 +141,7 @@ Open menu Editor/Editor Settings/ then navigate to General/External/: Tick Use e
   "@type": "BlogPosting",
   "headline": "Developing Godot Projects with Neovim",
   "name": "Developing Godot Projects with Neovim",
-  "description": "When I started using Godot Engine, what surprised me the most is the built-in Language Server Protocol support. Thank to it, I can easily develop GDScript with all my customized vim configs.\nSetup Install vim-godot.\nPlug \u0026#39;habamax/vim-godot\u0026#39; Install neovim-remote.\npip3 install neovim-remote Setup Neovim as the external editor for Godot\nOpen menu Editor/Editor Settings/ then navigate to General/External/: Tick Use external editor Set nvr to Exec Path, use which nvr to get the absolute path.",
+  "description": "When I started using Godot Engine, what surprised me the most is the built-in Language Server Protocol support. Thank to it, I can easily develop GDScript with all my customized vim configs.\nSetup Install vim-godot.\nPlug \u0026#39;habamax/vim-godot\u0026#39; Install neovim-remote.\npip3 install neovim-remote Setup Neovim as the external editor for Godot\nOpen menu Editor/Editor Settings/ then navigate to General/External/: Tick Use external editor Set nvr to Exec Path, use which nvr to get the absolute path. Add --servername godothost --remote-send \u0026quot;\u0026lt;C-\\\u0026gt;\u0026lt;C-N\u0026gt;:n {file}\u0026lt;CR\u0026gt;:call cursor({line},{col})\u0026lt;CR\u0026gt;\u0026quot; to Exec Flags Start Neovim and listening to remote commands:\n",
   "keywords": [
     "Godot", "Neovim"
   ],
@@ -183,6 +211,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                         <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
                     </svg>
                 </button>
+                <ul class="lang-switch"><li>|</li>
+                </ul>
             </div>
         </div>
         <ul id="menu">
@@ -238,7 +268,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </main>
     
 <footer class="footer">
-    <span>&copy; 2023 <a href="https://devpoga.org/">Dev.Poga</a></span>
+    <span>&copy; 2024 <a href="https://devpoga.org/">Dev.Poga</a></span>
     <span>
         Powered by
         <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &

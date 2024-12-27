@@ -1,0 +1,186 @@
+<input type="file" id="file" hidden multiple accept="image/*, .mp4, .mp3, .pdf">
+
+<script>
+	const $publishedDate = document.getElementById('published-date');
+	const $form = document.querySelector('form');
+	const $headerContent = document.getElementById('header_content');
+	const $hiddenHeaderContent = document.getElementById('hidden_header_content');
+	const $textarea = document.querySelector('textarea')
+	const $previewButton = document.getElementById('preview')
+	const $uploadButton = document.querySelector('#upload-image')
+	
+	// Submitting form with header content
+	const addHeaderContentToFormAndSubmit = () => {
+		$hiddenHeaderContent.value = $headerContent.innerText;
+		$form.submit();
+	}
+
+	$form.addEventListener('submit', function(e) {
+		e.preventDefault();
+        addHeaderContentToFormAndSubmit()
+    });
+
+	document.addEventListener('keydown', function(event) {
+		if ((event.ctrlKey || event.metaKey) && event.keyCode === 83) {
+			event.preventDefault();
+			addHeaderContentToFormAndSubmit()
+		}
+	});
+
+	// Handle pasting of HTML into header content
+	$headerContent.addEventListener('paste', function(e) {
+        e.preventDefault();
+
+        let text = '';
+
+        if (e.clipboardData || e.originalEvent.clipboardData) {
+            text = (e.originalEvent || e).clipboardData.getData('text/plain');
+        } else if (window.clipboardData) {
+            text = window.clipboardData.getData('Text');
+        }
+
+        if (document.queryCommandSupported('insertText')) {
+            document.execCommand('insertText', false, text);
+        } else {
+            document.execCommand('paste', false, text);
+        }
+    });
+
+	// Handle saving scroll position
+	$textarea.scrollTop = sessionStorage.getItem('textareaY') || 0
+	$textarea.addEventListener("scroll", function(event) {
+		sessionStorage.setItem('textareaY', $textarea.scrollTop)
+	})
+
+	// Preview post
+	if ($previewButton) {
+		const previewForm = document.createElement('form')
+		previewForm.target = "print_popup"
+		previewForm.method = "POST"
+		previewForm.action = "/{{ blog.subdomain }}/dashboard/preview/?type={% if post %}post{% else %}homepage{% endif %}"
+
+		const headerContent = document.createElement("input");
+		headerContent.type = "hidden"
+		headerContent.name = "header_content"
+		previewForm.appendChild(headerContent)
+		document.body.appendChild(previewForm)
+
+		const bodyContent = document.createElement("input");
+		bodyContent.type = "hidden"
+		bodyContent.name = "body_content"
+		previewForm.appendChild(bodyContent)
+		document.body.appendChild(previewForm)
+	
+		$previewButton.onclick = event => {
+			window.open('about:blank','print_popup','width=1000,height=800');
+			headerContent.value = document.querySelector('#header_content').innerText
+			bodyContent.value = document.querySelector('#body_content').value
+			previewForm.submit()
+		}
+	}
+
+	function deletePost() {
+		if (confirm('Are you sure?')) {
+			$form.action = '/{{ blog.subdomain }}/dashboard/posts/{{ post.uid }}/delete/';
+			$form.submit()
+		}
+	}
+
+	// Upgraded features
+	{% if request.user.settings.upgraded %}
+	// Upload images
+	const $fileInput = document.getElementById("file");
+
+	$uploadButton.onclick = event => {
+		event.preventDefault();
+		$fileInput.click();
+	}
+
+	$fileInput.addEventListener("change", upload);
+
+	window.addEventListener("dragover", event => {
+		event.preventDefault();
+	});
+	
+	window.addEventListener("drop", event => {
+		event.preventDefault();
+		const files = event.dataTransfer.files;
+		if (files.length > 0) {
+			uploadNextFile(0, files);
+		}
+	});
+
+	function upload() {
+		const files = $fileInput.files;
+
+		if (!files.length) return;
+
+		uploadNextFile(0, files);
+	}
+
+	function uploadNextFile(index, files) {
+		const file = files[index];
+
+		if (file.size > 10000000) {
+			alert(`File over the 10mb limit. Consider resizing it or uploading it elsewhere.`);
+			return;
+		}
+
+		const formData = new FormData();
+		formData.append("file", file);
+
+		const target = "{% url 'upload_image' id=blog.subdomain %}";
+		const position = $textarea.selectionStart || 0;
+		const placeholder = `![Uploading ${file.name}...]\n`;
+
+		$textarea.value = $textarea.value.substring(0, position) + placeholder + $textarea.value.substring(position);
+		const newPosition = position + placeholder.length;
+
+		const xhr = new XMLHttpRequest();
+		const eventSource = xhr.upload || xhr;
+
+		xhr.open("POST", target, true);
+		xhr.send(formData);
+
+		xhr.onload = function() {
+			if (this.status === 200) {
+				const response = JSON.parse(this.responseText);
+				const imageName = file.name.split('.')[0];
+
+				response.forEach(image => {
+					const toInsert = `![${imageName}](${image})\n`;
+					const currentText = $textarea.value;
+					const start = currentText.indexOf(placeholder);
+
+					if (start !== -1) {
+						$textarea.value = currentText.substring(0, start) + toInsert + currentText.substring(start + placeholder.length);
+						$textarea.selectionStart = $textarea.selectionEnd = start + toInsert.length;
+					} else {
+						$textarea.value += toInsert;
+						$textarea.selectionStart = $textarea.selectionEnd = $textarea.value.length;
+					}
+				});
+
+				uploadNextFile(index + 1, files);
+			} else {
+				// Handle error, replace placeholder with error message
+				const currentText = $textarea.value;
+				const start = currentText.indexOf(placeholder);
+				if (start !== -1) {
+					$textarea.value = currentText.substring(0, start) + `![Upload of ${file.name} failed]\n` + currentText.substring(start + placeholder.length);
+					$textarea.selectionStart = $textarea.selectionEnd = start + `![Upload of ${file.name} failed]\n`.length;
+				}
+
+				uploadNextFile(index + 1, files);
+			}
+		};
+	}
+	{% else %}
+	$uploadButton.onclick = event => {
+	    event.preventDefault()
+		if (confirm("You've discovered a Pro feature ʕ•ᴥ•ʔﾉ♡\n\nUpgrade to unlock it and support the Tiny Internet!")) {
+	    	window.open('/dashboard/upgrade/')
+		}
+	}
+	{% endif %}
+</script>

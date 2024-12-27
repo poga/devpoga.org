@@ -1,0 +1,75 @@
+{% extends 'base.html' %}
+
+{% block title %}Settings | Bear Blog{% endblock %}
+
+{% block custom_styles %}
+    {% include 'styles/blog/default.css' %}
+    {% include 'styles/dashboard.css' %}
+    {{ request.user.settings.dashboard_styles | safe }}
+{% endblock %}
+
+{% block nav %}{% include '../snippets/dashboard_nav.html' %}{% endblock %}
+
+{% block content %}
+<h1>Settings</h1>
+<p>
+    <form method="POST" class="post-form full-width">
+        {% csrf_token %}
+        {% if error_messages %}
+        <p style="color:lightsalmon">
+            {% for error_message in error_messages %}
+                {{ error_message }}<br>
+            {% endfor %}
+        </p>
+        {% endif %}
+        <p>
+            <label for="slug">Subdomain</label>
+            <br>
+            <div style="display: flex;align-items:end">
+                <input
+                    type="text" name="subdomain"
+                    value="{{ blog.subdomain }}"
+                    required autocorrect="off"
+                    autocomplete="off"
+                    spellcheck="false"
+                    style="max-width:200px; margin-right: 10px;"
+                />
+                <span class="helptext">.bearblog.dev</span>
+            </div>
+        </p>
+
+        <p>
+            <label for="lang">Language</label>
+            <br>
+            <input type="text" name="lang" style="max-width:100px" value="{{ blog.lang }}" maxlength=10/>
+            <br>
+            <span class="helptext" style="display: inline;">
+                List of
+                <a href="https://docs.bearblog.dev/language-cheatsheet/" target="_blank">language codes</a>
+            </span>
+        </p>
+
+        <button type="submit">Save</button>
+    </form>
+</p>
+<p>
+    <a href="{% url 'custom_domain_edit' id=blog.subdomain %}">Custom domain</a>
+</p>
+<p>
+    <a href="{% url 'directive_edit' id=blog.subdomain %}">Header and footer directives</a>
+</p>
+<p>
+    <a href="{% url 'advanced_settings' id=blog.subdomain %}">Advanced settings</a>
+</p>
+
+<p>
+    <a href="?export=true" download>Export all blog data</a>
+</p>
+
+<form method="post" action="{% url 'blog_delete' blog.subdomain %}">
+    {% csrf_token %}
+    <button type="submit" onclick="return confirm('Are you sure you would like to delete {{ blog.subdomain }}? This cannot be undone.');">
+        Delete blog
+    </button>
+</form>
+{% endblock %}

@@ -1,0 +1,68 @@
+{% extends 'base.html' %}
+{% load pygmentify_tags %}
+{% load custom_tags %}
+
+{% block page_type %}home{% endblock %}
+
+{% block lang %}{{ blog.lang }}{% endblock %}
+
+{% block favicon %}{% include 'snippets/favicon.html' with blog=blog %}{% endblock %}
+
+{% block title %}{{ blog.title }}{% endblock %}
+
+{% block canonical %}<link rel="canonical" href="{{ blog.useful_domain }}">{% endblock %}
+
+{% block seo %}
+{% if not blog.reviewed %}<meta name="robots" content="noindex, nofollow">{% endif %}
+
+<meta name="{{ blog.subdomain }}" content="look-for-the-bear-necessities">
+
+{% include 'snippets/seo_tags.html' with site_name=blog.title title=blog.title type="website" url=blog.useful_domain description=meta_description image=blog.meta_image meta_tag=blog.meta_tag %}
+<link rel="alternate" type="application/atom+xml" href="/feed/">
+<link rel="alternate" type="application/rss+xml" href="/feed/?type=rss">
+{% endblock %}
+
+{% block imports %}
+
+{% if blog.user.settings.upgraded %}{{ blog.header_directive | safe }}{% endif %}
+
+{% if blog.fathom_site_id %}<script src="https://cdn.usefathom.com/script.js" data-site="{{ blog.fathom_site_id }}" defer></script>{% endif %}
+{% if blog.contains_code %}<link rel="stylesheet" href="{% pygmentify_css minify='false' %}">{% endif %}
+{% endblock %}
+
+{% block custom_styles %}{% include 'snippets/styles.html' with blog=blog %}{% endblock %}
+
+{% block heading %}{{ blog.title }}{% endblock %}
+
+{% block nav %}{{ blog.nav | markdown:blog | safe }}{% endblock %}
+
+{% block content %}
+{% if request.user == blog.user and not preview %}
+<a href="{% url 'dashboard' id=blog.subdomain %}" target="_blank" style="position: fixed;right: 0;top: 0;padding: 20px;color: lightgrey;text-decoration: none;font-size: 25px;">✎</a>
+{% endif %}
+
+{% if blog.content %}
+{{ blog.content | markdown:blog | safe }}
+
+{% else %}
+{% include "snippets/post_list.html" %}
+{% endif %}
+
+{% if posts.empty %}
+<p>
+    No posts yet
+</p>
+{% endif %}
+
+{% endblock %}
+
+{% block footer %}
+{% if blog.user.settings.upgraded and blog.footer_directive %}
+<span id="footer-directive">
+{{ blog.footer_directive | markdown:blog | safe }}
+</span>
+{% endif %}
+<span>
+    Powered by <a href="https://bearblog.dev">Bear ʕ•ᴥ•ʔ</a>
+</span>
+{% endblock %}
