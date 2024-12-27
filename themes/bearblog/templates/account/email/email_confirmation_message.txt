@@ -1,5 +1,0 @@
-Click the link below to activate your new blog.
-
-{{ activate_url }}
-
-Keep the tiny internet awesome! \ʕ•ᴥ•ʔ/
