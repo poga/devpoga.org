@@ -2,38 +2,38 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Productivity on Dev.Poga</title>
-    <link>https://devpoga.org/tags/productivity/</link>
+    <link>http://localhost:1313/tags/productivity/</link>
     <description>Recent content in Productivity on Dev.Poga</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 20 Sep 2019 00:00:00 +0800</lastBuildDate>
-    <atom:link href="https://devpoga.org/tags/productivity/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/productivity/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Ripgrep Cheat Sheet</title>
-      <link>https://devpoga.org/blog/2019-09-20_ripgrep_cheat_sheet/</link>
+      <link>http://localhost:1313/blog/2019-09-20_ripgrep_cheat_sheet/</link>
       <pubDate>Fri, 20 Sep 2019 00:00:00 +0800</pubDate>
-      <guid>https://devpoga.org/blog/2019-09-20_ripgrep_cheat_sheet/</guid>
+      <guid>http://localhost:1313/blog/2019-09-20_ripgrep_cheat_sheet/</guid>
       <description></description>
     </item>
     <item>
       <title>我選擇生產力工具的基準</title>
-      <link>https://devpoga.org/blog/2018-09-28_%E6%88%91%E9%81%B8%E6%93%87%E7%94%9F%E7%94%A2%E5%8A%9B%E5%B7%A5%E5%85%B7%E7%9A%84%E5%9F%BA%E6%BA%96/</link>
+      <link>http://localhost:1313/blog/2018-09-28_%E6%88%91%E9%81%B8%E6%93%87%E7%94%9F%E7%94%A2%E5%8A%9B%E5%B7%A5%E5%85%B7%E7%9A%84%E5%9F%BA%E6%BA%96/</link>
       <pubDate>Thu, 27 Sep 2018 00:00:00 +0800</pubDate>
-      <guid>https://devpoga.org/blog/2018-09-28_%E6%88%91%E9%81%B8%E6%93%87%E7%94%9F%E7%94%A2%E5%8A%9B%E5%B7%A5%E5%85%B7%E7%9A%84%E5%9F%BA%E6%BA%96/</guid>
+      <guid>http://localhost:1313/blog/2018-09-28_%E6%88%91%E9%81%B8%E6%93%87%E7%94%9F%E7%94%A2%E5%8A%9B%E5%B7%A5%E5%85%B7%E7%9A%84%E5%9F%BA%E6%BA%96/</guid>
       <description>&lt;p&gt;先說結論，我用 OmniFocus 用了五年以上了，目前依然滿意。&lt;/p&gt;</description>
     </item>
     <item>
       <title>遺忘的生產力</title>
-      <link>https://devpoga.org/blog/2018-02-06_%E9%81%BA%E5%BF%98%E7%9A%84%E7%94%9F%E7%94%A2%E5%8A%9B/</link>
+      <link>http://localhost:1313/blog/2018-02-06_%E9%81%BA%E5%BF%98%E7%9A%84%E7%94%9F%E7%94%A2%E5%8A%9B/</link>
       <pubDate>Tue, 06 Feb 2018 00:00:00 +0800</pubDate>
-      <guid>https://devpoga.org/blog/2018-02-06_%E9%81%BA%E5%BF%98%E7%9A%84%E7%94%9F%E7%94%A2%E5%8A%9B/</guid>
+      <guid>http://localhost:1313/blog/2018-02-06_%E9%81%BA%E5%BF%98%E7%9A%84%E7%94%9F%E7%94%A2%E5%8A%9B/</guid>
       <description>&lt;p&gt;人們談到生產力，似乎就免不了討論各種蒐集想法、整理心得的工具。彷彿忘了的東西都是一種損失。&lt;/p&gt;&#xA;&lt;p&gt;與其努力記下所有事情，不如試試盡情遺忘吧。&lt;/p&gt;</description>
     </item>
     <item>
       <title>又回來用 Omnifocus 了</title>
-      <link>https://devpoga.org/blog/2017-02-16_%E5%8F%88%E5%9B%9E%E4%BE%86%E7%94%A8-omnifocus-%E4%BA%86/</link>
+      <link>http://localhost:1313/blog/2017-02-16_%E5%8F%88%E5%9B%9E%E4%BE%86%E7%94%A8-omnifocus-%E4%BA%86/</link>
       <pubDate>Thu, 16 Feb 2017 18:58:42 +0000</pubDate>
-      <guid>https://devpoga.org/blog/2017-02-16_%E5%8F%88%E5%9B%9E%E4%BE%86%E7%94%A8-omnifocus-%E4%BA%86/</guid>
+      <guid>http://localhost:1313/blog/2017-02-16_%E5%8F%88%E5%9B%9E%E4%BE%86%E7%94%A8-omnifocus-%E4%BA%86/</guid>
       <description>&lt;p&gt;當初那忙到吐血的兩三年中，幾乎都是靠著 Omnifocus 在維持生活的運作。&lt;/p&gt;</description>
     </item>
   </channel>

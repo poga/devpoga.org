@@ -2,25 +2,25 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Lisp on Dev.Poga</title>
-    <link>https://devpoga.org/tags/lisp/</link>
+    <link>http://localhost:1313/tags/lisp/</link>
     <description>Recent content in Lisp on Dev.Poga</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 01 May 2021 00:00:00 +0800</lastBuildDate>
-    <atom:link href="https://devpoga.org/tags/lisp/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/lisp/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Common Lisp Local Project Development with Quicklisp</title>
-      <link>https://devpoga.org/blog/2021-05-01_common_lisp_quicklisp_local_project/</link>
+      <link>http://localhost:1313/blog/2021-05-01_common_lisp_quicklisp_local_project/</link>
       <pubDate>Sat, 01 May 2021 00:00:00 +0800</pubDate>
-      <guid>https://devpoga.org/blog/2021-05-01_common_lisp_quicklisp_local_project/</guid>
+      <guid>http://localhost:1313/blog/2021-05-01_common_lisp_quicklisp_local_project/</guid>
       <description>&lt;p&gt;Probably the cleanest way to do it:&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-lisp&#34; data-lang=&#34;lisp&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;(pushnew (&lt;span style=&#34;color:#a6e22e&#34;&gt;truename&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;/projects/app/&amp;#34;&lt;/span&gt;) ql:*local-project-directories* )&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;(ql:register-local-projects)&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;(ql:quickload &lt;span style=&#34;color:#e6db74&#34;&gt;:app&lt;/span&gt;)&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;From &lt;a href=&#34;https://www.darkchestnut.com/2016/quicklisp-load-personal-projects-from-arbitrary-locations/&#34;&gt;Use Quicklisp to load personal projects from arbitrary locations.&lt;/a&gt;&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;p&gt;Alternatively, you can create a symlink in &lt;code&gt;~/quicklisp/local-projects/&lt;/code&gt;.&lt;/p&gt;</description>
     </item>
     <item>
       <title>The Common Lisp Condition System</title>
-      <link>https://devpoga.org/blog/2021-04-25_common_lisp_condition_system/</link>
+      <link>http://localhost:1313/blog/2021-04-25_common_lisp_condition_system/</link>
       <pubDate>Sun, 25 Apr 2021 00:00:00 +0800</pubDate>
-      <guid>https://devpoga.org/blog/2021-04-25_common_lisp_condition_system/</guid>
-      <description>&lt;p&gt;&lt;img src=&#34;https://devpoga.org/post/2021-04-25_common_lisp_condition_system/book.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;</description>
+      <guid>http://localhost:1313/blog/2021-04-25_common_lisp_condition_system/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;http://localhost:1313/post/2021-04-25_common_lisp_condition_system/book.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

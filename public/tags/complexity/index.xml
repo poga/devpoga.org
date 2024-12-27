@@ -2,24 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Complexity on Dev.Poga</title>
-    <link>https://devpoga.org/tags/complexity/</link>
+    <link>http://localhost:1313/tags/complexity/</link>
     <description>Recent content in Complexity on Dev.Poga</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 02 Jan 2023 00:00:00 +0800</lastBuildDate>
-    <atom:link href="https://devpoga.org/tags/complexity/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/complexity/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Start with the Least Malleable</title>
-      <link>https://devpoga.org/blog/2023-01-02_start_with_the_least_malleable/</link>
+      <link>http://localhost:1313/blog/2023-01-02_start_with_the_least_malleable/</link>
       <pubDate>Mon, 02 Jan 2023 00:00:00 +0800</pubDate>
-      <guid>https://devpoga.org/blog/2023-01-02_start_with_the_least_malleable/</guid>
+      <guid>http://localhost:1313/blog/2023-01-02_start_with_the_least_malleable/</guid>
       <description>&lt;p&gt;Always start with the least malleable whenever you&amp;rsquo;re onboarding to a new job, switching careers, or just joining a new project.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;p&gt;Resources you&amp;rsquo;re going to encounter in your career, from least malleable to most malleable:&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;People&lt;/li&gt;&#xA;&lt;li&gt;Process&lt;/li&gt;&#xA;&lt;li&gt;Code&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;p&gt;Always start with the people. People are shaped by their life. It&amp;rsquo;s impossible to rapidly change a person without some crazy stuff happen.&lt;/p&gt;&#xA;&lt;p&gt;Run if people make you feel uncomfortable. Since It&amp;rsquo;s not worthy to spend your life to change some other people just to have an okay career.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Cheap Complexity and Cybersecurity</title>
-      <link>https://devpoga.org/blog/2022-08-28_cheap_complexity_cybersecurity/</link>
+      <link>http://localhost:1313/blog/2022-08-28_cheap_complexity_cybersecurity/</link>
       <pubDate>Sun, 28 Aug 2022 00:00:00 +0800</pubDate>
-      <guid>https://devpoga.org/blog/2022-08-28_cheap_complexity_cybersecurity/</guid>
+      <guid>http://localhost:1313/blog/2022-08-28_cheap_complexity_cybersecurity/</guid>
       <description>&lt;p&gt;A recurrent theme of modern security is the importance of complexity and the difficulty of containing it. With GPUs, NICs, basebands, and specialized hardware such as TPUs, things are objectively getting more complicated at a superlinear rate.&lt;/p&gt;&#xA;&lt;p&gt;In a world where complexity continues to grow, it is hard to provide security guarantees. The problem of escalating complexity becomes an escalated security problem.&lt;/p&gt;&#xA;&lt;h2 id=&#34;whats-driving-the-complexity&#34;&gt;What&amp;rsquo;s driving the complexity?&lt;/h2&gt;&#xA;&lt;p&gt;&lt;img src=&#34;./drive.jpeg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;&amp;ldquo;How does one design an electric motor? Would you attach a bathtub to it simply because one was available? Would a bouquet of flowers help? A heap of rocks? No, you would use just those elements necessary to its purpose and make it no larger than needed-and you would incorporate safety factors. Function controls design. So it is with revolution.&amp;rdquo;&lt;/p&gt;</description>
     </item>
   </channel>

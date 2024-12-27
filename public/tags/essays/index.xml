@@ -2,24 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Essays on Dev.Poga</title>
-    <link>https://devpoga.org/tags/essays/</link>
+    <link>http://localhost:1313/tags/essays/</link>
     <description>Recent content in Essays on Dev.Poga</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 18 Sep 2021 00:00:00 +0800</lastBuildDate>
-    <atom:link href="https://devpoga.org/tags/essays/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/essays/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>On Building Glue Systems</title>
-      <link>https://devpoga.org/blog/2021-09-18_on_glue_systems/</link>
+      <link>http://localhost:1313/blog/2021-09-18_on_glue_systems/</link>
       <pubDate>Sat, 18 Sep 2021 00:00:00 +0800</pubDate>
-      <guid>https://devpoga.org/blog/2021-09-18_on_glue_systems/</guid>
-      <description>&lt;p&gt;&lt;img src=&#34;https://devpoga.org/post/2021-09-18_on_glue_systems/glue.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;I spent most of my life building glue systems.&lt;/p&gt;&#xA;&lt;p&gt;Sometimes, I got to work on a deep, sparkling project. But most of the time, my work is about gluing things together.&lt;/p&gt;</description>
+      <guid>http://localhost:1313/blog/2021-09-18_on_glue_systems/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;http://localhost:1313/post/2021-09-18_on_glue_systems/glue.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;I spent most of my life building glue systems.&lt;/p&gt;&#xA;&lt;p&gt;Sometimes, I got to work on a deep, sparkling project. But most of the time, my work is about gluing things together.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Haxe and Programming for Many Machines</title>
-      <link>https://devpoga.org/blog/2021-05-11_haxe_and_programming_for_many_machines/</link>
+      <link>http://localhost:1313/blog/2021-05-11_haxe_and_programming_for_many_machines/</link>
       <pubDate>Tue, 11 May 2021 00:00:00 +0800</pubDate>
-      <guid>https://devpoga.org/blog/2021-05-11_haxe_and_programming_for_many_machines/</guid>
+      <guid>http://localhost:1313/blog/2021-05-11_haxe_and_programming_for_many_machines/</guid>
       <description>&lt;p&gt;The title sounds obvious. We always program for a machine! A program won&amp;rsquo;t run itself!&lt;/p&gt;</description>
     </item>
   </channel>

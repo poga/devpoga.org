@@ -2,411 +2,411 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://devpoga.org/categories/blog/</loc>
+    <loc>http://localhost:1313/categories/blog/</loc>
     <lastmod>2023-12-05T00:00:00+08:00</lastmod>
   </url><url>
-    <loc>https://devpoga.org/blog/</loc>
+    <loc>http://localhost:1313/blog/</loc>
     <lastmod>2023-12-05T00:00:00+08:00</lastmod>
   </url><url>
-    <loc>https://devpoga.org/categories/</loc>
+    <loc>http://localhost:1313/categories/</loc>
     <lastmod>2023-12-05T00:00:00+08:00</lastmod>
   </url><url>
-    <loc>https://devpoga.org/</loc>
+    <loc>http://localhost:1313/</loc>
     <lastmod>2023-12-05T00:00:00+08:00</lastmod>
   </url><url>
-    <loc>https://devpoga.org/tags/programming/</loc>
+    <loc>http://localhost:1313/tags/programming/</loc>
     <lastmod>2023-12-05T00:00:00+08:00</lastmod>
   </url><url>
-    <loc>https://devpoga.org/tags/</loc>
+    <loc>http://localhost:1313/tags/</loc>
     <lastmod>2023-12-05T00:00:00+08:00</lastmod>
   </url><url>
-    <loc>https://devpoga.org/blog/2023-12-05_write_good_code/</loc>
+    <loc>http://localhost:1313/blog/2023-12-05_write_good_code/</loc>
     <lastmod>2023-12-05T00:00:00+08:00</lastmod>
   </url><url>
-    <loc>https://devpoga.org/tags/engineering/</loc>
+    <loc>http://localhost:1313/tags/engineering/</loc>
     <lastmod>2023-05-29T00:00:00+08:00</lastmod>
   </url><url>
-    <loc>https://devpoga.org/blog/2023-05-29_revisting_modern_data_stack/</loc>
+    <loc>http://localhost:1313/blog/2023-05-29_revisting_modern_data_stack/</loc>
     <lastmod>2023-05-29T00:00:00+08:00</lastmod>
   </url><url>
-    <loc>https://devpoga.org/blog/2023-04-01_dealing_with_tech_debts/</loc>
+    <loc>http://localhost:1313/blog/2023-04-01_dealing_with_tech_debts/</loc>
     <lastmod>2023-04-01T00:00:00+08:00</lastmod>
   </url><url>
-    <loc>https://devpoga.org/tags/hacking/</loc>
+    <loc>http://localhost:1313/tags/hacking/</loc>
     <lastmod>2023-04-01T00:00:00+08:00</lastmod>
   </url><url>
-    <loc>https://devpoga.org/blog/2023-02-19_hacking_lost_art/</loc>
+    <loc>http://localhost:1313/blog/2023-02-19_hacking_lost_art/</loc>
     <lastmod>2023-02-19T00:00:00+08:00</lastmod>
   </url><url>
-    <loc>https://devpoga.org/tags/mastodon/</loc>
+    <loc>http://localhost:1313/tags/mastodon/</loc>
     <lastmod>2023-01-22T00:00:00+08:00</lastmod>
   </url><url>
-    <loc>https://devpoga.org/tags/social/</loc>
+    <loc>http://localhost:1313/tags/social/</loc>
     <lastmod>2023-01-22T00:00:00+08:00</lastmod>
   </url><url>
-    <loc>https://devpoga.org/blog/2023-01-22_mantra_g0v_social/</loc>
+    <loc>http://localhost:1313/blog/2023-01-22_mantra_g0v_social/</loc>
     <lastmod>2023-01-22T00:00:00+08:00</lastmod>
   </url><url>
-    <loc>https://devpoga.org/tags/complexity/</loc>
+    <loc>http://localhost:1313/tags/complexity/</loc>
     <lastmod>2023-01-02T00:00:00+08:00</lastmod>
   </url><url>
-    <loc>https://devpoga.org/blog/2023-01-02_start_with_the_least_malleable/</loc>
+    <loc>http://localhost:1313/blog/2023-01-02_start_with_the_least_malleable/</loc>
     <lastmod>2023-01-02T00:00:00+08:00</lastmod>
   </url><url>
-    <loc>https://devpoga.org/tags/system-design/</loc>
+    <loc>http://localhost:1313/tags/system-design/</loc>
     <lastmod>2023-01-02T00:00:00+08:00</lastmod>
   </url><url>
-    <loc>https://devpoga.org/blog/2022-08-28_cheap_complexity_cybersecurity/</loc>
+    <loc>http://localhost:1313/blog/2022-08-28_cheap_complexity_cybersecurity/</loc>
     <lastmod>2022-08-28T00:00:00+08:00</lastmod>
   </url><url>
-    <loc>https://devpoga.org/tags/security/</loc>
+    <loc>http://localhost:1313/tags/security/</loc>
     <lastmod>2022-08-28T00:00:00+08:00</lastmod>
   </url><url>
-    <loc>https://devpoga.org/blog/2022-07-23_neovim_godot/</loc>
+    <loc>http://localhost:1313/blog/2022-07-23_neovim_godot/</loc>
     <lastmod>2022-07-23T00:00:00+08:00</lastmod>
   </url><url>
-    <loc>https://devpoga.org/tags/godot/</loc>
+    <loc>http://localhost:1313/tags/godot/</loc>
     <lastmod>2022-07-23T00:00:00+08:00</lastmod>
   </url><url>
-    <loc>https://devpoga.org/tags/neovim/</loc>
+    <loc>http://localhost:1313/tags/neovim/</loc>
     <lastmod>2022-07-23T00:00:00+08:00</lastmod>
   </url><url>
-    <loc>https://devpoga.org/tags/opensource/</loc>
+    <loc>http://localhost:1313/tags/opensource/</loc>
     <lastmod>2022-07-01T00:00:00+08:00</lastmod>
   </url><url>
-    <loc>https://devpoga.org/tags/unity/</loc>
+    <loc>http://localhost:1313/tags/unity/</loc>
     <lastmod>2022-07-01T00:00:00+08:00</lastmod>
   </url><url>
-    <loc>https://devpoga.org/blog/2022-07-01_unity_godot_right_to_repair/</loc>
+    <loc>http://localhost:1313/blog/2022-07-01_unity_godot_right_to_repair/</loc>
     <lastmod>2022-07-01T00:00:00+08:00</lastmod>
   </url><url>
-    <loc>https://devpoga.org/tags/reading/</loc>
+    <loc>http://localhost:1313/tags/reading/</loc>
     <lastmod>2022-02-19T00:00:00+08:00</lastmod>
   </url><url>
-    <loc>https://devpoga.org/blog/2022-02-19_what_ive_been_reading/</loc>
+    <loc>http://localhost:1313/blog/2022-02-19_what_ive_been_reading/</loc>
     <lastmod>2022-02-19T00:00:00+08:00</lastmod>
   </url><url>
-    <loc>https://devpoga.org/tags/depression/</loc>
+    <loc>http://localhost:1313/tags/depression/</loc>
     <lastmod>2022-01-15T00:00:00+08:00</lastmod>
   </url><url>
-    <loc>https://devpoga.org/blog/2022-01-15_i_cannot_think_myself_out_of_this/</loc>
+    <loc>http://localhost:1313/blog/2022-01-15_i_cannot_think_myself_out_of_this/</loc>
     <lastmod>2022-01-15T00:00:00+08:00</lastmod>
   </url><url>
-    <loc>https://devpoga.org/blog/2022-01-03_grpc_status_code/</loc>
+    <loc>http://localhost:1313/blog/2022-01-03_grpc_status_code/</loc>
     <lastmod>2022-01-03T00:56:00+08:00</lastmod>
   </url><url>
-    <loc>https://devpoga.org/tags/glues/</loc>
+    <loc>http://localhost:1313/tags/glues/</loc>
     <lastmod>2021-12-12T00:00:00+08:00</lastmod>
   </url><url>
-    <loc>https://devpoga.org/tags/health/</loc>
+    <loc>http://localhost:1313/tags/health/</loc>
     <lastmod>2021-12-12T00:00:00+08:00</lastmod>
   </url><url>
-    <loc>https://devpoga.org/tags/mlops/</loc>
+    <loc>http://localhost:1313/tags/mlops/</loc>
     <lastmod>2021-12-12T00:00:00+08:00</lastmod>
   </url><url>
-    <loc>https://devpoga.org/tags/naps/</loc>
+    <loc>http://localhost:1313/tags/naps/</loc>
     <lastmod>2021-12-12T00:00:00+08:00</lastmod>
   </url><url>
-    <loc>https://devpoga.org/blog/2021-12-12_naps/</loc>
+    <loc>http://localhost:1313/blog/2021-12-12_naps/</loc>
     <lastmod>2021-12-12T00:00:00+08:00</lastmod>
   </url><url>
-    <loc>https://devpoga.org/blog/2021-12-25_pipelines_and_glue_systems/</loc>
+    <loc>http://localhost:1313/blog/2021-12-25_pipelines_and_glue_systems/</loc>
     <lastmod>2021-12-12T00:00:00+08:00</lastmod>
   </url><url>
-    <loc>https://devpoga.org/tags/machine-learning/</loc>
+    <loc>http://localhost:1313/tags/machine-learning/</loc>
     <lastmod>2021-11-27T00:00:00+08:00</lastmod>
   </url><url>
-    <loc>https://devpoga.org/tags/patterns/</loc>
+    <loc>http://localhost:1313/tags/patterns/</loc>
     <lastmod>2021-11-27T00:00:00+08:00</lastmod>
   </url><url>
-    <loc>https://devpoga.org/blog/2021-11-27-mlops_antipatterns/</loc>
+    <loc>http://localhost:1313/blog/2021-11-27-mlops_antipatterns/</loc>
     <lastmod>2021-11-27T00:00:00+08:00</lastmod>
   </url><url>
-    <loc>https://devpoga.org/tags/leadership/</loc>
+    <loc>http://localhost:1313/tags/leadership/</loc>
     <lastmod>2021-09-19T00:00:00+08:00</lastmod>
   </url><url>
-    <loc>https://devpoga.org/tags/notes/</loc>
+    <loc>http://localhost:1313/tags/notes/</loc>
     <lastmod>2021-09-19T00:00:00+08:00</lastmod>
   </url><url>
-    <loc>https://devpoga.org/blog/2021-09-19_notes_on_the_five_dysfunctions_of_a_team/</loc>
+    <loc>http://localhost:1313/blog/2021-09-19_notes_on_the_five_dysfunctions_of_a_team/</loc>
     <lastmod>2021-09-19T00:00:00+08:00</lastmod>
   </url><url>
-    <loc>https://devpoga.org/tags/organization/</loc>
+    <loc>http://localhost:1313/tags/organization/</loc>
     <lastmod>2021-09-19T00:00:00+08:00</lastmod>
   </url><url>
-    <loc>https://devpoga.org/tags/essays/</loc>
+    <loc>http://localhost:1313/tags/essays/</loc>
     <lastmod>2021-09-18T00:00:00+08:00</lastmod>
   </url><url>
-    <loc>https://devpoga.org/blog/2021-09-18_on_glue_systems/</loc>
+    <loc>http://localhost:1313/blog/2021-09-18_on_glue_systems/</loc>
     <lastmod>2021-09-18T00:00:00+08:00</lastmod>
   </url><url>
-    <loc>https://devpoga.org/tags/julia/</loc>
+    <loc>http://localhost:1313/tags/julia/</loc>
     <lastmod>2021-08-04T00:00:00+08:00</lastmod>
   </url><url>
-    <loc>https://devpoga.org/blog/2021-08-04_learning_julia_line_by_line/</loc>
+    <loc>http://localhost:1313/blog/2021-08-04_learning_julia_line_by_line/</loc>
     <lastmod>2021-08-04T00:00:00+08:00</lastmod>
   </url><url>
-    <loc>https://devpoga.org/blog/2021-07-25_organization_health/</loc>
+    <loc>http://localhost:1313/blog/2021-07-25_organization_health/</loc>
     <lastmod>2021-07-24T00:00:00+08:00</lastmod>
   </url><url>
-    <loc>https://devpoga.org/tags/communication/</loc>
+    <loc>http://localhost:1313/tags/communication/</loc>
     <lastmod>2021-07-24T00:00:00+08:00</lastmod>
   </url><url>
-    <loc>https://devpoga.org/blog/2021-05-11_haxe_and_programming_for_many_machines/</loc>
+    <loc>http://localhost:1313/blog/2021-05-11_haxe_and_programming_for_many_machines/</loc>
     <lastmod>2021-05-11T00:00:00+08:00</lastmod>
   </url><url>
-    <loc>https://devpoga.org/blog/2021-05-01_common_lisp_quicklisp_local_project/</loc>
+    <loc>http://localhost:1313/blog/2021-05-01_common_lisp_quicklisp_local_project/</loc>
     <lastmod>2021-05-01T00:00:00+08:00</lastmod>
   </url><url>
-    <loc>https://devpoga.org/tags/lisp/</loc>
+    <loc>http://localhost:1313/tags/lisp/</loc>
     <lastmod>2021-05-01T00:00:00+08:00</lastmod>
   </url><url>
-    <loc>https://devpoga.org/tags/condition/</loc>
+    <loc>http://localhost:1313/tags/condition/</loc>
     <lastmod>2021-04-25T00:00:00+08:00</lastmod>
   </url><url>
-    <loc>https://devpoga.org/blog/2021-04-25_common_lisp_condition_system/</loc>
+    <loc>http://localhost:1313/blog/2021-04-25_common_lisp_condition_system/</loc>
     <lastmod>2021-04-25T00:00:00+08:00</lastmod>
   </url><url>
-    <loc>https://devpoga.org/tags/compiler/</loc>
+    <loc>http://localhost:1313/tags/compiler/</loc>
     <lastmod>2020-12-19T00:00:00+08:00</lastmod>
   </url><url>
-    <loc>https://devpoga.org/tags/learn-ocaml-the-hard-way/</loc>
+    <loc>http://localhost:1313/tags/learn-ocaml-the-hard-way/</loc>
     <lastmod>2020-12-19T00:00:00+08:00</lastmod>
   </url><url>
-    <loc>https://devpoga.org/tags/ocaml/</loc>
+    <loc>http://localhost:1313/tags/ocaml/</loc>
     <lastmod>2020-12-19T00:00:00+08:00</lastmod>
   </url><url>
-    <loc>https://devpoga.org/blog/2020-12-19_ocaml_predictable_module_functor/</loc>
+    <loc>http://localhost:1313/blog/2020-12-19_ocaml_predictable_module_functor/</loc>
     <lastmod>2020-12-19T00:00:00+08:00</lastmod>
   </url><url>
-    <loc>https://devpoga.org/blog/2020-11-30-ocaml-compiler-pipeline/</loc>
+    <loc>http://localhost:1313/blog/2020-11-30-ocaml-compiler-pipeline/</loc>
     <lastmod>2020-11-30T00:00:00+08:00</lastmod>
   </url><url>
-    <loc>https://devpoga.org/tags/g0v/</loc>
+    <loc>http://localhost:1313/tags/g0v/</loc>
     <lastmod>2020-11-29T00:00:00+08:00</lastmod>
   </url><url>
-    <loc>https://devpoga.org/blog/2020-11-29-g0v.social-journey/</loc>
+    <loc>http://localhost:1313/blog/2020-11-29-g0v.social-journey/</loc>
     <lastmod>2020-11-29T00:00:00+08:00</lastmod>
   </url><url>
-    <loc>https://devpoga.org/blog/2020-11-21-a-taste-of-ocaml-predictable-performance/</loc>
+    <loc>http://localhost:1313/blog/2020-11-21-a-taste-of-ocaml-predictable-performance/</loc>
     <lastmod>2020-11-21T00:00:00+08:00</lastmod>
   </url><url>
-    <loc>https://devpoga.org/tags/ipad/</loc>
+    <loc>http://localhost:1313/tags/ipad/</loc>
     <lastmod>2020-08-01T00:00:00+08:00</lastmod>
   </url><url>
-    <loc>https://devpoga.org/blog/2020-08-01_ipad_programming_environment/</loc>
+    <loc>http://localhost:1313/blog/2020-08-01_ipad_programming_environment/</loc>
     <lastmod>2020-08-01T00:00:00+08:00</lastmod>
   </url><url>
-    <loc>https://devpoga.org/tags/concurrency/</loc>
+    <loc>http://localhost:1313/tags/concurrency/</loc>
     <lastmod>2020-06-07T00:00:00+08:00</lastmod>
   </url><url>
-    <loc>https://devpoga.org/blog/2020-06-07-concurrency-clojure-racket-gerbil/</loc>
+    <loc>http://localhost:1313/blog/2020-06-07-concurrency-clojure-racket-gerbil/</loc>
     <lastmod>2020-06-07T00:00:00+08:00</lastmod>
   </url><url>
-    <loc>https://devpoga.org/tags/scheme/</loc>
+    <loc>http://localhost:1313/tags/scheme/</loc>
     <lastmod>2020-06-07T00:00:00+08:00</lastmod>
   </url><url>
-    <loc>https://devpoga.org/blog/2020-04-21_on-communication/</loc>
+    <loc>http://localhost:1313/blog/2020-04-21_on-communication/</loc>
     <lastmod>2020-04-21T00:00:00+08:00</lastmod>
   </url><url>
-    <loc>https://devpoga.org/tags/domain-modeling/</loc>
+    <loc>http://localhost:1313/tags/domain-modeling/</loc>
     <lastmod>2020-04-10T00:00:00+08:00</lastmod>
   </url><url>
-    <loc>https://devpoga.org/blog/2020-04-10_domain-modeling-made-functional/</loc>
+    <loc>http://localhost:1313/blog/2020-04-10_domain-modeling-made-functional/</loc>
     <lastmod>2020-04-10T00:00:00+08:00</lastmod>
   </url><url>
-    <loc>https://devpoga.org/tags/note/</loc>
+    <loc>http://localhost:1313/tags/note/</loc>
     <lastmod>2020-04-10T00:00:00+08:00</lastmod>
   </url><url>
-    <loc>https://devpoga.org/tags/software-engineering/</loc>
+    <loc>http://localhost:1313/tags/software-engineering/</loc>
     <lastmod>2020-04-10T00:00:00+08:00</lastmod>
   </url><url>
-    <loc>https://devpoga.org/tags/networking/</loc>
+    <loc>http://localhost:1313/tags/networking/</loc>
     <lastmod>2020-04-09T00:00:00+08:00</lastmod>
   </url><url>
-    <loc>https://devpoga.org/blog/2020-04-09_zero-trust-network/</loc>
+    <loc>http://localhost:1313/blog/2020-04-09_zero-trust-network/</loc>
     <lastmod>2020-04-09T00:00:00+08:00</lastmod>
   </url><url>
-    <loc>https://devpoga.org/tags/editor/</loc>
+    <loc>http://localhost:1313/tags/editor/</loc>
     <lastmod>2020-03-17T00:00:00+08:00</lastmod>
   </url><url>
-    <loc>https://devpoga.org/blog/2020-03-17_ocaml_quickstart/</loc>
+    <loc>http://localhost:1313/blog/2020-03-17_ocaml_quickstart/</loc>
     <lastmod>2020-03-17T00:00:00+08:00</lastmod>
   </url><url>
-    <loc>https://devpoga.org/tags/vim/</loc>
+    <loc>http://localhost:1313/tags/vim/</loc>
     <lastmod>2020-03-17T00:00:00+08:00</lastmod>
   </url><url>
-    <loc>https://devpoga.org/blog/2020-02-17_checklist_deploy_machine_learning_model_production/</loc>
+    <loc>http://localhost:1313/blog/2020-02-17_checklist_deploy_machine_learning_model_production/</loc>
     <lastmod>2020-02-17T00:00:00+08:00</lastmod>
   </url><url>
-    <loc>https://devpoga.org/blog/2019-11-06-running-service-production/</loc>
+    <loc>http://localhost:1313/blog/2019-11-06-running-service-production/</loc>
     <lastmod>2019-11-06T00:00:00+08:00</lastmod>
   </url><url>
-    <loc>https://devpoga.org/blog/2019-11-03-golden-age-of-programming-language/</loc>
+    <loc>http://localhost:1313/blog/2019-11-03-golden-age-of-programming-language/</loc>
     <lastmod>2019-11-03T00:00:00+08:00</lastmod>
   </url><url>
-    <loc>https://devpoga.org/blog/2019-10-22-vps_rust_compile_benchmark/</loc>
+    <loc>http://localhost:1313/blog/2019-10-22-vps_rust_compile_benchmark/</loc>
     <lastmod>2019-10-22T00:00:00+08:00</lastmod>
   </url><url>
-    <loc>https://devpoga.org/tags/productivity/</loc>
+    <loc>http://localhost:1313/tags/productivity/</loc>
     <lastmod>2019-09-20T00:00:00+08:00</lastmod>
   </url><url>
-    <loc>https://devpoga.org/blog/2019-09-20_ripgrep_cheat_sheet/</loc>
+    <loc>http://localhost:1313/blog/2019-09-20_ripgrep_cheat_sheet/</loc>
     <lastmod>2019-09-20T00:00:00+08:00</lastmod>
   </url><url>
-    <loc>https://devpoga.org/tags/cryptography/</loc>
+    <loc>http://localhost:1313/tags/cryptography/</loc>
     <lastmod>2019-09-04T00:00:00+08:00</lastmod>
   </url><url>
-    <loc>https://devpoga.org/blog/2019-09-04_notes_on_the_signal_protocol/</loc>
+    <loc>http://localhost:1313/blog/2019-09-04_notes_on_the_signal_protocol/</loc>
     <lastmod>2019-09-04T00:00:00+08:00</lastmod>
   </url><url>
-    <loc>https://devpoga.org/tags/privacy/</loc>
+    <loc>http://localhost:1313/tags/privacy/</loc>
     <lastmod>2019-09-04T00:00:00+08:00</lastmod>
   </url><url>
-    <loc>https://devpoga.org/distributed_system/</loc>
+    <loc>http://localhost:1313/distributed_system/</loc>
     <lastmod>2019-08-25T00:00:00+08:00</lastmod>
   </url><url>
-    <loc>https://devpoga.org/blog/2019-07-11_cheney_on_the_mta/</loc>
+    <loc>http://localhost:1313/blog/2019-07-11_cheney_on_the_mta/</loc>
     <lastmod>2019-07-12T00:00:00+08:00</lastmod>
   </url><url>
-    <loc>https://devpoga.org/tags/programming-language/</loc>
+    <loc>http://localhost:1313/tags/programming-language/</loc>
     <lastmod>2019-07-12T00:00:00+08:00</lastmod>
   </url><url>
-    <loc>https://devpoga.org/blog/2019-06-30_structured_concurrency/</loc>
+    <loc>http://localhost:1313/blog/2019-06-30_structured_concurrency/</loc>
     <lastmod>2019-06-30T00:00:00+08:00</lastmod>
   </url><url>
-    <loc>https://devpoga.org/tags/writing/</loc>
+    <loc>http://localhost:1313/tags/writing/</loc>
     <lastmod>2019-06-29T00:00:00+08:00</lastmod>
   </url><url>
-    <loc>https://devpoga.org/blog/2019-06-29_%E5%B7%A5%E7%A8%8B%E5%B8%AB%E7%9A%84%E8%8B%B1%E6%96%87%E5%AF%AB%E4%BD%9C%E8%83%BD%E5%8A%9B/</loc>
+    <loc>http://localhost:1313/blog/2019-06-29_%E5%B7%A5%E7%A8%8B%E5%B8%AB%E7%9A%84%E8%8B%B1%E6%96%87%E5%AF%AB%E4%BD%9C%E8%83%BD%E5%8A%9B/</loc>
     <lastmod>2019-06-29T00:00:00+08:00</lastmod>
   </url><url>
-    <loc>https://devpoga.org/tags/go/</loc>
+    <loc>http://localhost:1313/tags/go/</loc>
     <lastmod>2019-04-29T00:00:00+08:00</lastmod>
   </url><url>
-    <loc>https://devpoga.org/blog/golang-7-years-later/</loc>
+    <loc>http://localhost:1313/blog/golang-7-years-later/</loc>
     <lastmod>2019-04-29T00:00:00+08:00</lastmod>
   </url><url>
-    <loc>https://devpoga.org/tags/programming-languages/</loc>
+    <loc>http://localhost:1313/tags/programming-languages/</loc>
     <lastmod>2019-04-29T00:00:00+08:00</lastmod>
   </url><url>
-    <loc>https://devpoga.org/tags/interpreter-and-compiler/</loc>
+    <loc>http://localhost:1313/tags/interpreter-and-compiler/</loc>
     <lastmod>2019-02-26T00:00:00+08:00</lastmod>
   </url><url>
-    <loc>https://devpoga.org/tags/lua/</loc>
+    <loc>http://localhost:1313/tags/lua/</loc>
     <lastmod>2019-04-30T21:56:04+08:00</lastmod>
   </url><url>
-    <loc>https://devpoga.org/blog/implementation-lua53/</loc>
+    <loc>http://localhost:1313/blog/implementation-lua53/</loc>
     <lastmod>2019-02-26T00:00:00+08:00</lastmod>
   </url><url>
-    <loc>https://devpoga.org/tags/actix/</loc>
+    <loc>http://localhost:1313/tags/actix/</loc>
     <lastmod>2019-04-30T21:56:04+08:00</lastmod>
   </url><url>
-    <loc>https://devpoga.org/blog/parsing-streaming-data-actix-lua/</loc>
+    <loc>http://localhost:1313/blog/parsing-streaming-data-actix-lua/</loc>
     <lastmod>2018-10-12T00:00:00+08:00</lastmod>
   </url><url>
-    <loc>https://devpoga.org/tags/rust/</loc>
+    <loc>http://localhost:1313/tags/rust/</loc>
     <lastmod>2019-04-30T21:56:04+08:00</lastmod>
   </url><url>
-    <loc>https://devpoga.org/blog/2018-09-28_%E6%88%91%E9%81%B8%E6%93%87%E7%94%9F%E7%94%A2%E5%8A%9B%E5%B7%A5%E5%85%B7%E7%9A%84%E5%9F%BA%E6%BA%96/</loc>
+    <loc>http://localhost:1313/blog/2018-09-28_%E6%88%91%E9%81%B8%E6%93%87%E7%94%9F%E7%94%A2%E5%8A%9B%E5%B7%A5%E5%85%B7%E7%9A%84%E5%9F%BA%E6%BA%96/</loc>
     <lastmod>2019-04-30T21:56:01+08:00</lastmod>
   </url><url>
-    <loc>https://devpoga.org/blog/2018-09-03_%E5%A6%82%E4%BD%95%E6%95%B4%E5%90%88-rust-%E8%88%87-lua/</loc>
+    <loc>http://localhost:1313/blog/2018-09-03_%E5%A6%82%E4%BD%95%E6%95%B4%E5%90%88-rust-%E8%88%87-lua/</loc>
     <lastmod>2019-04-30T21:56:04+08:00</lastmod>
   </url><url>
-    <loc>https://devpoga.org/tags/%E7%A7%91%E6%99%AE/</loc>
+    <loc>http://localhost:1313/tags/%E7%A7%91%E6%99%AE/</loc>
     <lastmod>2019-04-30T21:56:04+08:00</lastmod>
   </url><url>
-    <loc>https://devpoga.org/tags/%E7%B3%BB%E7%B5%B1%E6%9E%B6%E6%A7%8B/</loc>
+    <loc>http://localhost:1313/tags/%E7%B3%BB%E7%B5%B1%E6%9E%B6%E6%A7%8B/</loc>
     <lastmod>2019-04-30T21:56:04+08:00</lastmod>
   </url><url>
-    <loc>https://devpoga.org/blog/2018-07-16_%E8%BB%9F%E9%AB%94%E8%A8%AD%E8%A8%88%E6%A8%A1%E5%BC%8F-dataoriented-design/</loc>
+    <loc>http://localhost:1313/blog/2018-07-16_%E8%BB%9F%E9%AB%94%E8%A8%AD%E8%A8%88%E6%A8%A1%E5%BC%8F-dataoriented-design/</loc>
     <lastmod>2019-04-30T21:56:04+08:00</lastmod>
   </url><url>
-    <loc>https://devpoga.org/tags/%E9%81%8A%E6%88%B2%E9%96%8B%E7%99%BC/</loc>
+    <loc>http://localhost:1313/tags/%E9%81%8A%E6%88%B2%E9%96%8B%E7%99%BC/</loc>
     <lastmod>2019-04-30T21:56:04+08:00</lastmod>
   </url><url>
-    <loc>https://devpoga.org/tags/luajit/</loc>
+    <loc>http://localhost:1313/tags/luajit/</loc>
     <lastmod>2019-04-30T00:00:00+08:00</lastmod>
   </url><url>
-    <loc>https://devpoga.org/blog/2018-04-18_luajit-%E5%AF%A6%E5%81%9A%E6%8E%A2%E7%B4%A2-nan-tagging/</loc>
+    <loc>http://localhost:1313/blog/2018-04-18_luajit-%E5%AF%A6%E5%81%9A%E6%8E%A2%E7%B4%A2-nan-tagging/</loc>
     <lastmod>2019-04-30T00:00:00+08:00</lastmod>
   </url><url>
-    <loc>https://devpoga.org/tags/%E5%B8%B6%E6%82%A8%E8%AE%80%E5%8E%9F%E7%A2%BC/</loc>
+    <loc>http://localhost:1313/tags/%E5%B8%B6%E6%82%A8%E8%AE%80%E5%8E%9F%E7%A2%BC/</loc>
     <lastmod>2019-04-30T00:00:00+08:00</lastmod>
   </url><url>
-    <loc>https://devpoga.org/tags/serverless/</loc>
+    <loc>http://localhost:1313/tags/serverless/</loc>
     <lastmod>2019-04-30T21:56:01+08:00</lastmod>
   </url><url>
-    <loc>https://devpoga.org/categories/talks/</loc>
+    <loc>http://localhost:1313/categories/talks/</loc>
     <lastmod>2019-04-30T21:56:01+08:00</lastmod>
   </url><url>
-    <loc>https://devpoga.org/blog/2018-04-10_why_serverless/</loc>
+    <loc>http://localhost:1313/blog/2018-04-10_why_serverless/</loc>
     <lastmod>2019-04-30T21:56:01+08:00</lastmod>
   </url><url>
-    <loc>https://devpoga.org/blog/2018-02-06_%E9%81%BA%E5%BF%98%E7%9A%84%E7%94%9F%E7%94%A2%E5%8A%9B/</loc>
+    <loc>http://localhost:1313/blog/2018-02-06_%E9%81%BA%E5%BF%98%E7%9A%84%E7%94%9F%E7%94%A2%E5%8A%9B/</loc>
     <lastmod>2019-04-30T21:56:01+08:00</lastmod>
   </url><url>
-    <loc>https://devpoga.org/tags/kappa/</loc>
+    <loc>http://localhost:1313/tags/kappa/</loc>
     <lastmod>2019-04-30T21:56:01+08:00</lastmod>
   </url><url>
-    <loc>https://devpoga.org/blog/2017-12-22_kappa-architecture%E4%BB%A5%E8%B3%87%E6%96%99%E7%82%BA%E4%B8%AD%E5%BF%83%E7%9A%84%E7%B3%BB%E7%B5%B1%E6%9E%B6%E6%A7%8B/</loc>
+    <loc>http://localhost:1313/blog/2017-12-22_kappa-architecture%E4%BB%A5%E8%B3%87%E6%96%99%E7%82%BA%E4%B8%AD%E5%BF%83%E7%9A%84%E7%B3%BB%E7%B5%B1%E6%9E%B6%E6%A7%8B/</loc>
     <lastmod>2019-04-30T21:56:01+08:00</lastmod>
   </url><url>
-    <loc>https://devpoga.org/tags/log/</loc>
+    <loc>http://localhost:1313/tags/log/</loc>
     <lastmod>2019-04-30T21:56:01+08:00</lastmod>
   </url><url>
-    <loc>https://devpoga.org/tags/burnout/</loc>
+    <loc>http://localhost:1313/tags/burnout/</loc>
     <lastmod>2019-04-30T21:56:01+08:00</lastmod>
   </url><url>
-    <loc>https://devpoga.org/blog/2017-10-02_minimum_viable_ownership/</loc>
+    <loc>http://localhost:1313/blog/2017-10-02_minimum_viable_ownership/</loc>
     <lastmod>2019-04-30T21:56:01+08:00</lastmod>
   </url><url>
-    <loc>https://devpoga.org/tags/open-source/</loc>
+    <loc>http://localhost:1313/tags/open-source/</loc>
     <lastmod>2019-04-30T21:56:01+08:00</lastmod>
   </url><url>
-    <loc>https://devpoga.org/tags/ownership/</loc>
+    <loc>http://localhost:1313/tags/ownership/</loc>
     <lastmod>2019-04-30T21:56:01+08:00</lastmod>
   </url><url>
-    <loc>https://devpoga.org/blog/2017-06-04_%E5%B9%B3%E8%A1%8C%E4%B8%96%E7%95%8C/</loc>
+    <loc>http://localhost:1313/blog/2017-06-04_%E5%B9%B3%E8%A1%8C%E4%B8%96%E7%95%8C/</loc>
     <lastmod>2019-04-30T21:55:57+08:00</lastmod>
   </url><url>
-    <loc>https://devpoga.org/tags/omnifocus/</loc>
+    <loc>http://localhost:1313/tags/omnifocus/</loc>
     <lastmod>2019-04-30T21:55:54+08:00</lastmod>
   </url><url>
-    <loc>https://devpoga.org/blog/2017-02-16_%E5%8F%88%E5%9B%9E%E4%BE%86%E7%94%A8-omnifocus-%E4%BA%86/</loc>
+    <loc>http://localhost:1313/blog/2017-02-16_%E5%8F%88%E5%9B%9E%E4%BE%86%E7%94%A8-omnifocus-%E4%BA%86/</loc>
     <lastmod>2019-04-30T21:55:54+08:00</lastmod>
   </url><url>
-    <loc>https://devpoga.org/tags/coscup/</loc>
+    <loc>http://localhost:1313/tags/coscup/</loc>
     <lastmod>2019-04-30T21:55:51+08:00</lastmod>
   </url><url>
-    <loc>https://devpoga.org/blog/2016-08-27_%E8%90%AC%E4%BA%8B%E8%90%AC%E7%89%A9%E7%9A%86%E6%98%AF-log-%E5%8F%83%E8%80%83%E8%B3%87%E6%96%99/</loc>
+    <loc>http://localhost:1313/blog/2016-08-27_%E8%90%AC%E4%BA%8B%E8%90%AC%E7%89%A9%E7%9A%86%E6%98%AF-log-%E5%8F%83%E8%80%83%E8%B3%87%E6%96%99/</loc>
     <lastmod>2019-04-30T21:55:51+08:00</lastmod>
   </url><url>
-    <loc>https://devpoga.org/blog/2016-08-20_%E8%90%AC%E4%BA%8B%E8%90%AC%E7%89%A9%E7%9A%86%E6%98%AF-log-%E7%B3%BB%E7%B5%B1%E6%9E%B6%E6%A7%8B%E4%B9%9F%E4%BE%86%E9%BB%9E%E7%A7%91%E6%99%AE/</loc>
+    <loc>http://localhost:1313/blog/2016-08-20_%E8%90%AC%E4%BA%8B%E8%90%AC%E7%89%A9%E7%9A%86%E6%98%AF-log-%E7%B3%BB%E7%B5%B1%E6%9E%B6%E6%A7%8B%E4%B9%9F%E4%BE%86%E9%BB%9E%E7%A7%91%E6%99%AE/</loc>
     <lastmod>2019-04-30T21:55:51+08:00</lastmod>
   </url><url>
-    <loc>https://devpoga.org/tags/design/</loc>
+    <loc>http://localhost:1313/tags/design/</loc>
     <lastmod>2019-04-30T21:55:49+08:00</lastmod>
   </url><url>
-    <loc>https://devpoga.org/blog/2016-07-17_design-of-everyday-things/</loc>
+    <loc>http://localhost:1313/blog/2016-07-17_design-of-everyday-things/</loc>
     <lastmod>2019-04-30T21:55:49+08:00</lastmod>
   </url><url>
-    <loc>https://devpoga.org/tags/ux/</loc>
+    <loc>http://localhost:1313/tags/ux/</loc>
     <lastmod>2019-04-30T21:55:49+08:00</lastmod>
   </url><url>
-    <loc>https://devpoga.org/tags/communicating/</loc>
+    <loc>http://localhost:1313/tags/communicating/</loc>
     <lastmod>2019-04-30T21:55:48+08:00</lastmod>
   </url><url>
-    <loc>https://devpoga.org/tags/story-telling/</loc>
+    <loc>http://localhost:1313/tags/story-telling/</loc>
     <lastmod>2019-04-30T21:55:48+08:00</lastmod>
   </url><url>
-    <loc>https://devpoga.org/tags/teaching/</loc>
+    <loc>http://localhost:1313/tags/teaching/</loc>
     <lastmod>2019-04-30T21:55:48+08:00</lastmod>
   </url><url>
-    <loc>https://devpoga.org/blog/2016-05-17_%E8%A9%B2%E6%80%8E%E6%A8%A3%E6%95%99%E4%BB%BB%E4%BD%95%E4%BA%BA%E4%BB%BB%E4%BD%95%E6%8A%80%E8%83%BD/</loc>
+    <loc>http://localhost:1313/blog/2016-05-17_%E8%A9%B2%E6%80%8E%E6%A8%A3%E6%95%99%E4%BB%BB%E4%BD%95%E4%BA%BA%E4%BB%BB%E4%BD%95%E6%8A%80%E8%83%BD/</loc>
     <lastmod>2019-04-30T21:55:48+08:00</lastmod>
   </url><url>
-    <loc>https://devpoga.org/archives/</loc>
+    <loc>http://localhost:1313/archives/</loc>
   </url>
 </urlset>

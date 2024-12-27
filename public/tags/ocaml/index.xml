@@ -2,39 +2,39 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>OCaml on Dev.Poga</title>
-    <link>https://devpoga.org/tags/ocaml/</link>
+    <link>http://localhost:1313/tags/ocaml/</link>
     <description>Recent content in OCaml on Dev.Poga</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 19 Dec 2020 00:00:00 +0800</lastBuildDate>
-    <atom:link href="https://devpoga.org/tags/ocaml/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/ocaml/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Predictable Performance of OCaml&#39;s Module System</title>
-      <link>https://devpoga.org/blog/2020-12-19_ocaml_predictable_module_functor/</link>
+      <link>http://localhost:1313/blog/2020-12-19_ocaml_predictable_module_functor/</link>
       <pubDate>Sat, 19 Dec 2020 00:00:00 +0800</pubDate>
-      <guid>https://devpoga.org/blog/2020-12-19_ocaml_predictable_module_functor/</guid>
-      <description>&lt;img src=&#34;https://devpoga.org/post/2020-12-19_ocaml_predictable_module_functor/camel.jpg&#34; alt=&#34;&#34;&gt; OCaml&amp;rsquo;s &lt;a href=&#34;https://dev.realworldocaml.org/files-modules-and-programs.html&#34;&gt;module system&lt;/a&gt; can be a powerful tool for building generic code and structuring systems. Functors are functions from modules to modules and they serve an important role for the power of module system. However, I want to know if functors (and the module system) can be optimized away by the OCaml compiler.</description>
+      <guid>http://localhost:1313/blog/2020-12-19_ocaml_predictable_module_functor/</guid>
+      <description>&lt;img src=&#34;http://localhost:1313/post/2020-12-19_ocaml_predictable_module_functor/camel.jpg&#34; alt=&#34;&#34;&gt; OCaml&amp;rsquo;s &lt;a href=&#34;https://dev.realworldocaml.org/files-modules-and-programs.html&#34;&gt;module system&lt;/a&gt; can be a powerful tool for building generic code and structuring systems. Functors are functions from modules to modules and they serve an important role for the power of module system. However, I want to know if functors (and the module system) can be optimized away by the OCaml compiler.</description>
     </item>
     <item>
       <title>Going through the OCaml compiler pipeline (manually)</title>
-      <link>https://devpoga.org/blog/2020-11-30-ocaml-compiler-pipeline/</link>
+      <link>http://localhost:1313/blog/2020-11-30-ocaml-compiler-pipeline/</link>
       <pubDate>Mon, 30 Nov 2020 00:00:00 +0800</pubDate>
-      <guid>https://devpoga.org/blog/2020-11-30-ocaml-compiler-pipeline/</guid>
+      <guid>http://localhost:1313/blog/2020-11-30-ocaml-compiler-pipeline/</guid>
       <description>Modern compilers usually composed by multiple stages: parsers, optimizers, linkers, and assemblers. Let&amp;rsquo;s go through it one by one to have a better understanding of the OCaml compiler.</description>
     </item>
     <item>
       <title>A Taste of OCaml&#39;s Predictable Performance</title>
-      <link>https://devpoga.org/blog/2020-11-21-a-taste-of-ocaml-predictable-performance/</link>
+      <link>http://localhost:1313/blog/2020-11-21-a-taste-of-ocaml-predictable-performance/</link>
       <pubDate>Sat, 21 Nov 2020 00:00:00 +0800</pubDate>
-      <guid>https://devpoga.org/blog/2020-11-21-a-taste-of-ocaml-predictable-performance/</guid>
-      <description>&lt;img src=&#34;https://devpoga.org/post/2020-11-21-a-taste-of-ocaml-predictable-performance/colour-logo.png&#34; alt=&#34;&#34;&gt; &lt;a href=&#34;https://github.com/mirage/eqaf&#34;&gt;eqaf&lt;/a&gt;, a constant-time compare function implementation in &lt;a href=&#34;https://ocaml.org/&#34;&gt;OCaml&lt;/a&gt;, is a great case to demonstrate the &lt;a href=&#34;https://signalsandthreads.com/language-design/#0008401&#34;&gt;predictable performance of OCaml&amp;rsquo;s compiler&lt;/a&gt;. Why?</description>
+      <guid>http://localhost:1313/blog/2020-11-21-a-taste-of-ocaml-predictable-performance/</guid>
+      <description>&lt;img src=&#34;http://localhost:1313/post/2020-11-21-a-taste-of-ocaml-predictable-performance/colour-logo.png&#34; alt=&#34;&#34;&gt; &lt;a href=&#34;https://github.com/mirage/eqaf&#34;&gt;eqaf&lt;/a&gt;, a constant-time compare function implementation in &lt;a href=&#34;https://ocaml.org/&#34;&gt;OCaml&lt;/a&gt;, is a great case to demonstrate the &lt;a href=&#34;https://signalsandthreads.com/language-design/#0008401&#34;&gt;predictable performance of OCaml&amp;rsquo;s compiler&lt;/a&gt;. Why?</description>
     </item>
     <item>
       <title>OCaml Quickstart</title>
-      <link>https://devpoga.org/blog/2020-03-17_ocaml_quickstart/</link>
+      <link>http://localhost:1313/blog/2020-03-17_ocaml_quickstart/</link>
       <pubDate>Tue, 17 Mar 2020 00:00:00 +0800</pubDate>
-      <guid>https://devpoga.org/blog/2020-03-17_ocaml_quickstart/</guid>
-      <description>&lt;p&gt;&lt;img src=&#34;https://devpoga.org/post/2020-03-17_ocaml_quickstart/vim.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://ocaml.org/&#34;&gt;OCaml&lt;/a&gt; is a great language. However, the tooling for newbies is kinda confusing. Here&amp;rsquo;s a guide to setup a working OCaml development environment in &lt;a href=&#34;https://neovim.io/&#34;&gt;neovim&lt;/a&gt; on MacOS.&lt;/p&gt;</description>
+      <guid>http://localhost:1313/blog/2020-03-17_ocaml_quickstart/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;http://localhost:1313/post/2020-03-17_ocaml_quickstart/vim.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://ocaml.org/&#34;&gt;OCaml&lt;/a&gt; is a great language. However, the tooling for newbies is kinda confusing. Here&amp;rsquo;s a guide to setup a working OCaml development environment in &lt;a href=&#34;https://neovim.io/&#34;&gt;neovim&lt;/a&gt; on MacOS.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

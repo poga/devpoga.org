@@ -2,46 +2,46 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Reading on Dev.Poga</title>
-    <link>https://devpoga.org/tags/reading/</link>
+    <link>http://localhost:1313/tags/reading/</link>
     <description>Recent content in Reading on Dev.Poga</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 19 Feb 2022 00:00:00 +0800</lastBuildDate>
-    <atom:link href="https://devpoga.org/tags/reading/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/reading/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>What I&#39;ve been Reading: 2022 Jan and Feb</title>
-      <link>https://devpoga.org/blog/2022-02-19_what_ive_been_reading/</link>
+      <link>http://localhost:1313/blog/2022-02-19_what_ive_been_reading/</link>
       <pubDate>Sat, 19 Feb 2022 00:00:00 +0800</pubDate>
-      <guid>https://devpoga.org/blog/2022-02-19_what_ive_been_reading/</guid>
+      <guid>http://localhost:1313/blog/2022-02-19_what_ive_been_reading/</guid>
       <description>&lt;h3 id=&#34;mlops&#34;&gt;MLOps&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://medium.com/@ZhenzhongXu/the-four-innovation-phases-of-netflixs-trillions-scale-real-time-data-infrastructure-2370938d7f01&#34;&gt;The Four Innovation Phases of Netflix’s Trillions Scale Real-time Data Infrastructure&lt;/a&gt;&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://thedataexchange.media/building-machine-learning-infrastructure-at-netflix-and-beyond/&#34;&gt;https://thedataexchange.media/building-machine-learning-infrastructure-at-netflix-and-beyond/&lt;/a&gt;&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://huyenchip.com/2022/01/02/real-time-machine-learning-challenges-and-solutions.html&#34;&gt;Real-time machine learning: challenges and solutions&lt;/a&gt;&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://petewarden.com/2021/12/24/why-are-ml-compilers-so-hard/&#34;&gt;Why are ML Compilers so Hard?&lt;/a&gt;&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;compiler&#34;&gt;Compiler&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;http://www.wolczko.com/CS294/&#34;&gt;UCB CS294-113: Virtual Machines and Managed Runtimes&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;rendering&#34;&gt;Rendering&lt;/h3&gt;&#xA;&lt;p&gt;I&amp;rsquo;ve been wanting to go back to my root of programming: games and rendering.&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://alain.xyz/blog/a-review-of-shader-languages&#34;&gt;A Review of Shader Language&lt;/a&gt;&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://alextardif.com/LearningGraphics.html&#34;&gt;Finding Your Home in Game Graphics Programming&lt;/a&gt;&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://advances.realtimerendering.com/s2021/Karis_Nanite_SIGGRAPH_Advances_2021_final.pdf&#34;&gt;Nanite A Deep Dive&lt;/a&gt;&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://advances.realtimerendering.com/s2020/RenderingDoomEternal.pdf&#34;&gt;Rendering the Hellscape of Doom Eternal&lt;/a&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>CHECKLIST FOR ORGANIZATIONAL HEALTH</title>
-      <link>https://devpoga.org/blog/2021-07-25_organization_health/</link>
+      <link>http://localhost:1313/blog/2021-07-25_organization_health/</link>
       <pubDate>Sat, 24 Jul 2021 00:00:00 +0800</pubDate>
-      <guid>https://devpoga.org/blog/2021-07-25_organization_health/</guid>
-      <description>&lt;p&gt;&lt;img src=&#34;https://devpoga.org/post/2021-07-25_organization_health/book.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;</description>
+      <guid>http://localhost:1313/blog/2021-07-25_organization_health/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;http://localhost:1313/post/2021-07-25_organization_health/book.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>On Communication</title>
-      <link>https://devpoga.org/blog/2020-04-21_on-communication/</link>
+      <link>http://localhost:1313/blog/2020-04-21_on-communication/</link>
       <pubDate>Tue, 21 Apr 2020 00:00:00 +0800</pubDate>
-      <guid>https://devpoga.org/blog/2020-04-21_on-communication/</guid>
+      <guid>http://localhost:1313/blog/2020-04-21_on-communication/</guid>
       <description>&lt;p&gt;Reading List.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Domain Modeling Made Functional</title>
-      <link>https://devpoga.org/blog/2020-04-10_domain-modeling-made-functional/</link>
+      <link>http://localhost:1313/blog/2020-04-10_domain-modeling-made-functional/</link>
       <pubDate>Fri, 10 Apr 2020 00:00:00 +0800</pubDate>
-      <guid>https://devpoga.org/blog/2020-04-10_domain-modeling-made-functional/</guid>
-      <description>&lt;p&gt;&lt;img src=&#34;https://devpoga.org/post/2020-04-10_domain-modeling-made-functional/book.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;Notes on the book &lt;a href=&#34;https://www.amazon.com/Domain-Modeling-Made-Functional-Domain-Driven/dp/1680502549&#34;&gt;Domain Modeling Made Functional: Tackle Software Complexity with Domain-Driven Design and F#&lt;/a&gt;.&lt;/p&gt;</description>
+      <guid>http://localhost:1313/blog/2020-04-10_domain-modeling-made-functional/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;http://localhost:1313/post/2020-04-10_domain-modeling-made-functional/book.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;Notes on the book &lt;a href=&#34;https://www.amazon.com/Domain-Modeling-Made-Functional-Domain-Driven/dp/1680502549&#34;&gt;Domain Modeling Made Functional: Tackle Software Complexity with Domain-Driven Design and F#&lt;/a&gt;.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Zero Trust Network</title>
-      <link>https://devpoga.org/blog/2020-04-09_zero-trust-network/</link>
+      <link>http://localhost:1313/blog/2020-04-09_zero-trust-network/</link>
       <pubDate>Thu, 09 Apr 2020 00:00:00 +0800</pubDate>
-      <guid>https://devpoga.org/blog/2020-04-09_zero-trust-network/</guid>
-      <description>&lt;p&gt;&lt;img src=&#34;https://devpoga.org/post/2020-04-09_zero-trust-network/book.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;Notes on the book &lt;a href=&#34;https://www.amazon.com/Zero-Trust-Networks-Building-Untrusted/dp/1491962194&#34;&gt;Zero Trust Network&lt;/a&gt;.&lt;/p&gt;</description>
+      <guid>http://localhost:1313/blog/2020-04-09_zero-trust-network/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;http://localhost:1313/post/2020-04-09_zero-trust-network/book.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;Notes on the book &lt;a href=&#34;https://www.amazon.com/Zero-Trust-Networks-Building-Untrusted/dp/1491962194&#34;&gt;Zero Trust Network&lt;/a&gt;.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

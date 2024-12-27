@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Interpreter and Compiler on Dev.Poga</title>
-    <link>https://devpoga.org/tags/interpreter-and-compiler/</link>
+    <link>http://localhost:1313/tags/interpreter-and-compiler/</link>
     <description>Recent content in Interpreter and Compiler on Dev.Poga</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 26 Feb 2019 00:00:00 +0800</lastBuildDate>
-    <atom:link href="https://devpoga.org/tags/interpreter-and-compiler/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/interpreter-and-compiler/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Notes on the Implementation of Lua 5.3</title>
-      <link>https://devpoga.org/blog/implementation-lua53/</link>
+      <link>http://localhost:1313/blog/implementation-lua53/</link>
       <pubDate>Tue, 26 Feb 2019 00:00:00 +0800</pubDate>
-      <guid>https://devpoga.org/blog/implementation-lua53/</guid>
+      <guid>http://localhost:1313/blog/implementation-lua53/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;https://poga.github.io/lua53-notes/&#34;&gt;Notes on the Implementation on Lua 5.3&lt;/a&gt; is a collection of my notes on the Lua 5.3 source code. It&amp;rsquo;s a mix of both high-level ideas and interesting details in the source code.&lt;/p&gt;</description>
     </item>
   </channel>

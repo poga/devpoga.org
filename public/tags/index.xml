@@ -2,500 +2,500 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Dev.Poga</title>
-    <link>https://devpoga.org/tags/</link>
+    <link>http://localhost:1313/tags/</link>
     <description>Recent content in Tags on Dev.Poga</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 05 Dec 2023 00:00:00 +0800</lastBuildDate>
-    <atom:link href="https://devpoga.org/tags/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Programming</title>
-      <link>https://devpoga.org/tags/programming/</link>
+      <link>http://localhost:1313/tags/programming/</link>
       <pubDate>Tue, 05 Dec 2023 00:00:00 +0800</pubDate>
-      <guid>https://devpoga.org/tags/programming/</guid>
+      <guid>http://localhost:1313/tags/programming/</guid>
       <description></description>
     </item>
     <item>
       <title>Engineering</title>
-      <link>https://devpoga.org/tags/engineering/</link>
+      <link>http://localhost:1313/tags/engineering/</link>
       <pubDate>Mon, 29 May 2023 00:00:00 +0800</pubDate>
-      <guid>https://devpoga.org/tags/engineering/</guid>
+      <guid>http://localhost:1313/tags/engineering/</guid>
       <description></description>
     </item>
     <item>
       <title>Hacking</title>
-      <link>https://devpoga.org/tags/hacking/</link>
+      <link>http://localhost:1313/tags/hacking/</link>
       <pubDate>Sat, 01 Apr 2023 00:00:00 +0800</pubDate>
-      <guid>https://devpoga.org/tags/hacking/</guid>
+      <guid>http://localhost:1313/tags/hacking/</guid>
       <description></description>
     </item>
     <item>
       <title>Mastodon</title>
-      <link>https://devpoga.org/tags/mastodon/</link>
+      <link>http://localhost:1313/tags/mastodon/</link>
       <pubDate>Sun, 22 Jan 2023 00:00:00 +0800</pubDate>
-      <guid>https://devpoga.org/tags/mastodon/</guid>
+      <guid>http://localhost:1313/tags/mastodon/</guid>
       <description></description>
     </item>
     <item>
       <title>Social</title>
-      <link>https://devpoga.org/tags/social/</link>
+      <link>http://localhost:1313/tags/social/</link>
       <pubDate>Sun, 22 Jan 2023 00:00:00 +0800</pubDate>
-      <guid>https://devpoga.org/tags/social/</guid>
+      <guid>http://localhost:1313/tags/social/</guid>
       <description></description>
     </item>
     <item>
       <title>Complexity</title>
-      <link>https://devpoga.org/tags/complexity/</link>
+      <link>http://localhost:1313/tags/complexity/</link>
       <pubDate>Mon, 02 Jan 2023 00:00:00 +0800</pubDate>
-      <guid>https://devpoga.org/tags/complexity/</guid>
+      <guid>http://localhost:1313/tags/complexity/</guid>
       <description></description>
     </item>
     <item>
       <title>System Design</title>
-      <link>https://devpoga.org/tags/system-design/</link>
+      <link>http://localhost:1313/tags/system-design/</link>
       <pubDate>Mon, 02 Jan 2023 00:00:00 +0800</pubDate>
-      <guid>https://devpoga.org/tags/system-design/</guid>
+      <guid>http://localhost:1313/tags/system-design/</guid>
       <description></description>
     </item>
     <item>
       <title>Security</title>
-      <link>https://devpoga.org/tags/security/</link>
+      <link>http://localhost:1313/tags/security/</link>
       <pubDate>Sun, 28 Aug 2022 00:00:00 +0800</pubDate>
-      <guid>https://devpoga.org/tags/security/</guid>
+      <guid>http://localhost:1313/tags/security/</guid>
       <description></description>
     </item>
     <item>
       <title>Godot</title>
-      <link>https://devpoga.org/tags/godot/</link>
+      <link>http://localhost:1313/tags/godot/</link>
       <pubDate>Sat, 23 Jul 2022 00:00:00 +0800</pubDate>
-      <guid>https://devpoga.org/tags/godot/</guid>
+      <guid>http://localhost:1313/tags/godot/</guid>
       <description></description>
     </item>
     <item>
       <title>Neovim</title>
-      <link>https://devpoga.org/tags/neovim/</link>
+      <link>http://localhost:1313/tags/neovim/</link>
       <pubDate>Sat, 23 Jul 2022 00:00:00 +0800</pubDate>
-      <guid>https://devpoga.org/tags/neovim/</guid>
+      <guid>http://localhost:1313/tags/neovim/</guid>
       <description></description>
     </item>
     <item>
       <title>Opensource</title>
-      <link>https://devpoga.org/tags/opensource/</link>
+      <link>http://localhost:1313/tags/opensource/</link>
       <pubDate>Fri, 01 Jul 2022 00:00:00 +0800</pubDate>
-      <guid>https://devpoga.org/tags/opensource/</guid>
+      <guid>http://localhost:1313/tags/opensource/</guid>
       <description></description>
     </item>
     <item>
       <title>Unity</title>
-      <link>https://devpoga.org/tags/unity/</link>
+      <link>http://localhost:1313/tags/unity/</link>
       <pubDate>Fri, 01 Jul 2022 00:00:00 +0800</pubDate>
-      <guid>https://devpoga.org/tags/unity/</guid>
+      <guid>http://localhost:1313/tags/unity/</guid>
       <description></description>
     </item>
     <item>
       <title>Reading</title>
-      <link>https://devpoga.org/tags/reading/</link>
+      <link>http://localhost:1313/tags/reading/</link>
       <pubDate>Sat, 19 Feb 2022 00:00:00 +0800</pubDate>
-      <guid>https://devpoga.org/tags/reading/</guid>
+      <guid>http://localhost:1313/tags/reading/</guid>
       <description></description>
     </item>
     <item>
       <title>Depression</title>
-      <link>https://devpoga.org/tags/depression/</link>
+      <link>http://localhost:1313/tags/depression/</link>
       <pubDate>Sat, 15 Jan 2022 00:00:00 +0800</pubDate>
-      <guid>https://devpoga.org/tags/depression/</guid>
+      <guid>http://localhost:1313/tags/depression/</guid>
       <description></description>
     </item>
     <item>
       <title>Glues</title>
-      <link>https://devpoga.org/tags/glues/</link>
+      <link>http://localhost:1313/tags/glues/</link>
       <pubDate>Sun, 12 Dec 2021 00:00:00 +0800</pubDate>
-      <guid>https://devpoga.org/tags/glues/</guid>
+      <guid>http://localhost:1313/tags/glues/</guid>
       <description></description>
     </item>
     <item>
       <title>Health</title>
-      <link>https://devpoga.org/tags/health/</link>
+      <link>http://localhost:1313/tags/health/</link>
       <pubDate>Sun, 12 Dec 2021 00:00:00 +0800</pubDate>
-      <guid>https://devpoga.org/tags/health/</guid>
+      <guid>http://localhost:1313/tags/health/</guid>
       <description></description>
     </item>
     <item>
       <title>MLOps</title>
-      <link>https://devpoga.org/tags/mlops/</link>
+      <link>http://localhost:1313/tags/mlops/</link>
       <pubDate>Sun, 12 Dec 2021 00:00:00 +0800</pubDate>
-      <guid>https://devpoga.org/tags/mlops/</guid>
+      <guid>http://localhost:1313/tags/mlops/</guid>
       <description></description>
     </item>
     <item>
       <title>Naps</title>
-      <link>https://devpoga.org/tags/naps/</link>
+      <link>http://localhost:1313/tags/naps/</link>
       <pubDate>Sun, 12 Dec 2021 00:00:00 +0800</pubDate>
-      <guid>https://devpoga.org/tags/naps/</guid>
+      <guid>http://localhost:1313/tags/naps/</guid>
       <description></description>
     </item>
     <item>
       <title>Machine Learning</title>
-      <link>https://devpoga.org/tags/machine-learning/</link>
+      <link>http://localhost:1313/tags/machine-learning/</link>
       <pubDate>Sat, 27 Nov 2021 00:00:00 +0800</pubDate>
-      <guid>https://devpoga.org/tags/machine-learning/</guid>
+      <guid>http://localhost:1313/tags/machine-learning/</guid>
       <description></description>
     </item>
     <item>
       <title>Patterns</title>
-      <link>https://devpoga.org/tags/patterns/</link>
+      <link>http://localhost:1313/tags/patterns/</link>
       <pubDate>Sat, 27 Nov 2021 00:00:00 +0800</pubDate>
-      <guid>https://devpoga.org/tags/patterns/</guid>
+      <guid>http://localhost:1313/tags/patterns/</guid>
       <description></description>
     </item>
     <item>
       <title>Leadership</title>
-      <link>https://devpoga.org/tags/leadership/</link>
+      <link>http://localhost:1313/tags/leadership/</link>
       <pubDate>Sun, 19 Sep 2021 00:00:00 +0800</pubDate>
-      <guid>https://devpoga.org/tags/leadership/</guid>
+      <guid>http://localhost:1313/tags/leadership/</guid>
       <description></description>
     </item>
     <item>
       <title>Notes</title>
-      <link>https://devpoga.org/tags/notes/</link>
+      <link>http://localhost:1313/tags/notes/</link>
       <pubDate>Sun, 19 Sep 2021 00:00:00 +0800</pubDate>
-      <guid>https://devpoga.org/tags/notes/</guid>
+      <guid>http://localhost:1313/tags/notes/</guid>
       <description></description>
     </item>
     <item>
       <title>Organization</title>
-      <link>https://devpoga.org/tags/organization/</link>
+      <link>http://localhost:1313/tags/organization/</link>
       <pubDate>Sun, 19 Sep 2021 00:00:00 +0800</pubDate>
-      <guid>https://devpoga.org/tags/organization/</guid>
+      <guid>http://localhost:1313/tags/organization/</guid>
       <description></description>
     </item>
     <item>
       <title>Essays</title>
-      <link>https://devpoga.org/tags/essays/</link>
+      <link>http://localhost:1313/tags/essays/</link>
       <pubDate>Sat, 18 Sep 2021 00:00:00 +0800</pubDate>
-      <guid>https://devpoga.org/tags/essays/</guid>
+      <guid>http://localhost:1313/tags/essays/</guid>
       <description></description>
     </item>
     <item>
       <title>Julia</title>
-      <link>https://devpoga.org/tags/julia/</link>
+      <link>http://localhost:1313/tags/julia/</link>
       <pubDate>Wed, 04 Aug 2021 00:00:00 +0800</pubDate>
-      <guid>https://devpoga.org/tags/julia/</guid>
+      <guid>http://localhost:1313/tags/julia/</guid>
       <description></description>
     </item>
     <item>
       <title>Communication</title>
-      <link>https://devpoga.org/tags/communication/</link>
+      <link>http://localhost:1313/tags/communication/</link>
       <pubDate>Sat, 24 Jul 2021 00:00:00 +0800</pubDate>
-      <guid>https://devpoga.org/tags/communication/</guid>
+      <guid>http://localhost:1313/tags/communication/</guid>
       <description></description>
     </item>
     <item>
       <title>Lisp</title>
-      <link>https://devpoga.org/tags/lisp/</link>
+      <link>http://localhost:1313/tags/lisp/</link>
       <pubDate>Sat, 01 May 2021 00:00:00 +0800</pubDate>
-      <guid>https://devpoga.org/tags/lisp/</guid>
+      <guid>http://localhost:1313/tags/lisp/</guid>
       <description></description>
     </item>
     <item>
       <title>Condition</title>
-      <link>https://devpoga.org/tags/condition/</link>
+      <link>http://localhost:1313/tags/condition/</link>
       <pubDate>Sun, 25 Apr 2021 00:00:00 +0800</pubDate>
-      <guid>https://devpoga.org/tags/condition/</guid>
+      <guid>http://localhost:1313/tags/condition/</guid>
       <description></description>
     </item>
     <item>
       <title>Compiler</title>
-      <link>https://devpoga.org/tags/compiler/</link>
+      <link>http://localhost:1313/tags/compiler/</link>
       <pubDate>Sat, 19 Dec 2020 00:00:00 +0800</pubDate>
-      <guid>https://devpoga.org/tags/compiler/</guid>
+      <guid>http://localhost:1313/tags/compiler/</guid>
       <description></description>
     </item>
     <item>
       <title>Learn OCaml the Hard Way</title>
-      <link>https://devpoga.org/tags/learn-ocaml-the-hard-way/</link>
+      <link>http://localhost:1313/tags/learn-ocaml-the-hard-way/</link>
       <pubDate>Sat, 19 Dec 2020 00:00:00 +0800</pubDate>
-      <guid>https://devpoga.org/tags/learn-ocaml-the-hard-way/</guid>
+      <guid>http://localhost:1313/tags/learn-ocaml-the-hard-way/</guid>
       <description></description>
     </item>
     <item>
       <title>OCaml</title>
-      <link>https://devpoga.org/tags/ocaml/</link>
+      <link>http://localhost:1313/tags/ocaml/</link>
       <pubDate>Sat, 19 Dec 2020 00:00:00 +0800</pubDate>
-      <guid>https://devpoga.org/tags/ocaml/</guid>
+      <guid>http://localhost:1313/tags/ocaml/</guid>
       <description></description>
     </item>
     <item>
       <title>G0v</title>
-      <link>https://devpoga.org/tags/g0v/</link>
+      <link>http://localhost:1313/tags/g0v/</link>
       <pubDate>Sun, 29 Nov 2020 00:00:00 +0800</pubDate>
-      <guid>https://devpoga.org/tags/g0v/</guid>
+      <guid>http://localhost:1313/tags/g0v/</guid>
       <description></description>
     </item>
     <item>
       <title>IPad</title>
-      <link>https://devpoga.org/tags/ipad/</link>
+      <link>http://localhost:1313/tags/ipad/</link>
       <pubDate>Sat, 01 Aug 2020 00:00:00 +0800</pubDate>
-      <guid>https://devpoga.org/tags/ipad/</guid>
+      <guid>http://localhost:1313/tags/ipad/</guid>
       <description></description>
     </item>
     <item>
       <title>Concurrency</title>
-      <link>https://devpoga.org/tags/concurrency/</link>
+      <link>http://localhost:1313/tags/concurrency/</link>
       <pubDate>Sun, 07 Jun 2020 00:00:00 +0800</pubDate>
-      <guid>https://devpoga.org/tags/concurrency/</guid>
+      <guid>http://localhost:1313/tags/concurrency/</guid>
       <description></description>
     </item>
     <item>
       <title>Scheme</title>
-      <link>https://devpoga.org/tags/scheme/</link>
+      <link>http://localhost:1313/tags/scheme/</link>
       <pubDate>Sun, 07 Jun 2020 00:00:00 +0800</pubDate>
-      <guid>https://devpoga.org/tags/scheme/</guid>
+      <guid>http://localhost:1313/tags/scheme/</guid>
       <description></description>
     </item>
     <item>
       <title>Domain Modeling</title>
-      <link>https://devpoga.org/tags/domain-modeling/</link>
+      <link>http://localhost:1313/tags/domain-modeling/</link>
       <pubDate>Fri, 10 Apr 2020 00:00:00 +0800</pubDate>
-      <guid>https://devpoga.org/tags/domain-modeling/</guid>
+      <guid>http://localhost:1313/tags/domain-modeling/</guid>
       <description></description>
     </item>
     <item>
       <title>Note</title>
-      <link>https://devpoga.org/tags/note/</link>
+      <link>http://localhost:1313/tags/note/</link>
       <pubDate>Fri, 10 Apr 2020 00:00:00 +0800</pubDate>
-      <guid>https://devpoga.org/tags/note/</guid>
+      <guid>http://localhost:1313/tags/note/</guid>
       <description></description>
     </item>
     <item>
       <title>Software Engineering</title>
-      <link>https://devpoga.org/tags/software-engineering/</link>
+      <link>http://localhost:1313/tags/software-engineering/</link>
       <pubDate>Fri, 10 Apr 2020 00:00:00 +0800</pubDate>
-      <guid>https://devpoga.org/tags/software-engineering/</guid>
+      <guid>http://localhost:1313/tags/software-engineering/</guid>
       <description></description>
     </item>
     <item>
       <title>Networking</title>
-      <link>https://devpoga.org/tags/networking/</link>
+      <link>http://localhost:1313/tags/networking/</link>
       <pubDate>Thu, 09 Apr 2020 00:00:00 +0800</pubDate>
-      <guid>https://devpoga.org/tags/networking/</guid>
+      <guid>http://localhost:1313/tags/networking/</guid>
       <description></description>
     </item>
     <item>
       <title>Editor</title>
-      <link>https://devpoga.org/tags/editor/</link>
+      <link>http://localhost:1313/tags/editor/</link>
       <pubDate>Tue, 17 Mar 2020 00:00:00 +0800</pubDate>
-      <guid>https://devpoga.org/tags/editor/</guid>
+      <guid>http://localhost:1313/tags/editor/</guid>
       <description></description>
     </item>
     <item>
       <title>Vim</title>
-      <link>https://devpoga.org/tags/vim/</link>
+      <link>http://localhost:1313/tags/vim/</link>
       <pubDate>Tue, 17 Mar 2020 00:00:00 +0800</pubDate>
-      <guid>https://devpoga.org/tags/vim/</guid>
+      <guid>http://localhost:1313/tags/vim/</guid>
       <description></description>
     </item>
     <item>
       <title>Productivity</title>
-      <link>https://devpoga.org/tags/productivity/</link>
+      <link>http://localhost:1313/tags/productivity/</link>
       <pubDate>Fri, 20 Sep 2019 00:00:00 +0800</pubDate>
-      <guid>https://devpoga.org/tags/productivity/</guid>
+      <guid>http://localhost:1313/tags/productivity/</guid>
       <description></description>
     </item>
     <item>
       <title>Cryptography</title>
-      <link>https://devpoga.org/tags/cryptography/</link>
+      <link>http://localhost:1313/tags/cryptography/</link>
       <pubDate>Wed, 04 Sep 2019 00:00:00 +0800</pubDate>
-      <guid>https://devpoga.org/tags/cryptography/</guid>
+      <guid>http://localhost:1313/tags/cryptography/</guid>
       <description></description>
     </item>
     <item>
       <title>Privacy</title>
-      <link>https://devpoga.org/tags/privacy/</link>
+      <link>http://localhost:1313/tags/privacy/</link>
       <pubDate>Wed, 04 Sep 2019 00:00:00 +0800</pubDate>
-      <guid>https://devpoga.org/tags/privacy/</guid>
+      <guid>http://localhost:1313/tags/privacy/</guid>
       <description></description>
     </item>
     <item>
       <title>Programming Language</title>
-      <link>https://devpoga.org/tags/programming-language/</link>
+      <link>http://localhost:1313/tags/programming-language/</link>
       <pubDate>Fri, 12 Jul 2019 00:00:00 +0800</pubDate>
-      <guid>https://devpoga.org/tags/programming-language/</guid>
+      <guid>http://localhost:1313/tags/programming-language/</guid>
       <description></description>
     </item>
     <item>
       <title>Writing</title>
-      <link>https://devpoga.org/tags/writing/</link>
+      <link>http://localhost:1313/tags/writing/</link>
       <pubDate>Sat, 29 Jun 2019 00:00:00 +0800</pubDate>
-      <guid>https://devpoga.org/tags/writing/</guid>
+      <guid>http://localhost:1313/tags/writing/</guid>
       <description></description>
     </item>
     <item>
       <title>Go</title>
-      <link>https://devpoga.org/tags/go/</link>
+      <link>http://localhost:1313/tags/go/</link>
       <pubDate>Mon, 29 Apr 2019 00:00:00 +0800</pubDate>
-      <guid>https://devpoga.org/tags/go/</guid>
+      <guid>http://localhost:1313/tags/go/</guid>
       <description></description>
     </item>
     <item>
       <title>Programming Languages</title>
-      <link>https://devpoga.org/tags/programming-languages/</link>
+      <link>http://localhost:1313/tags/programming-languages/</link>
       <pubDate>Mon, 29 Apr 2019 00:00:00 +0800</pubDate>
-      <guid>https://devpoga.org/tags/programming-languages/</guid>
+      <guid>http://localhost:1313/tags/programming-languages/</guid>
       <description></description>
     </item>
     <item>
       <title>Interpreter and Compiler</title>
-      <link>https://devpoga.org/tags/interpreter-and-compiler/</link>
+      <link>http://localhost:1313/tags/interpreter-and-compiler/</link>
       <pubDate>Tue, 26 Feb 2019 00:00:00 +0800</pubDate>
-      <guid>https://devpoga.org/tags/interpreter-and-compiler/</guid>
+      <guid>http://localhost:1313/tags/interpreter-and-compiler/</guid>
       <description></description>
     </item>
     <item>
       <title>Lua</title>
-      <link>https://devpoga.org/tags/lua/</link>
+      <link>http://localhost:1313/tags/lua/</link>
       <pubDate>Tue, 26 Feb 2019 00:00:00 +0800</pubDate>
-      <guid>https://devpoga.org/tags/lua/</guid>
+      <guid>http://localhost:1313/tags/lua/</guid>
       <description></description>
     </item>
     <item>
       <title>Actix</title>
-      <link>https://devpoga.org/tags/actix/</link>
+      <link>http://localhost:1313/tags/actix/</link>
       <pubDate>Fri, 12 Oct 2018 00:00:00 +0800</pubDate>
-      <guid>https://devpoga.org/tags/actix/</guid>
+      <guid>http://localhost:1313/tags/actix/</guid>
       <description></description>
     </item>
     <item>
       <title>Rust</title>
-      <link>https://devpoga.org/tags/rust/</link>
+      <link>http://localhost:1313/tags/rust/</link>
       <pubDate>Fri, 12 Oct 2018 00:00:00 +0800</pubDate>
-      <guid>https://devpoga.org/tags/rust/</guid>
+      <guid>http://localhost:1313/tags/rust/</guid>
       <description></description>
     </item>
     <item>
       <title>科普</title>
-      <link>https://devpoga.org/tags/%E7%A7%91%E6%99%AE/</link>
+      <link>http://localhost:1313/tags/%E7%A7%91%E6%99%AE/</link>
       <pubDate>Mon, 16 Jul 2018 06:19:38 +0000</pubDate>
-      <guid>https://devpoga.org/tags/%E7%A7%91%E6%99%AE/</guid>
+      <guid>http://localhost:1313/tags/%E7%A7%91%E6%99%AE/</guid>
       <description></description>
     </item>
     <item>
       <title>系統架構</title>
-      <link>https://devpoga.org/tags/%E7%B3%BB%E7%B5%B1%E6%9E%B6%E6%A7%8B/</link>
+      <link>http://localhost:1313/tags/%E7%B3%BB%E7%B5%B1%E6%9E%B6%E6%A7%8B/</link>
       <pubDate>Mon, 16 Jul 2018 06:19:38 +0000</pubDate>
-      <guid>https://devpoga.org/tags/%E7%B3%BB%E7%B5%B1%E6%9E%B6%E6%A7%8B/</guid>
+      <guid>http://localhost:1313/tags/%E7%B3%BB%E7%B5%B1%E6%9E%B6%E6%A7%8B/</guid>
       <description></description>
     </item>
     <item>
       <title>遊戲開發</title>
-      <link>https://devpoga.org/tags/%E9%81%8A%E6%88%B2%E9%96%8B%E7%99%BC/</link>
+      <link>http://localhost:1313/tags/%E9%81%8A%E6%88%B2%E9%96%8B%E7%99%BC/</link>
       <pubDate>Mon, 16 Jul 2018 06:19:38 +0000</pubDate>
-      <guid>https://devpoga.org/tags/%E9%81%8A%E6%88%B2%E9%96%8B%E7%99%BC/</guid>
+      <guid>http://localhost:1313/tags/%E9%81%8A%E6%88%B2%E9%96%8B%E7%99%BC/</guid>
       <description></description>
     </item>
     <item>
       <title>Luajit</title>
-      <link>https://devpoga.org/tags/luajit/</link>
+      <link>http://localhost:1313/tags/luajit/</link>
       <pubDate>Wed, 18 Apr 2018 00:00:00 +0800</pubDate>
-      <guid>https://devpoga.org/tags/luajit/</guid>
+      <guid>http://localhost:1313/tags/luajit/</guid>
       <description></description>
     </item>
     <item>
       <title>帶您讀原碼</title>
-      <link>https://devpoga.org/tags/%E5%B8%B6%E6%82%A8%E8%AE%80%E5%8E%9F%E7%A2%BC/</link>
+      <link>http://localhost:1313/tags/%E5%B8%B6%E6%82%A8%E8%AE%80%E5%8E%9F%E7%A2%BC/</link>
       <pubDate>Wed, 18 Apr 2018 00:00:00 +0800</pubDate>
-      <guid>https://devpoga.org/tags/%E5%B8%B6%E6%82%A8%E8%AE%80%E5%8E%9F%E7%A2%BC/</guid>
+      <guid>http://localhost:1313/tags/%E5%B8%B6%E6%82%A8%E8%AE%80%E5%8E%9F%E7%A2%BC/</guid>
       <description></description>
     </item>
     <item>
       <title>Serverless</title>
-      <link>https://devpoga.org/tags/serverless/</link>
+      <link>http://localhost:1313/tags/serverless/</link>
       <pubDate>Tue, 06 Feb 2018 00:00:00 +0800</pubDate>
-      <guid>https://devpoga.org/tags/serverless/</guid>
+      <guid>http://localhost:1313/tags/serverless/</guid>
       <description></description>
     </item>
     <item>
       <title>Kappa</title>
-      <link>https://devpoga.org/tags/kappa/</link>
+      <link>http://localhost:1313/tags/kappa/</link>
       <pubDate>Fri, 22 Dec 2017 07:32:07 +0000</pubDate>
-      <guid>https://devpoga.org/tags/kappa/</guid>
+      <guid>http://localhost:1313/tags/kappa/</guid>
       <description></description>
     </item>
     <item>
       <title>Log</title>
-      <link>https://devpoga.org/tags/log/</link>
+      <link>http://localhost:1313/tags/log/</link>
       <pubDate>Fri, 22 Dec 2017 07:32:07 +0000</pubDate>
-      <guid>https://devpoga.org/tags/log/</guid>
+      <guid>http://localhost:1313/tags/log/</guid>
       <description></description>
     </item>
     <item>
       <title>Burnout</title>
-      <link>https://devpoga.org/tags/burnout/</link>
+      <link>http://localhost:1313/tags/burnout/</link>
       <pubDate>Mon, 02 Oct 2017 00:00:00 +0800</pubDate>
-      <guid>https://devpoga.org/tags/burnout/</guid>
+      <guid>http://localhost:1313/tags/burnout/</guid>
       <description></description>
     </item>
     <item>
       <title>Open Source</title>
-      <link>https://devpoga.org/tags/open-source/</link>
+      <link>http://localhost:1313/tags/open-source/</link>
       <pubDate>Mon, 02 Oct 2017 00:00:00 +0800</pubDate>
-      <guid>https://devpoga.org/tags/open-source/</guid>
+      <guid>http://localhost:1313/tags/open-source/</guid>
       <description></description>
     </item>
     <item>
       <title>Ownership</title>
-      <link>https://devpoga.org/tags/ownership/</link>
+      <link>http://localhost:1313/tags/ownership/</link>
       <pubDate>Mon, 02 Oct 2017 00:00:00 +0800</pubDate>
-      <guid>https://devpoga.org/tags/ownership/</guid>
+      <guid>http://localhost:1313/tags/ownership/</guid>
       <description></description>
     </item>
     <item>
       <title>Omnifocus</title>
-      <link>https://devpoga.org/tags/omnifocus/</link>
+      <link>http://localhost:1313/tags/omnifocus/</link>
       <pubDate>Thu, 16 Feb 2017 18:58:42 +0000</pubDate>
-      <guid>https://devpoga.org/tags/omnifocus/</guid>
+      <guid>http://localhost:1313/tags/omnifocus/</guid>
       <description></description>
     </item>
     <item>
       <title>Coscup</title>
-      <link>https://devpoga.org/tags/coscup/</link>
+      <link>http://localhost:1313/tags/coscup/</link>
       <pubDate>Sat, 27 Aug 2016 05:06:01 +0000</pubDate>
-      <guid>https://devpoga.org/tags/coscup/</guid>
+      <guid>http://localhost:1313/tags/coscup/</guid>
       <description></description>
     </item>
     <item>
       <title>Design</title>
-      <link>https://devpoga.org/tags/design/</link>
+      <link>http://localhost:1313/tags/design/</link>
       <pubDate>Sun, 17 Jul 2016 06:02:04 +0000</pubDate>
-      <guid>https://devpoga.org/tags/design/</guid>
+      <guid>http://localhost:1313/tags/design/</guid>
       <description></description>
     </item>
     <item>
       <title>UX</title>
-      <link>https://devpoga.org/tags/ux/</link>
+      <link>http://localhost:1313/tags/ux/</link>
       <pubDate>Sun, 17 Jul 2016 06:02:04 +0000</pubDate>
-      <guid>https://devpoga.org/tags/ux/</guid>
+      <guid>http://localhost:1313/tags/ux/</guid>
       <description></description>
     </item>
     <item>
       <title>Communicating</title>
-      <link>https://devpoga.org/tags/communicating/</link>
+      <link>http://localhost:1313/tags/communicating/</link>
       <pubDate>Tue, 17 May 2016 15:09:04 +0000</pubDate>
-      <guid>https://devpoga.org/tags/communicating/</guid>
+      <guid>http://localhost:1313/tags/communicating/</guid>
       <description></description>
     </item>
     <item>
       <title>Story Telling</title>
-      <link>https://devpoga.org/tags/story-telling/</link>
+      <link>http://localhost:1313/tags/story-telling/</link>
       <pubDate>Tue, 17 May 2016 15:09:04 +0000</pubDate>
-      <guid>https://devpoga.org/tags/story-telling/</guid>
+      <guid>http://localhost:1313/tags/story-telling/</guid>
       <description></description>
     </item>
     <item>
       <title>Teaching</title>
-      <link>https://devpoga.org/tags/teaching/</link>
+      <link>http://localhost:1313/tags/teaching/</link>
       <pubDate>Tue, 17 May 2016 15:09:04 +0000</pubDate>
-      <guid>https://devpoga.org/tags/teaching/</guid>
+      <guid>http://localhost:1313/tags/teaching/</guid>
       <description></description>
     </item>
   </channel>

@@ -2,24 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on Dev.Poga</title>
-    <link>https://devpoga.org/categories/</link>
+    <link>http://localhost:1313/categories/</link>
     <description>Recent content in Categories on Dev.Poga</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 05 Dec 2023 00:00:00 +0800</lastBuildDate>
-    <atom:link href="https://devpoga.org/categories/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/categories/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Blog</title>
-      <link>https://devpoga.org/categories/blog/</link>
+      <link>http://localhost:1313/categories/blog/</link>
       <pubDate>Tue, 05 Dec 2023 00:00:00 +0800</pubDate>
-      <guid>https://devpoga.org/categories/blog/</guid>
+      <guid>http://localhost:1313/categories/blog/</guid>
       <description></description>
     </item>
     <item>
       <title>Talks</title>
-      <link>https://devpoga.org/categories/talks/</link>
+      <link>http://localhost:1313/categories/talks/</link>
       <pubDate>Tue, 06 Feb 2018 00:00:00 +0800</pubDate>
-      <guid>https://devpoga.org/categories/talks/</guid>
+      <guid>http://localhost:1313/categories/talks/</guid>
       <description></description>
     </item>
   </channel>

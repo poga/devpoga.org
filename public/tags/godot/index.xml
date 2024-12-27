@@ -2,24 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Godot on Dev.Poga</title>
-    <link>https://devpoga.org/tags/godot/</link>
+    <link>http://localhost:1313/tags/godot/</link>
     <description>Recent content in Godot on Dev.Poga</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 23 Jul 2022 00:00:00 +0800</lastBuildDate>
-    <atom:link href="https://devpoga.org/tags/godot/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/godot/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Developing Godot Projects with Neovim</title>
-      <link>https://devpoga.org/blog/2022-07-23_neovim_godot/</link>
+      <link>http://localhost:1313/blog/2022-07-23_neovim_godot/</link>
       <pubDate>Sat, 23 Jul 2022 00:00:00 +0800</pubDate>
-      <guid>https://devpoga.org/blog/2022-07-23_neovim_godot/</guid>
+      <guid>http://localhost:1313/blog/2022-07-23_neovim_godot/</guid>
       <description>&lt;p&gt;When I started using &lt;a href=&#34;https://godotengine.org/&#34;&gt;Godot Engine&lt;/a&gt;, what surprised me the most is the built-in &lt;a href=&#34;https://microsoft.github.io/language-server-protocol/&#34;&gt;Language Server Protocol&lt;/a&gt; support. Thank to it, I can easily develop &lt;a href=&#34;https://docs.godotengine.org/en/stable/tutorials/scripting/gdscript/gdscript_basics.html&#34;&gt;GDScript&lt;/a&gt; with all my customized vim configs.&lt;/p&gt;&#xA;&lt;h2 id=&#34;setup&#34;&gt;Setup&lt;/h2&gt;&#xA;&lt;p&gt;Install &lt;a href=&#34;https://github.com/habamax/vim-godot&#34;&gt;&lt;code&gt;vim-godot&lt;/code&gt;&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;Plug &amp;#39;habamax/vim-godot&amp;#39;&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Install &lt;a href=&#34;https://github.com/mhinz/neovim-remote&#34;&gt;&lt;code&gt;neovim-remote&lt;/code&gt;&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;pip3 install neovim-remote&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Setup Neovim as the external editor for Godot&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Open menu Editor/Editor Settings/ then navigate to General/External/:&lt;/li&gt;&#xA;&lt;li&gt;Tick &lt;code&gt;Use external editor&lt;/code&gt;&lt;/li&gt;&#xA;&lt;li&gt;Set nvr to Exec Path, use &lt;code&gt;which nvr&lt;/code&gt; to get the absolute path.&lt;/li&gt;&#xA;&lt;li&gt;Add &lt;code&gt;--servername godothost --remote-send &amp;quot;&amp;lt;C-\&amp;gt;&amp;lt;C-N&amp;gt;:n {file}&amp;lt;CR&amp;gt;:call cursor({line},{col})&amp;lt;CR&amp;gt;&amp;quot;&lt;/code&gt; to Exec Flags&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;p&gt;Start Neovim and listening to remote commands:&lt;/p&gt;</description>
     </item>
     <item>
       <title>Unity, Godot, and Right to Repair</title>
-      <link>https://devpoga.org/blog/2022-07-01_unity_godot_right_to_repair/</link>
+      <link>http://localhost:1313/blog/2022-07-01_unity_godot_right_to_repair/</link>
       <pubDate>Fri, 01 Jul 2022 00:00:00 +0800</pubDate>
-      <guid>https://devpoga.org/blog/2022-07-01_unity_godot_right_to_repair/</guid>
+      <guid>http://localhost:1313/blog/2022-07-01_unity_godot_right_to_repair/</guid>
       <description>&lt;p&gt;Some years ago, &lt;a href=&#34;https://unity.com/&#34;&gt;Unity&lt;/a&gt; dominated the game engine market. Everyone would recommend Unity to fellow game developers &lt;a href=&#34;https://alextardif.com/LearningGraphics.html&#34;&gt;without thinking&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;p&gt;However, Unity (as a game engine) is &lt;a href=&#34;https://garry.blog/unity-2022/&#34;&gt;&lt;strong&gt;not in a great shape&lt;/strong&gt;&lt;/a&gt; right now:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Deprecating features while the replacement isn’t ready,&lt;/li&gt;&#xA;&lt;li&gt;Creating multiple new implementations of features from scratch instead of improving what’s there.&lt;/li&gt;&#xA;&lt;li&gt;Abandoning their own features in favour of acquiring community-made versions, and then abandoning them,&lt;/li&gt;&#xA;&lt;li&gt;Splitting the whole render system into two incompatible, contrary versions, deprecating the previous render system.&lt;/li&gt;&#xA;&lt;li&gt;Splitting the UI system into two/three and trying to use them all at the same time,&lt;/li&gt;&#xA;&lt;li&gt;&amp;hellip;and the worst: shutting down Unity Answers and redirecting it to the Unity Forums. (Although &lt;a href=&#34;https://forum.unity.com/threads/unity-answers-shutdown-canceled.1293360/&#34;&gt;they walked back the decision&lt;/a&gt;)&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;It&amp;rsquo;s pretty obvious that Unity (as a company) are &lt;strong&gt;oblivious about their product and their customer&lt;/strong&gt;. The stock price and shareholders&amp;rsquo; value becomes more important than game developers.&lt;/p&gt;</description>
     </item>
   </channel>

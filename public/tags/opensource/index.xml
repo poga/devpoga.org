@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Opensource on Dev.Poga</title>
-    <link>https://devpoga.org/tags/opensource/</link>
+    <link>http://localhost:1313/tags/opensource/</link>
     <description>Recent content in Opensource on Dev.Poga</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 01 Jul 2022 00:00:00 +0800</lastBuildDate>
-    <atom:link href="https://devpoga.org/tags/opensource/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/opensource/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Unity, Godot, and Right to Repair</title>
-      <link>https://devpoga.org/blog/2022-07-01_unity_godot_right_to_repair/</link>
+      <link>http://localhost:1313/blog/2022-07-01_unity_godot_right_to_repair/</link>
       <pubDate>Fri, 01 Jul 2022 00:00:00 +0800</pubDate>
-      <guid>https://devpoga.org/blog/2022-07-01_unity_godot_right_to_repair/</guid>
+      <guid>http://localhost:1313/blog/2022-07-01_unity_godot_right_to_repair/</guid>
       <description>&lt;p&gt;Some years ago, &lt;a href=&#34;https://unity.com/&#34;&gt;Unity&lt;/a&gt; dominated the game engine market. Everyone would recommend Unity to fellow game developers &lt;a href=&#34;https://alextardif.com/LearningGraphics.html&#34;&gt;without thinking&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;p&gt;However, Unity (as a game engine) is &lt;a href=&#34;https://garry.blog/unity-2022/&#34;&gt;&lt;strong&gt;not in a great shape&lt;/strong&gt;&lt;/a&gt; right now:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Deprecating features while the replacement isn’t ready,&lt;/li&gt;&#xA;&lt;li&gt;Creating multiple new implementations of features from scratch instead of improving what’s there.&lt;/li&gt;&#xA;&lt;li&gt;Abandoning their own features in favour of acquiring community-made versions, and then abandoning them,&lt;/li&gt;&#xA;&lt;li&gt;Splitting the whole render system into two incompatible, contrary versions, deprecating the previous render system.&lt;/li&gt;&#xA;&lt;li&gt;Splitting the UI system into two/three and trying to use them all at the same time,&lt;/li&gt;&#xA;&lt;li&gt;&amp;hellip;and the worst: shutting down Unity Answers and redirecting it to the Unity Forums. (Although &lt;a href=&#34;https://forum.unity.com/threads/unity-answers-shutdown-canceled.1293360/&#34;&gt;they walked back the decision&lt;/a&gt;)&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;It&amp;rsquo;s pretty obvious that Unity (as a company) are &lt;strong&gt;oblivious about their product and their customer&lt;/strong&gt;. The stock price and shareholders&amp;rsquo; value becomes more important than game developers.&lt;/p&gt;</description>
     </item>
   </channel>

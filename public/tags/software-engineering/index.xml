@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Software Engineering on Dev.Poga</title>
-    <link>https://devpoga.org/tags/software-engineering/</link>
+    <link>http://localhost:1313/tags/software-engineering/</link>
     <description>Recent content in Software Engineering on Dev.Poga</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 10 Apr 2020 00:00:00 +0800</lastBuildDate>
-    <atom:link href="https://devpoga.org/tags/software-engineering/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/software-engineering/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Domain Modeling Made Functional</title>
-      <link>https://devpoga.org/blog/2020-04-10_domain-modeling-made-functional/</link>
+      <link>http://localhost:1313/blog/2020-04-10_domain-modeling-made-functional/</link>
       <pubDate>Fri, 10 Apr 2020 00:00:00 +0800</pubDate>
-      <guid>https://devpoga.org/blog/2020-04-10_domain-modeling-made-functional/</guid>
-      <description>&lt;p&gt;&lt;img src=&#34;https://devpoga.org/post/2020-04-10_domain-modeling-made-functional/book.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;Notes on the book &lt;a href=&#34;https://www.amazon.com/Domain-Modeling-Made-Functional-Domain-Driven/dp/1680502549&#34;&gt;Domain Modeling Made Functional: Tackle Software Complexity with Domain-Driven Design and F#&lt;/a&gt;.&lt;/p&gt;</description>
+      <guid>http://localhost:1313/blog/2020-04-10_domain-modeling-made-functional/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;http://localhost:1313/post/2020-04-10_domain-modeling-made-functional/book.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;Notes on the book &lt;a href=&#34;https://www.amazon.com/Domain-Modeling-Made-Functional-Domain-Driven/dp/1680502549&#34;&gt;Domain Modeling Made Functional: Tackle Software Complexity with Domain-Driven Design and F#&lt;/a&gt;.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

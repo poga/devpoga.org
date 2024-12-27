@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Open Source on Dev.Poga</title>
-    <link>https://devpoga.org/tags/open-source/</link>
+    <link>http://localhost:1313/tags/open-source/</link>
     <description>Recent content in Open Source on Dev.Poga</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 30 Apr 2019 21:56:01 +0800</lastBuildDate>
-    <atom:link href="https://devpoga.org/tags/open-source/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/open-source/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Minimum Viable Ownership</title>
-      <link>https://devpoga.org/blog/2017-10-02_minimum_viable_ownership/</link>
+      <link>http://localhost:1313/blog/2017-10-02_minimum_viable_ownership/</link>
       <pubDate>Mon, 02 Oct 2017 00:00:00 +0800</pubDate>
-      <guid>https://devpoga.org/blog/2017-10-02_minimum_viable_ownership/</guid>
+      <guid>http://localhost:1313/blog/2017-10-02_minimum_viable_ownership/</guid>
       <description>&lt;p&gt;我始終不喜歡「擁有」的概念。那是種排他、缺乏多樣性的想法。&lt;/p&gt;&#xA;&lt;p&gt;Open Source 也是如此。&lt;/p&gt;</description>
     </item>
   </channel>

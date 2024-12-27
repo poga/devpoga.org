@@ -2,24 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Communication on Dev.Poga</title>
-    <link>https://devpoga.org/tags/communication/</link>
+    <link>http://localhost:1313/tags/communication/</link>
     <description>Recent content in Communication on Dev.Poga</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 24 Jul 2021 00:00:00 +0800</lastBuildDate>
-    <atom:link href="https://devpoga.org/tags/communication/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/communication/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>CHECKLIST FOR ORGANIZATIONAL HEALTH</title>
-      <link>https://devpoga.org/blog/2021-07-25_organization_health/</link>
+      <link>http://localhost:1313/blog/2021-07-25_organization_health/</link>
       <pubDate>Sat, 24 Jul 2021 00:00:00 +0800</pubDate>
-      <guid>https://devpoga.org/blog/2021-07-25_organization_health/</guid>
-      <description>&lt;p&gt;&lt;img src=&#34;https://devpoga.org/post/2021-07-25_organization_health/book.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;</description>
+      <guid>http://localhost:1313/blog/2021-07-25_organization_health/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;http://localhost:1313/post/2021-07-25_organization_health/book.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>On Communication</title>
-      <link>https://devpoga.org/blog/2020-04-21_on-communication/</link>
+      <link>http://localhost:1313/blog/2020-04-21_on-communication/</link>
       <pubDate>Tue, 21 Apr 2020 00:00:00 +0800</pubDate>
-      <guid>https://devpoga.org/blog/2020-04-21_on-communication/</guid>
+      <guid>http://localhost:1313/blog/2020-04-21_on-communication/</guid>
       <description>&lt;p&gt;Reading List.&lt;/p&gt;</description>
     </item>
   </channel>
