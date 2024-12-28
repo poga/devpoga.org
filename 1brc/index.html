@@ -165,7 +165,7 @@ fn main() {
 
 <md-block>
 
-However we introduced an ugly and slow `String::from_utf8_lossy` to convert the value to a string, which shows up in the flamegraph.
+However we introduced an ugly and slow `String::from_utf8_lossy` to convert the value to a string to use the `parse` method, which shows up in the flamegraph.
 
 ![](./02.svg)
 
