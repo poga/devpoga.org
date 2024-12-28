@@ -1,0 +1,309 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> 1brc - Dev.Poga</title>
+  <script type="module" src="https://md-block.verou.me/md-block.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/default.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+  <script>hljs.highlightAll();</script>
+</head>
+<body>
+  <md-block>
+
+Here's my note on doing the [One billion rows challenge](https://github.com/gunnarmorling/1brc).
+
+My goal here is to:
+
+1. find the reasonably optimized solution that's still readable and maintainable for a new-grade programmer.
+2. Show that how easy it is to optimize code with the help of the flamegraph.
+
+You can find the code [here](https://github.com/poga/onebrc/blob/main/src/main.rs)
+
+# Step 1. Unoptimized: 73s
+
+The baseline running on my M2 macbook with 24GB of RAM tooks 73s to run. not bad.
+
+  </md-block>
+
+<pre><code>
+use std::collections::HashMap;
+use std::env::args;
+use std::io::Read;
+
+struct Record {
+    count: i32,
+    min: f32,
+    max: f32,
+    sum: f32,
+}
+
+impl Record {
+    fn default() -> Record {
+        Record {
+            count: 0,
+            min: f32::INFINITY,
+            max: f32::NEG_INFINITY,
+            sum: 0.0,
+        }
+    }
+
+    fn add(&mut self, value: f32) {
+        self.count += 1;
+        self.sum += value;
+        self.min = self.min.min(value);
+        self.max = self.max.max(value);
+    }
+
+    fn avg(&self) -> f32 {
+        self.sum / self.count as f32
+    }
+}
+
+fn main() {
+    let filename = args().nth(1).unwrap_or("measurements.txt".to_string());
+    let mut data = String::new();
+    std::fs::File::open(filename)
+        .expect("Could not open file")
+        .read_to_string(&mut data)
+        .expect("Could not read file");
+
+    let mut h = HashMap::new();
+    for line in data.lines() {
+        let (name, value) = line.split_once(';').unwrap();
+        let value: f32 = value.parse().expect("Could not parse value");
+        h.entry(name.to_string())
+            .or_insert(Record::default())
+            .add(value);
+    }
+
+    let mut v: Vec<_> = h.iter().collect();
+    v.sort_unstable_by_key(|p| p.0);
+    for (name, r) in v {
+        println!("{name}: {:.1}/{:.1}/{:.1}", r.min, r.avg(), r.max);
+    }
+}
+</code></pre>
+<md-block>
+
+Here's the flamegraph with `cargo flamegraph`. Some obvious bottlenecks are the `HashMap` and string `split` operations.
+<div><img src="./01.svg" /></div>
+
+# Step 2. `memchr` crate: 40s
+
+simply switch from `split_once` to the SIMD-optimized [`memchr`](https://docs.rs/memchr/latest/memchr/) crate, the runtime is reduced to 40s.
+
+</md-block>
+
+<pre><code>
+use memchr::memchr;
+use std::collections::HashMap;
+use std::env::args;
+use std::io::Read;
+
+struct Record {
+    count: i32,
+    min: f32,
+    max: f32,
+    sum: f32,
+}
+
+impl Record {
+    fn default() -> Record {
+        Record {
+            count: 0,
+            min: f32::INFINITY,
+            max: f32::NEG_INFINITY,
+            sum: 0.0,
+        }
+    }
+
+    fn add(&mut self, value: f32) {
+        self.count += 1;
+        self.sum += value;
+        self.min = self.min.min(value);
+        self.max = self.max.max(value);
+    }
+
+    fn avg(&self) -> f32 {
+        self.sum / self.count as f32
+    }
+}
+
+fn main() {
+    let filename = args().nth(1).unwrap_or("measurements.txt".to_string());
+    let mut data = String::new();
+    std::fs::File::open(filename)
+        .expect("Could not open file")
+        .read_to_string(&mut data)
+        .expect("Could not read file");
+
+    let mut h = HashMap::new();
+    let mut data = data.as_bytes();
+    loop {
+        let Some(sep) = memchr(b';', data) else {
+            break;
+        };
+        let end = memchr(b'\n', &data[sep..]).unwrap();
+        let name = &data[..sep];
+        let value = &data[sep + 1..sep + end];
+        let val = String::from_utf8_lossy(value)
+            .parse::<f32>()
+            .expect("Could not parse value");
+        h.entry(name).or_insert(Record::default()).add(val);
+        data = &data[sep + end + 1..];
+    }
+
+    let mut v: Vec<_> = h.iter().collect();
+    v.sort_unstable_by_key(|p| p.0);
+    for (name, r) in v {
+        println!("{:?}: {:.1}/{:.1}/{:.1}", name, r.min, r.avg(), r.max);
+    }
+}
+</code></pre>
+
+<md-block>
+
+However we introduced an ugly and slow `String::from_utf8_lossy` to convert the value to a string, which shows up in the flamegraph.
+
+![](./02.svg)
+
+# Step 3. Manual parsing: 28.1s
+
+By manually parsing the float value into a fixed-precision i32 signed integer, we can reduce the runtime to 28.1s.
+
+</md-block>
+
+<pre><code>
+use memchr::memchr;
+use std::collections::HashMap;
+use std::env::args;
+use std::io::Read;
+
+struct Record {
+    count: i32,
+    min: i32,
+    max: i32,
+    sum: i32,
+}
+
+impl Record {
+    fn default() -> Record {
+        Record {
+            count: 0,
+            min: i32::MAX,
+            max: i32::MIN,
+            sum: 0,
+        }
+    }
+
+    fn add(&mut self, value: i32) {
+        self.count += 1;
+        self.sum += value;
+        self.min = self.min.min(value);
+        self.max = self.max.max(value);
+    }
+
+    fn avg(&self) -> i32 {
+        self.sum / self.count as i32
+    }
+}
+
+fn main() {
+    let filename = args().nth(1).unwrap_or("measurements.txt".to_string());
+    let mut data = String::new();
+    std::fs::File::open(filename)
+        .expect("Could not open file")
+        .read_to_string(&mut data)
+        .expect("Could not read file");
+
+    let mut h = HashMap::new();
+    let mut data = data.as_bytes();
+    loop {
+        let Some(sep) = memchr(b';', data) else {
+            break;
+        };
+        let end = memchr(b'\n', &data[sep..]).unwrap();
+        let name = &data[..sep];
+        let value = &data[sep + 1..sep + end];
+        h.entry(name).or_insert(Record::default()).add(parse(value));
+        data = &data[sep + end + 1..];
+    }
+
+    let mut v: Vec<_> = h.iter().collect();
+    v.sort_unstable_by_key(|p| p.0);
+    for (name, r) in v {
+        println!(
+            "{:?}: {}/{}/{}",
+            *name,
+            format(r.min),
+            format(r.avg()),
+            format(r.max)
+        );
+    }
+}
+
+// parse into a fixed-precision i32 signed integer
+fn parse(mut s: &[u8]) -> i32 {
+    let neg = if s[0] == b'-' {
+        s = &s[1..];
+        true
+    } else {
+        false
+    };
+    // s = abc.d
+    let (a, b, c, d) = match s {
+        [c, b'.', d] => (0, 0, c - b'0', d - b'0'),
+        [b, c, b'.', d] => (0, b - b'0', c - b'0', d - b'0'),
+        [a, b, c, b'.', d] => (a - b'0', b - b'0', c - b'0', d - b'0'),
+        [c] => (0, 0, 0, c - b'0'),
+        [b, c] => (0, b - b'0', c - b'0', 0),
+        [a, b, c] => (a - b'0', b - b'0', c - b'0', 0),
+        _ => panic!("Unknown patters {:?}", std::str::from_utf8(s).unwrap()),
+    };
+    let v = a as i32 * 1000 + b as i32 * 100 + c as i32 * 10 + d as i32;
+    if neg {
+        -v
+    } else {
+        v
+    }
+}
+
+fn format(v: i32) -> String {
+    format!("{:.1}", v as f64 / 10.0)
+}
+</code></pre>
+
+<md-block>
+
+From the flamegraph, we can see that the String::from_utf8_lossy is gone. The `HashMap` is our next target.
+
+![](./03.svg)
+
+# Step 4. `hashbrown` crate: 23.1s
+
+Thanks to the rust's ecosystem, we can simply switch to the [`hashbrown`](https://docs.rs/hashbrown/0.9.1/hashbrown/) crate, which is a faster drop-in replacement for the standard library's `HashMap`.
+
+The code only needs a single change: `use hashbrown::HashMap;`.
+
+![](./04.svg)
+
+From the above (kind of useless) flamegraph, we can't see any obvious bottlenecks. I guess everything is inlined?
+The next step would be to profile the code with a more fine-grained tool like `perf report`.
+
+I tried to use memmap to map the file into memory, but it didn't show visible performance improvement.
+
+The code can also be easily parallelized, but I'll leave that as an exercise for the reader.
+
+# Conclusion
+
+The whole process of optimizing the code to achieve 3x performance took me about 20 minutes with little effort, mostly just mindlessly following the guidance of the flamegraph.
+
+</md-block>
+
+
+
+
+</body>
+
