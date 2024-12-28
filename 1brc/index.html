@@ -283,13 +283,14 @@ From the flamegraph, we can see that the String::from_utf8_lossy is gone. The `H
 
 # Step 4. `hashbrown` crate: 23.1s
 
- Thanks to the rust's ecosystem, we can simply switch to the [`hashbrown`](https://docs.rs/hashbrown/0.9.1/hashbrown/) crate, which is a faster drop-in replacement for the standard library's `HashMap`.
+I googled around and find that rust already use `hashbrown` as its default HashMap implementation. But I still decided to try the crate version.
+Thanks to the rust's ecosystem, we can simply switch to the [`hashbrown`](https://docs.rs/hashbrown/0.9.1/hashbrown/) crate, which is a faster drop-in replacement for the standard library's `HashMap`.
 
 The code only needs a single change: `use hashbrown::HashMap;`.
 
 ![](./04.svg)
 
-Weird, I googled around and find that rust already use `hashbrown` as its default HashMap implementation. Why is switching to a crate version improve the performance? I don't know.
+ Why is switching to a crate version improve the performance? I don't know.
 
 From the above (kind of useless) flamegraph, we can't see any obvious bottlenecks. I guess everything is inlined?
 The next step would be to profile the code with a more fine-grained tool like `perf report`.
