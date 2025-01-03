@@ -301,7 +301,13 @@ The code can also be easily parallelized, but I'll leave that as an exercise for
 
 # Step 5. parallelization:  11.29s, where the actual processing took only 3.68s
 
-Check the code [here](https://github.com/poga/onebrc/blob/main/src/main.rs)
+Check the code [here](https://github.com/poga/onebrc/commit/f3ce194adea4952c4beb134e331001d8273c3e96)
+
+# Step 6. use `fs::read`: 4.9s
+
+Somehow I missed the fact that `read_to_string` will validate the UTF-8 encoding of the file, which is unnecessary in this case. By using `fs::read`, we can reduce the runtime to 4.9s.
+
+Check the code [here](https://github.com/poga/onebrc/blob/main/src/main.rs).
 
 # Conclusion
 
