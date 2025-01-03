@@ -297,8 +297,6 @@ The next step would be to profile the code with a more fine-grained tool like `p
 
 I tried to use memmap to map the file into memory, but it didn't show visible performance improvement.
 
-The code can also be easily parallelized, but I'll leave that as an exercise for the reader.
-
 # Step 5. parallelization:  11.29s, where the actual processing took only 3.68s
 
 Check the code [here](https://github.com/poga/onebrc/commit/f3ce194adea4952c4beb134e331001d8273c3e96)
@@ -311,7 +309,7 @@ Check the code [here](https://github.com/poga/onebrc/blob/main/src/main.rs).
 
 # Conclusion
 
-The whole process of optimizing the code to achieve 15x performance took me about 20 minutes with little effort, mostly just mindlessly following the guidance of the flamegraph.
+The whole process of optimizing the code to achieve 15x performance with little effort, mostly just mindlessly following the guidance of the flamegraph.
 
 </md-block>
 
