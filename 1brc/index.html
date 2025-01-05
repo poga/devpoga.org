@@ -7,7 +7,7 @@
   <script type="module" src="https://md-block.verou.me/md-block.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/default.min.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
-  <script>hljs.highlightAll();</script>
+  <script>setTimeout(() => hljs.highlightAll(), 100);</script>
 </head>
 <body>
   <md-block>
@@ -24,8 +24,6 @@ You can find the code [here](https://github.com/poga/onebrc/blob/main/src/main.r
 # Step 1. Unoptimized: 73s
 
 The baseline running on my M2 macbook with 24GB of RAM tooks 73s to run. not bad.
-
-  </md-block>
 
 <pre><code>
 use std::collections::HashMap;
@@ -85,7 +83,6 @@ fn main() {
     }
 }
 </code></pre>
-<md-block>
 
 Here's the flamegraph with `cargo flamegraph`. Some obvious bottlenecks are the `HashMap` and string `split` operations.
 <div><img src="./01.svg" /></div>
@@ -93,8 +90,6 @@ Here's the flamegraph with `cargo flamegraph`. Some obvious bottlenecks are the 
 # Step 2. `memchr` crate: 40s
 
 simply switch from `split_once` to the SIMD-optimized [`memchr`](https://docs.rs/memchr/latest/memchr/) crate, the runtime is reduced to 40s.
-
-</md-block>
 
 <pre><code>
 use memchr::memchr;
@@ -163,8 +158,6 @@ fn main() {
 }
 </code></pre>
 
-<md-block>
-
 However we introduced an ugly and slow `String::from_utf8_lossy` to convert the value to a string to use the `parse` method, which shows up in the flamegraph.
 
 ![](./02.svg)
@@ -172,8 +165,6 @@ However we introduced an ugly and slow `String::from_utf8_lossy` to convert the 
 # Step 3. Manual parsing: 28.1s
 
 By manually parsing the float value into a fixed-precision i32 signed integer, we can reduce the runtime to 28.1s.
-
-</md-block>
 
 <pre><code>
 use memchr::memchr;
@@ -274,8 +265,6 @@ fn format(v: i32) -> String {
     format!("{:.1}", v as f64 / 10.0)
 }
 </code></pre>
-
-<md-block>
 
 From the flamegraph, we can see that the String::from_utf8_lossy is gone. The `HashMap` is our next target.
 
