@@ -1,0 +1,4 @@
+md-block:not([rendered]) {
+  white-space: pre-line;
+}
+
