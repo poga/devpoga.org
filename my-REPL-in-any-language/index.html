@@ -1,0 +1,27 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My REPL in Any Language- Dev.Poga</title>
+  <script type="module" src="https://md-block.verou.me/md-block.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/default.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+  <script>setTimeout(() => hljs.highlightAll(), 100);</script>
+</head>
+<body>
+  <md-block>
+Recently I incorporated a new technique into my workflow: using inline-snapshot-tests as both a REPL and a documentation tool.
+
+The idea comes from:
+
+1. [What if writing tests was a joyful experience?](https://blog.janestreet.com/the-joy-of-expect-tests/)
+2. [Computations that differentiate, debug, and document themselves](https://blog.janestreet.com/computations-that-differentiate-debug-and-document-themselves/)
+3. [My Kind of REPL](https://ianthehenry.com/posts/my-kind-of-repl/)
+
+Basically you write a test that inline encodes the expected output of a function, and then you run the test. If the output doesn't match, the test fails and you get a diff of the output.
+
+Some tools can automatically update the snapshot for you, so you can use it as a REPL. This is a great way to document your code, as you can see the input and output of a function right next to it without leaving the editor.
+  </md-block>
+</body>
+
