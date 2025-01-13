@@ -13,15 +13,16 @@
   <md-block>
 Recently I incorporated a new technique into my workflow: using inline-snapshot-tests as both a REPL and a documentation tool.
 
-The idea comes from:
+The idea is summarized in:
 
 1. [What if writing tests was a joyful experience?](https://blog.janestreet.com/the-joy-of-expect-tests/)
-2. [Computations that differentiate, debug, and document themselves](https://blog.janestreet.com/computations-that-differentiate-debug-and-document-themselves/)
-3. [My Kind of REPL](https://ianthehenry.com/posts/my-kind-of-repl/)
+2. [My Kind of REPL](https://ianthehenry.com/posts/my-kind-of-repl/)
 
 Basically you write a test that inline encodes the expected output of a function, and then you run the test. If the output doesn't match, the test fails and you get a diff of the output.
 
 Some tools can automatically update the snapshot for you, so you can use it as a REPL. This is a great way to document your code, as you can see the input and output of a function right next to it without leaving the editor.
+
+In Rust, I use [insta](https://docs.rs/insta/0.16.0/insta/) for this purpose.
   </md-block>
 </body>
 
