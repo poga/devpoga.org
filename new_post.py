@@ -33,6 +33,7 @@ def create_post_directory(slug):
 </head>
 <body>
   <md-block>
+[ [home] ](/)
 
   </md-block>
 </body>
