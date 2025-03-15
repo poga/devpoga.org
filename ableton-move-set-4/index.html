@@ -9,20 +9,16 @@
   <link rel="stylesheet" href="/index.css">
   <script type="module">
   import { marked } from "https://cdn.jsdelivr.net/npm/marked/lib/marked.esm.js";
-    document.getElementById('content').innerHTML =
-      marked.parse(document.getElementById('content').innerHTML);
-
-    document.getElementById('content').style.display = 'block';
+    document.body.innerHTML =
+      marked.parse(document.body.innerHTML);
     hljs.highlightAll();
   </script>
 </head>
 <body>
-  <md-block>
 [ [home] ](/)
 
 A sleepless night.
 
-  </md-block>
 <audio controls>
   <source src="./4.mp3" type="audio/mp3">
 Your browser does not support the audio element.

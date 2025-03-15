@@ -6,17 +6,17 @@
   <title> Cheap Complexity and Cybersecurity - Dev.Poga</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/default.min.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+  <link rel="stylesheet" href="/index.css">
   <script type="module">
   import { marked } from "https://cdn.jsdelivr.net/npm/marked/lib/marked.esm.js";
-    document.getElementById('content').innerHTML =
-      marked.parse(document.getElementById('content').innerHTML);
+    document.body.innerHTML =
+      marked.parse(document.body.innerHTML);
 
-    document.getElementById('content').style.display = 'block';
+    document.body.style.display = 'block';
     hljs.highlightAll();
   </script>
 </head>
 <body>
-  <md-block>
 [ [home] ](/)
 
 A recurrent theme of modern security is the importance of complexity and the difficulty of containing it. With GPUs, NICs, basebands, and specialized hardware such as TPUs, things are objectively getting more complicated at a superlinear rate.
@@ -101,5 +101,4 @@ This is a historic opportunity to influence the design of computing for the next
 ## Reference
 
 This post is pretty much a digest of [Halver Flake's](https://twitter.com/halvarflake) amazing [talk at CYCON](https://www.err.ee/836236/video-google-0-projekti-tarkvarainseneri-ettekanne-cyconil) mixed with my thoughts. I encourage you to watch the origin talk.
-</md-block>
 </body>

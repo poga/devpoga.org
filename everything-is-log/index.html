@@ -9,15 +9,13 @@
   <link rel="stylesheet" href="/index.css">
   <script type="module">
   import { marked } from "https://cdn.jsdelivr.net/npm/marked/lib/marked.esm.js";
-    document.getElementById('content').innerHTML =
-      marked.parse(document.getElementById('content').innerHTML);
+    document.body.innerHTML =
+      marked.parse(document.body.innerHTML);
 
-    document.getElementById('content').style.display = 'block';
     hljs.highlightAll();
   </script>
 </head>
 <body>
-  <md-block>
     ![](/images/1.png)
 
 **這是 COSCUP 2016 的講題逐字稿，投影片在[此](http://www.slideshare.net/poga/log-65475572)**
@@ -158,6 +156,5 @@ LOG 單向更新的性質，讓狀態的改變很好理解，甚至可以把整�
 
 下次設計系統架構前，先試著用 LOG 表示你的架構，如過可以寫出描述你的系統行為的 LOG，就比較容易建立出一個穩定的系統了。
 
-</md-block>
 </body>
 

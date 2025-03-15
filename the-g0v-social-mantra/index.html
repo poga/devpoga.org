@@ -9,15 +9,12 @@
   <link rel="stylesheet" href="/index.css">
   <script type="module">
   import { marked } from "https://cdn.jsdelivr.net/npm/marked/lib/marked.esm.js";
-    document.getElementById('content').innerHTML =
-      marked.parse(document.getElementById('content').innerHTML);
-
-    document.getElementById('content').style.display = 'block';
+    document.body.innerHTML =
+      marked.parse(document.body.innerHTML);
     hljs.highlightAll();
   </script>
 </head>
 <body>
-  <md-block>
 [ [home] ](/)
 
 Under the surveillance capitalism standard, [g0v.social](https://g0v.social) is a strange little social network.
@@ -45,6 +42,5 @@ g0v.social is not a product, but rather [a garden](https://herman.bearblog.dev/m
 We want to muck around, feel connected to the process, and have fun. We want to create processes that do not scale. To see people tuck into them and enjoy them as people rather than statistics.
 
 So far, it's working quite well.
-</md-block>
 </body>
 

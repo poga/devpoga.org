@@ -9,14 +9,12 @@
   <link rel="stylesheet" href="/index.css">
   <script type="module">
   import { marked } from "https://cdn.jsdelivr.net/npm/marked/lib/marked.esm.js";
-    document.getElementById('content').innerHTML =
-      marked.parse(document.getElementById('content').innerHTML);
-
-    document.getElementById('content').style.display = 'block';
+    document.body.innerHTML =
+      marked.parse(document.body.innerHTML);
     hljs.highlightAll();
   </script>
 </head>
-<body id="content" style="display: none">
+<body>
 [ [home] ](/)
 
 # Code as Evolving Scaffolding

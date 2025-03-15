@@ -9,15 +9,12 @@
   <link rel="stylesheet" href="/index.css">
   <script type="module">
   import { marked } from "https://cdn.jsdelivr.net/npm/marked/lib/marked.esm.js";
-    document.getElementById('content').innerHTML =
-      marked.parse(document.getElementById('content').innerHTML);
-
-    document.getElementById('content').style.display = 'block';
+    document.body.innerHTML =
+      marked.parse(document.body.innerHTML);
     hljs.highlightAll();
   </script>
 </head>
 <body>
-  <md-block>
 [ [home] ](/)
 
 **Context**: Machine Learning Projects are mainly just a complex interdependent pipeline. We desperately need a better abstraction for them.
@@ -79,6 +76,5 @@ In my opinion, pipelines are another good example of [Glue Systems](/tags/glues/
 
 Glue system is [Accidental complexity](https://en.wikipedia.org/wiki/No_Silver_Bullet). Glue systems are the platform you locked yourself in without knowing it. And worse, you're also the only vendor supporting it. So, good luck.
 
-</md-block>
 </body>
 

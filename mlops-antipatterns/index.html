@@ -9,16 +9,13 @@
   <link rel="stylesheet" href="/index.css">
   <script type="module">
   import { marked } from "https://cdn.jsdelivr.net/npm/marked/lib/marked.esm.js";
-    document.getElementById('content').innerHTML =
-      marked.parse(document.getElementById('content').innerHTML);
-
-    document.getElementById('content').style.display = 'block';
+    document.body.innerHTML =
+      marked.parse(document.body.innerHTML);
     hljs.highlightAll();
   </script>
 </head>
 <body>
-  <md-block>
-      [ [home] ](/)
+[ [home] ](/)
 
 [Using AntiPatterns to avoid MLOps Mistakes](https://arxiv.org/abs/2107.00079), Nikil Muralidhar et. al.
 
@@ -145,6 +142,5 @@ From the paper:
 5. Ensure human-in-the-loop operational capability at multiple levels. Use our model presented for rethinking ML deployment from Section 4 as a basis to support interventions and communication opportunities.
 
 
-</md-block>
 </body>
 

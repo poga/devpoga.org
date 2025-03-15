@@ -9,15 +9,13 @@
   <link rel="stylesheet" href="/index.css">
   <script type="module">
   import { marked } from "https://cdn.jsdelivr.net/npm/marked/lib/marked.esm.js";
-    document.getElementById('content').innerHTML =
-      marked.parse(document.getElementById('content').innerHTML);
+    document.body.innerHTML =
+      marked.parse(document.body.innerHTML);
 
-    document.getElementById('content').style.display = 'block';
     hljs.highlightAll();
   </script>
 </head>
 <body>
-  <md-block>
 [ [home] ](/)
 
 1. Markets can only be efficient with perfect information - but perfect information is impossible in practice.
@@ -27,6 +25,5 @@
    - Offload complexity to external systems, simplifying their decision-making process
    - Create an illusion of growth by leveraging information gaps in the market
 5. The society absorb these externalities, creating a feedback loop that reinforces the inefficiency of the market.
-  </md-block>
 </body>
 

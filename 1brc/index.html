@@ -8,14 +8,13 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
   <script type="module">
   import { marked } from "https://cdn.jsdelivr.net/npm/marked/lib/marked.esm.js";
-    document.getElementById('content').innerHTML =
-      marked.parse(document.getElementById('content').innerHTML);
+    document.body.innerHTML =
+      marked.parse(document.body.innerHTML);
 
-    document.getElementById('content').style.display = 'block';
     hljs.highlightAll();
   </script>
 </head>
-<body id="content">
+<body>
 
 Here's my note on doing the [One billion rows challenge](https://github.com/gunnarmorling/1brc).
 
