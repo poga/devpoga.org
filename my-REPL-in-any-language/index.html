@@ -4,11 +4,17 @@
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>My REPL in Any Language- Dev.Poga</title>
-  <script type="module" src="https://md-block.verou.me/md-block.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/default.min.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
-  <script>setTimeout(() => hljs.highlightAll(), 100);</script>
   <link rel="stylesheet" href="/index.css">
+  <script type="module">
+  import { marked } from "https://cdn.jsdelivr.net/npm/marked/lib/marked.esm.js";
+    document.getElementById('content').innerHTML =
+      marked.parse(document.getElementById('content').innerHTML);
+
+    document.getElementById('content').style.display = 'block';
+    hljs.highlightAll();
+  </script>
 </head>
 <body>
   <md-block>

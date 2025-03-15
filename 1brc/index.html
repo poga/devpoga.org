@@ -4,13 +4,18 @@
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title> 1brc - Dev.Poga</title>
-  <script type="module" src="https://md-block.verou.me/md-block.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/default.min.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
-  <script>setTimeout(() => hljs.highlightAll(), 100);</script>
+  <script type="module">
+  import { marked } from "https://cdn.jsdelivr.net/npm/marked/lib/marked.esm.js";
+    document.getElementById('content').innerHTML =
+      marked.parse(document.getElementById('content').innerHTML);
+
+    document.getElementById('content').style.display = 'block';
+    hljs.highlightAll();
+  </script>
 </head>
-<body>
-  <md-block>
+<body id="content">
 
 Here's my note on doing the [One billion rows challenge](https://github.com/gunnarmorling/1brc).
 
@@ -299,10 +304,6 @@ Check the code [here](https://github.com/poga/onebrc/blob/main/src/main.rs).
 # Conclusion
 
 The whole process of optimizing the code to achieve 15x performance with little effort, mostly just mindlessly following the guidance of the flamegraph.
-
-</md-block>
-
-
 
 
 </body>
