@@ -2,3 +2,7 @@ md-block:not([rendered]) {
   white-space: pre-line;
 }
 
+body {
+  max-width: 800px;
+}
+
