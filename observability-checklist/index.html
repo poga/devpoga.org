@@ -1,0 +1,35 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta property="og:title" content="Observability Checklist" />
+
+  <title>Observability Checklist - Dev.Poga</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/default.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+  <link rel="stylesheet" href="/index.css">
+  <script type="module">
+  import { marked } from "https://cdn.jsdelivr.net/npm/marked/lib/marked.esm.js";
+    document.body.innerHTML =
+      marked.parse(document.body.innerHTML);
+    hljs.highlightAll();
+  </script>
+</head>
+<body>
+[ [home] ](/)
+
+Catch issues before users do
+
+1. Have I defined clear "broken" conditions that truly reflect what users experience as failure?
+2. How will I be notified when my service degrades or fails? Is this notification faster than user reports?
+3. What leading indicators might show trouble before a full outage occurs? Am I monitoring these?
+4. Have I implemented smoke tests that regularly tests critical user journeys?
+5. Are my alert thresholds set conservatively enough to give me time to respond before users notice?
+6. What happens when my service experiences 2x or 10x normal load? Do I have alerts for approaching capacity limits?
+7. How does my service behave when dependencies slow down or fail? Have I tested these scenarios?
+8. Can I detect gradual performance degradation over time, or only sudden failures?
+9. Do my dashboards clearly show service health from a user perspective, not just technical metrics?
+10. When an alert fires, do I have a clear runbook for first responders to follow?
+</body>
+</html>
