@@ -1,0 +1,59 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="fediverse:creator" content="@poga@g0v.social" />
+  <meta property="og:title" content="打破咒語" />
+
+  <title>打破咒語 - Dev.Poga</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/default.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+  <link rel="stylesheet" href="/index.css">
+  <script type="module">
+  import { marked } from "https://cdn.jsdelivr.net/npm/marked/lib/marked.esm.js";
+    document.body.innerHTML =
+      marked.parse(document.body.innerHTML);
+    hljs.highlightAll();
+  </script>
+</head>
+<body>
+[ [home] ](/)
+
+# 打破咒語
+
+Translated from [Phrack Issue 71](https://phrack.org/issues/71/1).
+
+這個世界彷彿處於一種夢幻般的狀態；被風投資本和無限財富與影響力的承諾所推動的瘋狂狂熱。
+所有人似乎都在匆忙實施最新的技術，希望能找到神奇的靈丹妙藥來解決他們可能並不擁有，甚至
+不理解的問題。
+
+雖然炒作一直都存在，但在過去幾年（2020-2024），我們目睹了幾波大規模的推動，試圖將未經
+測試、未充分開發且不可持續的技術整合到本就已經問題重重的系統中。一旦魔力消退，所有問題
+並沒有神奇地消失，他們就放棄這些想法，轉向下一個，而代價則由其他所有人承擔。
+
+許多這些「新奇且令人興奮」的想法涉及引入越來越不透明的抽象層。它們承諾將我們推向「未來」，
+卻只是讓我們越來越遠離理解自己的能力和需求。銷售這類想法很容易。真正不容易的是創造既實用
+又可持續的東西。如果我們想讓世界更可持續，我們需要了解我們所依賴系統的輸入、輸出、依賴性、
+限制和實現細節。每當我們使某些事情變得更難以理解，我們就離信息黑暗時代更近一步。
+
+在過去幾十年人類將所有集體知識放到網上之後，我們看到了更多阻止我們獲取它的方式。不僅好的
+信息更難找到，糟糕的信息正在淹沒它。圍堵重要資源並收取租金，以及散播最好無用、最壞有害的
+垃圾信息，這些行為的激勵因素正在增加。在所有這些混亂中，真正的威脅是為了將相反的東西貨幣化，
+而犧牲有用的、經過驗證的、值得信任的信息。
+
+幸運的是，黑客仍然存在。對於每一道遮蔽我們視線的煙幕，黑客幫助清除空氣。對於每一堵新建的
+圍牆，黑客都能開闢繞過它的路徑。對於每一把鎖住我們自己想法和文化產物的鎖，黑客都能製作
+耐用的撬鎖工具來解開它們。黑客嘗試理解超出他們視角的事物。黑客專注於真實的、當下的事物。
+
+我們能夠穿越這堆狗屁前進。我們能夠共同努力維護好的信息，並放大那些創造和策劃它的人的聲音。
+我們能夠學習事物實際如何運作，分享細節，並利用這些機制做一些好事。我們能夠設計新的溝通和
+協作方法，在我們的社區內部和社區之間協同工作，干擾那個目前試圖將我們壓死的垃圾壓縮機。
+
+黑客精神既是一種應對機制，也是一種生存技能。它代表了我們作為人類的最高能力，能夠找出如何
+使用我們可能擁有的任何工具，以任何可能的方式，做我們需要做的事情。黑客是一個偉大的平衡器，
+一種共同的方言，一種存在於我們所有人內心的精神。它有能力將世界塑造成我們想要生活的樣子。
+
+黑客精神能打破任何咒語。
+</body>
+</html>
