@@ -1,2 +1,2 @@
 up:
-	git add . && git commit -m "update" && git push origin main
+	git add . && git commit -m "update" && git push
