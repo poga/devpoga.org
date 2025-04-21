@@ -13,3 +13,7 @@ body {
 img {
   width: 100%;
 }
+
+p {
+  text-indent: 2rem;
+}
