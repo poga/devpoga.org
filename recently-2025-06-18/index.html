@@ -13,7 +13,7 @@
   <script type="module">
   import { marked } from "https://cdn.jsdelivr.net/npm/marked/lib/marked.esm.js";
     document.body.innerHTML =
-      marked.parse(document.body.innerHTML);
+      marked.parse(document.body.innerHTML.replace(/&gt;+/g, '>'));
     hljs.highlightAll();
   </script>
 </head>
@@ -28,6 +28,10 @@
 I started weight training this year and have been making steady progress.
 
 ## Reading
+
+[The Who Care Era](https://dansinker.com/posts/2025-05-23-who-cares/) is probably the most important article I've read this year.
+
+> As the culture of the Who Cares Era grinds towards the lowest common denominator, support those that are making real things. Listen to something with your full attention. Watch something with your phone in the other room. Read an actual paper magazine or a book.
 
 I went through the famous [Valuation: Measuring and Managing the Value of Companies](https://www.amazon.com/Valuation-Measuring-Managing-Companies-Finance/dp/1119610885), but I don't like it. It's a typical business textbook that uses a lot of hand-wavy math and cherry-picked empirical data. The authors emphasize that many issues of capitalism are due to the lack of focus on long-term value. But in my opinion, as long as externalities are the core concept of capitalism, the "long-term value" is just a myth for today's business.
 

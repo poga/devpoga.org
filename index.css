@@ -14,3 +14,7 @@ img {
   width: 100%;
 }
 
+blockquote {
+  color: #555;
+  font-style: italic;
+}
