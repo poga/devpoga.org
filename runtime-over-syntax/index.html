@@ -1,0 +1,49 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="fediverse:creator" content="@poga@g0v.social">
+  <meta property="og:title" content="Recently: 2025 06 18" />
+
+  <title>Runtime over Syntax</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/default.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+  <link rel="stylesheet" href="/index.css">
+  <script type="module">
+  import { marked } from "https://cdn.jsdelivr.net/npm/marked/lib/marked.esm.js";
+    document.body.innerHTML =
+      marked.parse(document.body.innerHTML.replace(/&gt;+/g, '>'));
+    hljs.highlightAll();
+  </script>
+</head>
+<body>
+
+[ [home] ](/)
+
+# Runtime over Syntax
+
+We need runtimes that help humans and LLMs solve problems together.
+
+LLMs read code like water flows through paths. Give them clear code and they understand fast. Complex tricks slow them down. Simple wins. But reading code is just the beginning.
+
+The real partnership happens in the feedback loop: LLM writes, tools respond, human guides, LLM learns. Static checkers become shared eyes. Tests become shared memory. This collaboration works because both humans and LLMs can process tool messages well.
+
+But there's a space where neither can see clearly.
+
+Runtime behavior lives beyond syntax. Memory leaks growing slowly. Race conditions hiding in threads. Performance breaking under real load. These problems show up only when code runs in production. LLMs write perfect syntax. Humans review clean logic. Both miss the runtime mysteries.
+
+This is where observability becomes partnership tool.
+
+BEAM's built-in observer shows every process, message flow, memory pattern in real time. Human sees the big picture. LLM processes the data streams. Together they trace problems that neither could solve alone.
+
+Deno with V8's profiler reveals event loop blocking, async bottlenecks, flame graphs of actual execution. Human intuition guides where to look. LLM analyzes the patterns. The runtime becomes shared workspace.
+
+The trend is clear: we're moving toward transparent runtimes that serve both human insight and LLM analysis.
+
+Humans ask the right questions. LLMs process vast amounts of runtime data. But only when the runtime exposes its secrets can this partnership work.
+
+Choose runtimes that help both of you see. Because the best solutions come from humans and LLMs working together.
+
+</body>
+</html>
