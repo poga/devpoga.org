@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Dev.Poga</title>
+    <link>https://devpoga.org</link>
+    <description>Personal blog of Poga - transforming complex problems into fast feedback loops</description>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 04 Aug 2025 16:52:13 +0000</lastBuildDate>
+    <atom:link href="https://devpoga.org/rss.xml" rel="self" type="application/rss+xml" />
+    <managingEditor>hi@devpoga.org (Poga)</managingEditor>
+    <webMaster>hi@devpoga.org (Poga)</webMaster>
+    <item>
+      <title><![CDATA[Runtime Over Syntax]]></title>
+      <link>https://devpoga.org/runtime-over-syntax/</link>
+      <guid>https://devpoga.org/runtime-over-syntax/</guid>
+      <pubDate>Sun, 27 Jul 2025 00:00:00 +0000</pubDate>
+      <description><![CDATA[# Runtime over Syntax We need runtimes that help humans and LLMs solve problems together. LLMs read code like water flows through paths. Give them clear code and they understand fast. Complex tricks slow them down. Simple wins. But reading code is just the beginning. The real partnership happens in the feedback loop: LLM writes, tools respond, human guides, LLM learns. Static checkers become shared eyes. Tests become shared memory. This collaboration works because both humans and LLMs can proces...]]></description>
+    </item>
+    <item>
+      <title><![CDATA[Recently: 2025 06 18]]></title>
+      <link>https://devpoga.org/recently-2025-06-18/</link>
+      <guid>https://devpoga.org/recently-2025-06-18/</guid>
+      <pubDate>Wed, 18 Jun 2025 00:00:00 +0000</pubDate>
+      <description><![CDATA[# Recently: 2025 06 18 ## Body I started weight training this year and have been making steady progress. ## Reading [The Who Care Era](https://dansinker.com/posts/2025-05-23-who-cares/) is probably the most important article I've read this year. > As the culture of the Who Cares Era grinds towards the lowest common denominator, support those that are making real things. Listen to something with your full attention. Watch something with your phone in the other room. Read an actual paper magazine ...]]></description>
+    </item>
+    <item>
+      <title><![CDATA[Breaking the Spell. 打破魔咒]]></title>
+      <link>https://devpoga.org/breaking-the-spell/</link>
+      <guid>https://devpoga.org/breaking-the-spell/</guid>
+      <pubDate>Mon, 21 Apr 2025 00:00:00 +0000</pubDate>
+      <description><![CDATA[# Breaking The Spell 打破魔咒 Translated from [Phrack Issue 71](https://phrack.org/issues/71/1). --- It can feel like the world is in a dreamlike state; a hype-driven delirium, fueled by venture capital and the promises of untold riches and influence. Everyone seems to be rushing to implement the latest thing, hoping to find a magic bullet to solve problems they may not have, or even understand. While hype has always been a thing, in the past few years (2020-2024), we have witnessed several large pu...]]></description>
+    </item>
+    <item>
+      <title><![CDATA[Observability Checklist]]></title>
+      <link>https://devpoga.org/observability-checklist/</link>
+      <guid>https://devpoga.org/observability-checklist/</guid>
+      <pubDate>Fri, 28 Mar 2025 00:00:00 +0000</pubDate>
+      <description><![CDATA[# Observability Checklist Catch issues before users do 1. Have I defined clear "broken" conditions that truly reflect what users experience as failure? 2. How will I be notified when my service degrades or fails? Is this notification faster than user reports? 3. What leading indicators might show trouble before a full outage occurs? Am I monitoring these? 4. Have I implemented smoke tests that regularly tests critical user journeys? 5. Are my alert thresholds set conservatively enough to give me...]]></description>
+    </item>
+    <item>
+      <title><![CDATA[Music as Precision Medicine]]></title>
+      <link>https://devpoga.org/music-precision-medication/</link>
+      <guid>https://devpoga.org/music-precision-medication/</guid>
+      <pubDate>Sun, 23 Mar 2025 00:00:00 +0000</pubDate>
+      <description><![CDATA[# Music as Precision Medicine ![](./IMG_1531.jpg) I make music in a unique way - limited to about two hours of sound exposure daily before headaches set in. Those two hours are my precision medicine - carefully timed, perfectly dosed, and specifically formulated for maximum effect. I plan each session like a curated tour through a specific slice of music culture. One day might be dedicated to exploring 70s funk basslines, another to West African percussion patterns. Rather than rushing through t...]]></description>
+    </item>
+    <item>
+      <title><![CDATA[Code as Evolving Scaffolding]]></title>
+      <link>https://devpoga.org/code-as-evolving-scaffolding/</link>
+      <guid>https://devpoga.org/code-as-evolving-scaffolding/</guid>
+      <pubDate>Sat, 15 Feb 2025 00:00:00 +0000</pubDate>
+      <description><![CDATA[# Code as Evolving Scaffolding Every program is just scaffolding for your next understanding. Been thinking about this scaffolding metaphor. It works on multiple levels: Immediate level: - Code = temporary structure - Real value = data collected + the collected test suites - Don't over-invest in the scaffolding Deeper level: Each program is scaffolding for understanding the next version of the problem: - V1: Build something simple that works - V2: Realize the real problem through using V1 - V3: ...]]></description>
+    </item>
+    <item>
+      <title><![CDATA[Writing Directly for Browsers]]></title>
+      <link>https://devpoga.org/i-blog-with-raw-html/</link>
+      <guid>https://devpoga.org/i-blog-with-raw-html/</guid>
+      <pubDate>Mon, 10 Feb 2025 00:00:00 +0000</pubDate>
+      <description><![CDATA[# Writing directly for the web browers The blog you're reading is written directly for web browsers. no extra build step. The blog have many reincarnations, the longest lived one is based on [hugo](https://gohugo.io/). However, even a static site generator will deprecate some features one day. and my words need to follow the convention of that static site generator. And one day, the blog is broken. And I don't want my blog to have a build step anymore. Therefore, the blog you're reading now is w...]]></description>
+    </item>
+    <item>
+      <title><![CDATA[My REPL in Any Language]]></title>
+      <link>https://devpoga.org/my-REPL-in-any-language/</link>
+      <guid>https://devpoga.org/my-REPL-in-any-language/</guid>
+      <pubDate>Mon, 13 Jan 2025 00:00:00 +0000</pubDate>
+      <description><![CDATA[Recently I incorporated a new technique into my workflow: using inline-snapshot-tests as both a REPL and a documentation tool. The idea is summarized in: 1. [What if writing tests was a joyful experience?](https://blog.janestreet.com/the-joy-of-expect-tests/) 2. [My Kind of REPL](https://ianthehenry.com/posts/my-kind-of-repl/) Basically you write a test that inline encodes the expected output of a function, and then you run the test. If the output doesn't match, the test fails and you get a diff...]]></description>
+    </item>
+    <item>
+      <title><![CDATA[Random Thoughts on Capitalism]]></title>
+      <link>https://devpoga.org/capitalism/</link>
+      <guid>https://devpoga.org/capitalism/</guid>
+      <pubDate>Mon, 06 Jan 2025 00:00:00 +0000</pubDate>
+      <description><![CDATA[1. Markets can only be efficient with perfect information - but perfect information is impossible in practice. 2. Markets can only be efficient when participants have complete freedom to make decisions - but this freedom is always constrained by real-world limitations. 3. Therefore: Truly efficient markets don't exist. 4. To survive in these inefficient markets, companies create boundaries that generate externalities to: - Offload complexity to external systems, simplifying their decision-making...]]></description>
+    </item>
+    <item>
+      <title><![CDATA[My Take on AI]]></title>
+      <link>https://devpoga.org/my-take-on-ai/</link>
+      <guid>https://devpoga.org/my-take-on-ai/</guid>
+      <pubDate>Sun, 05 Jan 2025 00:00:00 +0000</pubDate>
+      <description><![CDATA[My take on AI: 20% of my skills are now obsolete, but the other 80% just got way more valuable. ## Why? 1. Engineering is all about trade-offs. If someone can clearly define all the trade-offs in detail, they can probably code it themselves. 2. Engineering exists because humans suck at precisely describing what they want and how to build it. 3. My real job? Helping people figure out what they actually want, when they need it, and how to build it. This means digging into context, constraints, and...]]></description>
+    </item>
+    <item>
+      <title><![CDATA[Doing One billion Rows Challenge by just Mindlessly Following the Flamegraph]]></title>
+      <link>https://devpoga.org/1brc/</link>
+      <guid>https://devpoga.org/1brc/</guid>
+      <pubDate>Sat, 28 Dec 2024 00:00:00 +0000</pubDate>
+      <description><![CDATA[Here's my note on doing the [One billion rows challenge](https://github.com/gunnarmorling/1brc). My goal here is to: 1. find the reasonably optimized solution that's still readable and maintainable for a new-grade programmer. 2. Show that how easy it is to optimize code with the help of the flamegraph. You can find the code [here](https://github.com/poga/onebrc/blob/main/src/main.rs) # Step 1. Unoptimized: 73s The baseline running on my M2 macbook with 24GB of RAM tooks 73s to run. not bad. use ...]]></description>
+    </item>
+    <item>
+      <title><![CDATA[The g0v.social Mantra]]></title>
+      <link>https://devpoga.org/the-g0v-social-mantra/</link>
+      <guid>https://devpoga.org/the-g0v-social-mantra/</guid>
+      <pubDate>Thu, 12 Jan 2023 00:00:00 +0000</pubDate>
+      <description><![CDATA[Under the surveillance capitalism standard, [g0v.social](https://g0v.social) is a strange little social network. Traditionally, social networks seek to radicalize people; the more toxic you become, the more traffic the platform will receive, and thus the greater the profit. We used to use the internet to escape from reality. But now we return to reality to escape the toxicity of the internet. The platform has [taught us to post radical content, misinformation, hatred, and dunks in order to recei...]]></description>
+    </item>
+    <item>
+      <title><![CDATA[Cheap Complexity and Cybersecurity]]></title>
+      <link>https://devpoga.org/cheap-complexity/</link>
+      <guid>https://devpoga.org/cheap-complexity/</guid>
+      <pubDate>Sun, 28 Aug 2022 00:00:00 +0000</pubDate>
+      <description><![CDATA[# Cheap Complexity and Cybersecurity A recurrent theme of modern security is the importance of complexity and the difficulty of containing it. With GPUs, NICs, basebands, and specialized hardware such as TPUs, things are objectively getting more complicated at a superlinear rate. In a world where complexity continues to grow, it is hard to provide security guarantees. The problem of escalating complexity becomes an escalated security problem. ## What's driving the complexity? ![](./drive.jpeg) >...]]></description>
+    </item>
+    <item>
+      <title><![CDATA[Pipelines and Glue Systems]]></title>
+      <link>https://devpoga.org/pipeline-glue/</link>
+      <guid>https://devpoga.org/pipeline-glue/</guid>
+      <pubDate>Sun, 12 Dec 2021 00:00:00 +0000</pubDate>
+      <description><![CDATA[**Context**: Machine Learning Projects are mainly just a complex interdependent pipeline. We desperately need a better abstraction for them. ## Hidden Complexity Here's a simple rule I used to evaluate if a problem has a well-defined programmable abstraction: can I implement it with just one text file and a text editor? - With [Infrastructure as Code](https://docs.microsoft.com/en-us/devops/deliver/what-is-infrastructure-as-code), I can set up a reasonably complex cloud-native infrastructure fro...]]></description>
+    </item>
+    <item>
+      <title><![CDATA[Using AntiPatterns to Avoid MLOps Mistakes]]></title>
+      <link>https://devpoga.org/mlops-antipatterns/</link>
+      <guid>https://devpoga.org/mlops-antipatterns/</guid>
+      <pubDate>Sat, 27 Nov 2021 00:00:00 +0000</pubDate>
+      <description><![CDATA[[Using AntiPatterns to avoid MLOps Mistakes](https://arxiv.org/abs/2107.00079), Nikil Muralidhar et. al. I learned about this survey paper from [The Data Exchange](https://thedataexchange.media/mlops-anti-patterns/) podcast. It's a good introduction for people who just started deploying their machine learning project to production. The paper focused on _supervised learning_, and _forcasting applications_. But the observation and recommendations should be general enough to be applied to other com...]]></description>
+    </item>
+    <item>
+      <title><![CDATA[萬事萬物皆是 Log - 系統架構也來點科普]]></title>
+      <link>https://devpoga.org/everything-is-log/</link>
+      <guid>https://devpoga.org/everything-is-log/</guid>
+      <pubDate>Sat, 20 Aug 2016 00:00:00 +0000</pubDate>
+      <description><![CDATA[![](/images/1.png) **這是 COSCUP 2016 的講題逐字稿，投影片在[此](http://www.slideshare.net/poga/log-65475572)** -- 自古以來，軟體工程師都在追求好維護，容易理解的軟體架構。傳統上，我們需要參與過各種大型軟體專案，從中獲取經驗，或是透過昂貴的課程，大量的論文，才能從前人的經驗中學到一些方法。 今天，我想試著透過 LOG 這個人人都碰過的資料結構，來解釋許多複雜系統的核心，只要你能理解 LOG，你就能設計出好理解、容易維護的系統架構。 -- 什麼是 LOG？每個人第一次寫程式時，輸出的 “Hello World” 是一種 LOG，工作時使用 Slack 有 LOG，你的伺服器有 Access Log。LOG 就是由兩個特性組成的資料結構： *   訊息按照時序出現 *   出現過的訊息不會改變 「出現過的訊息不會改變」這件事，也被叫做 Append Only。 Log 這樣的性質，常常在我們 Debug 的時候被拿出來用。很多時候，Debug 便是推論事件的因果關係，Log 的特性便能讓我們透過文字來理解...]]></description>
+    </item>
+  </channel>
+</rss>
