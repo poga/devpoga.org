@@ -5,7 +5,7 @@
     <link>https://devpoga.org</link>
     <description>Personal blog of Poga - transforming complex problems into fast feedback loops</description>
     <language>en-us</language>
-    <lastBuildDate>Mon, 04 Aug 2025 16:52:13 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 18 Aug 2025 16:38:19 +0000</lastBuildDate>
     <atom:link href="https://devpoga.org/rss.xml" rel="self" type="application/rss+xml" />
     <managingEditor>hi@devpoga.org (Poga)</managingEditor>
     <webMaster>hi@devpoga.org (Poga)</webMaster>
@@ -70,14 +70,14 @@
       <link>https://devpoga.org/capitalism/</link>
       <guid>https://devpoga.org/capitalism/</guid>
       <pubDate>Mon, 06 Jan 2025 00:00:00 +0000</pubDate>
-      <description><![CDATA[1. Markets can only be efficient with perfect information - but perfect information is impossible in practice. 2. Markets can only be efficient when participants have complete freedom to make decisions - but this freedom is always constrained by real-world limitations. 3. Therefore: Truly efficient markets don't exist. 4. To survive in these inefficient markets, companies create boundaries that generate externalities to: - Offload complexity to external systems, simplifying their decision-making...]]></description>
+      <description><![CDATA[1. Markets can only be efficient with perfect information, but perfect information is impossible in practice. 2. Markets can only be efficient when participants have complete freedom to make decisions, but this freedom is always constrained by real-world limitations. 3. Therefore: Truly efficient markets don't exist. 4. To survive in these inefficient markets, companies create boundaries that generate externalities to: - Offload complexity to external systems, simplifying their decision-making p...]]></description>
     </item>
     <item>
       <title><![CDATA[My Take on AI]]></title>
       <link>https://devpoga.org/my-take-on-ai/</link>
       <guid>https://devpoga.org/my-take-on-ai/</guid>
       <pubDate>Sun, 05 Jan 2025 00:00:00 +0000</pubDate>
-      <description><![CDATA[My take on AI: 20% of my skills are now obsolete, but the other 80% just got way more valuable. ## Why? 1. Engineering is all about trade-offs. If someone can clearly define all the trade-offs in detail, they can probably code it themselves. 2. Engineering exists because humans suck at precisely describing what they want and how to build it. 3. My real job? Helping people figure out what they actually want, when they need it, and how to build it. This means digging into context, constraints, and...]]></description>
+      <description><![CDATA[My take on AI: 20% of my skills are now obsolete, but the other 80% just got way more valuable. ## Why? 1. Engineering is all about trade-offs. If someone can clearly define all the trade-offs in detail, they can probably code it themselves. 2. Engineering exists because humans suck at precisely describing what they want and how to build it. 3. My real job is helping people figure out what they actually want, when they need it, and how to build it. This means digging into context, constraints, a...]]></description>
     </item>
     <item>
       <title><![CDATA[Doing One billion Rows Challenge by just Mindlessly Following the Flamegraph]]></title>
