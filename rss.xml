@@ -5,10 +5,24 @@
     <link>https://devpoga.org</link>
     <description>Personal blog of Poga - transforming complex problems into fast feedback loops</description>
     <language>en-us</language>
-    <lastBuildDate>Mon, 18 Aug 2025 16:38:19 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 10 Sep 2025 18:57:40 +0000</lastBuildDate>
     <atom:link href="https://devpoga.org/rss.xml" rel="self" type="application/rss+xml" />
     <managingEditor>hi@devpoga.org (Poga)</managingEditor>
     <webMaster>hi@devpoga.org (Poga)</webMaster>
+    <item>
+      <title><![CDATA[RIOT - A World Without Conversation]]></title>
+      <link>https://devpoga.org/riot-a-world-without-conversation/</link>
+      <guid>https://devpoga.org/riot-a-world-without-conversation/</guid>
+      <pubDate>Sun, 07 Sep 2025 00:00:00 +0000</pubDate>
+      <description><![CDATA[# RIOT - A World Without Conversation > **RIOT. (Raw Ideas Open Transmutation)**: Do your own research and remix on these threads. Turn them into whatever format, in whatever language you want: blog, podcast, rap, video, or another RIOT. The medium doesn't matter anymore anyway. --- ### About RIOT. This is the beginning of an experiment: **RIOT (Raw Ideas Open Transmutation)** - Human writes rough thoughts without editing or polish - Machine reviews it to add analysis and connections - You get b...]]></description>
+    </item>
+    <item>
+      <title><![CDATA[References for Agent Design]]></title>
+      <link>https://devpoga.org/agent-design-ref/</link>
+      <guid>https://devpoga.org/agent-design-ref/</guid>
+      <pubDate>Mon, 18 Aug 2025 00:00:00 +0000</pubDate>
+      <description><![CDATA[# References for Agent Design - [https://utkarshkanwat.com/writing/betting-against-agents/](https://utkarshkanwat.com/writing/betting-against-agents/) - [ttps://userjot.com/blog/best-practices-building-agentic-ai-systems](https://userjot.com/blog/best-practices-building-agentic-ai-systems) - [https://kirshatrov.com/posts/claude-code-internals](https://kirshatrov.com/posts/claude-code-internals) - [https://www.anthropic.com/engineering/multi-agent-research-system](https://www.anthropic.com/engine...]]></description>
+    </item>
     <item>
       <title><![CDATA[Runtime Over Syntax]]></title>
       <link>https://devpoga.org/runtime-over-syntax/</link>
