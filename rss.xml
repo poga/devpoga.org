@@ -5,7 +5,7 @@
     <link>https://devpoga.org</link>
     <description>Personal blog of Poga - transforming complex problems into fast feedback loops</description>
     <language>en-us</language>
-    <lastBuildDate>Sun, 28 Sep 2025 12:29:44 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 27 Oct 2025 15:01:36 +0000</lastBuildDate>
     <atom:link href="https://devpoga.org/rss.xml" rel="self" type="application/rss+xml" />
     <managingEditor>hi@devpoga.org (Poga)</managingEditor>
     <webMaster>hi@devpoga.org (Poga)</webMaster>
@@ -14,7 +14,7 @@
       <link>https://devpoga.org/riot-a-world-without-conversation/</link>
       <guid>https://devpoga.org/riot-a-world-without-conversation/</guid>
       <pubDate>Sun, 07 Sep 2025 00:00:00 +0000</pubDate>
-      <description><![CDATA[# RIOT - A World Without Conversation > **RIOT. (Raw Ideas Open Transmutation)**: Do your own research and remix on these threads. Turn them into whatever format, in whatever language you want: blog, podcast, rap, video, or another RIOT. The medium doesn't matter anymore anyway. --- ### About RIOT. This is the beginning of an experiment: **RIOT (Raw Ideas Open Transmutation)** - Human writes rough thoughts without editing or polish - Machine reviews it to add analysis and connections - You get b...]]></description>
+      <description><![CDATA[# RIOT - A World Without Conversation > **RIOT (Raw Ideas Open Transmutation)**: Research and remix these threads. Turn them into any format, any language: blog, podcast, video, or another RIOT. --- ### About RIOT This is an experiment: **RIOT (Raw Ideas Open Transmutation)** - A human writes rough thoughts - A machine adds analysis and connections - You remix both into whatever form you choose --- ### The internet becomes weather satellite data The internet remains functional but uninteresting ...]]></description>
     </item>
     <item>
       <title><![CDATA[References for Agent Design]]></title>
