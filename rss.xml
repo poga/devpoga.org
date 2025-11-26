@@ -5,17 +5,10 @@
     <link>https://devpoga.org</link>
     <description>Personal blog of Poga - transforming complex problems into fast feedback loops</description>
     <language>en-us</language>
-    <lastBuildDate>Mon, 27 Oct 2025 15:26:37 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 26 Nov 2025 20:23:07 +0000</lastBuildDate>
     <atom:link href="https://devpoga.org/rss.xml" rel="self" type="application/rss+xml" />
     <managingEditor>hi@devpoga.org (Poga)</managingEditor>
     <webMaster>hi@devpoga.org (Poga)</webMaster>
-    <item>
-      <title><![CDATA[RIOT - A World Without Conversation]]></title>
-      <link>https://devpoga.org/riot-a-world-without-conversation/</link>
-      <guid>https://devpoga.org/riot-a-world-without-conversation/</guid>
-      <pubDate>Sun, 07 Sep 2025 00:00:00 +0000</pubDate>
-      <description><![CDATA[# RIOT - A World Without Conversation > **RIOT (Raw Ideas Open Transmutation)**: Research and remix these threads. Turn them into any format, any language: blog, podcast, video, or another RIOT. --- ### About RIOT This is an experiment: **RIOT (Raw Ideas Open Transmutation)** - A human writes rough thoughts - A machine adds analysis and connections - You remix both into whatever form you choose --- ### The internet becomes weather satellite data The internet remains functional but uninteresting ...]]></description>
-    </item>
     <item>
       <title><![CDATA[References for Agent Design]]></title>
       <link>https://devpoga.org/agent-design-ref/</link>
