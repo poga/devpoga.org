@@ -5,10 +5,17 @@
     <link>https://devpoga.org</link>
     <description>Personal blog of Poga - transforming complex problems into fast feedback loops</description>
     <language>en-us</language>
-    <lastBuildDate>Wed, 26 Nov 2025 20:23:07 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 12 Jan 2026 12:04:18 +0000</lastBuildDate>
     <atom:link href="https://devpoga.org/rss.xml" rel="self" type="application/rss+xml" />
     <managingEditor>hi@devpoga.org (Poga)</managingEditor>
     <webMaster>hi@devpoga.org (Poga)</webMaster>
+    <item>
+      <title><![CDATA[systemd & AI]]></title>
+      <link>https://devpoga.org/systemd-ai/</link>
+      <guid>https://devpoga.org/systemd-ai/</guid>
+      <pubDate>Mon, 12 Jan 2026 00:00:00 +0000</pubDate>
+      <description><![CDATA[# systemd & AI Let's put the two most hated things in tech together and start solving problems. ## I don't need to productize everything before I start solving problems In this age, people rush to productize everything. They want to build a SaaS, a startup, a company. They want to make money from us. Everyone wants to be a thought leader, a solopreneur, a billionaire. But I want to solve problems. I don't need to make a product out of it. I want to make it work for me, or for someone else who ha...]]></description>
+    </item>
     <item>
       <title><![CDATA[References for Agent Design]]></title>
       <link>https://devpoga.org/agent-design-ref/</link>

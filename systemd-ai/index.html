@@ -1,0 +1,43 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="fediverse:creator" content="poga@g0v.social" />
+  <meta property="og:title" content="systemd & AI" />
+
+  <title>systemd & AI</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/default.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+  <link rel="stylesheet" href="/index.css">
+  <script type="module">
+  import { marked } from "https://cdn.jsdelivr.net/npm/marked/lib/marked.esm.js";
+    document.body.innerHTML =
+      marked.parse(document.body.innerHTML.replace(/&gt;+/g, '>'));
+    hljs.highlightAll();
+  </script>
+</head>
+<body>
+
+[ [home] ](/)
+
+# systemd & AI
+
+Let's put the two most hated things in tech together and start solving problems.
+
+## I don't need to productize everything before I start solving problems
+
+In this age, people rush to productize everything. They want to build a SaaS, a startup, a company. They want to make money from us. Everyone wants to be a thought leader, a solopreneur, a billionaire.
+
+But I want to solve problems. I don't need to make a product out of it. I want to make it work for me, or for someone else who has the same problem.
+
+Most SaaS are just glorified cron jobs and glue scripts with a web interface, tied to a payment system and vendor lock-in. I don't need that.
+
+## I don't need a platform to start solving problems
+
+AI is pretty good at adminstrating linux boxes. It's also pretty good at coding. Nowadays I gave it a linux box (in docker or VM) and tell it what I want to do. It will install everything, set up systemd services and monitoring, and even set up CI/CD pipelines (which is usually just a RSync) for me.
+
+Predictable cost, safe sandboxes, easy to debug, and I can shut it down when I don't need it. For auth, plain old ssh port forwarding with public key is good enough. Use something like wireguard if you fancy.
+
+</body>
+</html>
