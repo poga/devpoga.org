@@ -1,0 +1,39 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="fediverse:creator" content="@poga@g0v.social">
+  <meta property="og:title" content="Architecture for Scaling Agents" />
+
+  <title>Architecture for Scaling Agents</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/default.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+  <link rel="stylesheet" href="/index.css">
+  <script type="module">
+  import { marked } from "https://cdn.jsdelivr.net/npm/marked/lib/marked.esm.js";
+    document.body.innerHTML =
+      marked.parse(document.body.innerHTML.replace(/&gt;+/g, '>'));
+    hljs.highlightAll();
+  </script>
+</head>
+<body>
+
+[ [home] ](/)
+
+# Architecture for Scaling Agents
+
+Many software architectures are designed to scale teams, not scaling the software itself.
+
+Agents have the same limitations as new team members: limited context, no institutional knowledge. The architetual patterns we built to for scaling teams also works for scaling agents.
+
+New Team Members and Agents both need:
+
+1. Small Blast radius: bounded contexts, plugin-based architecture.
+2. Clear Contracts: Typed APIs, schemas, durable workflow interfaces.
+3. Safe experimentaion and rapid feedback: scripting/data layer separated from core code, feature flags.
+
+Game Engine's engine/scripting separation, Durable workflows, Tuplespaces are all examples of architectural patterns that help scale teams and agents together.
+
+</body>
+</html>
